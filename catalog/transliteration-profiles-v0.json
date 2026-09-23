@@ -1,0 +1,33 @@
+{
+  "source_format": "nepa-transliteration-profiles-source",
+  "source_format_version": 1,
+  "catalog_id": "transliteration-profiles-v0",
+  "authority": "internal",
+  "note": "Profiles that become selectable through deterministic transliteration rather than through a dictionary pack. This catalog never contradicts the profile lock: each entry is granted only over a missing-dictionary block, and the lock's own statement about alias-decoder input stays true.",
+  "profiles": [
+    {
+      "profile_id": "lep-Latn-Lepc-NP",
+      "map_id": "lep-Latn-Lepc-v0",
+      "map_asset": "lep-Latn-Lepc-v1.json",
+      "layout_id": "latn-qwerty-us-v1",
+      "gates": [
+        "deterministic_build",
+        "map_verified",
+        "layout_implemented"
+      ],
+      "note": "Lepcha has no direct-script layout and no dictionary pack, so deterministic transliteration on the Latin layout is the only way to type it at all. The map is reviewed, reproducible under --check, and holds 8 vectors in both the Python compiler and the Android engine."
+    },
+    {
+      "profile_id": "mai-Latn-Deva-NP",
+      "map_id": "npi-Latn-Deva-v0",
+      "map_asset": "npi-Latn-Deva-v1.json",
+      "layout_id": "latn-qwerty-us-v1",
+      "gates": [
+        "deterministic_build",
+        "map_verified",
+        "layout_implemented"
+      ],
+      "note": "Maithili written in Devanagari, typed phonetically with the reviewed Devanagari map. This is the Devanagari route; Maithili in Tirhuta needs its own profile, which does not exist in the lock yet."
+    }
+  ]
+}

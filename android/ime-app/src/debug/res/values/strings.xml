@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="preview_title">Nepa Keyboard preview</string>
+    <string name="preview_text_hint">Type English or नेपाली</string>
+    <string name="preview_number_hint">Numeric field</string>
+</resources>

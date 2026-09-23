@@ -1,0 +1,39 @@
+{
+  "source_format": "key_alternates",
+  "source_format_version": 1,
+  "note": "Long-press variants presented above a key. Every variant is committed as literal text under the input policy of the key it belongs to. Variants never introduce a scalar the bound layout cannot already emit, so this artifact adds reach, not repertoire.",
+  "layouts": [
+    {
+      "layout_id": "deva-nepal-basic-v1",
+      "input_script": "Deva",
+      "note": "Each base key exposes its shifted counterpart, so the shifted letter is reachable without a mode change.",
+      "keys": [
+        { "key_id": "base.r0.k0", "text": "ट", "alternates": ["ठ"] },
+        { "key_id": "base.r0.k1", "text": "ौ", "alternates": ["औ"] },
+        { "key_id": "base.r0.k2", "text": "े", "alternates": ["ै"] },
+        { "key_id": "base.r0.k3", "text": "र", "alternates": ["ृ"] },
+        { "key_id": "base.r0.k4", "text": "त", "alternates": ["थ"] },
+        { "key_id": "base.r0.k5", "text": "य", "alternates": ["ञ"] },
+        { "key_id": "base.r0.k6", "text": "ु", "alternates": ["ू"] },
+        { "key_id": "base.r0.k7", "text": "ि", "alternates": ["ी"] },
+        { "key_id": "base.r0.k8", "text": "ो", "alternates": ["ओ"] },
+        { "key_id": "base.r0.k9", "text": "प", "alternates": ["फ"] },
+        { "key_id": "base.r1.k0", "text": "ा", "alternates": ["आ"] },
+        { "key_id": "base.r1.k1", "text": "स", "alternates": ["श"] },
+        { "key_id": "base.r1.k2", "text": "द", "alternates": ["ध"] },
+        { "key_id": "base.r1.k3", "text": "उ", "alternates": ["ऊ"] },
+        { "key_id": "base.r1.k4", "text": "ग", "alternates": ["घ"] },
+        { "key_id": "base.r1.k5", "text": "ह", "alternates": ["अ"] },
+        { "key_id": "base.r1.k6", "text": "ज", "alternates": ["झ"] },
+        { "key_id": "base.r1.k7", "text": "क", "alternates": ["ख"] },
+        { "key_id": "base.r2.k0", "text": "ष", "alternates": ["ऋ"] },
+        { "key_id": "base.r2.k1", "text": "ड", "alternates": ["ढ"] },
+        { "key_id": "base.r2.k2", "text": "च", "alternates": ["छ"] },
+        { "key_id": "base.r2.k3", "text": "व", "alternates": ["ँ"] },
+        { "key_id": "base.r2.k4", "text": "ब", "alternates": ["भ"] },
+        { "key_id": "base.r2.k5", "text": "न", "alternates": ["ण"] },
+        { "key_id": "base.r2.k6", "text": "म", "alternates": ["ं"] }
+      ]
+    }
+  ]
+}

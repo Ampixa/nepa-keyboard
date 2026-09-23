@@ -1,0 +1,23 @@
+Nepa Keyboard internal Yakkha layout notice
+
+The Yakkha phone layout is an Ampixa-authored adaptation of the reviewed
+Nepali phone layout derived from xkeyboard-config's Nepal symbols file in
+xkb-data 2.41-2ubuntu1.1.
+
+The complete upstream aggregate copyright and license text is included in the
+same internal keyboard artifact as:
+
+    xkb-data-2.41-2ubuntu1.1.copyright
+
+Its pinned SHA-256 is:
+
+    739ff5404b852466ed201799e49bb5dc0f4eafe0876bf9aa74499f306b7b1786
+
+Upstream source:
+https://gitlab.freedesktop.org/xkeyboard-config/xkeyboard-config/-/blob/xkeyboard-config-2.41/symbols/np
+
+Upstream license:
+https://gitlab.freedesktop.org/xkeyboard-config/xkeyboard-config/-/blob/xkeyboard-config-2.41/COPYING
+
+The Yakkha-specific five-key language row, terminal-ZWNJ input semantics, and
+symbols-layer backslash placement are project-authored internal additions.

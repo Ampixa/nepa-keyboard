@@ -1,0 +1,52 @@
+{
+  "benchmark_queries": [
+    "chi",
+    "madu",
+    "pasa",
+    "chem",
+    "ca",
+    "am"
+  ],
+  "membership_vectors": [
+    {
+      "expected_surfaces": [
+        "छि"
+      ],
+      "query": "chi"
+    },
+    {
+      "expected_surfaces": [
+        "मदु"
+      ],
+      "query": "madu"
+    },
+    {
+      "expected_surfaces": [
+        "पासा"
+      ],
+      "query": "pasa"
+    },
+    {
+      "expected_surfaces": [
+        "छेँ"
+      ],
+      "query": "chem"
+    },
+    {
+      "expected_surfaces": [
+        "च",
+        "चा"
+      ],
+      "query": "ca"
+    },
+    {
+      "expected_surfaces": [
+        "अँ",
+        "अं",
+        "आं"
+      ],
+      "query": "am"
+    }
+  ],
+  "validation_query": "madu"
+}

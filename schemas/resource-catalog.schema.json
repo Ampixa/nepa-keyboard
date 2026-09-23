@@ -1,0 +1,167 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ampixa.com/schemas/nepa-keyboard-resource-catalog.schema.json",
+  "title": "Nepa Keyboard resource catalog",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["catalog_version", "audited_at", "packs"],
+  "properties": {
+    "catalog_version": { "type": "integer", "minimum": 1 },
+    "audited_at": { "type": "string", "format": "date" },
+    "notes": { "type": "array", "items": { "type": "string" } },
+    "packs": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/pack" }
+    }
+  },
+  "$defs": {
+    "readiness": {
+      "type": "string",
+      "enum": ["ready", "beta", "extractable", "research", "missing", "external"]
+    },
+    "script": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["iso_15924", "name", "role"],
+      "properties": {
+        "iso_15924": { "type": "string", "pattern": "^[A-Z][a-z]{3}$" },
+        "name": { "type": "string", "minLength": 1 },
+        "role": {
+          "type": "string",
+          "enum": ["primary", "widely_used", "traditional", "historic", "input_only"]
+        },
+        "notes": { "type": "string" }
+      }
+    },
+    "input_method": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "type", "source_script", "output_script", "readiness"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9._-]*$" },
+        "type": {
+          "type": "string",
+          "enum": ["direct", "roman_phonetic", "script_conversion", "system"]
+        },
+        "source_script": { "type": "string", "pattern": "^[A-Z][a-z]{3}$" },
+        "output_script": { "type": "string", "pattern": "^[A-Z][a-z]{3}$" },
+        "readiness": { "$ref": "#/$defs/readiness" },
+        "orthography_profile": { "type": "string" },
+        "scheme": { "type": "string" },
+        "engine_kind": {
+          "type": "string",
+          "enum": ["layout", "alias_decoder", "converter", "platform"]
+        },
+        "fallback_policy": { "type": "string" },
+        "evidence_resource_ids": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "evaluation": {
+          "type": "object",
+          "additionalProperties": { "type": "number" }
+        },
+        "notes": { "type": "string" }
+      }
+    },
+    "resource": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "kind", "path", "format", "structured", "quality", "uses"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9._-]*$" },
+        "kind": {
+          "type": "string",
+          "enum": [
+            "lexicon", "frequency", "spelling", "corpus", "parallel_corpus",
+            "grammar", "dictionary_reference", "transliteration", "ocr_ground_truth",
+            "script_sample"
+          ]
+        },
+        "path": { "type": "string", "minLength": 1 },
+        "format": { "type": "string", "minLength": 1 },
+        "structured": { "type": "boolean" },
+        "records": { "type": "integer", "minimum": 0 },
+        "record_unit": {
+          "type": "string",
+          "enum": ["entries", "rows", "lines", "articles", "pages", "files", "pairs", "model"]
+        },
+        "bytes": { "type": "integer", "minimum": 0 },
+        "sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+        "source_url": { "type": "string", "format": "uri" },
+        "project_url": { "type": "string", "format": "uri" },
+        "license_id": { "type": "string", "minLength": 1 },
+        "license_url": { "type": "string", "format": "uri" },
+        "upstream_commit": { "type": "string", "pattern": "^[0-9a-f]{7,64}$" },
+        "canonical": { "type": "boolean", "default": false },
+        "domains": { "type": "array", "items": { "type": "string" } },
+        "quality": {
+          "type": "string",
+          "enum": ["verified", "usable_with_filters", "needs_audit", "reference_only"]
+        },
+        "license": {
+          "type": "string",
+          "enum": ["verified_open", "restricted", "unknown", "mixed", "system"]
+        },
+        "redistribution": {
+          "type": "string",
+          "enum": ["allowed", "prohibited", "permission_required", "unknown", "system"]
+        },
+        "evidence_type": {
+          "type": "string",
+          "enum": ["attested", "induced", "generated", "mixed"]
+        },
+        "uses": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "enum": [
+              "candidate_vocabulary", "frequency_ranking", "spellcheck", "roman_aliases",
+              "script_mapping", "language_model", "evaluation", "layout_validation",
+              "morphology"
+            ]
+          }
+        },
+        "notes": { "type": "string" }
+      }
+    },
+    "pack": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id", "name", "iso_639_3", "scope", "scripts", "input_methods",
+        "prediction_readiness", "correction_readiness", "resources"
+      ],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$" },
+        "name": { "type": "string", "minLength": 1 },
+        "iso_639_3": { "type": "string", "pattern": "^[a-z]{3}$" },
+        "scope": { "type": "string", "enum": ["language", "variety"] },
+        "group": { "type": "string" },
+        "variety": { "type": "string" },
+        "scripts": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/script" }
+        },
+        "input_methods": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/input_method" }
+        },
+        "prediction_readiness": { "$ref": "#/$defs/readiness" },
+        "correction_readiness": { "$ref": "#/$defs/readiness" },
+        "resources": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/resource" }
+        },
+        "gaps": { "type": "array", "items": { "type": "string" } },
+        "public_export_gaps": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "notes": { "type": "string" }
+      }
+    }
+  }
+}

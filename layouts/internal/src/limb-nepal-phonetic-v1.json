@@ -1,0 +1,118 @@
+{
+  "layout_format_version": 1,
+  "layout_id": "limb-nepal-phonetic-v1",
+  "revision": 1,
+  "display_name": "Limbu Phonetic (Nepal phone)",
+  "input_script": "Limb",
+  "direction": "ltr",
+  "normalization": "NFC",
+  "unicode_data_version": "16.0.0",
+  "device_forms": [
+    "phone"
+  ],
+  "authors": [
+    "Ampixa",
+    "SIL International"
+  ],
+  "license": {
+    "id": "MIT",
+    "copyright": "Copyright © 2010-2024 SIL International",
+    "notice_path": "layouts/internal/notices/keyman-sil-limbu-mit.txt",
+    "notice_sha256": "ef8951f97cd6231cfe84258715e88504e2b0476f26ec17c78df6f9348314b686",
+    "license_url": "https://github.com/keymanapp/keyboards/blob/466bc4a237f4cf946a3f5f8204903fecefe02eda/release/sil/sil_limbu_phonetic/LICENSE.md",
+    "redistribution": "allowed"
+  },
+  "provenance": [
+    {
+      "kind": "adapted",
+      "source": "sil_limbu_phonetic.keyman-touch-layout",
+      "revision": "keyman-keyboards-466bc4a237f4cf946a3f5f8204903fecefe02eda",
+      "sha256": "ebe6d4af45c64e296ed8811c7964085166acfd025b234f9a7f6052de61b6fda0",
+      "source_url": "https://github.com/keymanapp/keyboards/blob/466bc4a237f4cf946a3f5f8204903fecefe02eda/release/sil/sil_limbu_phonetic/source/sil_limbu_phonetic.keyman-touch-layout",
+      "note": "The tablet-only five-row mapping was folded into three phone text rows while preserving its default QWERTY order and grouping shift/right-alt outputs on the shift layer."
+    },
+    {
+      "kind": "standard_reference",
+      "source": "sil_limbu_phonetic.kmn",
+      "revision": "keyman-keyboards-466bc4a237f4cf946a3f5f8204903fecefe02eda",
+      "sha256": "d97b99b945ba06d8073ff328a525922ccccb2fc14ca5a0254b89a234566a693f",
+      "source_url": "https://github.com/keymanapp/keyboards/blob/466bc4a237f4cf946a3f5f8204903fecefe02eda/release/sil/sil_limbu_phonetic/source/sil_limbu_phonetic.kmn",
+      "note": "Pinned direct key-to-scalar rules; no contextual rewrite, dead key, or transliteration behavior is inherited."
+    },
+    {
+      "kind": "standard_reference",
+      "source": "UnicodeData.txt",
+      "revision": "Unicode-16.0.0",
+      "sha256": "ff58e5823bd095166564a006e47d111130813dcf8bf234ef79fa51a870edb48f",
+      "source_url": "https://www.unicode.org/Public/16.0.0/ucd/UnicodeData.txt",
+      "note": "U+191D LIMBU LETTER GYAN and U+191E LIMBU LETTER TRA complete the assigned non-digit Limbu repertoire omitted by the pinned Keyman phonetic rules."
+    }
+  ],
+  "field_layer_map": {
+    "text": "base",
+    "number": "numeric",
+    "phone": "numeric",
+    "datetime": "numeric"
+  },
+  "layers": {
+    "base": {
+      "rows": [
+        ["ᤀ", "ᤘ", "ᤣ", "ᤖ", "ᤋ", "ᤕ", "ᤢ", "ᤡ", "ᤥ", "ᤐ"],
+        ["ᤲ", "ᤠ", "ᤛ", "ᤍ", "ᤃ", "ᤜ", "ᤈ", "ᤁ", "ᤗ"],
+        ["ᤙ", "᤻", "ᤆ", "᥀", "ᤒ", "ᤏ", "ᤔ", "᤹", "᥄", "᥅"],
+        [
+          {"action": "shift", "label": "⇧", "content_description": "Shift", "width_units": 115},
+          {"action": "symbols", "label": "?123", "content_description": "Symbols", "width_units": 135},
+          {"action": "language", "label": "🌐", "content_description": "Switch language", "width_units": 110, "hold_action": "open_language_picker"},
+          {"action": "space", "label": "${profile.native_name}", "content_description": "Space · ${profile.display_name}", "width_units": 400, "hold_action": "open_language_picker"},
+          {"action": "delete", "label": "⌫", "content_description": "Delete", "width_units": 125},
+          {"action": "enter", "label": "↵", "content_description": "Enter", "width_units": 125}
+        ]
+      ]
+    },
+    "shift": {
+      "rows": [
+        ["ᤫ", "ᤧ", "ᤤ", "ᤪ", "ᤷ", "ᤌ", "ᤳ", "ᤩ", "ᤨ", "ᤦ"],
+        ["ᤑ", "ᤵ", "ᤚ", "ᤎ", "ᤄ", "᤺", "ᤉ", "ᤂ", "ᤰ"],
+        ["ᤇ", "ᤓ", "ᤱ", "ᤴ", "ᤅ", "ᤶ", "ᤊ", "ᤸ", "ᤝ", "ᤞ"],
+        [
+          {"action": "shift", "label": "⇧", "content_description": "Shift", "width_units": 115},
+          {"action": "symbols", "label": "?123", "content_description": "Symbols", "width_units": 135},
+          {"action": "language", "label": "🌐", "content_description": "Switch language", "width_units": 110, "hold_action": "open_language_picker"},
+          {"action": "space", "label": "${profile.native_name}", "content_description": "Space · ${profile.display_name}", "width_units": 400, "hold_action": "open_language_picker"},
+          {"action": "delete", "label": "⌫", "content_description": "Delete", "width_units": 125},
+          {"action": "enter", "label": "↵", "content_description": "Enter", "width_units": 125}
+        ]
+      ]
+    },
+    "symbols": {
+      "rows": [
+        ["᥇", "᥈", "᥉", "᥊", "᥋", "᥌", "᥍", "᥎", "᥏", "᥆"],
+        ["@", "#", "₹", "_", "&", "-", "+", "(", ")"],
+        ["*", "\"", "'", ":", ";", "!", "?", "/", ".", "।", "॥"],
+        [
+          {"action": "letters", "label": "ABC", "content_description": "Letters", "width_units": 135},
+          {"action": "symbols", "label": "?123", "content_description": "Symbols", "width_units": 135},
+          {"action": "language", "label": "🌐", "content_description": "Switch language", "width_units": 110, "hold_action": "open_language_picker"},
+          {"action": "space", "label": "${profile.native_name}", "content_description": "Space · ${profile.display_name}", "width_units": 400, "hold_action": "open_language_picker"},
+          {"action": "delete", "label": "⌫", "content_description": "Delete", "width_units": 125},
+          {"action": "enter", "label": "↵", "content_description": "Enter", "width_units": 125}
+        ]
+      ]
+    },
+    "numeric": {
+      "rows": [
+        ["1", "2", "3"],
+        ["4", "5", "6"],
+        ["7", "8", "9"],
+        [".", "0", "-"],
+        [
+          {"action": "space", "label": "${profile.native_name}", "content_description": "Space · ${profile.display_name}", "width_units": 220, "hold_action": "open_language_picker"},
+          {"action": "delete", "label": "⌫", "content_description": "Delete", "width_units": 125},
+          {"action": "enter", "label": "↵", "content_description": "Enter", "width_units": 125}
+        ]
+      ]
+    }
+  },
+  "transforms": []
+}

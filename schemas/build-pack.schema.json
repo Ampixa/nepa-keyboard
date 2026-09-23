@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ampixa.com/schemas/nepa-keyboard-build-pack.schema.json",
+  "title": "Nepa Keyboard build-pack metadata",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "pack_id", "language", "display_name", "output_script", "region",
+    "data_version", "max_suggestions"
+  ],
+  "properties": {
+    "pack_id": { "type": "string", "pattern": "^[a-z]{3}-[A-Z][a-z]{3}-[A-Z]{2}([-.][A-Za-z0-9]+)*$" },
+    "language": { "type": "string", "pattern": "^[a-z]{3}$" },
+    "display_name": { "type": "string", "minLength": 1 },
+    "variety": { "type": ["string", "null"] },
+    "output_script": { "type": "string", "pattern": "^[A-Z][a-z]{3}$" },
+    "region": { "type": "string", "pattern": "^[A-Z]{2}$" },
+    "data_version": { "type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$" },
+    "max_suggestions": { "type": "integer", "minimum": 1, "maximum": 32 },
+    "artifact_license": { "type": "string", "minLength": 1 },
+    "surface_lookup_normalization": {
+      "type": "string",
+      "enum": ["NFC", "NFC+ASCII-lower"],
+      "default": "NFC"
+    },
+    "allowed_format_characters": {
+      "type": "array",
+      "items": { "type": "string", "pattern": "^U\\+[0-9A-F]{4,6}$" },
+      "uniqueItems": true
+    }
+  }
+}

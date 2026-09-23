@@ -1,0 +1,143 @@
+{
+  "layout_format_version": 1,
+  "layout_id": "deva-nepal-yakkha-v1",
+  "revision": 1,
+  "display_name": "Devanagari Yakkha (Nepal phone)",
+  "input_script": "Deva",
+  "direction": "ltr",
+  "normalization": "NFC",
+  "unicode_data_version": "16.0.0",
+  "device_forms": [
+    "phone"
+  ],
+  "authors": [
+    "Ampixa",
+    "xkeyboard-config contributors"
+  ],
+  "license": {
+    "id": "LicenseRef-xkeyboard-config-aggregate",
+    "copyright": "Multiple copyright holders; see the exact xkeyboard-config package notice",
+    "notice_path": "layouts/internal/notices/xkb-data-2.41-2ubuntu1.1-deva-yakkha.copyright",
+    "notice_sha256": "d5b4c59af6e05f1c28c7e297066eee36a03c4d50874f9d8f3733d1da75fc1382",
+    "license_url": "https://gitlab.freedesktop.org/xkeyboard-config/xkeyboard-config/-/blob/xkeyboard-config-2.41/COPYING",
+    "redistribution": "allowed"
+  },
+  "provenance": [
+    {
+      "kind": "adapted",
+      "source": "layouts/internal/src/deva-nepal-basic-v1.json",
+      "revision": "1",
+      "sha256": "5cefdc0e916eaa9ee64acafddcadad4c9d32c8adbaff69cb2d8f181655280e4f",
+      "note": "The reviewed internal Nepali basic phone rows, actions, symbols, numeric fallback, and profile-bound labels are preserved exactly."
+    },
+    {
+      "kind": "project_authored",
+      "source": "reports/yakkha-pack-readiness-v0.md",
+      "revision": "v0-real-run",
+      "sha256": "b877e24dea9262d39e575542d714acfc87ab4400db6ba498910f9da70dfb5556",
+      "note": "Adds the five language keys, terminal-ZWNJ policy, and three intra-word punctuation keys shown necessary by the complete accepted Yakkha surface inventory audit."
+    }
+  ],
+  "field_layer_map": {
+    "text": "base",
+    "number": "numeric",
+    "phone": "numeric",
+    "datetime": "numeric"
+  },
+  "layers": {
+    "base": {
+      "rows": [
+        ["ट", "ौ", "े", "र", "त", "य", "ु", "ि", "ो", "प"],
+        ["ा", "स", "द", "उ", "ग", "ह", "ज", "क", "ल"],
+        ["ष", "ड", "च", "व", "ब", "न", "म", ",", "।", "्"],
+        [
+          "इ",
+          "ए",
+          {"kind": "text", "text": "ॽ", "label": "ॽ", "content_description": "Devanagari glottal stop"},
+          {"kind": "deva_conjunct_joiner", "text": "‍", "label": "ZWJ", "content_description": "Devanagari zero width joiner"},
+          {"kind": "deva_terminal_zwnj", "text": "‌", "label": "ZWNJ", "content_description": "Yakkha conjunct or terminal zero width non-joiner"}
+        ],
+        [
+          {"action": "shift", "label": "⇧", "content_description": "Shift", "width_units": 115},
+          {"action": "symbols", "label": "?123", "content_description": "Symbols", "width_units": 135},
+          {"action": "language", "label": "🌐", "content_description": "Switch language", "width_units": 110, "hold_action": "open_language_picker"},
+          {"action": "space", "label": "${profile.native_name}", "content_description": "Space · ${profile.display_name}", "width_units": 400, "hold_action": "open_language_picker"},
+          {"action": "delete", "label": "⌫", "content_description": "Delete", "width_units": 125},
+          {"action": "enter", "label": "↵", "content_description": "Enter", "width_units": 125}
+        ]
+      ]
+    },
+    "shift": {
+      "rows": [
+        ["ठ", "औ", "ै", "ृ", "थ", "ञ", "ू", "ी", "ओ", "फ"],
+        ["आ", "श", "ध", "ऊ", "घ", "अ", "झ", "ख", "॥"],
+        ["ऋ", "ढ", "छ", "ँ", "भ", "ण", "ं", "ङ", ".", "?"],
+        [
+          "इ",
+          "ए",
+          {"kind": "text", "text": "ॽ", "label": "ॽ", "content_description": "Devanagari glottal stop"},
+          {"kind": "deva_conjunct_joiner", "text": "‍", "label": "ZWJ", "content_description": "Devanagari zero width joiner"},
+          {"kind": "deva_terminal_zwnj", "text": "‌", "label": "ZWNJ", "content_description": "Yakkha conjunct or terminal zero width non-joiner"}
+        ],
+        [
+          {"action": "shift", "label": "⇧", "content_description": "Shift", "width_units": 115},
+          {"action": "symbols", "label": "?123", "content_description": "Symbols", "width_units": 135},
+          {"action": "language", "label": "🌐", "content_description": "Switch language", "width_units": 110, "hold_action": "open_language_picker"},
+          {"action": "space", "label": "${profile.native_name}", "content_description": "Space · ${profile.display_name}", "width_units": 400, "hold_action": "open_language_picker"},
+          {"action": "delete", "label": "⌫", "content_description": "Delete", "width_units": 125},
+          {"action": "enter", "label": "↵", "content_description": "Enter", "width_units": 125}
+        ]
+      ]
+    },
+    "symbols": {
+      "rows": [
+        ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"],
+        [
+          "@",
+          "#",
+          "₹",
+          "_",
+          "&",
+          {"kind": "intra_word_punctuation", "text": "-", "label": "-", "content_description": "Hyphen within Yakkha word"},
+          "+",
+          "(",
+          ")"
+        ],
+        [
+          "*",
+          "\"",
+          "'",
+          ":",
+          ";",
+          "!",
+          "?",
+          {"kind": "intra_word_punctuation", "text": "/", "label": "/", "content_description": "Slash within Yakkha word"},
+          ".",
+          {"kind": "intra_word_punctuation", "text": "\\", "label": "\\", "content_description": "Backslash within Yakkha word"}
+        ],
+        [
+          {"action": "letters", "label": "ABC", "content_description": "Letters", "width_units": 135},
+          {"action": "symbols", "label": "?123", "content_description": "Symbols", "width_units": 135},
+          {"action": "language", "label": "🌐", "content_description": "Switch language", "width_units": 110, "hold_action": "open_language_picker"},
+          {"action": "space", "label": "${profile.native_name}", "content_description": "Space · ${profile.display_name}", "width_units": 400, "hold_action": "open_language_picker"},
+          {"action": "delete", "label": "⌫", "content_description": "Delete", "width_units": 125},
+          {"action": "enter", "label": "↵", "content_description": "Enter", "width_units": 125}
+        ]
+      ]
+    },
+    "numeric": {
+      "rows": [
+        ["1", "2", "3"],
+        ["4", "5", "6"],
+        ["7", "8", "9"],
+        [".", "0", "-"],
+        [
+          {"action": "space", "label": "${profile.native_name}", "content_description": "Space · ${profile.display_name}", "width_units": 220, "hold_action": "open_language_picker"},
+          {"action": "delete", "label": "⌫", "content_description": "Delete", "width_units": 125},
+          {"action": "enter", "label": "↵", "content_description": "Enter", "width_units": 125}
+        ]
+      ]
+    }
+  },
+  "transforms": []
+}

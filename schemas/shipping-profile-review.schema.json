@@ -1,0 +1,259 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ampixa.com/schemas/nepa-keyboard-shipping-profile-review.schema.json",
+  "title": "Nepa Keyboard shipping-profile review input",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "review_version", "review_id", "reviewed_at", "authority", "expected_counts",
+    "blocked_reason_by_method", "target_overrides", "profile_overrides", "evidence"
+  ],
+  "properties": {
+    "review_version": { "const": 1 },
+    "review_id": { "type": "string", "minLength": 1 },
+    "reviewed_at": { "type": "string", "format": "date" },
+    "authority": { "enum": ["release", "internal"] },
+    "expected_counts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["targets", "profiles", "scripts", "selectable"],
+      "properties": {
+        "targets": { "type": "integer", "minimum": 1 },
+        "profiles": { "type": "integer", "minimum": 1 },
+        "scripts": { "type": "integer", "minimum": 1 },
+        "selectable": { "type": "integer", "minimum": 2 }
+      }
+    },
+    "blocked_reason_by_method": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["direct", "roman_phonetic", "script_conversion"],
+      "properties": {
+        "direct": {
+          "enum": ["DIRECT_PROFILE_NOT_RELEASE_APPROVED", "DIRECT_PROFILE_NOT_INTERNAL_READY"]
+        },
+        "roman_phonetic": {
+          "enum": ["ROMAN_ALIAS_NOT_RELEASE_APPROVED", "ROMAN_ALIAS_NOT_INTERNAL_READY"]
+        },
+        "script_conversion": {
+          "enum": ["SCRIPT_CONVERTER_NOT_RELEASE_APPROVED", "SCRIPT_CONVERTER_NOT_INTERNAL_READY"]
+        }
+      }
+    },
+    "target_overrides": {
+      "type": "object",
+      "additionalProperties": { "$ref": "#/$defs/target_override" }
+    },
+    "profile_overrides": {
+      "type": "object",
+      "additionalProperties": { "$ref": "#/$defs/profile_override" }
+    },
+    "evidence": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/evidence" }
+    }
+  },
+  "$defs": {
+    "target_override": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "native_label": { "type": "string", "minLength": 1 },
+        "language_tag": { "type": "string", "minLength": 1 }
+      }
+    },
+    "profile_override": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "profile_id": { "type": "string", "minLength": 1 },
+        "layout_id": { "type": "string", "minLength": 1 },
+        "pack_binding": { "type": "string", "minLength": 1 },
+        "conversion_binding": { "type": "string", "minLength": 1 },
+        "selectable": { "type": "boolean" },
+        "default_enabled": { "type": "boolean" },
+        "evidence_ids": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "blocked_detail": { "type": "string", "minLength": 1 }
+      }
+    },
+    "evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "evidence_id", "profile_id", "status", "gates", "layout_binding",
+        "artifacts"
+      ],
+      "oneOf": [
+        {
+          "required": ["pack_artifact"],
+          "not": { "required": ["conversion_artifact"] }
+        },
+        {
+          "required": ["conversion_artifact"],
+          "not": { "required": ["pack_artifact"] }
+        }
+      ],
+      "properties": {
+        "evidence_id": { "type": "string", "minLength": 1 },
+        "profile_id": { "type": "string", "minLength": 1 },
+        "status": { "const": "passed" },
+        "gates": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "layout_binding": { "$ref": "#/$defs/layout_binding" },
+        "pack_artifact": { "$ref": "#/$defs/pack_artifact" },
+        "conversion_artifact": { "$ref": "#/$defs/conversion_artifact" },
+        "artifacts": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/evidence_artifact" }
+        }
+      }
+    },
+    "layout_binding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["layout_id", "revision", "source_sha256"],
+      "properties": {
+        "layout_id": { "type": "string", "minLength": 1 },
+        "revision": { "type": "integer", "minimum": 1 },
+        "source_sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" }
+      }
+    },
+    "evidence_artifact": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "sha256"],
+      "properties": {
+        "path": { "type": "string", "minLength": 1 },
+        "sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" }
+      }
+    },
+    "pack_artifact": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "pack_id", "file_name", "artifact_sha256", "language", "output_script",
+        "artifact_license", "release_mode", "candidate_count", "surface_key_count",
+        "alias_key_count", "validation"
+      ],
+      "properties": {
+        "pack_id": { "type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$" },
+        "file_name": { "type": "string", "pattern": "^[A-Za-z0-9._-]+\\.nkp$" },
+        "artifact_sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+        "language": { "type": "string", "pattern": "^[a-z]{3}$" },
+        "output_script": { "type": "string", "pattern": "^[A-Z][a-z]{3}$" },
+        "artifact_license": { "type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9.+-]{0,63}$" },
+        "release_mode": { "enum": ["release", "internal"] },
+        "candidate_count": { "type": "integer", "minimum": 1 },
+        "surface_key_count": { "type": "integer", "minimum": 0 },
+        "alias_key_count": { "type": "integer", "minimum": 0 },
+        "validation": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["query", "expected_surface", "benchmark_queries"],
+          "properties": {
+            "query": { "type": "string", "minLength": 1 },
+            "expected_surface": { "type": "string", "minLength": 1 },
+            "benchmark_queries": {
+              "type": "array",
+              "minItems": 1,
+              "maxItems": 64,
+              "items": { "type": "string", "minLength": 1 }
+            }
+          }
+        }
+      }
+    },
+    "conversion_vector": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["input", "expected_status", "expected_output"],
+      "properties": {
+        "input": { "type": "string", "minLength": 1 },
+        "expected_status": { "enum": ["MATCH", "NO_MATCH"] },
+        "expected_output": { "type": ["string", "null"] }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": { "expected_status": { "const": "MATCH" } },
+            "required": ["expected_status"]
+          },
+          "then": {
+            "properties": { "expected_output": { "type": "string", "minLength": 1 } }
+          }
+        },
+        {
+          "if": {
+            "properties": { "expected_status": { "const": "NO_MATCH" } },
+            "required": ["expected_status"]
+          },
+          "then": {
+            "properties": { "expected_output": { "type": "null" } }
+          }
+        }
+      ]
+    },
+    "conversion_artifact": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "converter_id", "file_name", "artifact_sha256", "language",
+        "source_script", "output_script", "release_mode", "rule_count",
+        "validation"
+      ],
+      "properties": {
+        "converter_id": { "type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$" },
+        "file_name": { "type": "string", "pattern": "^[A-Za-z0-9._-]+\\.ncm$" },
+        "artifact_sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+        "language": { "type": "string", "pattern": "^[a-z]{3}$" },
+        "source_script": { "type": "string", "pattern": "^[A-Z][a-z]{3}$" },
+        "output_script": { "type": "string", "pattern": "^[A-Z][a-z]{3}$" },
+        "release_mode": { "enum": ["release", "internal"] },
+        "rule_count": { "type": "integer", "minimum": 1, "maximum": 1024 },
+        "validation": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["vectors"],
+          "properties": {
+            "vectors": {
+              "type": "array",
+              "minItems": 2,
+              "maxItems": 64,
+              "uniqueItems": true,
+              "items": { "$ref": "#/$defs/conversion_vector" },
+              "allOf": [
+                {
+                  "contains": {
+                    "type": "object",
+                    "properties": { "expected_status": { "const": "MATCH" } },
+                    "required": ["expected_status"]
+                  },
+                  "minContains": 1
+                },
+                {
+                  "contains": {
+                    "type": "object",
+                    "properties": { "expected_status": { "const": "NO_MATCH" } },
+                    "required": ["expected_status"]
+                  },
+                  "minContains": 1
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

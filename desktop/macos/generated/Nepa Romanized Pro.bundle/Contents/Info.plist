@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.ampixa.nepa.romanized-pro</string>
+	<key>CFBundleName</key>
+	<string>Nepa Romanized Pro</string>
+	<key>CFBundlePackageType</key>
+	<string>BNDL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>0.1.0</string>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>KLInfo_Limbu (Romanized Sirijanga) - Nepa Pro</key>
+	<dict>
+		<key>TICapsLockLanguageSwitchCapable</key>
+		<false/>
+		<key>TISInputSourceID</key>
+		<string>com.ampixa.nepa.romanized-pro.limbu-sirijanga-romanized-pro</string>
+		<key>TISIntendedLanguage</key>
+		<string>lif</string>
+	</dict>
+	<key>KLInfo_Nepal Bhasa (Newari Romanized) - Nepa Pro</key>
+	<dict>
+		<key>TICapsLockLanguageSwitchCapable</key>
+		<false/>
+		<key>TISInputSourceID</key>
+		<string>com.ampixa.nepa.romanized-pro.nepal-bhasa-newa-romanized-pro</string>
+		<key>TISIntendedLanguage</key>
+		<string>new</string>
+	</dict>
+	<key>KLInfo_Nepali (Romanized) - Nepa Pro</key>
+	<dict>
+		<key>TICapsLockLanguageSwitchCapable</key>
+		<false/>
+		<key>TISInputSourceID</key>
+		<string>com.ampixa.nepa.romanized-pro.nepali-romanized-pro</string>
+		<key>TISIntendedLanguage</key>
+		<string>ne</string>
+	</dict>
+</dict>
+</plist>

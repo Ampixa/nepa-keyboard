@@ -1,0 +1,343 @@
+{
+  "source_format": "nepa-transliteration-map-source",
+  "source_format_version": 1,
+  "map_id": "npi-Latn-Deva-v0",
+  "language": "npi",
+  "source_script": "Latn",
+  "output_script": "Deva",
+  "note": "Roman to Devanagari for Nepali. Romanisation keys follow the incumbent Hamro Keyboard 5.4.4 table where that table states an unambiguous value, so users keep their muscle memory: both k and c produce KA, x produces the ksa conjunct, z produces JA, and gyn/ksh/yn are single digraphs. The final consonant deliberately takes the inherent vowel rather than a virama: this map has no dictionary behind it, so kaam must render काम directly instead of relying on a word list to repair काम्.",
+  "inherent_vowel": "a",
+  "final_consonant": "inherent",
+  "explicit_virama": "_",
+  "virama": [
+    "DEVANAGARI SIGN VIRAMA"
+  ],
+  "consonants": {
+    "D": [
+      "DEVANAGARI LETTER DDA"
+    ],
+    "N": [
+      "DEVANAGARI LETTER NNA"
+    ],
+    "S": [
+      "DEVANAGARI LETTER SSA"
+    ],
+    "T": [
+      "DEVANAGARI LETTER TTA"
+    ],
+    "b": [
+      "DEVANAGARI LETTER BA"
+    ],
+    "c": [
+      "DEVANAGARI LETTER KA"
+    ],
+    "d": [
+      "DEVANAGARI LETTER DA"
+    ],
+    "f": [
+      "DEVANAGARI LETTER PHA"
+    ],
+    "g": [
+      "DEVANAGARI LETTER GA"
+    ],
+    "h": [
+      "DEVANAGARI LETTER HA"
+    ],
+    "j": [
+      "DEVANAGARI LETTER JA"
+    ],
+    "k": [
+      "DEVANAGARI LETTER KA"
+    ],
+    "l": [
+      "DEVANAGARI LETTER LA"
+    ],
+    "m": [
+      "DEVANAGARI LETTER MA"
+    ],
+    "n": [
+      "DEVANAGARI LETTER NA"
+    ],
+    "p": [
+      "DEVANAGARI LETTER PA"
+    ],
+    "r": [
+      "DEVANAGARI LETTER RA"
+    ],
+    "s": [
+      "DEVANAGARI LETTER SA"
+    ],
+    "t": [
+      "DEVANAGARI LETTER TA"
+    ],
+    "v": [
+      "DEVANAGARI LETTER VA"
+    ],
+    "w": [
+      "DEVANAGARI LETTER VA"
+    ],
+    "x": [
+      "DEVANAGARI LETTER KA",
+      "DEVANAGARI SIGN VIRAMA",
+      "DEVANAGARI LETTER SA"
+    ],
+    "y": [
+      "DEVANAGARI LETTER YA"
+    ],
+    "z": [
+      "DEVANAGARI LETTER JA"
+    ],
+    "Dh": [
+      "DEVANAGARI LETTER DDHA"
+    ],
+    "Sh": [
+      "DEVANAGARI LETTER SSA"
+    ],
+    "Th": [
+      "DEVANAGARI LETTER TTHA"
+    ],
+    "bh": [
+      "DEVANAGARI LETTER BHA"
+    ],
+    "ch": [
+      "DEVANAGARI LETTER CA"
+    ],
+    "dh": [
+      "DEVANAGARI LETTER DHA"
+    ],
+    "gh": [
+      "DEVANAGARI LETTER GHA"
+    ],
+    "jh": [
+      "DEVANAGARI LETTER JHA"
+    ],
+    "kh": [
+      "DEVANAGARI LETTER KHA"
+    ],
+    "ng": [
+      "DEVANAGARI LETTER NGA"
+    ],
+    "ny": [
+      "DEVANAGARI LETTER NYA"
+    ],
+    "ph": [
+      "DEVANAGARI LETTER PHA"
+    ],
+    "sh": [
+      "DEVANAGARI LETTER SHA"
+    ],
+    "th": [
+      "DEVANAGARI LETTER THA"
+    ],
+    "yn": [
+      "DEVANAGARI LETTER NYA"
+    ],
+    "chh": [
+      "DEVANAGARI LETTER CHA"
+    ],
+    "gyn": [
+      "DEVANAGARI LETTER JA",
+      "DEVANAGARI SIGN VIRAMA",
+      "DEVANAGARI LETTER NYA"
+    ],
+    "ksh": [
+      "DEVANAGARI LETTER KA",
+      "DEVANAGARI SIGN VIRAMA",
+      "DEVANAGARI LETTER SSA"
+    ]
+  },
+  "independent_vowels": {
+    "a": [
+      "DEVANAGARI LETTER A"
+    ],
+    "aa": [
+      "DEVANAGARI LETTER AA"
+    ],
+    "A": [
+      "DEVANAGARI LETTER AA"
+    ],
+    "i": [
+      "DEVANAGARI LETTER I"
+    ],
+    "ii": [
+      "DEVANAGARI LETTER II"
+    ],
+    "ee": [
+      "DEVANAGARI LETTER II"
+    ],
+    "I": [
+      "DEVANAGARI LETTER II"
+    ],
+    "u": [
+      "DEVANAGARI LETTER U"
+    ],
+    "uu": [
+      "DEVANAGARI LETTER UU"
+    ],
+    "oo": [
+      "DEVANAGARI LETTER UU"
+    ],
+    "U": [
+      "DEVANAGARI LETTER UU"
+    ],
+    "ri": [
+      "DEVANAGARI LETTER VOCALIC R"
+    ],
+    "e": [
+      "DEVANAGARI LETTER E"
+    ],
+    "ai": [
+      "DEVANAGARI LETTER AI"
+    ],
+    "o": [
+      "DEVANAGARI LETTER O"
+    ],
+    "au": [
+      "DEVANAGARI LETTER AU"
+    ]
+  },
+  "vowel_signs": {
+    "a": [],
+    "aa": [
+      "DEVANAGARI VOWEL SIGN AA"
+    ],
+    "A": [
+      "DEVANAGARI VOWEL SIGN AA"
+    ],
+    "i": [
+      "DEVANAGARI VOWEL SIGN I"
+    ],
+    "ii": [
+      "DEVANAGARI VOWEL SIGN II"
+    ],
+    "ee": [
+      "DEVANAGARI VOWEL SIGN II"
+    ],
+    "I": [
+      "DEVANAGARI VOWEL SIGN II"
+    ],
+    "u": [
+      "DEVANAGARI VOWEL SIGN U"
+    ],
+    "uu": [
+      "DEVANAGARI VOWEL SIGN UU"
+    ],
+    "oo": [
+      "DEVANAGARI VOWEL SIGN UU"
+    ],
+    "U": [
+      "DEVANAGARI VOWEL SIGN UU"
+    ],
+    "ri": [
+      "DEVANAGARI VOWEL SIGN VOCALIC R"
+    ],
+    "e": [
+      "DEVANAGARI VOWEL SIGN E"
+    ],
+    "ai": [
+      "DEVANAGARI VOWEL SIGN AI"
+    ],
+    "o": [
+      "DEVANAGARI VOWEL SIGN O"
+    ],
+    "au": [
+      "DEVANAGARI VOWEL SIGN AU"
+    ]
+  },
+  "standalone": {
+    "M": [
+      "DEVANAGARI SIGN ANUSVARA"
+    ],
+    "H": [
+      "DEVANAGARI SIGN VISARGA"
+    ],
+    "N.": [
+      "DEVANAGARI SIGN CANDRABINDU"
+    ],
+    ".": [
+      "DEVANAGARI DANDA"
+    ],
+    "..": [
+      "DEVANAGARI DOUBLE DANDA"
+    ],
+    "0": [
+      "DEVANAGARI DIGIT ZERO"
+    ],
+    "1": [
+      "DEVANAGARI DIGIT ONE"
+    ],
+    "2": [
+      "DEVANAGARI DIGIT TWO"
+    ],
+    "3": [
+      "DEVANAGARI DIGIT THREE"
+    ],
+    "4": [
+      "DEVANAGARI DIGIT FOUR"
+    ],
+    "5": [
+      "DEVANAGARI DIGIT FIVE"
+    ],
+    "6": [
+      "DEVANAGARI DIGIT SIX"
+    ],
+    "7": [
+      "DEVANAGARI DIGIT SEVEN"
+    ],
+    "8": [
+      "DEVANAGARI DIGIT EIGHT"
+    ],
+    "9": [
+      "DEVANAGARI DIGIT NINE"
+    ],
+    "om": [
+      "DEVANAGARI OM"
+    ],
+    "aum": [
+      "DEVANAGARI OM"
+    ]
+  },
+  "words": {},
+  "vectors": [
+    {
+      "input": "nepaal",
+      "output": "नेपाल"
+    },
+    {
+      "input": "namaste",
+      "output": "नमस्ते"
+    },
+    {
+      "input": "kaam",
+      "output": "काम"
+    },
+    {
+      "input": "ma",
+      "output": "म"
+    },
+    {
+      "input": "k_",
+      "output": "क्"
+    },
+    {
+      "input": "gharmaa",
+      "output": "घर्मा"
+    },
+    {
+      "input": "raamro",
+      "output": "राम्रो"
+    },
+    {
+      "input": "chha",
+      "output": "छ"
+    },
+    {
+      "input": "himaal",
+      "output": "हिमाल"
+    },
+    {
+      "input": "5",
+      "output": "५"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+Bantawa internal layout provenance notice
+
+This internal layout adapts the repository's reviewed Nepali Basic phone
+layout, which incorporates the Nepali mappings from xkeyboard-config
+2.41 / Ubuntu package xkb-data 2.41-2ubuntu1.1. The complete upstream package
+copyright and license text is retained at:
+
+  layouts/internal/notices/xkb-data-2.41-2ubuntu1.1.copyright
+
+Upstream source:
+  https://gitlab.freedesktop.org/xkeyboard-config/xkeyboard-config/-/blob/xkeyboard-config-2.41/symbols/np
+
+Upstream license:
+  https://gitlab.freedesktop.org/xkeyboard-config/xkeyboard-config/-/blob/xkeyboard-config-2.41/COPYING
+
+Project modification: the Bantawa variant preserves the phone geometry and
+replaces two unused independent-vowel positions on Shift with U+0907 DEVANAGARI
+LETTER I and U+090F DEVANAGARI LETTER E. Ampixa claims no exclusive rights in
+the upstream mappings.

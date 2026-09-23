@@ -1,0 +1,1 @@
+Initial internal test of Nepa Keyboard: 16 offline input profiles, direct and phonetic typing, script conversion, suggestions, language switching, themes, and emoji.

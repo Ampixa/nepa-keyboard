@@ -1,0 +1,147 @@
+{
+  "adapter": {
+    "input_argument": "sil_apk_jsonl",
+    "module": "tools.build_khaling_internal_source",
+    "name": "build_khaling_internal_source",
+    "path": "tools/build_khaling_internal_source.py",
+    "sha256": "6ae7fcd2eabdc798593af8d9e14d53d85e03682ca1d8d26dee46761cde926d6e",
+    "version": 1
+  },
+  "evidence": {
+    "remaining_production_gates": [
+      "accessibility_review",
+      "frequency_ranking",
+      "glyph_rendering",
+      "invalid_joiner_row_review",
+      "native_speaker_review",
+      "physical_device_runtime",
+      "quality_evaluation",
+      "source_anomaly_review",
+      "typing_flow_review"
+    ],
+    "report_id": "khaling-internal-pack-v0",
+    "report_version": 1
+  },
+  "layout": {
+    "base_path": "layouts/internal/src/deva-nepal-basic-v1.json",
+    "base_sha256": "5cefdc0e916eaa9ee64acafddcadad4c9d32c8adbaff69cb2d8f181655280e4f",
+    "display_name": "Devanagari Khaling (Nepal phone)",
+    "layout_id": "deva-nepal-khaling-v1",
+    "license_notice_path": "layouts/internal/notices/xkb-data-2.41-2ubuntu1.1-deva-khaling.copyright",
+    "license_notice_sha256": "739ff5404b852466ed201799e49bb5dc0f4eafe0876bf9aa74499f306b7b1786",
+    "operations": [
+      {
+        "kind": "insert_row_before_actions",
+        "layer_id": "base",
+        "row": [
+          "इ",
+          "ई",
+          "ए",
+          {
+            "content_description": "Devanagari sign nukta",
+            "kind": "text",
+            "label": "◌़",
+            "text": "़"
+          },
+          {
+            "content_description": "Khaling conjunct zero width joiner",
+            "kind": "deva_conjunct_joiner",
+            "label": "ZWJ",
+            "text": "‍"
+          },
+          {
+            "content_description": "Khaling conjunct zero width non-joiner",
+            "kind": "deva_conjunct_joiner",
+            "label": "ZWNJ",
+            "text": "‌"
+          }
+        ]
+      },
+      {
+        "kind": "insert_row_before_actions",
+        "layer_id": "shift",
+        "row": [
+          "इ",
+          "ई",
+          "ए",
+          {
+            "content_description": "Devanagari sign nukta",
+            "kind": "text",
+            "label": "◌़",
+            "text": "़"
+          },
+          {
+            "content_description": "Khaling conjunct zero width joiner",
+            "kind": "deva_conjunct_joiner",
+            "label": "ZWJ",
+            "text": "‍"
+          },
+          {
+            "content_description": "Khaling conjunct zero width non-joiner",
+            "kind": "deva_conjunct_joiner",
+            "label": "ZWNJ",
+            "text": "‌"
+          }
+        ]
+      },
+      {
+        "key": {
+          "content_description": "Hyphen within Khaling word",
+          "kind": "intra_word_punctuation",
+          "label": "-",
+          "text": "-"
+        },
+        "key_index": 5,
+        "kind": "replace_key",
+        "layer_id": "symbols",
+        "row_index": 1
+      }
+    ],
+    "provenance": [
+      {
+        "kind": "adapted",
+        "note": "Preserves the reviewed internal Nepali basic phone rows, actions, symbols, numeric fallback, and profile-bound labels.",
+        "revision": "1",
+        "sha256": "5cefdc0e916eaa9ee64acafddcadad4c9d32c8adbaff69cb2d8f181655280e4f",
+        "source": "layouts/internal/src/deva-nepal-basic-v1.json"
+      },
+      {
+        "kind": "project_authored",
+        "note": "Adds exactly the six missing accepted-surface scalars and makes the one attested hyphenated surface composable under the conjunct-only policy.",
+        "revision": "measurement-v1",
+        "sha256": "fee2071cd30e01ceab3142518990e8aec90c08fbf30dcf432007db543f198b86",
+        "source": "reports/evidence/khaling-measurement-v1/layout-matrix/audits/deva-nepal-basic-v1.json"
+      }
+    ],
+    "revision": 1,
+    "source_sha256": "9d605bbc80d2462af3a9921cbbc2174b5f2fbff1e21e37e268264667f7f79d13"
+  },
+  "pack": {
+    "artifact_license": "LicenseRef-Internal",
+    "file_name": "klr-Deva-NP.nkp",
+    "language": "klr",
+    "output_script": "Deva",
+    "pack_id": "klr-Deva-NP"
+  },
+  "paths": {
+    "evidence_output": "reports/khaling-internal-pack-v0.json",
+    "layout_source": "layouts/internal/src/deva-nepal-khaling-v1.json",
+    "queries": "catalog/khaling-internal-prefixes-v0.json",
+    "resource_catalog": "catalog/resources.json",
+    "review": "catalog/internal-profile-review.json"
+  },
+  "profile": {
+    "default_enabled": false,
+    "input_method_id": "klr-deva-direct",
+    "target_id": "klr"
+  },
+  "source": {
+    "data_version": "1.0.0",
+    "expected_data_rows": 4513,
+    "file_name": "nepali-khaling.sil-apk.dict.jsonl",
+    "max_suggestions": 8,
+    "resource_id": "klr-apk",
+    "sha256": "442415559f1ec6191b2624e27439cc22438aaf24d19b4124571c826774c2adb4"
+  },
+  "spec_version": 2
+}

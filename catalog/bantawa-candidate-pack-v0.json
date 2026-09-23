@@ -1,0 +1,52 @@
+{
+  "adapter_sha256": "850e94f852175cbd9ae3658bae23c6e4b791f7e08b7eae0d99ddb7fa19225d65",
+  "auditor_sha256": "2478334daabd5ce0113fa7b736c917f94b5ac5042bf87954ae34328d0c1fdc14",
+  "claim_scope": "candidate_only_generated_devanagari",
+  "compiler_sha256": "098e57e96603dcbb12145e6184c099155e68fe400d0aab57b16b77cd5f657f75",
+  "data_version": "1.0.0",
+  "expected_counts": {
+    "accountable_lossy_roundtrip_rows": 347,
+    "candidate_surfaces": 1714,
+    "collision_surfaces_across_distinct_headwords": 78,
+    "distinct_input_headwords": 1792,
+    "duplicate_surfaces_merged": 326,
+    "exact_roundtrip_rows": 1693,
+    "non_nfc_input_headword_rows": 10,
+    "source_forms": 2040,
+    "sources_used": 2
+  },
+  "format_version": 1,
+  "inspection_vectors": [
+    {
+      "expected_first_surface": "अ",
+      "prefix": "अ"
+    },
+    {
+      "expected_first_surface": "कएप्पा",
+      "prefix": "क"
+    },
+    {
+      "expected_first_surface": "अधिवङ्",
+      "prefix": "अधिव"
+    },
+    {
+      "expected_first_surface": "खुइँगइरि",
+      "prefix": "खुइँ"
+    },
+    {
+      "expected_first_surface": "रँको",
+      "prefix": "र"
+    }
+  ],
+  "layout_audit_sha256": "384322a958fa2f77302f993dec1ba3f93a3aedd53bbeaea075d0b2dc0611adb2",
+  "layout_id": "deva-nepal-dumi-v1",
+  "layout_lock_sha256": "500857bac9ba6ebdba85f1d29b66b37d96c4f39a80570179e16a2b4a4dbcd56d",
+  "layout_source_sha256": "5688c744ee8b88cb3a24c76379590b99195a90a0e309f625ea578b1ced1e60ac",
+  "max_suggestions": 8,
+  "raw_sha256": "a69917c00e7a8587f4a38458faf89c95fc9e5ac9cbe6cfb612383438bdf5ae12",
+  "resource_id": "bap-dictionary",
+  "runtime_sha256": "43a811bde1d45a4004afadcb88cdb1e38cc5589821fae233224edeedd1563146",
+  "target_id": "bap",
+  "transliterator_resource_id": "bap-romanizer",
+  "transliterator_sha256": "aa599191d86975b0dcae330592df48c609c8a37e400c850d4494945bc7d9b9d2"
+}

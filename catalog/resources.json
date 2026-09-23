@@ -1,0 +1,3158 @@
+{
+  "catalog_version": 1,
+  "audited_at": "2026-07-15",
+  "notes": [
+    "This is a seed inventory of verified high-value local resources, not a claim of complete coverage for Nepal's 124 census languages.",
+    "Record counts are source rows or source-defined units; header exclusions and overlaps are noted. Counts from overlapping sources must not be summed without deduplication.",
+    "Licensing and redistribution do not gate internal product readiness; public/export-only metadata is isolated from product gaps.",
+    "Bible and induced lexicons are candidate/frequency evidence, not gold spelling dictionaries.",
+    "AppleDouble files prefixed with ._ are excluded."
+  ],
+  "packs": [
+    {
+      "id": "eng",
+      "name": "English",
+      "iso_639_3": "eng",
+      "scope": "language",
+      "scripts": [
+        {
+          "iso_15924": "Latn",
+          "name": "Latin",
+          "role": "primary"
+        }
+      ],
+      "input_methods": [
+        {
+          "id": "eng-latn-direct",
+          "type": "direct",
+          "source_script": "Latn",
+          "output_script": "Latn",
+          "readiness": "beta",
+          "engine_kind": "layout",
+          "evidence_resource_ids": [
+            "eng-esdb-us",
+            "eng-frequencywords-2018"
+          ],
+          "notes": "Release pack preserves ESDB spelling and casing; FrequencyWords ranks only the intersection."
+        }
+      ],
+      "prediction_readiness": "beta",
+      "correction_readiness": "research",
+      "resources": [
+        {
+          "id": "eng-esdb-us",
+          "kind": "spelling",
+          "path": "/home/cdjk/data/nepa-keyboard/sources/eng-esdb-1e5b7d3",
+          "format": "UTF-8 cumulative word lists (US sizes 35/50/60, variant level 1, deaccented)",
+          "structured": true,
+          "quality": "verified",
+          "uses": [
+            "candidate_vocabulary",
+            "spellcheck"
+          ],
+          "records": 109140,
+          "record_unit": "entries",
+          "bytes": 1024440,
+          "sha256": "bb95ce3fc0194d30e5364ad58f5f322f122d876f343eb7b0df5ae34d5c796792",
+          "source_url": "https://github.com/en-wl/wordlist/tree/1e5b7d3a72f47a71da5d28686c1dd4b397178485",
+          "project_url": "https://github.com/en-wl/wordlist",
+          "license_id": "ESDB-Word-List-Notice",
+          "license_url": "https://github.com/en-wl/wordlist/blob/1e5b7d3a72f47a71da5d28686c1dd4b397178485/Copyright",
+          "upstream_commit": "1e5b7d3a72f47a71da5d28686c1dd4b397178485",
+          "canonical": true,
+          "license": "verified_open",
+          "redistribution": "allowed",
+          "evidence_type": "attested",
+          "domains": [
+            "general",
+            "US English"
+          ],
+          "notes": "The SHA-256 is the adapter's framed composite over all three raw tier files; individual raw hashes and generation settings are recorded in adapter-report.json."
+        },
+        {
+          "id": "eng-frequencywords-2018",
+          "kind": "frequency",
+          "path": "/home/cdjk/data/nepa-keyboard/upstream/frequencywords/en_50k.txt",
+          "format": "UTF-8 token and integer count",
+          "structured": true,
+          "quality": "usable_with_filters",
+          "uses": [
+            "frequency_ranking"
+          ],
+          "records": 50000,
+          "record_unit": "rows",
+          "bytes": 622749,
+          "sha256": "5351ff405b1126ef555791dd4d9798a48e3e9a501a9fc481a9da957752cfb458",
+          "source_url": "https://github.com/hermitdave/FrequencyWords/blob/525f9b560de45753a5ea01069454e72e9aa541c6/content/2018/en/en_50k.txt",
+          "project_url": "https://github.com/hermitdave/FrequencyWords",
+          "license_id": "CC-BY-SA-4.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/4.0/legalcode",
+          "upstream_commit": "525f9b560de45753a5ea01069454e72e9aa541c6",
+          "license": "verified_open",
+          "redistribution": "allowed",
+          "evidence_type": "attested",
+          "domains": [
+            "subtitles",
+            "conversational"
+          ],
+          "notes": "Ranking-only evidence derived from OpenSubtitles2018; 37,944 ESDB forms match. Unmatched frequency keys cannot enter the candidate vocabulary. The resulting pack is CC-BY-SA-4.0."
+        }
+      ],
+      "gaps": [
+        "Complete 300-case typing evaluation, content filtering, and physical-device latency tests.",
+        "Implement and evaluate correction beyond prefix completion."
+      ]
+    },
+    {
+      "id": "npi",
+      "name": "Nepali",
+      "iso_639_3": "npi",
+      "scope": "language",
+      "scripts": [
+        {
+          "iso_15924": "Deva",
+          "name": "Devanagari",
+          "role": "primary"
+        }
+      ],
+      "input_methods": [
+        {
+          "id": "npi-deva-direct",
+          "type": "direct",
+          "source_script": "Deva",
+          "output_script": "Deva",
+          "readiness": "beta",
+          "engine_kind": "layout"
+        },
+        {
+          "id": "npi-latn-deva",
+          "type": "roman_phonetic",
+          "source_script": "Latn",
+          "output_script": "Deva",
+          "readiness": "research",
+          "orthography_profile": "language_specific",
+          "scheme": "casual_ascii_plus_reviewed_aliases",
+          "engine_kind": "alias_decoder",
+          "fallback_policy": "pack_specific_rules_only",
+          "evidence_resource_ids": [
+            "npi-google-lexicon",
+            "npi-aksharantar",
+            "npi-indicxlit-v1"
+          ],
+          "notes": "Pinned training aliases, an offline native-to-Roman beam generator, and held-out N-best evaluation now exist; the profile remains blocked until the quality threshold and Android runtime gates pass."
+        }
+      ],
+      "prediction_readiness": "beta",
+      "correction_readiness": "research",
+      "resources": [
+        {
+          "id": "npi-google-lexicon",
+          "kind": "lexicon",
+          "path": "/home/cdjk/data/nepa-keyboard/upstream/google-language-resources/ne/data/lexicon.tsv",
+          "format": "TSV pronunciation lexicon",
+          "structured": true,
+          "quality": "verified",
+          "uses": [
+            "candidate_vocabulary",
+            "spellcheck"
+          ],
+          "records": 54178,
+          "record_unit": "rows",
+          "bytes": 2256696,
+          "sha256": "a9f616db4ecc35ecde4e519e1438c5501d8574b3623d43370fb0089a31ea8a83",
+          "source_url": "https://raw.githubusercontent.com/google/language-resources/a90601024f07ab7e96c911243324e0adeb16da96/ne/data/lexicon.tsv",
+          "project_url": "https://github.com/google/language-resources",
+          "license_id": "CC-BY-4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/legalcode",
+          "upstream_commit": "a90601024f07ab7e96c911243324e0adeb16da96",
+          "canonical": true,
+          "license": "verified_open",
+          "redistribution": "allowed",
+          "evidence_type": "attested",
+          "domains": [
+            "general",
+            "dictionary"
+          ],
+          "notes": "Release adapter accepts 48,570 unique Devanagari forms after NFC, script, leading-letter, and context-valid joiner filtering."
+        },
+        {
+          "id": "npi-openslr54",
+          "kind": "corpus",
+          "path": "/home/cdjk/data/nepa-keyboard/upstream/openslr54/utt_spk_text.tsv",
+          "format": "TSV utterance transcripts",
+          "structured": true,
+          "quality": "usable_with_filters",
+          "uses": [
+            "candidate_vocabulary",
+            "frequency_ranking",
+            "evaluation"
+          ],
+          "records": 157905,
+          "record_unit": "rows",
+          "bytes": 10883770,
+          "sha256": "2e4379f4799a280ef71150bce91dc629cc87e89ae344db1ec1575b00c76740fa",
+          "source_url": "https://www.openslr.org/resources/54/utt_spk_text.tsv",
+          "project_url": "https://www.openslr.org/54/",
+          "license_id": "CC-BY-SA-4.0",
+          "license_url": "https://www.openslr.org/resources/54/LICENSE",
+          "license": "verified_open",
+          "redistribution": "allowed",
+          "evidence_type": "attested",
+          "domains": [
+            "read speech",
+            "general"
+          ],
+          "notes": "Release adapter deduplicates 71,843 repeated prompt rows before log-scaled ranking, retains only context-valid conjunct joiners, and rejects malformed runs whole. The resulting pack is CC-BY-SA-4.0."
+        },
+        {
+          "id": "npi-aksharantar",
+          "kind": "transliteration",
+          "path": "/home/cdjk/data/nepa-keyboard/upstream/aksharantar/e418c1fc928d9f5393af33268472cf20c1891be8/nep.zip",
+          "format": "ZIP of JSONL train, validation, and test transliteration pairs",
+          "structured": true,
+          "quality": "usable_with_filters",
+          "uses": [
+            "roman_aliases",
+            "evaluation"
+          ],
+          "records": 2404319,
+          "record_unit": "rows",
+          "bytes": 70147764,
+          "sha256": "8bdcc5957d701ea36b63c00c713b43bc30902774b70736737d480e77929de92c",
+          "source_url": "https://huggingface.co/datasets/ai4bharat/Aksharantar/resolve/e418c1fc928d9f5393af33268472cf20c1891be8/nep.zip",
+          "project_url": "https://github.com/AI4Bharat/IndicXlit",
+          "license_id": "mixed-CC-BY-4.0-CC0-1.0-with-third-party-caveat",
+          "license_url": "https://huggingface.co/datasets/ai4bharat/Aksharantar/blob/e418c1fc928d9f5393af33268472cf20c1891be8/README.md",
+          "upstream_commit": "e418c1fc928d9f5393af33268472cf20c1891be8",
+          "license": "mixed",
+          "redistribution": "permission_required",
+          "evidence_type": "mixed",
+          "domains": [
+            "transliteration",
+            "native words",
+            "named entities"
+          ],
+          "notes": "Exact members are 2,397,414 train, 2,804 validation, and 4,101 test rows. The release adapter uses only 2,766 joined AK-Freq and 663 joined Wikidata training rows, excludes 47,466 joined IndicCorp rows because the card disclaims ownership of underlying extracted text, and never consumes validation/test rows as aliases. The whole archive therefore remains fail-closed even though the reviewed subset is notice-complete."
+        },
+        {
+          "id": "npi-indicxlit-v1",
+          "kind": "transliteration",
+          "path": "/home/cdjk/data/nepa-keyboard/upstream/indicxlit-models/v1.0/indicxlit-indic-en-v1.0.zip",
+          "format": "Fairseq native-to-Roman transformer checkpoint and dictionaries",
+          "structured": true,
+          "quality": "verified",
+          "uses": [
+            "roman_aliases"
+          ],
+          "records": 1,
+          "record_unit": "model",
+          "bytes": 124533637,
+          "sha256": "420d23a13cfa953edfb47644bc805de06e97134f25e6d182303a29f55b5a3322",
+          "source_url": "https://github.com/AI4Bharat/IndicXlit/releases/download/v1.0/indicxlit-indic-en-v1.0.zip",
+          "project_url": "https://github.com/AI4Bharat/IndicXlit",
+          "license_id": "MIT",
+          "license_url": "https://github.com/AI4Bharat/IndicXlit/blob/042cda8cf6f07450adbd0d00ff74cd40a759154a/LICENSE",
+          "upstream_commit": "042cda8cf6f07450adbd0d00ff74cd40a759154a",
+          "license": "verified_open",
+          "redistribution": "allowed",
+          "evidence_type": "generated",
+          "domains": [
+            "transliteration"
+          ],
+          "notes": "Used only on the remote build host to generate beam-4 lowercase ASCII aliases over the pinned direct-form vocabulary. The model is not bundled in Android and evaluation rows are not model inputs. Checkpoint SHA-256 is 45ffecef88d990ae12f915939b91267a3fc8f69f26331baa59f7932005976f28."
+        },
+        {
+          "id": "npi-wikipedia-20260701",
+          "kind": "corpus",
+          "path": "/home/cdjk/data/nepa-keyboard/upstream/wikimedia/newiki/20260701/newiki-20260701-pages-articles.xml.bz2",
+          "format": "MediaWiki pages/articles XML compressed with bzip2",
+          "structured": true,
+          "quality": "usable_with_filters",
+          "uses": [
+            "candidate_vocabulary",
+            "frequency_ranking"
+          ],
+          "records": 42263,
+          "record_unit": "articles",
+          "bytes": 54288881,
+          "sha256": "d3a5f01e5cbfd63c5a31b47531cbb36002f7c2630ac051e940997d38e0eb7c1d",
+          "source_url": "https://dumps.wikimedia.org/newiki/20260701/newiki-20260701-pages-articles.xml.bz2",
+          "project_url": "https://ne.wikipedia.org/",
+          "license_id": "CC-BY-SA-4.0",
+          "license_url": "https://dumps.wikimedia.org/legal.html",
+          "license": "verified_open",
+          "redistribution": "unknown",
+          "evidence_type": "attested",
+          "domains": [
+            "Wikipedia",
+            "general prose",
+            "encyclopedic"
+          ],
+          "notes": "Generator v2 pins the dump license notice, permanent Wikimedia Terms revision 554823, and CC BY-SA 4.0 legal code. It produced 439,308 unique Devanagari tokens from 42,263 articles and 8,949,123 token occurrences plus a complete per-article attribution index; two builds were byte-identical at vocabulary SHA-256 829c71836407912509883917a43c88d301f9be08c4400442b4a61d6eaf742214 and attribution SHA-256 fd5bd0744f6e2fcbc3e3d2465e6346394fe66af30c79bd625fc791707d302b7e. The keyboard notice/share-alike mechanism has not passed release review, so generated rows retain WIKIMEDIA_ATTRIBUTION_REVIEW_REQUIRED and cannot enter a shipping pack."
+        },
+        {
+          "id": "npi-word-frequency",
+          "kind": "frequency",
+          "path": "/Users/cdjk/github/llm/nepali_text_frontend/data/frontend/word_frequency.tsv",
+          "format": "TSV",
+          "structured": true,
+          "quality": "verified",
+          "uses": [
+            "candidate_vocabulary",
+            "frequency_ranking",
+            "language_model"
+          ],
+          "records": 648573,
+          "record_unit": "entries",
+          "bytes": 30357383,
+          "canonical": true,
+          "license": "unknown",
+          "redistribution": "unknown",
+          "evidence_type": "attested",
+          "domains": [
+            "mixed web/general"
+          ]
+        },
+        {
+          "id": "npi-hunspell",
+          "kind": "spelling",
+          "path": "/home/cdjk/data/nepa-keyboard/upstream/mpp-nepali-hunspell/2.1/ne_NP_dict.zip",
+          "format": "ZIP containing Hunspell DIC/AFF and upstream README",
+          "structured": true,
+          "quality": "usable_with_filters",
+          "uses": [
+            "candidate_vocabulary",
+            "spellcheck",
+            "morphology"
+          ],
+          "records": 36827,
+          "record_unit": "entries",
+          "bytes": 173568,
+          "sha256": "edabcdd3b45d25077b717d204c68315ddf957433aa31b7aa7a14b251a3216036",
+          "source_url": "http://nepalinux.org/downloads/ne_NP_dict.zip",
+          "project_url": "https://ltk.org.np/",
+          "license_id": "LGPL-2.1-only",
+          "license_url": "https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html",
+          "license": "verified_open",
+          "redistribution": "allowed",
+          "evidence_type": "mixed",
+          "notes": "The archive's upstream README identifies Nepali SpellChecking Dictionary 2.1 (2008-04-25), 36,827 declared entries, MPP contributors, and LGPL 2.1. Parsing yields 36,150 unique base surfaces; their union with the current direct pack adds 22,347 candidates but only 59 of 4,101 held-out targets. Shipping requires attribution, license text, modification notice, and corresponding-source compliance; this source is not used by the current release pack. Affix expansion is morphology evidence, not frequency evidence."
+        },
+        {
+          "id": "npi-roman-engine",
+          "kind": "transliteration",
+          "path": "/Users/cdjk/github/llm/g2p/nepali_frontend/transliterate.py",
+          "format": "Python",
+          "structured": true,
+          "quality": "verified",
+          "uses": [
+            "roman_aliases",
+            "script_mapping"
+          ],
+          "canonical": true,
+          "license": "unknown",
+          "redistribution": "unknown",
+          "evidence_type": "generated",
+          "notes": "Six local tests pass; 518,373 folded lookup keys were observed in the audit."
+        }
+      ],
+      "gaps": [
+        "Complete native-speaker review and 300 direct-input evaluation cases.",
+        "Add complementary lexicons and conversational corpora: even the complete pinned Wikipedia union covers only 70.35% of the held-out Aksharantar targets.",
+        "Add reviewed casual Roman aliases and interactive prefix N-best decoding.",
+        "Implement and evaluate correction beyond prefix completion."
+      ],
+      "public_export_gaps": [
+        "Complete Wikimedia attribution and share-alike review before a public/export release.",
+        "Qualify complementary lexicons for any public/export artifact."
+      ]
+    },
+    {
+      "id": "lif",
+      "name": "Limbu",
+      "iso_639_3": "lif",
+      "scope": "language",
+      "scripts": [
+        {
+          "iso_15924": "Limb",
+          "name": "Limbu (Sirijanga)",
+          "role": "primary"
+        },
+        {
+          "iso_15924": "Deva",
+          "name": "Devanagari",
+          "role": "widely_used"
+        }
+      ],
+      "input_methods": [
+        {
+          "id": "lif-limb-direct",
+          "type": "direct",
+          "source_script": "Limb",
+          "output_script": "Limb",
+          "readiness": "beta",
+          "engine_kind": "layout"
+        },
+        {
+          "id": "lif-deva-direct",
+          "type": "direct",
+          "source_script": "Deva",
+          "output_script": "Deva",
+          "readiness": "beta",
+          "engine_kind": "layout"
+        },
+        {
+          "id": "lif-latn-limb",
+          "type": "roman_phonetic",
+          "source_script": "Latn",
+          "output_script": "Limb",
+          "readiness": "research",
+          "orthography_profile": "language_specific",
+          "scheme": "casual_ascii_plus_reviewed_aliases",
+          "engine_kind": "alias_decoder",
+          "fallback_policy": "pack_specific_rules_only",
+          "evidence_resource_ids": [
+            "lif-pangloss",
+            "lif-limdic"
+          ],
+          "notes": "Pangloss is scholarly Roman evidence; casual community conventions are not yet encoded."
+        },
+        {
+          "id": "lif-limb-deva",
+          "type": "script_conversion",
+          "source_script": "Limb",
+          "output_script": "Deva",
+          "readiness": "beta",
+          "orthography_profile": "explicit_versioned_profile",
+          "engine_kind": "converter",
+          "evidence_resource_ids": [
+            "lif-script-converter",
+            "lif-limdic"
+          ],
+          "notes": "Observed dictionary-pair exact match: 85.9%."
+        }
+      ],
+      "prediction_readiness": "beta",
+      "correction_readiness": "beta",
+      "resources": [
+        {
+          "id": "lif-limdic",
+          "kind": "lexicon",
+          "path": "/Users/cdjk/github/llm/ltk/limbu/data/limdic_dictionary.tsv",
+          "format": "TSV",
+          "structured": true,
+          "quality": "usable_with_filters",
+          "uses": [
+            "candidate_vocabulary",
+            "spellcheck",
+            "script_mapping",
+            "roman_aliases"
+          ],
+          "records": 8797,
+          "record_unit": "entries",
+          "bytes": 1986076,
+          "sha256": "fb6d4922943f08473784b7d47ced8f427c34df9f936db24adf9d456442cd9a1e",
+          "canonical": true,
+          "license": "unknown",
+          "redistribution": "unknown",
+          "evidence_type": "attested",
+          "notes": "Header excluded. Contains Sirijanga and Devanagari fields."
+        },
+        {
+          "id": "lif-pangloss",
+          "kind": "lexicon",
+          "path": "/Users/cdjk/github/llm/ltk/limbu/data/pangloss_dictionary.tsv",
+          "format": "TSV",
+          "structured": true,
+          "quality": "usable_with_filters",
+          "uses": [
+            "candidate_vocabulary",
+            "roman_aliases",
+            "morphology"
+          ],
+          "records": 2540,
+          "record_unit": "entries",
+          "bytes": 113883,
+          "sha256": "9e002441e4492b158a882757de71b29b7fffdefbc7ca6498e5420f4cc77ddbed",
+          "license": "unknown",
+          "redistribution": "unknown",
+          "evidence_type": "attested",
+          "notes": "Header excluded; overlap with Limdic must be resolved."
+        },
+        {
+          "id": "lif-parallel-combined",
+          "kind": "parallel_corpus",
+          "path": "/Users/cdjk/github/llm/nepal-speech-toolkit/languages/limbu/limbu-speech-toolkit/data/dictionary/parallel_corpus_combined.tsv",
+          "format": "TSV",
+          "structured": true,
+          "quality": "usable_with_filters",
+          "uses": [
+            "frequency_ranking",
+            "language_model",
+            "evaluation"
+          ],
+          "records": 50178,
+          "record_unit": "rows",
+          "bytes": 18802201,
+          "license": "mixed",
+          "redistribution": "unknown",
+          "evidence_type": "mixed",
+          "domains": [
+            "religious",
+            "textbook",
+            "dictionary",
+            "mixed"
+          ]
+        },
+        {
+          "id": "lif-script-converter",
+          "kind": "transliteration",
+          "path": "/Users/cdjk/github/llm/limbu-speech-toolkit/scripts/sirijunga_to_devanagari.py",
+          "format": "Python",
+          "structured": true,
+          "quality": "usable_with_filters",
+          "uses": [
+            "script_mapping",
+            "evaluation"
+          ],
+          "license": "unknown",
+          "redistribution": "unknown",
+          "evidence_type": "generated"
+        }
+      ],
+      "gaps": [
+        "Build casual Roman-to-Sirijanga N-best aliases.",
+        "Expand general/conversational frequency evidence."
+      ],
+      "public_export_gaps": [
+        "Review Limdic terms before public/export use."
+      ]
+    },
+    {
+      "id": "new",
+      "name": "Nepal Bhasa",
+      "iso_639_3": "new",
+      "scope": "language",
+      "scripts": [
+        {
+          "iso_15924": "Deva",
+          "name": "Devanagari",
+          "role": "widely_used"
+        },
+        {
+          "iso_15924": "Newa",
+          "name": "Newa/Prachalit Nepal Lipi",
+          "role": "traditional"
+        }
+      ],
+      "input_methods": [
+        {
+          "id": "new-deva-direct",
+          "type": "direct",
+          "source_script": "Deva",
+          "output_script": "Deva",
+          "readiness": "beta",
+          "engine_kind": "layout"
+        },
+        {
+          "id": "new-newa-direct",
+          "type": "direct",
+          "source_script": "Newa",
+          "output_script": "Newa",
+          "readiness": "beta",
+          "engine_kind": "layout",
+          "evidence_resource_ids": [
+            "new-prachalit-online-corpus"
+          ],
+          "notes": "Internal beta uses a small attested born-digital Prachalit corpus; native ergonomic and accessibility review remains pending."
+        },
+        {
+          "id": "new-latn-deva",
+          "type": "roman_phonetic",
+          "source_script": "Latn",
+          "output_script": "Deva",
+          "readiness": "beta",
+          "orthography_profile": "language_specific",
+          "scheme": "source_ascii_plus_deterministic_academic_fold_v1",
+          "engine_kind": "alias_decoder",
+          "fallback_policy": "pack_specific_rules_only",
+          "evidence_resource_ids": [
+            "new-apk-english"
+          ],
+          "notes": "Internal beta covers 1,974 of 5,417 Devanagari candidates with 1,828 measured ASCII keys. Casual spelling expansion and native review remain pending."
+        },
+    {
+      "id": "new-deva-newa",
+      "type": "script_conversion",
+      "source_script": "Deva",
+      "output_script": "Newa",
+      "readiness": "beta",
+      "orthography_profile": "explicit_versioned_profile",
+      "engine_kind": "converter",
+      "evidence_resource_ids": [
+        "new-deva-newa-frozen-map-v1"
+      ],
+      "notes": "Internal mechanical-conversion beta uses a frozen 165-rule map and fails closed on unsupported input. It covers 5,390 of 5,417 measured Devanagari candidates; generated output is never labeled attested Newa text."
+        }
+      ],
+      "prediction_readiness": "beta",
+      "correction_readiness": "beta",
+      "resources": [
+        {
+          "id": "new-nepali-trilingual",
+          "kind": "lexicon",
+          "path": "/Users/cdjk/github/llm/nllb-better/data/lexicons_pdf/new_nepali_trilingual.tsv",
+          "format": "TSV",
+          "structured": true,
+          "quality": "needs_audit",
+          "uses": [
+            "candidate_vocabulary",
+            "spellcheck"
+          ],
+          "records": 9708,
+          "record_unit": "entries",
+          "bytes": 543567,
+          "sha256": "4167c21626674fd1e71bd814c6b2bbb33d2d35ab0f5d5bb071b7b43e071d7929",
+          "license": "restricted",
+          "redistribution": "prohibited",
+          "evidence_type": "attested",
+          "notes": "OCR-derived, Nepal Academy copyright, private research only."
+        },
+        {
+          "id": "new-apk-english",
+          "kind": "lexicon",
+          "path": "/Users/cdjk/github/llm/nllb-better/data/lexicons_apk/new_apk_eng_lexicon.tsv",
+          "format": "TSV",
+          "structured": true,
+          "quality": "needs_audit",
+          "uses": [
+            "candidate_vocabulary",
+            "roman_aliases"
+          ],
+          "records": 5727,
+          "record_unit": "entries",
+          "bytes": 404596,
+          "sha256": "470be5aaf526d2dca973044fa5ca9a69b4259854958456145661bd58d4889b41",
+          "license": "restricted",
+          "redistribution": "prohibited",
+          "evidence_type": "attested",
+          "notes": "Proprietary app data; semicolon alternatives, multiword rows, and dirty characters require normalization."
+        },
+        {
+          "id": "new-wikipedia-plain",
+          "kind": "corpus",
+          "path": "/Volumes/TRANSCEND/matribhasa/new_text/newwiki_plain.txt",
+          "format": "plain text",
+          "structured": true,
+          "quality": "verified",
+          "uses": [
+            "frequency_ranking",
+            "language_model"
+          ],
+          "records": 74924,
+          "record_unit": "articles",
+          "bytes": 194147625,
+          "canonical": true,
+          "license": "verified_open",
+          "redistribution": "allowed",
+          "evidence_type": "attested",
+          "domains": [
+            "Wikipedia"
+          ],
+          "notes": "Devanagari Nepal Bhasa; provenance reports 74,924 articles."
+        },
+        {
+          "id": "new-prachalit-online-corpus",
+          "kind": "corpus",
+          "path": "/Users/cdjk/github/llm/ocr-tech/data/external-language-resources/native-script-corpora-2026-07-06/newa/nepal_lipi_online_corpus.txt",
+          "format": "plain text",
+          "structured": true,
+          "quality": "verified",
+          "uses": [
+            "candidate_vocabulary",
+            "frequency_ranking",
+            "spellcheck",
+            "evaluation",
+            "layout_validation"
+          ],
+          "records": 285,
+          "record_unit": "lines",
+          "bytes": 154497,
+          "sha256": "6ff04654fb048b56b021cda8719b3c8bc5c3b5d7baa59621a7bef2019930fcc2",
+          "source_url": "https://www.nepal-lipi.com/",
+          "license": "restricted",
+          "redistribution": "prohibited",
+          "evidence_type": "attested",
+          "domains": [
+            "Nepal Lipi Online",
+            "community publishing",
+            "news",
+            "poetry"
+          ],
+          "notes": "Born-digital, independently authored Newa/Prachalit text: 285 deduplicated lines from 45 contributing pages, with 36,215 Newa-block characters. Internal use only."
+        },
+        {
+          "id": "new-prachalit-htr",
+          "kind": "ocr_ground_truth",
+          "path": "/Users/cdjk/github/llm/ocr-tech/data/external-language-resources/native-script-real-2026-07-06/newa-nepal-lipi",
+          "format": "PAGE XML + JPEG",
+          "structured": true,
+          "quality": "verified",
+          "uses": [
+            "layout_validation",
+            "script_mapping",
+            "evaluation"
+          ],
+          "records": 441,
+          "record_unit": "pages",
+          "license": "verified_open",
+          "redistribution": "allowed",
+          "evidence_type": "attested",
+          "notes": "Mixed historical Newar and Sanskrit; scriptio continua."
+        },
+    {
+      "id": "new-converter-prototype",
+          "kind": "transliteration",
+          "path": "/Users/cdjk/github/llm/ocr-tech/tools/newa_translit_build.py",
+          "format": "Python",
+          "structured": true,
+          "quality": "needs_audit",
+          "uses": [
+            "script_mapping"
+          ],
+          "license": "unknown",
+          "redistribution": "unknown",
+      "evidence_type": "generated",
+      "notes": "Batch Aksharamukha prototype, not a validated Roman IME."
+    },
+    {
+      "id": "new-deva-newa-frozen-map-v1",
+      "kind": "transliteration",
+      "path": "converters/internal/src/new-deva-newa-v1.json",
+      "format": "canonical UTF-8 nepa-conversion-map-source v1 JSON",
+      "structured": true,
+      "quality": "usable_with_filters",
+      "uses": [
+        "script_mapping",
+        "evaluation"
+      ],
+      "records": 165,
+      "record_unit": "rows",
+      "bytes": 5863,
+      "sha256": "825dc12740f145306a7c34bee51bfd3e6141ddfa6992bbbd6c08863268a6942f",
+      "project_url": "https://github.com/virtualvinodh/aksharamukha-python",
+      "upstream_commit": "9ad8cce3cac4900dea63b149ca077e691a8916a9",
+      "license": "unknown",
+      "redistribution": "unknown",
+      "evidence_type": "generated",
+      "notes": "Frozen project-owned runtime authority: 91 aligned Devanagari/Newa table rules plus 74 closed-context joiner rules. U+0945, U+0949, U+0951, and U+0952 fail closed; murmured resonants are not contracted pending native review."
+    }
+      ],
+      "gaps": [
+        "Obtain modern lexicon sources.",
+        "Expand genuine Newa-script word-frequency evidence beyond the small born-digital corpus.",
+        "Community-review Devanagari/Newa orthographic mapping and Roman conventions."
+      ],
+      "public_export_gaps": [
+        "Qualify modern lexicon sources before public/export use."
+      ]
+    },
+    {
+      "id": "dhi",
+      "name": "Dhimal",
+      "iso_639_3": "dhi",
+      "scope": "language",
+      "scripts": [
+        {
+          "iso_15924": "Deva",
+          "name": "Devanagari",
+          "role": "primary"
+        }
+      ],
+      "input_methods": [
+        {
+          "id": "dhi-deva-direct",
+          "type": "direct",
+          "source_script": "Deva",
+          "output_script": "Deva",
+          "readiness": "beta",
+          "engine_kind": "layout"
+        },
+        {
+          "id": "dhi-latn-deva",
+          "type": "roman_phonetic",
+          "source_script": "Latn",
+          "output_script": "Deva",
+          "readiness": "research",
+          "orthography_profile": "language_specific",
+          "scheme": "casual_ascii_plus_reviewed_aliases",
+          "engine_kind": "alias_decoder",
+          "fallback_policy": "pack_specific_rules_only",
+          "evidence_resource_ids": [
+            "dhi-webonary",
+            "dhi-romanizer"
+          ],
+          "notes": "Existing mapping is scholarly Devanagari-to-King Roman, not a casual reverse IME."
+        }
+      ],
+      "prediction_readiness": "beta",
+      "correction_readiness": "beta",
+      "resources": [
+        {
+          "id": "dhi-webonary",
+          "kind": "lexicon",
+          "path": "/Users/cdjk/github/llm/dhimal-toolkit/data/corpus/dict_webonary_nep_dhi.tsv",
+          "format": "TSV",
+          "structured": true,
+          "quality": "usable_with_filters",
+          "uses": [
+            "candidate_vocabulary",
+            "spellcheck",
+            "roman_aliases"
+          ],
+          "records": 8781,
+          "record_unit": "entries",
+          "bytes": 592289,
+          "sha256": "8ba3846eeff8c0b76c9d923b4ebec379189c5abe8a5bd9bb07e9500643cb8321",
+          "canonical": true,
+          "license": "restricted",
+          "redistribution": "prohibited",
+          "evidence_type": "attested"
+        },
+        {
+          "id": "dhi-induced",
+          "kind": "lexicon",
+          "path": "/Users/cdjk/github/llm/dhimal-toolkit/data/corpus/lexicon_nep_dhi.tsv",
+          "format": "TSV",
+          "structured": true,
+          "quality": "needs_audit",
+          "uses": [
+            "candidate_vocabulary"
+          ],
+          "records": 11340,
+          "record_unit": "entries",
+          "bytes": 539503,
+          "sha256": "c476c4a62e4a85c1d3f8d788dbeb00250be6692c64a51f0771d89aa8ebb3396d",
+          "license": "unknown",
+          "redistribution": "unknown",
+          "evidence_type": "induced",
+          "notes": "Do not sum with Webonary without overlap analysis."
+        },
+        {
+          "id": "dhi-romanizer",
+          "kind": "transliteration",
+          "path": "/Users/cdjk/github/llm/transducer/release/transliterators/dhi_deva2ipa.py",
+          "format": "Python",
+          "structured": true,
+          "sha256": "e9cf91dcfc17efda842e2d484847a80f2989952a0b6423581a2c0edaa16bc893",
+          "quality": "verified",
+          "uses": [
+            "roman_aliases",
+            "evaluation"
+          ],
+          "license": "unknown",
+          "redistribution": "unknown",
+          "evidence_type": "generated",
+          "notes": "96.5% exact on 6,455 audited single-token pairs."
+        }
+      ],
+      "gaps": [
+        "Reverse/casual Roman alias rules and speaker evaluation.",
+        "General-domain frequency model."
+      ],
+      "public_export_gaps": [
+        "Review source terms before public/export use."
+      ]
+    },
+    {
+      "id": "suz",
+      "name": "Sunuwar (Koĩts)",
+      "iso_639_3": "suz",
+      "scope": "language",
+      "scripts": [
+        {
+          "iso_15924": "Deva",
+          "name": "Devanagari",
+          "role": "widely_used"
+        },
+        {
+          "iso_15924": "Sunu",
+          "name": "Sunuwar",
+          "role": "traditional"
+        }
+      ],
+      "input_methods": [
+        {
+          "id": "suz-deva-direct",
+          "type": "direct",
+          "source_script": "Deva",
+          "output_script": "Deva",
+          "readiness": "beta",
+          "engine_kind": "layout"
+        },
+        {
+          "id": "suz-sunu-direct",
+          "type": "direct",
+          "source_script": "Sunu",
+          "output_script": "Sunu",
+          "readiness": "research",
+          "engine_kind": "layout"
+        },
+        {
+          "id": "suz-latn-deva",
+          "type": "roman_phonetic",
+          "source_script": "Latn",
+          "output_script": "Deva",
+          "readiness": "research",
+          "orthography_profile": "language_specific",
+          "scheme": "casual_ascii_plus_reviewed_aliases",
+          "engine_kind": "alias_decoder",
+          "fallback_policy": "pack_specific_rules_only",
+          "evidence_resource_ids": [
+            "suz-apk",
+            "suz-romanizer"
+          ],
+          "notes": "Existing mapping is Borchers scholarly romanization."
+        }
+      ],
+      "prediction_readiness": "beta",
+      "correction_readiness": "beta",
+      "resources": [
+        {
+          "id": "suz-apk",
+          "kind": "lexicon",
+          "path": "/Users/cdjk/github/llm/nllb-better/data/lexicons_apk/suz_nep_lexicon.tsv",
+          "format": "TSV",
+          "structured": true,
+          "quality": "usable_with_filters",
+          "uses": [
+            "candidate_vocabulary",
+            "spellcheck",
+            "roman_aliases"
+          ],
+          "records": 14426,
+          "record_unit": "entries",
+          "bytes": 1121477,
+          "sha256": "2297312b4ac168c6384ba056e4776af81b4d8e50638c673f4740e9561703f104",
+          "canonical": true,
+          "license": "restricted",
+          "redistribution": "prohibited",
+          "evidence_type": "attested"
+        },
+        {
+          "id": "suz-induced",
+          "kind": "lexicon",
+          "path": "/Users/cdjk/github/llm/rai-speech-toolkit/dialects/western/sunwar/dict/nepali-sunwar.induced-lexicon.jsonl",
+          "format": "JSONL",
+          "structured": true,
+          "quality": "needs_audit",
+          "uses": [
+            "candidate_vocabulary"
+          ],
+          "records": 5523,
+          "record_unit": "entries",
+          "bytes": 1204597,
+          "sha256": "a1eddcc6f215f5de774f701e0676ecc59d83bb14372c93fb6b1d77bf8d8769a9",
+          "license": "unknown",
+          "redistribution": "unknown",
+          "evidence_type": "induced"
+        },
+        {
+          "id": "suz-romanizer",
+          "kind": "transliteration",
+          "path": "/Users/cdjk/github/llm/transducer/release/transliterators/suz_deva2ipa.py",
+          "format": "Python",
+          "structured": true,
+          "quality": "verified",
+          "uses": [
+            "roman_aliases",
+            "evaluation"
+          ],
+          "license": "unknown",
+          "redistribution": "unknown",
+          "evidence_type": "generated",
+          "notes": "Audit found zero hard mapping mismatches across 25,419 forms."
+        },
+        {
+          "id": "suz-native-sample",
+          "kind": "script_sample",
+          "path": "/Users/cdjk/github/llm/ocr-tech/data/external-language-resources/native-script-corpora-2026-07-06/sunuwar/r12a_sunu_orthography_note_native_script_lines.txt",
+          "format": "plain text",
+          "structured": true,
+          "quality": "reference_only",
+          "uses": [
+            "layout_validation"
+          ],
+          "records": 79,
+          "record_unit": "lines",
+          "license": "unknown",
+          "redistribution": "unknown",
+          "evidence_type": "attested"
+        }
+      ],
+      "gaps": [
+        "Additional general lexicon evidence is needed.",
+        "Native-script corpus and Devanagari-to-Sunuwar mapping are missing.",
+        "Casual Roman conventions require community review."
+      ],
+      "public_export_gaps": [
+        "Qualify lexicon sources before public/export use."
+      ]
+    },
+    {
+      "id": "aph",
+      "name": "Athpahariya",
+      "iso_639_3": "aph",
+      "scope": "language",
+      "group": "Rai/Kiranti",
+      "variety": "Eastern Kiranti",
+      "scripts": [
+        {
+          "iso_15924": "Deva",
+          "name": "Devanagari",
+          "role": "primary"
+        }
+      ],
+      "input_methods": [
+        {
+          "id": "aph-deva-direct",
+          "type": "direct",
+          "source_script": "Deva",
+          "output_script": "Deva",
+          "readiness": "beta",
+          "engine_kind": "layout"
+        },
+        {
+          "id": "aph-latn-deva",
+          "type": "roman_phonetic",
+          "source_script": "Latn",
+          "output_script": "Deva",
+          "readiness": "research",
+          "orthography_profile": "language_specific",
+          "scheme": "casual_ascii_plus_reviewed_aliases",
+          "engine_kind": "alias_decoder",
+          "fallback_policy": "pack_specific_rules_only",
+          "evidence_resource_ids": [
+            "aph-induced"
+          ],
+          "notes": "No validated casual Roman IME."
+        }
+      ],
+      "prediction_readiness": "beta",
+      "correction_readiness": "extractable",
+      "resources": [
+        {
+          "id": "aph-induced",
+          "kind": "lexicon",
+          "path": "/Users/cdjk/github/llm/rai-speech-toolkit/dialects/eastern/athpariya/dict/nepali-athpariya.induced-lexicon.jsonl",
+          "format": "JSONL",
+          "structured": true,
+          "quality": "needs_audit",
+          "uses": [
+            "candidate_vocabulary"
+          ],
+          "records": 3009,
+          "record_unit": "entries",
+          "bytes": 672007,
+          "sha256": "077f42e4bb6fe1141ad4ee73eb83e715d7df4572ffb2c7d7e47dc4feb40769c4",
+          "license": "unknown",
+          "redistribution": "unknown",
+          "evidence_type": "induced"
+        },
+        {
+          "id": "aph-bible",
+          "kind": "parallel_corpus",
+          "path": "/Users/cdjk/github/llm/rai-speech-toolkit/dialects/eastern/athpariya/parallel/nepali-athpariya.bible.jsonl",
+          "format": "JSONL",
+          "structured": true,
+          "quality": "usable_with_filters",
+          "uses": [
+            "frequency_ranking",
+            "language_model"
+          ],
+          "records": 7866,
+          "record_unit": "pairs",
+          "bytes": 8001211,
+          "license": "unknown",
+          "redistribution": "unknown",
+          "evidence_type": "attested",
+          "domains": [
+            "religious"
+          ]
+        }
+      ],
+      "gaps": [
+        "The stronger 5,091-entry APK lexicon is private research only.",
+        "Need speaker-reviewed spelling and Roman gold."
+      ]
+    },
+    {
+      "id": "lbr",
+      "name": "Lohorung",
+      "iso_639_3": "lbr",
+      "scope": "language",
+      "group": "Rai/Kiranti",
+      "variety": "Eastern Kiranti",
+      "scripts": [
+        {
+          "iso_15924": "Deva",
+          "name": "Devanagari",
+          "role": "primary"
+        }
+      ],
+      "input_methods": [
+        {
+          "id": "lbr-deva-direct",
+          "type": "direct",
+          "source_script": "Deva",
+          "output_script": "Deva",
+          "readiness": "beta",
+          "engine_kind": "layout"
+        },
+        {
+          "id": "lbr-latn-deva",
+          "type": "roman_phonetic",
+          "source_script": "Latn",
+          "output_script": "Deva",
+          "readiness": "research",
+          "orthography_profile": "language_specific",
+          "scheme": "casual_ascii_plus_reviewed_aliases",
+          "engine_kind": "alias_decoder",
+          "fallback_policy": "pack_specific_rules_only",
+          "evidence_resource_ids": [
+            "lbr-apk"
+          ],
+          "notes": "No validated casual Roman IME."
+        }
+      ],
+      "prediction_readiness": "beta",
+      "correction_readiness": "beta",
+      "resources": [
+        {
+          "id": "lbr-apk",
+          "kind": "lexicon",
+          "path": "/Users/cdjk/github/llm/rai-speech-toolkit/dialects/eastern/lohorung/dict/nepali-lohorung.sil-apk.dict.jsonl",
+          "format": "JSONL",
+          "structured": true,
+          "quality": "usable_with_filters",
+          "uses": [
+            "candidate_vocabulary",
+            "spellcheck"
+          ],
+          "records": 4389,
+          "record_unit": "entries",
+          "bytes": 550997,
+          "sha256": "7c78b8a286f40e8986d1b4e927f16ce0586356ec9a55ed0c41c70c5a9e630ff4",
+          "canonical": true,
+          "license": "restricted",
+          "redistribution": "prohibited",
+          "evidence_type": "attested"
+        },
+        {
+          "id": "lbr-bible",
+          "kind": "parallel_corpus",
+          "path": "/Users/cdjk/github/llm/rai-speech-toolkit/dialects/eastern/lohorung/parallel/nepali-lohorung.bible.jsonl",
+          "format": "JSONL",
+          "structured": true,
+          "quality": "usable_with_filters",
+          "uses": [
+            "frequency_ranking",
+            "language_model"
+          ],
+          "records": 7830,
+          "record_unit": "pairs",
+          "bytes": 7323778,
+          "license": "unknown",
+          "redistribution": "unknown",
+          "evidence_type": "attested",
+          "domains": [
+            "religious"
+          ]
+        }
+      ],
+      "gaps": [
+        "Casual Roman evaluation is required."
+      ],
+      "public_export_gaps": [
+        "Qualify lexicon sources before public/export use."
+      ]
+    },
+    {
+      "id": "kle",
+      "name": "Kulung",
+      "iso_639_3": "kle",
+      "scope": "language",
+      "group": "Rai/Kiranti",
+      "variety": "Central Kiranti",
+      "scripts": [
+        {
+          "iso_15924": "Deva",
+          "name": "Devanagari",
+          "role": "primary"
+        }
+      ],
+      "input_methods": [
+        {
+          "id": "kle-deva-direct",
+          "type": "direct",
+          "source_script": "Deva",
+          "output_script": "Deva",
+          "readiness": "research",
+          "engine_kind": "layout"
+        },
+        {
+          "id": "kle-latn-deva",
+          "type": "roman_phonetic",
+          "source_script": "Latn",
+          "output_script": "Deva",
+          "readiness": "research",
+          "orthography_profile": "language_specific",
+          "scheme": "casual_ascii_plus_reviewed_aliases",
+          "engine_kind": "alias_decoder",
+          "fallback_policy": "pack_specific_rules_only",
+          "evidence_resource_ids": [
+            "kle-induced"
+          ],
+          "notes": "No validated casual Roman IME."
+        }
+      ],
+      "prediction_readiness": "extractable",
+      "correction_readiness": "extractable",
+      "resources": [
+        {
+          "id": "kle-induced",
+          "kind": "lexicon",
+          "path": "/Users/cdjk/github/llm/rai-speech-toolkit/dialects/central/kulung/dict/nepali-kulung.induced-lexicon.jsonl",
+          "format": "JSONL",
+          "structured": true,
+          "quality": "needs_audit",
+          "uses": [
+            "candidate_vocabulary"
+          ],
+          "records": 3123,
+          "record_unit": "entries",
+          "bytes": 682558,
+          "sha256": "88ecad091dd207a48ae8c058d82471c08c942d06f7284c5e6345e26b2b1bb8ae",
+          "license": "unknown",
+          "redistribution": "unknown",
+          "evidence_type": "induced"
+        },
+        {
+          "id": "kle-bible",
+          "kind": "parallel_corpus",
+          "path": "/Users/cdjk/github/llm/rai-speech-toolkit/dialects/central/kulung/parallel/nepali-kulung.bible.jsonl",
+          "format": "JSONL",
+          "structured": true,
+          "quality": "usable_with_filters",
+          "uses": [
+            "frequency_ranking",
+            "language_model"
+          ],
+          "records": 7957,
+          "record_unit": "pairs",
+          "bytes": 7002353,
+          "license": "unknown",
+          "redistribution": "unknown",
+          "evidence_type": "attested",
+          "domains": [
+            "religious"
+          ]
+        }
+      ],
+      "gaps": [
+        "No true structured dictionary or pronunciation gold."
+      ]
+    },
+    {
+      "id": "rav",
+      "name": "Sampang",
+      "iso_639_3": "rav",
+      "scope": "language",
+      "group": "Rai/Kiranti",
+      "variety": "Central Kiranti",
+      "scripts": [
+        {
+          "iso_15924": "Deva",
+          "name": "Devanagari",
+          "role": "primary"
+        }
+      ],
+      "input_methods": [
+        {
+          "id": "rav-deva-direct",
+          "type": "direct",
+          "source_script": "Deva",
+          "output_script": "Deva",
+          "readiness": "research",
+          "engine_kind": "layout"
+        },
+        {
+          "id": "rav-latn-deva",
+          "type": "roman_phonetic",
+          "source_script": "Latn",
+          "output_script": "Deva",
+          "readiness": "research",
+          "orthography_profile": "language_specific",
+          "scheme": "casual_ascii_plus_reviewed_aliases",
+          "engine_kind": "alias_decoder",
+          "fallback_policy": "pack_specific_rules_only",
+          "evidence_resource_ids": [
+            "rav-induced"
+          ],
+          "notes": "No validated casual Roman IME."
+        }
+      ],
+      "prediction_readiness": "extractable",
+      "correction_readiness": "extractable",
+      "resources": [
+        {
+          "id": "rav-induced",
+          "kind": "lexicon",
+          "path": "/Users/cdjk/github/llm/rai-speech-toolkit/dialects/central/sampang/dict/nepali-sampang.induced-lexicon.jsonl",
+          "format": "JSONL",
+          "structured": true,
+          "quality": "needs_audit",
+          "uses": [
+            "candidate_vocabulary"
+          ],
+          "records": 3151,
+          "record_unit": "entries",
+          "bytes": 693987,
+          "sha256": "ec65236b227bb5f8396f7ba7a8adc31b8b053bee91d9b0a1e0dd5da8b3b3fbd7",
+          "license": "unknown",
+          "redistribution": "unknown",
+          "evidence_type": "induced"
+        },
+        {
+          "id": "rav-bible",
+          "kind": "parallel_corpus",
+          "path": "/Users/cdjk/github/llm/rai-speech-toolkit/dialects/central/sampang/parallel/nepali-sampang.bible.jsonl",
+          "format": "JSONL",
+          "structured": true,
+          "quality": "usable_with_filters",
+          "uses": [
+            "frequency_ranking",
+            "language_model"
+          ],
+          "records": 7952,
+          "record_unit": "pairs",
+          "bytes": 7019297,
+          "license": "unknown",
+          "redistribution": "unknown",
+          "evidence_type": "attested",
+          "domains": [
+            "religious"
+          ]
+        }
+      ],
+      "gaps": [
+        "Extract and validate the local Sampang lexicon PDF."
+      ]
+    },
+    {
+      "id": "bap",
+      "name": "Bantawa",
+      "iso_639_3": "bap",
+      "scope": "language",
+      "group": "Rai/Kiranti",
+      "variety": "Central Kiranti",
+      "scripts": [
+        {
+          "iso_15924": "Deva",
+          "name": "Devanagari",
+          "role": "primary"
+        }
+      ],
+      "input_methods": [
+        {
+          "id": "bap-deva-direct",
+          "type": "direct",
+          "source_script": "Deva",
+          "output_script": "Deva",
+          "readiness": "research",
+          "engine_kind": "layout"
+        },
+        {
+          "id": "bap-latn-deva",
+          "type": "roman_phonetic",
+          "source_script": "Latn",
+          "output_script": "Deva",
+          "readiness": "research",
+          "orthography_profile": "language_specific",
+          "scheme": "casual_ascii_plus_reviewed_aliases",
+          "engine_kind": "alias_decoder",
+          "fallback_policy": "pack_specific_rules_only",
+          "evidence_resource_ids": [
+            "bap-dictionary"
+          ],
+          "notes": "No validated casual Roman IME."
+        }
+      ],
+      "prediction_readiness": "extractable",
+      "correction_readiness": "extractable",
+      "resources": [
+        {
+          "id": "bap-dictionary",
+          "kind": "lexicon",
+          "path": "/Users/cdjk/github/llm/rai-speech-toolkit/dialects/central/bantawa/dict/bantawa-english.dict.jsonl",
+          "format": "JSONL",
+          "structured": true,
+          "quality": "usable_with_filters",
+          "uses": [
+            "candidate_vocabulary",
+            "spellcheck",
+            "roman_aliases"
+          ],
+          "records": 2040,
+          "record_unit": "entries",
+          "bytes": 360086,
+          "sha256": "a69917c00e7a8587f4a38458faf89c95fc9e5ac9cbe6cfb612383438bdf5ae12",
+          "canonical": true,
+          "license": "unknown",
+          "redistribution": "unknown",
+          "evidence_type": "attested"
+        },
+        {
+          "id": "bap-romanizer",
+          "kind": "transliteration",
+          "path": "/Users/cdjk/github/llm/transducer/release/transliterators/bantawa_deva2ipa.py",
+          "format": "Python",
+          "structured": true,
+          "quality": "usable_with_filters",
+          "bytes": 14511,
+          "sha256": "aa599191d86975b0dcae330592df48c609c8a37e400c850d4494945bc7d9b9d2",
+          "uses": [
+            "roman_aliases",
+            "evaluation"
+          ],
+          "license": "unknown",
+          "redistribution": "unknown",
+          "evidence_type": "generated",
+          "notes": "1,693/2,040 exact roundtrips; remaining cases are explicitly lossy."
+        }
+      ],
+      "gaps": [
+        "Only 763 parallel and 3,676 monolingual rows; Bible root is audio-only.",
+        "Community spelling review is required."
+      ],
+      "public_export_gaps": [
+        "Review source terms before public/export use."
+      ]
+    },
+    {
+      "id": "ybh",
+      "name": "Yakkha",
+      "iso_639_3": "ybh",
+      "scope": "language",
+      "group": "Rai/Kiranti",
+      "variety": "Eastern Kiranti",
+      "scripts": [
+        {
+          "iso_15924": "Deva",
+          "name": "Devanagari",
+          "role": "primary"
+        }
+      ],
+      "input_methods": [
+        {
+          "id": "ybh-deva-direct",
+          "type": "direct",
+          "source_script": "Deva",
+          "output_script": "Deva",
+          "readiness": "beta",
+          "engine_kind": "layout"
+        },
+        {
+          "id": "ybh-latn-deva",
+          "type": "roman_phonetic",
+          "source_script": "Latn",
+          "output_script": "Deva",
+          "readiness": "research",
+          "orthography_profile": "language_specific",
+          "scheme": "casual_ascii_plus_reviewed_aliases",
+          "engine_kind": "alias_decoder",
+          "fallback_policy": "pack_specific_rules_only",
+          "evidence_resource_ids": [
+            "ybh-apk"
+          ],
+          "notes": "No validated casual Roman IME."
+        }
+      ],
+      "prediction_readiness": "beta",
+      "correction_readiness": "beta",
+      "resources": [
+        {
+          "id": "ybh-apk",
+          "kind": "lexicon",
+          "path": "/Users/cdjk/github/llm/rai-speech-toolkit/dialects/eastern/yakkha/dict/nepali-yakkha.sil-apk.dict.jsonl",
+          "format": "JSONL",
+          "structured": true,
+          "quality": "usable_with_filters",
+          "uses": [
+            "candidate_vocabulary",
+            "spellcheck",
+            "roman_aliases"
+          ],
+          "records": 4830,
+          "record_unit": "entries",
+          "bytes": 659081,
+          "sha256": "ed1420ea44650a70d65dd6e99d07b46766c94feff9f3a4d0eef56d67bc5a919d",
+          "canonical": true,
+          "license": "restricted",
+          "redistribution": "prohibited",
+          "evidence_type": "attested"
+        }
+      ],
+      "gaps": [
+        "Corpus is small and Bible text is not staged.",
+        "Casual Roman tests are required."
+      ],
+      "public_export_gaps": [
+        "Review source terms before public/export use."
+      ]
+    },
+    {
+      "id": "klr",
+      "name": "Khaling",
+      "iso_639_3": "klr",
+      "scope": "language",
+      "group": "Rai/Kiranti",
+      "variety": "Western Kiranti",
+      "scripts": [
+        {
+          "iso_15924": "Deva",
+          "name": "Devanagari",
+          "role": "primary"
+        }
+      ],
+      "input_methods": [
+        {
+          "id": "klr-deva-direct",
+          "type": "direct",
+          "source_script": "Deva",
+          "output_script": "Deva",
+          "readiness": "beta",
+          "engine_kind": "layout"
+        },
+        {
+          "id": "klr-latn-deva",
+          "type": "roman_phonetic",
+          "source_script": "Latn",
+          "output_script": "Deva",
+          "readiness": "research",
+          "orthography_profile": "language_specific",
+          "scheme": "casual_ascii_plus_reviewed_aliases",
+          "engine_kind": "alias_decoder",
+          "fallback_policy": "pack_specific_rules_only",
+          "evidence_resource_ids": [
+            "klr-apk"
+          ],
+          "notes": "No validated casual Roman IME."
+        }
+      ],
+      "prediction_readiness": "beta",
+      "correction_readiness": "beta",
+      "resources": [
+        {
+          "id": "klr-apk",
+          "kind": "lexicon",
+          "path": "/Users/cdjk/github/llm/rai-speech-toolkit/dialects/western/khaling/dict/nepali-khaling.sil-apk.dict.jsonl",
+          "format": "JSONL",
+          "structured": true,
+          "quality": "usable_with_filters",
+          "uses": [
+            "candidate_vocabulary",
+            "spellcheck"
+          ],
+          "records": 4513,
+          "record_unit": "entries",
+          "bytes": 558925,
+          "sha256": "442415559f1ec6191b2624e27439cc22438aaf24d19b4124571c826774c2adb4",
+          "canonical": true,
+          "license": "restricted",
+          "redistribution": "prohibited",
+          "evidence_type": "attested"
+        },
+        {
+          "id": "klr-verb-dictionary",
+          "kind": "lexicon",
+          "path": "/Users/cdjk/github/llm/lang-toolkit/data/khaling.jsonl",
+          "format": "JSONL",
+          "structured": true,
+          "quality": "usable_with_filters",
+          "uses": [
+            "candidate_vocabulary",
+            "morphology",
+            "roman_aliases"
+          ],
+          "records": 740,
+          "record_unit": "entries",
+          "bytes": 275063,
+          "sha256": "3e1978f41e12ab7d2f41b89ea8ee22c5eb2e74f26d7d3407e711068472d5013b",
+          "license": "unknown",
+          "redistribution": "unknown",
+          "evidence_type": "attested",
+          "notes": "729 parse clean; 629 normalized clean, 44 partial, 67 not applicable."
+        }
+      ],
+      "gaps": [
+        "Bible is audio-only and the general corpus is small.",
+        "Roman conventions require review."
+      ],
+      "public_export_gaps": [
+        "Review source terms before public/export use."
+      ]
+    },
+    {
+      "id": "dus",
+      "name": "Dumi",
+      "iso_639_3": "dus",
+      "scope": "language",
+      "group": "Rai/Kiranti",
+      "variety": "Western Kiranti",
+      "scripts": [
+        {
+          "iso_15924": "Deva",
+          "name": "Devanagari",
+          "role": "primary"
+        }
+      ],
+      "input_methods": [
+        {
+          "id": "dus-deva-direct",
+          "type": "direct",
+          "source_script": "Deva",
+          "output_script": "Deva",
+          "readiness": "beta",
+          "engine_kind": "layout"
+        },
+        {
+          "id": "dus-latn-deva",
+          "type": "roman_phonetic",
+          "source_script": "Latn",
+          "output_script": "Deva",
+          "readiness": "research",
+          "orthography_profile": "language_specific",
+          "scheme": "casual_ascii_plus_reviewed_aliases",
+          "engine_kind": "alias_decoder",
+          "fallback_policy": "pack_specific_rules_only",
+          "evidence_resource_ids": [
+            "dus-apk"
+          ],
+          "notes": "No validated casual Roman IME."
+        }
+      ],
+      "prediction_readiness": "extractable",
+      "correction_readiness": "extractable",
+      "resources": [
+        {
+          "id": "dus-apk",
+          "kind": "lexicon",
+          "path": "/Users/cdjk/github/llm/rai-speech-toolkit/dialects/western/dumi/dict/nepali-dumi.sil-apk.dict.jsonl",
+          "format": "JSONL",
+          "structured": true,
+          "quality": "usable_with_filters",
+          "uses": [
+            "candidate_vocabulary",
+            "spellcheck"
+          ],
+          "records": 2252,
+          "record_unit": "entries",
+          "bytes": 277511,
+          "sha256": "1d8453339c727ee5c63fc4fbf64ec80619ea82cc559b31b9224826e1d0902ffc",
+          "canonical": true,
+          "license": "restricted",
+          "redistribution": "prohibited",
+          "evidence_type": "attested"
+        }
+      ],
+      "gaps": [
+        "Only 1,495 local parallel rows; Bible text is not staged.",
+        "Need open lexicon and Roman evaluation."
+      ]
+    },
+    {
+      "id": "tdh",
+      "name": "Thulung",
+      "iso_639_3": "tdh",
+      "scope": "language",
+      "group": "Rai/Kiranti",
+      "variety": "Western Kiranti",
+      "scripts": [
+        {
+          "iso_15924": "Deva",
+          "name": "Devanagari",
+          "role": "primary"
+        }
+      ],
+      "input_methods": [
+        {
+          "id": "tdh-deva-direct",
+          "type": "direct",
+          "source_script": "Deva",
+          "output_script": "Deva",
+          "readiness": "research",
+          "engine_kind": "layout"
+        },
+        {
+          "id": "tdh-latn-deva",
+          "type": "roman_phonetic",
+          "source_script": "Latn",
+          "output_script": "Deva",
+          "readiness": "research",
+          "orthography_profile": "language_specific",
+          "scheme": "casual_ascii_plus_reviewed_aliases",
+          "engine_kind": "alias_decoder",
+          "fallback_policy": "pack_specific_rules_only",
+          "evidence_resource_ids": [],
+          "notes": "No validated casual Roman IME."
+        }
+      ],
+      "prediction_readiness": "extractable",
+      "correction_readiness": "extractable",
+      "resources": [
+        {
+          "id": "tdh-pangloss",
+          "kind": "corpus",
+          "path": "/Users/cdjk/github/llm/rai-speech-toolkit/dialects/western/thulung/parallel/thulung-english.pangloss.jsonl",
+          "format": "JSONL",
+          "structured": true,
+          "quality": "usable_with_filters",
+          "uses": [
+            "candidate_vocabulary",
+            "frequency_ranking",
+            "roman_aliases"
+          ],
+          "license": "unknown",
+          "redistribution": "unknown",
+          "evidence_type": "attested"
+        }
+      ],
+      "gaps": [
+        "No structured headword dictionary; induce and manually validate candidates."
+      ]
+    },
+    {
+      "id": "rab",
+      "name": "Chamling",
+      "iso_639_3": "rab",
+      "scope": "language",
+      "group": "Rai/Kiranti",
+      "variety": "Central Kiranti",
+      "scripts": [
+        {
+          "iso_15924": "Deva",
+          "name": "Devanagari",
+          "role": "primary"
+        }
+      ],
+      "input_methods": [
+        {
+          "id": "rab-deva-direct",
+          "type": "direct",
+          "source_script": "Deva",
+          "output_script": "Deva",
+          "readiness": "research",
+          "engine_kind": "layout"
+        },
+        {
+          "id": "rab-latn-deva",
+          "type": "roman_phonetic",
+          "source_script": "Latn",
+          "output_script": "Deva",
+          "readiness": "research",
+          "orthography_profile": "language_specific",
+          "scheme": "casual_ascii_plus_reviewed_aliases",
+          "engine_kind": "alias_decoder",
+          "fallback_policy": "pack_specific_rules_only",
+          "evidence_resource_ids": [],
+          "notes": "No validated casual Roman IME."
+        }
+      ],
+      "prediction_readiness": "extractable",
+      "correction_readiness": "extractable",
+      "resources": [
+        {
+          "id": "rab-monolingual",
+          "kind": "corpus",
+          "path": "/Users/cdjk/github/llm/rai-speech-toolkit/dialects/central/chamling",
+          "format": "directory",
+          "structured": true,
+          "quality": "needs_audit",
+          "uses": [
+            "candidate_vocabulary",
+            "frequency_ranking"
+          ],
+          "records": 2530,
+          "record_unit": "lines",
+          "license": "unknown",
+          "redistribution": "unknown",
+          "evidence_type": "attested"
+        }
+      ],
+      "gaps": [
+        "Extract the local Chamling dictionary PDF; only 23 parallel rows are staged."
+      ]
+    },
+    {
+      "id": "kkt",
+      "name": "Koyu",
+      "iso_639_3": "kkt",
+      "scope": "language",
+      "group": "Rai/Kiranti",
+      "variety": "Western Kiranti",
+      "scripts": [
+        {
+          "iso_15924": "Deva",
+          "name": "Devanagari",
+          "role": "primary"
+        }
+      ],
+      "input_methods": [
+        {
+          "id": "kkt-deva-direct",
+          "type": "direct",
+          "source_script": "Deva",
+          "output_script": "Deva",
+          "readiness": "research",
+          "engine_kind": "layout"
+        },
+        {
+          "id": "kkt-latn-deva",
+          "type": "roman_phonetic",
+          "source_script": "Latn",
+          "output_script": "Deva",
+          "readiness": "research",
+          "orthography_profile": "language_specific",
+          "scheme": "casual_ascii_plus_reviewed_aliases",
+          "engine_kind": "alias_decoder",
+          "fallback_policy": "pack_specific_rules_only",
+          "evidence_resource_ids": [],
+          "notes": "No validated casual Roman IME."
+        }
+      ],
+      "prediction_readiness": "research",
+      "correction_readiness": "research",
+      "resources": [
+        {
+          "id": "kkt-pangloss",
+          "kind": "corpus",
+          "path": "/Users/cdjk/github/llm/rai-speech-toolkit/dialects/western/koyu/parallel/koyu-english.pangloss.jsonl",
+          "format": "JSONL",
+          "structured": true,
+          "quality": "usable_with_filters",
+          "uses": [
+            "candidate_vocabulary",
+            "frequency_ranking",
+            "roman_aliases"
+          ],
+          "records": 819,
+          "record_unit": "lines",
+          "license": "unknown",
+          "redistribution": "unknown",
+          "evidence_type": "attested"
+        }
+      ],
+      "gaps": [
+        "No structured dictionary and only a small corpus."
+      ]
+    },
+    {
+      "id": "bhj",
+      "name": "Bahing",
+      "iso_639_3": "bhj",
+      "scope": "language",
+      "group": "Rai/Kiranti",
+      "variety": "Western Kiranti",
+      "scripts": [
+        {
+          "iso_15924": "Deva",
+          "name": "Devanagari",
+          "role": "primary"
+        }
+      ],
+      "input_methods": [
+        {
+          "id": "bhj-deva-direct",
+          "type": "direct",
+          "source_script": "Deva",
+          "output_script": "Deva",
+          "readiness": "research",
+          "engine_kind": "layout"
+        },
+        {
+          "id": "bhj-latn-deva",
+          "type": "roman_phonetic",
+          "source_script": "Latn",
+          "output_script": "Deva",
+          "readiness": "research",
+          "orthography_profile": "language_specific",
+          "scheme": "casual_ascii_plus_reviewed_aliases",
+          "engine_kind": "alias_decoder",
+          "fallback_policy": "pack_specific_rules_only",
+          "evidence_resource_ids": [],
+          "notes": "No validated casual Roman IME."
+        }
+      ],
+      "prediction_readiness": "research",
+      "correction_readiness": "research",
+      "resources": [],
+      "gaps": [
+        "Dictionary exists only as an extraction-reference PDF; no staged toolkit corpus."
+      ]
+    },
+    {
+      "id": "gvr",
+      "name": "Central Gurung",
+      "iso_639_3": "gvr",
+      "scope": "variety",
+      "group": "Gurung",
+      "variety": "Central Gurung",
+      "scripts": [
+        {
+          "iso_15924": "Deva",
+          "name": "Devanagari",
+          "role": "widely_used"
+        }
+      ],
+      "input_methods": [
+        {
+          "id": "gvr-deva-direct",
+          "type": "direct",
+          "source_script": "Deva",
+          "output_script": "Deva",
+          "readiness": "extractable",
+          "engine_kind": "layout"
+        },
+        {
+          "id": "gvr-latn-deva",
+          "type": "roman_phonetic",
+          "source_script": "Latn",
+          "output_script": "Deva",
+          "readiness": "research",
+          "orthography_profile": "language_specific",
+          "scheme": "casual_ascii_plus_reviewed_aliases",
+          "engine_kind": "alias_decoder",
+          "fallback_policy": "pack_specific_rules_only",
+          "evidence_resource_ids": [
+            "gvr-nepali-lexicon"
+          ],
+          "notes": "Only small/noisy app and Glover Roman evidence is local."
+        }
+      ],
+      "prediction_readiness": "extractable",
+      "correction_readiness": "extractable",
+      "resources": [
+        {
+          "id": "gvr-nepali-lexicon",
+          "kind": "lexicon",
+          "path": "/Users/cdjk/github/llm/nepal-speech-toolkit/languages/gurung-central/gurung-language-toolkit/data/lexicon/gvr_nep_lexicon.tsv",
+          "format": "TSV",
+          "structured": true,
+          "quality": "usable_with_filters",
+          "uses": [
+            "candidate_vocabulary",
+            "spellcheck"
+          ],
+          "records": 327,
+          "record_unit": "entries",
+          "bytes": 11346,
+          "sha256": "7f2040eaa40eb0e012938261659f3c9f3f96bb568faf2b5ef261580f10352a7a",
+          "license": "unknown",
+          "redistribution": "unknown",
+          "evidence_type": "attested"
+        },
+        {
+          "id": "gvr-bible",
+          "kind": "parallel_corpus",
+          "path": "/Users/cdjk/github/llm/nepal-speech-toolkit/languages/gurung-central/gurung-language-toolkit/data/parallel/bible_nep_gvr.jsonl",
+          "format": "JSONL",
+          "structured": true,
+          "quality": "usable_with_filters",
+          "uses": [
+            "candidate_vocabulary",
+            "frequency_ranking",
+            "language_model"
+          ],
+          "records": 7937,
+          "record_unit": "pairs",
+          "license": "unknown",
+          "redistribution": "unknown",
+          "evidence_type": "attested",
+          "domains": [
+            "religious"
+          ]
+        }
+      ],
+      "gaps": [
+        "Curate the noisy 1,085-row Glover OCR source.",
+        "Gurung Khema has orthography evidence but no substantive native-script corpus.",
+        "Dialect matching and Roman gold required."
+      ]
+    },
+    {
+      "id": "tdg",
+      "name": "Western Tamang",
+      "iso_639_3": "tdg",
+      "scope": "variety",
+      "group": "Tamang",
+      "variety": "Western Tamang",
+      "scripts": [
+        {
+          "iso_15924": "Deva",
+          "name": "Devanagari",
+          "role": "primary"
+        }
+      ],
+      "input_methods": [
+        {
+          "id": "tdg-deva-direct",
+          "type": "direct",
+          "source_script": "Deva",
+          "output_script": "Deva",
+          "readiness": "beta",
+          "engine_kind": "layout"
+        },
+        {
+          "id": "tdg-latn-deva",
+          "type": "roman_phonetic",
+          "source_script": "Latn",
+          "output_script": "Deva",
+          "readiness": "research",
+          "orthography_profile": "language_specific",
+          "scheme": "casual_ascii_plus_reviewed_aliases",
+          "engine_kind": "alias_decoder",
+          "fallback_policy": "pack_specific_rules_only",
+          "evidence_resource_ids": [
+            "tdg-apk"
+          ]
+        }
+      ],
+      "prediction_readiness": "beta",
+      "correction_readiness": "beta",
+      "resources": [
+        {
+          "id": "tdg-apk",
+          "kind": "lexicon",
+          "path": "/Users/cdjk/github/llm/nllb-better/data/lexicons_apk/tdg_nep_lexicon.tsv",
+          "format": "TSV",
+          "structured": true,
+          "quality": "usable_with_filters",
+          "uses": [
+            "candidate_vocabulary",
+            "spellcheck"
+          ],
+          "records": 8026,
+          "record_unit": "entries",
+          "bytes": 322366,
+          "sha256": "aa5f32487fd5308188f64b9ff236fe9504c6922a068ccf8a210cd52ed540afb8",
+          "canonical": true,
+          "license": "restricted",
+          "redistribution": "prohibited",
+          "evidence_type": "attested"
+        },
+        {
+          "id": "tdg-dictionary",
+          "kind": "lexicon",
+          "path": "/Users/cdjk/github/llm/ltk/tamang/data/western_tamang_dictionary.tsv",
+          "format": "TSV",
+          "structured": true,
+          "quality": "usable_with_filters",
+          "uses": [
+            "candidate_vocabulary",
+            "spellcheck",
+            "roman_aliases"
+          ],
+          "records": 3604,
+          "record_unit": "entries",
+          "bytes": 243090,
+          "sha256": "31ba3824e12c526f313bfd288ea7cf6cb243cdc6f24168b6cd631844064b0c22",
+          "license": "unknown",
+          "redistribution": "unknown",
+          "evidence_type": "attested"
+        }
+      ],
+      "gaps": [
+        "Do not report the 107,224-row TTS word-type table as dictionary size.",
+        "Tone/dialect representation and Roman conventions need review."
+      ],
+      "public_export_gaps": [
+        "Review source terms before public/export use."
+      ]
+    },
+    {
+      "id": "taj",
+      "name": "Eastern Tamang",
+      "iso_639_3": "taj",
+      "scope": "variety",
+      "group": "Tamang",
+      "variety": "Eastern Tamang",
+      "scripts": [
+        {
+          "iso_15924": "Deva",
+          "name": "Devanagari",
+          "role": "primary"
+        }
+      ],
+      "input_methods": [
+        {
+          "id": "taj-deva-direct",
+          "type": "direct",
+          "source_script": "Deva",
+          "output_script": "Deva",
+          "readiness": "extractable",
+          "engine_kind": "layout"
+        },
+        {
+          "id": "taj-latn-deva",
+          "type": "roman_phonetic",
+          "source_script": "Latn",
+          "output_script": "Deva",
+          "readiness": "research",
+          "orthography_profile": "language_specific",
+          "scheme": "casual_ascii_plus_reviewed_aliases",
+          "engine_kind": "alias_decoder",
+          "fallback_policy": "pack_specific_rules_only",
+          "evidence_resource_ids": [
+            "taj-app"
+          ]
+        }
+      ],
+      "prediction_readiness": "extractable",
+      "correction_readiness": "extractable",
+      "resources": [
+        {
+          "id": "taj-app",
+          "kind": "lexicon",
+          "path": "/Users/cdjk/github/llm/nllb-better/data/lexicons_apk/taj_amrityonjan_lexicon.tsv",
+          "format": "TSV",
+          "structured": true,
+          "quality": "needs_audit",
+          "uses": [
+            "candidate_vocabulary",
+            "spellcheck"
+          ],
+          "records": 4482,
+          "record_unit": "entries",
+          "bytes": 297969,
+          "sha256": "47d5c62b43b627d4ca29dc303907412dc2868623e3a3a258c13415c0456b96dd",
+          "canonical": true,
+          "license": "restricted",
+          "redistribution": "prohibited",
+          "evidence_type": "attested",
+          "notes": "App variety is unspecified and must be confirmed."
+        },
+        {
+          "id": "taj-bible-root",
+          "kind": "corpus",
+          "path": "/Volumes/TRANSCEND/bible_brain_nepal/taj",
+          "format": "SOFRIA/USFM JSON directory",
+          "structured": true,
+          "quality": "usable_with_filters",
+          "uses": [
+            "frequency_ranking",
+            "language_model"
+          ],
+          "records": 520,
+          "record_unit": "files",
+          "license": "unknown",
+          "redistribution": "unknown",
+          "evidence_type": "attested",
+          "domains": [
+            "religious"
+          ]
+        }
+      ],
+      "gaps": [
+        "Confirm app and NepTam variety fit.",
+        "Keep separate from Western Tamang.",
+        "Tone is not reliably represented in Devanagari."
+      ]
+    },
+    {
+      "id": "mgp",
+      "name": "Eastern Magar",
+      "iso_639_3": "mgp",
+      "scope": "variety",
+      "group": "Magar",
+      "variety": "Eastern Magar",
+      "scripts": [
+        {
+          "iso_15924": "Deva",
+          "name": "Devanagari",
+          "role": "primary"
+        }
+      ],
+      "input_methods": [
+        {
+          "id": "mgp-deva-direct",
+          "type": "direct",
+          "source_script": "Deva",
+          "output_script": "Deva",
+          "readiness": "extractable",
+          "engine_kind": "layout"
+        },
+        {
+          "id": "mgp-latn-deva",
+          "type": "roman_phonetic",
+          "source_script": "Latn",
+          "output_script": "Deva",
+          "readiness": "research",
+          "orthography_profile": "language_specific",
+          "scheme": "casual_ascii_plus_reviewed_aliases",
+          "engine_kind": "alias_decoder",
+          "fallback_policy": "pack_specific_rules_only",
+          "evidence_resource_ids": [
+            "mgp-induced"
+          ]
+        }
+      ],
+      "prediction_readiness": "extractable",
+      "correction_readiness": "extractable",
+      "resources": [
+        {
+          "id": "mgp-induced",
+          "kind": "lexicon",
+          "path": "/Users/cdjk/github/llm/nepal-speech-toolkit/languages/magar-eastern/magar-toolkit/data/lexicon/mgp-npi.tsv",
+          "format": "TSV",
+          "structured": true,
+          "quality": "needs_audit",
+          "uses": [
+            "candidate_vocabulary"
+          ],
+          "records": 2838,
+          "record_unit": "entries",
+          "bytes": 174778,
+          "sha256": "3df7a496e56bb7cef17c7f6462224546d4cbe1d0ca4747cff81783da1366a7ae",
+          "license": "unknown",
+          "redistribution": "unknown",
+          "evidence_type": "induced"
+        },
+        {
+          "id": "mgp-bible",
+          "kind": "corpus",
+          "path": "/Users/cdjk/github/llm/nepal-speech-toolkit/languages/magar-eastern/magar-toolkit/data/bibles/mgp_emgp/verses.tsv",
+          "format": "TSV",
+          "structured": true,
+          "quality": "usable_with_filters",
+          "uses": [
+            "frequency_ranking",
+            "language_model"
+          ],
+          "license": "unknown",
+          "redistribution": "unknown",
+          "evidence_type": "attested",
+          "domains": [
+            "religious"
+          ]
+        }
+      ],
+      "gaps": [
+        "Hand-reviewed spelling dictionary missing.",
+        "Keep separate from Western Magar."
+      ]
+    },
+    {
+      "id": "mrd",
+      "name": "Western Magar",
+      "iso_639_3": "mrd",
+      "scope": "variety",
+      "group": "Magar",
+      "variety": "Western Magar",
+      "scripts": [
+        {
+          "iso_15924": "Deva",
+          "name": "Devanagari",
+          "role": "primary"
+        }
+      ],
+      "input_methods": [
+        {
+          "id": "mrd-deva-direct",
+          "type": "direct",
+          "source_script": "Deva",
+          "output_script": "Deva",
+          "readiness": "beta",
+          "engine_kind": "layout"
+        },
+        {
+          "id": "mrd-latn-deva",
+          "type": "roman_phonetic",
+          "source_script": "Latn",
+          "output_script": "Deva",
+          "readiness": "research",
+          "orthography_profile": "language_specific",
+          "scheme": "casual_ascii_plus_reviewed_aliases",
+          "engine_kind": "alias_decoder",
+          "fallback_policy": "pack_specific_rules_only",
+          "evidence_resource_ids": [
+            "mrd-apk",
+            "mrd-ipa"
+          ]
+        }
+      ],
+      "prediction_readiness": "extractable",
+      "correction_readiness": "beta",
+      "resources": [
+        {
+          "id": "mrd-apk",
+          "kind": "lexicon",
+          "path": "/Users/cdjk/github/llm/nllb-better/data/lexicons_apk/mrd_nep_lexicon.tsv",
+          "format": "TSV",
+          "structured": true,
+          "quality": "usable_with_filters",
+          "uses": [
+            "candidate_vocabulary",
+            "spellcheck"
+          ],
+          "records": 1264,
+          "record_unit": "entries",
+          "bytes": 68724,
+          "sha256": "d55d34e4c4d754ee1bbcf3382f3250690e53884020c06305e34bfc1a7948591a",
+          "canonical": true,
+          "license": "restricted",
+          "redistribution": "prohibited",
+          "evidence_type": "attested"
+        },
+        {
+          "id": "mrd-ipa",
+          "kind": "lexicon",
+          "path": "/Users/cdjk/github/llm/nepal-speech-toolkit/languages/magar-eastern/magar-toolkit/data/lexicon/mrd-ipa.tsv",
+          "format": "TSV",
+          "structured": true,
+          "quality": "usable_with_filters",
+          "uses": [
+            "roman_aliases",
+            "morphology"
+          ],
+          "records": 1223,
+          "record_unit": "entries",
+          "bytes": 33006,
+          "sha256": "ac57646d4d2293971f1bc82513159d0dfefc15a88948f19b178173ce389a7b59",
+          "license": "unknown",
+          "redistribution": "unknown",
+          "evidence_type": "attested"
+        }
+      ],
+      "gaps": [
+        "General corpus evidence is missing.",
+        "Keep Western-tagged data separate even when stored inside the Eastern toolkit."
+      ],
+      "public_export_gaps": [
+        "Review source terms before public/export use."
+      ]
+    },
+    {
+      "id": "mai",
+      "name": "Maithili",
+      "iso_639_3": "mai",
+      "scope": "language",
+      "scripts": [
+        {
+          "iso_15924": "Deva",
+          "name": "Devanagari",
+          "role": "widely_used"
+        },
+        {
+          "iso_15924": "Tirh",
+          "name": "Tirhuta/Mithilakshar",
+          "role": "traditional"
+        }
+      ],
+      "input_methods": [
+        {
+          "id": "mai-deva-direct",
+          "type": "direct",
+          "source_script": "Deva",
+          "output_script": "Deva",
+          "readiness": "extractable",
+          "engine_kind": "layout"
+        },
+        {
+          "id": "mai-tirh-direct",
+          "type": "direct",
+          "source_script": "Tirh",
+          "output_script": "Tirh",
+          "readiness": "research",
+          "engine_kind": "layout"
+        },
+        {
+          "id": "mai-latn-deva",
+          "type": "roman_phonetic",
+          "source_script": "Latn",
+          "output_script": "Deva",
+          "readiness": "research",
+          "orthography_profile": "language_specific",
+          "scheme": "casual_ascii_plus_reviewed_aliases",
+          "engine_kind": "alias_decoder",
+          "fallback_policy": "pack_specific_rules_only",
+          "evidence_resource_ids": []
+        },
+        {
+          "id": "mai-deva-tirh",
+          "type": "script_conversion",
+          "source_script": "Deva",
+          "output_script": "Tirh",
+          "readiness": "research",
+          "orthography_profile": "explicit_versioned_profile",
+          "engine_kind": "converter",
+          "evidence_resource_ids": [
+            "mai-tirh-converter"
+          ]
+        }
+      ],
+      "prediction_readiness": "extractable",
+      "correction_readiness": "extractable",
+      "resources": [
+        {
+          "id": "mai-indiccorp",
+          "kind": "corpus",
+          "path": "/Volumes/TRANSCEND/matribhasa/text_corpora/indiccorp_v2/maithili_indiccorp_v2.txt",
+          "format": "plain text",
+          "structured": true,
+          "quality": "usable_with_filters",
+          "uses": [
+            "candidate_vocabulary",
+            "frequency_ranking",
+            "language_model"
+          ],
+          "bytes": 198401487,
+          "canonical": true,
+          "license": "unknown",
+          "redistribution": "unknown",
+          "evidence_type": "attested",
+          "domains": [
+            "general web"
+          ]
+        },
+        {
+          "id": "mai-wikipedia",
+          "kind": "corpus",
+          "path": "/Volumes/TRANSCEND/matribhasa/text_corpora/wikipedia/mai_wikipedia.xml.bz2",
+          "format": "MediaWiki XML bzip2",
+          "structured": true,
+          "quality": "verified",
+          "uses": [
+            "candidate_vocabulary",
+            "frequency_ranking",
+            "language_model"
+          ],
+          "bytes": 14728861,
+          "license": "verified_open",
+          "redistribution": "allowed",
+          "evidence_type": "attested",
+          "domains": [
+            "Wikipedia"
+          ]
+        },
+        {
+          "id": "mai-tirh-converter",
+          "kind": "transliteration",
+          "path": "/Users/cdjk/github/llm/ocr-tech/tools/tirhuta_translit_build.py",
+          "format": "Python",
+          "structured": true,
+          "quality": "needs_audit",
+          "uses": [
+            "script_mapping"
+          ],
+          "license": "unknown",
+          "redistribution": "unknown",
+          "evidence_type": "generated",
+          "notes": "Batch prototype; large Tirhuta periodical archive still uses legacy font encoding."
+        }
+      ],
+      "gaps": [
+        "Extract structured dictionary PDFs.",
+        "Build language-specific casual Roman aliases.",
+        "Convert and validate the legacy Tirhuta periodical archive."
+      ],
+      "public_export_gaps": [
+        "Review extracted dictionary sources before public/export use."
+      ]
+    },
+    {
+      "id": "bho",
+      "name": "Bhojpuri",
+      "iso_639_3": "bho",
+      "scope": "language",
+      "scripts": [
+        {
+          "iso_15924": "Deva",
+          "name": "Devanagari",
+          "role": "primary"
+        }
+      ],
+      "input_methods": [
+        {
+          "id": "bho-deva-direct",
+          "type": "direct",
+          "source_script": "Deva",
+          "output_script": "Deva",
+          "readiness": "extractable",
+          "engine_kind": "layout"
+        },
+        {
+          "id": "bho-latn-deva",
+          "type": "roman_phonetic",
+          "source_script": "Latn",
+          "output_script": "Deva",
+          "readiness": "research",
+          "orthography_profile": "language_specific",
+          "scheme": "casual_ascii_plus_reviewed_aliases",
+          "engine_kind": "alias_decoder",
+          "fallback_policy": "pack_specific_rules_only",
+          "evidence_resource_ids": []
+        }
+      ],
+      "prediction_readiness": "extractable",
+      "correction_readiness": "extractable",
+      "resources": [
+        {
+          "id": "bho-wikipedia",
+          "kind": "corpus",
+          "path": "/Volumes/TRANSCEND/matribhasa/text_corpora/wikipedia/bho_wikipedia.xml.bz2",
+          "format": "MediaWiki XML bzip2",
+          "structured": true,
+          "quality": "verified",
+          "uses": [
+            "candidate_vocabulary",
+            "frequency_ranking",
+            "language_model"
+          ],
+          "bytes": 19177603,
+          "license": "verified_open",
+          "redistribution": "allowed",
+          "evidence_type": "attested",
+          "domains": [
+            "Wikipedia"
+          ]
+        }
+      ],
+      "gaps": [
+        "No structured local dictionary or Roman rules identified."
+      ]
+    },
+    {
+      "id": "dty",
+      "name": "Doteli",
+      "iso_639_3": "dty",
+      "scope": "language",
+      "scripts": [
+        {
+          "iso_15924": "Deva",
+          "name": "Devanagari",
+          "role": "primary"
+        }
+      ],
+      "input_methods": [
+        {
+          "id": "dty-deva-direct",
+          "type": "direct",
+          "source_script": "Deva",
+          "output_script": "Deva",
+          "readiness": "extractable",
+          "engine_kind": "layout"
+        },
+        {
+          "id": "dty-latn-deva",
+          "type": "roman_phonetic",
+          "source_script": "Latn",
+          "output_script": "Deva",
+          "readiness": "research",
+          "orthography_profile": "language_specific",
+          "scheme": "casual_ascii_plus_reviewed_aliases",
+          "engine_kind": "alias_decoder",
+          "fallback_policy": "pack_specific_rules_only",
+          "evidence_resource_ids": []
+        }
+      ],
+      "prediction_readiness": "extractable",
+      "correction_readiness": "extractable",
+      "resources": [
+        {
+          "id": "dty-wikipedia",
+          "kind": "corpus",
+          "path": "/Volumes/TRANSCEND/matribhasa/text_corpora/wikipedia/dty_wikipedia.xml.bz2",
+          "format": "MediaWiki XML bzip2",
+          "structured": true,
+          "quality": "verified",
+          "uses": [
+            "candidate_vocabulary",
+            "frequency_ranking",
+            "language_model"
+          ],
+          "bytes": 8636965,
+          "license": "verified_open",
+          "redistribution": "allowed",
+          "evidence_type": "attested",
+          "domains": [
+            "Wikipedia"
+          ]
+        },
+        {
+          "id": "dty-bible-root",
+          "kind": "corpus",
+          "path": "/Volumes/TRANSCEND/bible_brain_nepal/dty",
+          "format": "SOFRIA/USFM JSON directory",
+          "structured": true,
+          "quality": "usable_with_filters",
+          "uses": [
+            "candidate_vocabulary",
+            "frequency_ranking"
+          ],
+          "records": 520,
+          "record_unit": "files",
+          "license": "unknown",
+          "redistribution": "unknown",
+          "evidence_type": "attested",
+          "domains": [
+            "religious"
+          ]
+        }
+      ],
+      "gaps": [
+        "Extract the local Dotyali wordlist PDF and build Roman gold."
+      ]
+    },
+    {
+      "id": "rjs",
+      "name": "Rajbanshi",
+      "iso_639_3": "rjs",
+      "scope": "language",
+      "scripts": [
+        {
+          "iso_15924": "Deva",
+          "name": "Devanagari",
+          "role": "primary"
+        }
+      ],
+      "input_methods": [
+        {
+          "id": "rjs-deva-direct",
+          "type": "direct",
+          "source_script": "Deva",
+          "output_script": "Deva",
+          "readiness": "extractable",
+          "engine_kind": "layout"
+        },
+        {
+          "id": "rjs-latn-deva",
+          "type": "roman_phonetic",
+          "source_script": "Latn",
+          "output_script": "Deva",
+          "readiness": "research",
+          "orthography_profile": "language_specific",
+          "scheme": "casual_ascii_plus_reviewed_aliases",
+          "engine_kind": "alias_decoder",
+          "fallback_policy": "pack_specific_rules_only",
+          "evidence_resource_ids": []
+        }
+      ],
+      "prediction_readiness": "extractable",
+      "correction_readiness": "extractable",
+      "resources": [
+        {
+          "id": "rjs-bible-root",
+          "kind": "corpus",
+          "path": "/Volumes/TRANSCEND/bible_brain_nepal/rjs",
+          "format": "SOFRIA/USFM JSON directory",
+          "structured": true,
+          "quality": "usable_with_filters",
+          "uses": [
+            "candidate_vocabulary",
+            "frequency_ranking"
+          ],
+          "records": 260,
+          "record_unit": "files",
+          "license": "unknown",
+          "redistribution": "unknown",
+          "evidence_type": "attested",
+          "domains": [
+            "religious"
+          ]
+        },
+        {
+          "id": "rjs-dictionary-pdf",
+          "kind": "dictionary_reference",
+          "path": "/Volumes/TRANSCEND/matribhasa/resources/grammars_dictionaries/Rajbansi_Kamta_Dictionary_2014.pdf",
+          "format": "PDF",
+          "structured": false,
+          "quality": "reference_only",
+          "uses": [
+            "candidate_vocabulary"
+          ],
+          "license": "unknown",
+          "redistribution": "unknown",
+          "evidence_type": "attested"
+        }
+      ],
+      "gaps": [
+        "Extract and normalize the dictionary PDF."
+      ],
+      "public_export_gaps": [
+        "Review the extracted dictionary source before public/export use."
+      ]
+    },
+    {
+      "id": "thq",
+      "name": "Mid-Eastern Tharu",
+      "iso_639_3": "thq",
+      "scope": "variety",
+      "group": "Tharu",
+      "variety": "Mid-Eastern Tharu",
+      "scripts": [
+        {
+          "iso_15924": "Deva",
+          "name": "Devanagari",
+          "role": "primary"
+        }
+      ],
+      "input_methods": [
+        {
+          "id": "thq-deva-direct",
+          "type": "direct",
+          "source_script": "Deva",
+          "output_script": "Deva",
+          "readiness": "extractable",
+          "engine_kind": "layout"
+        },
+        {
+          "id": "thq-latn-deva",
+          "type": "roman_phonetic",
+          "source_script": "Latn",
+          "output_script": "Deva",
+          "readiness": "research",
+          "orthography_profile": "language_specific",
+          "scheme": "casual_ascii_plus_reviewed_aliases",
+          "engine_kind": "alias_decoder",
+          "fallback_policy": "pack_specific_rules_only",
+          "evidence_resource_ids": [
+            "thq-apk"
+          ]
+        }
+      ],
+      "prediction_readiness": "extractable",
+      "correction_readiness": "extractable",
+      "resources": [
+        {
+          "id": "thq-apk",
+          "kind": "lexicon",
+          "path": "/Users/cdjk/github/llm/nllb-better/data/lexicons_apk/thq_nep_lexicon.tsv",
+          "format": "TSV",
+          "structured": true,
+          "quality": "usable_with_filters",
+          "uses": [
+            "candidate_vocabulary",
+            "spellcheck"
+          ],
+          "records": 3044,
+          "record_unit": "entries",
+          "bytes": 88610,
+          "sha256": "575ecfa0b2cbcafe3c4b8783e302f0af5c5a3c7a321b75a61b8bd1fe802d39c5",
+          "canonical": true,
+          "license": "restricted",
+          "redistribution": "prohibited",
+          "evidence_type": "attested",
+          "notes": "Only 1,250 rows contain Nepali glosses."
+        }
+      ],
+      "gaps": [
+        "Do not merge with Dangaura or Rana Tharu.",
+        "Corpus variety needs review."
+      ],
+      "public_export_gaps": [
+        "Review source terms before public/export use."
+      ]
+    },
+    {
+      "id": "thl",
+      "name": "Dangaura/Deukhuri Tharu",
+      "iso_639_3": "thl",
+      "scope": "variety",
+      "group": "Tharu",
+      "variety": "Dangaura/Deukhuri Tharu",
+      "scripts": [
+        {
+          "iso_15924": "Deva",
+          "name": "Devanagari",
+          "role": "primary"
+        }
+      ],
+      "input_methods": [
+        {
+          "id": "thl-deva-direct",
+          "type": "direct",
+          "source_script": "Deva",
+          "output_script": "Deva",
+          "readiness": "extractable",
+          "engine_kind": "layout"
+        },
+        {
+          "id": "thl-latn-deva",
+          "type": "roman_phonetic",
+          "source_script": "Latn",
+          "output_script": "Deva",
+          "readiness": "research",
+          "orthography_profile": "language_specific",
+          "scheme": "casual_ascii_plus_reviewed_aliases",
+          "engine_kind": "alias_decoder",
+          "fallback_policy": "pack_specific_rules_only",
+          "evidence_resource_ids": []
+        }
+      ],
+      "prediction_readiness": "extractable",
+      "correction_readiness": "extractable",
+      "resources": [
+        {
+          "id": "thl-bible-root",
+          "kind": "corpus",
+          "path": "/Volumes/TRANSCEND/bible_brain_nepal/thl",
+          "format": "SOFRIA/USFM JSON directory",
+          "structured": true,
+          "quality": "usable_with_filters",
+          "uses": [
+            "candidate_vocabulary",
+            "frequency_ranking"
+          ],
+          "records": 780,
+          "record_unit": "files",
+          "license": "unknown",
+          "redistribution": "unknown",
+          "evidence_type": "attested",
+          "domains": [
+            "religious"
+          ]
+        }
+      ],
+      "gaps": [
+        "No structured local dictionary.",
+        "Keep Dangaura and Deukhuri product provenance visible.",
+        "Do not merge with other Tharu varieties."
+      ]
+    },
+    {
+      "id": "thr",
+      "name": "Rana Tharu",
+      "iso_639_3": "thr",
+      "scope": "variety",
+      "group": "Tharu",
+      "variety": "Rana Tharu",
+      "scripts": [
+        {
+          "iso_15924": "Deva",
+          "name": "Devanagari",
+          "role": "primary"
+        }
+      ],
+      "input_methods": [
+        {
+          "id": "thr-deva-direct",
+          "type": "direct",
+          "source_script": "Deva",
+          "output_script": "Deva",
+          "readiness": "extractable",
+          "engine_kind": "layout"
+        },
+        {
+          "id": "thr-latn-deva",
+          "type": "roman_phonetic",
+          "source_script": "Latn",
+          "output_script": "Deva",
+          "readiness": "research",
+          "orthography_profile": "language_specific",
+          "scheme": "casual_ascii_plus_reviewed_aliases",
+          "engine_kind": "alias_decoder",
+          "fallback_policy": "pack_specific_rules_only",
+          "evidence_resource_ids": []
+        }
+      ],
+      "prediction_readiness": "extractable",
+      "correction_readiness": "extractable",
+      "resources": [
+        {
+          "id": "thr-bible-root",
+          "kind": "corpus",
+          "path": "/Volumes/TRANSCEND/bible_brain_nepal/thr",
+          "format": "SOFRIA/USFM JSON directory",
+          "structured": true,
+          "quality": "usable_with_filters",
+          "uses": [
+            "candidate_vocabulary",
+            "frequency_ranking"
+          ],
+          "records": 520,
+          "record_unit": "files",
+          "license": "unknown",
+          "redistribution": "unknown",
+          "evidence_type": "attested",
+          "domains": [
+            "religious"
+          ]
+        }
+      ],
+      "gaps": [
+        "No structured local dictionary.",
+        "Do not merge with other Tharu varieties."
+      ]
+    },
+    {
+      "id": "xsr",
+      "name": "Sherpa",
+      "iso_639_3": "xsr",
+      "scope": "language",
+      "scripts": [
+        {
+          "iso_15924": "Deva",
+          "name": "Devanagari",
+          "role": "widely_used"
+        },
+        {
+          "iso_15924": "Tibt",
+          "name": "Tibetan/Sambhota",
+          "role": "traditional"
+        }
+      ],
+      "input_methods": [
+        {
+          "id": "xsr-deva-direct",
+          "type": "direct",
+          "source_script": "Deva",
+          "output_script": "Deva",
+          "readiness": "extractable",
+          "engine_kind": "layout"
+        },
+        {
+          "id": "xsr-tibt-direct",
+          "type": "direct",
+          "source_script": "Tibt",
+          "output_script": "Tibt",
+          "readiness": "research",
+          "engine_kind": "layout"
+        },
+        {
+          "id": "xsr-latn-deva",
+          "type": "roman_phonetic",
+          "source_script": "Latn",
+          "output_script": "Deva",
+          "readiness": "research",
+          "orthography_profile": "language_specific",
+          "scheme": "casual_ascii_plus_reviewed_aliases",
+          "engine_kind": "alias_decoder",
+          "fallback_policy": "pack_specific_rules_only",
+          "evidence_resource_ids": [
+            "xsr-roman-english"
+          ]
+        }
+      ],
+      "prediction_readiness": "extractable",
+      "correction_readiness": "extractable",
+      "resources": [
+        {
+          "id": "xsr-roman-english",
+          "kind": "lexicon",
+          "path": "/Users/cdjk/github/llm/nllb-better/data/lexicons_pdf/xsr_eng_tournadre.tsv",
+          "format": "TSV",
+          "structured": true,
+          "quality": "needs_audit",
+          "uses": [
+            "candidate_vocabulary",
+            "roman_aliases"
+          ],
+          "records": 1864,
+          "record_unit": "entries",
+          "bytes": 48954,
+          "sha256": "263a68c6ac1df08f77891766d457410c87495e64864153b13f360e8d9ea944e2",
+          "license": "restricted",
+          "redistribution": "prohibited",
+          "evidence_type": "attested",
+          "notes": "Roman-English OCR with noisy tail; not a Devanagari/Tibetan keyboard dictionary."
+        },
+        {
+          "id": "xsr-bible-root",
+          "kind": "corpus",
+          "path": "/Volumes/TRANSCEND/bible_brain_nepal/xsr",
+          "format": "SOFRIA/USFM JSON directory",
+          "structured": true,
+          "quality": "usable_with_filters",
+          "uses": [
+            "candidate_vocabulary",
+            "frequency_ranking"
+          ],
+          "records": 260,
+          "record_unit": "files",
+          "license": "unknown",
+          "redistribution": "unknown",
+          "evidence_type": "attested",
+          "domains": [
+            "religious"
+          ]
+        }
+      ],
+      "gaps": [
+        "Clean mapping among Roman, Devanagari, and Tibetan forms is absent.",
+        "Modern speaker review and additional sources are needed."
+      ],
+      "public_export_gaps": [
+        "Qualify additional sources before public/export use."
+      ]
+    },
+    {
+      "id": "sat",
+      "name": "Santali",
+      "iso_639_3": "sat",
+      "scope": "language",
+      "scripts": [
+        {
+          "iso_15924": "Olck",
+          "name": "Ol Chiki",
+          "role": "primary"
+        },
+        {
+          "iso_15924": "Deva",
+          "name": "Devanagari",
+          "role": "widely_used"
+        }
+      ],
+      "input_methods": [
+        {
+          "id": "sat-olck-direct",
+          "type": "direct",
+          "source_script": "Olck",
+          "output_script": "Olck",
+          "readiness": "beta",
+          "engine_kind": "layout"
+        },
+        {
+          "id": "sat-deva-direct",
+          "type": "direct",
+          "source_script": "Deva",
+          "output_script": "Deva",
+          "readiness": "research",
+          "engine_kind": "layout"
+        },
+        {
+          "id": "sat-latn-olck",
+          "type": "roman_phonetic",
+          "source_script": "Latn",
+          "output_script": "Olck",
+          "readiness": "research",
+          "orthography_profile": "language_specific",
+          "scheme": "casual_ascii_plus_reviewed_aliases",
+          "engine_kind": "alias_decoder",
+          "fallback_policy": "pack_specific_rules_only",
+          "evidence_resource_ids": []
+        }
+      ],
+      "prediction_readiness": "beta",
+      "correction_readiness": "extractable",
+      "resources": [
+        {
+          "id": "sat-olchiki-wikipedia",
+          "kind": "corpus",
+          "path": "/Users/cdjk/github/llm/ocr-tech/data/external-language-resources/native-script-corpora-2026-07-06/ol-chiki/satwiki_olchiki_lines.txt",
+          "format": "plain text",
+          "structured": true,
+          "quality": "verified",
+          "uses": [
+            "candidate_vocabulary",
+            "frequency_ranking",
+            "language_model",
+            "layout_validation"
+          ],
+          "records": 204651,
+          "record_unit": "lines",
+          "bytes": 73793826,
+          "canonical": true,
+          "license": "verified_open",
+          "redistribution": "allowed",
+          "evidence_type": "attested",
+          "domains": [
+            "Wikipedia"
+          ]
+        }
+      ],
+      "gaps": [
+        "No structured local spelling dictionary.",
+        "Validate Nepal usage/variety and build Roman aliases."
+      ]
+    },
+    {
+      "id": "lep",
+      "name": "Lepcha",
+      "iso_639_3": "lep",
+      "scope": "language",
+      "scripts": [
+        {
+          "iso_15924": "Lepc",
+          "name": "Lepcha",
+          "role": "primary"
+        }
+      ],
+      "input_methods": [
+        {
+          "id": "lep-lepc-direct",
+          "type": "direct",
+          "source_script": "Lepc",
+          "output_script": "Lepc",
+          "readiness": "research",
+          "engine_kind": "layout"
+        },
+        {
+          "id": "lep-latn-lepc",
+          "type": "roman_phonetic",
+          "source_script": "Latn",
+          "output_script": "Lepc",
+          "readiness": "research",
+          "orthography_profile": "language_specific",
+          "scheme": "casual_ascii_plus_reviewed_aliases",
+          "engine_kind": "alias_decoder",
+          "fallback_policy": "pack_specific_rules_only",
+          "evidence_resource_ids": []
+        }
+      ],
+      "prediction_readiness": "research",
+      "correction_readiness": "research",
+      "resources": [
+        {
+          "id": "lep-wiktionary-lemmas",
+          "kind": "lexicon",
+          "path": "/Users/cdjk/github/llm/ocr-tech/data/external-language-resources/native-script-corpora-2026-07-06/lepcha/wiktionary_lepcha_lemmas.txt",
+          "format": "plain text",
+          "structured": true,
+          "quality": "reference_only",
+          "uses": [
+            "candidate_vocabulary",
+            "layout_validation"
+          ],
+          "records": 280,
+          "record_unit": "lines",
+          "bytes": 2868,
+          "sha256": "94ad449b11db2eba9defdec47dca3d9a5069f1785ce04c75f7ed01b0c607a74d",
+          "license": "unknown",
+          "redistribution": "unknown",
+          "evidence_type": "attested"
+        },
+        {
+          "id": "lep-orthography-extracts",
+          "kind": "script_sample",
+          "path": "/Users/cdjk/github/llm/ocr-tech/data/external-language-resources/native-script-corpora-2026-07-06/lepcha",
+          "format": "directory",
+          "structured": true,
+          "quality": "reference_only",
+          "uses": [
+            "layout_validation",
+            "evaluation"
+          ],
+          "license": "mixed",
+          "redistribution": "unknown",
+          "evidence_type": "attested",
+          "notes": "Verified harvested Unicode corpus is under 2,000 Lepcha codepoints."
+        }
+      ],
+      "gaps": [
+        "Substantive Unicode corpus and dictionary are missing.",
+        "Legacy-font publications need a converter."
+      ]
+    }
+  ]
+}

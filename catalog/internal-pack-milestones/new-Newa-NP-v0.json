@@ -1,0 +1,114 @@
+{
+  "adapter": {
+    "input_argument": "prachalit_corpus",
+    "module": "tools.build_nepal_bhasa_newa_internal_source",
+    "name": "build_nepal_bhasa_newa_internal_source",
+    "path": "tools/build_nepal_bhasa_newa_internal_source.py",
+    "sha256": "c1932c2a1f84493cdf59ac4b56ea17f167609a83f105f2444631d55f10aafef4",
+    "version": 1
+  },
+  "evidence": {
+    "remaining_production_gates": [
+      "accessibility_review",
+      "glyph_rendering",
+      "native_speaker_review",
+      "physical_device_runtime",
+      "quality_evaluation",
+      "source_anomaly_review",
+      "typing_flow_review"
+    ],
+    "report_id": "nepal-bhasa-newa-internal-pack-v0",
+    "report_version": 1
+  },
+  "layout": {
+    "base_path": "layouts/research/newa-nepal-qwerty-direct-v1.json",
+    "base_sha256": "52277fbe277fb4a7a5d7af7fa32fe6083280f2542f1e464f7712c93a3309e4c0",
+    "display_name": "Nepal Bhasa Prachalit (phone beta)",
+    "layout_id": "newa-nepal-prachalit-v1",
+    "license": null,
+    "operations": [
+      {
+        "kind": "insert_row_before_actions",
+        "layer_id": "symbols",
+        "row": [
+          {
+            "content_description": "Newa letter NGHA",
+            "kind": "text",
+            "label": "𑐓",
+            "text": "𑐓"
+          },
+          {
+            "content_description": "Newa letter NYHA",
+            "kind": "text",
+            "label": "𑐙",
+            "text": "𑐙"
+          },
+          {
+            "content_description": "Newa letter NHA",
+            "kind": "text",
+            "label": "𑐤",
+            "text": "𑐤"
+          },
+          {
+            "content_description": "Newa letter MHA",
+            "kind": "text",
+            "label": "𑐪",
+            "text": "𑐪"
+          },
+          {
+            "content_description": "Newa letter RHA",
+            "kind": "text",
+            "label": "𑐭",
+            "text": "𑐭"
+          }
+        ]
+      }
+    ],
+    "provenance": [
+      {
+        "kind": "adapted",
+        "note": "Preserves the pinned QWERTY-positioned research mapping while separating internal-beta authority from the pending native-review packet.",
+        "revision": "1",
+        "sha256": "52277fbe277fb4a7a5d7af7fa32fe6083280f2542f1e464f7712c93a3309e4c0",
+        "source": "layouts/research/newa-nepal-qwerty-direct-v1.json"
+      },
+      {
+        "kind": "project_authored",
+        "note": "Adds a visible extended-letter row for the five atomic murmured resonants missing from the research candidate; placement remains subject to native ergonomic review.",
+        "revision": "2026-07-20",
+        "sha256": "b7101ee20ff64e38775e72e37c0364e8c04531dbd7af07dad6d6de22a8ca52b7",
+        "source": "docs/nepal-bhasa-input-reference-audit.md"
+      }
+    ],
+    "revision": 1,
+    "source_sha256": "dca07de46cc09f53c430c6b57702c3e56137316ead7ebb0f209e535e62020448"
+  },
+  "pack": {
+    "artifact_license": "LicenseRef-Internal",
+    "file_name": "new-Newa-NP.nkp",
+    "language": "new",
+    "output_script": "Newa",
+    "pack_id": "new-Newa-NP"
+  },
+  "paths": {
+    "evidence_output": "reports/nepal-bhasa-newa-internal-pack-v0.json",
+    "layout_source": "layouts/internal/src/newa-nepal-prachalit-v1.json",
+    "queries": "catalog/nepal-bhasa-newa-internal-prefixes-v0.json",
+    "resource_catalog": "catalog/resources.json",
+    "review": "catalog/internal-profile-review.json"
+  },
+  "profile": {
+    "default_enabled": false,
+    "input_method_id": "new-newa-direct",
+    "target_id": "new"
+  },
+  "source": {
+    "data_version": "1.0.0",
+    "expected_data_rows": 285,
+    "file_name": "nepal_lipi_online_corpus.txt",
+    "max_suggestions": 8,
+    "resource_id": "new-prachalit-online-corpus",
+    "sha256": "6ff04654fb048b56b021cda8719b3c8bc5c3b5d7baa59621a7bef2019930fcc2"
+  },
+  "spec_version": 3
+}

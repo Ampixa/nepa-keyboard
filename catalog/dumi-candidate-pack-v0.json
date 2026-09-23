@@ -1,0 +1,46 @@
+{
+  "adapter_sha256": "4fef502384cc1740eb456418b49c13e9d5a52a9ab7912489878197943a9210d9",
+  "claim_scope": "candidate_only",
+  "compiler_sha256": "098e57e96603dcbb12145e6184c099155e68fe400d0aab57b16b77cd5f657f75",
+  "data_version": "1.0.0",
+  "format_version": 1,
+  "inspection_vectors": [
+    {
+      "expected_first_surface": "क:फु",
+      "prefix": "क"
+    },
+    {
+      "expected_first_surface": "आम्‍ना-आसाला",
+      "prefix": "आम्‍"
+    },
+    {
+      "expected_first_surface": "आर्‌खु",
+      "prefix": "आर्‌"
+    },
+    {
+      "expected_first_surface": "कु:ना",
+      "prefix": "कु:"
+    },
+    {
+      "expected_first_surface": "आम्‍ना-आसाला",
+      "prefix": "आम्‍ना-"
+    },
+    {
+      "expected_first_surface": "तःले",
+      "prefix": "तः"
+    },
+    {
+      "expected_first_surface": "ब़ह़",
+      "prefix": "ब़"
+    }
+  ],
+  "layout_audit_sha256": "67775a6e11ec1e4b4bc370f5a6d1bcac1d3a94d0a45e7a98e8f1062a4a876638",
+  "layout_id": "deva-nepal-khaling-v1",
+  "max_suggestions": 8,
+  "policy": "conjunct_only",
+  "raw_sha256": "1d8453339c727ee5c63fc4fbf64ec80619ea82cc559b31b9224826e1d0902ffc",
+  "resource_id": "dus-apk",
+  "runtime_sha256": "43a811bde1d45a4004afadcb88cdb1e38cc5589821fae233224edeedd1563146",
+  "source_tag": "sil-apk/dumi",
+  "target_id": "dus"
+}

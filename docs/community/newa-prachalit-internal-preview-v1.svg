@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900" role="img" aria-labelledby="title description">
+  <title id="title">Prachalit Nepal Lipi internal beta keyboard preview</title>
+  <desc id="description">The selectable internal Nepal Bhasa direct keyboard in the Newa Unicode script, showing its base layer, separate virama and joiner keys, and the five extended letters available on the symbols layer.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#071520"/>
+      <stop offset="1" stop-color="#17213c"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#192b40"/>
+      <stop offset="1" stop-color="#111c30"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000712" flood-opacity="0.48"/>
+    </filter>
+    <style>
+      .ui { font-family: Inter, system-ui, sans-serif; }
+      .key { fill: #263853; stroke: #49607d; stroke-width: 1.5; }
+      .special { fill: #173e48; stroke: #43c7b4; stroke-width: 1.5; }
+      .latin { fill: #9eacc5; font: 600 14px Inter, system-ui, sans-serif; }
+      .glyph { fill: #fbfdff; font: 34px "Noto Sans Newa", "Noto Sans", sans-serif; text-anchor: middle; dominant-baseline: middle; }
+      .control { fill: #fbfdff; font: 700 17px Inter, system-ui, sans-serif; text-anchor: middle; dominant-baseline: middle; }
+      .small { fill: #9eacc5; font: 600 12px Inter, system-ui, sans-serif; text-anchor: middle; }
+    </style>
+  </defs>
+
+  <rect width="1440" height="900" fill="url(#background)"/>
+  <circle cx="1270" cy="82" r="200" fill="#33d3bd" opacity="0.08"/>
+  <circle cx="90" cy="835" r="260" fill="#647cff" opacity="0.07"/>
+
+  <g class="ui">
+    <text x="64" y="72" fill="#fbfdff" font-size="42" font-weight="750">Prachalit Nepal Lipi keyboard</text>
+    <text x="66" y="112" fill="#b4c1d8" font-size="21">Nepal Bhasa · direct Newa script · internal beta</text>
+    <rect x="1090" y="53" width="286" height="46" rx="23" fill="#43c7b4" opacity="0.15" stroke="#43c7b4"/>
+    <text x="1233" y="82" fill="#70e4d3" font-size="15" font-weight="750" text-anchor="middle">SELECTABLE · INTERNAL BETA</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="60" y="150" width="1320" height="492" rx="34" fill="url(#panel)" stroke="#314761" stroke-width="2"/>
+  </g>
+  <text class="ui" x="96" y="194" fill="#70e4d3" font-size="15" font-weight="750" letter-spacing="1.5">BASE LAYER · EXACT DECLARATIVE LAYOUT</text>
+
+  <g>
+    <rect class="key" x="110" y="216" width="112" height="78" rx="15"/><text class="latin" x="123" y="237">Q</text><text class="glyph" x="166" y="258">𑐚</text>
+    <rect class="key" x="232" y="216" width="112" height="78" rx="15"/><text class="latin" x="245" y="237">W</text><text class="glyph" x="288" y="258">𑑁</text>
+    <rect class="key" x="354" y="216" width="112" height="78" rx="15"/><text class="latin" x="367" y="237">E</text><text class="glyph" x="410" y="258">𑐾</text>
+    <rect class="key" x="476" y="216" width="112" height="78" rx="15"/><text class="latin" x="489" y="237">R</text><text class="glyph" x="532" y="258">𑐬</text>
+    <rect class="key" x="598" y="216" width="112" height="78" rx="15"/><text class="latin" x="611" y="237">T</text><text class="glyph" x="654" y="258">𑐟</text>
+    <rect class="key" x="720" y="216" width="112" height="78" rx="15"/><text class="latin" x="733" y="237">Y</text><text class="glyph" x="776" y="258">𑐫</text>
+    <rect class="key" x="842" y="216" width="112" height="78" rx="15"/><text class="latin" x="855" y="237">U</text><text class="glyph" x="898" y="258">𑐸</text>
+    <rect class="key" x="964" y="216" width="112" height="78" rx="15"/><text class="latin" x="977" y="237">I</text><text class="glyph" x="1020" y="258">𑐶</text>
+    <rect class="key" x="1086" y="216" width="112" height="78" rx="15"/><text class="latin" x="1099" y="237">O</text><text class="glyph" x="1142" y="258">𑑀</text>
+    <rect class="key" x="1208" y="216" width="112" height="78" rx="15"/><text class="latin" x="1221" y="237">P</text><text class="glyph" x="1264" y="258">𑐥</text>
+  </g>
+
+  <g>
+    <rect class="key" x="171" y="310" width="112" height="78" rx="15"/><text class="latin" x="184" y="331">A</text><text class="glyph" x="227" y="352">𑐵</text>
+    <rect class="key" x="293" y="310" width="112" height="78" rx="15"/><text class="latin" x="306" y="331">S</text><text class="glyph" x="349" y="352">𑐳</text>
+    <rect class="key" x="415" y="310" width="112" height="78" rx="15"/><text class="latin" x="428" y="331">D</text><text class="glyph" x="471" y="352">𑐡</text>
+    <rect class="key" x="537" y="310" width="112" height="78" rx="15"/><text class="latin" x="550" y="331">F</text><text class="glyph" x="593" y="352">𑐦</text>
+    <rect class="key" x="659" y="310" width="112" height="78" rx="15"/><text class="latin" x="672" y="331">G</text><text class="glyph" x="715" y="352">𑐐</text>
+    <rect class="key" x="781" y="310" width="112" height="78" rx="15"/><text class="latin" x="794" y="331">H</text><text class="glyph" x="837" y="352">𑐴</text>
+    <rect class="key" x="903" y="310" width="112" height="78" rx="15"/><text class="latin" x="916" y="331">J</text><text class="glyph" x="959" y="352">𑐖</text>
+    <rect class="key" x="1025" y="310" width="112" height="78" rx="15"/><text class="latin" x="1038" y="331">K</text><text class="glyph" x="1081" y="352">𑐎</text>
+    <rect class="key" x="1147" y="310" width="112" height="78" rx="15"/><text class="latin" x="1160" y="331">L</text><text class="glyph" x="1203" y="352">𑐮</text>
+  </g>
+
+  <g>
+    <rect class="key" x="87" y="404" width="105" height="78" rx="15"/><text class="latin" x="99" y="425">Z</text><text class="glyph" x="139.5" y="446">𑐲</text>
+    <rect class="key" x="202" y="404" width="105" height="78" rx="15"/><text class="latin" x="214" y="425">X</text><text class="glyph" x="254.5" y="446">𑐕</text>
+    <rect class="key" x="317" y="404" width="105" height="78" rx="15"/><text class="latin" x="329" y="425">C</text><text class="glyph" x="369.5" y="446">𑐔</text>
+    <rect class="key" x="432" y="404" width="105" height="78" rx="15"/><text class="latin" x="444" y="425">V</text><text class="glyph" x="484.5" y="446">𑐰</text>
+    <rect class="key" x="547" y="404" width="105" height="78" rx="15"/><text class="latin" x="559" y="425">B</text><text class="glyph" x="599.5" y="446">𑐧</text>
+    <rect class="key" x="662" y="404" width="105" height="78" rx="15"/><text class="latin" x="674" y="425">N</text><text class="glyph" x="714.5" y="446">𑐣</text>
+    <rect class="key" x="777" y="404" width="105" height="78" rx="15"/><text class="latin" x="789" y="425">M</text><text class="glyph" x="829.5" y="446">𑐩</text>
+    <rect class="key" x="892" y="404" width="105" height="78" rx="15"/><text class="latin" x="904" y="425">,</text><text class="glyph" x="944.5" y="446">𑑋</text>
+    <rect class="special" x="1007" y="404" width="105" height="78" rx="15"/><text class="small" x="1059.5" y="426">VIRAMA</text><text class="glyph" x="1059.5" y="454">𑑂</text>
+    <rect class="special" x="1122" y="404" width="105" height="78" rx="15"/><text class="control" x="1174.5" y="446">ZWJ</text>
+    <rect class="special" x="1237" y="404" width="105" height="78" rx="15"/><text class="control" x="1289.5" y="446">ZWNJ</text>
+  </g>
+
+  <g class="ui">
+    <rect class="key" x="87" y="510" width="180" height="82" rx="18"/><text class="control" x="177" y="551">⇧ Shift</text>
+    <rect class="special" x="279" y="510" width="180" height="82" rx="18"/><text class="control" x="369" y="551">?123</text>
+    <rect class="key" x="471" y="510" width="110" height="82" rx="18"/><text class="control" x="526" y="551">🌐</text>
+    <rect class="key" x="593" y="510" width="490" height="82" rx="18"/><text class="control" x="838" y="551">Nepal Bhasa</text>
+    <rect class="key" x="1095" y="510" width="110" height="82" rx="18"/><text class="control" x="1150" y="551">⌫</text>
+    <rect class="key" x="1217" y="510" width="125" height="82" rx="18"/><text class="control" x="1279.5" y="551">↵</text>
+    <text x="720" y="622" fill="#8fa0bb" font-size="14" text-anchor="middle">The five extended letters below are reachable from the highlighted Symbols key.</text>
+  </g>
+
+  <g class="ui">
+    <text x="64" y="700" fill="#fbfdff" font-size="25" font-weight="730">Extended letters · current symbols-row placement</text>
+    <text x="64" y="732" fill="#b4c1d8" font-size="17">All five are implemented and tested; community feedback should decide their final phone placement.</text>
+    <g font-size="16" font-weight="650">
+      <rect x="64" y="762" width="230" height="62" rx="15" fill="#16343e" stroke="#43c7b4"/><text class="glyph" x="100" y="793">𑐓</text><text x="131" y="789" fill="#e7fbf8">NGHA</text><text x="131" y="810" fill="#93cfc7" font-size="12">U+11413</text>
+      <rect x="306" y="762" width="230" height="62" rx="15" fill="#16343e" stroke="#43c7b4"/><text class="glyph" x="342" y="793">𑐙</text><text x="373" y="789" fill="#e7fbf8">NYHA</text><text x="373" y="810" fill="#93cfc7" font-size="12">U+11419</text>
+      <rect x="548" y="762" width="230" height="62" rx="15" fill="#16343e" stroke="#43c7b4"/><text class="glyph" x="584" y="793">𑐤</text><text x="615" y="789" fill="#e7fbf8">NHA</text><text x="615" y="810" fill="#93cfc7" font-size="12">U+11424</text>
+      <rect x="790" y="762" width="230" height="62" rx="15" fill="#16343e" stroke="#43c7b4"/><text class="glyph" x="826" y="793">𑐪</text><text x="857" y="789" fill="#e7fbf8">MHA</text><text x="857" y="810" fill="#93cfc7" font-size="12">U+1142A</text>
+      <rect x="1032" y="762" width="244" height="62" rx="15" fill="#16343e" stroke="#43c7b4"/><text class="glyph" x="1068" y="793">𑐭</text><text x="1099" y="789" fill="#e7fbf8">RHA</text><text x="1099" y="810" fill="#93cfc7" font-size="12">U+1142D</text>
+    </g>
+    <text x="64" y="867" fill="#70e4d3" font-size="17" font-weight="700">2,318 attested surfaces · API 34 runtime passed · native review still open</text>
+    <text x="1376" y="867" fill="#8292ad" font-size="13" text-anchor="end">layout dca07de4… · pack 860ef197…</text>
+  </g>
+</svg>

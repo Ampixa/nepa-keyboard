@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component>
+  <name>org.ampixa.NepaKeyboard.Phonetic</name>
+  <description>Nepa offline phonetic input methods</description>
+  <exec>/usr/lib/nepa-keyboard/nepa-ibus-engine --ibus</exec>
+  <version>0.2.0</version>
+  <author>Ampixa</author>
+  <license>Internal</license>
+  <homepage>https://github.com/suvash/nepali-romanized-pro</homepage>
+  <textdomain>nepa-keyboard</textdomain>
+  <engines>
+    <engine>
+      <name>nepa-phonetic-nepali</name>
+      <longname>Nepali Phonetic — Nepa</longname>
+      <description>Roman Nepali to Devanagari with caret suggestions</description>
+      <language>ne</language>
+      <license>Internal</license>
+      <author>Ampixa</author>
+      <layout>us</layout>
+      <symbol>ने</symbol>
+    </engine>
+    <engine>
+      <name>nepa-phonetic-newa</name>
+      <longname>Nepal Bhasa Phonetic (Newa) — Nepa</longname>
+      <description>Roman Nepal Bhasa to Newa with caret suggestions</description>
+      <language>new</language>
+      <license>Internal</license>
+      <author>Ampixa</author>
+      <layout>us</layout>
+      <symbol>𑐣𑐾</symbol>
+    </engine>
+    <engine>
+      <name>nepa-phonetic-limbu</name>
+      <longname>Limbu Phonetic (Sirijanga) — Nepa</longname>
+      <description>Roman Limbu to Sirijanga with caret suggestions</description>
+      <language>lif</language>
+      <license>Internal</license>
+      <author>Ampixa</author>
+      <layout>us</layout>
+      <symbol>ᤕᤠ</symbol>
+    </engine>
+  </engines>
+</component>
+

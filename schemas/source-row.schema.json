@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ampixa.com/schemas/nepa-keyboard-source-row.schema.json",
+  "title": "Nepa Keyboard source provenance row",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["source_id", "title", "method", "license", "redistribution"],
+  "properties": {
+    "source_id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9._-]*$" },
+    "title": { "type": "string", "minLength": 1 },
+    "method": { "type": "string", "minLength": 1 },
+    "license": { "type": "string", "minLength": 1 },
+    "redistribution": {
+      "type": "string",
+      "enum": ["allowed", "system", "prohibited", "permission_required", "unknown"]
+    },
+    "sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+    "source_url": { "type": "string", "format": "uri" },
+    "project_url": { "type": "string", "format": "uri" },
+    "license_url": { "type": "string", "format": "uri" },
+    "license_legalcode_url": { "type": "string", "format": "uri" },
+    "license_sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+    "license_notice": { "type": "string", "minLength": 1 },
+    "upstream_commit": { "type": "string", "pattern": "^[0-9a-f]{7,64}$" },
+    "path": { "type": "string", "minLength": 1 },
+    "copyright": { "type": "string", "minLength": 1 },
+    "changes": { "type": "string", "minLength": 1 },
+    "citation": { "type": "string", "minLength": 1 },
+    "domains": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+    "notes": { "type": "string" },
+    "modified": { "type": "boolean" }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": { "redistribution": { "const": "allowed" } },
+        "required": ["redistribution"]
+      },
+      "then": {
+        "required": ["sha256", "source_url", "license_url", "license_notice"]
+      }
+    }
+  ]
+}

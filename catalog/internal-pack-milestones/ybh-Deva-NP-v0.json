@@ -1,0 +1,170 @@
+{
+  "adapter": {
+    "input_argument": "sil_apk_jsonl",
+    "module": "tools.build_yakkha_internal_source",
+    "name": "build_yakkha_internal_source",
+    "path": "tools/build_yakkha_internal_source.py",
+    "sha256": "83bcf7792f2b6cecc6e8636a599682186fd99fe192422e2c375ff5394d295359",
+    "version": 1
+  },
+  "evidence": {
+    "remaining_production_gates": [
+      "accessibility_review",
+      "frequency_ranking",
+      "glyph_rendering",
+      "native_speaker_review",
+      "physical_device_runtime",
+      "quality_evaluation",
+      "source_anomaly_review",
+      "terminal_zwnj_review",
+      "typing_flow_review"
+    ],
+    "report_id": "yakkha-internal-pack-v0",
+    "report_version": 1
+  },
+  "layout": {
+    "base_path": "layouts/internal/src/deva-nepal-basic-v1.json",
+    "base_sha256": "5cefdc0e916eaa9ee64acafddcadad4c9d32c8adbaff69cb2d8f181655280e4f",
+    "display_name": "Devanagari Yakkha (Nepal phone)",
+    "layout_id": "deva-nepal-yakkha-v1",
+    "license_notice_path": "layouts/internal/notices/xkb-data-2.41-2ubuntu1.1-deva-yakkha.copyright",
+    "license_notice_sha256": "d5b4c59af6e05f1c28c7e297066eee36a03c4d50874f9d8f3733d1da75fc1382",
+    "operations": [
+      {
+        "kind": "insert_row_before_actions",
+        "layer_id": "base",
+        "row": [
+          "इ",
+          "ए",
+          {
+            "content_description": "Devanagari glottal stop",
+            "kind": "text",
+            "label": "ॽ",
+            "text": "ॽ"
+          },
+          {
+            "content_description": "Devanagari zero width joiner",
+            "kind": "deva_conjunct_joiner",
+            "label": "ZWJ",
+            "text": "‍"
+          },
+          {
+            "content_description": "Yakkha conjunct or terminal zero width non-joiner",
+            "kind": "deva_terminal_zwnj",
+            "label": "ZWNJ",
+            "text": "‌"
+          }
+        ]
+      },
+      {
+        "kind": "insert_row_before_actions",
+        "layer_id": "shift",
+        "row": [
+          "इ",
+          "ए",
+          {
+            "content_description": "Devanagari glottal stop",
+            "kind": "text",
+            "label": "ॽ",
+            "text": "ॽ"
+          },
+          {
+            "content_description": "Devanagari zero width joiner",
+            "kind": "deva_conjunct_joiner",
+            "label": "ZWJ",
+            "text": "‍"
+          },
+          {
+            "content_description": "Yakkha conjunct or terminal zero width non-joiner",
+            "kind": "deva_terminal_zwnj",
+            "label": "ZWNJ",
+            "text": "‌"
+          }
+        ]
+      },
+      {
+        "keys": [
+          {
+            "content_description": "Backslash within Yakkha word",
+            "kind": "intra_word_punctuation",
+            "label": "\\",
+            "text": "\\"
+          }
+        ],
+        "kind": "append_keys_to_row",
+        "layer_id": "symbols",
+        "row_index": 2
+      },
+      {
+        "key": {
+          "content_description": "Hyphen within Yakkha word",
+          "kind": "intra_word_punctuation",
+          "label": "-",
+          "text": "-"
+        },
+        "key_index": 5,
+        "kind": "replace_key",
+        "layer_id": "symbols",
+        "row_index": 1
+      },
+      {
+        "key": {
+          "content_description": "Slash within Yakkha word",
+          "kind": "intra_word_punctuation",
+          "label": "/",
+          "text": "/"
+        },
+        "key_index": 7,
+        "kind": "replace_key",
+        "layer_id": "symbols",
+        "row_index": 2
+      }
+    ],
+    "provenance": [
+      {
+        "kind": "adapted",
+        "note": "The reviewed internal Nepali basic phone rows, actions, symbols, numeric fallback, and profile-bound labels are preserved exactly.",
+        "revision": "1",
+        "sha256": "5cefdc0e916eaa9ee64acafddcadad4c9d32c8adbaff69cb2d8f181655280e4f",
+        "source": "layouts/internal/src/deva-nepal-basic-v1.json"
+      },
+      {
+        "kind": "project_authored",
+        "note": "Adds the five language keys, terminal-ZWNJ policy, and three intra-word punctuation keys shown necessary by the complete accepted Yakkha surface inventory audit.",
+        "revision": "v0-real-run",
+        "sha256": "b877e24dea9262d39e575542d714acfc87ab4400db6ba498910f9da70dfb5556",
+        "source": "reports/yakkha-pack-readiness-v0.md"
+      }
+    ],
+    "revision": 1,
+    "source_sha256": "6bc33cb0bf5d2582a609e0e4ca987d099763f7b87af3aa76013c02faca7562b4"
+  },
+  "pack": {
+    "artifact_license": "LicenseRef-Internal",
+    "file_name": "ybh-Deva-NP.nkp",
+    "language": "ybh",
+    "output_script": "Deva",
+    "pack_id": "ybh-Deva-NP"
+  },
+  "paths": {
+    "evidence_output": "reports/yakkha-internal-pack-v0.json",
+    "layout_source": "layouts/internal/src/deva-nepal-yakkha-v1.json",
+    "queries": "catalog/yakkha-internal-prefixes-v0.json",
+    "resource_catalog": "catalog/resources.json",
+    "review": "catalog/internal-profile-review.json"
+  },
+  "profile": {
+    "default_enabled": false,
+    "input_method_id": "ybh-deva-direct",
+    "target_id": "ybh"
+  },
+  "source": {
+    "data_version": "1.0.0",
+    "expected_data_rows": 4830,
+    "file_name": "nepali-yakkha.sil-apk.dict.jsonl",
+    "max_suggestions": 8,
+    "resource_id": "ybh-apk",
+    "sha256": "ed1420ea44650a70d65dd6e99d07b46766c94feff9f3a4d0eef56d67bc5a919d"
+  },
+  "spec_version": 2
+}

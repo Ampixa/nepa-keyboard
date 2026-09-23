@@ -1,0 +1,374 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ampixa.com/schemas/nepa-keyboard-shipping-profile-lock.schema.json",
+  "title": "Nepa Keyboard reviewed shipping-profile lock",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "lock_version", "generator", "generator_version", "compiler", "schemas",
+    "catalog", "review", "counts", "scripts", "targets", "profiles"
+  ],
+  "properties": {
+    "lock_version": { "const": 2 },
+    "generator": { "const": "build_shipping_profile_catalog" },
+    "generator_version": { "const": 2 },
+    "compiler": { "$ref": "#/$defs/file_reference" },
+    "schemas": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["catalog", "review", "lock"],
+      "properties": {
+        "catalog": { "$ref": "#/$defs/file_reference" },
+        "review": { "$ref": "#/$defs/file_reference" },
+        "lock": { "$ref": "#/$defs/file_reference" }
+      }
+    },
+    "catalog": { "$ref": "#/$defs/input_reference" },
+    "review": { "$ref": "#/$defs/review_reference" },
+    "counts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["targets", "profiles", "scripts", "selectable"],
+      "properties": {
+        "targets": { "type": "integer", "minimum": 1 },
+        "profiles": { "type": "integer", "minimum": 1 },
+        "scripts": { "type": "integer", "minimum": 1 },
+        "selectable": { "type": "integer", "minimum": 2 }
+      }
+    },
+    "scripts": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "type": "string", "pattern": "^[A-Z][a-z]{3}$" }
+    },
+    "targets": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/target" }
+    },
+    "profiles": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/profile" }
+    }
+  },
+  "$defs": {
+    "file_reference": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "sha256"],
+      "properties": {
+        "path": { "type": "string", "minLength": 1 },
+        "sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" }
+      }
+    },
+    "input_reference": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "version", "date", "sha256"],
+      "properties": {
+        "path": { "type": "string", "minLength": 1 },
+        "version": { "type": "integer", "minimum": 1 },
+        "date": { "type": "string", "format": "date" },
+        "id": { "type": "string", "minLength": 1 },
+        "authority": { "enum": ["release", "internal"] },
+        "sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" }
+      }
+    },
+    "review_reference": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "version", "date", "id", "authority", "sha256"],
+      "properties": {
+        "path": { "type": "string", "minLength": 1 },
+        "version": { "type": "integer", "minimum": 1 },
+        "date": { "type": "string", "format": "date" },
+        "id": { "type": "string", "minLength": 1 },
+        "authority": { "enum": ["release", "internal"] },
+        "sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" }
+      }
+    },
+    "target": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "target_id", "iso_639_3", "display_label", "native_label",
+        "scope", "group", "variety", "scripts"
+      ],
+      "properties": {
+        "target_id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$" },
+        "iso_639_3": { "type": "string", "pattern": "^[a-z]{3}$" },
+        "display_label": { "type": "string", "minLength": 1 },
+        "native_label": { "type": "string", "minLength": 1 },
+        "scope": { "enum": ["language", "variety"] },
+        "group": { "type": ["string", "null"] },
+        "variety": { "type": ["string", "null"] },
+        "scripts": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "type": "string", "pattern": "^[A-Z][a-z]{3}$" }
+        }
+      }
+    },
+    "profile": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "profile_id", "target_id", "display_label", "native_label",
+        "language_tag", "input_label", "scope", "group", "variety",
+        "source_script", "output_script", "input_method_id", "method_type",
+        "engine_kind", "layout_id", "layout_revision", "layout_source_sha256",
+        "lookup_kind", "pack_binding", "pack_artifact",
+        "conversion_binding", "conversion_artifact",
+        "catalog_readiness", "selectable", "blocked_reason", "blocked_detail",
+        "default_enabled",
+        "sort_key", "search_aliases", "evidence_ids", "evidence_artifacts"
+      ],
+      "properties": {
+        "profile_id": { "type": "string", "pattern": "^[a-z]{3}-[A-Z][a-z]{3}(-[A-Z][a-z]{3})?-[A-Z]{2}$" },
+        "target_id": { "type": "string", "minLength": 1 },
+        "display_label": { "type": "string", "minLength": 1 },
+        "native_label": { "type": "string", "minLength": 1 },
+        "language_tag": {
+          "type": "string",
+          "pattern": "^[A-Za-z]{2,3}(-[A-Z]{2})$"
+        },
+        "input_label": { "type": "string", "minLength": 1 },
+        "scope": { "enum": ["language", "variety"] },
+        "group": { "type": ["string", "null"] },
+        "variety": { "type": ["string", "null"] },
+        "source_script": { "type": "string", "pattern": "^[A-Z][a-z]{3}$" },
+        "output_script": { "type": "string", "pattern": "^[A-Z][a-z]{3}$" },
+        "input_method_id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9._-]*$" },
+        "method_type": { "enum": ["direct", "roman_phonetic", "script_conversion"] },
+        "engine_kind": { "enum": ["layout", "alias_decoder", "converter"] },
+        "layout_id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9._-]*$" },
+        "layout_revision": { "type": ["integer", "null"], "minimum": 1 },
+        "layout_source_sha256": {
+          "type": ["string", "null"],
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "lookup_kind": { "enum": ["surface_prefix", "alias_prefix", "conversion"] },
+        "pack_binding": { "type": ["string", "null"], "minLength": 1 },
+        "pack_artifact": {
+          "oneOf": [
+            { "type": "null" },
+            { "$ref": "#/$defs/pack_artifact" }
+          ]
+        },
+        "conversion_binding": { "type": ["string", "null"], "minLength": 1 },
+        "conversion_artifact": {
+          "oneOf": [
+            { "type": "null" },
+            { "$ref": "#/$defs/conversion_artifact" }
+          ]
+        },
+        "catalog_readiness": { "enum": ["ready", "beta", "extractable", "research", "missing", "external"] },
+        "selectable": { "type": "boolean" },
+        "blocked_reason": {
+          "type": ["string", "null"],
+          "enum": [
+            null,
+            "DIRECT_PROFILE_NOT_RELEASE_APPROVED",
+            "ROMAN_ALIAS_NOT_RELEASE_APPROVED",
+            "SCRIPT_CONVERTER_NOT_RELEASE_APPROVED",
+            "DIRECT_PROFILE_NOT_INTERNAL_READY",
+            "ROMAN_ALIAS_NOT_INTERNAL_READY",
+            "SCRIPT_CONVERTER_NOT_INTERNAL_READY"
+          ]
+        },
+        "blocked_detail": { "type": ["string", "null"], "minLength": 1 },
+        "default_enabled": { "type": "boolean" },
+        "sort_key": { "type": "string", "minLength": 1 },
+        "search_aliases": {
+          "type": "array",
+          "minItems": 3,
+          "uniqueItems": true,
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "evidence_ids": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "evidence_artifacts": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/evidence_artifact" }
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": { "selectable": { "const": false } },
+            "required": ["selectable"]
+          },
+          "then": {
+            "properties": {
+              "pack_binding": { "type": "null" },
+              "pack_artifact": { "type": "null" },
+              "conversion_binding": { "type": "null" },
+              "conversion_artifact": { "type": "null" }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": { "selectable": { "const": true } },
+            "required": ["selectable"]
+          },
+          "then": {
+            "oneOf": [
+              {
+                "properties": {
+                  "lookup_kind": { "enum": ["surface_prefix", "alias_prefix"] },
+                  "pack_binding": { "type": "string", "minLength": 1 },
+                  "pack_artifact": { "$ref": "#/$defs/pack_artifact" },
+                  "conversion_binding": { "type": "null" },
+                  "conversion_artifact": { "type": "null" }
+                }
+              },
+              {
+                "properties": {
+                  "lookup_kind": { "const": "conversion" },
+                  "pack_binding": { "type": "null" },
+                  "pack_artifact": { "type": "null" },
+                  "conversion_binding": { "type": "string", "minLength": 1 },
+                  "conversion_artifact": { "$ref": "#/$defs/conversion_artifact" }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "evidence_artifact": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "sha256"],
+      "properties": {
+        "path": { "type": "string", "minLength": 1 },
+        "sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" }
+      }
+    },
+    "pack_artifact": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "pack_id", "file_name", "artifact_sha256", "language", "output_script",
+        "artifact_license", "release_mode", "candidate_count", "surface_key_count",
+        "alias_key_count", "validation"
+      ],
+      "properties": {
+        "pack_id": { "type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$" },
+        "file_name": { "type": "string", "pattern": "^[A-Za-z0-9._-]+\\.nkp$" },
+        "artifact_sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+        "language": { "type": "string", "pattern": "^[a-z]{3}$" },
+        "output_script": { "type": "string", "pattern": "^[A-Z][a-z]{3}$" },
+        "artifact_license": { "type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9.+-]{0,63}$" },
+        "release_mode": { "enum": ["release", "internal"] },
+        "candidate_count": { "type": "integer", "minimum": 1 },
+        "surface_key_count": { "type": "integer", "minimum": 0 },
+        "alias_key_count": { "type": "integer", "minimum": 0 },
+        "validation": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["query", "expected_surface", "benchmark_queries"],
+          "properties": {
+            "query": { "type": "string", "minLength": 1 },
+            "expected_surface": { "type": "string", "minLength": 1 },
+            "benchmark_queries": {
+              "type": "array",
+              "minItems": 1,
+              "maxItems": 64,
+              "items": { "type": "string", "minLength": 1 }
+            }
+          }
+        }
+      }
+    },
+    "conversion_vector": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["input", "expected_status", "expected_output"],
+      "properties": {
+        "input": { "type": "string", "minLength": 1 },
+        "expected_status": { "enum": ["MATCH", "NO_MATCH"] },
+        "expected_output": { "type": ["string", "null"] }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": { "expected_status": { "const": "MATCH" } },
+            "required": ["expected_status"]
+          },
+          "then": {
+            "properties": { "expected_output": { "type": "string", "minLength": 1 } }
+          }
+        },
+        {
+          "if": {
+            "properties": { "expected_status": { "const": "NO_MATCH" } },
+            "required": ["expected_status"]
+          },
+          "then": {
+            "properties": { "expected_output": { "type": "null" } }
+          }
+        }
+      ]
+    },
+    "conversion_artifact": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "converter_id", "file_name", "artifact_sha256", "language",
+        "source_script", "output_script", "release_mode", "rule_count",
+        "validation"
+      ],
+      "properties": {
+        "converter_id": { "type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$" },
+        "file_name": { "type": "string", "pattern": "^[A-Za-z0-9._-]+\\.ncm$" },
+        "artifact_sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+        "language": { "type": "string", "pattern": "^[a-z]{3}$" },
+        "source_script": { "type": "string", "pattern": "^[A-Z][a-z]{3}$" },
+        "output_script": { "type": "string", "pattern": "^[A-Z][a-z]{3}$" },
+        "release_mode": { "enum": ["release", "internal"] },
+        "rule_count": { "type": "integer", "minimum": 1, "maximum": 1024 },
+        "validation": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["vectors"],
+          "properties": {
+            "vectors": {
+              "type": "array",
+              "minItems": 2,
+              "maxItems": 64,
+              "uniqueItems": true,
+              "items": { "$ref": "#/$defs/conversion_vector" },
+              "allOf": [
+                {
+                  "contains": {
+                    "type": "object",
+                    "properties": { "expected_status": { "const": "MATCH" } },
+                    "required": ["expected_status"]
+                  },
+                  "minContains": 1
+                },
+                {
+                  "contains": {
+                    "type": "object",
+                    "properties": { "expected_status": { "const": "NO_MATCH" } },
+                    "required": ["expected_status"]
+                  },
+                  "minContains": 1
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

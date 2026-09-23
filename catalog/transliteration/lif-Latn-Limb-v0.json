@@ -1,0 +1,442 @@
+{
+  "source_format": "nepa-transliteration-map-source",
+  "source_format_version": 1,
+  "map_id": "lif-Latn-Limb-v0",
+  "language": "lif",
+  "source_script": "Latn",
+  "output_script": "Limb",
+  "note": "Roman to Limbu (Sirijanga). Limbu has no virama: a syllable-closing consonant takes its dedicated small letter, and independent vowels are written on the vowel-carrier letter. Two phonemic contrasts carry dedicated keys because the script encodes them and losing them merges distinct words: \"q\" writes mukphreng for the glottal stop, which contrasts with final /p t k/ (van Driem tradition; Chhatthare Limbu grammar gives [hap] 'he weeps' vs [ha?] 'he bites'), and \":\" after a vowel writes kemphreng for length. Chhatthare Limbu has no length contrast but the other dialects do, so the key is offered for the dialects that need it rather than withheld because one dialect does not. Subjoined ya/ra/wa clusters and sa-i are not covered in v0.",
+  "inherent_vowel": "a",
+  "final_consonant": "final_form",
+  "explicit_virama": "",
+  "virama": [],
+  "consonants": {
+    "k": [
+      "LIMBU LETTER KA"
+    ],
+    "kh": [
+      "LIMBU LETTER KHA"
+    ],
+    "g": [
+      "LIMBU LETTER GA"
+    ],
+    "gh": [
+      "LIMBU LETTER GHA"
+    ],
+    "ng": [
+      "LIMBU LETTER NGA"
+    ],
+    "c": [
+      "LIMBU LETTER CA"
+    ],
+    "ch": [
+      "LIMBU LETTER CHA"
+    ],
+    "j": [
+      "LIMBU LETTER JA"
+    ],
+    "jh": [
+      "LIMBU LETTER JHA"
+    ],
+    "t": [
+      "LIMBU LETTER TA"
+    ],
+    "th": [
+      "LIMBU LETTER THA"
+    ],
+    "d": [
+      "LIMBU LETTER DA"
+    ],
+    "dh": [
+      "LIMBU LETTER DHA"
+    ],
+    "n": [
+      "LIMBU LETTER NA"
+    ],
+    "p": [
+      "LIMBU LETTER PA"
+    ],
+    "ph": [
+      "LIMBU LETTER PHA"
+    ],
+    "b": [
+      "LIMBU LETTER BA"
+    ],
+    "bh": [
+      "LIMBU LETTER BHA"
+    ],
+    "m": [
+      "LIMBU LETTER MA"
+    ],
+    "y": [
+      "LIMBU LETTER YA"
+    ],
+    "r": [
+      "LIMBU LETTER RA"
+    ],
+    "l": [
+      "LIMBU LETTER LA"
+    ],
+    "w": [
+      "LIMBU LETTER WA"
+    ],
+    "sh": [
+      "LIMBU LETTER SHA"
+    ],
+    "S": [
+      "LIMBU LETTER SSA"
+    ],
+    "s": [
+      "LIMBU LETTER SA"
+    ],
+    "h": [
+      "LIMBU LETTER HA"
+    ],
+    "yan": [
+      "LIMBU LETTER YAN"
+    ],
+    "gyan": [
+      "LIMBU LETTER GYAN"
+    ],
+    "tra": [
+      "LIMBU LETTER TRA"
+    ],
+    "q": [
+      "LIMBU SIGN MUKPHRENG"
+    ]
+  },
+  "independent_vowels": {
+    "a": [
+      "LIMBU VOWEL-CARRIER LETTER"
+    ],
+    "aa": [
+      "LIMBU VOWEL-CARRIER LETTER",
+      "LIMBU VOWEL SIGN A"
+    ],
+    "A": [
+      "LIMBU VOWEL-CARRIER LETTER",
+      "LIMBU VOWEL SIGN A"
+    ],
+    "i": [
+      "LIMBU VOWEL-CARRIER LETTER",
+      "LIMBU VOWEL SIGN I"
+    ],
+    "u": [
+      "LIMBU VOWEL-CARRIER LETTER",
+      "LIMBU VOWEL SIGN U"
+    ],
+    "ee": [
+      "LIMBU VOWEL-CARRIER LETTER",
+      "LIMBU VOWEL SIGN EE"
+    ],
+    "ai": [
+      "LIMBU VOWEL-CARRIER LETTER",
+      "LIMBU VOWEL SIGN AI"
+    ],
+    "oo": [
+      "LIMBU VOWEL-CARRIER LETTER",
+      "LIMBU VOWEL SIGN OO"
+    ],
+    "au": [
+      "LIMBU VOWEL-CARRIER LETTER",
+      "LIMBU VOWEL SIGN AU"
+    ],
+    "e": [
+      "LIMBU VOWEL-CARRIER LETTER",
+      "LIMBU VOWEL SIGN E"
+    ],
+    "o": [
+      "LIMBU VOWEL-CARRIER LETTER",
+      "LIMBU VOWEL SIGN O"
+    ],
+    "a:": [
+      "LIMBU VOWEL-CARRIER LETTER",
+      "LIMBU SIGN KEMPHRENG"
+    ],
+    "aa:": [
+      "LIMBU VOWEL-CARRIER LETTER",
+      "LIMBU VOWEL SIGN A",
+      "LIMBU SIGN KEMPHRENG"
+    ],
+    "A:": [
+      "LIMBU VOWEL-CARRIER LETTER",
+      "LIMBU VOWEL SIGN A",
+      "LIMBU SIGN KEMPHRENG"
+    ],
+    "i:": [
+      "LIMBU VOWEL-CARRIER LETTER",
+      "LIMBU VOWEL SIGN I",
+      "LIMBU SIGN KEMPHRENG"
+    ],
+    "u:": [
+      "LIMBU VOWEL-CARRIER LETTER",
+      "LIMBU VOWEL SIGN U",
+      "LIMBU SIGN KEMPHRENG"
+    ],
+    "ee:": [
+      "LIMBU VOWEL-CARRIER LETTER",
+      "LIMBU VOWEL SIGN EE",
+      "LIMBU SIGN KEMPHRENG"
+    ],
+    "ai:": [
+      "LIMBU VOWEL-CARRIER LETTER",
+      "LIMBU VOWEL SIGN AI",
+      "LIMBU SIGN KEMPHRENG"
+    ],
+    "oo:": [
+      "LIMBU VOWEL-CARRIER LETTER",
+      "LIMBU VOWEL SIGN OO",
+      "LIMBU SIGN KEMPHRENG"
+    ],
+    "au:": [
+      "LIMBU VOWEL-CARRIER LETTER",
+      "LIMBU VOWEL SIGN AU",
+      "LIMBU SIGN KEMPHRENG"
+    ],
+    "e:": [
+      "LIMBU VOWEL-CARRIER LETTER",
+      "LIMBU VOWEL SIGN E",
+      "LIMBU SIGN KEMPHRENG"
+    ],
+    "o:": [
+      "LIMBU VOWEL-CARRIER LETTER",
+      "LIMBU VOWEL SIGN O",
+      "LIMBU SIGN KEMPHRENG"
+    ]
+  },
+  "vowel_signs": {
+    "a": [],
+    "aa": [
+      "LIMBU VOWEL SIGN A"
+    ],
+    "A": [
+      "LIMBU VOWEL SIGN A"
+    ],
+    "i": [
+      "LIMBU VOWEL SIGN I"
+    ],
+    "u": [
+      "LIMBU VOWEL SIGN U"
+    ],
+    "ee": [
+      "LIMBU VOWEL SIGN EE"
+    ],
+    "ai": [
+      "LIMBU VOWEL SIGN AI"
+    ],
+    "oo": [
+      "LIMBU VOWEL SIGN OO"
+    ],
+    "au": [
+      "LIMBU VOWEL SIGN AU"
+    ],
+    "e": [
+      "LIMBU VOWEL SIGN E"
+    ],
+    "o": [
+      "LIMBU VOWEL SIGN O"
+    ],
+    "a:": [
+      "LIMBU SIGN KEMPHRENG"
+    ],
+    "aa:": [
+      "LIMBU VOWEL SIGN A",
+      "LIMBU SIGN KEMPHRENG"
+    ],
+    "A:": [
+      "LIMBU VOWEL SIGN A",
+      "LIMBU SIGN KEMPHRENG"
+    ],
+    "i:": [
+      "LIMBU VOWEL SIGN I",
+      "LIMBU SIGN KEMPHRENG"
+    ],
+    "u:": [
+      "LIMBU VOWEL SIGN U",
+      "LIMBU SIGN KEMPHRENG"
+    ],
+    "ee:": [
+      "LIMBU VOWEL SIGN EE",
+      "LIMBU SIGN KEMPHRENG"
+    ],
+    "ai:": [
+      "LIMBU VOWEL SIGN AI",
+      "LIMBU SIGN KEMPHRENG"
+    ],
+    "oo:": [
+      "LIMBU VOWEL SIGN OO",
+      "LIMBU SIGN KEMPHRENG"
+    ],
+    "au:": [
+      "LIMBU VOWEL SIGN AU",
+      "LIMBU SIGN KEMPHRENG"
+    ],
+    "e:": [
+      "LIMBU VOWEL SIGN E",
+      "LIMBU SIGN KEMPHRENG"
+    ],
+    "o:": [
+      "LIMBU VOWEL SIGN O",
+      "LIMBU SIGN KEMPHRENG"
+    ]
+  },
+  "standalone": {
+    "M": [
+      "LIMBU SMALL LETTER ANUSVARA"
+    ],
+    ".": [
+      "LIMBU SIGN LOO"
+    ],
+    "0": [
+      "LIMBU DIGIT ZERO"
+    ],
+    "1": [
+      "LIMBU DIGIT ONE"
+    ],
+    "2": [
+      "LIMBU DIGIT TWO"
+    ],
+    "3": [
+      "LIMBU DIGIT THREE"
+    ],
+    "4": [
+      "LIMBU DIGIT FOUR"
+    ],
+    "5": [
+      "LIMBU DIGIT FIVE"
+    ],
+    "6": [
+      "LIMBU DIGIT SIX"
+    ],
+    "7": [
+      "LIMBU DIGIT SEVEN"
+    ],
+    "8": [
+      "LIMBU DIGIT EIGHT"
+    ],
+    "9": [
+      "LIMBU DIGIT NINE"
+    ]
+  },
+  "final_forms": {
+    "k": [
+      "LIMBU SMALL LETTER KA"
+    ],
+    "ng": [
+      "LIMBU SMALL LETTER NGA"
+    ],
+    "t": [
+      "LIMBU SMALL LETTER TA"
+    ],
+    "n": [
+      "LIMBU SMALL LETTER NA"
+    ],
+    "p": [
+      "LIMBU SMALL LETTER PA"
+    ],
+    "m": [
+      "LIMBU SMALL LETTER MA"
+    ],
+    "r": [
+      "LIMBU SMALL LETTER RA"
+    ],
+    "l": [
+      "LIMBU SMALL LETTER LA"
+    ],
+    "q": [
+      "LIMBU SIGN MUKPHRENG"
+    ]
+  },
+  "words": {},
+  "vectors": [
+    {
+      "input": "ka",
+      "output": "ᤁ"
+    },
+    {
+      "input": "kaa",
+      "output": "ᤁᤠ"
+    },
+    {
+      "input": "kan",
+      "output": "ᤁᤴ"
+    },
+    {
+      "input": "sik",
+      "output": "ᤛᤡᤰ"
+    },
+    {
+      "input": "a",
+      "output": "ᤀ"
+    },
+    {
+      "input": "i",
+      "output": "ᤀᤡ"
+    },
+    {
+      "input": "5",
+      "output": "᥋"
+    }
+  ],
+  "required_characters": [
+    "LIMBU SIGN MUKPHRENG",
+    "LIMBU SIGN KEMPHRENG"
+  ],
+  "contrasts": [
+    {
+      "feature": "glottal stop against final /p/",
+      "pair": [
+        "hap",
+        "haq"
+      ],
+      "gloss": [
+        "he weeps",
+        "he bites"
+      ]
+    },
+    {
+      "feature": "glottal stop against final /t/",
+      "pair": [
+        "lat",
+        "laq"
+      ],
+      "gloss": [
+        "he enters",
+        "he buys"
+      ]
+    },
+    {
+      "feature": "glottal stop against final /k/",
+      "pair": [
+        "hek",
+        "heq"
+      ],
+      "gloss": [
+        "he cuts",
+        "it breaks"
+      ]
+    },
+    {
+      "feature": "vowel length",
+      "pair": [
+        "laang",
+        "laa:ng"
+      ],
+      "gloss": [
+        "leg",
+        "dance"
+      ]
+    },
+    {
+      "feature": "vowel length",
+      "pair": [
+        "maang",
+        "maa:ng"
+      ],
+      "gloss": [
+        "deity",
+        "is far"
+      ]
+    }
+  ]
+}

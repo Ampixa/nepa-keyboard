@@ -1,0 +1,1053 @@
+{
+  "authority": "internal",
+  "blocked_reason_by_method": {
+    "direct": "DIRECT_PROFILE_NOT_INTERNAL_READY",
+    "roman_phonetic": "ROMAN_ALIAS_NOT_INTERNAL_READY",
+    "script_conversion": "SCRIPT_CONVERTER_NOT_INTERNAL_READY"
+  },
+  "evidence": [
+    {
+      "artifacts": [
+        {
+          "path": "reports/bantawa-internal-pack-v0.json",
+          "sha256": "28fe56a37567390a86e14f2845ac79784ba072c69d85460a026cc7d93b6dd270"
+        }
+      ],
+      "evidence_id": "bap-direct-internal-2026-09-24",
+      "gates": [
+        "deterministic_build",
+        "internal_pack",
+        "layout_implemented"
+      ],
+      "layout_binding": {
+        "layout_id": "deva-nepal-bantawa-v1",
+        "revision": 1,
+        "source_sha256": "c469ed3c08c999a397025371dbf259a0f252f7e81cb032710c11ea0bf9b8289b"
+      },
+      "pack_artifact": {
+        "alias_key_count": 0,
+        "artifact_license": "LicenseRef-Internal",
+        "artifact_sha256": "bccf336f1abd1fe1154d3fda6afd6d5b6187468a899adb613b248b44ca58f8c4",
+        "candidate_count": 1714,
+        "file_name": "bap-Deva-NP.nkp",
+        "language": "bap",
+        "output_script": "Deva",
+        "pack_id": "bap-Deva-NP",
+        "release_mode": "internal",
+        "surface_key_count": 1714,
+        "validation": {
+          "benchmark_queries": [
+            "अधिव",
+            "क",
+            "खुइँ",
+            "र"
+          ],
+          "expected_surface": "अ",
+          "query": "अ"
+        }
+      },
+      "profile_id": "bap-Deva-NP",
+      "status": "passed"
+    },
+    {
+      "artifacts": [
+        {
+          "path": "reports/dhimal-internal-pack-v0.json",
+          "sha256": "527e6d35754d4fa3116fc22d3da9971e0102296dfebd5f57a1473d00121a4b48"
+        }
+      ],
+      "evidence_id": "dhi-direct-internal-2026-07-15",
+      "gates": [
+        "deterministic_build",
+        "internal_pack",
+        "layout_implemented"
+      ],
+      "layout_binding": {
+        "layout_id": "deva-nepal-dhimal-v1",
+        "revision": 1,
+        "source_sha256": "2685cf503604390e5a049ce8732152d8c739a41626e7929f3acb6263aa63ca68"
+      },
+      "pack_artifact": {
+        "alias_key_count": 0,
+        "artifact_license": "LicenseRef-Internal",
+        "artifact_sha256": "a04f3de7145a9467a955ef8c0ea0ad7a8370c635bc3ae2010500a8d1541b1031",
+        "candidate_count": 7046,
+        "file_name": "dhi-Deva-NP.nkp",
+        "language": "dhi",
+        "output_script": "Deva",
+        "pack_id": "dhi-Deva-NP",
+        "release_mode": "internal",
+        "surface_key_count": 7046,
+        "validation": {
+          "benchmark_queries": [
+            "एः",
+            "आः",
+            "अग्‍ल",
+            "आन्माने",
+            "कन्‍च",
+            "गर्‍ह",
+            "टाः",
+            "दप्‍क",
+            "सम्‍भ",
+            "ल्‍हा",
+            "वाङ"
+          ],
+          "expected_surface": "इअ्‌थिलि",
+          "query": "इअ्‌थ"
+        }
+      },
+      "profile_id": "dhi-Deva-NP",
+      "status": "passed"
+    },
+    {
+      "artifacts": [
+        {
+          "path": "reports/dumi-internal-pack-v0.json",
+          "sha256": "f4150925578f3b07ddb6a1cb766f3785f127ff05d18e49a1ca112364688089c9"
+        }
+      ],
+      "evidence_id": "dus-direct-internal-2026-07-22",
+      "gates": [
+        "deterministic_build",
+        "internal_pack",
+        "layout_implemented"
+      ],
+      "layout_binding": {
+        "layout_id": "deva-nepal-dumi-v1",
+        "revision": 1,
+        "source_sha256": "5688c744ee8b88cb3a24c76379590b99195a90a0e309f625ea578b1ced1e60ac"
+      },
+      "pack_artifact": {
+        "alias_key_count": 0,
+        "artifact_license": "LicenseRef-Internal",
+        "artifact_sha256": "efd9626d11c3910361adb50f1e656c67aefc2c6957ee3b47122236b1a6e3dec2",
+        "candidate_count": 2132,
+        "file_name": "dus-Deva-NP.nkp",
+        "language": "dus",
+        "output_script": "Deva",
+        "pack_id": "dus-Deva-NP",
+        "release_mode": "internal",
+        "surface_key_count": 2132,
+        "validation": {
+          "benchmark_queries": [
+            "अम्‍",
+            "आर्‌",
+            "कु:",
+            "आम्‍ना-",
+            "तः",
+            "ब़",
+            "ॽ",
+            "प",
+            "म",
+            "स"
+          ],
+          "expected_surface": "क:फु",
+          "query": "क"
+        }
+      },
+      "profile_id": "dus-Deva-NP",
+      "status": "passed"
+    },
+    {
+      "artifacts": [
+        {
+          "path": "reports/android-release-packs-v0.md",
+          "sha256": "feb96daa5278df91199a0af5877019fdb2ab734cf2d46b3f3910585c333ca47f"
+        },
+        {
+          "path": "reports/android-ime-composing-v0.md",
+          "sha256": "e712d7cbea735510e46e281f8d7771127b1ff3b1f8a933e48999143205c998bd"
+        },
+        {
+          "path": "reports/android-pack-notices-v0.md",
+          "sha256": "3b8052ffc11d6a64c5345784af8601d2165fd3f66767108cce3200d13312a2d0"
+        }
+      ],
+      "evidence_id": "eng-direct-release-2026-07-15",
+      "gates": [
+        "deterministic_build",
+        "internal_pack",
+        "layout_implemented",
+        "license_notice_ui",
+        "redistribution_review",
+        "release_pack",
+        "runtime_smoke"
+      ],
+      "layout_binding": {
+        "layout_id": "latn-qwerty-us-v1",
+        "revision": 1,
+        "source_sha256": "fd75fa37636e4a248f9ed143609e1a911f2ea8327bf4928656ec3ca8b5597a76"
+      },
+      "pack_artifact": {
+        "alias_key_count": 0,
+        "artifact_license": "CC-BY-SA-4.0",
+        "artifact_sha256": "f4b6be4c109846522785628204fd6da98287fb81cb461554369f18993066f68d",
+        "candidate_count": 109140,
+        "file_name": "eng-Latn-US.nkp",
+        "language": "eng",
+        "output_script": "Latn",
+        "pack_id": "eng-Latn-US",
+        "release_mode": "release",
+        "surface_key_count": 107220,
+        "validation": {
+          "benchmark_queries": [
+            "h",
+            "he",
+            "hel",
+            "hell",
+            "HEL",
+            "becau",
+            "governm",
+            "informa",
+            "keybo",
+            "langu"
+          ],
+          "expected_surface": "hello",
+          "query": "hell"
+        }
+      },
+      "profile_id": "eng-Latn-US",
+      "status": "passed"
+    },
+    {
+      "artifacts": [
+        {
+          "path": "reports/khaling-internal-pack-v0.json",
+          "sha256": "77a44610304611309ad8d0fd473b8e3d1f4115bf1a778700cdbb47118ba89c54"
+        }
+      ],
+      "evidence_id": "klr-direct-internal-2026-07-22",
+      "gates": [
+        "deterministic_build",
+        "internal_pack",
+        "layout_implemented"
+      ],
+      "layout_binding": {
+        "layout_id": "deva-nepal-khaling-v1",
+        "revision": 1,
+        "source_sha256": "9d605bbc80d2462af3a9921cbbc2174b5f2fbff1e21e37e268264667f7f79d13"
+      },
+      "pack_artifact": {
+        "alias_key_count": 0,
+        "artifact_license": "LicenseRef-Internal",
+        "artifact_sha256": "7dad743ed9ac8102e4443aa0d36b46b03cf2d84c1818728bb5da2d1ff0b45865",
+        "candidate_count": 4016,
+        "file_name": "klr-Deva-NP.nkp",
+        "language": "klr",
+        "output_script": "Deva",
+        "pack_id": "klr-Deva-NP",
+        "release_mode": "internal",
+        "surface_key_count": 4016,
+        "validation": {
+          "benchmark_queries": [
+            "ख",
+            "कइना़",
+            "आ",
+            "आङ्‍",
+            "छ",
+            "ङ",
+            "इ",
+            "जीवन",
+            "प",
+            "स"
+          ],
+          "expected_surface": "कइना़",
+          "query": "क"
+        }
+      },
+      "profile_id": "klr-Deva-NP",
+      "status": "passed"
+    },
+    {
+      "artifacts": [
+        {
+          "path": "reports/lohorung-internal-pack-v0.json",
+          "sha256": "b2abd5d78262cbe033867ef368017a04cfd33c8709d4c717e69ed5207f197d49"
+        }
+      ],
+      "evidence_id": "lbr-direct-internal-2026-07-15",
+      "gates": [
+        "deterministic_build",
+        "internal_pack",
+        "layout_implemented"
+      ],
+      "layout_binding": {
+        "layout_id": "deva-nepal-lohorung-v1",
+        "revision": 1,
+        "source_sha256": "bc76bd393b072b3ad71a4df375e57454fd1cc1ef6f41f8e15a0e6ce57e96ae6e"
+      },
+      "pack_artifact": {
+        "alias_key_count": 0,
+        "artifact_license": "LicenseRef-Internal",
+        "artifact_sha256": "d5b2908d17699b8876d97fdb593d29b839f1e4c4af69e0392a73ba59820a1b9a",
+        "candidate_count": 4228,
+        "file_name": "lbr-Deva-NP.nkp",
+        "language": "lbr",
+        "output_script": "Deva",
+        "pack_id": "lbr-Deva-NP",
+        "release_mode": "internal",
+        "surface_key_count": 4228,
+        "validation": {
+          "benchmark_queries": [
+            "अः",
+            "अक्‍",
+            "अक्‍खॆॽ",
+            "अङ्‌",
+            "ऎ",
+            "ए़",
+            "खॆ",
+            "खङ्‍ढीङ्‍",
+            "सीःगु",
+            "एकङ्‌"
+          ],
+          "expected_surface": "अःग्‍मा",
+          "query": "अ"
+        }
+      },
+      "profile_id": "lbr-Deva-NP",
+      "status": "passed"
+    },
+    {
+      "artifacts": [
+        {
+          "path": "reports/limbu-internal-pack-v0.json",
+          "sha256": "2f525a7674f77d35d2360b0583559ae7676371ffbe1d8ce0d40a5da6510ebe6c"
+        }
+      ],
+      "evidence_id": "lif-direct-internal-2026-07-15",
+      "gates": [
+        "deterministic_build",
+        "internal_pack",
+        "layout_implemented"
+      ],
+      "layout_binding": {
+        "layout_id": "limb-nepal-phonetic-v1",
+        "revision": 1,
+        "source_sha256": "aee3a4193111469125c58b527db6dbae6677c1046d9c2eccd4cf855984928ac1"
+      },
+      "pack_artifact": {
+        "alias_key_count": 0,
+        "artifact_license": "LicenseRef-Internal",
+        "artifact_sha256": "6f8d729dfe130749f105159aa73a4c3200583b1422605b289ef926adfec9e46b",
+        "candidate_count": 5882,
+        "file_name": "lif-Limb-NP.nkp",
+        "language": "lif",
+        "output_script": "Limb",
+        "pack_id": "lif-Limb-NP",
+        "release_mode": "internal",
+        "surface_key_count": 5882,
+        "validation": {
+          "benchmark_queries": [
+            "ᤀ",
+            "ᤀᤂᤡ",
+            "ᤁᤈᤢ",
+            "ᤂᤀᤡᤰ",
+            "ᤅᤖᤧ",
+            "ᤑᤀᤡ",
+            "ᤗᤧᤵ",
+            "ᤘᤠᤖᤧᤱ",
+            "ᤛᤀᤡ",
+            "ᤔᤃᤧᤏ"
+          ],
+          "expected_surface": "ᤀ",
+          "query": "ᤀ"
+        }
+      },
+      "profile_id": "lif-Limb-NP",
+      "status": "passed"
+    },
+    {
+      "artifacts": [
+        {
+          "path": "reports/western-magar-internal-pack-v0.json",
+          "sha256": "f760878e3f0ee96790cf04ac25e49e69c9e77f07a23bd530570ce4d8e0809f1a"
+        }
+      ],
+      "evidence_id": "mrd-direct-internal-2026-09-24",
+      "gates": [
+        "deterministic_build",
+        "internal_pack",
+        "layout_implemented"
+      ],
+      "layout_binding": {
+        "layout_id": "deva-nepal-western-magar-v1",
+        "revision": 1,
+        "source_sha256": "f1f9699d071287b7d747e3c7744a3c1efb9f1f8ca242f8421c02e70392bd8cb1"
+      },
+      "pack_artifact": {
+        "alias_key_count": 0,
+        "artifact_license": "LicenseRef-Internal",
+        "artifact_sha256": "6d5061f9359a1d641af66c31471501a8de3652aab98c2999f94026d80be98aeb",
+        "candidate_count": 1219,
+        "file_name": "mrd-Deva-NP.nkp",
+        "language": "mrd",
+        "output_script": "Deva",
+        "pack_id": "mrd-Deva-NP",
+        "release_mode": "internal",
+        "surface_key_count": 1219,
+        "validation": {
+          "benchmark_queries": [
+            "-आ",
+            "-प्‍",
+            "अघ",
+            "ख्‍याङ्‍ह्‌",
+            "र"
+          ],
+          "expected_surface": "-ऐ",
+          "query": "-ऐ"
+        }
+      },
+      "profile_id": "mrd-Deva-NP",
+      "status": "passed"
+    },
+    {
+      "artifacts": [
+        {
+          "path": "reports/nepal-bhasa-deva-newa-internal-map-v0.json",
+          "sha256": "3f8d6a889f3fd0f67946905c61351a3abe776d11b7d094ca707b269944288451"
+        },
+        {
+          "path": "catalog/nepal-bhasa-deva-newa-internal-vectors-v0.json",
+          "sha256": "ad6038b80e567d6817b6f0ee088cad2664e3a6821a6eb4284061288288de2e57"
+        }
+      ],
+      "conversion_artifact": {
+        "artifact_sha256": "29c88708b3d7aeb741779b7a7464efcb2464e060d7939c7998533d50b11a2d05",
+        "converter_id": "new-Deva-Newa-NP",
+        "file_name": "new-Deva-Newa-NP.ncm",
+        "language": "new",
+        "output_script": "Newa",
+        "release_mode": "internal",
+        "rule_count": 165,
+        "source_script": "Deva",
+        "validation": {
+          "vectors": [
+            {
+              "expected_output": "𑐀𑑃",
+              "expected_status": "MATCH",
+              "input": "अँ"
+            },
+            {
+              "expected_output": "𑐩𑐡𑐸",
+              "expected_status": "MATCH",
+              "input": "मदु"
+            },
+            {
+              "expected_output": "𑐣𑐾𑐥𑐵𑐮𑐨𑐵𑐲𑐵",
+              "expected_status": "MATCH",
+              "input": "नेपालभाषा"
+            },
+            {
+              "expected_output": "𑐥𑐵𑐬𑑆",
+              "expected_status": "MATCH",
+              "input": "पाऱ"
+            },
+            {
+              "expected_output": "𑐎𑑆𑑉𑑋𑑌",
+              "expected_status": "MATCH",
+              "input": "क़ॐ।॥"
+            },
+            {
+              "expected_output": "𑑑𑑒𑑔𑑙",
+              "expected_status": "MATCH",
+              "input": "१२४९"
+            },
+            {
+              "expected_output": "𑐎𑑂‍𑐲",
+              "expected_status": "MATCH",
+              "input": "क्‍ष"
+            },
+            {
+              "expected_output": "𑐎𑑂‌𑐲",
+              "expected_status": "MATCH",
+              "input": "क्‌ष"
+            },
+            {
+              "expected_output": "𑐣𑑂𑐴𑐶𑐣𑐫𑑂‌𑐬𑐿",
+              "expected_status": "MATCH",
+              "input": "न्हिनय्‌रै"
+            },
+            {
+              "expected_output": null,
+              "expected_status": "NO_MATCH",
+              "input": "कॅ"
+            },
+            {
+              "expected_output": null,
+              "expected_status": "NO_MATCH",
+              "input": "क॒थं"
+            },
+            {
+              "expected_output": null,
+              "expected_status": "NO_MATCH",
+              "input": "ऍ"
+            },
+            {
+              "expected_output": null,
+              "expected_status": "NO_MATCH",
+              "input": "क्‍"
+            },
+            {
+              "expected_output": null,
+              "expected_status": "NO_MATCH",
+              "input": "क‍ष"
+            },
+            {
+              "expected_output": null,
+              "expected_status": "NO_MATCH",
+              "input": "कa"
+            }
+          ]
+        }
+      },
+      "evidence_id": "new-deva-newa-internal-2026-07-21",
+      "gates": [
+        "deterministic_build",
+        "internal_converter",
+        "layout_implemented"
+      ],
+      "layout_binding": {
+        "layout_id": "deva-nepal-bhasa-v1",
+        "revision": 1,
+        "source_sha256": "f9088679a904a8129e02b8202740564537e616d24b85637c1489038c35d93ac8"
+      },
+      "profile_id": "new-Deva-Newa-NP",
+      "status": "passed"
+    },
+    {
+      "artifacts": [
+        {
+          "path": "reports/nepal-bhasa-roman-internal-pack-v0.json",
+          "sha256": "2123608ad43cd81d89763a28ffdda404bf03614f73af749249f4cd058b548c01"
+        }
+      ],
+      "evidence_id": "new-deva-roman-shared-internal-2026-07-21",
+      "gates": [
+        "deterministic_build",
+        "internal_pack",
+        "layout_implemented"
+      ],
+      "layout_binding": {
+        "layout_id": "deva-nepal-bhasa-v1",
+        "revision": 1,
+        "source_sha256": "f9088679a904a8129e02b8202740564537e616d24b85637c1489038c35d93ac8"
+      },
+      "pack_artifact": {
+        "alias_key_count": 1828,
+        "artifact_license": "LicenseRef-Internal",
+        "artifact_sha256": "c90c7eba644334ef95ae7dfc168d70382083f06ab7fc45a81f33a90052952570",
+        "candidate_count": 5417,
+        "file_name": "new-Deva-NP.nkp",
+        "language": "new",
+        "output_script": "Deva",
+        "pack_id": "new-Deva-NP",
+        "release_mode": "internal",
+        "surface_key_count": 5417,
+        "validation": {
+          "benchmark_queries": [
+            "अ",
+            "क॒",
+            "चॉ",
+            "चु४",
+            "दुबाः१",
+            "धुकु९",
+            "न्हेक्‍",
+            "न्हिनय्‌",
+            "पाऱ",
+            "ल्व्ह॑"
+          ],
+          "expected_surface": "कॅ",
+          "query": "कॅ"
+        }
+      },
+      "profile_id": "new-Deva-NP",
+      "status": "passed"
+    },
+    {
+      "artifacts": [
+        {
+          "path": "reports/nepal-bhasa-newa-internal-pack-v0.json",
+          "sha256": "4140bef84682e69c4e4e8f0c22e8cdb51928a5df1e8bf7bc58686f76a26117ad"
+        }
+      ],
+      "evidence_id": "new-direct-internal-2026-07-21",
+      "gates": [
+        "deterministic_build",
+        "internal_pack",
+        "layout_implemented"
+      ],
+      "layout_binding": {
+        "layout_id": "newa-nepal-prachalit-v1",
+        "revision": 1,
+        "source_sha256": "dca07de46cc09f53c430c6b57702c3e56137316ead7ebb0f209e535e62020448"
+      },
+      "pack_artifact": {
+        "alias_key_count": 0,
+        "artifact_license": "LicenseRef-Internal",
+        "artifact_sha256": "860ef1973fa5ec2e57956635893d32ada7e7fa8686d344a74acad437d9ed9c8f",
+        "candidate_count": 2318,
+        "file_name": "new-Newa-NP.nkp",
+        "language": "new",
+        "output_script": "Newa",
+        "pack_id": "new-Newa-NP",
+        "release_mode": "internal",
+        "surface_key_count": 2318,
+        "validation": {
+          "benchmark_queries": [
+            "𑐡",
+            "𑐡𑐸",
+            "𑐎",
+            "𑐎𑑂",
+            "𑐣",
+            "𑐥",
+            "𑐥𑐸",
+            "𑐮",
+            "𑐮𑐶",
+            "𑐳𑐸"
+          ],
+          "expected_surface": "𑐣𑐾𑐥𑐵𑐮𑐮𑐶𑐥𑐶",
+          "query": "𑐣𑐾"
+        }
+      },
+      "profile_id": "new-Newa-NP",
+      "status": "passed"
+    },
+    {
+      "artifacts": [
+        {
+          "path": "reports/nepal-bhasa-roman-internal-pack-v0.json",
+          "sha256": "2123608ad43cd81d89763a28ffdda404bf03614f73af749249f4cd058b548c01"
+        }
+      ],
+      "evidence_id": "new-roman-internal-2026-07-21",
+      "gates": [
+        "deterministic_build",
+        "internal_pack",
+        "layout_implemented"
+      ],
+      "layout_binding": {
+        "layout_id": "latn-qwerty-us-v1",
+        "revision": 1,
+        "source_sha256": "fd75fa37636e4a248f9ed143609e1a911f2ea8327bf4928656ec3ca8b5597a76"
+      },
+      "pack_artifact": {
+        "alias_key_count": 1828,
+        "artifact_license": "LicenseRef-Internal",
+        "artifact_sha256": "c90c7eba644334ef95ae7dfc168d70382083f06ab7fc45a81f33a90052952570",
+        "candidate_count": 5417,
+        "file_name": "new-Deva-NP.nkp",
+        "language": "new",
+        "output_script": "Deva",
+        "pack_id": "new-Deva-NP",
+        "release_mode": "internal",
+        "surface_key_count": 5417,
+        "validation": {
+          "benchmark_queries": [
+            "chi",
+            "madu",
+            "pasa",
+            "chem",
+            "ca",
+            "am"
+          ],
+          "expected_surface": "मदु",
+          "query": "madu"
+        }
+      },
+      "profile_id": "new-Latn-Deva-NP",
+      "status": "passed"
+    },
+    {
+      "artifacts": [
+        {
+          "path": "reports/android-release-packs-v0.md",
+          "sha256": "feb96daa5278df91199a0af5877019fdb2ab734cf2d46b3f3910585c333ca47f"
+        },
+        {
+          "path": "reports/android-ime-composing-v0.md",
+          "sha256": "e712d7cbea735510e46e281f8d7771127b1ff3b1f8a933e48999143205c998bd"
+        },
+        {
+          "path": "reports/android-pack-notices-v0.md",
+          "sha256": "3b8052ffc11d6a64c5345784af8601d2165fd3f66767108cce3200d13312a2d0"
+        }
+      ],
+      "evidence_id": "npi-direct-release-2026-07-15",
+      "gates": [
+        "deterministic_build",
+        "internal_pack",
+        "layout_implemented",
+        "license_notice_ui",
+        "redistribution_review",
+        "release_pack",
+        "runtime_smoke"
+      ],
+      "layout_binding": {
+        "layout_id": "deva-nepal-basic-v1",
+        "revision": 1,
+        "source_sha256": "5cefdc0e916eaa9ee64acafddcadad4c9d32c8adbaff69cb2d8f181655280e4f"
+      },
+      "pack_artifact": {
+        "alias_key_count": 0,
+        "artifact_license": "CC-BY-SA-4.0",
+        "artifact_sha256": "a0cd1cb8f8cfafa9aea8b04a246fe914bd208dafcd1f849d1e9989428305d933",
+        "candidate_count": 80969,
+        "file_name": "npi-Deva-NP.nkp",
+        "language": "npi",
+        "output_script": "Deva",
+        "pack_id": "npi-Deva-NP",
+        "release_mode": "release",
+        "surface_key_count": 80969,
+        "validation": {
+          "benchmark_queries": [
+            "न",
+            "ने",
+            "नेपा",
+            "नमस्",
+            "भ",
+            "भा",
+            "भाष",
+            "धन्य",
+            "राम्",
+            "शिक्",
+            "स्वास्"
+          ],
+          "expected_surface": "भाषा",
+          "query": "भाष"
+        }
+      },
+      "profile_id": "npi-Deva-NP",
+      "status": "passed"
+    },
+    {
+      "artifacts": [
+        {
+          "path": "reports/sunuwar-internal-pack-v0.json",
+          "sha256": "8c4e3c5ae3664d37c0c0d9e0d0dd20a7c5e271cbfbf7e415eb497865f05ffccf"
+        }
+      ],
+      "evidence_id": "suz-direct-internal-2026-07-15",
+      "gates": [
+        "deterministic_build",
+        "internal_pack",
+        "layout_implemented"
+      ],
+      "layout_binding": {
+        "layout_id": "deva-nepal-extended-v1",
+        "revision": 1,
+        "source_sha256": "ce8f8420c2d685e76a8ac44e8ba9bb44f73d7f17bcfa78e9617863e993734619"
+      },
+      "pack_artifact": {
+        "alias_key_count": 0,
+        "artifact_license": "LicenseRef-Internal",
+        "artifact_sha256": "e20fde0729617c4fccee66a4397055c71b3e81902a3942aebfd6a7504ab7aa87",
+        "candidate_count": 13876,
+        "file_name": "suz-Deva-NP.nkp",
+        "language": "suz",
+        "output_script": "Deva",
+        "pack_id": "suz-Deva-NP",
+        "release_mode": "internal",
+        "surface_key_count": 13876,
+        "validation": {
+          "benchmark_queries": [
+            "‘",
+            "‘आइक्‍क",
+            "‘ओव़",
+            "‘कुइक्‍त",
+            "अङ",
+            "ग्र",
+            "ख्र",
+            "ब्व",
+            "प्र",
+            "चि",
+            "सो"
+          ],
+          "expected_surface": "‘आ",
+          "query": "‘आ"
+        }
+      },
+      "profile_id": "suz-Deva-NP",
+      "status": "passed"
+    },
+    {
+      "artifacts": [
+        {
+          "path": "reports/western-tamang-internal-pack-v0.json",
+          "sha256": "4cc93dca56c45563155996e74bcb7f8687c61565232d692f229d837aedb797e1"
+        }
+      ],
+      "evidence_id": "tdg-direct-internal-2026-07-15",
+      "gates": [
+        "deterministic_build",
+        "internal_pack",
+        "layout_implemented"
+      ],
+      "layout_binding": {
+        "layout_id": "deva-nepal-western-tamang-v1",
+        "revision": 1,
+        "source_sha256": "fe8a19fda41baf9df799e401f6134bd5308e5258814ff87fc4d6ae81760a0fd8"
+      },
+      "pack_artifact": {
+        "alias_key_count": 0,
+        "artifact_license": "LicenseRef-Internal",
+        "artifact_sha256": "16b22a59695b1039fa4ffe11eaed416db69a9f10746de1a1e49f27dc7f088b41",
+        "candidate_count": 7555,
+        "file_name": "tdg-Deva-NP.nkp",
+        "language": "tdg",
+        "output_script": "Deva",
+        "pack_id": "tdg-Deva-NP",
+        "release_mode": "internal",
+        "surface_key_count": 7555,
+        "validation": {
+          "benchmark_queries": [
+            "उः",
+            "इ:",
+            "एः",
+            "अक्‍ग",
+            "अर्‌क",
+            "अइया!",
+            "-इ",
+            "गी:",
+            "ख्‍य",
+            "ङ्‍य",
+            "ल्‍हो"
+          ],
+          "expected_surface": "वा़से",
+          "query": "वा़"
+        }
+      },
+      "profile_id": "tdg-Deva-NP",
+      "status": "passed"
+    },
+    {
+      "artifacts": [
+        {
+          "path": "reports/yakkha-internal-pack-v0.json",
+          "sha256": "fc097ff89a5e03ee50dfd8fa39e54432892a8f5662ff508397d9c0d810326c42"
+        }
+      ],
+      "evidence_id": "ybh-direct-internal-2026-07-15",
+      "gates": [
+        "deterministic_build",
+        "internal_pack",
+        "layout_implemented"
+      ],
+      "layout_binding": {
+        "layout_id": "deva-nepal-yakkha-v1",
+        "revision": 1,
+        "source_sha256": "6bc33cb0bf5d2582a609e0e4ca987d099763f7b87af3aa76013c02faca7562b4"
+      },
+      "pack_artifact": {
+        "alias_key_count": 0,
+        "artifact_license": "LicenseRef-Internal",
+        "artifact_sha256": "eb365baea9500a0908a1eefebeb837460f19b0321fb44400e8a20b320ff438b7",
+        "candidate_count": 4684,
+        "file_name": "ybh-Deva-NP.nkp",
+        "language": "ybh",
+        "output_script": "Deva",
+        "pack_id": "ybh-Deva-NP",
+        "release_mode": "internal",
+        "surface_key_count": 4684,
+        "validation": {
+          "benchmark_queries": [
+            "आक्‍",
+            "आङ्‌",
+            "इन्‍",
+            "उइमा",
+            "ए",
+            "ओ",
+            "खोक्‍निमा/",
+            "बे\\",
+            "पेॽलेम",
+            "सङ्‌",
+            "टाङ्‌"
+          ],
+          "expected_surface": "अनन्त",
+          "query": "अ"
+        }
+      },
+      "profile_id": "ybh-Deva-NP",
+      "status": "passed"
+    }
+  ],
+  "expected_counts": {
+    "profiles": 74,
+    "scripts": 9,
+    "selectable": 16,
+    "targets": 33
+  },
+  "profile_overrides": {
+    "bap-deva-direct": {
+      "default_enabled": false,
+      "evidence_ids": [
+        "bap-direct-internal-2026-09-24"
+      ],
+      "layout_id": "deva-nepal-bantawa-v1",
+      "pack_binding": "bap-Deva-NP",
+      "profile_id": "bap-Deva-NP",
+      "selectable": true
+    },
+    "dhi-deva-direct": {
+      "default_enabled": false,
+      "evidence_ids": [
+        "dhi-direct-internal-2026-07-15"
+      ],
+      "layout_id": "deva-nepal-dhimal-v1",
+      "pack_binding": "dhi-Deva-NP",
+      "profile_id": "dhi-Deva-NP",
+      "selectable": true
+    },
+    "dus-deva-direct": {
+      "default_enabled": false,
+      "evidence_ids": [
+        "dus-direct-internal-2026-07-22"
+      ],
+      "layout_id": "deva-nepal-dumi-v1",
+      "pack_binding": "dus-Deva-NP",
+      "profile_id": "dus-Deva-NP",
+      "selectable": true
+    },
+    "eng-latn-direct": {
+      "default_enabled": true,
+      "evidence_ids": [
+        "eng-direct-release-2026-07-15"
+      ],
+      "layout_id": "latn-qwerty-us-v1",
+      "pack_binding": "eng-Latn-US",
+      "profile_id": "eng-Latn-US",
+      "selectable": true
+    },
+    "klr-deva-direct": {
+      "default_enabled": false,
+      "evidence_ids": [
+        "klr-direct-internal-2026-07-22"
+      ],
+      "layout_id": "deva-nepal-khaling-v1",
+      "pack_binding": "klr-Deva-NP",
+      "profile_id": "klr-Deva-NP",
+      "selectable": true
+    },
+    "lbr-deva-direct": {
+      "default_enabled": false,
+      "evidence_ids": [
+        "lbr-direct-internal-2026-07-15"
+      ],
+      "layout_id": "deva-nepal-lohorung-v1",
+      "pack_binding": "lbr-Deva-NP",
+      "profile_id": "lbr-Deva-NP",
+      "selectable": true
+    },
+    "lif-limb-direct": {
+      "default_enabled": false,
+      "evidence_ids": [
+        "lif-direct-internal-2026-07-15"
+      ],
+      "layout_id": "limb-nepal-phonetic-v1",
+      "pack_binding": "lif-Limb-NP",
+      "profile_id": "lif-Limb-NP",
+      "selectable": true
+    },
+    "mrd-deva-direct": {
+      "default_enabled": false,
+      "evidence_ids": [
+        "mrd-direct-internal-2026-09-24"
+      ],
+      "layout_id": "deva-nepal-western-magar-v1",
+      "pack_binding": "mrd-Deva-NP",
+      "profile_id": "mrd-Deva-NP",
+      "selectable": true
+    },
+    "new-deva-direct": {
+      "default_enabled": false,
+      "evidence_ids": [
+        "new-deva-roman-shared-internal-2026-07-21"
+      ],
+      "layout_id": "deva-nepal-bhasa-v1",
+      "pack_binding": "new-Deva-NP",
+      "profile_id": "new-Deva-NP",
+      "selectable": true
+    },
+    "new-deva-newa": {
+      "conversion_binding": "new-Deva-Newa-NP",
+      "default_enabled": false,
+      "evidence_ids": [
+        "new-deva-newa-internal-2026-07-21"
+      ],
+      "layout_id": "deva-nepal-bhasa-v1",
+      "profile_id": "new-Deva-Newa-NP",
+      "selectable": true
+    },
+    "new-latn-deva": {
+      "default_enabled": false,
+      "evidence_ids": [
+        "new-roman-internal-2026-07-21"
+      ],
+      "layout_id": "latn-qwerty-us-v1",
+      "pack_binding": "new-Deva-NP",
+      "profile_id": "new-Latn-Deva-NP",
+      "selectable": true
+    },
+    "new-newa-direct": {
+      "default_enabled": false,
+      "evidence_ids": [
+        "new-direct-internal-2026-07-21"
+      ],
+      "layout_id": "newa-nepal-prachalit-v1",
+      "pack_binding": "new-Newa-NP",
+      "profile_id": "new-Newa-NP",
+      "selectable": true
+    },
+    "npi-deva-direct": {
+      "default_enabled": true,
+      "evidence_ids": [
+        "npi-direct-release-2026-07-15"
+      ],
+      "layout_id": "deva-nepal-basic-v1",
+      "pack_binding": "npi-Deva-NP",
+      "profile_id": "npi-Deva-NP",
+      "selectable": true
+    },
+    "suz-deva-direct": {
+      "default_enabled": false,
+      "evidence_ids": [
+        "suz-direct-internal-2026-07-15"
+      ],
+      "layout_id": "deva-nepal-extended-v1",
+      "pack_binding": "suz-Deva-NP",
+      "profile_id": "suz-Deva-NP",
+      "selectable": true
+    },
+    "tdg-deva-direct": {
+      "default_enabled": false,
+      "evidence_ids": [
+        "tdg-direct-internal-2026-07-15"
+      ],
+      "layout_id": "deva-nepal-western-tamang-v1",
+      "pack_binding": "tdg-Deva-NP",
+      "profile_id": "tdg-Deva-NP",
+      "selectable": true
+    },
+    "ybh-deva-direct": {
+      "default_enabled": false,
+      "evidence_ids": [
+        "ybh-direct-internal-2026-07-15"
+      ],
+      "layout_id": "deva-nepal-yakkha-v1",
+      "pack_binding": "ybh-Deva-NP",
+      "profile_id": "ybh-Deva-NP",
+      "selectable": true
+    }
+  },
+  "review_id": "internal-profiles-2026-09-24",
+  "review_version": 1,
+  "reviewed_at": "2026-09-24",
+  "target_overrides": {
+    "eng": {
+      "language_tag": "en-US"
+    },
+    "npi": {
+      "language_tag": "ne-NP",
+      "native_label": "नेपाली"
+    }
+  }
+}

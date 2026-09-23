@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <application>
+        <activity
+            android:name=".InternalSubtypeTestActivity"
+            android:exported="false" />
+    </application>
+
+    <instrumentation
+        android:name="com.ampixa.nepakeyboard.ime.InternalImeSmokeInstrumentation"
+        android:label="Nepa Keyboard internal IME smoke tests"
+        android:targetPackage="com.ampixa.nepakeyboard.ime.internal" />
+
+    <instrumentation
+        android:name="com.ampixa.nepakeyboard.ime.DecoderContractInstrumentation"
+        android:label="Nepa Keyboard internal decoder contract tests"
+        android:targetPackage="com.ampixa.nepakeyboard.ime.internal" />
+
+    <instrumentation
+        android:name="com.ampixa.nepakeyboard.ime.NcmConversionInstrumentation"
+        android:label="Nepa Keyboard internal NCM conversion tests"
+        android:targetPackage="com.ampixa.nepakeyboard.ime.internal" />
+
+    <instrumentation
+        android:name="com.ampixa.nepakeyboard.ime.SpatialDecoderBenchmarkInstrumentation"
+        android:functionalTest="true"
+        android:handleProfiling="false"
+        android:label="Nepa Keyboard internal spatial decoder benchmark"
+        android:targetPackage="com.ampixa.nepakeyboard.ime.internal" />
+
+    <instrumentation
+        android:name="com.ampixa.nepakeyboard.ime.InternalSubtypeCompatibilityInstrumentation"
+        android:label="Nepa Keyboard internal subtype compatibility tests"
+        android:targetPackage="com.ampixa.nepakeyboard.ime.internal" />
+
+    <instrumentation
+        android:name="com.ampixa.nepakeyboard.ime.InternalScriptRenderingInstrumentation"
+        android:label="Nepa Keyboard internal script rendering tests"
+        android:targetPackage="com.ampixa.nepakeyboard.ime.internal" />
+
+    <instrumentation
+        android:name="com.ampixa.nepakeyboard.ime.ShellPreferenceInstrumentation"
+        android:label="Nepa Keyboard internal shell preference tests"
+        android:targetPackage="com.ampixa.nepakeyboard.ime.internal" />
+
+    <instrumentation
+        android:name="com.ampixa.nepakeyboard.ime.TransliterationInstrumentation"
+        android:label="Nepa Keyboard internal transliteration tests"
+        android:targetPackage="com.ampixa.nepakeyboard.ime.internal" />
+
+    <instrumentation
+        android:name="com.ampixa.nepakeyboard.ime.EmojiPanelInstrumentation"
+        android:label="Nepa Keyboard internal emoji panel tests"
+        android:targetPackage="com.ampixa.nepakeyboard.ime.internal" />
+</manifest>

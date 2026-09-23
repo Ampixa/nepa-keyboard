@@ -1,0 +1,123 @@
+{
+  "golden_version": 1,
+  "layouts": {
+    "latn-qwerty-us-v1": {
+      "profile": {
+        "profile_id": "eng-Latn-US",
+        "native_name": "English",
+        "display_name": "English"
+      },
+      "layers": {
+        "base": [
+          ["q", "w", "e", "r", "t", "y", "u", "i", "o", "p"],
+          ["a", "s", "d", "f", "g", "h", "j", "k", "l"],
+          ["z", "x", "c", "v", "b", "n", "m", ",", "."],
+          [
+            ["shift", "⇧", "Shift", 115, null],
+            ["symbols", "?123", "Symbols", 135, null],
+            ["language", "🌐", "Switch language", 110, "open_language_picker"],
+            ["space", "English", "Space · English", 400, "open_language_picker"],
+            ["delete", "⌫", "Delete", 125, null],
+            ["enter", "↵", "Enter", 125, null]
+          ]
+        ],
+        "shift": [
+          ["Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P"],
+          ["A", "S", "D", "F", "G", "H", "J", "K", "L"],
+          ["Z", "X", "C", "V", "B", "N", "M", ",", "."],
+          [
+            ["shift", "⇧", "Shift", 115, null],
+            ["symbols", "?123", "Symbols", 135, null],
+            ["language", "🌐", "Switch language", 110, "open_language_picker"],
+            ["space", "English", "Space · English", 400, "open_language_picker"],
+            ["delete", "⌫", "Delete", 125, null],
+            ["enter", "↵", "Enter", 125, null]
+          ]
+        ],
+        "symbols": [
+          ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"],
+          ["@", "#", "₹", "_", "&", "-", "+", "(", ")"],
+          ["*", "\"", "'", ":", ";", "!", "?", "/", "."],
+          [
+            ["letters", "ABC", "Letters", 135, null],
+            ["symbols", "?123", "Symbols", 135, null],
+            ["language", "🌐", "Switch language", 110, "open_language_picker"],
+            ["space", "English", "Space · English", 400, "open_language_picker"],
+            ["delete", "⌫", "Delete", 125, null],
+            ["enter", "↵", "Enter", 125, null]
+          ]
+        ],
+        "numeric": [
+          ["1", "2", "3"],
+          ["4", "5", "6"],
+          ["7", "8", "9"],
+          [".", "0", "-"],
+          [
+            ["space", "English", "Space · English", 220, "open_language_picker"],
+            ["delete", "⌫", "Delete", 125, null],
+            ["enter", "↵", "Enter", 125, null]
+          ]
+        ]
+      }
+    },
+    "deva-nepal-basic-v1": {
+      "profile": {
+        "profile_id": "npi-Deva-NP",
+        "native_name": "नेपाली",
+        "display_name": "Nepali"
+      },
+      "layers": {
+        "base": [
+          ["ट", "ौ", "े", "र", "त", "य", "ु", "ि", "ो", "प"],
+          ["ा", "स", "द", "उ", "ग", "ह", "ज", "क", "ल"],
+          ["ष", "ड", "च", "व", "ब", "न", "म", ",", "।", "्"],
+          [
+            ["shift", "⇧", "Shift", 115, null],
+            ["symbols", "?123", "Symbols", 135, null],
+            ["language", "🌐", "Switch language", 110, "open_language_picker"],
+            ["space", "नेपाली", "Space · Nepali", 400, "open_language_picker"],
+            ["delete", "⌫", "Delete", 125, null],
+            ["enter", "↵", "Enter", 125, null]
+          ]
+        ],
+        "shift": [
+          ["ठ", "औ", "ै", "ृ", "थ", "ञ", "ू", "ी", "ओ", "फ"],
+          ["आ", "श", "ध", "ऊ", "घ", "अ", "झ", "ख", "॥"],
+          ["ऋ", "ढ", "छ", "ँ", "भ", "ण", "ं", "ङ", ".", "?"],
+          [
+            ["shift", "⇧", "Shift", 115, null],
+            ["symbols", "?123", "Symbols", 135, null],
+            ["language", "🌐", "Switch language", 110, "open_language_picker"],
+            ["space", "नेपाली", "Space · Nepali", 400, "open_language_picker"],
+            ["delete", "⌫", "Delete", 125, null],
+            ["enter", "↵", "Enter", 125, null]
+          ]
+        ],
+        "symbols": [
+          ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"],
+          ["@", "#", "₹", "_", "&", "-", "+", "(", ")"],
+          ["*", "\"", "'", ":", ";", "!", "?", "/", "."],
+          [
+            ["letters", "ABC", "Letters", 135, null],
+            ["symbols", "?123", "Symbols", 135, null],
+            ["language", "🌐", "Switch language", 110, "open_language_picker"],
+            ["space", "नेपाली", "Space · Nepali", 400, "open_language_picker"],
+            ["delete", "⌫", "Delete", 125, null],
+            ["enter", "↵", "Enter", 125, null]
+          ]
+        ],
+        "numeric": [
+          ["1", "2", "3"],
+          ["4", "5", "6"],
+          ["7", "8", "9"],
+          [".", "0", "-"],
+          [
+            ["space", "नेपाली", "Space · Nepali", 220, "open_language_picker"],
+            ["delete", "⌫", "Delete", 125, null],
+            ["enter", "↵", "Enter", 125, null]
+          ]
+        ]
+      }
+    }
+  }
+}

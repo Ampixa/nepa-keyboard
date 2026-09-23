@@ -1,0 +1,276 @@
+{
+  "source_format": "nepa-transliteration-map-source",
+  "source_format_version": 1,
+  "map_id": "lep-Latn-Lepc-v0",
+  "language": "lep",
+  "source_script": "Latn",
+  "output_script": "Lepc",
+  "note": "Roman to Lepcha (Rong). Lepcha has no virama: a syllable-closing consonant takes its dedicated consonant sign, and independent vowels are written on LEPCHA LETTER A as carrier. Only the seven consonant signs whose Unicode names state a sound value can close a syllable; NYIN-DO and KANG are named after Lepcha words rather than sounds and are left out of v0 rather than guessed. Subjoined ya/ra clusters and the nukta are likewise not covered.",
+  "inherent_vowel": "a",
+  "final_consonant": "final_form",
+  "explicit_virama": "",
+  "virama": [],
+  "consonants": {
+    "k": [
+      "LEPCHA LETTER KA"
+    ],
+    "kh": [
+      "LEPCHA LETTER KHA"
+    ],
+    "g": [
+      "LEPCHA LETTER GA"
+    ],
+    "ng": [
+      "LEPCHA LETTER NGA"
+    ],
+    "c": [
+      "LEPCHA LETTER CA"
+    ],
+    "ch": [
+      "LEPCHA LETTER CHA"
+    ],
+    "j": [
+      "LEPCHA LETTER JA"
+    ],
+    "ny": [
+      "LEPCHA LETTER NYA"
+    ],
+    "t": [
+      "LEPCHA LETTER TA"
+    ],
+    "th": [
+      "LEPCHA LETTER THA"
+    ],
+    "d": [
+      "LEPCHA LETTER DA"
+    ],
+    "n": [
+      "LEPCHA LETTER NA"
+    ],
+    "tt": [
+      "LEPCHA LETTER TTA"
+    ],
+    "tth": [
+      "LEPCHA LETTER TTHA"
+    ],
+    "dd": [
+      "LEPCHA LETTER DDA"
+    ],
+    "p": [
+      "LEPCHA LETTER PA"
+    ],
+    "ph": [
+      "LEPCHA LETTER PHA"
+    ],
+    "f": [
+      "LEPCHA LETTER FA"
+    ],
+    "b": [
+      "LEPCHA LETTER BA"
+    ],
+    "m": [
+      "LEPCHA LETTER MA"
+    ],
+    "ts": [
+      "LEPCHA LETTER TSA"
+    ],
+    "tsh": [
+      "LEPCHA LETTER TSHA"
+    ],
+    "dz": [
+      "LEPCHA LETTER DZA"
+    ],
+    "y": [
+      "LEPCHA LETTER YA"
+    ],
+    "r": [
+      "LEPCHA LETTER RA"
+    ],
+    "l": [
+      "LEPCHA LETTER LA"
+    ],
+    "h": [
+      "LEPCHA LETTER HA"
+    ],
+    "v": [
+      "LEPCHA LETTER VA"
+    ],
+    "s": [
+      "LEPCHA LETTER SA"
+    ],
+    "sh": [
+      "LEPCHA LETTER SHA"
+    ],
+    "w": [
+      "LEPCHA LETTER WA"
+    ],
+    "kl": [
+      "LEPCHA LETTER KLA"
+    ],
+    "gl": [
+      "LEPCHA LETTER GLA"
+    ],
+    "pl": [
+      "LEPCHA LETTER PLA"
+    ],
+    "fl": [
+      "LEPCHA LETTER FLA"
+    ],
+    "bl": [
+      "LEPCHA LETTER BLA"
+    ],
+    "ml": [
+      "LEPCHA LETTER MLA"
+    ],
+    "hl": [
+      "LEPCHA LETTER HLA"
+    ]
+  },
+  "independent_vowels": {
+    "a": [
+      "LEPCHA LETTER A"
+    ],
+    "aa": [
+      "LEPCHA LETTER A",
+      "LEPCHA VOWEL SIGN AA"
+    ],
+    "i": [
+      "LEPCHA LETTER A",
+      "LEPCHA VOWEL SIGN I"
+    ],
+    "o": [
+      "LEPCHA LETTER A",
+      "LEPCHA VOWEL SIGN O"
+    ],
+    "oo": [
+      "LEPCHA LETTER A",
+      "LEPCHA VOWEL SIGN OO"
+    ],
+    "u": [
+      "LEPCHA LETTER A",
+      "LEPCHA VOWEL SIGN U"
+    ],
+    "uu": [
+      "LEPCHA LETTER A",
+      "LEPCHA VOWEL SIGN UU"
+    ],
+    "e": [
+      "LEPCHA LETTER A",
+      "LEPCHA VOWEL SIGN E"
+    ]
+  },
+  "vowel_signs": {
+    "a": [],
+    "aa": [
+      "LEPCHA VOWEL SIGN AA"
+    ],
+    "i": [
+      "LEPCHA VOWEL SIGN I"
+    ],
+    "o": [
+      "LEPCHA VOWEL SIGN O"
+    ],
+    "oo": [
+      "LEPCHA VOWEL SIGN OO"
+    ],
+    "u": [
+      "LEPCHA VOWEL SIGN U"
+    ],
+    "uu": [
+      "LEPCHA VOWEL SIGN UU"
+    ],
+    "e": [
+      "LEPCHA VOWEL SIGN E"
+    ]
+  },
+  "standalone": {
+    "0": [
+      "LEPCHA DIGIT ZERO"
+    ],
+    "1": [
+      "LEPCHA DIGIT ONE"
+    ],
+    "2": [
+      "LEPCHA DIGIT TWO"
+    ],
+    "3": [
+      "LEPCHA DIGIT THREE"
+    ],
+    "4": [
+      "LEPCHA DIGIT FOUR"
+    ],
+    "5": [
+      "LEPCHA DIGIT FIVE"
+    ],
+    "6": [
+      "LEPCHA DIGIT SIX"
+    ],
+    "7": [
+      "LEPCHA DIGIT SEVEN"
+    ],
+    "8": [
+      "LEPCHA DIGIT EIGHT"
+    ],
+    "9": [
+      "LEPCHA DIGIT NINE"
+    ]
+  },
+  "final_forms": {
+    "k": [
+      "LEPCHA CONSONANT SIGN K"
+    ],
+    "m": [
+      "LEPCHA CONSONANT SIGN M"
+    ],
+    "l": [
+      "LEPCHA CONSONANT SIGN L"
+    ],
+    "n": [
+      "LEPCHA CONSONANT SIGN N"
+    ],
+    "p": [
+      "LEPCHA CONSONANT SIGN P"
+    ],
+    "r": [
+      "LEPCHA CONSONANT SIGN R"
+    ],
+    "t": [
+      "LEPCHA CONSONANT SIGN T"
+    ]
+  },
+  "words": {},
+  "vectors": [
+    {
+      "input": "ka",
+      "output": "ᰀ"
+    },
+    {
+      "input": "kaa",
+      "output": "ᰀᰦ"
+    },
+    {
+      "input": "kat",
+      "output": "ᰀᰳ"
+    },
+    {
+      "input": "lam",
+      "output": "ᰜᰮ"
+    },
+    {
+      "input": "tshu",
+      "output": "ᰘᰪ"
+    },
+    {
+      "input": "a",
+      "output": "ᰣ"
+    },
+    {
+      "input": "i",
+      "output": "ᰣᰧ"
+    },
+    {
+      "input": "5",
+      "output": "᱅"
+    }
+  ]
+}

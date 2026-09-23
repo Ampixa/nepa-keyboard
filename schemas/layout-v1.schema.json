@@ -1,0 +1,304 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ampixa.com/schemas/nepa-keyboard-layout-v1.schema.json",
+  "title": "Nepa Keyboard declarative layout v1 source",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "layout_format_version",
+    "layout_id",
+    "revision",
+    "display_name",
+    "input_script",
+    "direction",
+    "normalization",
+    "unicode_data_version",
+    "device_forms",
+    "authors",
+    "provenance",
+    "field_layer_map",
+    "layers",
+    "transforms"
+  ],
+  "properties": {
+    "layout_format_version": { "const": 1 },
+    "layout_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9._-]*$"
+    },
+    "revision": { "type": "integer", "minimum": 1 },
+    "display_name": { "type": "string", "minLength": 1 },
+    "input_script": {
+      "type": "string",
+      "pattern": "^[A-Z][a-z]{3}$"
+    },
+    "direction": { "enum": ["ltr", "rtl"] },
+    "normalization": { "const": "NFC" },
+    "unicode_data_version": { "const": "16.0.0" },
+    "device_forms": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "enum": ["phone", "tablet"] }
+    },
+    "authors": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "license": { "$ref": "#/$defs/license" },
+    "provenance": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/provenance" }
+    },
+    "field_layer_map": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["text", "number", "phone", "datetime"],
+      "properties": {
+        "text": { "const": "base" },
+        "number": { "const": "numeric" },
+        "phone": { "const": "numeric" },
+        "datetime": { "const": "numeric" }
+      }
+    },
+    "layers": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["base", "shift", "symbols", "numeric"],
+      "properties": {
+        "base": { "$ref": "#/$defs/layer" },
+        "shift": { "$ref": "#/$defs/layer" },
+        "symbols": { "$ref": "#/$defs/layer" },
+        "numeric": { "$ref": "#/$defs/layer" }
+      }
+    },
+    "transforms": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["from", "to"],
+        "properties": {
+          "from": { "type": "string", "minLength": 1 },
+          "to": { "type": "string", "minLength": 1 }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "input_script": { "not": { "const": "Newa" } }
+        },
+        "required": ["input_script"]
+      },
+      "then": {
+        "properties": {
+          "layers": {
+            "properties": {
+              "base": { "$ref": "#/$defs/layer_without_newa_joiners" },
+              "shift": { "$ref": "#/$defs/layer_without_newa_joiners" },
+              "symbols": { "$ref": "#/$defs/layer_without_newa_joiners" },
+              "numeric": { "$ref": "#/$defs/layer_without_newa_joiners" }
+            }
+          }
+        }
+      }
+    }
+  ],
+  "$defs": {
+    "license": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "copyright", "redistribution"],
+      "dependentRequired": {
+        "notice_path": ["notice_sha256"],
+        "notice_sha256": ["notice_path"]
+      },
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "copyright": { "type": "string", "minLength": 1 },
+        "notice_path": {
+          "type": "string",
+          "pattern": "^layouts/(internal/)?notices/[A-Za-z0-9._-]+$"
+        },
+        "notice_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "license_url": { "type": "string", "pattern": "^https://" },
+        "redistribution": {
+          "enum": ["allowed", "prohibited", "permission_required", "unknown", "system"]
+        }
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "source", "revision", "sha256", "note"],
+      "properties": {
+        "kind": {
+          "enum": ["project_authored", "adapted", "standard_reference"]
+        },
+        "source": { "type": "string", "minLength": 1 },
+        "revision": { "type": "string", "minLength": 1 },
+        "sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+        "source_url": { "type": "string", "pattern": "^https://" },
+        "note": { "type": "string", "minLength": 1 }
+      }
+    },
+    "layer": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["rows"],
+      "properties": {
+        "rows": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 8,
+          "items": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 20,
+            "items": { "$ref": "#/$defs/key" }
+          }
+        }
+      }
+    },
+    "layer_without_newa_joiners": {
+      "type": "object",
+      "properties": {
+        "rows": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "not": {
+              "contains": {
+                "type": "object",
+                "required": ["kind"],
+                "properties": {
+                  "kind": { "const": "newa_conjunct_joiner" }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "key": {
+      "oneOf": [
+        {
+          "type": "string",
+          "minLength": 1
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "kind", "text", "label", "content_description"
+          ],
+          "properties": {
+            "kind": { "const": "text" },
+            "text": { "type": "string", "minLength": 1 },
+            "label": { "type": "string", "minLength": 1 },
+            "content_description": { "type": "string", "minLength": 1 }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "kind", "text", "label", "content_description"
+          ],
+          "properties": {
+            "kind": { "const": "newa_conjunct_joiner" },
+            "text": { "enum": ["‌", "‍"] },
+            "label": { "type": "string", "minLength": 1 },
+            "content_description": { "type": "string", "minLength": 1 }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "kind", "text", "label", "content_description"
+          ],
+          "properties": {
+            "kind": { "const": "deva_terminal_zwnj" },
+            "text": { "const": "‌" },
+            "label": { "type": "string", "minLength": 1 },
+            "content_description": { "type": "string", "minLength": 1 }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "kind", "text", "label", "content_description"
+          ],
+          "properties": {
+            "kind": { "const": "orthographic_word" },
+            "text": { "const": "‘" },
+            "label": { "type": "string", "minLength": 1 },
+            "content_description": { "type": "string", "minLength": 1 }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "kind", "text", "label", "content_description"
+          ],
+          "properties": {
+            "kind": { "const": "intra_word_punctuation" },
+            "text": { "enum": ["-", "/", "\\", ":"] },
+            "label": { "type": "string", "minLength": 1 },
+            "content_description": { "type": "string", "minLength": 1 }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "kind", "text", "label", "content_description"
+          ],
+          "properties": {
+            "kind": { "const": "deva_conjunct_joiner" },
+            "text": { "enum": ["‌", "‍"] },
+            "label": { "type": "string", "minLength": 1 },
+            "content_description": { "type": "string", "minLength": 1 }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "action", "label", "content_description", "width_units"
+          ],
+          "properties": {
+            "action": {
+              "enum": [
+                "shift", "delete", "enter", "space", "language",
+                "symbols", "letters"
+              ]
+            },
+            "label": { "type": "string", "minLength": 1 },
+            "content_description": { "type": "string", "minLength": 1 },
+            "width_units": {
+              "type": "integer",
+              "minimum": 25,
+              "maximum": 1000
+            },
+            "hold_action": {
+              "enum": ["open_language_picker"]
+            }
+          }
+        }
+      ]
+    }
+  }
+}

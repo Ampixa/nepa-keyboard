@@ -1,0 +1,45 @@
+{
+  "bundle": "Nepa Romanized Pro.bundle",
+  "bundle_identifier": "com.ampixa.nepa.romanized-pro",
+  "bundle_version": "0.1.0",
+  "files": [
+    {
+      "path": "Nepa Romanized Pro.bundle/Contents/Info.plist",
+      "sha256": "940c11f95f31442029db41280f57990bac4ab9502564a09624ce1cdfbe1d5b82",
+      "size": 1427
+    },
+    {
+      "path": "Nepa Romanized Pro.bundle/Contents/Resources/Limbu (Romanized Sirijanga) - Nepa Pro.keylayout",
+      "sha256": "1fb17d112c0ef7df20b6871df0a8ad812de293f96e74d4c649143c59fad4d457",
+      "size": 34906
+    },
+    {
+      "path": "Nepa Romanized Pro.bundle/Contents/Resources/Nepal Bhasa (Newari Romanized) - Nepa Pro.keylayout",
+      "sha256": "f34b6621e3f367882deb9de3112158b8938704bb8a4ecb45dbc057a16d215b7d",
+      "size": 35138
+    },
+    {
+      "path": "Nepa Romanized Pro.bundle/Contents/Resources/Nepali (Romanized) - Nepa Pro.keylayout",
+      "sha256": "140561a77e461ba9f70fcbf7ddef84290be9d9c8cbb88a5903b4c4397a179e0c",
+      "size": 34977
+    },
+    {
+      "path": "Nepa Romanized Pro.bundle/Contents/Resources/en.lproj/InfoPlist.strings",
+      "sha256": "b2c1a5cecc9cb1d3ad81beef8f7721b9ba314afaeafe42b7a49135a15eca1e59",
+      "size": 243
+    },
+    {
+      "path": "Nepa Romanized Pro.bundle/Contents/version.plist",
+      "sha256": "000af51e1b4f300970ba7e9c902420775cbc289e3b9b795e560a7750d5987996",
+      "size": 344
+    }
+  ],
+  "format_version": 1,
+  "profile_ids": [
+    "npi-Deva-NP-macos-romanized-pro",
+    "new-Newa-NP-macos-romanized-pro",
+    "lif-Limb-NP-macos-romanized-pro"
+  ],
+  "spec_path": "desktop/macos/romanized-pro-v1.json",
+  "spec_sha256": "6202214e9a36c83427aec094f63168226bbf98ec39f73baa4e2334178196fb50"
+}

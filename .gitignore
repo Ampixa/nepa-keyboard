@@ -1,0 +1,29 @@
+__pycache__/
+*.py[cod]
+.venv/
+build/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.playwright-mcp/
+.DS_Store
+
+# Keep project validation evidence even when a machine-wide rule ignores reports.
+!reports/
+
+# Generated language-pack inputs and artifacts are reproducible outputs.
+/data/build/
+/dist/
+*.nkp
+*.nkp.report.json
+
+# Android build outputs and remotely staged internal benchmark pack.
+/android/.gradle/
+/android/**/build/
+/android/local.properties
+/android/benchmark-app/src/main/assets/*.nkp
+
+# Release signing material must stay outside source control.
+*.jks
+*.keystore
+/android/keystore.properties

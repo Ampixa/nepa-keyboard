@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lint>
+    <!--
+      AAPT requires adaptive-icon resources to remain API-26-qualified even
+      when minSdk is 26. The unqualified resource is the legacy vector fallback.
+    -->
+    <issue id="ObsoleteSdkInt">
+        <ignore path="src/main/res/mipmap-anydpi-v26" />
+    </issue>
+</lint>

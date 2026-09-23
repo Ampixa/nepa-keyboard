@@ -1,0 +1,20 @@
+Nepa Keyboard is an offline-first Android keyboard for typing in languages and scripts of Nepal.
+
+Choose from 16 input profiles across 13 languages, including English, Nepali, Limbu, Nepal Bhasa, Dhimal, Sunuwar (Koĩts), Lohorung, Yakkha, Khaling, Dumi, Western Tamang, Lepcha, and Maithili.
+
+Depending on the selected profile, you can:
+• Type directly in the target script
+• Type phonetically from Roman letters
+• Convert between supported scripts
+• Use on-device dictionary suggestions
+• Switch languages from the keyboard
+• Choose a keyboard theme and height
+• Insert emoji without leaving the keyboard
+
+Privacy by design:
+• Nepa Keyboard has no internet permission
+• Typed text is processed on your device
+• Suggestions and transliteration run offline
+• Suggestions are disabled in password fields
+
+The app includes a guided setup screen for enabling the keyboard, choosing languages, selecting Nepa Keyboard, and testing typing.

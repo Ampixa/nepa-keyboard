@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900" role="img" aria-labelledby="title description">
+  <title id="title">Newa QWERTY-direct keyboard research preview</title>
+  <desc id="description">A research-only, unbound, non-selectable proposed base layer for a Nepal Bhasa keyboard in the Newa script, followed by five known missing letters and a request for native-speaker review.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#08101f"/>
+      <stop offset="1" stop-color="#151b38"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#18223c"/>
+      <stop offset="1" stop-color="#11182d"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000716" flood-opacity="0.45"/>
+    </filter>
+    <style>
+      .ui { font-family: Inter, system-ui, sans-serif; }
+      .newa { font-family: "Noto Sans Newa", "Noto Sans", sans-serif; }
+      .key { fill: #232e4d; stroke: #3d4a70; stroke-width: 1.5; }
+      .action { fill: #1d2743; stroke: #435177; stroke-width: 1.5; }
+      .latin { fill: #91a0c3; font: 600 14px Inter, system-ui, sans-serif; }
+      .glyph { fill: #f7f9ff; font: 34px "Noto Sans Newa", "Noto Sans", sans-serif; text-anchor: middle; dominant-baseline: middle; }
+      .control { fill: #f7f9ff; font: 700 18px Inter, system-ui, sans-serif; text-anchor: middle; dominant-baseline: middle; }
+      .action-label { fill: #f7f9ff; font: 650 21px Inter, system-ui, sans-serif; text-anchor: middle; dominant-baseline: middle; }
+    </style>
+  </defs>
+
+  <rect width="1440" height="900" fill="url(#background)"/>
+  <circle cx="1270" cy="92" r="190" fill="#1ca99c" opacity="0.08"/>
+  <circle cx="95" cy="820" r="250" fill="#6678ff" opacity="0.07"/>
+
+  <g class="ui">
+    <text x="64" y="72" fill="#f7f9ff" font-size="42" font-weight="750">Help us review a Newa keyboard</text>
+    <text x="66" y="112" fill="#aebada" font-size="21">Nepal Bhasa · QWERTY-direct research preview · base layer</text>
+    <rect x="1044" y="53" width="332" height="46" rx="23" fill="#f6c76b" opacity="0.16" stroke="#f6c76b"/>
+    <text x="1210" y="82" fill="#f6c76b" font-size="15" font-weight="750" text-anchor="middle">RESEARCH ONLY · NOT SELECTABLE</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="60" y="150" width="1320" height="510" rx="34" fill="url(#panel)" stroke="#2b385b" stroke-width="2"/>
+  </g>
+  <text class="ui" x="96" y="194" fill="#6ee7d8" font-size="15" font-weight="750" letter-spacing="1.5">PROPOSED BASE LAYER</text>
+
+  <!-- QWERTY row -->
+  <g>
+    <rect class="key" x="110" y="216" width="112" height="78" rx="15"/><text class="latin" x="123" y="237">Q</text><text class="glyph" x="166" y="258">𑐚</text>
+    <rect class="key" x="232" y="216" width="112" height="78" rx="15"/><text class="latin" x="245" y="237">W</text><text class="glyph" x="288" y="258">𑑁</text>
+    <rect class="key" x="354" y="216" width="112" height="78" rx="15"/><text class="latin" x="367" y="237">E</text><text class="glyph" x="410" y="258">𑐾</text>
+    <rect class="key" x="476" y="216" width="112" height="78" rx="15"/><text class="latin" x="489" y="237">R</text><text class="glyph" x="532" y="258">𑐬</text>
+    <rect class="key" x="598" y="216" width="112" height="78" rx="15"/><text class="latin" x="611" y="237">T</text><text class="glyph" x="654" y="258">𑐟</text>
+    <rect class="key" x="720" y="216" width="112" height="78" rx="15"/><text class="latin" x="733" y="237">Y</text><text class="glyph" x="776" y="258">𑐫</text>
+    <rect class="key" x="842" y="216" width="112" height="78" rx="15"/><text class="latin" x="855" y="237">U</text><text class="glyph" x="898" y="258">𑐸</text>
+    <rect class="key" x="964" y="216" width="112" height="78" rx="15"/><text class="latin" x="977" y="237">I</text><text class="glyph" x="1020" y="258">𑐶</text>
+    <rect class="key" x="1086" y="216" width="112" height="78" rx="15"/><text class="latin" x="1099" y="237">O</text><text class="glyph" x="1142" y="258">𑑀</text>
+    <rect class="key" x="1208" y="216" width="112" height="78" rx="15"/><text class="latin" x="1221" y="237">P</text><text class="glyph" x="1264" y="258">𑐥</text>
+  </g>
+
+  <!-- Home row -->
+  <g>
+    <rect class="key" x="171" y="310" width="112" height="78" rx="15"/><text class="latin" x="184" y="331">A</text><text class="glyph" x="227" y="352">𑐵</text>
+    <rect class="key" x="293" y="310" width="112" height="78" rx="15"/><text class="latin" x="306" y="331">S</text><text class="glyph" x="349" y="352">𑐳</text>
+    <rect class="key" x="415" y="310" width="112" height="78" rx="15"/><text class="latin" x="428" y="331">D</text><text class="glyph" x="471" y="352">𑐡</text>
+    <rect class="key" x="537" y="310" width="112" height="78" rx="15"/><text class="latin" x="550" y="331">F</text><text class="glyph" x="593" y="352">𑐦</text>
+    <rect class="key" x="659" y="310" width="112" height="78" rx="15"/><text class="latin" x="672" y="331">G</text><text class="glyph" x="715" y="352">𑐐</text>
+    <rect class="key" x="781" y="310" width="112" height="78" rx="15"/><text class="latin" x="794" y="331">H</text><text class="glyph" x="837" y="352">𑐴</text>
+    <rect class="key" x="903" y="310" width="112" height="78" rx="15"/><text class="latin" x="916" y="331">J</text><text class="glyph" x="959" y="352">𑐖</text>
+    <rect class="key" x="1025" y="310" width="112" height="78" rx="15"/><text class="latin" x="1038" y="331">K</text><text class="glyph" x="1081" y="352">𑐎</text>
+    <rect class="key" x="1147" y="310" width="112" height="78" rx="15"/><text class="latin" x="1160" y="331">L</text><text class="glyph" x="1203" y="352">𑐮</text>
+  </g>
+
+  <!-- Bottom letter and conjunct row -->
+  <g>
+    <rect class="key" x="87" y="404" width="105" height="78" rx="15"/><text class="latin" x="99" y="425">Z</text><text class="glyph" x="139.5" y="446">𑐲</text>
+    <rect class="key" x="202" y="404" width="105" height="78" rx="15"/><text class="latin" x="214" y="425">X</text><text class="glyph" x="254.5" y="446">𑐕</text>
+    <rect class="key" x="317" y="404" width="105" height="78" rx="15"/><text class="latin" x="329" y="425">C</text><text class="glyph" x="369.5" y="446">𑐔</text>
+    <rect class="key" x="432" y="404" width="105" height="78" rx="15"/><text class="latin" x="444" y="425">V</text><text class="glyph" x="484.5" y="446">𑐰</text>
+    <rect class="key" x="547" y="404" width="105" height="78" rx="15"/><text class="latin" x="559" y="425">B</text><text class="glyph" x="599.5" y="446">𑐧</text>
+    <rect class="key" x="662" y="404" width="105" height="78" rx="15"/><text class="latin" x="674" y="425">N</text><text class="glyph" x="714.5" y="446">𑐣</text>
+    <rect class="key" x="777" y="404" width="105" height="78" rx="15"/><text class="latin" x="789" y="425">M</text><text class="glyph" x="829.5" y="446">𑐩</text>
+    <rect class="key" x="892" y="404" width="105" height="78" rx="15"/><text class="latin" x="904" y="425">,</text><text class="glyph" x="944.5" y="446">𑑋</text>
+    <rect class="key" x="1007" y="404" width="105" height="78" rx="15"/><text class="latin" x="1019" y="425">.</text><text class="glyph" x="1059.5" y="446">𑑂</text>
+    <rect class="key" x="1122" y="404" width="105" height="78" rx="15"/><text class="control" x="1174.5" y="444">ZWJ</text>
+    <rect class="key" x="1237" y="404" width="105" height="78" rx="15"/><text class="control" x="1289.5" y="444">ZWNJ</text>
+  </g>
+
+  <!-- Action row -->
+  <g>
+    <rect class="action" x="87" y="505" width="116" height="92" rx="18"/><text class="action-label" x="145" y="551">⇧</text>
+    <rect class="action" x="213" y="505" width="136" height="92" rx="18"/><text class="action-label" x="281" y="551">?123</text>
+    <rect class="action" x="359" y="505" width="116" height="92" rx="18"/><text class="action-label" x="417" y="551">🌐</text>
+    <rect class="action" x="485" y="505" width="576" height="92" rx="18"/><text class="action-label" x="773" y="551">Nepal Bhasa</text>
+    <rect class="action" x="1071" y="505" width="126" height="92" rx="18"/><text class="action-label" x="1134" y="551">⌫</text>
+    <rect class="action" x="1207" y="505" width="135" height="92" rx="18"/><text class="action-label" x="1274.5" y="551">↵</text>
+  </g>
+  <text class="ui" x="720" y="632" fill="#8998bb" font-size="14" text-anchor="middle">Latin position labels show the proposed QWERTY mapping. Shift and symbol layers are also included in the review packet.</text>
+
+  <g class="ui">
+    <text x="64" y="719" fill="#f7f9ff" font-size="25" font-weight="730">Five known missing letters need placement</text>
+    <text x="64" y="751" fill="#aebada" font-size="17">Please help us decide whether these belong on Shift, symbols, or a future long-press layer.</text>
+    <g font-size="16" font-weight="650">
+      <rect x="64" y="780" width="230" height="58" rx="15" fill="#251f38" stroke="#8f74ca"/><text class="newa" x="84" y="817" fill="#f7f9ff" font-size="25">𑐓</text><text x="122" y="814" fill="#d9d5ee">NGHA · U+11413</text>
+      <rect x="306" y="780" width="230" height="58" rx="15" fill="#251f38" stroke="#8f74ca"/><text class="newa" x="326" y="817" fill="#f7f9ff" font-size="25">𑐙</text><text x="364" y="814" fill="#d9d5ee">NYHA · U+11419</text>
+      <rect x="548" y="780" width="230" height="58" rx="15" fill="#251f38" stroke="#8f74ca"/><text class="newa" x="568" y="817" fill="#f7f9ff" font-size="25">𑐤</text><text x="606" y="814" fill="#d9d5ee">NHA · U+11424</text>
+      <rect x="790" y="780" width="230" height="58" rx="15" fill="#251f38" stroke="#8f74ca"/><text class="newa" x="810" y="817" fill="#f7f9ff" font-size="25">𑐪</text><text x="848" y="814" fill="#d9d5ee">MHA · U+1142A</text>
+      <rect x="1032" y="780" width="244" height="58" rx="15" fill="#251f38" stroke="#8f74ca"/><text class="newa" x="1052" y="817" fill="#f7f9ff" font-size="25">𑐭</text><text x="1090" y="814" fill="#d9d5ee">RHA · U+1142D</text>
+    </g>
+    <text x="64" y="873" fill="#6ee7d8" font-size="17" font-weight="700">Research only · unbound · not selectable · native-speaker approval required</text>
+    <text x="1376" y="873" fill="#7f8cad" font-size="13" text-anchor="end">candidate 52277fbe… · compiled 131e27b18…</text>
+  </g>
+</svg>

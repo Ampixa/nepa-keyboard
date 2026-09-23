@@ -1,0 +1,41 @@
+{
+  "compiler": "@keymanapp/kmc@17.0.335",
+  "files": [
+    {
+      "path": "source/nepa_limbu_romanized.kmn",
+      "sha256": "f102e4020609d5aba326670ac14613c3f6c24fa46e05e6b6d931d4f35fcb8161",
+      "size": 11318
+    },
+    {
+      "path": "source/nepa_nepali_romanized.kmn",
+      "sha256": "e8c76d1f40d44f1c7c8ead6b1941adaf0a85c36f6369ee282b3d530fd2bccaac",
+      "size": 11540
+    },
+    {
+      "path": "source/nepa_newa_romanized.kmn",
+      "sha256": "21c4c9528bcedbb84c99f6df04914aa194b8b207496aa02a33ba14306b4bb323",
+      "size": 11591
+    },
+    {
+      "path": "source/nepa_romanized_pro.kps",
+      "sha256": "3379b2a9a25d4f5edb63901df5850b372c484798f28b69aaaea178c793783f17",
+      "size": 2200
+    },
+    {
+      "path": "source/readme.htm",
+      "sha256": "7ea418c5e9dd557d12484eb7a0335ccbf89cf1d7591846667caa0791d85f5393",
+      "size": 493
+    }
+  ],
+  "format_version": 1,
+  "minimum_keyman_version": "17.0",
+  "package_id": "nepa_romanized_pro",
+  "package_version": "0.1.0",
+  "profile_ids": [
+    "npi-Deva-NP-macos-romanized-pro",
+    "new-Newa-NP-macos-romanized-pro",
+    "lif-Limb-NP-macos-romanized-pro"
+  ],
+  "spec_path": "desktop/macos/romanized-pro-v1.json",
+  "spec_sha256": "6202214e9a36c83427aec094f63168226bbf98ec39f73baa4e2334178196fb50"
+}

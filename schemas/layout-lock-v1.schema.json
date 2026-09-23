@@ -1,0 +1,260 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ampixa.com/schemas/nepa-keyboard-layout-lock-v1.schema.json",
+  "title": "Nepa Keyboard compiled layout lock v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "layout_lock_version", "generator", "generator_version",
+    "unicode_data_version", "transform_semantics", "compiler", "schemas",
+    "source_directory", "profile_lock", "profile_bindings", "layout_count", "layouts"
+  ],
+  "properties": {
+    "layout_lock_version": { "const": 1 },
+    "generator": { "const": "build_keyboard_layouts" },
+    "generator_version": { "const": 1 },
+    "unicode_data_version": { "const": "16.0.0" },
+    "transform_semantics": { "const": "append_then_longest_suffix_once" },
+    "compiler": { "$ref": "#/$defs/input_reference" },
+    "schemas": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source", "lock"],
+      "properties": {
+        "source": { "$ref": "#/$defs/input_reference" },
+        "lock": { "$ref": "#/$defs/input_reference" }
+      }
+    },
+    "source_directory": { "type": "string", "minLength": 1 },
+    "profile_lock": { "$ref": "#/$defs/input_reference" },
+    "profile_bindings": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 128,
+      "items": { "$ref": "#/$defs/profile_binding" }
+    },
+    "layout_count": { "type": "integer", "minimum": 1, "maximum": 128 },
+    "layouts": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 128,
+      "items": { "$ref": "#/$defs/layout" }
+    }
+  },
+  "$defs": {
+    "license": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "copyright", "redistribution"],
+      "dependentRequired": {
+        "notice_path": ["notice_sha256"],
+        "notice_sha256": ["notice_path"]
+      },
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "copyright": { "type": "string", "minLength": 1 },
+        "notice_path": {
+          "type": "string",
+          "pattern": "^layouts/(internal/)?notices/[A-Za-z0-9._-]+$"
+        },
+        "notice_sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+        "license_url": { "type": "string", "pattern": "^https://" },
+        "redistribution": {
+          "enum": ["allowed", "prohibited", "permission_required", "unknown", "system"]
+        }
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "source", "revision", "sha256", "note"],
+      "properties": {
+        "kind": {
+          "enum": ["project_authored", "adapted", "standard_reference"]
+        },
+        "source": { "type": "string", "minLength": 1 },
+        "revision": { "type": "string", "minLength": 1 },
+        "sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+        "source_url": { "type": "string", "pattern": "^https://" },
+        "note": { "type": "string", "minLength": 1 }
+      }
+    },
+    "input_reference": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "sha256"],
+      "properties": {
+        "path": { "type": "string", "minLength": 1 },
+        "sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" }
+      }
+    },
+    "source_reference": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "sha256"],
+      "properties": {
+        "path": { "type": "string", "minLength": 1 },
+        "sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" }
+      }
+    },
+    "profile_binding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "profile_id", "layout_id", "source_script", "revision", "source_sha256"
+      ],
+      "properties": {
+        "profile_id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]*$"
+        },
+        "layout_id": {
+          "type": "string",
+          "pattern": "^[a-z0-9][a-z0-9._-]*$"
+        },
+        "source_script": {
+          "type": "string",
+          "pattern": "^[A-Z][a-z]{3}$"
+        },
+        "revision": { "type": "integer", "minimum": 1 },
+        "source_sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" }
+      }
+    },
+    "layout": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "layout_id", "revision", "display_name", "input_script",
+        "direction", "normalization", "unicode_data_version", "device_forms",
+        "authors", "license",
+        "provenance", "field_layer_map", "source", "layers", "transforms"
+      ],
+      "properties": {
+        "layout_id": {
+          "type": "string",
+          "pattern": "^[a-z0-9][a-z0-9._-]*$"
+        },
+        "revision": { "type": "integer", "minimum": 1 },
+        "display_name": { "type": "string", "minLength": 1 },
+        "input_script": {
+          "type": "string",
+          "pattern": "^[A-Z][a-z]{3}$"
+        },
+        "direction": { "enum": ["ltr", "rtl"] },
+        "normalization": { "const": "NFC" },
+        "unicode_data_version": { "const": "16.0.0" },
+        "device_forms": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "enum": ["phone", "tablet"] }
+        },
+        "authors": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "license": {
+          "oneOf": [
+            { "type": "null" },
+            { "$ref": "#/$defs/license" }
+          ]
+        },
+        "provenance": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/provenance" }
+        },
+        "field_layer_map": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["text", "number", "phone", "datetime"],
+          "properties": {
+            "text": { "const": "base" },
+            "number": { "const": "numeric" },
+            "phone": { "const": "numeric" },
+            "datetime": { "const": "numeric" }
+          }
+        },
+        "source": { "$ref": "#/$defs/source_reference" },
+        "layers": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["base", "shift", "symbols", "numeric"],
+          "properties": {
+            "base": { "$ref": "#/$defs/compiled_layer" },
+            "shift": { "$ref": "#/$defs/compiled_layer" },
+            "symbols": { "$ref": "#/$defs/compiled_layer" },
+            "numeric": { "$ref": "#/$defs/compiled_layer" }
+          }
+        },
+        "transforms": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/compiled_transform" }
+        }
+      }
+    },
+    "compiled_layer": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["rows"],
+      "properties": {
+        "rows": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 8,
+          "items": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 20,
+            "items": { "$ref": "#/$defs/compiled_key" }
+          }
+        }
+      }
+    },
+    "compiled_key": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "key_id", "kind", "label", "text", "content_description",
+        "action", "width_units", "hold_action"
+      ],
+      "properties": {
+        "key_id": { "type": "string", "pattern": "^[a-z]+\\.r[0-9]+\\.k[0-9]+$" },
+        "kind": {
+          "enum": [
+            "text", "orthographic_word", "intra_word_punctuation",
+            "deva_conjunct_joiner", "deva_terminal_zwnj",
+            "newa_conjunct_joiner", "action"
+          ]
+        },
+        "label": { "type": "string", "minLength": 1 },
+        "text": { "type": ["string", "null"] },
+        "content_description": { "type": "string", "minLength": 1 },
+        "action": {
+          "type": ["string", "null"],
+          "enum": [
+            null, "shift", "delete", "enter", "space", "language",
+            "symbols", "letters"
+          ]
+        },
+        "width_units": { "type": "integer", "minimum": 25, "maximum": 1000 },
+        "hold_action": {
+          "type": ["string", "null"],
+          "enum": [null, "open_language_picker"]
+        }
+      }
+    },
+    "compiled_transform": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["transform_id", "from", "to"],
+      "properties": {
+        "transform_id": { "type": "string", "pattern": "^t[0-9]+$" },
+        "from": { "type": "string", "minLength": 1 },
+        "to": { "type": "string", "minLength": 1 }
+      }
+    }
+  }
+}

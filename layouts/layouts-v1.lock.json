@@ -1,0 +1,2604 @@
+{
+  "compiler": {
+    "path": "tools/build_keyboard_layouts.py",
+    "sha256": "5c6b7eb27b8c97857d457397a43c459f814e44740871f9d78755a7bbe580e2bb"
+  },
+  "generator": "build_keyboard_layouts",
+  "generator_version": 1,
+  "layout_count": 2,
+  "layout_lock_version": 1,
+  "layouts": [
+    {
+      "authors": [
+        "Ampixa",
+        "xkeyboard-config contributors"
+      ],
+      "device_forms": [
+        "phone"
+      ],
+      "direction": "ltr",
+      "display_name": "Nepali Basic (phone)",
+      "field_layer_map": {
+        "datetime": "numeric",
+        "number": "numeric",
+        "phone": "numeric",
+        "text": "base"
+      },
+      "input_script": "Deva",
+      "layers": {
+        "base": {
+          "rows": [
+            [
+              {
+                "action": null,
+                "content_description": "ट",
+                "hold_action": null,
+                "key_id": "base.r0.k0",
+                "kind": "text",
+                "label": "ट",
+                "text": "ट",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ौ",
+                "hold_action": null,
+                "key_id": "base.r0.k1",
+                "kind": "text",
+                "label": "ौ",
+                "text": "ौ",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "े",
+                "hold_action": null,
+                "key_id": "base.r0.k2",
+                "kind": "text",
+                "label": "े",
+                "text": "े",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "र",
+                "hold_action": null,
+                "key_id": "base.r0.k3",
+                "kind": "text",
+                "label": "र",
+                "text": "र",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "त",
+                "hold_action": null,
+                "key_id": "base.r0.k4",
+                "kind": "text",
+                "label": "त",
+                "text": "त",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "य",
+                "hold_action": null,
+                "key_id": "base.r0.k5",
+                "kind": "text",
+                "label": "य",
+                "text": "य",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ु",
+                "hold_action": null,
+                "key_id": "base.r0.k6",
+                "kind": "text",
+                "label": "ु",
+                "text": "ु",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ि",
+                "hold_action": null,
+                "key_id": "base.r0.k7",
+                "kind": "text",
+                "label": "ि",
+                "text": "ि",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ो",
+                "hold_action": null,
+                "key_id": "base.r0.k8",
+                "kind": "text",
+                "label": "ो",
+                "text": "ो",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "प",
+                "hold_action": null,
+                "key_id": "base.r0.k9",
+                "kind": "text",
+                "label": "प",
+                "text": "प",
+                "width_units": 100
+              }
+            ],
+            [
+              {
+                "action": null,
+                "content_description": "ा",
+                "hold_action": null,
+                "key_id": "base.r1.k0",
+                "kind": "text",
+                "label": "ा",
+                "text": "ा",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "स",
+                "hold_action": null,
+                "key_id": "base.r1.k1",
+                "kind": "text",
+                "label": "स",
+                "text": "स",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "द",
+                "hold_action": null,
+                "key_id": "base.r1.k2",
+                "kind": "text",
+                "label": "द",
+                "text": "द",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "उ",
+                "hold_action": null,
+                "key_id": "base.r1.k3",
+                "kind": "text",
+                "label": "उ",
+                "text": "उ",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ग",
+                "hold_action": null,
+                "key_id": "base.r1.k4",
+                "kind": "text",
+                "label": "ग",
+                "text": "ग",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ह",
+                "hold_action": null,
+                "key_id": "base.r1.k5",
+                "kind": "text",
+                "label": "ह",
+                "text": "ह",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ज",
+                "hold_action": null,
+                "key_id": "base.r1.k6",
+                "kind": "text",
+                "label": "ज",
+                "text": "ज",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "क",
+                "hold_action": null,
+                "key_id": "base.r1.k7",
+                "kind": "text",
+                "label": "क",
+                "text": "क",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ल",
+                "hold_action": null,
+                "key_id": "base.r1.k8",
+                "kind": "text",
+                "label": "ल",
+                "text": "ल",
+                "width_units": 100
+              }
+            ],
+            [
+              {
+                "action": null,
+                "content_description": "ष",
+                "hold_action": null,
+                "key_id": "base.r2.k0",
+                "kind": "text",
+                "label": "ष",
+                "text": "ष",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ड",
+                "hold_action": null,
+                "key_id": "base.r2.k1",
+                "kind": "text",
+                "label": "ड",
+                "text": "ड",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "च",
+                "hold_action": null,
+                "key_id": "base.r2.k2",
+                "kind": "text",
+                "label": "च",
+                "text": "च",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "व",
+                "hold_action": null,
+                "key_id": "base.r2.k3",
+                "kind": "text",
+                "label": "व",
+                "text": "व",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ब",
+                "hold_action": null,
+                "key_id": "base.r2.k4",
+                "kind": "text",
+                "label": "ब",
+                "text": "ब",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "न",
+                "hold_action": null,
+                "key_id": "base.r2.k5",
+                "kind": "text",
+                "label": "न",
+                "text": "न",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "म",
+                "hold_action": null,
+                "key_id": "base.r2.k6",
+                "kind": "text",
+                "label": "म",
+                "text": "म",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": ",",
+                "hold_action": null,
+                "key_id": "base.r2.k7",
+                "kind": "text",
+                "label": ",",
+                "text": ",",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "।",
+                "hold_action": null,
+                "key_id": "base.r2.k8",
+                "kind": "text",
+                "label": "।",
+                "text": "।",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "्",
+                "hold_action": null,
+                "key_id": "base.r2.k9",
+                "kind": "text",
+                "label": "्",
+                "text": "्",
+                "width_units": 100
+              }
+            ],
+            [
+              {
+                "action": "shift",
+                "content_description": "Shift",
+                "hold_action": null,
+                "key_id": "base.r3.k0",
+                "kind": "action",
+                "label": "⇧",
+                "text": null,
+                "width_units": 115
+              },
+              {
+                "action": "symbols",
+                "content_description": "Symbols",
+                "hold_action": null,
+                "key_id": "base.r3.k1",
+                "kind": "action",
+                "label": "?123",
+                "text": null,
+                "width_units": 135
+              },
+              {
+                "action": "language",
+                "content_description": "Switch language",
+                "hold_action": "open_language_picker",
+                "key_id": "base.r3.k2",
+                "kind": "action",
+                "label": "🌐",
+                "text": null,
+                "width_units": 110
+              },
+              {
+                "action": "space",
+                "content_description": "Space · ${profile.display_name}",
+                "hold_action": "open_language_picker",
+                "key_id": "base.r3.k3",
+                "kind": "action",
+                "label": "${profile.native_name}",
+                "text": null,
+                "width_units": 400
+              },
+              {
+                "action": "delete",
+                "content_description": "Delete",
+                "hold_action": null,
+                "key_id": "base.r3.k4",
+                "kind": "action",
+                "label": "⌫",
+                "text": null,
+                "width_units": 125
+              },
+              {
+                "action": "enter",
+                "content_description": "Enter",
+                "hold_action": null,
+                "key_id": "base.r3.k5",
+                "kind": "action",
+                "label": "↵",
+                "text": null,
+                "width_units": 125
+              }
+            ]
+          ]
+        },
+        "numeric": {
+          "rows": [
+            [
+              {
+                "action": null,
+                "content_description": "1",
+                "hold_action": null,
+                "key_id": "numeric.r0.k0",
+                "kind": "text",
+                "label": "1",
+                "text": "1",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "2",
+                "hold_action": null,
+                "key_id": "numeric.r0.k1",
+                "kind": "text",
+                "label": "2",
+                "text": "2",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "3",
+                "hold_action": null,
+                "key_id": "numeric.r0.k2",
+                "kind": "text",
+                "label": "3",
+                "text": "3",
+                "width_units": 100
+              }
+            ],
+            [
+              {
+                "action": null,
+                "content_description": "4",
+                "hold_action": null,
+                "key_id": "numeric.r1.k0",
+                "kind": "text",
+                "label": "4",
+                "text": "4",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "5",
+                "hold_action": null,
+                "key_id": "numeric.r1.k1",
+                "kind": "text",
+                "label": "5",
+                "text": "5",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "6",
+                "hold_action": null,
+                "key_id": "numeric.r1.k2",
+                "kind": "text",
+                "label": "6",
+                "text": "6",
+                "width_units": 100
+              }
+            ],
+            [
+              {
+                "action": null,
+                "content_description": "7",
+                "hold_action": null,
+                "key_id": "numeric.r2.k0",
+                "kind": "text",
+                "label": "7",
+                "text": "7",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "8",
+                "hold_action": null,
+                "key_id": "numeric.r2.k1",
+                "kind": "text",
+                "label": "8",
+                "text": "8",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "9",
+                "hold_action": null,
+                "key_id": "numeric.r2.k2",
+                "kind": "text",
+                "label": "9",
+                "text": "9",
+                "width_units": 100
+              }
+            ],
+            [
+              {
+                "action": null,
+                "content_description": ".",
+                "hold_action": null,
+                "key_id": "numeric.r3.k0",
+                "kind": "text",
+                "label": ".",
+                "text": ".",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "0",
+                "hold_action": null,
+                "key_id": "numeric.r3.k1",
+                "kind": "text",
+                "label": "0",
+                "text": "0",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "-",
+                "hold_action": null,
+                "key_id": "numeric.r3.k2",
+                "kind": "text",
+                "label": "-",
+                "text": "-",
+                "width_units": 100
+              }
+            ],
+            [
+              {
+                "action": "space",
+                "content_description": "Space · ${profile.display_name}",
+                "hold_action": "open_language_picker",
+                "key_id": "numeric.r4.k0",
+                "kind": "action",
+                "label": "${profile.native_name}",
+                "text": null,
+                "width_units": 220
+              },
+              {
+                "action": "delete",
+                "content_description": "Delete",
+                "hold_action": null,
+                "key_id": "numeric.r4.k1",
+                "kind": "action",
+                "label": "⌫",
+                "text": null,
+                "width_units": 125
+              },
+              {
+                "action": "enter",
+                "content_description": "Enter",
+                "hold_action": null,
+                "key_id": "numeric.r4.k2",
+                "kind": "action",
+                "label": "↵",
+                "text": null,
+                "width_units": 125
+              }
+            ]
+          ]
+        },
+        "shift": {
+          "rows": [
+            [
+              {
+                "action": null,
+                "content_description": "ठ",
+                "hold_action": null,
+                "key_id": "shift.r0.k0",
+                "kind": "text",
+                "label": "ठ",
+                "text": "ठ",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "औ",
+                "hold_action": null,
+                "key_id": "shift.r0.k1",
+                "kind": "text",
+                "label": "औ",
+                "text": "औ",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ै",
+                "hold_action": null,
+                "key_id": "shift.r0.k2",
+                "kind": "text",
+                "label": "ै",
+                "text": "ै",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ृ",
+                "hold_action": null,
+                "key_id": "shift.r0.k3",
+                "kind": "text",
+                "label": "ृ",
+                "text": "ृ",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "थ",
+                "hold_action": null,
+                "key_id": "shift.r0.k4",
+                "kind": "text",
+                "label": "थ",
+                "text": "थ",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ञ",
+                "hold_action": null,
+                "key_id": "shift.r0.k5",
+                "kind": "text",
+                "label": "ञ",
+                "text": "ञ",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ू",
+                "hold_action": null,
+                "key_id": "shift.r0.k6",
+                "kind": "text",
+                "label": "ू",
+                "text": "ू",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ी",
+                "hold_action": null,
+                "key_id": "shift.r0.k7",
+                "kind": "text",
+                "label": "ी",
+                "text": "ी",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ओ",
+                "hold_action": null,
+                "key_id": "shift.r0.k8",
+                "kind": "text",
+                "label": "ओ",
+                "text": "ओ",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "फ",
+                "hold_action": null,
+                "key_id": "shift.r0.k9",
+                "kind": "text",
+                "label": "फ",
+                "text": "फ",
+                "width_units": 100
+              }
+            ],
+            [
+              {
+                "action": null,
+                "content_description": "आ",
+                "hold_action": null,
+                "key_id": "shift.r1.k0",
+                "kind": "text",
+                "label": "आ",
+                "text": "आ",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "श",
+                "hold_action": null,
+                "key_id": "shift.r1.k1",
+                "kind": "text",
+                "label": "श",
+                "text": "श",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ध",
+                "hold_action": null,
+                "key_id": "shift.r1.k2",
+                "kind": "text",
+                "label": "ध",
+                "text": "ध",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ऊ",
+                "hold_action": null,
+                "key_id": "shift.r1.k3",
+                "kind": "text",
+                "label": "ऊ",
+                "text": "ऊ",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "घ",
+                "hold_action": null,
+                "key_id": "shift.r1.k4",
+                "kind": "text",
+                "label": "घ",
+                "text": "घ",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "अ",
+                "hold_action": null,
+                "key_id": "shift.r1.k5",
+                "kind": "text",
+                "label": "अ",
+                "text": "अ",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "झ",
+                "hold_action": null,
+                "key_id": "shift.r1.k6",
+                "kind": "text",
+                "label": "झ",
+                "text": "झ",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ख",
+                "hold_action": null,
+                "key_id": "shift.r1.k7",
+                "kind": "text",
+                "label": "ख",
+                "text": "ख",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "॥",
+                "hold_action": null,
+                "key_id": "shift.r1.k8",
+                "kind": "text",
+                "label": "॥",
+                "text": "॥",
+                "width_units": 100
+              }
+            ],
+            [
+              {
+                "action": null,
+                "content_description": "ऋ",
+                "hold_action": null,
+                "key_id": "shift.r2.k0",
+                "kind": "text",
+                "label": "ऋ",
+                "text": "ऋ",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ढ",
+                "hold_action": null,
+                "key_id": "shift.r2.k1",
+                "kind": "text",
+                "label": "ढ",
+                "text": "ढ",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "छ",
+                "hold_action": null,
+                "key_id": "shift.r2.k2",
+                "kind": "text",
+                "label": "छ",
+                "text": "छ",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ँ",
+                "hold_action": null,
+                "key_id": "shift.r2.k3",
+                "kind": "text",
+                "label": "ँ",
+                "text": "ँ",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "भ",
+                "hold_action": null,
+                "key_id": "shift.r2.k4",
+                "kind": "text",
+                "label": "भ",
+                "text": "भ",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ण",
+                "hold_action": null,
+                "key_id": "shift.r2.k5",
+                "kind": "text",
+                "label": "ण",
+                "text": "ण",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ं",
+                "hold_action": null,
+                "key_id": "shift.r2.k6",
+                "kind": "text",
+                "label": "ं",
+                "text": "ं",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ङ",
+                "hold_action": null,
+                "key_id": "shift.r2.k7",
+                "kind": "text",
+                "label": "ङ",
+                "text": "ङ",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": ".",
+                "hold_action": null,
+                "key_id": "shift.r2.k8",
+                "kind": "text",
+                "label": ".",
+                "text": ".",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "?",
+                "hold_action": null,
+                "key_id": "shift.r2.k9",
+                "kind": "text",
+                "label": "?",
+                "text": "?",
+                "width_units": 100
+              }
+            ],
+            [
+              {
+                "action": "shift",
+                "content_description": "Shift",
+                "hold_action": null,
+                "key_id": "shift.r3.k0",
+                "kind": "action",
+                "label": "⇧",
+                "text": null,
+                "width_units": 115
+              },
+              {
+                "action": "symbols",
+                "content_description": "Symbols",
+                "hold_action": null,
+                "key_id": "shift.r3.k1",
+                "kind": "action",
+                "label": "?123",
+                "text": null,
+                "width_units": 135
+              },
+              {
+                "action": "language",
+                "content_description": "Switch language",
+                "hold_action": "open_language_picker",
+                "key_id": "shift.r3.k2",
+                "kind": "action",
+                "label": "🌐",
+                "text": null,
+                "width_units": 110
+              },
+              {
+                "action": "space",
+                "content_description": "Space · ${profile.display_name}",
+                "hold_action": "open_language_picker",
+                "key_id": "shift.r3.k3",
+                "kind": "action",
+                "label": "${profile.native_name}",
+                "text": null,
+                "width_units": 400
+              },
+              {
+                "action": "delete",
+                "content_description": "Delete",
+                "hold_action": null,
+                "key_id": "shift.r3.k4",
+                "kind": "action",
+                "label": "⌫",
+                "text": null,
+                "width_units": 125
+              },
+              {
+                "action": "enter",
+                "content_description": "Enter",
+                "hold_action": null,
+                "key_id": "shift.r3.k5",
+                "kind": "action",
+                "label": "↵",
+                "text": null,
+                "width_units": 125
+              }
+            ]
+          ]
+        },
+        "symbols": {
+          "rows": [
+            [
+              {
+                "action": null,
+                "content_description": "1",
+                "hold_action": null,
+                "key_id": "symbols.r0.k0",
+                "kind": "text",
+                "label": "1",
+                "text": "1",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "2",
+                "hold_action": null,
+                "key_id": "symbols.r0.k1",
+                "kind": "text",
+                "label": "2",
+                "text": "2",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "3",
+                "hold_action": null,
+                "key_id": "symbols.r0.k2",
+                "kind": "text",
+                "label": "3",
+                "text": "3",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "4",
+                "hold_action": null,
+                "key_id": "symbols.r0.k3",
+                "kind": "text",
+                "label": "4",
+                "text": "4",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "5",
+                "hold_action": null,
+                "key_id": "symbols.r0.k4",
+                "kind": "text",
+                "label": "5",
+                "text": "5",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "6",
+                "hold_action": null,
+                "key_id": "symbols.r0.k5",
+                "kind": "text",
+                "label": "6",
+                "text": "6",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "7",
+                "hold_action": null,
+                "key_id": "symbols.r0.k6",
+                "kind": "text",
+                "label": "7",
+                "text": "7",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "8",
+                "hold_action": null,
+                "key_id": "symbols.r0.k7",
+                "kind": "text",
+                "label": "8",
+                "text": "8",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "9",
+                "hold_action": null,
+                "key_id": "symbols.r0.k8",
+                "kind": "text",
+                "label": "9",
+                "text": "9",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "0",
+                "hold_action": null,
+                "key_id": "symbols.r0.k9",
+                "kind": "text",
+                "label": "0",
+                "text": "0",
+                "width_units": 100
+              }
+            ],
+            [
+              {
+                "action": null,
+                "content_description": "@",
+                "hold_action": null,
+                "key_id": "symbols.r1.k0",
+                "kind": "text",
+                "label": "@",
+                "text": "@",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "#",
+                "hold_action": null,
+                "key_id": "symbols.r1.k1",
+                "kind": "text",
+                "label": "#",
+                "text": "#",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "₹",
+                "hold_action": null,
+                "key_id": "symbols.r1.k2",
+                "kind": "text",
+                "label": "₹",
+                "text": "₹",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "_",
+                "hold_action": null,
+                "key_id": "symbols.r1.k3",
+                "kind": "text",
+                "label": "_",
+                "text": "_",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "&",
+                "hold_action": null,
+                "key_id": "symbols.r1.k4",
+                "kind": "text",
+                "label": "&",
+                "text": "&",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "-",
+                "hold_action": null,
+                "key_id": "symbols.r1.k5",
+                "kind": "text",
+                "label": "-",
+                "text": "-",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "+",
+                "hold_action": null,
+                "key_id": "symbols.r1.k6",
+                "kind": "text",
+                "label": "+",
+                "text": "+",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "(",
+                "hold_action": null,
+                "key_id": "symbols.r1.k7",
+                "kind": "text",
+                "label": "(",
+                "text": "(",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": ")",
+                "hold_action": null,
+                "key_id": "symbols.r1.k8",
+                "kind": "text",
+                "label": ")",
+                "text": ")",
+                "width_units": 100
+              }
+            ],
+            [
+              {
+                "action": null,
+                "content_description": "*",
+                "hold_action": null,
+                "key_id": "symbols.r2.k0",
+                "kind": "text",
+                "label": "*",
+                "text": "*",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "\"",
+                "hold_action": null,
+                "key_id": "symbols.r2.k1",
+                "kind": "text",
+                "label": "\"",
+                "text": "\"",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "'",
+                "hold_action": null,
+                "key_id": "symbols.r2.k2",
+                "kind": "text",
+                "label": "'",
+                "text": "'",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": ":",
+                "hold_action": null,
+                "key_id": "symbols.r2.k3",
+                "kind": "text",
+                "label": ":",
+                "text": ":",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": ";",
+                "hold_action": null,
+                "key_id": "symbols.r2.k4",
+                "kind": "text",
+                "label": ";",
+                "text": ";",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "!",
+                "hold_action": null,
+                "key_id": "symbols.r2.k5",
+                "kind": "text",
+                "label": "!",
+                "text": "!",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "?",
+                "hold_action": null,
+                "key_id": "symbols.r2.k6",
+                "kind": "text",
+                "label": "?",
+                "text": "?",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "/",
+                "hold_action": null,
+                "key_id": "symbols.r2.k7",
+                "kind": "text",
+                "label": "/",
+                "text": "/",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": ".",
+                "hold_action": null,
+                "key_id": "symbols.r2.k8",
+                "kind": "text",
+                "label": ".",
+                "text": ".",
+                "width_units": 100
+              }
+            ],
+            [
+              {
+                "action": "letters",
+                "content_description": "Letters",
+                "hold_action": null,
+                "key_id": "symbols.r3.k0",
+                "kind": "action",
+                "label": "ABC",
+                "text": null,
+                "width_units": 135
+              },
+              {
+                "action": "symbols",
+                "content_description": "Symbols",
+                "hold_action": null,
+                "key_id": "symbols.r3.k1",
+                "kind": "action",
+                "label": "?123",
+                "text": null,
+                "width_units": 135
+              },
+              {
+                "action": "language",
+                "content_description": "Switch language",
+                "hold_action": "open_language_picker",
+                "key_id": "symbols.r3.k2",
+                "kind": "action",
+                "label": "🌐",
+                "text": null,
+                "width_units": 110
+              },
+              {
+                "action": "space",
+                "content_description": "Space · ${profile.display_name}",
+                "hold_action": "open_language_picker",
+                "key_id": "symbols.r3.k3",
+                "kind": "action",
+                "label": "${profile.native_name}",
+                "text": null,
+                "width_units": 400
+              },
+              {
+                "action": "delete",
+                "content_description": "Delete",
+                "hold_action": null,
+                "key_id": "symbols.r3.k4",
+                "kind": "action",
+                "label": "⌫",
+                "text": null,
+                "width_units": 125
+              },
+              {
+                "action": "enter",
+                "content_description": "Enter",
+                "hold_action": null,
+                "key_id": "symbols.r3.k5",
+                "kind": "action",
+                "label": "↵",
+                "text": null,
+                "width_units": 125
+              }
+            ]
+          ]
+        }
+      },
+      "layout_id": "deva-nepal-basic-v1",
+      "license": {
+        "copyright": "Multiple copyright holders; see the exact xkeyboard-config package notice",
+        "id": "LicenseRef-xkeyboard-config-aggregate",
+        "license_url": "https://gitlab.freedesktop.org/xkeyboard-config/xkeyboard-config/-/blob/xkeyboard-config-2.41/COPYING",
+        "notice_path": "layouts/notices/xkb-data-2.41-2ubuntu1.1.copyright",
+        "notice_sha256": "739ff5404b852466ed201799e49bb5dc0f4eafe0876bf9aa74499f306b7b1786",
+        "redistribution": "allowed"
+      },
+      "normalization": "NFC",
+      "provenance": [
+        {
+          "kind": "adapted",
+          "note": "The existing reviewed v0 layout folds the XKB Nepali basic level-1 and level-2 mappings into three phone-width rows.",
+          "revision": "xkb-data-2.41-2ubuntu1.1",
+          "sha256": "3bdc658d1739df8a5e8ed0649d02ab73e59b2006c78f4fee2a85992b7f5cd5d6",
+          "source": "/usr/share/X11/xkb/symbols/np",
+          "source_url": "https://gitlab.freedesktop.org/xkeyboard-config/xkeyboard-config/-/blob/xkeyboard-config-2.41/symbols/np"
+        },
+        {
+          "kind": "project_authored",
+          "note": "Behavior-preserving transcription of the existing phone row selection and shared action rows.",
+          "revision": "golden-v1",
+          "sha256": "78addaa15c9462f53c660b129bd602fe76d3b405a23a7be52e278666a7b83773",
+          "source": "layouts/goldens/layout-v0-parity.json"
+        }
+      ],
+      "revision": 1,
+      "source": {
+        "path": "layouts/src/deva-nepal-basic-v1.json",
+        "sha256": "bca603b0a101f8c4be47fd6625c4e0bd0c7e7f1370f88c0e4028450b5ccbcade"
+      },
+      "transforms": [],
+      "unicode_data_version": "16.0.0"
+    },
+    {
+      "authors": [
+        "Ampixa"
+      ],
+      "device_forms": [
+        "phone"
+      ],
+      "direction": "ltr",
+      "display_name": "English QWERTY (US)",
+      "field_layer_map": {
+        "datetime": "numeric",
+        "number": "numeric",
+        "phone": "numeric",
+        "text": "base"
+      },
+      "input_script": "Latn",
+      "layers": {
+        "base": {
+          "rows": [
+            [
+              {
+                "action": null,
+                "content_description": "q",
+                "hold_action": null,
+                "key_id": "base.r0.k0",
+                "kind": "text",
+                "label": "q",
+                "text": "q",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "w",
+                "hold_action": null,
+                "key_id": "base.r0.k1",
+                "kind": "text",
+                "label": "w",
+                "text": "w",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "e",
+                "hold_action": null,
+                "key_id": "base.r0.k2",
+                "kind": "text",
+                "label": "e",
+                "text": "e",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "r",
+                "hold_action": null,
+                "key_id": "base.r0.k3",
+                "kind": "text",
+                "label": "r",
+                "text": "r",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "t",
+                "hold_action": null,
+                "key_id": "base.r0.k4",
+                "kind": "text",
+                "label": "t",
+                "text": "t",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "y",
+                "hold_action": null,
+                "key_id": "base.r0.k5",
+                "kind": "text",
+                "label": "y",
+                "text": "y",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "u",
+                "hold_action": null,
+                "key_id": "base.r0.k6",
+                "kind": "text",
+                "label": "u",
+                "text": "u",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "i",
+                "hold_action": null,
+                "key_id": "base.r0.k7",
+                "kind": "text",
+                "label": "i",
+                "text": "i",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "o",
+                "hold_action": null,
+                "key_id": "base.r0.k8",
+                "kind": "text",
+                "label": "o",
+                "text": "o",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "p",
+                "hold_action": null,
+                "key_id": "base.r0.k9",
+                "kind": "text",
+                "label": "p",
+                "text": "p",
+                "width_units": 100
+              }
+            ],
+            [
+              {
+                "action": null,
+                "content_description": "a",
+                "hold_action": null,
+                "key_id": "base.r1.k0",
+                "kind": "text",
+                "label": "a",
+                "text": "a",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "s",
+                "hold_action": null,
+                "key_id": "base.r1.k1",
+                "kind": "text",
+                "label": "s",
+                "text": "s",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "d",
+                "hold_action": null,
+                "key_id": "base.r1.k2",
+                "kind": "text",
+                "label": "d",
+                "text": "d",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "f",
+                "hold_action": null,
+                "key_id": "base.r1.k3",
+                "kind": "text",
+                "label": "f",
+                "text": "f",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "g",
+                "hold_action": null,
+                "key_id": "base.r1.k4",
+                "kind": "text",
+                "label": "g",
+                "text": "g",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "h",
+                "hold_action": null,
+                "key_id": "base.r1.k5",
+                "kind": "text",
+                "label": "h",
+                "text": "h",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "j",
+                "hold_action": null,
+                "key_id": "base.r1.k6",
+                "kind": "text",
+                "label": "j",
+                "text": "j",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "k",
+                "hold_action": null,
+                "key_id": "base.r1.k7",
+                "kind": "text",
+                "label": "k",
+                "text": "k",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "l",
+                "hold_action": null,
+                "key_id": "base.r1.k8",
+                "kind": "text",
+                "label": "l",
+                "text": "l",
+                "width_units": 100
+              }
+            ],
+            [
+              {
+                "action": null,
+                "content_description": "z",
+                "hold_action": null,
+                "key_id": "base.r2.k0",
+                "kind": "text",
+                "label": "z",
+                "text": "z",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "x",
+                "hold_action": null,
+                "key_id": "base.r2.k1",
+                "kind": "text",
+                "label": "x",
+                "text": "x",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "c",
+                "hold_action": null,
+                "key_id": "base.r2.k2",
+                "kind": "text",
+                "label": "c",
+                "text": "c",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "v",
+                "hold_action": null,
+                "key_id": "base.r2.k3",
+                "kind": "text",
+                "label": "v",
+                "text": "v",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "b",
+                "hold_action": null,
+                "key_id": "base.r2.k4",
+                "kind": "text",
+                "label": "b",
+                "text": "b",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "n",
+                "hold_action": null,
+                "key_id": "base.r2.k5",
+                "kind": "text",
+                "label": "n",
+                "text": "n",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "m",
+                "hold_action": null,
+                "key_id": "base.r2.k6",
+                "kind": "text",
+                "label": "m",
+                "text": "m",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": ",",
+                "hold_action": null,
+                "key_id": "base.r2.k7",
+                "kind": "text",
+                "label": ",",
+                "text": ",",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": ".",
+                "hold_action": null,
+                "key_id": "base.r2.k8",
+                "kind": "text",
+                "label": ".",
+                "text": ".",
+                "width_units": 100
+              }
+            ],
+            [
+              {
+                "action": "shift",
+                "content_description": "Shift",
+                "hold_action": null,
+                "key_id": "base.r3.k0",
+                "kind": "action",
+                "label": "⇧",
+                "text": null,
+                "width_units": 115
+              },
+              {
+                "action": "symbols",
+                "content_description": "Symbols",
+                "hold_action": null,
+                "key_id": "base.r3.k1",
+                "kind": "action",
+                "label": "?123",
+                "text": null,
+                "width_units": 135
+              },
+              {
+                "action": "language",
+                "content_description": "Switch language",
+                "hold_action": "open_language_picker",
+                "key_id": "base.r3.k2",
+                "kind": "action",
+                "label": "🌐",
+                "text": null,
+                "width_units": 110
+              },
+              {
+                "action": "space",
+                "content_description": "Space · ${profile.display_name}",
+                "hold_action": "open_language_picker",
+                "key_id": "base.r3.k3",
+                "kind": "action",
+                "label": "${profile.native_name}",
+                "text": null,
+                "width_units": 400
+              },
+              {
+                "action": "delete",
+                "content_description": "Delete",
+                "hold_action": null,
+                "key_id": "base.r3.k4",
+                "kind": "action",
+                "label": "⌫",
+                "text": null,
+                "width_units": 125
+              },
+              {
+                "action": "enter",
+                "content_description": "Enter",
+                "hold_action": null,
+                "key_id": "base.r3.k5",
+                "kind": "action",
+                "label": "↵",
+                "text": null,
+                "width_units": 125
+              }
+            ]
+          ]
+        },
+        "numeric": {
+          "rows": [
+            [
+              {
+                "action": null,
+                "content_description": "1",
+                "hold_action": null,
+                "key_id": "numeric.r0.k0",
+                "kind": "text",
+                "label": "1",
+                "text": "1",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "2",
+                "hold_action": null,
+                "key_id": "numeric.r0.k1",
+                "kind": "text",
+                "label": "2",
+                "text": "2",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "3",
+                "hold_action": null,
+                "key_id": "numeric.r0.k2",
+                "kind": "text",
+                "label": "3",
+                "text": "3",
+                "width_units": 100
+              }
+            ],
+            [
+              {
+                "action": null,
+                "content_description": "4",
+                "hold_action": null,
+                "key_id": "numeric.r1.k0",
+                "kind": "text",
+                "label": "4",
+                "text": "4",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "5",
+                "hold_action": null,
+                "key_id": "numeric.r1.k1",
+                "kind": "text",
+                "label": "5",
+                "text": "5",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "6",
+                "hold_action": null,
+                "key_id": "numeric.r1.k2",
+                "kind": "text",
+                "label": "6",
+                "text": "6",
+                "width_units": 100
+              }
+            ],
+            [
+              {
+                "action": null,
+                "content_description": "7",
+                "hold_action": null,
+                "key_id": "numeric.r2.k0",
+                "kind": "text",
+                "label": "7",
+                "text": "7",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "8",
+                "hold_action": null,
+                "key_id": "numeric.r2.k1",
+                "kind": "text",
+                "label": "8",
+                "text": "8",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "9",
+                "hold_action": null,
+                "key_id": "numeric.r2.k2",
+                "kind": "text",
+                "label": "9",
+                "text": "9",
+                "width_units": 100
+              }
+            ],
+            [
+              {
+                "action": null,
+                "content_description": ".",
+                "hold_action": null,
+                "key_id": "numeric.r3.k0",
+                "kind": "text",
+                "label": ".",
+                "text": ".",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "0",
+                "hold_action": null,
+                "key_id": "numeric.r3.k1",
+                "kind": "text",
+                "label": "0",
+                "text": "0",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "-",
+                "hold_action": null,
+                "key_id": "numeric.r3.k2",
+                "kind": "text",
+                "label": "-",
+                "text": "-",
+                "width_units": 100
+              }
+            ],
+            [
+              {
+                "action": "space",
+                "content_description": "Space · ${profile.display_name}",
+                "hold_action": "open_language_picker",
+                "key_id": "numeric.r4.k0",
+                "kind": "action",
+                "label": "${profile.native_name}",
+                "text": null,
+                "width_units": 220
+              },
+              {
+                "action": "delete",
+                "content_description": "Delete",
+                "hold_action": null,
+                "key_id": "numeric.r4.k1",
+                "kind": "action",
+                "label": "⌫",
+                "text": null,
+                "width_units": 125
+              },
+              {
+                "action": "enter",
+                "content_description": "Enter",
+                "hold_action": null,
+                "key_id": "numeric.r4.k2",
+                "kind": "action",
+                "label": "↵",
+                "text": null,
+                "width_units": 125
+              }
+            ]
+          ]
+        },
+        "shift": {
+          "rows": [
+            [
+              {
+                "action": null,
+                "content_description": "Q",
+                "hold_action": null,
+                "key_id": "shift.r0.k0",
+                "kind": "text",
+                "label": "Q",
+                "text": "Q",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "W",
+                "hold_action": null,
+                "key_id": "shift.r0.k1",
+                "kind": "text",
+                "label": "W",
+                "text": "W",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "E",
+                "hold_action": null,
+                "key_id": "shift.r0.k2",
+                "kind": "text",
+                "label": "E",
+                "text": "E",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "R",
+                "hold_action": null,
+                "key_id": "shift.r0.k3",
+                "kind": "text",
+                "label": "R",
+                "text": "R",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "T",
+                "hold_action": null,
+                "key_id": "shift.r0.k4",
+                "kind": "text",
+                "label": "T",
+                "text": "T",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "Y",
+                "hold_action": null,
+                "key_id": "shift.r0.k5",
+                "kind": "text",
+                "label": "Y",
+                "text": "Y",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "U",
+                "hold_action": null,
+                "key_id": "shift.r0.k6",
+                "kind": "text",
+                "label": "U",
+                "text": "U",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "I",
+                "hold_action": null,
+                "key_id": "shift.r0.k7",
+                "kind": "text",
+                "label": "I",
+                "text": "I",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "O",
+                "hold_action": null,
+                "key_id": "shift.r0.k8",
+                "kind": "text",
+                "label": "O",
+                "text": "O",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "P",
+                "hold_action": null,
+                "key_id": "shift.r0.k9",
+                "kind": "text",
+                "label": "P",
+                "text": "P",
+                "width_units": 100
+              }
+            ],
+            [
+              {
+                "action": null,
+                "content_description": "A",
+                "hold_action": null,
+                "key_id": "shift.r1.k0",
+                "kind": "text",
+                "label": "A",
+                "text": "A",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "S",
+                "hold_action": null,
+                "key_id": "shift.r1.k1",
+                "kind": "text",
+                "label": "S",
+                "text": "S",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "D",
+                "hold_action": null,
+                "key_id": "shift.r1.k2",
+                "kind": "text",
+                "label": "D",
+                "text": "D",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "F",
+                "hold_action": null,
+                "key_id": "shift.r1.k3",
+                "kind": "text",
+                "label": "F",
+                "text": "F",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "G",
+                "hold_action": null,
+                "key_id": "shift.r1.k4",
+                "kind": "text",
+                "label": "G",
+                "text": "G",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "H",
+                "hold_action": null,
+                "key_id": "shift.r1.k5",
+                "kind": "text",
+                "label": "H",
+                "text": "H",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "J",
+                "hold_action": null,
+                "key_id": "shift.r1.k6",
+                "kind": "text",
+                "label": "J",
+                "text": "J",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "K",
+                "hold_action": null,
+                "key_id": "shift.r1.k7",
+                "kind": "text",
+                "label": "K",
+                "text": "K",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "L",
+                "hold_action": null,
+                "key_id": "shift.r1.k8",
+                "kind": "text",
+                "label": "L",
+                "text": "L",
+                "width_units": 100
+              }
+            ],
+            [
+              {
+                "action": null,
+                "content_description": "Z",
+                "hold_action": null,
+                "key_id": "shift.r2.k0",
+                "kind": "text",
+                "label": "Z",
+                "text": "Z",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "X",
+                "hold_action": null,
+                "key_id": "shift.r2.k1",
+                "kind": "text",
+                "label": "X",
+                "text": "X",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "C",
+                "hold_action": null,
+                "key_id": "shift.r2.k2",
+                "kind": "text",
+                "label": "C",
+                "text": "C",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "V",
+                "hold_action": null,
+                "key_id": "shift.r2.k3",
+                "kind": "text",
+                "label": "V",
+                "text": "V",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "B",
+                "hold_action": null,
+                "key_id": "shift.r2.k4",
+                "kind": "text",
+                "label": "B",
+                "text": "B",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "N",
+                "hold_action": null,
+                "key_id": "shift.r2.k5",
+                "kind": "text",
+                "label": "N",
+                "text": "N",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "M",
+                "hold_action": null,
+                "key_id": "shift.r2.k6",
+                "kind": "text",
+                "label": "M",
+                "text": "M",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": ",",
+                "hold_action": null,
+                "key_id": "shift.r2.k7",
+                "kind": "text",
+                "label": ",",
+                "text": ",",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": ".",
+                "hold_action": null,
+                "key_id": "shift.r2.k8",
+                "kind": "text",
+                "label": ".",
+                "text": ".",
+                "width_units": 100
+              }
+            ],
+            [
+              {
+                "action": "shift",
+                "content_description": "Shift",
+                "hold_action": null,
+                "key_id": "shift.r3.k0",
+                "kind": "action",
+                "label": "⇧",
+                "text": null,
+                "width_units": 115
+              },
+              {
+                "action": "symbols",
+                "content_description": "Symbols",
+                "hold_action": null,
+                "key_id": "shift.r3.k1",
+                "kind": "action",
+                "label": "?123",
+                "text": null,
+                "width_units": 135
+              },
+              {
+                "action": "language",
+                "content_description": "Switch language",
+                "hold_action": "open_language_picker",
+                "key_id": "shift.r3.k2",
+                "kind": "action",
+                "label": "🌐",
+                "text": null,
+                "width_units": 110
+              },
+              {
+                "action": "space",
+                "content_description": "Space · ${profile.display_name}",
+                "hold_action": "open_language_picker",
+                "key_id": "shift.r3.k3",
+                "kind": "action",
+                "label": "${profile.native_name}",
+                "text": null,
+                "width_units": 400
+              },
+              {
+                "action": "delete",
+                "content_description": "Delete",
+                "hold_action": null,
+                "key_id": "shift.r3.k4",
+                "kind": "action",
+                "label": "⌫",
+                "text": null,
+                "width_units": 125
+              },
+              {
+                "action": "enter",
+                "content_description": "Enter",
+                "hold_action": null,
+                "key_id": "shift.r3.k5",
+                "kind": "action",
+                "label": "↵",
+                "text": null,
+                "width_units": 125
+              }
+            ]
+          ]
+        },
+        "symbols": {
+          "rows": [
+            [
+              {
+                "action": null,
+                "content_description": "1",
+                "hold_action": null,
+                "key_id": "symbols.r0.k0",
+                "kind": "text",
+                "label": "1",
+                "text": "1",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "2",
+                "hold_action": null,
+                "key_id": "symbols.r0.k1",
+                "kind": "text",
+                "label": "2",
+                "text": "2",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "3",
+                "hold_action": null,
+                "key_id": "symbols.r0.k2",
+                "kind": "text",
+                "label": "3",
+                "text": "3",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "4",
+                "hold_action": null,
+                "key_id": "symbols.r0.k3",
+                "kind": "text",
+                "label": "4",
+                "text": "4",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "5",
+                "hold_action": null,
+                "key_id": "symbols.r0.k4",
+                "kind": "text",
+                "label": "5",
+                "text": "5",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "6",
+                "hold_action": null,
+                "key_id": "symbols.r0.k5",
+                "kind": "text",
+                "label": "6",
+                "text": "6",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "7",
+                "hold_action": null,
+                "key_id": "symbols.r0.k6",
+                "kind": "text",
+                "label": "7",
+                "text": "7",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "8",
+                "hold_action": null,
+                "key_id": "symbols.r0.k7",
+                "kind": "text",
+                "label": "8",
+                "text": "8",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "9",
+                "hold_action": null,
+                "key_id": "symbols.r0.k8",
+                "kind": "text",
+                "label": "9",
+                "text": "9",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "0",
+                "hold_action": null,
+                "key_id": "symbols.r0.k9",
+                "kind": "text",
+                "label": "0",
+                "text": "0",
+                "width_units": 100
+              }
+            ],
+            [
+              {
+                "action": null,
+                "content_description": "@",
+                "hold_action": null,
+                "key_id": "symbols.r1.k0",
+                "kind": "text",
+                "label": "@",
+                "text": "@",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "#",
+                "hold_action": null,
+                "key_id": "symbols.r1.k1",
+                "kind": "text",
+                "label": "#",
+                "text": "#",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "₹",
+                "hold_action": null,
+                "key_id": "symbols.r1.k2",
+                "kind": "text",
+                "label": "₹",
+                "text": "₹",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "_",
+                "hold_action": null,
+                "key_id": "symbols.r1.k3",
+                "kind": "text",
+                "label": "_",
+                "text": "_",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "&",
+                "hold_action": null,
+                "key_id": "symbols.r1.k4",
+                "kind": "text",
+                "label": "&",
+                "text": "&",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "-",
+                "hold_action": null,
+                "key_id": "symbols.r1.k5",
+                "kind": "text",
+                "label": "-",
+                "text": "-",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "+",
+                "hold_action": null,
+                "key_id": "symbols.r1.k6",
+                "kind": "text",
+                "label": "+",
+                "text": "+",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "(",
+                "hold_action": null,
+                "key_id": "symbols.r1.k7",
+                "kind": "text",
+                "label": "(",
+                "text": "(",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": ")",
+                "hold_action": null,
+                "key_id": "symbols.r1.k8",
+                "kind": "text",
+                "label": ")",
+                "text": ")",
+                "width_units": 100
+              }
+            ],
+            [
+              {
+                "action": null,
+                "content_description": "*",
+                "hold_action": null,
+                "key_id": "symbols.r2.k0",
+                "kind": "text",
+                "label": "*",
+                "text": "*",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "\"",
+                "hold_action": null,
+                "key_id": "symbols.r2.k1",
+                "kind": "text",
+                "label": "\"",
+                "text": "\"",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "'",
+                "hold_action": null,
+                "key_id": "symbols.r2.k2",
+                "kind": "text",
+                "label": "'",
+                "text": "'",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": ":",
+                "hold_action": null,
+                "key_id": "symbols.r2.k3",
+                "kind": "text",
+                "label": ":",
+                "text": ":",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": ";",
+                "hold_action": null,
+                "key_id": "symbols.r2.k4",
+                "kind": "text",
+                "label": ";",
+                "text": ";",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "!",
+                "hold_action": null,
+                "key_id": "symbols.r2.k5",
+                "kind": "text",
+                "label": "!",
+                "text": "!",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "?",
+                "hold_action": null,
+                "key_id": "symbols.r2.k6",
+                "kind": "text",
+                "label": "?",
+                "text": "?",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "/",
+                "hold_action": null,
+                "key_id": "symbols.r2.k7",
+                "kind": "text",
+                "label": "/",
+                "text": "/",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": ".",
+                "hold_action": null,
+                "key_id": "symbols.r2.k8",
+                "kind": "text",
+                "label": ".",
+                "text": ".",
+                "width_units": 100
+              }
+            ],
+            [
+              {
+                "action": "letters",
+                "content_description": "Letters",
+                "hold_action": null,
+                "key_id": "symbols.r3.k0",
+                "kind": "action",
+                "label": "ABC",
+                "text": null,
+                "width_units": 135
+              },
+              {
+                "action": "symbols",
+                "content_description": "Symbols",
+                "hold_action": null,
+                "key_id": "symbols.r3.k1",
+                "kind": "action",
+                "label": "?123",
+                "text": null,
+                "width_units": 135
+              },
+              {
+                "action": "language",
+                "content_description": "Switch language",
+                "hold_action": "open_language_picker",
+                "key_id": "symbols.r3.k2",
+                "kind": "action",
+                "label": "🌐",
+                "text": null,
+                "width_units": 110
+              },
+              {
+                "action": "space",
+                "content_description": "Space · ${profile.display_name}",
+                "hold_action": "open_language_picker",
+                "key_id": "symbols.r3.k3",
+                "kind": "action",
+                "label": "${profile.native_name}",
+                "text": null,
+                "width_units": 400
+              },
+              {
+                "action": "delete",
+                "content_description": "Delete",
+                "hold_action": null,
+                "key_id": "symbols.r3.k4",
+                "kind": "action",
+                "label": "⌫",
+                "text": null,
+                "width_units": 125
+              },
+              {
+                "action": "enter",
+                "content_description": "Enter",
+                "hold_action": null,
+                "key_id": "symbols.r3.k5",
+                "kind": "action",
+                "label": "↵",
+                "text": null,
+                "width_units": 125
+              }
+            ]
+          ]
+        }
+      },
+      "layout_id": "latn-qwerty-us-v1",
+      "license": {
+        "copyright": "Copyright 2026 Ampixa",
+        "id": "MIT",
+        "license_url": "https://spdx.org/licenses/MIT.html",
+        "notice_path": "layouts/notices/ampixa-layouts-mit.txt",
+        "notice_sha256": "e3345ee3ac889ba468ad63830a6ad1ee28f3da609608047d058a6bac9dd9fa8e",
+        "redistribution": "allowed"
+      },
+      "normalization": "NFC",
+      "provenance": [
+        {
+          "kind": "project_authored",
+          "note": "Behavior-preserving transcription of the reviewed v0 English phone layout.",
+          "revision": "golden-v1",
+          "sha256": "78addaa15c9462f53c660b129bd602fe76d3b405a23a7be52e278666a7b83773",
+          "source": "layouts/goldens/layout-v0-parity.json"
+        }
+      ],
+      "revision": 1,
+      "source": {
+        "path": "layouts/src/latn-qwerty-us-v1.json",
+        "sha256": "fc0ae5dfa73e3d034d1e48303c3d1b26fc493ac45e5d327a0f4f7b2cd1d02be3"
+      },
+      "transforms": [],
+      "unicode_data_version": "16.0.0"
+    }
+  ],
+  "profile_bindings": [
+    {
+      "layout_id": "latn-qwerty-us-v1",
+      "profile_id": "eng-Latn-US",
+      "revision": 1,
+      "source_script": "Latn",
+      "source_sha256": "fc0ae5dfa73e3d034d1e48303c3d1b26fc493ac45e5d327a0f4f7b2cd1d02be3"
+    },
+    {
+      "layout_id": "deva-nepal-basic-v1",
+      "profile_id": "npi-Deva-NP",
+      "revision": 1,
+      "source_script": "Deva",
+      "source_sha256": "bca603b0a101f8c4be47fd6625c4e0bd0c7e7f1370f88c0e4028450b5ccbcade"
+    }
+  ],
+  "profile_lock": {
+    "path": "catalog/shipping-profiles.lock.json",
+    "sha256": "0f1b467c102450026a71db3ea639aa840deec050edc6a58382ff73789e4882c7"
+  },
+  "schemas": {
+    "lock": {
+      "path": "schemas/layout-lock-v1.schema.json",
+      "sha256": "77ac2113ac565f9bd4e2cb7e6e0cf8d1b4f92fcd3f23fe6c0a0f9c2d63851c9e"
+    },
+    "source": {
+      "path": "schemas/layout-v1.schema.json",
+      "sha256": "71976a394459fff81ac58bb52e333084f17c6cfcac21bf5c3f4ed8f3ad9b0f15"
+    }
+  },
+  "source_directory": "layouts/src",
+  "transform_semantics": "append_then_longest_suffix_once",
+  "unicode_data_version": "16.0.0"
+}

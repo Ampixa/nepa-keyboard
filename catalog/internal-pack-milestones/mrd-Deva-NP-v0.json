@@ -1,0 +1,153 @@
+{
+  "adapter": {
+    "input_argument": "apk_tsv",
+    "module": "tools.build_western_magar_internal_source",
+    "name": "build_western_magar_internal_source",
+    "path": "tools/build_western_magar_internal_source.py",
+    "sha256": "ffdd2ad34ad6d43e1f7aac12693d25cf6970de0ba24791dce015a7e9af9756e3",
+    "version": 1
+  },
+  "evidence": {
+    "remaining_production_gates": [
+      "accessibility_review",
+      "bound_morpheme_review",
+      "frequency_ranking",
+      "glyph_rendering",
+      "joiner_rejection_review",
+      "native_speaker_review",
+      "physical_device_runtime",
+      "quality_evaluation",
+      "typing_flow_review"
+    ],
+    "report_id": "western-magar-internal-pack-v0",
+    "report_version": 1
+  },
+  "layout": {
+    "base_path": "layouts/internal/src/deva-nepal-basic-v1.json",
+    "base_sha256": "5cefdc0e916eaa9ee64acafddcadad4c9d32c8adbaff69cb2d8f181655280e4f",
+    "display_name": "Devanagari Western Magar (Nepal phone)",
+    "layout_id": "deva-nepal-western-magar-v1",
+    "license": {
+      "copyright": "Multiple copyright holders; see the exact xkeyboard-config package notice",
+      "id": "LicenseRef-xkeyboard-config-aggregate",
+      "license_url": "https://gitlab.freedesktop.org/xkeyboard-config/xkeyboard-config/-/blob/xkeyboard-config-2.41/COPYING",
+      "notice_path": "layouts/internal/notices/xkb-data-2.41-2ubuntu1.1-deva-western-magar.copyright",
+      "notice_sha256": "739ff5404b852466ed201799e49bb5dc0f4eafe0876bf9aa74499f306b7b1786",
+      "redistribution": "allowed"
+    },
+    "operations": [
+      {
+        "kind": "insert_row_before_actions",
+        "layer_id": "base",
+        "row": [
+          "इ",
+          "ए",
+          "ऐ",
+          {
+            "content_description": "Western Magar conjunct zero width joiner",
+            "kind": "deva_conjunct_joiner",
+            "label": "ZWJ",
+            "text": "‍"
+          },
+          {
+            "content_description": "Western Magar conjunct or terminal zero width non-joiner",
+            "kind": "deva_terminal_zwnj",
+            "label": "ZWNJ",
+            "text": "‌"
+          }
+        ]
+      },
+      {
+        "kind": "insert_row_before_actions",
+        "layer_id": "shift",
+        "row": [
+          "इ",
+          "ए",
+          "ऐ",
+          {
+            "content_description": "Western Magar conjunct zero width joiner",
+            "kind": "deva_conjunct_joiner",
+            "label": "ZWJ",
+            "text": "‍"
+          },
+          {
+            "content_description": "Western Magar conjunct or terminal zero width non-joiner",
+            "kind": "deva_terminal_zwnj",
+            "label": "ZWNJ",
+            "text": "‌"
+          }
+        ]
+      },
+      {
+        "key": {
+          "content_description": "Hyphen within Western Magar word",
+          "kind": "intra_word_punctuation",
+          "label": "-",
+          "text": "-"
+        },
+        "key_index": 5,
+        "kind": "replace_key",
+        "layer_id": "symbols",
+        "row_index": 1
+      },
+      {
+        "key": {
+          "content_description": "Slash within Western Magar word",
+          "kind": "intra_word_punctuation",
+          "label": "/",
+          "text": "/"
+        },
+        "key_index": 7,
+        "kind": "replace_key",
+        "layer_id": "symbols",
+        "row_index": 2
+      }
+    ],
+    "provenance": [
+      {
+        "kind": "adapted",
+        "note": "Preserves the reviewed Nepali basic phone rows, actions, symbols, numeric fallback, and profile-bound labels.",
+        "revision": "1",
+        "sha256": "5cefdc0e916eaa9ee64acafddcadad4c9d32c8adbaff69cb2d8f181655280e4f",
+        "source": "layouts/internal/src/deva-nepal-basic-v1.json"
+      },
+      {
+        "kind": "project_authored",
+        "note": "Adds the five missing headword scalars and intra-word hyphen and slash behavior selected from the pinned Western Magar source audit.",
+        "revision": "v0",
+        "sha256": "a69663835ff485f7b20a11cf384d45250f91f11fee995728ac8256b37efb930d",
+        "source": "reports/western-magar-candidate-policy-v0.md"
+      }
+    ],
+    "revision": 1,
+    "source_sha256": "f1f9699d071287b7d747e3c7744a3c1efb9f1f8ca242f8421c02e70392bd8cb1"
+  },
+  "pack": {
+    "artifact_license": "LicenseRef-Internal",
+    "file_name": "mrd-Deva-NP.nkp",
+    "language": "mrd",
+    "output_script": "Deva",
+    "pack_id": "mrd-Deva-NP"
+  },
+  "paths": {
+    "evidence_output": "reports/western-magar-internal-pack-v0.json",
+    "layout_source": "layouts/internal/src/deva-nepal-western-magar-v1.json",
+    "queries": "catalog/western-magar-internal-prefixes-v0.json",
+    "resource_catalog": "catalog/resources.json",
+    "review": "catalog/internal-profile-review.json"
+  },
+  "profile": {
+    "default_enabled": false,
+    "input_method_id": "mrd-deva-direct",
+    "target_id": "mrd"
+  },
+  "source": {
+    "data_version": "1.0.0",
+    "expected_data_rows": 1264,
+    "file_name": "mrd_nep_lexicon.tsv",
+    "max_suggestions": 8,
+    "resource_id": "mrd-apk",
+    "sha256": "d55d34e4c4d754ee1bbcf3382f3250690e53884020c06305e34bfc1a7948591a"
+  },
+  "spec_version": 3
+}

@@ -1,0 +1,634 @@
+{
+  "source_format": "nepa-script-conversion-map-source",
+  "source_format_version": 1,
+  "converter_id": "lif-Deva-Limb-v0",
+  "language": "lif",
+  "source_script": "Deva",
+  "output_script": "Limb",
+  "note": "Devanagari to Limbu (Sirijanga). Most Limbu speakers in Nepal are schooled in Devanagari and write Limbu in the LIFWBT-style Devanagari orthography, so this lets someone write in the script they already know and obtain the script of their heritage. The correspondence follows that orthography as documented in the project's own Limbu G2P: DEVANAGARI LETTER GLOTTAL STOP becomes mukphreng, the visarga used for vowel length becomes kemphreng, a coda written consonant + virama becomes the dedicated small letter, and a nukta on a mid vowel sign lowers it to the Limbu sign carrying that value. The Limbu sign names are counterintuitive and the G2P is the authority: VOWEL SIGN EE is /e/ while VOWEL SIGN E is /ɛ/, and OO is /o/ while O is /ɔ/, so mapping by name similarity would swap the mid vowels. Limbu has no retroflex series, so the Devanagari retroflexes fold onto the dentals exactly as the G2P reads them; that is lossy and inherent to the target script. The danda and double danda are left unmapped because Limbu does not share them.",
+  "rules": [
+    {
+      "from": [
+        "DEVANAGARI LETTER KA",
+        "DEVANAGARI SIGN VIRAMA"
+      ],
+      "to": [
+        "LIMBU SMALL LETTER KA"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI LETTER NGA",
+        "DEVANAGARI SIGN VIRAMA"
+      ],
+      "to": [
+        "LIMBU SMALL LETTER NGA"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI LETTER TA",
+        "DEVANAGARI SIGN VIRAMA"
+      ],
+      "to": [
+        "LIMBU SMALL LETTER TA"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI LETTER NA",
+        "DEVANAGARI SIGN VIRAMA"
+      ],
+      "to": [
+        "LIMBU SMALL LETTER NA"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI LETTER PA",
+        "DEVANAGARI SIGN VIRAMA"
+      ],
+      "to": [
+        "LIMBU SMALL LETTER PA"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI LETTER MA",
+        "DEVANAGARI SIGN VIRAMA"
+      ],
+      "to": [
+        "LIMBU SMALL LETTER MA"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI LETTER RA",
+        "DEVANAGARI SIGN VIRAMA"
+      ],
+      "to": [
+        "LIMBU SMALL LETTER RA"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI LETTER LA",
+        "DEVANAGARI SIGN VIRAMA"
+      ],
+      "to": [
+        "LIMBU SMALL LETTER LA"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI LETTER KA"
+      ],
+      "to": [
+        "LIMBU LETTER KA"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI LETTER KHA"
+      ],
+      "to": [
+        "LIMBU LETTER KHA"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI LETTER GA"
+      ],
+      "to": [
+        "LIMBU LETTER GA"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI LETTER GHA"
+      ],
+      "to": [
+        "LIMBU LETTER GHA"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI LETTER NGA"
+      ],
+      "to": [
+        "LIMBU LETTER NGA"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI LETTER CA"
+      ],
+      "to": [
+        "LIMBU LETTER CA"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI LETTER CHA"
+      ],
+      "to": [
+        "LIMBU LETTER CHA"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI LETTER JA"
+      ],
+      "to": [
+        "LIMBU LETTER JA"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI LETTER JHA"
+      ],
+      "to": [
+        "LIMBU LETTER JHA"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI LETTER NYA"
+      ],
+      "to": [
+        "LIMBU LETTER YAN"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI LETTER TA"
+      ],
+      "to": [
+        "LIMBU LETTER TA"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI LETTER THA"
+      ],
+      "to": [
+        "LIMBU LETTER THA"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI LETTER DA"
+      ],
+      "to": [
+        "LIMBU LETTER DA"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI LETTER DHA"
+      ],
+      "to": [
+        "LIMBU LETTER DHA"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI LETTER NA"
+      ],
+      "to": [
+        "LIMBU LETTER NA"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI LETTER TTA"
+      ],
+      "to": [
+        "LIMBU LETTER TA"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI LETTER TTHA"
+      ],
+      "to": [
+        "LIMBU LETTER THA"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI LETTER DDA"
+      ],
+      "to": [
+        "LIMBU LETTER DA"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI LETTER DDHA"
+      ],
+      "to": [
+        "LIMBU LETTER DHA"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI LETTER NNA"
+      ],
+      "to": [
+        "LIMBU LETTER NA"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI LETTER PA"
+      ],
+      "to": [
+        "LIMBU LETTER PA"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI LETTER PHA"
+      ],
+      "to": [
+        "LIMBU LETTER PHA"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI LETTER BA"
+      ],
+      "to": [
+        "LIMBU LETTER BA"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI LETTER BHA"
+      ],
+      "to": [
+        "LIMBU LETTER BHA"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI LETTER MA"
+      ],
+      "to": [
+        "LIMBU LETTER MA"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI LETTER YA"
+      ],
+      "to": [
+        "LIMBU LETTER YA"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI LETTER RA"
+      ],
+      "to": [
+        "LIMBU LETTER RA"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI LETTER LA"
+      ],
+      "to": [
+        "LIMBU LETTER LA"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI LETTER VA"
+      ],
+      "to": [
+        "LIMBU LETTER WA"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI LETTER SHA"
+      ],
+      "to": [
+        "LIMBU LETTER SHA"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI LETTER SSA"
+      ],
+      "to": [
+        "LIMBU LETTER SSA"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI LETTER SA"
+      ],
+      "to": [
+        "LIMBU LETTER SA"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI LETTER HA"
+      ],
+      "to": [
+        "LIMBU LETTER HA"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI VOWEL SIGN AA"
+      ],
+      "to": [
+        "LIMBU VOWEL SIGN A"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI VOWEL SIGN I"
+      ],
+      "to": [
+        "LIMBU VOWEL SIGN I"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI VOWEL SIGN II"
+      ],
+      "to": [
+        "LIMBU VOWEL SIGN I",
+        "LIMBU SIGN KEMPHRENG"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI VOWEL SIGN U"
+      ],
+      "to": [
+        "LIMBU VOWEL SIGN U"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI VOWEL SIGN UU"
+      ],
+      "to": [
+        "LIMBU VOWEL SIGN U",
+        "LIMBU SIGN KEMPHRENG"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI VOWEL SIGN E"
+      ],
+      "to": [
+        "LIMBU VOWEL SIGN EE"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI VOWEL SIGN AI"
+      ],
+      "to": [
+        "LIMBU VOWEL SIGN AI"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI VOWEL SIGN O"
+      ],
+      "to": [
+        "LIMBU VOWEL SIGN OO"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI VOWEL SIGN AU"
+      ],
+      "to": [
+        "LIMBU VOWEL SIGN AU"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI VOWEL SIGN E",
+        "DEVANAGARI SIGN NUKTA"
+      ],
+      "to": [
+        "LIMBU VOWEL SIGN E"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI VOWEL SIGN O",
+        "DEVANAGARI SIGN NUKTA"
+      ],
+      "to": [
+        "LIMBU VOWEL SIGN O"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI LETTER A"
+      ],
+      "to": [
+        "LIMBU VOWEL-CARRIER LETTER"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI LETTER AA"
+      ],
+      "to": [
+        "LIMBU VOWEL-CARRIER LETTER",
+        "LIMBU VOWEL SIGN A"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI LETTER I"
+      ],
+      "to": [
+        "LIMBU VOWEL-CARRIER LETTER",
+        "LIMBU VOWEL SIGN I"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI LETTER II"
+      ],
+      "to": [
+        "LIMBU VOWEL-CARRIER LETTER",
+        "LIMBU VOWEL SIGN I",
+        "LIMBU SIGN KEMPHRENG"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI LETTER U"
+      ],
+      "to": [
+        "LIMBU VOWEL-CARRIER LETTER",
+        "LIMBU VOWEL SIGN U"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI LETTER UU"
+      ],
+      "to": [
+        "LIMBU VOWEL-CARRIER LETTER",
+        "LIMBU VOWEL SIGN U",
+        "LIMBU SIGN KEMPHRENG"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI LETTER E"
+      ],
+      "to": [
+        "LIMBU VOWEL-CARRIER LETTER",
+        "LIMBU VOWEL SIGN EE"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI LETTER AI"
+      ],
+      "to": [
+        "LIMBU VOWEL-CARRIER LETTER",
+        "LIMBU VOWEL SIGN AI"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI LETTER O"
+      ],
+      "to": [
+        "LIMBU VOWEL-CARRIER LETTER",
+        "LIMBU VOWEL SIGN OO"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI LETTER AU"
+      ],
+      "to": [
+        "LIMBU VOWEL-CARRIER LETTER",
+        "LIMBU VOWEL SIGN AU"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI LETTER GLOTTAL STOP"
+      ],
+      "to": [
+        "LIMBU SIGN MUKPHRENG"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI SIGN VISARGA"
+      ],
+      "to": [
+        "LIMBU SIGN KEMPHRENG"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI SIGN ANUSVARA"
+      ],
+      "to": [
+        "LIMBU SMALL LETTER ANUSVARA"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI DIGIT ZERO"
+      ],
+      "to": [
+        "LIMBU DIGIT ZERO"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI DIGIT ONE"
+      ],
+      "to": [
+        "LIMBU DIGIT ONE"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI DIGIT TWO"
+      ],
+      "to": [
+        "LIMBU DIGIT TWO"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI DIGIT THREE"
+      ],
+      "to": [
+        "LIMBU DIGIT THREE"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI DIGIT FOUR"
+      ],
+      "to": [
+        "LIMBU DIGIT FOUR"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI DIGIT FIVE"
+      ],
+      "to": [
+        "LIMBU DIGIT FIVE"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI DIGIT SIX"
+      ],
+      "to": [
+        "LIMBU DIGIT SIX"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI DIGIT SEVEN"
+      ],
+      "to": [
+        "LIMBU DIGIT SEVEN"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI DIGIT EIGHT"
+      ],
+      "to": [
+        "LIMBU DIGIT EIGHT"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI DIGIT NINE"
+      ],
+      "to": [
+        "LIMBU DIGIT NINE"
+      ]
+    }
+  ]
+}

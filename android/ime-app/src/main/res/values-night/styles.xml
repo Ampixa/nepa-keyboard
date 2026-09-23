@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.NepaKeyboard" parent="android:style/Theme.Material.NoActionBar">
+        <item name="android:fontFamily">sans</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:navigationBarColor">#17161B</item>
+        <item name="android:statusBarColor">#17161B</item>
+        <item name="android:colorAccent">#C5C0FF</item>
+    </style>
+</resources>

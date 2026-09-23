@@ -1,0 +1,110 @@
+{
+  "adapter": {
+    "input_argument": "apk_tsv",
+    "module": "tools.build_western_tamang_internal_source",
+    "name": "build_western_tamang_internal_source",
+    "path": "tools/build_western_tamang_internal_source.py",
+    "sha256": "42e231e36783dce4dde707e8c0ca853fbcb1ea46425db2ba040ac58d65ec57ee",
+    "version": 1
+  },
+  "evidence": {
+    "remaining_production_gates": [
+      "accessibility_review",
+      "glyph_rendering",
+      "multiword_composition",
+      "native_speaker_review",
+      "physical_device_runtime",
+      "quality_evaluation",
+      "tone_orthography_review"
+    ],
+    "report_id": "western-tamang-internal-pack-v0",
+    "report_version": 1
+  },
+  "layout": {
+    "base_path": "layouts/internal/src/deva-nepal-basic-v1.json",
+    "base_sha256": "5cefdc0e916eaa9ee64acafddcadad4c9d32c8adbaff69cb2d8f181655280e4f",
+    "display_name": "Devanagari Western Tamang (Nepal phone)",
+    "extension_layers": [
+      "base",
+      "shift"
+    ],
+    "extension_row": [
+      "इ",
+      "ए",
+      {
+        "content_description": "Devanagari sign visarga",
+        "kind": "text",
+        "label": "◌ः",
+        "text": "ः"
+      },
+      {
+        "content_description": "Devanagari sign nukta",
+        "kind": "text",
+        "label": "◌़",
+        "text": "़"
+      },
+      "८",
+      {
+        "content_description": "Devanagari zero width joiner",
+        "kind": "deva_conjunct_joiner",
+        "label": "ZWJ",
+        "text": "‍"
+      },
+      {
+        "content_description": "Devanagari zero width non-joiner",
+        "kind": "deva_conjunct_joiner",
+        "label": "ZWNJ",
+        "text": "‌"
+      }
+    ],
+    "layout_id": "deva-nepal-western-tamang-v1",
+    "license_notice_path": "layouts/internal/notices/xkb-data-2.41-2ubuntu1.1-deva-western-tamang.copyright",
+    "operation": "insert_row_before_actions",
+    "provenance": [
+      {
+        "kind": "adapted",
+        "note": "The reviewed internal Nepali basic phone rows, actions, symbols, numeric fallback, and profile-bound labels are preserved exactly.",
+        "revision": "1",
+        "sha256": "5cefdc0e916eaa9ee64acafddcadad4c9d32c8adbaff69cb2d8f181655280e4f",
+        "source": "layouts/internal/src/deva-nepal-basic-v1.json"
+      },
+      {
+        "kind": "project_authored",
+        "note": "Adds the seven scalars shown unreachable by the complete accepted Western Tamang surface inventory audit.",
+        "revision": "v0-real-run",
+        "sha256": "e0c97418084e3a48cea63d06892fca7ce71f12f321cc26359f2350327b6cb83e",
+        "source": "reports/western-tamang-pack-readiness-v0.md"
+      }
+    ],
+    "revision": 1,
+    "source_sha256": "fe8a19fda41baf9df799e401f6134bd5308e5258814ff87fc4d6ae81760a0fd8"
+  },
+  "pack": {
+    "artifact_license": "LicenseRef-Internal",
+    "file_name": "tdg-Deva-NP.nkp",
+    "language": "tdg",
+    "output_script": "Deva",
+    "pack_id": "tdg-Deva-NP"
+  },
+  "paths": {
+    "evidence_output": "reports/western-tamang-internal-pack-v0.json",
+    "layout_source": "layouts/internal/src/deva-nepal-western-tamang-v1.json",
+    "queries": "catalog/western-tamang-internal-prefixes-v0.json",
+    "resource_catalog": "catalog/resources.json",
+    "review": "catalog/internal-profile-review.json"
+  },
+  "profile": {
+    "default_enabled": false,
+    "input_method_id": "tdg-deva-direct",
+    "target_id": "tdg"
+  },
+  "source": {
+    "data_version": "1.0.0",
+    "expected_data_rows": 8026,
+    "file_name": "tdg_nep_lexicon.tsv",
+    "max_suggestions": 8,
+    "resource_id": "tdg-apk",
+    "sha256": "aa5f32487fd5308188f64b9ff236fe9504c6922a068ccf8a210cd52ed540afb8"
+  },
+  "spec_version": 1
+}

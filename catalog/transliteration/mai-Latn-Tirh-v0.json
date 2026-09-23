@@ -1,0 +1,303 @@
+{
+  "source_format": "nepa-transliteration-map-source",
+  "source_format_version": 1,
+  "map_id": "mai-Latn-Tirh-v0",
+  "language": "mai",
+  "source_script": "Latn",
+  "output_script": "Tirh",
+  "note": "Roman to Tirhuta (Mithilakshar) for Maithili. Tirhuta is a Devanagari-shaped abugida with its own virama and vowel signs, so this map reuses the reviewed Devanagari romanisation keys one-for-one against Tirhuta letters rather than inventing a second convention. The danda and double danda are not reproduced: Tirhuta shares Devanagari's, and a Tirhuta map must not emit Devanagari. UNVERIFIED ASSUMPTION: the romanisation keys are Nepali's. Nepal Bhasa's reviewed Roman pack uses a different convention from Nepali for the same Devanagari script (its 'ch' is CHA where Nepali's is CA), so languages sharing a script demonstrably do not share a romanisation. No evidence was found that Maithili speakers use the Nepali convention. The letter-to-letter script correspondence is sound and cross-checked against the Deva-to-Tirhuta converter; it is the choice of Roman keys that needs a Maithili speaker.",
+  "inherent_vowel": "a",
+  "final_consonant": "inherent",
+  "explicit_virama": "_",
+  "virama": [
+    "TIRHUTA SIGN VIRAMA"
+  ],
+  "consonants": {
+    "k": [
+      "TIRHUTA LETTER KA"
+    ],
+    "kh": [
+      "TIRHUTA LETTER KHA"
+    ],
+    "g": [
+      "TIRHUTA LETTER GA"
+    ],
+    "gh": [
+      "TIRHUTA LETTER GHA"
+    ],
+    "ng": [
+      "TIRHUTA LETTER NGA"
+    ],
+    "ch": [
+      "TIRHUTA LETTER CA"
+    ],
+    "chh": [
+      "TIRHUTA LETTER CHA"
+    ],
+    "j": [
+      "TIRHUTA LETTER JA"
+    ],
+    "jh": [
+      "TIRHUTA LETTER JHA"
+    ],
+    "ny": [
+      "TIRHUTA LETTER NYA"
+    ],
+    "T": [
+      "TIRHUTA LETTER TTA"
+    ],
+    "Th": [
+      "TIRHUTA LETTER TTHA"
+    ],
+    "D": [
+      "TIRHUTA LETTER DDA"
+    ],
+    "Dh": [
+      "TIRHUTA LETTER DDHA"
+    ],
+    "N": [
+      "TIRHUTA LETTER NNA"
+    ],
+    "t": [
+      "TIRHUTA LETTER TA"
+    ],
+    "th": [
+      "TIRHUTA LETTER THA"
+    ],
+    "d": [
+      "TIRHUTA LETTER DA"
+    ],
+    "dh": [
+      "TIRHUTA LETTER DHA"
+    ],
+    "n": [
+      "TIRHUTA LETTER NA"
+    ],
+    "p": [
+      "TIRHUTA LETTER PA"
+    ],
+    "ph": [
+      "TIRHUTA LETTER PHA"
+    ],
+    "f": [
+      "TIRHUTA LETTER PHA"
+    ],
+    "b": [
+      "TIRHUTA LETTER BA"
+    ],
+    "bh": [
+      "TIRHUTA LETTER BHA"
+    ],
+    "m": [
+      "TIRHUTA LETTER MA"
+    ],
+    "y": [
+      "TIRHUTA LETTER YA"
+    ],
+    "r": [
+      "TIRHUTA LETTER RA"
+    ],
+    "l": [
+      "TIRHUTA LETTER LA"
+    ],
+    "w": [
+      "TIRHUTA LETTER VA"
+    ],
+    "v": [
+      "TIRHUTA LETTER VA"
+    ],
+    "sh": [
+      "TIRHUTA LETTER SHA"
+    ],
+    "S": [
+      "TIRHUTA LETTER SSA"
+    ],
+    "Sh": [
+      "TIRHUTA LETTER SSA"
+    ],
+    "s": [
+      "TIRHUTA LETTER SA"
+    ],
+    "h": [
+      "TIRHUTA LETTER HA"
+    ]
+  },
+  "independent_vowels": {
+    "a": [
+      "TIRHUTA LETTER A"
+    ],
+    "aa": [
+      "TIRHUTA LETTER AA"
+    ],
+    "A": [
+      "TIRHUTA LETTER AA"
+    ],
+    "i": [
+      "TIRHUTA LETTER I"
+    ],
+    "ii": [
+      "TIRHUTA LETTER II"
+    ],
+    "ee": [
+      "TIRHUTA LETTER II"
+    ],
+    "I": [
+      "TIRHUTA LETTER II"
+    ],
+    "u": [
+      "TIRHUTA LETTER U"
+    ],
+    "uu": [
+      "TIRHUTA LETTER UU"
+    ],
+    "oo": [
+      "TIRHUTA LETTER UU"
+    ],
+    "U": [
+      "TIRHUTA LETTER UU"
+    ],
+    "ri": [
+      "TIRHUTA LETTER VOCALIC R"
+    ],
+    "e": [
+      "TIRHUTA LETTER E"
+    ],
+    "ai": [
+      "TIRHUTA LETTER AI"
+    ],
+    "o": [
+      "TIRHUTA LETTER O"
+    ],
+    "au": [
+      "TIRHUTA LETTER AU"
+    ]
+  },
+  "vowel_signs": {
+    "a": [],
+    "aa": [
+      "TIRHUTA VOWEL SIGN AA"
+    ],
+    "A": [
+      "TIRHUTA VOWEL SIGN AA"
+    ],
+    "i": [
+      "TIRHUTA VOWEL SIGN I"
+    ],
+    "ii": [
+      "TIRHUTA VOWEL SIGN II"
+    ],
+    "ee": [
+      "TIRHUTA VOWEL SIGN II"
+    ],
+    "I": [
+      "TIRHUTA VOWEL SIGN II"
+    ],
+    "u": [
+      "TIRHUTA VOWEL SIGN U"
+    ],
+    "uu": [
+      "TIRHUTA VOWEL SIGN UU"
+    ],
+    "oo": [
+      "TIRHUTA VOWEL SIGN UU"
+    ],
+    "U": [
+      "TIRHUTA VOWEL SIGN UU"
+    ],
+    "ri": [
+      "TIRHUTA VOWEL SIGN VOCALIC R"
+    ],
+    "e": [
+      "TIRHUTA VOWEL SIGN E"
+    ],
+    "ai": [
+      "TIRHUTA VOWEL SIGN AI"
+    ],
+    "o": [
+      "TIRHUTA VOWEL SIGN O"
+    ],
+    "au": [
+      "TIRHUTA VOWEL SIGN AU"
+    ]
+  },
+  "standalone": {
+    "M": [
+      "TIRHUTA SIGN ANUSVARA"
+    ],
+    "H": [
+      "TIRHUTA SIGN VISARGA"
+    ],
+    "N.": [
+      "TIRHUTA SIGN CANDRABINDU"
+    ],
+    "0": [
+      "TIRHUTA DIGIT ZERO"
+    ],
+    "1": [
+      "TIRHUTA DIGIT ONE"
+    ],
+    "2": [
+      "TIRHUTA DIGIT TWO"
+    ],
+    "3": [
+      "TIRHUTA DIGIT THREE"
+    ],
+    "4": [
+      "TIRHUTA DIGIT FOUR"
+    ],
+    "5": [
+      "TIRHUTA DIGIT FIVE"
+    ],
+    "6": [
+      "TIRHUTA DIGIT SIX"
+    ],
+    "7": [
+      "TIRHUTA DIGIT SEVEN"
+    ],
+    "8": [
+      "TIRHUTA DIGIT EIGHT"
+    ],
+    "9": [
+      "TIRHUTA DIGIT NINE"
+    ],
+    "om": [
+      "TIRHUTA OM"
+    ]
+  },
+  "final_forms": {},
+  "words": {},
+  "vectors": [
+    {
+      "input": "ka",
+      "output": "𑒏"
+    },
+    {
+      "input": "kaa",
+      "output": "𑒏𑒰"
+    },
+    {
+      "input": "ki",
+      "output": "𑒏𑒱"
+    },
+    {
+      "input": "k_",
+      "output": "𑒏𑓂"
+    },
+    {
+      "input": "kaam",
+      "output": "𑒏𑒰𑒧"
+    },
+    {
+      "input": "a",
+      "output": "𑒁"
+    },
+    {
+      "input": "i",
+      "output": "𑒃"
+    },
+    {
+      "input": "5",
+      "output": "𑓕"
+    }
+  ]
+}

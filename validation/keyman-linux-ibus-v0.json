@@ -1,0 +1,128 @@
+{
+  "engines": {
+    "nepa_limbu_romanized": "lif-Limb:/home/cdjk/.local/share/keyman/nepa_romanized_pro/nepa_limbu_romanized.kmx",
+    "nepa_nepali_romanized": "ne:/home/cdjk/.local/share/keyman/nepa_romanized_pro/nepa_nepali_romanized.kmx",
+    "nepa_newa_romanized": "new-Newa:/home/cdjk/.local/share/keyman/nepa_romanized_pro/nepa_newa_romanized.kmx"
+  },
+  "format_version": 1,
+  "package": {
+    "installed_kmx_sha256": {
+      "nepa_limbu_romanized": "3b6cb5238e086afb772492b7f21993f6686f0fb62a8b8b716a30dcb1f8b754d3",
+      "nepa_nepali_romanized": "7c8b57cab7ff0d12cdc77034cfa37bb2902ee93b645aed92d635a5cdec1b5ef1",
+      "nepa_newa_romanized": "110531354530666949560edebffa498d814634a2a0c7d5971c273174706ac7c0"
+    },
+    "installed_matches_package": {
+      "nepa_limbu_romanized": true,
+      "nepa_nepali_romanized": true,
+      "nepa_newa_romanized": true
+    },
+    "packaged_kmx_sha256": {
+      "nepa_limbu_romanized": "3b6cb5238e086afb772492b7f21993f6686f0fb62a8b8b716a30dcb1f8b754d3",
+      "nepa_nepali_romanized": "7c8b57cab7ff0d12cdc77034cfa37bb2902ee93b645aed92d635a5cdec1b5ef1",
+      "nepa_newa_romanized": "110531354530666949560edebffa498d814634a2a0c7d5971c273174706ac7c0"
+    },
+    "path": "/home/cdjk/github/llm/nepa-keyboard/desktop/keyman/build/nepa_romanized_pro.kmp",
+    "sha256": "92a2a6115d3ddab8bba140ccde067c26a5972ce2793587e4d0bda87ffb1becde",
+    "size": 11969
+  },
+  "passed": true,
+  "platform": "linux-ibus-keyman",
+  "results": [
+    {
+      "actual": "क",
+      "expected": "क",
+      "handled": true,
+      "keyboard_id": "nepa_nepali_romanized",
+      "label": "normal-k",
+      "passed": true
+    },
+    {
+      "actual": "ख",
+      "expected": "ख",
+      "handled": true,
+      "keyboard_id": "nepa_nepali_romanized",
+      "label": "shift-k",
+      "passed": true
+    },
+    {
+      "actual": "क्ष",
+      "expected": "क्ष",
+      "handled": true,
+      "keyboard_id": "nepa_nepali_romanized",
+      "label": "caps-k",
+      "passed": true
+    },
+    {
+      "actual": "ख",
+      "expected": "ख",
+      "handled": true,
+      "keyboard_id": "nepa_nepali_romanized",
+      "label": "shift-caps-k",
+      "passed": true
+    },
+    {
+      "actual": "𑐎",
+      "expected": "𑐎",
+      "handled": true,
+      "keyboard_id": "nepa_newa_romanized",
+      "label": "normal-k",
+      "passed": true
+    },
+    {
+      "actual": "𑐏",
+      "expected": "𑐏",
+      "handled": true,
+      "keyboard_id": "nepa_newa_romanized",
+      "label": "shift-k",
+      "passed": true
+    },
+    {
+      "actual": "𑐓",
+      "expected": "𑐓",
+      "handled": true,
+      "keyboard_id": "nepa_newa_romanized",
+      "label": "right-alt-comma",
+      "passed": true
+    },
+    {
+      "actual": "ᤁ",
+      "expected": "ᤁ",
+      "handled": true,
+      "keyboard_id": "nepa_limbu_romanized",
+      "label": "normal-k",
+      "passed": true
+    },
+    {
+      "actual": "ᤂ",
+      "expected": "ᤂ",
+      "handled": true,
+      "keyboard_id": "nepa_limbu_romanized",
+      "label": "shift-k",
+      "passed": true
+    },
+    {
+      "actual": "ᤰ",
+      "expected": "ᤰ",
+      "handled": true,
+      "keyboard_id": "nepa_limbu_romanized",
+      "label": "right-alt-k",
+      "passed": true
+    },
+    {
+      "actual": "ᤝ",
+      "expected": "ᤝ",
+      "handled": true,
+      "keyboard_id": "nepa_limbu_romanized",
+      "label": "right-alt-comma-gyan",
+      "passed": true
+    },
+    {
+      "actual": "ᤞ",
+      "expected": "ᤞ",
+      "handled": true,
+      "keyboard_id": "nepa_limbu_romanized",
+      "label": "right-alt-backslash-tra",
+      "passed": true
+    }
+  ]
+}

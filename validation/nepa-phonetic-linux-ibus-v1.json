@@ -1,0 +1,50 @@
+{
+  "candidate_toggle": {
+    "disabled_without_losing_preedit": true,
+    "literal_escape_commit": true,
+    "reenabled": true
+  },
+  "environment": {
+    "host": "cdjk",
+    "ibus": "1.5.29-rc2",
+    "operating_system": "Ubuntu 24.04.1 LTS",
+    "python": "3.12.3"
+  },
+  "format_version": 1,
+  "installed_files": {
+    "/usr/lib/nepa-keyboard/nepa-ibus-engine": "18414fe7f2194f862bc8d036a21e6802bc877212f1311ffe76658fa75e388a5c",
+    "/usr/share/ibus/component/nepa-keyboard.xml": "1f6ed925a6bae0d4aba0444aaa4619870087db922f2e062f251d33e9817bed57"
+  },
+  "passed": true,
+  "platform": "linux-ibus-nepa-phonetic",
+  "results": [
+    {
+      "candidate_visible": true,
+      "candidates": ["नमस्ते", "namaste"],
+      "committed": "नमस्ते ",
+      "engine": "nepa-phonetic-nepali",
+      "passed": true,
+      "preedit": "नमस्ते",
+      "roman": "namaste"
+    },
+    {
+      "candidate_visible": true,
+      "candidates": ["𑐣𑐩𑐳𑑂𑐟𑐾", "namaste"],
+      "committed": "𑐣𑐩𑐳𑑂𑐟𑐾 ",
+      "engine": "nepa-phonetic-newa",
+      "passed": true,
+      "preedit": "𑐣𑐩𑐳𑑂𑐟𑐾",
+      "roman": "namaste"
+    },
+    {
+      "candidate_visible": true,
+      "candidates": ["ᤁᤧᤐ", "kepa"],
+      "committed": "ᤁᤧᤐ ",
+      "engine": "nepa-phonetic-limbu",
+      "passed": true,
+      "preedit": "ᤁᤧᤐ",
+      "roman": "kepa"
+    }
+  ],
+  "tested_at": "2026-08-19"
+}

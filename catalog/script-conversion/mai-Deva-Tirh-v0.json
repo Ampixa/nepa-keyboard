@@ -1,0 +1,639 @@
+{
+  "source_format": "nepa-script-conversion-map-source",
+  "source_format_version": 1,
+  "converter_id": "mai-Deva-Tirh-v0",
+  "language": "mai",
+  "source_script": "Deva",
+  "output_script": "Tirh",
+  "note": "Devanagari to Tirhuta (Mithilakshar) for Maithili. This is the route the reviewed resource catalog declares for Tirhuta (input method mai-deva-tirh, script_conversion). Coverage is measured, not guessed: the rule set is every Devanagari character observed in an NFC-normalised 40MB sample of the Maithili IndicCorp v2 corpus that has a same-named Tirhuta counterpart. Precomposed nukta letters need no rules of their own because NFC decomposes them, so mapping the nukta sign covers them. Characters with no Tirhuta counterpart are deliberately left unmapped and pass through under the no-match policy rather than being approximated: the danda and double danda, which Tirhuta shares with Devanagari, and the candra vowels and LLA, which Tirhuta does not encode.",
+  "rules": [
+    {
+      "from": [
+        "DEVANAGARI VOWEL SIGN AA"
+      ],
+      "to": [
+        "TIRHUTA VOWEL SIGN AA"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI LETTER RA"
+      ],
+      "to": [
+        "TIRHUTA LETTER RA"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI LETTER KA"
+      ],
+      "to": [
+        "TIRHUTA LETTER KA"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI VOWEL SIGN I"
+      ],
+      "to": [
+        "TIRHUTA VOWEL SIGN I"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI SIGN VIRAMA"
+      ],
+      "to": [
+        "TIRHUTA SIGN VIRAMA"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI LETTER NA"
+      ],
+      "to": [
+        "TIRHUTA LETTER NA"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI VOWEL SIGN E"
+      ],
+      "to": [
+        "TIRHUTA VOWEL SIGN E"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI LETTER LA"
+      ],
+      "to": [
+        "TIRHUTA LETTER LA"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI LETTER SA"
+      ],
+      "to": [
+        "TIRHUTA LETTER SA"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI LETTER MA"
+      ],
+      "to": [
+        "TIRHUTA LETTER MA"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI LETTER TA"
+      ],
+      "to": [
+        "TIRHUTA LETTER TA"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI LETTER HA"
+      ],
+      "to": [
+        "TIRHUTA LETTER HA"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI LETTER PA"
+      ],
+      "to": [
+        "TIRHUTA LETTER PA"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI VOWEL SIGN II"
+      ],
+      "to": [
+        "TIRHUTA VOWEL SIGN II"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI LETTER DA"
+      ],
+      "to": [
+        "TIRHUTA LETTER DA"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI LETTER VA"
+      ],
+      "to": [
+        "TIRHUTA LETTER VA"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI LETTER YA"
+      ],
+      "to": [
+        "TIRHUTA LETTER YA"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI LETTER JA"
+      ],
+      "to": [
+        "TIRHUTA LETTER JA"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI LETTER BA"
+      ],
+      "to": [
+        "TIRHUTA LETTER BA"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI VOWEL SIGN U"
+      ],
+      "to": [
+        "TIRHUTA VOWEL SIGN U"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI VOWEL SIGN O"
+      ],
+      "to": [
+        "TIRHUTA VOWEL SIGN O"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI LETTER GA"
+      ],
+      "to": [
+        "TIRHUTA LETTER GA"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI LETTER A"
+      ],
+      "to": [
+        "TIRHUTA LETTER A"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI LETTER CHA"
+      ],
+      "to": [
+        "TIRHUTA LETTER CHA"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI SIGN ANUSVARA"
+      ],
+      "to": [
+        "TIRHUTA SIGN ANUSVARA"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI LETTER BHA"
+      ],
+      "to": [
+        "TIRHUTA LETTER BHA"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI VOWEL SIGN AI"
+      ],
+      "to": [
+        "TIRHUTA VOWEL SIGN AI"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI LETTER E"
+      ],
+      "to": [
+        "TIRHUTA LETTER E"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI SIGN CANDRABINDU"
+      ],
+      "to": [
+        "TIRHUTA SIGN CANDRABINDU"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI LETTER SHA"
+      ],
+      "to": [
+        "TIRHUTA LETTER SHA"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI LETTER CA"
+      ],
+      "to": [
+        "TIRHUTA LETTER CA"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI LETTER AA"
+      ],
+      "to": [
+        "TIRHUTA LETTER AA"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI LETTER TTA"
+      ],
+      "to": [
+        "TIRHUTA LETTER TTA"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI LETTER THA"
+      ],
+      "to": [
+        "TIRHUTA LETTER THA"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI LETTER KHA"
+      ],
+      "to": [
+        "TIRHUTA LETTER KHA"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI VOWEL SIGN UU"
+      ],
+      "to": [
+        "TIRHUTA VOWEL SIGN UU"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI LETTER DHA"
+      ],
+      "to": [
+        "TIRHUTA LETTER DHA"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI LETTER SSA"
+      ],
+      "to": [
+        "TIRHUTA LETTER SSA"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI LETTER DDA"
+      ],
+      "to": [
+        "TIRHUTA LETTER DDA"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI LETTER NNA"
+      ],
+      "to": [
+        "TIRHUTA LETTER NNA"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI LETTER I"
+      ],
+      "to": [
+        "TIRHUTA LETTER I"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI LETTER U"
+      ],
+      "to": [
+        "TIRHUTA LETTER U"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI VOWEL SIGN AU"
+      ],
+      "to": [
+        "TIRHUTA VOWEL SIGN AU"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI LETTER O"
+      ],
+      "to": [
+        "TIRHUTA LETTER O"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI SIGN NUKTA"
+      ],
+      "to": [
+        "TIRHUTA SIGN NUKTA"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI DIGIT ONE"
+      ],
+      "to": [
+        "TIRHUTA DIGIT ONE"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI LETTER II"
+      ],
+      "to": [
+        "TIRHUTA LETTER II"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI LETTER PHA"
+      ],
+      "to": [
+        "TIRHUTA LETTER PHA"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI DIGIT TWO"
+      ],
+      "to": [
+        "TIRHUTA DIGIT TWO"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI DIGIT ZERO"
+      ],
+      "to": [
+        "TIRHUTA DIGIT ZERO"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI LETTER TTHA"
+      ],
+      "to": [
+        "TIRHUTA LETTER TTHA"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI LETTER GHA"
+      ],
+      "to": [
+        "TIRHUTA LETTER GHA"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI VOWEL SIGN VOCALIC R"
+      ],
+      "to": [
+        "TIRHUTA VOWEL SIGN VOCALIC R"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI SIGN AVAGRAHA"
+      ],
+      "to": [
+        "TIRHUTA SIGN AVAGRAHA"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI LETTER JHA"
+      ],
+      "to": [
+        "TIRHUTA LETTER JHA"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI DIGIT NINE"
+      ],
+      "to": [
+        "TIRHUTA DIGIT NINE"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI LETTER DDHA"
+      ],
+      "to": [
+        "TIRHUTA LETTER DDHA"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI DIGIT THREE"
+      ],
+      "to": [
+        "TIRHUTA DIGIT THREE"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI LETTER NYA"
+      ],
+      "to": [
+        "TIRHUTA LETTER NYA"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI LETTER NGA"
+      ],
+      "to": [
+        "TIRHUTA LETTER NGA"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI DIGIT FOUR"
+      ],
+      "to": [
+        "TIRHUTA DIGIT FOUR"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI DIGIT FIVE"
+      ],
+      "to": [
+        "TIRHUTA DIGIT FIVE"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI DIGIT EIGHT"
+      ],
+      "to": [
+        "TIRHUTA DIGIT EIGHT"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI DIGIT SIX"
+      ],
+      "to": [
+        "TIRHUTA DIGIT SIX"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI DIGIT SEVEN"
+      ],
+      "to": [
+        "TIRHUTA DIGIT SEVEN"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI LETTER AI"
+      ],
+      "to": [
+        "TIRHUTA LETTER AI"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI SIGN VISARGA"
+      ],
+      "to": [
+        "TIRHUTA SIGN VISARGA"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI LETTER AU"
+      ],
+      "to": [
+        "TIRHUTA LETTER AU"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI LETTER UU"
+      ],
+      "to": [
+        "TIRHUTA LETTER UU"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI LETTER VOCALIC R"
+      ],
+      "to": [
+        "TIRHUTA LETTER VOCALIC R"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI VOWEL SIGN SHORT E"
+      ],
+      "to": [
+        "TIRHUTA VOWEL SIGN SHORT E"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI ABBREVIATION SIGN"
+      ],
+      "to": [
+        "TIRHUTA ABBREVIATION SIGN"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI VOWEL SIGN SHORT O"
+      ],
+      "to": [
+        "TIRHUTA VOWEL SIGN SHORT O"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI OM"
+      ],
+      "to": [
+        "TIRHUTA OM"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI LETTER VOCALIC RR"
+      ],
+      "to": [
+        "TIRHUTA LETTER VOCALIC RR"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI VOWEL SIGN VOCALIC RR"
+      ],
+      "to": [
+        "TIRHUTA VOWEL SIGN VOCALIC RR"
+      ]
+    },
+    {
+      "from": [
+        "DEVANAGARI VOWEL SIGN VOCALIC L"
+      ],
+      "to": [
+        "TIRHUTA VOWEL SIGN VOCALIC L"
+      ]
+    }
+  ],
+  "coverage_evidence": {
+    "corpus": "maithili_indiccorp_v2.txt",
+    "corpus_sha256_head": "measured from a 40MB NFC-normalised prefix, not the whole file",
+    "devanagari_characters_sampled": 30633500,
+    "coverage_all_characters": "98.668%",
+    "coverage_excluding_shared_danda": "99.50% of the 5000 most frequent words",
+    "residual_unmapped": [
+      "DEVANAGARI DANDA and DOUBLE DANDA -- Tirhuta shares Devanagari's, so passthrough is correct",
+      "DEVANAGARI VOWEL SIGN CANDRA E / CANDRA O and LETTER CANDRA O -- Tirhuta encodes no candra vowels",
+      "DEVANAGARI LETTER LLA -- no Tirhuta counterpart"
+    ]
+  }
+}

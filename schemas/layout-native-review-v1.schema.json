@@ -1,0 +1,242 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ampixa.com/schemas/nepa-keyboard-layout-native-review-v1.schema.json",
+  "title": "Nepa Keyboard native layout review v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "review_format_version",
+    "review_id",
+    "review_profile",
+    "status",
+    "contract",
+    "candidate",
+    "sections",
+    "decisions",
+    "coverage",
+    "reviewer",
+    "reviewed_at",
+    "profile_effect",
+    "notes"
+  ],
+  "properties": {
+    "review_format_version": { "const": 1 },
+    "review_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9._-]*$"
+    },
+    "review_profile": { "const": "newa_qwerty_direct_v1" },
+    "status": { "enum": ["pending", "accepted", "rejected"] },
+    "contract": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["schema", "validator"],
+      "properties": {
+        "schema": { "$ref": "#/$defs/input_reference" },
+        "validator": { "$ref": "#/$defs/input_reference" }
+      }
+    },
+    "candidate": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "path",
+        "layout_id",
+        "revision",
+        "input_script",
+        "source_sha256",
+        "compiler",
+        "source_schema",
+        "compiled_sha256"
+      ],
+      "properties": {
+        "path": {
+          "const": "layouts/research/newa-nepal-qwerty-direct-v1.json"
+        },
+        "layout_id": { "const": "newa-nepal-qwerty-direct-v1" },
+        "revision": { "const": 1 },
+        "input_script": { "const": "Newa" },
+        "source_sha256": { "$ref": "#/$defs/sha256" },
+        "compiler": { "$ref": "#/$defs/input_reference" },
+        "source_schema": { "$ref": "#/$defs/input_reference" },
+        "compiled_sha256": {
+          "oneOf": [
+            { "type": "null" },
+            { "$ref": "#/$defs/sha256" }
+          ]
+        }
+      }
+    },
+    "sections": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4,
+      "items": { "$ref": "#/$defs/section" }
+    },
+    "decisions": {
+      "type": "array",
+      "minItems": 8,
+      "maxItems": 8,
+      "items": { "$ref": "#/$defs/decision" }
+    },
+    "coverage": {
+      "type": "array",
+      "minItems": 15,
+      "maxItems": 15,
+      "items": { "$ref": "#/$defs/coverage_item" }
+    },
+    "reviewer": {
+      "oneOf": [
+        { "type": "null" },
+        { "$ref": "#/$defs/reviewer" }
+      ]
+    },
+    "reviewed_at": {
+      "oneOf": [
+        { "type": "null" },
+        { "type": "string", "format": "date" }
+      ]
+    },
+    "profile_effect": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["profile_id", "selectable", "default_enabled", "bind_layout"],
+      "properties": {
+        "profile_id": { "const": "new-Newa-NP" },
+        "selectable": { "const": false },
+        "default_enabled": { "const": false },
+        "bind_layout": { "const": false }
+      }
+    },
+    "notes": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "type": "string", "minLength": 1 }
+    }
+  },
+  "$defs": {
+    "sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "input_reference": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "sha256"],
+      "properties": {
+        "path": { "type": "string", "minLength": 1 },
+        "sha256": { "$ref": "#/$defs/sha256" }
+      }
+    },
+    "review_state": {
+      "enum": ["pending", "accepted", "rejected"]
+    },
+    "key_id": {
+      "type": "string",
+      "pattern": "^(base|shift|symbols|numeric)\\.r[0-9]+\\.k[0-9]+$"
+    },
+    "section": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["section_id", "key_ids", "state", "reviewer_note"],
+      "properties": {
+        "section_id": {
+          "enum": ["base_grid", "shift_grid", "symbols_grid", "numeric_grid"]
+        },
+        "key_ids": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/key_id" }
+        },
+        "state": { "$ref": "#/$defs/review_state" },
+        "reviewer_note": {
+          "oneOf": [
+            { "type": "null" },
+            { "type": "string", "minLength": 1 }
+          ]
+        }
+      }
+    },
+    "decision": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "decision_id",
+        "question",
+        "key_ids",
+        "options",
+        "state",
+        "selected_option",
+        "reviewer_note"
+      ],
+      "properties": {
+        "decision_id": {
+          "type": "string",
+          "pattern": "^[a-z0-9][a-z0-9_]*$"
+        },
+        "question": { "type": "string", "minLength": 1 },
+        "key_ids": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/key_id" }
+        },
+        "options": {
+          "type": "array",
+          "minItems": 2,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z0-9][a-z0-9_]*$"
+          }
+        },
+        "state": { "$ref": "#/$defs/review_state" },
+        "selected_option": {
+          "oneOf": [
+            { "type": "null" },
+            { "type": "string", "minLength": 1 }
+          ]
+        },
+        "reviewer_note": {
+          "oneOf": [
+            { "type": "null" },
+            { "type": "string", "minLength": 1 }
+          ]
+        }
+      }
+    },
+    "coverage_item": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "codepoint",
+        "name",
+        "key_ids",
+        "availability",
+        "review_state"
+      ],
+      "properties": {
+        "codepoint": { "type": "string", "pattern": "^U\\+[0-9A-F]{4,6}$" },
+        "name": { "type": "string", "minLength": 1 },
+        "key_ids": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/key_id" }
+        },
+        "availability": { "enum": ["covered", "missing", "forbidden"] },
+        "review_state": { "$ref": "#/$defs/review_state" }
+      }
+    },
+    "reviewer": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "native_language", "experience"],
+      "properties": {
+        "name": { "type": "string", "minLength": 1 },
+        "native_language": { "const": "Nepal Bhasa" },
+        "experience": { "type": "string", "minLength": 1 }
+      }
+    }
+  }
+}

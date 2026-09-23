@@ -1,0 +1,104 @@
+{
+  "adapter": {
+    "input_argument": "webonary_tsv",
+    "module": "tools.build_dhimal_internal_source",
+    "name": "build_dhimal_internal_source",
+    "path": "tools/build_dhimal_internal_source.py",
+    "sha256": "bf5aa687af2590dbec7c9bf8502fd506556315234eb46faf84b557a87f229010",
+    "version": 2
+  },
+  "evidence": {
+    "remaining_production_gates": [
+      "accessibility_review",
+      "glyph_rendering",
+      "multiword_composition",
+      "native_speaker_review",
+      "physical_device_runtime",
+      "quality_evaluation"
+    ],
+    "report_id": "dhimal-internal-pack-v0",
+    "report_version": 1
+  },
+  "layout": {
+    "base_path": "layouts/internal/src/deva-nepal-basic-v1.json",
+    "base_sha256": "5cefdc0e916eaa9ee64acafddcadad4c9d32c8adbaff69cb2d8f181655280e4f",
+    "display_name": "Devanagari Dhimal (Nepal phone)",
+    "extension_layers": [
+      "base",
+      "shift"
+    ],
+    "extension_row": [
+      "इ",
+      "ए",
+      {
+        "content_description": "Devanagari sign visarga",
+        "kind": "text",
+        "label": "◌ः",
+        "text": "ः"
+      },
+      {
+        "content_description": "Devanagari zero width joiner",
+        "kind": "deva_conjunct_joiner",
+        "label": "ZWJ",
+        "text": "‍"
+      },
+      {
+        "content_description": "Devanagari zero width non-joiner",
+        "kind": "deva_conjunct_joiner",
+        "label": "ZWNJ",
+        "text": "‌"
+      },
+      "[",
+      "]"
+    ],
+    "layout_id": "deva-nepal-dhimal-v1",
+    "license_notice_path": "layouts/internal/notices/xkb-data-2.41-2ubuntu1.1-deva-dhimal.copyright",
+    "operation": "insert_row_before_actions",
+    "provenance": [
+      {
+        "kind": "adapted",
+        "note": "The reviewed internal Nepali basic phone rows, actions, symbols, numeric fallback, and profile-bound labels are preserved exactly.",
+        "revision": "1",
+        "sha256": "5cefdc0e916eaa9ee64acafddcadad4c9d32c8adbaff69cb2d8f181655280e4f",
+        "source": "layouts/internal/src/deva-nepal-basic-v1.json"
+      },
+      {
+        "kind": "project_authored",
+        "note": "Adds the seven scalars shown unreachable by the complete accepted Dhimal surface inventory audit.",
+        "revision": "v0-real-run",
+        "sha256": "b5912ca21e128b3696c15fc0c1e4058f7c222e585e6fd0ae7ab8ad11f484a246",
+        "source": "reports/dhimal-pack-readiness-v0.md"
+      }
+    ],
+    "revision": 1,
+    "source_sha256": "2685cf503604390e5a049ce8732152d8c739a41626e7929f3acb6263aa63ca68"
+  },
+  "pack": {
+    "artifact_license": "LicenseRef-Internal",
+    "file_name": "dhi-Deva-NP.nkp",
+    "language": "dhi",
+    "output_script": "Deva",
+    "pack_id": "dhi-Deva-NP"
+  },
+  "paths": {
+    "evidence_output": "reports/dhimal-internal-pack-v0.json",
+    "layout_source": "layouts/internal/src/deva-nepal-dhimal-v1.json",
+    "queries": "catalog/dhimal-internal-prefixes-v0.json",
+    "resource_catalog": "catalog/resources.json",
+    "review": "catalog/internal-profile-review.json"
+  },
+  "profile": {
+    "default_enabled": false,
+    "input_method_id": "dhi-deva-direct",
+    "target_id": "dhi"
+  },
+  "source": {
+    "data_version": "1.0.0",
+    "expected_data_rows": 8781,
+    "file_name": "dict_webonary_nep_dhi.tsv",
+    "max_suggestions": 8,
+    "resource_id": "dhi-webonary",
+    "sha256": "8ba3846eeff8c0b76c9d923b4ebec379189c5abe8a5bd9bb07e9500643cb8321"
+  },
+  "spec_version": 1
+}

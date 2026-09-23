@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+        Stable accessibility action identifiers for long-press key variants. One per
+        reviewed variant slot, so the ids never collide with framework action ids.
+    -->
+    <item name="key_alternate_0" type="id" />
+    <item name="key_alternate_1" type="id" />
+    <item name="key_alternate_2" type="id" />
+    <item name="key_alternate_3" type="id" />
+    <item name="key_alternate_4" type="id" />
+    <item name="key_alternate_5" type="id" />
+    <item name="key_alternate_6" type="id" />
+    <item name="key_alternate_7" type="id" />
+</resources>

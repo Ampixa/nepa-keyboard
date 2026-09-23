@@ -1,0 +1,318 @@
+{
+  "source_format": "nepa-transliteration-map-source",
+  "source_format_version": 1,
+  "map_id": "new-Latn-Newa-v0",
+  "language": "new",
+  "source_script": "Latn",
+  "output_script": "Newa",
+  "note": "Roman to Prachalit (Newa) for Nepal Bhasa. Newa is an abugida with the same structure as Devanagari, so the Nepali key conventions carry over, plus the aspirated sonorants Newa writes with dedicated letters (nh, mh, lh, rh).",
+  "inherent_vowel": "a",
+  "final_consonant": "inherent",
+  "explicit_virama": "_",
+  "virama": [
+    "NEWA SIGN VIRAMA"
+  ],
+  "consonants": {
+    "k": [
+      "NEWA LETTER KA"
+    ],
+    "kh": [
+      "NEWA LETTER KHA"
+    ],
+    "g": [
+      "NEWA LETTER GA"
+    ],
+    "gh": [
+      "NEWA LETTER GHA"
+    ],
+    "ng": [
+      "NEWA LETTER NGA"
+    ],
+    "ngh": [
+      "NEWA LETTER NGHA"
+    ],
+    "ch": [
+      "NEWA LETTER CA"
+    ],
+    "chh": [
+      "NEWA LETTER CHA"
+    ],
+    "j": [
+      "NEWA LETTER JA"
+    ],
+    "jh": [
+      "NEWA LETTER JHA"
+    ],
+    "ny": [
+      "NEWA LETTER NYA"
+    ],
+    "nyh": [
+      "NEWA LETTER NYHA"
+    ],
+    "T": [
+      "NEWA LETTER TTA"
+    ],
+    "Th": [
+      "NEWA LETTER TTHA"
+    ],
+    "D": [
+      "NEWA LETTER DDA"
+    ],
+    "Dh": [
+      "NEWA LETTER DDHA"
+    ],
+    "N": [
+      "NEWA LETTER NNA"
+    ],
+    "t": [
+      "NEWA LETTER TA"
+    ],
+    "th": [
+      "NEWA LETTER THA"
+    ],
+    "d": [
+      "NEWA LETTER DA"
+    ],
+    "dh": [
+      "NEWA LETTER DHA"
+    ],
+    "n": [
+      "NEWA LETTER NA"
+    ],
+    "nh": [
+      "NEWA LETTER NHA"
+    ],
+    "p": [
+      "NEWA LETTER PA"
+    ],
+    "ph": [
+      "NEWA LETTER PHA"
+    ],
+    "f": [
+      "NEWA LETTER PHA"
+    ],
+    "b": [
+      "NEWA LETTER BA"
+    ],
+    "bh": [
+      "NEWA LETTER BHA"
+    ],
+    "m": [
+      "NEWA LETTER MA"
+    ],
+    "mh": [
+      "NEWA LETTER MHA"
+    ],
+    "y": [
+      "NEWA LETTER YA"
+    ],
+    "r": [
+      "NEWA LETTER RA"
+    ],
+    "rh": [
+      "NEWA LETTER RHA"
+    ],
+    "l": [
+      "NEWA LETTER LA"
+    ],
+    "lh": [
+      "NEWA LETTER LHA"
+    ],
+    "w": [
+      "NEWA LETTER WA"
+    ],
+    "v": [
+      "NEWA LETTER WA"
+    ],
+    "sh": [
+      "NEWA LETTER SHA"
+    ],
+    "S": [
+      "NEWA LETTER SSA"
+    ],
+    "Sh": [
+      "NEWA LETTER SSA"
+    ],
+    "s": [
+      "NEWA LETTER SA"
+    ],
+    "h": [
+      "NEWA LETTER HA"
+    ]
+  },
+  "independent_vowels": {
+    "a": [
+      "NEWA LETTER A"
+    ],
+    "aa": [
+      "NEWA LETTER AA"
+    ],
+    "A": [
+      "NEWA LETTER AA"
+    ],
+    "i": [
+      "NEWA LETTER I"
+    ],
+    "ii": [
+      "NEWA LETTER II"
+    ],
+    "ee": [
+      "NEWA LETTER II"
+    ],
+    "I": [
+      "NEWA LETTER II"
+    ],
+    "u": [
+      "NEWA LETTER U"
+    ],
+    "uu": [
+      "NEWA LETTER UU"
+    ],
+    "oo": [
+      "NEWA LETTER UU"
+    ],
+    "U": [
+      "NEWA LETTER UU"
+    ],
+    "ri": [
+      "NEWA LETTER VOCALIC R"
+    ],
+    "e": [
+      "NEWA LETTER E"
+    ],
+    "ai": [
+      "NEWA LETTER AI"
+    ],
+    "o": [
+      "NEWA LETTER O"
+    ],
+    "au": [
+      "NEWA LETTER AU"
+    ]
+  },
+  "vowel_signs": {
+    "a": [],
+    "aa": [
+      "NEWA VOWEL SIGN AA"
+    ],
+    "A": [
+      "NEWA VOWEL SIGN AA"
+    ],
+    "i": [
+      "NEWA VOWEL SIGN I"
+    ],
+    "ii": [
+      "NEWA VOWEL SIGN II"
+    ],
+    "ee": [
+      "NEWA VOWEL SIGN II"
+    ],
+    "I": [
+      "NEWA VOWEL SIGN II"
+    ],
+    "u": [
+      "NEWA VOWEL SIGN U"
+    ],
+    "uu": [
+      "NEWA VOWEL SIGN UU"
+    ],
+    "oo": [
+      "NEWA VOWEL SIGN UU"
+    ],
+    "U": [
+      "NEWA VOWEL SIGN UU"
+    ],
+    "ri": [
+      "NEWA VOWEL SIGN VOCALIC R"
+    ],
+    "e": [
+      "NEWA VOWEL SIGN E"
+    ],
+    "ai": [
+      "NEWA VOWEL SIGN AI"
+    ],
+    "o": [
+      "NEWA VOWEL SIGN O"
+    ],
+    "au": [
+      "NEWA VOWEL SIGN AU"
+    ]
+  },
+  "standalone": {
+    "M": [
+      "NEWA SIGN ANUSVARA"
+    ],
+    "H": [
+      "NEWA SIGN VISARGA"
+    ],
+    "N.": [
+      "NEWA SIGN CANDRABINDU"
+    ],
+    ".": [
+      "NEWA DANDA"
+    ],
+    "..": [
+      "NEWA DOUBLE DANDA"
+    ],
+    "om": [
+      "NEWA OM"
+    ],
+    "0": [
+      "NEWA DIGIT ZERO"
+    ],
+    "1": [
+      "NEWA DIGIT ONE"
+    ],
+    "2": [
+      "NEWA DIGIT TWO"
+    ],
+    "3": [
+      "NEWA DIGIT THREE"
+    ],
+    "4": [
+      "NEWA DIGIT FOUR"
+    ],
+    "5": [
+      "NEWA DIGIT FIVE"
+    ],
+    "6": [
+      "NEWA DIGIT SIX"
+    ],
+    "7": [
+      "NEWA DIGIT SEVEN"
+    ],
+    "8": [
+      "NEWA DIGIT EIGHT"
+    ],
+    "9": [
+      "NEWA DIGIT NINE"
+    ]
+  },
+  "words": {},
+  "vectors": [
+    {
+      "input": "nepaal",
+      "output": "𑐣𑐾𑐥𑐵𑐮"
+    },
+    {
+      "input": "ka",
+      "output": "𑐎"
+    },
+    {
+      "input": "k_",
+      "output": "𑐎𑑂"
+    },
+    {
+      "input": "khaa",
+      "output": "𑐏𑐵"
+    },
+    {
+      "input": "mhaa",
+      "output": "𑐪𑐵"
+    },
+    {
+      "input": "5",
+      "output": "𑑕"
+    }
+  ]
+}

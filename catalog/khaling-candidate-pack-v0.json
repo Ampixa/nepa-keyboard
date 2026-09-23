@@ -1,0 +1,38 @@
+{
+  "adapter_sha256": "4fef502384cc1740eb456418b49c13e9d5a52a9ab7912489878197943a9210d9",
+  "claim_scope": "candidate_only",
+  "compiler_sha256": "098e57e96603dcbb12145e6184c099155e68fe400d0aab57b16b77cd5f657f75",
+  "data_version": "1.0.0",
+  "format_version": 1,
+  "inspection_vectors": [
+    {
+      "expected_first_surface": "कइना़",
+      "prefix": "क"
+    },
+    {
+      "expected_first_surface": "आङ्‍खङा",
+      "prefix": "आ"
+    },
+    {
+      "expected_first_surface": "छइना़",
+      "prefix": "छ"
+    },
+    {
+      "expected_first_surface": "ङइ",
+      "prefix": "ङ"
+    },
+    {
+      "expected_first_surface": "जीवन-काल",
+      "prefix": "जीवन"
+    }
+  ],
+  "layout_audit_sha256": "03f4c146e63532329757b7604194cdc71158dbc0f03e7580ce66a771aa4c62e6",
+  "layout_id": "deva-nepal-lohorung-v1",
+  "max_suggestions": 8,
+  "policy": "conjunct_only",
+  "raw_sha256": "442415559f1ec6191b2624e27439cc22438aaf24d19b4124571c826774c2adb4",
+  "resource_id": "klr-apk",
+  "runtime_sha256": "43a811bde1d45a4004afadcb88cdb1e38cc5589821fae233224edeedd1563146",
+  "source_tag": "sil-apk/khaling",
+  "target_id": "klr"
+}

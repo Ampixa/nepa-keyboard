@@ -1,0 +1,7654 @@
+{
+  "catalog_version": 1,
+  "generator": "build_emoji_catalog",
+  "source": {
+    "filename": "emoji-test.txt",
+    "emoji_version": "15.1",
+    "sha256": "d876ee249aa28eaa76cfa6dfaa702847a8d13b062aa488d465d0395ee8137ed9"
+  },
+  "category_order": [
+    "smileys-people",
+    "animals-nature",
+    "food-drink",
+    "activities",
+    "travel-places",
+    "objects",
+    "symbols",
+    "flags"
+  ],
+  "total_emoji": 1898,
+  "categories": [
+    {
+      "id": "smileys-people",
+      "emoji": [
+        {
+          "value": "😀",
+          "min_api": 21
+        },
+        {
+          "value": "😃",
+          "min_api": 21
+        },
+        {
+          "value": "😄",
+          "min_api": 21
+        },
+        {
+          "value": "😁",
+          "min_api": 21
+        },
+        {
+          "value": "😆",
+          "min_api": 21
+        },
+        {
+          "value": "😅",
+          "min_api": 21
+        },
+        {
+          "value": "🤣",
+          "min_api": 22
+        },
+        {
+          "value": "😂",
+          "min_api": 21
+        },
+        {
+          "value": "🙂",
+          "min_api": 21
+        },
+        {
+          "value": "🙃",
+          "min_api": 21
+        },
+        {
+          "value": "🫠",
+          "min_api": 32
+        },
+        {
+          "value": "😉",
+          "min_api": 21
+        },
+        {
+          "value": "😊",
+          "min_api": 21
+        },
+        {
+          "value": "😇",
+          "min_api": 21
+        },
+        {
+          "value": "🥰",
+          "min_api": 28
+        },
+        {
+          "value": "😍",
+          "min_api": 21
+        },
+        {
+          "value": "🤩",
+          "min_api": 26
+        },
+        {
+          "value": "😘",
+          "min_api": 21
+        },
+        {
+          "value": "😗",
+          "min_api": 21
+        },
+        {
+          "value": "☺️",
+          "min_api": 21
+        },
+        {
+          "value": "😚",
+          "min_api": 21
+        },
+        {
+          "value": "😙",
+          "min_api": 21
+        },
+        {
+          "value": "🥲",
+          "min_api": 30
+        },
+        {
+          "value": "😋",
+          "min_api": 21
+        },
+        {
+          "value": "😛",
+          "min_api": 21
+        },
+        {
+          "value": "😜",
+          "min_api": 21
+        },
+        {
+          "value": "🤪",
+          "min_api": 26
+        },
+        {
+          "value": "😝",
+          "min_api": 21
+        },
+        {
+          "value": "🤑",
+          "min_api": 21
+        },
+        {
+          "value": "🤗",
+          "min_api": 21
+        },
+        {
+          "value": "🤭",
+          "min_api": 26
+        },
+        {
+          "value": "🫢",
+          "min_api": 32
+        },
+        {
+          "value": "🫣",
+          "min_api": 32
+        },
+        {
+          "value": "🤫",
+          "min_api": 26
+        },
+        {
+          "value": "🤔",
+          "min_api": 21
+        },
+        {
+          "value": "🫡",
+          "min_api": 32
+        },
+        {
+          "value": "🤐",
+          "min_api": 21
+        },
+        {
+          "value": "🤨",
+          "min_api": 26
+        },
+        {
+          "value": "😐",
+          "min_api": 21
+        },
+        {
+          "value": "😑",
+          "min_api": 21
+        },
+        {
+          "value": "😶",
+          "min_api": 21
+        },
+        {
+          "value": "🫥",
+          "min_api": 32
+        },
+        {
+          "value": "😶‍🌫️",
+          "min_api": 31
+        },
+        {
+          "value": "😏",
+          "min_api": 21
+        },
+        {
+          "value": "😒",
+          "min_api": 21
+        },
+        {
+          "value": "🙄",
+          "min_api": 21
+        },
+        {
+          "value": "😬",
+          "min_api": 21
+        },
+        {
+          "value": "😮‍💨",
+          "min_api": 31
+        },
+        {
+          "value": "🤥",
+          "min_api": 22
+        },
+        {
+          "value": "🫨",
+          "min_api": 34
+        },
+        {
+          "value": "🙂‍↔️",
+          "min_api": 34
+        },
+        {
+          "value": "🙂‍↕️",
+          "min_api": 34
+        },
+        {
+          "value": "😌",
+          "min_api": 21
+        },
+        {
+          "value": "😔",
+          "min_api": 21
+        },
+        {
+          "value": "😪",
+          "min_api": 21
+        },
+        {
+          "value": "🤤",
+          "min_api": 22
+        },
+        {
+          "value": "😴",
+          "min_api": 21
+        },
+        {
+          "value": "😷",
+          "min_api": 21
+        },
+        {
+          "value": "🤒",
+          "min_api": 21
+        },
+        {
+          "value": "🤕",
+          "min_api": 21
+        },
+        {
+          "value": "🤢",
+          "min_api": 22
+        },
+        {
+          "value": "🤮",
+          "min_api": 26
+        },
+        {
+          "value": "🤧",
+          "min_api": 22
+        },
+        {
+          "value": "🥵",
+          "min_api": 28
+        },
+        {
+          "value": "🥶",
+          "min_api": 28
+        },
+        {
+          "value": "🥴",
+          "min_api": 28
+        },
+        {
+          "value": "😵",
+          "min_api": 21
+        },
+        {
+          "value": "😵‍💫",
+          "min_api": 31
+        },
+        {
+          "value": "🤯",
+          "min_api": 26
+        },
+        {
+          "value": "🤠",
+          "min_api": 22
+        },
+        {
+          "value": "🥳",
+          "min_api": 28
+        },
+        {
+          "value": "🥸",
+          "min_api": 30
+        },
+        {
+          "value": "😎",
+          "min_api": 21
+        },
+        {
+          "value": "🤓",
+          "min_api": 21
+        },
+        {
+          "value": "🧐",
+          "min_api": 26
+        },
+        {
+          "value": "😕",
+          "min_api": 21
+        },
+        {
+          "value": "🫤",
+          "min_api": 32
+        },
+        {
+          "value": "😟",
+          "min_api": 21
+        },
+        {
+          "value": "🙁",
+          "min_api": 21
+        },
+        {
+          "value": "☹️",
+          "min_api": 21
+        },
+        {
+          "value": "😮",
+          "min_api": 21
+        },
+        {
+          "value": "😯",
+          "min_api": 21
+        },
+        {
+          "value": "😲",
+          "min_api": 21
+        },
+        {
+          "value": "😳",
+          "min_api": 21
+        },
+        {
+          "value": "🥺",
+          "min_api": 28
+        },
+        {
+          "value": "🥹",
+          "min_api": 32
+        },
+        {
+          "value": "😦",
+          "min_api": 21
+        },
+        {
+          "value": "😧",
+          "min_api": 21
+        },
+        {
+          "value": "😨",
+          "min_api": 21
+        },
+        {
+          "value": "😰",
+          "min_api": 21
+        },
+        {
+          "value": "😥",
+          "min_api": 21
+        },
+        {
+          "value": "😢",
+          "min_api": 21
+        },
+        {
+          "value": "😭",
+          "min_api": 21
+        },
+        {
+          "value": "😱",
+          "min_api": 21
+        },
+        {
+          "value": "😖",
+          "min_api": 21
+        },
+        {
+          "value": "😣",
+          "min_api": 21
+        },
+        {
+          "value": "😞",
+          "min_api": 21
+        },
+        {
+          "value": "😓",
+          "min_api": 21
+        },
+        {
+          "value": "😩",
+          "min_api": 21
+        },
+        {
+          "value": "😫",
+          "min_api": 21
+        },
+        {
+          "value": "🥱",
+          "min_api": 29
+        },
+        {
+          "value": "😤",
+          "min_api": 21
+        },
+        {
+          "value": "😡",
+          "min_api": 21
+        },
+        {
+          "value": "😠",
+          "min_api": 21
+        },
+        {
+          "value": "🤬",
+          "min_api": 26
+        },
+        {
+          "value": "😈",
+          "min_api": 21
+        },
+        {
+          "value": "👿",
+          "min_api": 21
+        },
+        {
+          "value": "💀",
+          "min_api": 21
+        },
+        {
+          "value": "☠️",
+          "min_api": 21
+        },
+        {
+          "value": "💩",
+          "min_api": 21
+        },
+        {
+          "value": "🤡",
+          "min_api": 22
+        },
+        {
+          "value": "👹",
+          "min_api": 21
+        },
+        {
+          "value": "👺",
+          "min_api": 21
+        },
+        {
+          "value": "👻",
+          "min_api": 21
+        },
+        {
+          "value": "👽",
+          "min_api": 21
+        },
+        {
+          "value": "👾",
+          "min_api": 21
+        },
+        {
+          "value": "🤖",
+          "min_api": 21
+        },
+        {
+          "value": "😺",
+          "min_api": 21
+        },
+        {
+          "value": "😸",
+          "min_api": 21
+        },
+        {
+          "value": "😹",
+          "min_api": 21
+        },
+        {
+          "value": "😻",
+          "min_api": 21
+        },
+        {
+          "value": "😼",
+          "min_api": 21
+        },
+        {
+          "value": "😽",
+          "min_api": 21
+        },
+        {
+          "value": "🙀",
+          "min_api": 21
+        },
+        {
+          "value": "😿",
+          "min_api": 21
+        },
+        {
+          "value": "😾",
+          "min_api": 21
+        },
+        {
+          "value": "🙈",
+          "min_api": 21
+        },
+        {
+          "value": "🙉",
+          "min_api": 21
+        },
+        {
+          "value": "🙊",
+          "min_api": 21
+        },
+        {
+          "value": "💌",
+          "min_api": 21
+        },
+        {
+          "value": "💘",
+          "min_api": 21
+        },
+        {
+          "value": "💝",
+          "min_api": 21
+        },
+        {
+          "value": "💖",
+          "min_api": 21
+        },
+        {
+          "value": "💗",
+          "min_api": 21
+        },
+        {
+          "value": "💓",
+          "min_api": 21
+        },
+        {
+          "value": "💞",
+          "min_api": 21
+        },
+        {
+          "value": "💕",
+          "min_api": 21
+        },
+        {
+          "value": "💟",
+          "min_api": 21
+        },
+        {
+          "value": "❣️",
+          "min_api": 21
+        },
+        {
+          "value": "💔",
+          "min_api": 21
+        },
+        {
+          "value": "❤️‍🔥",
+          "min_api": 31
+        },
+        {
+          "value": "❤️‍🩹",
+          "min_api": 31
+        },
+        {
+          "value": "❤️",
+          "min_api": 21
+        },
+        {
+          "value": "🩷",
+          "min_api": 34
+        },
+        {
+          "value": "🧡",
+          "min_api": 26
+        },
+        {
+          "value": "💛",
+          "min_api": 21
+        },
+        {
+          "value": "💚",
+          "min_api": 21
+        },
+        {
+          "value": "💙",
+          "min_api": 21
+        },
+        {
+          "value": "🩵",
+          "min_api": 34
+        },
+        {
+          "value": "💜",
+          "min_api": 21
+        },
+        {
+          "value": "🤎",
+          "min_api": 29
+        },
+        {
+          "value": "🖤",
+          "min_api": 22
+        },
+        {
+          "value": "🩶",
+          "min_api": 34
+        },
+        {
+          "value": "🤍",
+          "min_api": 29
+        },
+        {
+          "value": "💋",
+          "min_api": 21
+        },
+        {
+          "value": "💯",
+          "min_api": 21
+        },
+        {
+          "value": "💢",
+          "min_api": 21
+        },
+        {
+          "value": "💥",
+          "min_api": 21
+        },
+        {
+          "value": "💫",
+          "min_api": 21
+        },
+        {
+          "value": "💦",
+          "min_api": 21
+        },
+        {
+          "value": "💨",
+          "min_api": 21
+        },
+        {
+          "value": "🕳️",
+          "min_api": 21
+        },
+        {
+          "value": "💬",
+          "min_api": 21
+        },
+        {
+          "value": "👁️‍🗨️",
+          "min_api": 21
+        },
+        {
+          "value": "🗨️",
+          "min_api": 21
+        },
+        {
+          "value": "🗯️",
+          "min_api": 21
+        },
+        {
+          "value": "💭",
+          "min_api": 21
+        },
+        {
+          "value": "💤",
+          "min_api": 21
+        },
+        {
+          "value": "👋",
+          "min_api": 21
+        },
+        {
+          "value": "🤚",
+          "min_api": 22
+        },
+        {
+          "value": "🖐️",
+          "min_api": 21
+        },
+        {
+          "value": "✋",
+          "min_api": 21
+        },
+        {
+          "value": "🖖",
+          "min_api": 21
+        },
+        {
+          "value": "🫱",
+          "min_api": 32
+        },
+        {
+          "value": "🫲",
+          "min_api": 32
+        },
+        {
+          "value": "🫳",
+          "min_api": 32
+        },
+        {
+          "value": "🫴",
+          "min_api": 32
+        },
+        {
+          "value": "🫷",
+          "min_api": 34
+        },
+        {
+          "value": "🫸",
+          "min_api": 34
+        },
+        {
+          "value": "👌",
+          "min_api": 21
+        },
+        {
+          "value": "🤌",
+          "min_api": 30
+        },
+        {
+          "value": "🤏",
+          "min_api": 29
+        },
+        {
+          "value": "✌️",
+          "min_api": 21
+        },
+        {
+          "value": "🤞",
+          "min_api": 22
+        },
+        {
+          "value": "🫰",
+          "min_api": 32
+        },
+        {
+          "value": "🤟",
+          "min_api": 26
+        },
+        {
+          "value": "🤘",
+          "min_api": 21
+        },
+        {
+          "value": "🤙",
+          "min_api": 22
+        },
+        {
+          "value": "👈",
+          "min_api": 21
+        },
+        {
+          "value": "👉",
+          "min_api": 21
+        },
+        {
+          "value": "👆",
+          "min_api": 21
+        },
+        {
+          "value": "🖕",
+          "min_api": 21
+        },
+        {
+          "value": "👇",
+          "min_api": 21
+        },
+        {
+          "value": "☝️",
+          "min_api": 21
+        },
+        {
+          "value": "🫵",
+          "min_api": 32
+        },
+        {
+          "value": "👍",
+          "min_api": 21
+        },
+        {
+          "value": "👎",
+          "min_api": 21
+        },
+        {
+          "value": "✊",
+          "min_api": 21
+        },
+        {
+          "value": "👊",
+          "min_api": 21
+        },
+        {
+          "value": "🤛",
+          "min_api": 22
+        },
+        {
+          "value": "🤜",
+          "min_api": 22
+        },
+        {
+          "value": "👏",
+          "min_api": 21
+        },
+        {
+          "value": "🙌",
+          "min_api": 21
+        },
+        {
+          "value": "🫶",
+          "min_api": 32
+        },
+        {
+          "value": "👐",
+          "min_api": 21
+        },
+        {
+          "value": "🤲",
+          "min_api": 26
+        },
+        {
+          "value": "🤝",
+          "min_api": 22
+        },
+        {
+          "value": "🙏",
+          "min_api": 21
+        },
+        {
+          "value": "✍️",
+          "min_api": 21
+        },
+        {
+          "value": "💅",
+          "min_api": 21
+        },
+        {
+          "value": "🤳",
+          "min_api": 22
+        },
+        {
+          "value": "💪",
+          "min_api": 21
+        },
+        {
+          "value": "🦾",
+          "min_api": 29
+        },
+        {
+          "value": "🦿",
+          "min_api": 29
+        },
+        {
+          "value": "🦵",
+          "min_api": 28
+        },
+        {
+          "value": "🦶",
+          "min_api": 28
+        },
+        {
+          "value": "👂",
+          "min_api": 21
+        },
+        {
+          "value": "🦻",
+          "min_api": 29
+        },
+        {
+          "value": "👃",
+          "min_api": 21
+        },
+        {
+          "value": "🧠",
+          "min_api": 26
+        },
+        {
+          "value": "🫀",
+          "min_api": 30
+        },
+        {
+          "value": "🫁",
+          "min_api": 30
+        },
+        {
+          "value": "🦷",
+          "min_api": 28
+        },
+        {
+          "value": "🦴",
+          "min_api": 28
+        },
+        {
+          "value": "👀",
+          "min_api": 21
+        },
+        {
+          "value": "👁️",
+          "min_api": 21
+        },
+        {
+          "value": "👅",
+          "min_api": 21
+        },
+        {
+          "value": "👄",
+          "min_api": 21
+        },
+        {
+          "value": "🫦",
+          "min_api": 32
+        },
+        {
+          "value": "👶",
+          "min_api": 21
+        },
+        {
+          "value": "🧒",
+          "min_api": 26
+        },
+        {
+          "value": "👦",
+          "min_api": 21
+        },
+        {
+          "value": "👧",
+          "min_api": 21
+        },
+        {
+          "value": "🧑",
+          "min_api": 26
+        },
+        {
+          "value": "👱",
+          "min_api": 21
+        },
+        {
+          "value": "👨",
+          "min_api": 21
+        },
+        {
+          "value": "🧔",
+          "min_api": 26
+        },
+        {
+          "value": "🧔‍♂️",
+          "min_api": 31
+        },
+        {
+          "value": "🧔‍♀️",
+          "min_api": 31
+        },
+        {
+          "value": "👨‍🦰",
+          "min_api": 28
+        },
+        {
+          "value": "👨‍🦱",
+          "min_api": 28
+        },
+        {
+          "value": "👨‍🦳",
+          "min_api": 28
+        },
+        {
+          "value": "👨‍🦲",
+          "min_api": 28
+        },
+        {
+          "value": "👩",
+          "min_api": 21
+        },
+        {
+          "value": "👩‍🦰",
+          "min_api": 28
+        },
+        {
+          "value": "🧑‍🦰",
+          "min_api": 29
+        },
+        {
+          "value": "👩‍🦱",
+          "min_api": 28
+        },
+        {
+          "value": "🧑‍🦱",
+          "min_api": 29
+        },
+        {
+          "value": "👩‍🦳",
+          "min_api": 28
+        },
+        {
+          "value": "🧑‍🦳",
+          "min_api": 29
+        },
+        {
+          "value": "👩‍🦲",
+          "min_api": 28
+        },
+        {
+          "value": "🧑‍🦲",
+          "min_api": 29
+        },
+        {
+          "value": "👱‍♀️",
+          "min_api": 24
+        },
+        {
+          "value": "👱‍♂️",
+          "min_api": 24
+        },
+        {
+          "value": "🧓",
+          "min_api": 26
+        },
+        {
+          "value": "👴",
+          "min_api": 21
+        },
+        {
+          "value": "👵",
+          "min_api": 21
+        },
+        {
+          "value": "🙍",
+          "min_api": 21
+        },
+        {
+          "value": "🙍‍♂️",
+          "min_api": 24
+        },
+        {
+          "value": "🙍‍♀️",
+          "min_api": 24
+        },
+        {
+          "value": "🙎",
+          "min_api": 21
+        },
+        {
+          "value": "🙎‍♂️",
+          "min_api": 24
+        },
+        {
+          "value": "🙎‍♀️",
+          "min_api": 24
+        },
+        {
+          "value": "🙅",
+          "min_api": 21
+        },
+        {
+          "value": "🙅‍♂️",
+          "min_api": 24
+        },
+        {
+          "value": "🙅‍♀️",
+          "min_api": 24
+        },
+        {
+          "value": "🙆",
+          "min_api": 21
+        },
+        {
+          "value": "🙆‍♂️",
+          "min_api": 24
+        },
+        {
+          "value": "🙆‍♀️",
+          "min_api": 24
+        },
+        {
+          "value": "💁",
+          "min_api": 21
+        },
+        {
+          "value": "💁‍♂️",
+          "min_api": 24
+        },
+        {
+          "value": "💁‍♀️",
+          "min_api": 24
+        },
+        {
+          "value": "🙋",
+          "min_api": 21
+        },
+        {
+          "value": "🙋‍♂️",
+          "min_api": 24
+        },
+        {
+          "value": "🙋‍♀️",
+          "min_api": 24
+        },
+        {
+          "value": "🧏",
+          "min_api": 29
+        },
+        {
+          "value": "🧏‍♂️",
+          "min_api": 29
+        },
+        {
+          "value": "🧏‍♀️",
+          "min_api": 29
+        },
+        {
+          "value": "🙇",
+          "min_api": 21
+        },
+        {
+          "value": "🙇‍♂️",
+          "min_api": 24
+        },
+        {
+          "value": "🙇‍♀️",
+          "min_api": 24
+        },
+        {
+          "value": "🤦",
+          "min_api": 22
+        },
+        {
+          "value": "🤦‍♂️",
+          "min_api": 24
+        },
+        {
+          "value": "🤦‍♀️",
+          "min_api": 24
+        },
+        {
+          "value": "🤷",
+          "min_api": 22
+        },
+        {
+          "value": "🤷‍♂️",
+          "min_api": 24
+        },
+        {
+          "value": "🤷‍♀️",
+          "min_api": 24
+        },
+        {
+          "value": "🧑‍⚕️",
+          "min_api": 29
+        },
+        {
+          "value": "👨‍⚕️",
+          "min_api": 24
+        },
+        {
+          "value": "👩‍⚕️",
+          "min_api": 24
+        },
+        {
+          "value": "🧑‍🎓",
+          "min_api": 29
+        },
+        {
+          "value": "👨‍🎓",
+          "min_api": 24
+        },
+        {
+          "value": "👩‍🎓",
+          "min_api": 24
+        },
+        {
+          "value": "🧑‍🏫",
+          "min_api": 29
+        },
+        {
+          "value": "👨‍🏫",
+          "min_api": 24
+        },
+        {
+          "value": "👩‍🏫",
+          "min_api": 24
+        },
+        {
+          "value": "🧑‍⚖️",
+          "min_api": 29
+        },
+        {
+          "value": "👨‍⚖️",
+          "min_api": 24
+        },
+        {
+          "value": "👩‍⚖️",
+          "min_api": 24
+        },
+        {
+          "value": "🧑‍🌾",
+          "min_api": 29
+        },
+        {
+          "value": "👨‍🌾",
+          "min_api": 24
+        },
+        {
+          "value": "👩‍🌾",
+          "min_api": 24
+        },
+        {
+          "value": "🧑‍🍳",
+          "min_api": 29
+        },
+        {
+          "value": "👨‍🍳",
+          "min_api": 24
+        },
+        {
+          "value": "👩‍🍳",
+          "min_api": 24
+        },
+        {
+          "value": "🧑‍🔧",
+          "min_api": 29
+        },
+        {
+          "value": "👨‍🔧",
+          "min_api": 24
+        },
+        {
+          "value": "👩‍🔧",
+          "min_api": 24
+        },
+        {
+          "value": "🧑‍🏭",
+          "min_api": 29
+        },
+        {
+          "value": "👨‍🏭",
+          "min_api": 24
+        },
+        {
+          "value": "👩‍🏭",
+          "min_api": 24
+        },
+        {
+          "value": "🧑‍💼",
+          "min_api": 29
+        },
+        {
+          "value": "👨‍💼",
+          "min_api": 24
+        },
+        {
+          "value": "👩‍💼",
+          "min_api": 24
+        },
+        {
+          "value": "🧑‍🔬",
+          "min_api": 29
+        },
+        {
+          "value": "👨‍🔬",
+          "min_api": 24
+        },
+        {
+          "value": "👩‍🔬",
+          "min_api": 24
+        },
+        {
+          "value": "🧑‍💻",
+          "min_api": 29
+        },
+        {
+          "value": "👨‍💻",
+          "min_api": 24
+        },
+        {
+          "value": "👩‍💻",
+          "min_api": 24
+        },
+        {
+          "value": "🧑‍🎤",
+          "min_api": 29
+        },
+        {
+          "value": "👨‍🎤",
+          "min_api": 24
+        },
+        {
+          "value": "👩‍🎤",
+          "min_api": 24
+        },
+        {
+          "value": "🧑‍🎨",
+          "min_api": 29
+        },
+        {
+          "value": "👨‍🎨",
+          "min_api": 24
+        },
+        {
+          "value": "👩‍🎨",
+          "min_api": 24
+        },
+        {
+          "value": "🧑‍✈️",
+          "min_api": 29
+        },
+        {
+          "value": "👨‍✈️",
+          "min_api": 24
+        },
+        {
+          "value": "👩‍✈️",
+          "min_api": 24
+        },
+        {
+          "value": "🧑‍🚀",
+          "min_api": 29
+        },
+        {
+          "value": "👨‍🚀",
+          "min_api": 24
+        },
+        {
+          "value": "👩‍🚀",
+          "min_api": 24
+        },
+        {
+          "value": "🧑‍🚒",
+          "min_api": 29
+        },
+        {
+          "value": "👨‍🚒",
+          "min_api": 24
+        },
+        {
+          "value": "👩‍🚒",
+          "min_api": 24
+        },
+        {
+          "value": "👮",
+          "min_api": 21
+        },
+        {
+          "value": "👮‍♂️",
+          "min_api": 24
+        },
+        {
+          "value": "👮‍♀️",
+          "min_api": 24
+        },
+        {
+          "value": "🕵️",
+          "min_api": 21
+        },
+        {
+          "value": "🕵️‍♂️",
+          "min_api": 24
+        },
+        {
+          "value": "🕵️‍♀️",
+          "min_api": 24
+        },
+        {
+          "value": "💂",
+          "min_api": 21
+        },
+        {
+          "value": "💂‍♂️",
+          "min_api": 24
+        },
+        {
+          "value": "💂‍♀️",
+          "min_api": 24
+        },
+        {
+          "value": "🥷",
+          "min_api": 30
+        },
+        {
+          "value": "👷",
+          "min_api": 21
+        },
+        {
+          "value": "👷‍♂️",
+          "min_api": 24
+        },
+        {
+          "value": "👷‍♀️",
+          "min_api": 24
+        },
+        {
+          "value": "🫅",
+          "min_api": 32
+        },
+        {
+          "value": "🤴",
+          "min_api": 22
+        },
+        {
+          "value": "👸",
+          "min_api": 21
+        },
+        {
+          "value": "👳",
+          "min_api": 21
+        },
+        {
+          "value": "👳‍♂️",
+          "min_api": 24
+        },
+        {
+          "value": "👳‍♀️",
+          "min_api": 24
+        },
+        {
+          "value": "👲",
+          "min_api": 21
+        },
+        {
+          "value": "🧕",
+          "min_api": 26
+        },
+        {
+          "value": "🤵",
+          "min_api": 22
+        },
+        {
+          "value": "🤵‍♂️",
+          "min_api": 30
+        },
+        {
+          "value": "🤵‍♀️",
+          "min_api": 30
+        },
+        {
+          "value": "👰",
+          "min_api": 21
+        },
+        {
+          "value": "👰‍♂️",
+          "min_api": 30
+        },
+        {
+          "value": "👰‍♀️",
+          "min_api": 30
+        },
+        {
+          "value": "🤰",
+          "min_api": 22
+        },
+        {
+          "value": "🫃",
+          "min_api": 32
+        },
+        {
+          "value": "🫄",
+          "min_api": 32
+        },
+        {
+          "value": "🤱",
+          "min_api": 26
+        },
+        {
+          "value": "👩‍🍼",
+          "min_api": 30
+        },
+        {
+          "value": "👨‍🍼",
+          "min_api": 30
+        },
+        {
+          "value": "🧑‍🍼",
+          "min_api": 30
+        },
+        {
+          "value": "👼",
+          "min_api": 21
+        },
+        {
+          "value": "🎅",
+          "min_api": 21
+        },
+        {
+          "value": "🤶",
+          "min_api": 22
+        },
+        {
+          "value": "🧑‍🎄",
+          "min_api": 30
+        },
+        {
+          "value": "🦸",
+          "min_api": 28
+        },
+        {
+          "value": "🦸‍♂️",
+          "min_api": 28
+        },
+        {
+          "value": "🦸‍♀️",
+          "min_api": 28
+        },
+        {
+          "value": "🦹",
+          "min_api": 28
+        },
+        {
+          "value": "🦹‍♂️",
+          "min_api": 28
+        },
+        {
+          "value": "🦹‍♀️",
+          "min_api": 28
+        },
+        {
+          "value": "🧙",
+          "min_api": 26
+        },
+        {
+          "value": "🧙‍♂️",
+          "min_api": 26
+        },
+        {
+          "value": "🧙‍♀️",
+          "min_api": 26
+        },
+        {
+          "value": "🧚",
+          "min_api": 26
+        },
+        {
+          "value": "🧚‍♂️",
+          "min_api": 26
+        },
+        {
+          "value": "🧚‍♀️",
+          "min_api": 26
+        },
+        {
+          "value": "🧛",
+          "min_api": 26
+        },
+        {
+          "value": "🧛‍♂️",
+          "min_api": 26
+        },
+        {
+          "value": "🧛‍♀️",
+          "min_api": 26
+        },
+        {
+          "value": "🧜",
+          "min_api": 26
+        },
+        {
+          "value": "🧜‍♂️",
+          "min_api": 26
+        },
+        {
+          "value": "🧜‍♀️",
+          "min_api": 26
+        },
+        {
+          "value": "🧝",
+          "min_api": 26
+        },
+        {
+          "value": "🧝‍♂️",
+          "min_api": 26
+        },
+        {
+          "value": "🧝‍♀️",
+          "min_api": 26
+        },
+        {
+          "value": "🧞",
+          "min_api": 26
+        },
+        {
+          "value": "🧞‍♂️",
+          "min_api": 26
+        },
+        {
+          "value": "🧞‍♀️",
+          "min_api": 26
+        },
+        {
+          "value": "🧟",
+          "min_api": 26
+        },
+        {
+          "value": "🧟‍♂️",
+          "min_api": 26
+        },
+        {
+          "value": "🧟‍♀️",
+          "min_api": 26
+        },
+        {
+          "value": "🧌",
+          "min_api": 32
+        },
+        {
+          "value": "💆",
+          "min_api": 21
+        },
+        {
+          "value": "💆‍♂️",
+          "min_api": 24
+        },
+        {
+          "value": "💆‍♀️",
+          "min_api": 24
+        },
+        {
+          "value": "💇",
+          "min_api": 21
+        },
+        {
+          "value": "💇‍♂️",
+          "min_api": 24
+        },
+        {
+          "value": "💇‍♀️",
+          "min_api": 24
+        },
+        {
+          "value": "🚶",
+          "min_api": 21
+        },
+        {
+          "value": "🚶‍♂️",
+          "min_api": 24
+        },
+        {
+          "value": "🚶‍♀️",
+          "min_api": 24
+        },
+        {
+          "value": "🚶‍➡️",
+          "min_api": 34
+        },
+        {
+          "value": "🚶‍♀️‍➡️",
+          "min_api": 34
+        },
+        {
+          "value": "🚶‍♂️‍➡️",
+          "min_api": 34
+        },
+        {
+          "value": "🧍",
+          "min_api": 29
+        },
+        {
+          "value": "🧍‍♂️",
+          "min_api": 29
+        },
+        {
+          "value": "🧍‍♀️",
+          "min_api": 29
+        },
+        {
+          "value": "🧎",
+          "min_api": 29
+        },
+        {
+          "value": "🧎‍♂️",
+          "min_api": 29
+        },
+        {
+          "value": "🧎‍♀️",
+          "min_api": 29
+        },
+        {
+          "value": "🧎‍➡️",
+          "min_api": 34
+        },
+        {
+          "value": "🧎‍♀️‍➡️",
+          "min_api": 34
+        },
+        {
+          "value": "🧎‍♂️‍➡️",
+          "min_api": 34
+        },
+        {
+          "value": "🧑‍🦯",
+          "min_api": 29
+        },
+        {
+          "value": "🧑‍🦯‍➡️",
+          "min_api": 34
+        },
+        {
+          "value": "👨‍🦯",
+          "min_api": 29
+        },
+        {
+          "value": "👨‍🦯‍➡️",
+          "min_api": 34
+        },
+        {
+          "value": "👩‍🦯",
+          "min_api": 29
+        },
+        {
+          "value": "👩‍🦯‍➡️",
+          "min_api": 34
+        },
+        {
+          "value": "🧑‍🦼",
+          "min_api": 29
+        },
+        {
+          "value": "🧑‍🦼‍➡️",
+          "min_api": 34
+        },
+        {
+          "value": "👨‍🦼",
+          "min_api": 29
+        },
+        {
+          "value": "👨‍🦼‍➡️",
+          "min_api": 34
+        },
+        {
+          "value": "👩‍🦼",
+          "min_api": 29
+        },
+        {
+          "value": "👩‍🦼‍➡️",
+          "min_api": 34
+        },
+        {
+          "value": "🧑‍🦽",
+          "min_api": 29
+        },
+        {
+          "value": "🧑‍🦽‍➡️",
+          "min_api": 34
+        },
+        {
+          "value": "👨‍🦽",
+          "min_api": 29
+        },
+        {
+          "value": "👨‍🦽‍➡️",
+          "min_api": 34
+        },
+        {
+          "value": "👩‍🦽",
+          "min_api": 29
+        },
+        {
+          "value": "👩‍🦽‍➡️",
+          "min_api": 34
+        },
+        {
+          "value": "🏃",
+          "min_api": 21
+        },
+        {
+          "value": "🏃‍♂️",
+          "min_api": 24
+        },
+        {
+          "value": "🏃‍♀️",
+          "min_api": 24
+        },
+        {
+          "value": "🏃‍➡️",
+          "min_api": 34
+        },
+        {
+          "value": "🏃‍♀️‍➡️",
+          "min_api": 34
+        },
+        {
+          "value": "🏃‍♂️‍➡️",
+          "min_api": 34
+        },
+        {
+          "value": "💃",
+          "min_api": 21
+        },
+        {
+          "value": "🕺",
+          "min_api": 22
+        },
+        {
+          "value": "🕴️",
+          "min_api": 21
+        },
+        {
+          "value": "👯",
+          "min_api": 21
+        },
+        {
+          "value": "👯‍♂️",
+          "min_api": 24
+        },
+        {
+          "value": "👯‍♀️",
+          "min_api": 24
+        },
+        {
+          "value": "🧖",
+          "min_api": 26
+        },
+        {
+          "value": "🧖‍♂️",
+          "min_api": 26
+        },
+        {
+          "value": "🧖‍♀️",
+          "min_api": 26
+        },
+        {
+          "value": "🧗",
+          "min_api": 26
+        },
+        {
+          "value": "🧗‍♂️",
+          "min_api": 26
+        },
+        {
+          "value": "🧗‍♀️",
+          "min_api": 26
+        },
+        {
+          "value": "🤺",
+          "min_api": 22
+        },
+        {
+          "value": "🏇",
+          "min_api": 21
+        },
+        {
+          "value": "⛷️",
+          "min_api": 21
+        },
+        {
+          "value": "🏂",
+          "min_api": 21
+        },
+        {
+          "value": "🏌️",
+          "min_api": 21
+        },
+        {
+          "value": "🏌️‍♂️",
+          "min_api": 24
+        },
+        {
+          "value": "🏌️‍♀️",
+          "min_api": 24
+        },
+        {
+          "value": "🏄",
+          "min_api": 21
+        },
+        {
+          "value": "🏄‍♂️",
+          "min_api": 24
+        },
+        {
+          "value": "🏄‍♀️",
+          "min_api": 24
+        },
+        {
+          "value": "🚣",
+          "min_api": 21
+        },
+        {
+          "value": "🚣‍♂️",
+          "min_api": 24
+        },
+        {
+          "value": "🚣‍♀️",
+          "min_api": 24
+        },
+        {
+          "value": "🏊",
+          "min_api": 21
+        },
+        {
+          "value": "🏊‍♂️",
+          "min_api": 24
+        },
+        {
+          "value": "🏊‍♀️",
+          "min_api": 24
+        },
+        {
+          "value": "⛹️",
+          "min_api": 21
+        },
+        {
+          "value": "⛹️‍♂️",
+          "min_api": 24
+        },
+        {
+          "value": "⛹️‍♀️",
+          "min_api": 24
+        },
+        {
+          "value": "🏋️",
+          "min_api": 21
+        },
+        {
+          "value": "🏋️‍♂️",
+          "min_api": 24
+        },
+        {
+          "value": "🏋️‍♀️",
+          "min_api": 24
+        },
+        {
+          "value": "🚴",
+          "min_api": 21
+        },
+        {
+          "value": "🚴‍♂️",
+          "min_api": 24
+        },
+        {
+          "value": "🚴‍♀️",
+          "min_api": 24
+        },
+        {
+          "value": "🚵",
+          "min_api": 21
+        },
+        {
+          "value": "🚵‍♂️",
+          "min_api": 24
+        },
+        {
+          "value": "🚵‍♀️",
+          "min_api": 24
+        },
+        {
+          "value": "🤸",
+          "min_api": 22
+        },
+        {
+          "value": "🤸‍♂️",
+          "min_api": 24
+        },
+        {
+          "value": "🤸‍♀️",
+          "min_api": 24
+        },
+        {
+          "value": "🤼",
+          "min_api": 22
+        },
+        {
+          "value": "🤼‍♂️",
+          "min_api": 24
+        },
+        {
+          "value": "🤼‍♀️",
+          "min_api": 24
+        },
+        {
+          "value": "🤽",
+          "min_api": 22
+        },
+        {
+          "value": "🤽‍♂️",
+          "min_api": 24
+        },
+        {
+          "value": "🤽‍♀️",
+          "min_api": 24
+        },
+        {
+          "value": "🤾",
+          "min_api": 22
+        },
+        {
+          "value": "🤾‍♂️",
+          "min_api": 24
+        },
+        {
+          "value": "🤾‍♀️",
+          "min_api": 24
+        },
+        {
+          "value": "🤹",
+          "min_api": 22
+        },
+        {
+          "value": "🤹‍♂️",
+          "min_api": 24
+        },
+        {
+          "value": "🤹‍♀️",
+          "min_api": 24
+        },
+        {
+          "value": "🧘",
+          "min_api": 26
+        },
+        {
+          "value": "🧘‍♂️",
+          "min_api": 26
+        },
+        {
+          "value": "🧘‍♀️",
+          "min_api": 26
+        },
+        {
+          "value": "🛀",
+          "min_api": 21
+        },
+        {
+          "value": "🛌",
+          "min_api": 21
+        },
+        {
+          "value": "🧑‍🤝‍🧑",
+          "min_api": 29
+        },
+        {
+          "value": "👭",
+          "min_api": 21
+        },
+        {
+          "value": "👫",
+          "min_api": 21
+        },
+        {
+          "value": "👬",
+          "min_api": 21
+        },
+        {
+          "value": "💏",
+          "min_api": 21
+        },
+        {
+          "value": "👩‍❤️‍💋‍👨",
+          "min_api": 21
+        },
+        {
+          "value": "👨‍❤️‍💋‍👨",
+          "min_api": 21
+        },
+        {
+          "value": "👩‍❤️‍💋‍👩",
+          "min_api": 21
+        },
+        {
+          "value": "💑",
+          "min_api": 21
+        },
+        {
+          "value": "👩‍❤️‍👨",
+          "min_api": 21
+        },
+        {
+          "value": "👨‍❤️‍👨",
+          "min_api": 21
+        },
+        {
+          "value": "👩‍❤️‍👩",
+          "min_api": 21
+        },
+        {
+          "value": "👨‍👩‍👦",
+          "min_api": 21
+        },
+        {
+          "value": "👨‍👩‍👧",
+          "min_api": 21
+        },
+        {
+          "value": "👨‍👩‍👧‍👦",
+          "min_api": 21
+        },
+        {
+          "value": "👨‍👩‍👦‍👦",
+          "min_api": 21
+        },
+        {
+          "value": "👨‍👩‍👧‍👧",
+          "min_api": 21
+        },
+        {
+          "value": "👨‍👨‍👦",
+          "min_api": 21
+        },
+        {
+          "value": "👨‍👨‍👧",
+          "min_api": 21
+        },
+        {
+          "value": "👨‍👨‍👧‍👦",
+          "min_api": 21
+        },
+        {
+          "value": "👨‍👨‍👦‍👦",
+          "min_api": 21
+        },
+        {
+          "value": "👨‍👨‍👧‍👧",
+          "min_api": 21
+        },
+        {
+          "value": "👩‍👩‍👦",
+          "min_api": 21
+        },
+        {
+          "value": "👩‍👩‍👧",
+          "min_api": 21
+        },
+        {
+          "value": "👩‍👩‍👧‍👦",
+          "min_api": 21
+        },
+        {
+          "value": "👩‍👩‍👦‍👦",
+          "min_api": 21
+        },
+        {
+          "value": "👩‍👩‍👧‍👧",
+          "min_api": 21
+        },
+        {
+          "value": "👨‍👦",
+          "min_api": 24
+        },
+        {
+          "value": "👨‍👦‍👦",
+          "min_api": 24
+        },
+        {
+          "value": "👨‍👧",
+          "min_api": 24
+        },
+        {
+          "value": "👨‍👧‍👦",
+          "min_api": 24
+        },
+        {
+          "value": "👨‍👧‍👧",
+          "min_api": 24
+        },
+        {
+          "value": "👩‍👦",
+          "min_api": 24
+        },
+        {
+          "value": "👩‍👦‍👦",
+          "min_api": 24
+        },
+        {
+          "value": "👩‍👧",
+          "min_api": 24
+        },
+        {
+          "value": "👩‍👧‍👦",
+          "min_api": 24
+        },
+        {
+          "value": "👩‍👧‍👧",
+          "min_api": 24
+        },
+        {
+          "value": "🗣️",
+          "min_api": 21
+        },
+        {
+          "value": "👤",
+          "min_api": 21
+        },
+        {
+          "value": "👥",
+          "min_api": 21
+        },
+        {
+          "value": "🫂",
+          "min_api": 30
+        },
+        {
+          "value": "👪",
+          "min_api": 21
+        },
+        {
+          "value": "🧑‍🧑‍🧒",
+          "min_api": 34
+        },
+        {
+          "value": "🧑‍🧑‍🧒‍🧒",
+          "min_api": 34
+        },
+        {
+          "value": "🧑‍🧒",
+          "min_api": 34
+        },
+        {
+          "value": "🧑‍🧒‍🧒",
+          "min_api": 34
+        },
+        {
+          "value": "👣",
+          "min_api": 21
+        }
+      ]
+    },
+    {
+      "id": "animals-nature",
+      "emoji": [
+        {
+          "value": "🐵",
+          "min_api": 21
+        },
+        {
+          "value": "🐒",
+          "min_api": 21
+        },
+        {
+          "value": "🦍",
+          "min_api": 22
+        },
+        {
+          "value": "🦧",
+          "min_api": 29
+        },
+        {
+          "value": "🐶",
+          "min_api": 21
+        },
+        {
+          "value": "🐕",
+          "min_api": 21
+        },
+        {
+          "value": "🦮",
+          "min_api": 29
+        },
+        {
+          "value": "🐕‍🦺",
+          "min_api": 29
+        },
+        {
+          "value": "🐩",
+          "min_api": 21
+        },
+        {
+          "value": "🐺",
+          "min_api": 21
+        },
+        {
+          "value": "🦊",
+          "min_api": 22
+        },
+        {
+          "value": "🦝",
+          "min_api": 28
+        },
+        {
+          "value": "🐱",
+          "min_api": 21
+        },
+        {
+          "value": "🐈",
+          "min_api": 21
+        },
+        {
+          "value": "🐈‍⬛",
+          "min_api": 30
+        },
+        {
+          "value": "🦁",
+          "min_api": 21
+        },
+        {
+          "value": "🐯",
+          "min_api": 21
+        },
+        {
+          "value": "🐅",
+          "min_api": 21
+        },
+        {
+          "value": "🐆",
+          "min_api": 21
+        },
+        {
+          "value": "🐴",
+          "min_api": 21
+        },
+        {
+          "value": "🫎",
+          "min_api": 34
+        },
+        {
+          "value": "🫏",
+          "min_api": 34
+        },
+        {
+          "value": "🐎",
+          "min_api": 21
+        },
+        {
+          "value": "🦄",
+          "min_api": 21
+        },
+        {
+          "value": "🦓",
+          "min_api": 26
+        },
+        {
+          "value": "🦌",
+          "min_api": 22
+        },
+        {
+          "value": "🦬",
+          "min_api": 30
+        },
+        {
+          "value": "🐮",
+          "min_api": 21
+        },
+        {
+          "value": "🐂",
+          "min_api": 21
+        },
+        {
+          "value": "🐃",
+          "min_api": 21
+        },
+        {
+          "value": "🐄",
+          "min_api": 21
+        },
+        {
+          "value": "🐷",
+          "min_api": 21
+        },
+        {
+          "value": "🐖",
+          "min_api": 21
+        },
+        {
+          "value": "🐗",
+          "min_api": 21
+        },
+        {
+          "value": "🐽",
+          "min_api": 21
+        },
+        {
+          "value": "🐏",
+          "min_api": 21
+        },
+        {
+          "value": "🐑",
+          "min_api": 21
+        },
+        {
+          "value": "🐐",
+          "min_api": 21
+        },
+        {
+          "value": "🐪",
+          "min_api": 21
+        },
+        {
+          "value": "🐫",
+          "min_api": 21
+        },
+        {
+          "value": "🦙",
+          "min_api": 28
+        },
+        {
+          "value": "🦒",
+          "min_api": 26
+        },
+        {
+          "value": "🐘",
+          "min_api": 21
+        },
+        {
+          "value": "🦣",
+          "min_api": 30
+        },
+        {
+          "value": "🦏",
+          "min_api": 22
+        },
+        {
+          "value": "🦛",
+          "min_api": 28
+        },
+        {
+          "value": "🐭",
+          "min_api": 21
+        },
+        {
+          "value": "🐁",
+          "min_api": 21
+        },
+        {
+          "value": "🐀",
+          "min_api": 21
+        },
+        {
+          "value": "🐹",
+          "min_api": 21
+        },
+        {
+          "value": "🐰",
+          "min_api": 21
+        },
+        {
+          "value": "🐇",
+          "min_api": 21
+        },
+        {
+          "value": "🐿️",
+          "min_api": 21
+        },
+        {
+          "value": "🦫",
+          "min_api": 30
+        },
+        {
+          "value": "🦔",
+          "min_api": 26
+        },
+        {
+          "value": "🦇",
+          "min_api": 22
+        },
+        {
+          "value": "🐻",
+          "min_api": 21
+        },
+        {
+          "value": "🐻‍❄️",
+          "min_api": 30
+        },
+        {
+          "value": "🐨",
+          "min_api": 21
+        },
+        {
+          "value": "🐼",
+          "min_api": 21
+        },
+        {
+          "value": "🦥",
+          "min_api": 29
+        },
+        {
+          "value": "🦦",
+          "min_api": 29
+        },
+        {
+          "value": "🦨",
+          "min_api": 29
+        },
+        {
+          "value": "🦘",
+          "min_api": 28
+        },
+        {
+          "value": "🦡",
+          "min_api": 28
+        },
+        {
+          "value": "🐾",
+          "min_api": 21
+        },
+        {
+          "value": "🦃",
+          "min_api": 21
+        },
+        {
+          "value": "🐔",
+          "min_api": 21
+        },
+        {
+          "value": "🐓",
+          "min_api": 21
+        },
+        {
+          "value": "🐣",
+          "min_api": 21
+        },
+        {
+          "value": "🐤",
+          "min_api": 21
+        },
+        {
+          "value": "🐥",
+          "min_api": 21
+        },
+        {
+          "value": "🐦",
+          "min_api": 21
+        },
+        {
+          "value": "🐧",
+          "min_api": 21
+        },
+        {
+          "value": "🕊️",
+          "min_api": 21
+        },
+        {
+          "value": "🦅",
+          "min_api": 22
+        },
+        {
+          "value": "🦆",
+          "min_api": 22
+        },
+        {
+          "value": "🦢",
+          "min_api": 28
+        },
+        {
+          "value": "🦉",
+          "min_api": 22
+        },
+        {
+          "value": "🦤",
+          "min_api": 30
+        },
+        {
+          "value": "🪶",
+          "min_api": 30
+        },
+        {
+          "value": "🦩",
+          "min_api": 29
+        },
+        {
+          "value": "🦚",
+          "min_api": 28
+        },
+        {
+          "value": "🦜",
+          "min_api": 28
+        },
+        {
+          "value": "🪽",
+          "min_api": 34
+        },
+        {
+          "value": "🐦‍⬛",
+          "min_api": 34
+        },
+        {
+          "value": "🪿",
+          "min_api": 34
+        },
+        {
+          "value": "🐦‍🔥",
+          "min_api": 34
+        },
+        {
+          "value": "🐸",
+          "min_api": 21
+        },
+        {
+          "value": "🐊",
+          "min_api": 21
+        },
+        {
+          "value": "🐢",
+          "min_api": 21
+        },
+        {
+          "value": "🦎",
+          "min_api": 22
+        },
+        {
+          "value": "🐍",
+          "min_api": 21
+        },
+        {
+          "value": "🐲",
+          "min_api": 21
+        },
+        {
+          "value": "🐉",
+          "min_api": 21
+        },
+        {
+          "value": "🦕",
+          "min_api": 26
+        },
+        {
+          "value": "🦖",
+          "min_api": 26
+        },
+        {
+          "value": "🐳",
+          "min_api": 21
+        },
+        {
+          "value": "🐋",
+          "min_api": 21
+        },
+        {
+          "value": "🐬",
+          "min_api": 21
+        },
+        {
+          "value": "🦭",
+          "min_api": 30
+        },
+        {
+          "value": "🐟",
+          "min_api": 21
+        },
+        {
+          "value": "🐠",
+          "min_api": 21
+        },
+        {
+          "value": "🐡",
+          "min_api": 21
+        },
+        {
+          "value": "🦈",
+          "min_api": 22
+        },
+        {
+          "value": "🐙",
+          "min_api": 21
+        },
+        {
+          "value": "🐚",
+          "min_api": 21
+        },
+        {
+          "value": "🪸",
+          "min_api": 32
+        },
+        {
+          "value": "🪼",
+          "min_api": 34
+        },
+        {
+          "value": "🐌",
+          "min_api": 21
+        },
+        {
+          "value": "🦋",
+          "min_api": 22
+        },
+        {
+          "value": "🐛",
+          "min_api": 21
+        },
+        {
+          "value": "🐜",
+          "min_api": 21
+        },
+        {
+          "value": "🐝",
+          "min_api": 21
+        },
+        {
+          "value": "🪲",
+          "min_api": 30
+        },
+        {
+          "value": "🐞",
+          "min_api": 21
+        },
+        {
+          "value": "🦗",
+          "min_api": 26
+        },
+        {
+          "value": "🪳",
+          "min_api": 30
+        },
+        {
+          "value": "🕷️",
+          "min_api": 21
+        },
+        {
+          "value": "🕸️",
+          "min_api": 21
+        },
+        {
+          "value": "🦂",
+          "min_api": 21
+        },
+        {
+          "value": "🦟",
+          "min_api": 28
+        },
+        {
+          "value": "🪰",
+          "min_api": 30
+        },
+        {
+          "value": "🪱",
+          "min_api": 30
+        },
+        {
+          "value": "🦠",
+          "min_api": 28
+        },
+        {
+          "value": "💐",
+          "min_api": 21
+        },
+        {
+          "value": "🌸",
+          "min_api": 21
+        },
+        {
+          "value": "💮",
+          "min_api": 21
+        },
+        {
+          "value": "🪷",
+          "min_api": 32
+        },
+        {
+          "value": "🏵️",
+          "min_api": 21
+        },
+        {
+          "value": "🌹",
+          "min_api": 21
+        },
+        {
+          "value": "🥀",
+          "min_api": 22
+        },
+        {
+          "value": "🌺",
+          "min_api": 21
+        },
+        {
+          "value": "🌻",
+          "min_api": 21
+        },
+        {
+          "value": "🌼",
+          "min_api": 21
+        },
+        {
+          "value": "🌷",
+          "min_api": 21
+        },
+        {
+          "value": "🪻",
+          "min_api": 34
+        },
+        {
+          "value": "🌱",
+          "min_api": 21
+        },
+        {
+          "value": "🪴",
+          "min_api": 30
+        },
+        {
+          "value": "🌲",
+          "min_api": 21
+        },
+        {
+          "value": "🌳",
+          "min_api": 21
+        },
+        {
+          "value": "🌴",
+          "min_api": 21
+        },
+        {
+          "value": "🌵",
+          "min_api": 21
+        },
+        {
+          "value": "🌾",
+          "min_api": 21
+        },
+        {
+          "value": "🌿",
+          "min_api": 21
+        },
+        {
+          "value": "☘️",
+          "min_api": 21
+        },
+        {
+          "value": "🍀",
+          "min_api": 21
+        },
+        {
+          "value": "🍁",
+          "min_api": 21
+        },
+        {
+          "value": "🍂",
+          "min_api": 21
+        },
+        {
+          "value": "🍃",
+          "min_api": 21
+        },
+        {
+          "value": "🪹",
+          "min_api": 32
+        },
+        {
+          "value": "🪺",
+          "min_api": 32
+        },
+        {
+          "value": "🍄",
+          "min_api": 21
+        }
+      ]
+    },
+    {
+      "id": "food-drink",
+      "emoji": [
+        {
+          "value": "🍇",
+          "min_api": 21
+        },
+        {
+          "value": "🍈",
+          "min_api": 21
+        },
+        {
+          "value": "🍉",
+          "min_api": 21
+        },
+        {
+          "value": "🍊",
+          "min_api": 21
+        },
+        {
+          "value": "🍋",
+          "min_api": 21
+        },
+        {
+          "value": "🍋‍🟩",
+          "min_api": 34
+        },
+        {
+          "value": "🍌",
+          "min_api": 21
+        },
+        {
+          "value": "🍍",
+          "min_api": 21
+        },
+        {
+          "value": "🥭",
+          "min_api": 28
+        },
+        {
+          "value": "🍎",
+          "min_api": 21
+        },
+        {
+          "value": "🍏",
+          "min_api": 21
+        },
+        {
+          "value": "🍐",
+          "min_api": 21
+        },
+        {
+          "value": "🍑",
+          "min_api": 21
+        },
+        {
+          "value": "🍒",
+          "min_api": 21
+        },
+        {
+          "value": "🍓",
+          "min_api": 21
+        },
+        {
+          "value": "🫐",
+          "min_api": 30
+        },
+        {
+          "value": "🥝",
+          "min_api": 22
+        },
+        {
+          "value": "🍅",
+          "min_api": 21
+        },
+        {
+          "value": "🫒",
+          "min_api": 30
+        },
+        {
+          "value": "🥥",
+          "min_api": 26
+        },
+        {
+          "value": "🥑",
+          "min_api": 22
+        },
+        {
+          "value": "🍆",
+          "min_api": 21
+        },
+        {
+          "value": "🥔",
+          "min_api": 22
+        },
+        {
+          "value": "🥕",
+          "min_api": 22
+        },
+        {
+          "value": "🌽",
+          "min_api": 21
+        },
+        {
+          "value": "🌶️",
+          "min_api": 21
+        },
+        {
+          "value": "🫑",
+          "min_api": 30
+        },
+        {
+          "value": "🥒",
+          "min_api": 22
+        },
+        {
+          "value": "🥬",
+          "min_api": 28
+        },
+        {
+          "value": "🥦",
+          "min_api": 26
+        },
+        {
+          "value": "🧄",
+          "min_api": 29
+        },
+        {
+          "value": "🧅",
+          "min_api": 29
+        },
+        {
+          "value": "🥜",
+          "min_api": 22
+        },
+        {
+          "value": "🫘",
+          "min_api": 32
+        },
+        {
+          "value": "🌰",
+          "min_api": 21
+        },
+        {
+          "value": "🫚",
+          "min_api": 34
+        },
+        {
+          "value": "🫛",
+          "min_api": 34
+        },
+        {
+          "value": "🍄‍🟫",
+          "min_api": 34
+        },
+        {
+          "value": "🍞",
+          "min_api": 21
+        },
+        {
+          "value": "🥐",
+          "min_api": 22
+        },
+        {
+          "value": "🥖",
+          "min_api": 22
+        },
+        {
+          "value": "🫓",
+          "min_api": 30
+        },
+        {
+          "value": "🥨",
+          "min_api": 26
+        },
+        {
+          "value": "🥯",
+          "min_api": 28
+        },
+        {
+          "value": "🥞",
+          "min_api": 22
+        },
+        {
+          "value": "🧇",
+          "min_api": 29
+        },
+        {
+          "value": "🧀",
+          "min_api": 21
+        },
+        {
+          "value": "🍖",
+          "min_api": 21
+        },
+        {
+          "value": "🍗",
+          "min_api": 21
+        },
+        {
+          "value": "🥩",
+          "min_api": 26
+        },
+        {
+          "value": "🥓",
+          "min_api": 22
+        },
+        {
+          "value": "🍔",
+          "min_api": 21
+        },
+        {
+          "value": "🍟",
+          "min_api": 21
+        },
+        {
+          "value": "🍕",
+          "min_api": 21
+        },
+        {
+          "value": "🌭",
+          "min_api": 21
+        },
+        {
+          "value": "🥪",
+          "min_api": 26
+        },
+        {
+          "value": "🌮",
+          "min_api": 21
+        },
+        {
+          "value": "🌯",
+          "min_api": 21
+        },
+        {
+          "value": "🫔",
+          "min_api": 30
+        },
+        {
+          "value": "🥙",
+          "min_api": 22
+        },
+        {
+          "value": "🧆",
+          "min_api": 29
+        },
+        {
+          "value": "🥚",
+          "min_api": 22
+        },
+        {
+          "value": "🍳",
+          "min_api": 21
+        },
+        {
+          "value": "🥘",
+          "min_api": 22
+        },
+        {
+          "value": "🍲",
+          "min_api": 21
+        },
+        {
+          "value": "🫕",
+          "min_api": 30
+        },
+        {
+          "value": "🥣",
+          "min_api": 26
+        },
+        {
+          "value": "🥗",
+          "min_api": 22
+        },
+        {
+          "value": "🍿",
+          "min_api": 21
+        },
+        {
+          "value": "🧈",
+          "min_api": 29
+        },
+        {
+          "value": "🧂",
+          "min_api": 28
+        },
+        {
+          "value": "🥫",
+          "min_api": 26
+        },
+        {
+          "value": "🍱",
+          "min_api": 21
+        },
+        {
+          "value": "🍘",
+          "min_api": 21
+        },
+        {
+          "value": "🍙",
+          "min_api": 21
+        },
+        {
+          "value": "🍚",
+          "min_api": 21
+        },
+        {
+          "value": "🍛",
+          "min_api": 21
+        },
+        {
+          "value": "🍜",
+          "min_api": 21
+        },
+        {
+          "value": "🍝",
+          "min_api": 21
+        },
+        {
+          "value": "🍠",
+          "min_api": 21
+        },
+        {
+          "value": "🍢",
+          "min_api": 21
+        },
+        {
+          "value": "🍣",
+          "min_api": 21
+        },
+        {
+          "value": "🍤",
+          "min_api": 21
+        },
+        {
+          "value": "🍥",
+          "min_api": 21
+        },
+        {
+          "value": "🥮",
+          "min_api": 28
+        },
+        {
+          "value": "🍡",
+          "min_api": 21
+        },
+        {
+          "value": "🥟",
+          "min_api": 26
+        },
+        {
+          "value": "🥠",
+          "min_api": 26
+        },
+        {
+          "value": "🥡",
+          "min_api": 26
+        },
+        {
+          "value": "🦀",
+          "min_api": 21
+        },
+        {
+          "value": "🦞",
+          "min_api": 28
+        },
+        {
+          "value": "🦐",
+          "min_api": 22
+        },
+        {
+          "value": "🦑",
+          "min_api": 22
+        },
+        {
+          "value": "🦪",
+          "min_api": 29
+        },
+        {
+          "value": "🍦",
+          "min_api": 21
+        },
+        {
+          "value": "🍧",
+          "min_api": 21
+        },
+        {
+          "value": "🍨",
+          "min_api": 21
+        },
+        {
+          "value": "🍩",
+          "min_api": 21
+        },
+        {
+          "value": "🍪",
+          "min_api": 21
+        },
+        {
+          "value": "🎂",
+          "min_api": 21
+        },
+        {
+          "value": "🍰",
+          "min_api": 21
+        },
+        {
+          "value": "🧁",
+          "min_api": 28
+        },
+        {
+          "value": "🥧",
+          "min_api": 26
+        },
+        {
+          "value": "🍫",
+          "min_api": 21
+        },
+        {
+          "value": "🍬",
+          "min_api": 21
+        },
+        {
+          "value": "🍭",
+          "min_api": 21
+        },
+        {
+          "value": "🍮",
+          "min_api": 21
+        },
+        {
+          "value": "🍯",
+          "min_api": 21
+        },
+        {
+          "value": "🍼",
+          "min_api": 21
+        },
+        {
+          "value": "🥛",
+          "min_api": 22
+        },
+        {
+          "value": "☕",
+          "min_api": 21
+        },
+        {
+          "value": "🫖",
+          "min_api": 30
+        },
+        {
+          "value": "🍵",
+          "min_api": 21
+        },
+        {
+          "value": "🍶",
+          "min_api": 21
+        },
+        {
+          "value": "🍾",
+          "min_api": 21
+        },
+        {
+          "value": "🍷",
+          "min_api": 21
+        },
+        {
+          "value": "🍸",
+          "min_api": 21
+        },
+        {
+          "value": "🍹",
+          "min_api": 21
+        },
+        {
+          "value": "🍺",
+          "min_api": 21
+        },
+        {
+          "value": "🍻",
+          "min_api": 21
+        },
+        {
+          "value": "🥂",
+          "min_api": 22
+        },
+        {
+          "value": "🥃",
+          "min_api": 22
+        },
+        {
+          "value": "🫗",
+          "min_api": 32
+        },
+        {
+          "value": "🥤",
+          "min_api": 26
+        },
+        {
+          "value": "🧋",
+          "min_api": 30
+        },
+        {
+          "value": "🧃",
+          "min_api": 29
+        },
+        {
+          "value": "🧉",
+          "min_api": 29
+        },
+        {
+          "value": "🧊",
+          "min_api": 29
+        },
+        {
+          "value": "🥢",
+          "min_api": 26
+        },
+        {
+          "value": "🍽️",
+          "min_api": 21
+        },
+        {
+          "value": "🍴",
+          "min_api": 21
+        },
+        {
+          "value": "🥄",
+          "min_api": 22
+        },
+        {
+          "value": "🔪",
+          "min_api": 21
+        },
+        {
+          "value": "🫙",
+          "min_api": 32
+        },
+        {
+          "value": "🏺",
+          "min_api": 21
+        }
+      ]
+    },
+    {
+      "id": "activities",
+      "emoji": [
+        {
+          "value": "🎃",
+          "min_api": 21
+        },
+        {
+          "value": "🎄",
+          "min_api": 21
+        },
+        {
+          "value": "🎆",
+          "min_api": 21
+        },
+        {
+          "value": "🎇",
+          "min_api": 21
+        },
+        {
+          "value": "🧨",
+          "min_api": 28
+        },
+        {
+          "value": "✨",
+          "min_api": 21
+        },
+        {
+          "value": "🎈",
+          "min_api": 21
+        },
+        {
+          "value": "🎉",
+          "min_api": 21
+        },
+        {
+          "value": "🎊",
+          "min_api": 21
+        },
+        {
+          "value": "🎋",
+          "min_api": 21
+        },
+        {
+          "value": "🎍",
+          "min_api": 21
+        },
+        {
+          "value": "🎎",
+          "min_api": 21
+        },
+        {
+          "value": "🎏",
+          "min_api": 21
+        },
+        {
+          "value": "🎐",
+          "min_api": 21
+        },
+        {
+          "value": "🎑",
+          "min_api": 21
+        },
+        {
+          "value": "🧧",
+          "min_api": 28
+        },
+        {
+          "value": "🎀",
+          "min_api": 21
+        },
+        {
+          "value": "🎁",
+          "min_api": 21
+        },
+        {
+          "value": "🎗️",
+          "min_api": 21
+        },
+        {
+          "value": "🎟️",
+          "min_api": 21
+        },
+        {
+          "value": "🎫",
+          "min_api": 21
+        },
+        {
+          "value": "🎖️",
+          "min_api": 21
+        },
+        {
+          "value": "🏆",
+          "min_api": 21
+        },
+        {
+          "value": "🏅",
+          "min_api": 21
+        },
+        {
+          "value": "🥇",
+          "min_api": 22
+        },
+        {
+          "value": "🥈",
+          "min_api": 22
+        },
+        {
+          "value": "🥉",
+          "min_api": 22
+        },
+        {
+          "value": "⚽",
+          "min_api": 21
+        },
+        {
+          "value": "⚾",
+          "min_api": 21
+        },
+        {
+          "value": "🥎",
+          "min_api": 28
+        },
+        {
+          "value": "🏀",
+          "min_api": 21
+        },
+        {
+          "value": "🏐",
+          "min_api": 21
+        },
+        {
+          "value": "🏈",
+          "min_api": 21
+        },
+        {
+          "value": "🏉",
+          "min_api": 21
+        },
+        {
+          "value": "🎾",
+          "min_api": 21
+        },
+        {
+          "value": "🥏",
+          "min_api": 28
+        },
+        {
+          "value": "🎳",
+          "min_api": 21
+        },
+        {
+          "value": "🏏",
+          "min_api": 21
+        },
+        {
+          "value": "🏑",
+          "min_api": 21
+        },
+        {
+          "value": "🏒",
+          "min_api": 21
+        },
+        {
+          "value": "🥍",
+          "min_api": 28
+        },
+        {
+          "value": "🏓",
+          "min_api": 21
+        },
+        {
+          "value": "🏸",
+          "min_api": 21
+        },
+        {
+          "value": "🥊",
+          "min_api": 22
+        },
+        {
+          "value": "🥋",
+          "min_api": 22
+        },
+        {
+          "value": "🥅",
+          "min_api": 22
+        },
+        {
+          "value": "⛳",
+          "min_api": 21
+        },
+        {
+          "value": "⛸️",
+          "min_api": 21
+        },
+        {
+          "value": "🎣",
+          "min_api": 21
+        },
+        {
+          "value": "🤿",
+          "min_api": 29
+        },
+        {
+          "value": "🎽",
+          "min_api": 21
+        },
+        {
+          "value": "🎿",
+          "min_api": 21
+        },
+        {
+          "value": "🛷",
+          "min_api": 26
+        },
+        {
+          "value": "🥌",
+          "min_api": 26
+        },
+        {
+          "value": "🎯",
+          "min_api": 21
+        },
+        {
+          "value": "🪀",
+          "min_api": 29
+        },
+        {
+          "value": "🪁",
+          "min_api": 29
+        },
+        {
+          "value": "🔫",
+          "min_api": 21
+        },
+        {
+          "value": "🎱",
+          "min_api": 21
+        },
+        {
+          "value": "🔮",
+          "min_api": 21
+        },
+        {
+          "value": "🪄",
+          "min_api": 30
+        },
+        {
+          "value": "🎮",
+          "min_api": 21
+        },
+        {
+          "value": "🕹️",
+          "min_api": 21
+        },
+        {
+          "value": "🎰",
+          "min_api": 21
+        },
+        {
+          "value": "🎲",
+          "min_api": 21
+        },
+        {
+          "value": "🧩",
+          "min_api": 28
+        },
+        {
+          "value": "🧸",
+          "min_api": 28
+        },
+        {
+          "value": "🪅",
+          "min_api": 30
+        },
+        {
+          "value": "🪩",
+          "min_api": 32
+        },
+        {
+          "value": "🪆",
+          "min_api": 30
+        },
+        {
+          "value": "♠️",
+          "min_api": 21
+        },
+        {
+          "value": "♥️",
+          "min_api": 21
+        },
+        {
+          "value": "♦️",
+          "min_api": 21
+        },
+        {
+          "value": "♣️",
+          "min_api": 21
+        },
+        {
+          "value": "♟️",
+          "min_api": 28
+        },
+        {
+          "value": "🃏",
+          "min_api": 21
+        },
+        {
+          "value": "🀄",
+          "min_api": 21
+        },
+        {
+          "value": "🎴",
+          "min_api": 21
+        },
+        {
+          "value": "🎭",
+          "min_api": 21
+        },
+        {
+          "value": "🖼️",
+          "min_api": 21
+        },
+        {
+          "value": "🎨",
+          "min_api": 21
+        },
+        {
+          "value": "🧵",
+          "min_api": 28
+        },
+        {
+          "value": "🪡",
+          "min_api": 30
+        },
+        {
+          "value": "🧶",
+          "min_api": 28
+        },
+        {
+          "value": "🪢",
+          "min_api": 30
+        }
+      ]
+    },
+    {
+      "id": "travel-places",
+      "emoji": [
+        {
+          "value": "🌍",
+          "min_api": 21
+        },
+        {
+          "value": "🌎",
+          "min_api": 21
+        },
+        {
+          "value": "🌏",
+          "min_api": 21
+        },
+        {
+          "value": "🌐",
+          "min_api": 21
+        },
+        {
+          "value": "🗺️",
+          "min_api": 21
+        },
+        {
+          "value": "🗾",
+          "min_api": 21
+        },
+        {
+          "value": "🧭",
+          "min_api": 28
+        },
+        {
+          "value": "🏔️",
+          "min_api": 21
+        },
+        {
+          "value": "⛰️",
+          "min_api": 21
+        },
+        {
+          "value": "🌋",
+          "min_api": 21
+        },
+        {
+          "value": "🗻",
+          "min_api": 21
+        },
+        {
+          "value": "🏕️",
+          "min_api": 21
+        },
+        {
+          "value": "🏖️",
+          "min_api": 21
+        },
+        {
+          "value": "🏜️",
+          "min_api": 21
+        },
+        {
+          "value": "🏝️",
+          "min_api": 21
+        },
+        {
+          "value": "🏞️",
+          "min_api": 21
+        },
+        {
+          "value": "🏟️",
+          "min_api": 21
+        },
+        {
+          "value": "🏛️",
+          "min_api": 21
+        },
+        {
+          "value": "🏗️",
+          "min_api": 21
+        },
+        {
+          "value": "🧱",
+          "min_api": 28
+        },
+        {
+          "value": "🪨",
+          "min_api": 30
+        },
+        {
+          "value": "🪵",
+          "min_api": 30
+        },
+        {
+          "value": "🛖",
+          "min_api": 30
+        },
+        {
+          "value": "🏘️",
+          "min_api": 21
+        },
+        {
+          "value": "🏚️",
+          "min_api": 21
+        },
+        {
+          "value": "🏠",
+          "min_api": 21
+        },
+        {
+          "value": "🏡",
+          "min_api": 21
+        },
+        {
+          "value": "🏢",
+          "min_api": 21
+        },
+        {
+          "value": "🏣",
+          "min_api": 21
+        },
+        {
+          "value": "🏤",
+          "min_api": 21
+        },
+        {
+          "value": "🏥",
+          "min_api": 21
+        },
+        {
+          "value": "🏦",
+          "min_api": 21
+        },
+        {
+          "value": "🏨",
+          "min_api": 21
+        },
+        {
+          "value": "🏩",
+          "min_api": 21
+        },
+        {
+          "value": "🏪",
+          "min_api": 21
+        },
+        {
+          "value": "🏫",
+          "min_api": 21
+        },
+        {
+          "value": "🏬",
+          "min_api": 21
+        },
+        {
+          "value": "🏭",
+          "min_api": 21
+        },
+        {
+          "value": "🏯",
+          "min_api": 21
+        },
+        {
+          "value": "🏰",
+          "min_api": 21
+        },
+        {
+          "value": "💒",
+          "min_api": 21
+        },
+        {
+          "value": "🗼",
+          "min_api": 21
+        },
+        {
+          "value": "🗽",
+          "min_api": 21
+        },
+        {
+          "value": "⛪",
+          "min_api": 21
+        },
+        {
+          "value": "🕌",
+          "min_api": 21
+        },
+        {
+          "value": "🛕",
+          "min_api": 29
+        },
+        {
+          "value": "🕍",
+          "min_api": 21
+        },
+        {
+          "value": "⛩️",
+          "min_api": 21
+        },
+        {
+          "value": "🕋",
+          "min_api": 21
+        },
+        {
+          "value": "⛲",
+          "min_api": 21
+        },
+        {
+          "value": "⛺",
+          "min_api": 21
+        },
+        {
+          "value": "🌁",
+          "min_api": 21
+        },
+        {
+          "value": "🌃",
+          "min_api": 21
+        },
+        {
+          "value": "🏙️",
+          "min_api": 21
+        },
+        {
+          "value": "🌄",
+          "min_api": 21
+        },
+        {
+          "value": "🌅",
+          "min_api": 21
+        },
+        {
+          "value": "🌆",
+          "min_api": 21
+        },
+        {
+          "value": "🌇",
+          "min_api": 21
+        },
+        {
+          "value": "🌉",
+          "min_api": 21
+        },
+        {
+          "value": "♨️",
+          "min_api": 21
+        },
+        {
+          "value": "🎠",
+          "min_api": 21
+        },
+        {
+          "value": "🛝",
+          "min_api": 32
+        },
+        {
+          "value": "🎡",
+          "min_api": 21
+        },
+        {
+          "value": "🎢",
+          "min_api": 21
+        },
+        {
+          "value": "💈",
+          "min_api": 21
+        },
+        {
+          "value": "🎪",
+          "min_api": 21
+        },
+        {
+          "value": "🚂",
+          "min_api": 21
+        },
+        {
+          "value": "🚃",
+          "min_api": 21
+        },
+        {
+          "value": "🚄",
+          "min_api": 21
+        },
+        {
+          "value": "🚅",
+          "min_api": 21
+        },
+        {
+          "value": "🚆",
+          "min_api": 21
+        },
+        {
+          "value": "🚇",
+          "min_api": 21
+        },
+        {
+          "value": "🚈",
+          "min_api": 21
+        },
+        {
+          "value": "🚉",
+          "min_api": 21
+        },
+        {
+          "value": "🚊",
+          "min_api": 21
+        },
+        {
+          "value": "🚝",
+          "min_api": 21
+        },
+        {
+          "value": "🚞",
+          "min_api": 21
+        },
+        {
+          "value": "🚋",
+          "min_api": 21
+        },
+        {
+          "value": "🚌",
+          "min_api": 21
+        },
+        {
+          "value": "🚍",
+          "min_api": 21
+        },
+        {
+          "value": "🚎",
+          "min_api": 21
+        },
+        {
+          "value": "🚐",
+          "min_api": 21
+        },
+        {
+          "value": "🚑",
+          "min_api": 21
+        },
+        {
+          "value": "🚒",
+          "min_api": 21
+        },
+        {
+          "value": "🚓",
+          "min_api": 21
+        },
+        {
+          "value": "🚔",
+          "min_api": 21
+        },
+        {
+          "value": "🚕",
+          "min_api": 21
+        },
+        {
+          "value": "🚖",
+          "min_api": 21
+        },
+        {
+          "value": "🚗",
+          "min_api": 21
+        },
+        {
+          "value": "🚘",
+          "min_api": 21
+        },
+        {
+          "value": "🚙",
+          "min_api": 21
+        },
+        {
+          "value": "🛻",
+          "min_api": 30
+        },
+        {
+          "value": "🚚",
+          "min_api": 21
+        },
+        {
+          "value": "🚛",
+          "min_api": 21
+        },
+        {
+          "value": "🚜",
+          "min_api": 21
+        },
+        {
+          "value": "🏎️",
+          "min_api": 21
+        },
+        {
+          "value": "🏍️",
+          "min_api": 21
+        },
+        {
+          "value": "🛵",
+          "min_api": 22
+        },
+        {
+          "value": "🦽",
+          "min_api": 29
+        },
+        {
+          "value": "🦼",
+          "min_api": 29
+        },
+        {
+          "value": "🛺",
+          "min_api": 29
+        },
+        {
+          "value": "🚲",
+          "min_api": 21
+        },
+        {
+          "value": "🛴",
+          "min_api": 22
+        },
+        {
+          "value": "🛹",
+          "min_api": 28
+        },
+        {
+          "value": "🛼",
+          "min_api": 30
+        },
+        {
+          "value": "🚏",
+          "min_api": 21
+        },
+        {
+          "value": "🛣️",
+          "min_api": 21
+        },
+        {
+          "value": "🛤️",
+          "min_api": 21
+        },
+        {
+          "value": "🛢️",
+          "min_api": 21
+        },
+        {
+          "value": "⛽",
+          "min_api": 21
+        },
+        {
+          "value": "🛞",
+          "min_api": 32
+        },
+        {
+          "value": "🚨",
+          "min_api": 21
+        },
+        {
+          "value": "🚥",
+          "min_api": 21
+        },
+        {
+          "value": "🚦",
+          "min_api": 21
+        },
+        {
+          "value": "🛑",
+          "min_api": 22
+        },
+        {
+          "value": "🚧",
+          "min_api": 21
+        },
+        {
+          "value": "⚓",
+          "min_api": 21
+        },
+        {
+          "value": "🛟",
+          "min_api": 32
+        },
+        {
+          "value": "⛵",
+          "min_api": 21
+        },
+        {
+          "value": "🛶",
+          "min_api": 22
+        },
+        {
+          "value": "🚤",
+          "min_api": 21
+        },
+        {
+          "value": "🛳️",
+          "min_api": 21
+        },
+        {
+          "value": "⛴️",
+          "min_api": 21
+        },
+        {
+          "value": "🛥️",
+          "min_api": 21
+        },
+        {
+          "value": "🚢",
+          "min_api": 21
+        },
+        {
+          "value": "✈️",
+          "min_api": 21
+        },
+        {
+          "value": "🛩️",
+          "min_api": 21
+        },
+        {
+          "value": "🛫",
+          "min_api": 21
+        },
+        {
+          "value": "🛬",
+          "min_api": 21
+        },
+        {
+          "value": "🪂",
+          "min_api": 29
+        },
+        {
+          "value": "💺",
+          "min_api": 21
+        },
+        {
+          "value": "🚁",
+          "min_api": 21
+        },
+        {
+          "value": "🚟",
+          "min_api": 21
+        },
+        {
+          "value": "🚠",
+          "min_api": 21
+        },
+        {
+          "value": "🚡",
+          "min_api": 21
+        },
+        {
+          "value": "🛰️",
+          "min_api": 21
+        },
+        {
+          "value": "🚀",
+          "min_api": 21
+        },
+        {
+          "value": "🛸",
+          "min_api": 26
+        },
+        {
+          "value": "🛎️",
+          "min_api": 21
+        },
+        {
+          "value": "🧳",
+          "min_api": 28
+        },
+        {
+          "value": "⌛",
+          "min_api": 21
+        },
+        {
+          "value": "⏳",
+          "min_api": 21
+        },
+        {
+          "value": "⌚",
+          "min_api": 21
+        },
+        {
+          "value": "⏰",
+          "min_api": 21
+        },
+        {
+          "value": "⏱️",
+          "min_api": 21
+        },
+        {
+          "value": "⏲️",
+          "min_api": 21
+        },
+        {
+          "value": "🕰️",
+          "min_api": 21
+        },
+        {
+          "value": "🕛",
+          "min_api": 21
+        },
+        {
+          "value": "🕧",
+          "min_api": 21
+        },
+        {
+          "value": "🕐",
+          "min_api": 21
+        },
+        {
+          "value": "🕜",
+          "min_api": 21
+        },
+        {
+          "value": "🕑",
+          "min_api": 21
+        },
+        {
+          "value": "🕝",
+          "min_api": 21
+        },
+        {
+          "value": "🕒",
+          "min_api": 21
+        },
+        {
+          "value": "🕞",
+          "min_api": 21
+        },
+        {
+          "value": "🕓",
+          "min_api": 21
+        },
+        {
+          "value": "🕟",
+          "min_api": 21
+        },
+        {
+          "value": "🕔",
+          "min_api": 21
+        },
+        {
+          "value": "🕠",
+          "min_api": 21
+        },
+        {
+          "value": "🕕",
+          "min_api": 21
+        },
+        {
+          "value": "🕡",
+          "min_api": 21
+        },
+        {
+          "value": "🕖",
+          "min_api": 21
+        },
+        {
+          "value": "🕢",
+          "min_api": 21
+        },
+        {
+          "value": "🕗",
+          "min_api": 21
+        },
+        {
+          "value": "🕣",
+          "min_api": 21
+        },
+        {
+          "value": "🕘",
+          "min_api": 21
+        },
+        {
+          "value": "🕤",
+          "min_api": 21
+        },
+        {
+          "value": "🕙",
+          "min_api": 21
+        },
+        {
+          "value": "🕥",
+          "min_api": 21
+        },
+        {
+          "value": "🕚",
+          "min_api": 21
+        },
+        {
+          "value": "🕦",
+          "min_api": 21
+        },
+        {
+          "value": "🌑",
+          "min_api": 21
+        },
+        {
+          "value": "🌒",
+          "min_api": 21
+        },
+        {
+          "value": "🌓",
+          "min_api": 21
+        },
+        {
+          "value": "🌔",
+          "min_api": 21
+        },
+        {
+          "value": "🌕",
+          "min_api": 21
+        },
+        {
+          "value": "🌖",
+          "min_api": 21
+        },
+        {
+          "value": "🌗",
+          "min_api": 21
+        },
+        {
+          "value": "🌘",
+          "min_api": 21
+        },
+        {
+          "value": "🌙",
+          "min_api": 21
+        },
+        {
+          "value": "🌚",
+          "min_api": 21
+        },
+        {
+          "value": "🌛",
+          "min_api": 21
+        },
+        {
+          "value": "🌜",
+          "min_api": 21
+        },
+        {
+          "value": "🌡️",
+          "min_api": 21
+        },
+        {
+          "value": "☀️",
+          "min_api": 21
+        },
+        {
+          "value": "🌝",
+          "min_api": 21
+        },
+        {
+          "value": "🌞",
+          "min_api": 21
+        },
+        {
+          "value": "🪐",
+          "min_api": 29
+        },
+        {
+          "value": "⭐",
+          "min_api": 21
+        },
+        {
+          "value": "🌟",
+          "min_api": 21
+        },
+        {
+          "value": "🌠",
+          "min_api": 21
+        },
+        {
+          "value": "🌌",
+          "min_api": 21
+        },
+        {
+          "value": "☁️",
+          "min_api": 21
+        },
+        {
+          "value": "⛅",
+          "min_api": 21
+        },
+        {
+          "value": "⛈️",
+          "min_api": 21
+        },
+        {
+          "value": "🌤️",
+          "min_api": 21
+        },
+        {
+          "value": "🌥️",
+          "min_api": 21
+        },
+        {
+          "value": "🌦️",
+          "min_api": 21
+        },
+        {
+          "value": "🌧️",
+          "min_api": 21
+        },
+        {
+          "value": "🌨️",
+          "min_api": 21
+        },
+        {
+          "value": "🌩️",
+          "min_api": 21
+        },
+        {
+          "value": "🌪️",
+          "min_api": 21
+        },
+        {
+          "value": "🌫️",
+          "min_api": 21
+        },
+        {
+          "value": "🌬️",
+          "min_api": 21
+        },
+        {
+          "value": "🌀",
+          "min_api": 21
+        },
+        {
+          "value": "🌈",
+          "min_api": 21
+        },
+        {
+          "value": "🌂",
+          "min_api": 21
+        },
+        {
+          "value": "☂️",
+          "min_api": 21
+        },
+        {
+          "value": "☔",
+          "min_api": 21
+        },
+        {
+          "value": "⛱️",
+          "min_api": 21
+        },
+        {
+          "value": "⚡",
+          "min_api": 21
+        },
+        {
+          "value": "❄️",
+          "min_api": 21
+        },
+        {
+          "value": "☃️",
+          "min_api": 21
+        },
+        {
+          "value": "⛄",
+          "min_api": 21
+        },
+        {
+          "value": "☄️",
+          "min_api": 21
+        },
+        {
+          "value": "🔥",
+          "min_api": 21
+        },
+        {
+          "value": "💧",
+          "min_api": 21
+        },
+        {
+          "value": "🌊",
+          "min_api": 21
+        }
+      ]
+    },
+    {
+      "id": "objects",
+      "emoji": [
+        {
+          "value": "👓",
+          "min_api": 21
+        },
+        {
+          "value": "🕶️",
+          "min_api": 21
+        },
+        {
+          "value": "🥽",
+          "min_api": 28
+        },
+        {
+          "value": "🥼",
+          "min_api": 28
+        },
+        {
+          "value": "🦺",
+          "min_api": 29
+        },
+        {
+          "value": "👔",
+          "min_api": 21
+        },
+        {
+          "value": "👕",
+          "min_api": 21
+        },
+        {
+          "value": "👖",
+          "min_api": 21
+        },
+        {
+          "value": "🧣",
+          "min_api": 26
+        },
+        {
+          "value": "🧤",
+          "min_api": 26
+        },
+        {
+          "value": "🧥",
+          "min_api": 26
+        },
+        {
+          "value": "🧦",
+          "min_api": 26
+        },
+        {
+          "value": "👗",
+          "min_api": 21
+        },
+        {
+          "value": "👘",
+          "min_api": 21
+        },
+        {
+          "value": "🥻",
+          "min_api": 29
+        },
+        {
+          "value": "🩱",
+          "min_api": 29
+        },
+        {
+          "value": "🩲",
+          "min_api": 29
+        },
+        {
+          "value": "🩳",
+          "min_api": 29
+        },
+        {
+          "value": "👙",
+          "min_api": 21
+        },
+        {
+          "value": "👚",
+          "min_api": 21
+        },
+        {
+          "value": "🪭",
+          "min_api": 34
+        },
+        {
+          "value": "👛",
+          "min_api": 21
+        },
+        {
+          "value": "👜",
+          "min_api": 21
+        },
+        {
+          "value": "👝",
+          "min_api": 21
+        },
+        {
+          "value": "🛍️",
+          "min_api": 21
+        },
+        {
+          "value": "🎒",
+          "min_api": 21
+        },
+        {
+          "value": "🩴",
+          "min_api": 30
+        },
+        {
+          "value": "👞",
+          "min_api": 21
+        },
+        {
+          "value": "👟",
+          "min_api": 21
+        },
+        {
+          "value": "🥾",
+          "min_api": 28
+        },
+        {
+          "value": "🥿",
+          "min_api": 28
+        },
+        {
+          "value": "👠",
+          "min_api": 21
+        },
+        {
+          "value": "👡",
+          "min_api": 21
+        },
+        {
+          "value": "🩰",
+          "min_api": 29
+        },
+        {
+          "value": "👢",
+          "min_api": 21
+        },
+        {
+          "value": "🪮",
+          "min_api": 34
+        },
+        {
+          "value": "👑",
+          "min_api": 21
+        },
+        {
+          "value": "👒",
+          "min_api": 21
+        },
+        {
+          "value": "🎩",
+          "min_api": 21
+        },
+        {
+          "value": "🎓",
+          "min_api": 21
+        },
+        {
+          "value": "🧢",
+          "min_api": 26
+        },
+        {
+          "value": "🪖",
+          "min_api": 30
+        },
+        {
+          "value": "⛑️",
+          "min_api": 21
+        },
+        {
+          "value": "📿",
+          "min_api": 21
+        },
+        {
+          "value": "💄",
+          "min_api": 21
+        },
+        {
+          "value": "💍",
+          "min_api": 21
+        },
+        {
+          "value": "💎",
+          "min_api": 21
+        },
+        {
+          "value": "🔇",
+          "min_api": 21
+        },
+        {
+          "value": "🔈",
+          "min_api": 21
+        },
+        {
+          "value": "🔉",
+          "min_api": 21
+        },
+        {
+          "value": "🔊",
+          "min_api": 21
+        },
+        {
+          "value": "📢",
+          "min_api": 21
+        },
+        {
+          "value": "📣",
+          "min_api": 21
+        },
+        {
+          "value": "📯",
+          "min_api": 21
+        },
+        {
+          "value": "🔔",
+          "min_api": 21
+        },
+        {
+          "value": "🔕",
+          "min_api": 21
+        },
+        {
+          "value": "🎼",
+          "min_api": 21
+        },
+        {
+          "value": "🎵",
+          "min_api": 21
+        },
+        {
+          "value": "🎶",
+          "min_api": 21
+        },
+        {
+          "value": "🎙️",
+          "min_api": 21
+        },
+        {
+          "value": "🎚️",
+          "min_api": 21
+        },
+        {
+          "value": "🎛️",
+          "min_api": 21
+        },
+        {
+          "value": "🎤",
+          "min_api": 21
+        },
+        {
+          "value": "🎧",
+          "min_api": 21
+        },
+        {
+          "value": "📻",
+          "min_api": 21
+        },
+        {
+          "value": "🎷",
+          "min_api": 21
+        },
+        {
+          "value": "🪗",
+          "min_api": 30
+        },
+        {
+          "value": "🎸",
+          "min_api": 21
+        },
+        {
+          "value": "🎹",
+          "min_api": 21
+        },
+        {
+          "value": "🎺",
+          "min_api": 21
+        },
+        {
+          "value": "🎻",
+          "min_api": 21
+        },
+        {
+          "value": "🪕",
+          "min_api": 29
+        },
+        {
+          "value": "🥁",
+          "min_api": 22
+        },
+        {
+          "value": "🪘",
+          "min_api": 30
+        },
+        {
+          "value": "🪇",
+          "min_api": 34
+        },
+        {
+          "value": "🪈",
+          "min_api": 34
+        },
+        {
+          "value": "📱",
+          "min_api": 21
+        },
+        {
+          "value": "📲",
+          "min_api": 21
+        },
+        {
+          "value": "☎️",
+          "min_api": 21
+        },
+        {
+          "value": "📞",
+          "min_api": 21
+        },
+        {
+          "value": "📟",
+          "min_api": 21
+        },
+        {
+          "value": "📠",
+          "min_api": 21
+        },
+        {
+          "value": "🔋",
+          "min_api": 21
+        },
+        {
+          "value": "🪫",
+          "min_api": 32
+        },
+        {
+          "value": "🔌",
+          "min_api": 21
+        },
+        {
+          "value": "💻",
+          "min_api": 21
+        },
+        {
+          "value": "🖥️",
+          "min_api": 21
+        },
+        {
+          "value": "🖨️",
+          "min_api": 21
+        },
+        {
+          "value": "⌨️",
+          "min_api": 21
+        },
+        {
+          "value": "🖱️",
+          "min_api": 21
+        },
+        {
+          "value": "🖲️",
+          "min_api": 21
+        },
+        {
+          "value": "💽",
+          "min_api": 21
+        },
+        {
+          "value": "💾",
+          "min_api": 21
+        },
+        {
+          "value": "💿",
+          "min_api": 21
+        },
+        {
+          "value": "📀",
+          "min_api": 21
+        },
+        {
+          "value": "🧮",
+          "min_api": 28
+        },
+        {
+          "value": "🎥",
+          "min_api": 21
+        },
+        {
+          "value": "🎞️",
+          "min_api": 21
+        },
+        {
+          "value": "📽️",
+          "min_api": 21
+        },
+        {
+          "value": "🎬",
+          "min_api": 21
+        },
+        {
+          "value": "📺",
+          "min_api": 21
+        },
+        {
+          "value": "📷",
+          "min_api": 21
+        },
+        {
+          "value": "📸",
+          "min_api": 21
+        },
+        {
+          "value": "📹",
+          "min_api": 21
+        },
+        {
+          "value": "📼",
+          "min_api": 21
+        },
+        {
+          "value": "🔍",
+          "min_api": 21
+        },
+        {
+          "value": "🔎",
+          "min_api": 21
+        },
+        {
+          "value": "🕯️",
+          "min_api": 21
+        },
+        {
+          "value": "💡",
+          "min_api": 21
+        },
+        {
+          "value": "🔦",
+          "min_api": 21
+        },
+        {
+          "value": "🏮",
+          "min_api": 21
+        },
+        {
+          "value": "🪔",
+          "min_api": 29
+        },
+        {
+          "value": "📔",
+          "min_api": 21
+        },
+        {
+          "value": "📕",
+          "min_api": 21
+        },
+        {
+          "value": "📖",
+          "min_api": 21
+        },
+        {
+          "value": "📗",
+          "min_api": 21
+        },
+        {
+          "value": "📘",
+          "min_api": 21
+        },
+        {
+          "value": "📙",
+          "min_api": 21
+        },
+        {
+          "value": "📚",
+          "min_api": 21
+        },
+        {
+          "value": "📓",
+          "min_api": 21
+        },
+        {
+          "value": "📒",
+          "min_api": 21
+        },
+        {
+          "value": "📃",
+          "min_api": 21
+        },
+        {
+          "value": "📜",
+          "min_api": 21
+        },
+        {
+          "value": "📄",
+          "min_api": 21
+        },
+        {
+          "value": "📰",
+          "min_api": 21
+        },
+        {
+          "value": "🗞️",
+          "min_api": 21
+        },
+        {
+          "value": "📑",
+          "min_api": 21
+        },
+        {
+          "value": "🔖",
+          "min_api": 21
+        },
+        {
+          "value": "🏷️",
+          "min_api": 21
+        },
+        {
+          "value": "💰",
+          "min_api": 21
+        },
+        {
+          "value": "🪙",
+          "min_api": 30
+        },
+        {
+          "value": "💴",
+          "min_api": 21
+        },
+        {
+          "value": "💵",
+          "min_api": 21
+        },
+        {
+          "value": "💶",
+          "min_api": 21
+        },
+        {
+          "value": "💷",
+          "min_api": 21
+        },
+        {
+          "value": "💸",
+          "min_api": 21
+        },
+        {
+          "value": "💳",
+          "min_api": 21
+        },
+        {
+          "value": "🧾",
+          "min_api": 28
+        },
+        {
+          "value": "💹",
+          "min_api": 21
+        },
+        {
+          "value": "✉️",
+          "min_api": 21
+        },
+        {
+          "value": "📧",
+          "min_api": 21
+        },
+        {
+          "value": "📨",
+          "min_api": 21
+        },
+        {
+          "value": "📩",
+          "min_api": 21
+        },
+        {
+          "value": "📤",
+          "min_api": 21
+        },
+        {
+          "value": "📥",
+          "min_api": 21
+        },
+        {
+          "value": "📦",
+          "min_api": 21
+        },
+        {
+          "value": "📫",
+          "min_api": 21
+        },
+        {
+          "value": "📪",
+          "min_api": 21
+        },
+        {
+          "value": "📬",
+          "min_api": 21
+        },
+        {
+          "value": "📭",
+          "min_api": 21
+        },
+        {
+          "value": "📮",
+          "min_api": 21
+        },
+        {
+          "value": "🗳️",
+          "min_api": 21
+        },
+        {
+          "value": "✏️",
+          "min_api": 21
+        },
+        {
+          "value": "✒️",
+          "min_api": 21
+        },
+        {
+          "value": "🖋️",
+          "min_api": 21
+        },
+        {
+          "value": "🖊️",
+          "min_api": 21
+        },
+        {
+          "value": "🖌️",
+          "min_api": 21
+        },
+        {
+          "value": "🖍️",
+          "min_api": 21
+        },
+        {
+          "value": "📝",
+          "min_api": 21
+        },
+        {
+          "value": "💼",
+          "min_api": 21
+        },
+        {
+          "value": "📁",
+          "min_api": 21
+        },
+        {
+          "value": "📂",
+          "min_api": 21
+        },
+        {
+          "value": "🗂️",
+          "min_api": 21
+        },
+        {
+          "value": "📅",
+          "min_api": 21
+        },
+        {
+          "value": "📆",
+          "min_api": 21
+        },
+        {
+          "value": "🗒️",
+          "min_api": 21
+        },
+        {
+          "value": "🗓️",
+          "min_api": 21
+        },
+        {
+          "value": "📇",
+          "min_api": 21
+        },
+        {
+          "value": "📈",
+          "min_api": 21
+        },
+        {
+          "value": "📉",
+          "min_api": 21
+        },
+        {
+          "value": "📊",
+          "min_api": 21
+        },
+        {
+          "value": "📋",
+          "min_api": 21
+        },
+        {
+          "value": "📌",
+          "min_api": 21
+        },
+        {
+          "value": "📍",
+          "min_api": 21
+        },
+        {
+          "value": "📎",
+          "min_api": 21
+        },
+        {
+          "value": "🖇️",
+          "min_api": 21
+        },
+        {
+          "value": "📏",
+          "min_api": 21
+        },
+        {
+          "value": "📐",
+          "min_api": 21
+        },
+        {
+          "value": "✂️",
+          "min_api": 21
+        },
+        {
+          "value": "🗃️",
+          "min_api": 21
+        },
+        {
+          "value": "🗄️",
+          "min_api": 21
+        },
+        {
+          "value": "🗑️",
+          "min_api": 21
+        },
+        {
+          "value": "🔒",
+          "min_api": 21
+        },
+        {
+          "value": "🔓",
+          "min_api": 21
+        },
+        {
+          "value": "🔏",
+          "min_api": 21
+        },
+        {
+          "value": "🔐",
+          "min_api": 21
+        },
+        {
+          "value": "🔑",
+          "min_api": 21
+        },
+        {
+          "value": "🗝️",
+          "min_api": 21
+        },
+        {
+          "value": "🔨",
+          "min_api": 21
+        },
+        {
+          "value": "🪓",
+          "min_api": 29
+        },
+        {
+          "value": "⛏️",
+          "min_api": 21
+        },
+        {
+          "value": "⚒️",
+          "min_api": 21
+        },
+        {
+          "value": "🛠️",
+          "min_api": 21
+        },
+        {
+          "value": "🗡️",
+          "min_api": 21
+        },
+        {
+          "value": "⚔️",
+          "min_api": 21
+        },
+        {
+          "value": "💣",
+          "min_api": 21
+        },
+        {
+          "value": "🪃",
+          "min_api": 30
+        },
+        {
+          "value": "🏹",
+          "min_api": 21
+        },
+        {
+          "value": "🛡️",
+          "min_api": 21
+        },
+        {
+          "value": "🪚",
+          "min_api": 30
+        },
+        {
+          "value": "🔧",
+          "min_api": 21
+        },
+        {
+          "value": "🪛",
+          "min_api": 30
+        },
+        {
+          "value": "🔩",
+          "min_api": 21
+        },
+        {
+          "value": "⚙️",
+          "min_api": 21
+        },
+        {
+          "value": "🗜️",
+          "min_api": 21
+        },
+        {
+          "value": "⚖️",
+          "min_api": 21
+        },
+        {
+          "value": "🦯",
+          "min_api": 29
+        },
+        {
+          "value": "🔗",
+          "min_api": 21
+        },
+        {
+          "value": "⛓️‍💥",
+          "min_api": 34
+        },
+        {
+          "value": "⛓️",
+          "min_api": 21
+        },
+        {
+          "value": "🪝",
+          "min_api": 30
+        },
+        {
+          "value": "🧰",
+          "min_api": 28
+        },
+        {
+          "value": "🧲",
+          "min_api": 28
+        },
+        {
+          "value": "🪜",
+          "min_api": 30
+        },
+        {
+          "value": "⚗️",
+          "min_api": 21
+        },
+        {
+          "value": "🧪",
+          "min_api": 28
+        },
+        {
+          "value": "🧫",
+          "min_api": 28
+        },
+        {
+          "value": "🧬",
+          "min_api": 28
+        },
+        {
+          "value": "🔬",
+          "min_api": 21
+        },
+        {
+          "value": "🔭",
+          "min_api": 21
+        },
+        {
+          "value": "📡",
+          "min_api": 21
+        },
+        {
+          "value": "💉",
+          "min_api": 21
+        },
+        {
+          "value": "🩸",
+          "min_api": 29
+        },
+        {
+          "value": "💊",
+          "min_api": 21
+        },
+        {
+          "value": "🩹",
+          "min_api": 29
+        },
+        {
+          "value": "🩼",
+          "min_api": 32
+        },
+        {
+          "value": "🩺",
+          "min_api": 29
+        },
+        {
+          "value": "🩻",
+          "min_api": 32
+        },
+        {
+          "value": "🚪",
+          "min_api": 21
+        },
+        {
+          "value": "🛗",
+          "min_api": 30
+        },
+        {
+          "value": "🪞",
+          "min_api": 30
+        },
+        {
+          "value": "🪟",
+          "min_api": 30
+        },
+        {
+          "value": "🛏️",
+          "min_api": 21
+        },
+        {
+          "value": "🛋️",
+          "min_api": 21
+        },
+        {
+          "value": "🪑",
+          "min_api": 29
+        },
+        {
+          "value": "🚽",
+          "min_api": 21
+        },
+        {
+          "value": "🪠",
+          "min_api": 30
+        },
+        {
+          "value": "🚿",
+          "min_api": 21
+        },
+        {
+          "value": "🛁",
+          "min_api": 21
+        },
+        {
+          "value": "🪤",
+          "min_api": 30
+        },
+        {
+          "value": "🪒",
+          "min_api": 29
+        },
+        {
+          "value": "🧴",
+          "min_api": 28
+        },
+        {
+          "value": "🧷",
+          "min_api": 28
+        },
+        {
+          "value": "🧹",
+          "min_api": 28
+        },
+        {
+          "value": "🧺",
+          "min_api": 28
+        },
+        {
+          "value": "🧻",
+          "min_api": 28
+        },
+        {
+          "value": "🪣",
+          "min_api": 30
+        },
+        {
+          "value": "🧼",
+          "min_api": 28
+        },
+        {
+          "value": "🫧",
+          "min_api": 32
+        },
+        {
+          "value": "🪥",
+          "min_api": 30
+        },
+        {
+          "value": "🧽",
+          "min_api": 28
+        },
+        {
+          "value": "🧯",
+          "min_api": 28
+        },
+        {
+          "value": "🛒",
+          "min_api": 22
+        },
+        {
+          "value": "🚬",
+          "min_api": 21
+        },
+        {
+          "value": "⚰️",
+          "min_api": 21
+        },
+        {
+          "value": "🪦",
+          "min_api": 30
+        },
+        {
+          "value": "⚱️",
+          "min_api": 21
+        },
+        {
+          "value": "🧿",
+          "min_api": 28
+        },
+        {
+          "value": "🪬",
+          "min_api": 32
+        },
+        {
+          "value": "🗿",
+          "min_api": 21
+        },
+        {
+          "value": "🪧",
+          "min_api": 30
+        },
+        {
+          "value": "🪪",
+          "min_api": 32
+        }
+      ]
+    },
+    {
+      "id": "symbols",
+      "emoji": [
+        {
+          "value": "🏧",
+          "min_api": 21
+        },
+        {
+          "value": "🚮",
+          "min_api": 21
+        },
+        {
+          "value": "🚰",
+          "min_api": 21
+        },
+        {
+          "value": "♿",
+          "min_api": 21
+        },
+        {
+          "value": "🚹",
+          "min_api": 21
+        },
+        {
+          "value": "🚺",
+          "min_api": 21
+        },
+        {
+          "value": "🚻",
+          "min_api": 21
+        },
+        {
+          "value": "🚼",
+          "min_api": 21
+        },
+        {
+          "value": "🚾",
+          "min_api": 21
+        },
+        {
+          "value": "🛂",
+          "min_api": 21
+        },
+        {
+          "value": "🛃",
+          "min_api": 21
+        },
+        {
+          "value": "🛄",
+          "min_api": 21
+        },
+        {
+          "value": "🛅",
+          "min_api": 21
+        },
+        {
+          "value": "⚠️",
+          "min_api": 21
+        },
+        {
+          "value": "🚸",
+          "min_api": 21
+        },
+        {
+          "value": "⛔",
+          "min_api": 21
+        },
+        {
+          "value": "🚫",
+          "min_api": 21
+        },
+        {
+          "value": "🚳",
+          "min_api": 21
+        },
+        {
+          "value": "🚭",
+          "min_api": 21
+        },
+        {
+          "value": "🚯",
+          "min_api": 21
+        },
+        {
+          "value": "🚱",
+          "min_api": 21
+        },
+        {
+          "value": "🚷",
+          "min_api": 21
+        },
+        {
+          "value": "📵",
+          "min_api": 21
+        },
+        {
+          "value": "🔞",
+          "min_api": 21
+        },
+        {
+          "value": "☢️",
+          "min_api": 21
+        },
+        {
+          "value": "☣️",
+          "min_api": 21
+        },
+        {
+          "value": "⬆️",
+          "min_api": 21
+        },
+        {
+          "value": "↗️",
+          "min_api": 21
+        },
+        {
+          "value": "➡️",
+          "min_api": 21
+        },
+        {
+          "value": "↘️",
+          "min_api": 21
+        },
+        {
+          "value": "⬇️",
+          "min_api": 21
+        },
+        {
+          "value": "↙️",
+          "min_api": 21
+        },
+        {
+          "value": "⬅️",
+          "min_api": 21
+        },
+        {
+          "value": "↖️",
+          "min_api": 21
+        },
+        {
+          "value": "↕️",
+          "min_api": 21
+        },
+        {
+          "value": "↔️",
+          "min_api": 21
+        },
+        {
+          "value": "↩️",
+          "min_api": 21
+        },
+        {
+          "value": "↪️",
+          "min_api": 21
+        },
+        {
+          "value": "⤴️",
+          "min_api": 21
+        },
+        {
+          "value": "⤵️",
+          "min_api": 21
+        },
+        {
+          "value": "🔃",
+          "min_api": 21
+        },
+        {
+          "value": "🔄",
+          "min_api": 21
+        },
+        {
+          "value": "🔙",
+          "min_api": 21
+        },
+        {
+          "value": "🔚",
+          "min_api": 21
+        },
+        {
+          "value": "🔛",
+          "min_api": 21
+        },
+        {
+          "value": "🔜",
+          "min_api": 21
+        },
+        {
+          "value": "🔝",
+          "min_api": 21
+        },
+        {
+          "value": "🛐",
+          "min_api": 21
+        },
+        {
+          "value": "⚛️",
+          "min_api": 21
+        },
+        {
+          "value": "🕉️",
+          "min_api": 21
+        },
+        {
+          "value": "✡️",
+          "min_api": 21
+        },
+        {
+          "value": "☸️",
+          "min_api": 21
+        },
+        {
+          "value": "☯️",
+          "min_api": 21
+        },
+        {
+          "value": "✝️",
+          "min_api": 21
+        },
+        {
+          "value": "☦️",
+          "min_api": 21
+        },
+        {
+          "value": "☪️",
+          "min_api": 21
+        },
+        {
+          "value": "☮️",
+          "min_api": 21
+        },
+        {
+          "value": "🕎",
+          "min_api": 21
+        },
+        {
+          "value": "🔯",
+          "min_api": 21
+        },
+        {
+          "value": "🪯",
+          "min_api": 34
+        },
+        {
+          "value": "♈",
+          "min_api": 21
+        },
+        {
+          "value": "♉",
+          "min_api": 21
+        },
+        {
+          "value": "♊",
+          "min_api": 21
+        },
+        {
+          "value": "♋",
+          "min_api": 21
+        },
+        {
+          "value": "♌",
+          "min_api": 21
+        },
+        {
+          "value": "♍",
+          "min_api": 21
+        },
+        {
+          "value": "♎",
+          "min_api": 21
+        },
+        {
+          "value": "♏",
+          "min_api": 21
+        },
+        {
+          "value": "♐",
+          "min_api": 21
+        },
+        {
+          "value": "♑",
+          "min_api": 21
+        },
+        {
+          "value": "♒",
+          "min_api": 21
+        },
+        {
+          "value": "♓",
+          "min_api": 21
+        },
+        {
+          "value": "⛎",
+          "min_api": 21
+        },
+        {
+          "value": "🔀",
+          "min_api": 21
+        },
+        {
+          "value": "🔁",
+          "min_api": 21
+        },
+        {
+          "value": "🔂",
+          "min_api": 21
+        },
+        {
+          "value": "▶️",
+          "min_api": 21
+        },
+        {
+          "value": "⏩",
+          "min_api": 21
+        },
+        {
+          "value": "⏭️",
+          "min_api": 21
+        },
+        {
+          "value": "⏯️",
+          "min_api": 21
+        },
+        {
+          "value": "◀️",
+          "min_api": 21
+        },
+        {
+          "value": "⏪",
+          "min_api": 21
+        },
+        {
+          "value": "⏮️",
+          "min_api": 21
+        },
+        {
+          "value": "🔼",
+          "min_api": 21
+        },
+        {
+          "value": "⏫",
+          "min_api": 21
+        },
+        {
+          "value": "🔽",
+          "min_api": 21
+        },
+        {
+          "value": "⏬",
+          "min_api": 21
+        },
+        {
+          "value": "⏸️",
+          "min_api": 21
+        },
+        {
+          "value": "⏹️",
+          "min_api": 21
+        },
+        {
+          "value": "⏺️",
+          "min_api": 21
+        },
+        {
+          "value": "⏏️",
+          "min_api": 21
+        },
+        {
+          "value": "🎦",
+          "min_api": 21
+        },
+        {
+          "value": "🔅",
+          "min_api": 21
+        },
+        {
+          "value": "🔆",
+          "min_api": 21
+        },
+        {
+          "value": "📶",
+          "min_api": 21
+        },
+        {
+          "value": "🛜",
+          "min_api": 34
+        },
+        {
+          "value": "📳",
+          "min_api": 21
+        },
+        {
+          "value": "📴",
+          "min_api": 21
+        },
+        {
+          "value": "♀️",
+          "min_api": 24
+        },
+        {
+          "value": "♂️",
+          "min_api": 24
+        },
+        {
+          "value": "⚧️",
+          "min_api": 30
+        },
+        {
+          "value": "✖️",
+          "min_api": 21
+        },
+        {
+          "value": "➕",
+          "min_api": 21
+        },
+        {
+          "value": "➖",
+          "min_api": 21
+        },
+        {
+          "value": "➗",
+          "min_api": 21
+        },
+        {
+          "value": "🟰",
+          "min_api": 32
+        },
+        {
+          "value": "♾️",
+          "min_api": 28
+        },
+        {
+          "value": "‼️",
+          "min_api": 21
+        },
+        {
+          "value": "⁉️",
+          "min_api": 21
+        },
+        {
+          "value": "❓",
+          "min_api": 21
+        },
+        {
+          "value": "❔",
+          "min_api": 21
+        },
+        {
+          "value": "❕",
+          "min_api": 21
+        },
+        {
+          "value": "❗",
+          "min_api": 21
+        },
+        {
+          "value": "〰️",
+          "min_api": 21
+        },
+        {
+          "value": "💱",
+          "min_api": 21
+        },
+        {
+          "value": "💲",
+          "min_api": 21
+        },
+        {
+          "value": "⚕️",
+          "min_api": 24
+        },
+        {
+          "value": "♻️",
+          "min_api": 21
+        },
+        {
+          "value": "⚜️",
+          "min_api": 21
+        },
+        {
+          "value": "🔱",
+          "min_api": 21
+        },
+        {
+          "value": "📛",
+          "min_api": 21
+        },
+        {
+          "value": "🔰",
+          "min_api": 21
+        },
+        {
+          "value": "⭕",
+          "min_api": 21
+        },
+        {
+          "value": "✅",
+          "min_api": 21
+        },
+        {
+          "value": "☑️",
+          "min_api": 21
+        },
+        {
+          "value": "✔️",
+          "min_api": 21
+        },
+        {
+          "value": "❌",
+          "min_api": 21
+        },
+        {
+          "value": "❎",
+          "min_api": 21
+        },
+        {
+          "value": "➰",
+          "min_api": 21
+        },
+        {
+          "value": "➿",
+          "min_api": 21
+        },
+        {
+          "value": "〽️",
+          "min_api": 21
+        },
+        {
+          "value": "✳️",
+          "min_api": 21
+        },
+        {
+          "value": "✴️",
+          "min_api": 21
+        },
+        {
+          "value": "❇️",
+          "min_api": 21
+        },
+        {
+          "value": "©️",
+          "min_api": 21
+        },
+        {
+          "value": "®️",
+          "min_api": 21
+        },
+        {
+          "value": "™️",
+          "min_api": 21
+        },
+        {
+          "value": "#️⃣",
+          "min_api": 21
+        },
+        {
+          "value": "*️⃣",
+          "min_api": 21
+        },
+        {
+          "value": "0️⃣",
+          "min_api": 21
+        },
+        {
+          "value": "1️⃣",
+          "min_api": 21
+        },
+        {
+          "value": "2️⃣",
+          "min_api": 21
+        },
+        {
+          "value": "3️⃣",
+          "min_api": 21
+        },
+        {
+          "value": "4️⃣",
+          "min_api": 21
+        },
+        {
+          "value": "5️⃣",
+          "min_api": 21
+        },
+        {
+          "value": "6️⃣",
+          "min_api": 21
+        },
+        {
+          "value": "7️⃣",
+          "min_api": 21
+        },
+        {
+          "value": "8️⃣",
+          "min_api": 21
+        },
+        {
+          "value": "9️⃣",
+          "min_api": 21
+        },
+        {
+          "value": "🔟",
+          "min_api": 21
+        },
+        {
+          "value": "🔠",
+          "min_api": 21
+        },
+        {
+          "value": "🔡",
+          "min_api": 21
+        },
+        {
+          "value": "🔢",
+          "min_api": 21
+        },
+        {
+          "value": "🔣",
+          "min_api": 21
+        },
+        {
+          "value": "🔤",
+          "min_api": 21
+        },
+        {
+          "value": "🅰️",
+          "min_api": 21
+        },
+        {
+          "value": "🆎",
+          "min_api": 21
+        },
+        {
+          "value": "🅱️",
+          "min_api": 21
+        },
+        {
+          "value": "🆑",
+          "min_api": 21
+        },
+        {
+          "value": "🆒",
+          "min_api": 21
+        },
+        {
+          "value": "🆓",
+          "min_api": 21
+        },
+        {
+          "value": "ℹ️",
+          "min_api": 21
+        },
+        {
+          "value": "🆔",
+          "min_api": 21
+        },
+        {
+          "value": "Ⓜ️",
+          "min_api": 21
+        },
+        {
+          "value": "🆕",
+          "min_api": 21
+        },
+        {
+          "value": "🆖",
+          "min_api": 21
+        },
+        {
+          "value": "🅾️",
+          "min_api": 21
+        },
+        {
+          "value": "🆗",
+          "min_api": 21
+        },
+        {
+          "value": "🅿️",
+          "min_api": 21
+        },
+        {
+          "value": "🆘",
+          "min_api": 21
+        },
+        {
+          "value": "🆙",
+          "min_api": 21
+        },
+        {
+          "value": "🆚",
+          "min_api": 21
+        },
+        {
+          "value": "🈁",
+          "min_api": 21
+        },
+        {
+          "value": "🈂️",
+          "min_api": 21
+        },
+        {
+          "value": "🈷️",
+          "min_api": 21
+        },
+        {
+          "value": "🈶",
+          "min_api": 21
+        },
+        {
+          "value": "🈯",
+          "min_api": 21
+        },
+        {
+          "value": "🉐",
+          "min_api": 21
+        },
+        {
+          "value": "🈹",
+          "min_api": 21
+        },
+        {
+          "value": "🈚",
+          "min_api": 21
+        },
+        {
+          "value": "🈲",
+          "min_api": 21
+        },
+        {
+          "value": "🉑",
+          "min_api": 21
+        },
+        {
+          "value": "🈸",
+          "min_api": 21
+        },
+        {
+          "value": "🈴",
+          "min_api": 21
+        },
+        {
+          "value": "🈳",
+          "min_api": 21
+        },
+        {
+          "value": "㊗️",
+          "min_api": 21
+        },
+        {
+          "value": "㊙️",
+          "min_api": 21
+        },
+        {
+          "value": "🈺",
+          "min_api": 21
+        },
+        {
+          "value": "🈵",
+          "min_api": 21
+        },
+        {
+          "value": "🔴",
+          "min_api": 21
+        },
+        {
+          "value": "🟠",
+          "min_api": 29
+        },
+        {
+          "value": "🟡",
+          "min_api": 29
+        },
+        {
+          "value": "🟢",
+          "min_api": 29
+        },
+        {
+          "value": "🔵",
+          "min_api": 21
+        },
+        {
+          "value": "🟣",
+          "min_api": 29
+        },
+        {
+          "value": "🟤",
+          "min_api": 29
+        },
+        {
+          "value": "⚫",
+          "min_api": 21
+        },
+        {
+          "value": "⚪",
+          "min_api": 21
+        },
+        {
+          "value": "🟥",
+          "min_api": 29
+        },
+        {
+          "value": "🟧",
+          "min_api": 29
+        },
+        {
+          "value": "🟨",
+          "min_api": 29
+        },
+        {
+          "value": "🟩",
+          "min_api": 29
+        },
+        {
+          "value": "🟦",
+          "min_api": 29
+        },
+        {
+          "value": "🟪",
+          "min_api": 29
+        },
+        {
+          "value": "🟫",
+          "min_api": 29
+        },
+        {
+          "value": "⬛",
+          "min_api": 21
+        },
+        {
+          "value": "⬜",
+          "min_api": 21
+        },
+        {
+          "value": "◼️",
+          "min_api": 21
+        },
+        {
+          "value": "◻️",
+          "min_api": 21
+        },
+        {
+          "value": "◾",
+          "min_api": 21
+        },
+        {
+          "value": "◽",
+          "min_api": 21
+        },
+        {
+          "value": "▪️",
+          "min_api": 21
+        },
+        {
+          "value": "▫️",
+          "min_api": 21
+        },
+        {
+          "value": "🔶",
+          "min_api": 21
+        },
+        {
+          "value": "🔷",
+          "min_api": 21
+        },
+        {
+          "value": "🔸",
+          "min_api": 21
+        },
+        {
+          "value": "🔹",
+          "min_api": 21
+        },
+        {
+          "value": "🔺",
+          "min_api": 21
+        },
+        {
+          "value": "🔻",
+          "min_api": 21
+        },
+        {
+          "value": "💠",
+          "min_api": 21
+        },
+        {
+          "value": "🔘",
+          "min_api": 21
+        },
+        {
+          "value": "🔳",
+          "min_api": 21
+        },
+        {
+          "value": "🔲",
+          "min_api": 21
+        }
+      ]
+    },
+    {
+      "id": "flags",
+      "emoji": [
+        {
+          "value": "🏁",
+          "min_api": 21
+        },
+        {
+          "value": "🚩",
+          "min_api": 21
+        },
+        {
+          "value": "🎌",
+          "min_api": 21
+        },
+        {
+          "value": "🏴",
+          "min_api": 21
+        },
+        {
+          "value": "🏳️",
+          "min_api": 21
+        },
+        {
+          "value": "🏳️‍🌈",
+          "min_api": 24
+        },
+        {
+          "value": "🏳️‍⚧️",
+          "min_api": 30
+        },
+        {
+          "value": "🏴‍☠️",
+          "min_api": 28
+        },
+        {
+          "value": "🇦🇨",
+          "min_api": 21
+        },
+        {
+          "value": "🇦🇩",
+          "min_api": 21
+        },
+        {
+          "value": "🇦🇪",
+          "min_api": 21
+        },
+        {
+          "value": "🇦🇫",
+          "min_api": 21
+        },
+        {
+          "value": "🇦🇬",
+          "min_api": 21
+        },
+        {
+          "value": "🇦🇮",
+          "min_api": 21
+        },
+        {
+          "value": "🇦🇱",
+          "min_api": 21
+        },
+        {
+          "value": "🇦🇲",
+          "min_api": 21
+        },
+        {
+          "value": "🇦🇴",
+          "min_api": 21
+        },
+        {
+          "value": "🇦🇶",
+          "min_api": 21
+        },
+        {
+          "value": "🇦🇷",
+          "min_api": 21
+        },
+        {
+          "value": "🇦🇸",
+          "min_api": 21
+        },
+        {
+          "value": "🇦🇹",
+          "min_api": 21
+        },
+        {
+          "value": "🇦🇺",
+          "min_api": 21
+        },
+        {
+          "value": "🇦🇼",
+          "min_api": 21
+        },
+        {
+          "value": "🇦🇽",
+          "min_api": 21
+        },
+        {
+          "value": "🇦🇿",
+          "min_api": 21
+        },
+        {
+          "value": "🇧🇦",
+          "min_api": 21
+        },
+        {
+          "value": "🇧🇧",
+          "min_api": 21
+        },
+        {
+          "value": "🇧🇩",
+          "min_api": 21
+        },
+        {
+          "value": "🇧🇪",
+          "min_api": 21
+        },
+        {
+          "value": "🇧🇫",
+          "min_api": 21
+        },
+        {
+          "value": "🇧🇬",
+          "min_api": 21
+        },
+        {
+          "value": "🇧🇭",
+          "min_api": 21
+        },
+        {
+          "value": "🇧🇮",
+          "min_api": 21
+        },
+        {
+          "value": "🇧🇯",
+          "min_api": 21
+        },
+        {
+          "value": "🇧🇱",
+          "min_api": 21
+        },
+        {
+          "value": "🇧🇲",
+          "min_api": 21
+        },
+        {
+          "value": "🇧🇳",
+          "min_api": 21
+        },
+        {
+          "value": "🇧🇴",
+          "min_api": 21
+        },
+        {
+          "value": "🇧🇶",
+          "min_api": 21
+        },
+        {
+          "value": "🇧🇷",
+          "min_api": 21
+        },
+        {
+          "value": "🇧🇸",
+          "min_api": 21
+        },
+        {
+          "value": "🇧🇹",
+          "min_api": 21
+        },
+        {
+          "value": "🇧🇻",
+          "min_api": 21
+        },
+        {
+          "value": "🇧🇼",
+          "min_api": 21
+        },
+        {
+          "value": "🇧🇾",
+          "min_api": 21
+        },
+        {
+          "value": "🇧🇿",
+          "min_api": 21
+        },
+        {
+          "value": "🇨🇦",
+          "min_api": 21
+        },
+        {
+          "value": "🇨🇨",
+          "min_api": 21
+        },
+        {
+          "value": "🇨🇩",
+          "min_api": 21
+        },
+        {
+          "value": "🇨🇫",
+          "min_api": 21
+        },
+        {
+          "value": "🇨🇬",
+          "min_api": 21
+        },
+        {
+          "value": "🇨🇭",
+          "min_api": 21
+        },
+        {
+          "value": "🇨🇮",
+          "min_api": 21
+        },
+        {
+          "value": "🇨🇰",
+          "min_api": 21
+        },
+        {
+          "value": "🇨🇱",
+          "min_api": 21
+        },
+        {
+          "value": "🇨🇲",
+          "min_api": 21
+        },
+        {
+          "value": "🇨🇳",
+          "min_api": 21
+        },
+        {
+          "value": "🇨🇴",
+          "min_api": 21
+        },
+        {
+          "value": "🇨🇵",
+          "min_api": 21
+        },
+        {
+          "value": "🇨🇷",
+          "min_api": 21
+        },
+        {
+          "value": "🇨🇺",
+          "min_api": 21
+        },
+        {
+          "value": "🇨🇻",
+          "min_api": 21
+        },
+        {
+          "value": "🇨🇼",
+          "min_api": 21
+        },
+        {
+          "value": "🇨🇽",
+          "min_api": 21
+        },
+        {
+          "value": "🇨🇾",
+          "min_api": 21
+        },
+        {
+          "value": "🇨🇿",
+          "min_api": 21
+        },
+        {
+          "value": "🇩🇪",
+          "min_api": 21
+        },
+        {
+          "value": "🇩🇬",
+          "min_api": 21
+        },
+        {
+          "value": "🇩🇯",
+          "min_api": 21
+        },
+        {
+          "value": "🇩🇰",
+          "min_api": 21
+        },
+        {
+          "value": "🇩🇲",
+          "min_api": 21
+        },
+        {
+          "value": "🇩🇴",
+          "min_api": 21
+        },
+        {
+          "value": "🇩🇿",
+          "min_api": 21
+        },
+        {
+          "value": "🇪🇦",
+          "min_api": 21
+        },
+        {
+          "value": "🇪🇨",
+          "min_api": 21
+        },
+        {
+          "value": "🇪🇪",
+          "min_api": 21
+        },
+        {
+          "value": "🇪🇬",
+          "min_api": 21
+        },
+        {
+          "value": "🇪🇭",
+          "min_api": 21
+        },
+        {
+          "value": "🇪🇷",
+          "min_api": 21
+        },
+        {
+          "value": "🇪🇸",
+          "min_api": 21
+        },
+        {
+          "value": "🇪🇹",
+          "min_api": 21
+        },
+        {
+          "value": "🇪🇺",
+          "min_api": 21
+        },
+        {
+          "value": "🇫🇮",
+          "min_api": 21
+        },
+        {
+          "value": "🇫🇯",
+          "min_api": 21
+        },
+        {
+          "value": "🇫🇰",
+          "min_api": 21
+        },
+        {
+          "value": "🇫🇲",
+          "min_api": 21
+        },
+        {
+          "value": "🇫🇴",
+          "min_api": 21
+        },
+        {
+          "value": "🇫🇷",
+          "min_api": 21
+        },
+        {
+          "value": "🇬🇦",
+          "min_api": 21
+        },
+        {
+          "value": "🇬🇧",
+          "min_api": 21
+        },
+        {
+          "value": "🇬🇩",
+          "min_api": 21
+        },
+        {
+          "value": "🇬🇪",
+          "min_api": 21
+        },
+        {
+          "value": "🇬🇫",
+          "min_api": 21
+        },
+        {
+          "value": "🇬🇬",
+          "min_api": 21
+        },
+        {
+          "value": "🇬🇭",
+          "min_api": 21
+        },
+        {
+          "value": "🇬🇮",
+          "min_api": 21
+        },
+        {
+          "value": "🇬🇱",
+          "min_api": 21
+        },
+        {
+          "value": "🇬🇲",
+          "min_api": 21
+        },
+        {
+          "value": "🇬🇳",
+          "min_api": 21
+        },
+        {
+          "value": "🇬🇵",
+          "min_api": 21
+        },
+        {
+          "value": "🇬🇶",
+          "min_api": 21
+        },
+        {
+          "value": "🇬🇷",
+          "min_api": 21
+        },
+        {
+          "value": "🇬🇸",
+          "min_api": 21
+        },
+        {
+          "value": "🇬🇹",
+          "min_api": 21
+        },
+        {
+          "value": "🇬🇺",
+          "min_api": 21
+        },
+        {
+          "value": "🇬🇼",
+          "min_api": 21
+        },
+        {
+          "value": "🇬🇾",
+          "min_api": 21
+        },
+        {
+          "value": "🇭🇰",
+          "min_api": 21
+        },
+        {
+          "value": "🇭🇲",
+          "min_api": 21
+        },
+        {
+          "value": "🇭🇳",
+          "min_api": 21
+        },
+        {
+          "value": "🇭🇷",
+          "min_api": 21
+        },
+        {
+          "value": "🇭🇹",
+          "min_api": 21
+        },
+        {
+          "value": "🇭🇺",
+          "min_api": 21
+        },
+        {
+          "value": "🇮🇨",
+          "min_api": 21
+        },
+        {
+          "value": "🇮🇩",
+          "min_api": 21
+        },
+        {
+          "value": "🇮🇪",
+          "min_api": 21
+        },
+        {
+          "value": "🇮🇱",
+          "min_api": 21
+        },
+        {
+          "value": "🇮🇲",
+          "min_api": 21
+        },
+        {
+          "value": "🇮🇳",
+          "min_api": 21
+        },
+        {
+          "value": "🇮🇴",
+          "min_api": 21
+        },
+        {
+          "value": "🇮🇶",
+          "min_api": 21
+        },
+        {
+          "value": "🇮🇷",
+          "min_api": 21
+        },
+        {
+          "value": "🇮🇸",
+          "min_api": 21
+        },
+        {
+          "value": "🇮🇹",
+          "min_api": 21
+        },
+        {
+          "value": "🇯🇪",
+          "min_api": 21
+        },
+        {
+          "value": "🇯🇲",
+          "min_api": 21
+        },
+        {
+          "value": "🇯🇴",
+          "min_api": 21
+        },
+        {
+          "value": "🇯🇵",
+          "min_api": 21
+        },
+        {
+          "value": "🇰🇪",
+          "min_api": 21
+        },
+        {
+          "value": "🇰🇬",
+          "min_api": 21
+        },
+        {
+          "value": "🇰🇭",
+          "min_api": 21
+        },
+        {
+          "value": "🇰🇮",
+          "min_api": 21
+        },
+        {
+          "value": "🇰🇲",
+          "min_api": 21
+        },
+        {
+          "value": "🇰🇳",
+          "min_api": 21
+        },
+        {
+          "value": "🇰🇵",
+          "min_api": 21
+        },
+        {
+          "value": "🇰🇷",
+          "min_api": 21
+        },
+        {
+          "value": "🇰🇼",
+          "min_api": 21
+        },
+        {
+          "value": "🇰🇾",
+          "min_api": 21
+        },
+        {
+          "value": "🇰🇿",
+          "min_api": 21
+        },
+        {
+          "value": "🇱🇦",
+          "min_api": 21
+        },
+        {
+          "value": "🇱🇧",
+          "min_api": 21
+        },
+        {
+          "value": "🇱🇨",
+          "min_api": 21
+        },
+        {
+          "value": "🇱🇮",
+          "min_api": 21
+        },
+        {
+          "value": "🇱🇰",
+          "min_api": 21
+        },
+        {
+          "value": "🇱🇷",
+          "min_api": 21
+        },
+        {
+          "value": "🇱🇸",
+          "min_api": 21
+        },
+        {
+          "value": "🇱🇹",
+          "min_api": 21
+        },
+        {
+          "value": "🇱🇺",
+          "min_api": 21
+        },
+        {
+          "value": "🇱🇻",
+          "min_api": 21
+        },
+        {
+          "value": "🇱🇾",
+          "min_api": 21
+        },
+        {
+          "value": "🇲🇦",
+          "min_api": 21
+        },
+        {
+          "value": "🇲🇨",
+          "min_api": 21
+        },
+        {
+          "value": "🇲🇩",
+          "min_api": 21
+        },
+        {
+          "value": "🇲🇪",
+          "min_api": 21
+        },
+        {
+          "value": "🇲🇫",
+          "min_api": 21
+        },
+        {
+          "value": "🇲🇬",
+          "min_api": 21
+        },
+        {
+          "value": "🇲🇭",
+          "min_api": 21
+        },
+        {
+          "value": "🇲🇰",
+          "min_api": 21
+        },
+        {
+          "value": "🇲🇱",
+          "min_api": 21
+        },
+        {
+          "value": "🇲🇲",
+          "min_api": 21
+        },
+        {
+          "value": "🇲🇳",
+          "min_api": 21
+        },
+        {
+          "value": "🇲🇴",
+          "min_api": 21
+        },
+        {
+          "value": "🇲🇵",
+          "min_api": 21
+        },
+        {
+          "value": "🇲🇶",
+          "min_api": 21
+        },
+        {
+          "value": "🇲🇷",
+          "min_api": 21
+        },
+        {
+          "value": "🇲🇸",
+          "min_api": 21
+        },
+        {
+          "value": "🇲🇹",
+          "min_api": 21
+        },
+        {
+          "value": "🇲🇺",
+          "min_api": 21
+        },
+        {
+          "value": "🇲🇻",
+          "min_api": 21
+        },
+        {
+          "value": "🇲🇼",
+          "min_api": 21
+        },
+        {
+          "value": "🇲🇽",
+          "min_api": 21
+        },
+        {
+          "value": "🇲🇾",
+          "min_api": 21
+        },
+        {
+          "value": "🇲🇿",
+          "min_api": 21
+        },
+        {
+          "value": "🇳🇦",
+          "min_api": 21
+        },
+        {
+          "value": "🇳🇨",
+          "min_api": 21
+        },
+        {
+          "value": "🇳🇪",
+          "min_api": 21
+        },
+        {
+          "value": "🇳🇫",
+          "min_api": 21
+        },
+        {
+          "value": "🇳🇬",
+          "min_api": 21
+        },
+        {
+          "value": "🇳🇮",
+          "min_api": 21
+        },
+        {
+          "value": "🇳🇱",
+          "min_api": 21
+        },
+        {
+          "value": "🇳🇴",
+          "min_api": 21
+        },
+        {
+          "value": "🇳🇵",
+          "min_api": 21
+        },
+        {
+          "value": "🇳🇷",
+          "min_api": 21
+        },
+        {
+          "value": "🇳🇺",
+          "min_api": 21
+        },
+        {
+          "value": "🇳🇿",
+          "min_api": 21
+        },
+        {
+          "value": "🇴🇲",
+          "min_api": 21
+        },
+        {
+          "value": "🇵🇦",
+          "min_api": 21
+        },
+        {
+          "value": "🇵🇪",
+          "min_api": 21
+        },
+        {
+          "value": "🇵🇫",
+          "min_api": 21
+        },
+        {
+          "value": "🇵🇬",
+          "min_api": 21
+        },
+        {
+          "value": "🇵🇭",
+          "min_api": 21
+        },
+        {
+          "value": "🇵🇰",
+          "min_api": 21
+        },
+        {
+          "value": "🇵🇱",
+          "min_api": 21
+        },
+        {
+          "value": "🇵🇲",
+          "min_api": 21
+        },
+        {
+          "value": "🇵🇳",
+          "min_api": 21
+        },
+        {
+          "value": "🇵🇷",
+          "min_api": 21
+        },
+        {
+          "value": "🇵🇸",
+          "min_api": 21
+        },
+        {
+          "value": "🇵🇹",
+          "min_api": 21
+        },
+        {
+          "value": "🇵🇼",
+          "min_api": 21
+        },
+        {
+          "value": "🇵🇾",
+          "min_api": 21
+        },
+        {
+          "value": "🇶🇦",
+          "min_api": 21
+        },
+        {
+          "value": "🇷🇪",
+          "min_api": 21
+        },
+        {
+          "value": "🇷🇴",
+          "min_api": 21
+        },
+        {
+          "value": "🇷🇸",
+          "min_api": 21
+        },
+        {
+          "value": "🇷🇺",
+          "min_api": 21
+        },
+        {
+          "value": "🇷🇼",
+          "min_api": 21
+        },
+        {
+          "value": "🇸🇦",
+          "min_api": 21
+        },
+        {
+          "value": "🇸🇧",
+          "min_api": 21
+        },
+        {
+          "value": "🇸🇨",
+          "min_api": 21
+        },
+        {
+          "value": "🇸🇩",
+          "min_api": 21
+        },
+        {
+          "value": "🇸🇪",
+          "min_api": 21
+        },
+        {
+          "value": "🇸🇬",
+          "min_api": 21
+        },
+        {
+          "value": "🇸🇭",
+          "min_api": 21
+        },
+        {
+          "value": "🇸🇮",
+          "min_api": 21
+        },
+        {
+          "value": "🇸🇯",
+          "min_api": 21
+        },
+        {
+          "value": "🇸🇰",
+          "min_api": 21
+        },
+        {
+          "value": "🇸🇱",
+          "min_api": 21
+        },
+        {
+          "value": "🇸🇲",
+          "min_api": 21
+        },
+        {
+          "value": "🇸🇳",
+          "min_api": 21
+        },
+        {
+          "value": "🇸🇴",
+          "min_api": 21
+        },
+        {
+          "value": "🇸🇷",
+          "min_api": 21
+        },
+        {
+          "value": "🇸🇸",
+          "min_api": 21
+        },
+        {
+          "value": "🇸🇹",
+          "min_api": 21
+        },
+        {
+          "value": "🇸🇻",
+          "min_api": 21
+        },
+        {
+          "value": "🇸🇽",
+          "min_api": 21
+        },
+        {
+          "value": "🇸🇾",
+          "min_api": 21
+        },
+        {
+          "value": "🇸🇿",
+          "min_api": 21
+        },
+        {
+          "value": "🇹🇦",
+          "min_api": 21
+        },
+        {
+          "value": "🇹🇨",
+          "min_api": 21
+        },
+        {
+          "value": "🇹🇩",
+          "min_api": 21
+        },
+        {
+          "value": "🇹🇫",
+          "min_api": 21
+        },
+        {
+          "value": "🇹🇬",
+          "min_api": 21
+        },
+        {
+          "value": "🇹🇭",
+          "min_api": 21
+        },
+        {
+          "value": "🇹🇯",
+          "min_api": 21
+        },
+        {
+          "value": "🇹🇰",
+          "min_api": 21
+        },
+        {
+          "value": "🇹🇱",
+          "min_api": 21
+        },
+        {
+          "value": "🇹🇲",
+          "min_api": 21
+        },
+        {
+          "value": "🇹🇳",
+          "min_api": 21
+        },
+        {
+          "value": "🇹🇴",
+          "min_api": 21
+        },
+        {
+          "value": "🇹🇷",
+          "min_api": 21
+        },
+        {
+          "value": "🇹🇹",
+          "min_api": 21
+        },
+        {
+          "value": "🇹🇻",
+          "min_api": 21
+        },
+        {
+          "value": "🇹🇼",
+          "min_api": 21
+        },
+        {
+          "value": "🇹🇿",
+          "min_api": 21
+        },
+        {
+          "value": "🇺🇦",
+          "min_api": 21
+        },
+        {
+          "value": "🇺🇬",
+          "min_api": 21
+        },
+        {
+          "value": "🇺🇲",
+          "min_api": 21
+        },
+        {
+          "value": "🇺🇳",
+          "min_api": 24
+        },
+        {
+          "value": "🇺🇸",
+          "min_api": 21
+        },
+        {
+          "value": "🇺🇾",
+          "min_api": 21
+        },
+        {
+          "value": "🇺🇿",
+          "min_api": 21
+        },
+        {
+          "value": "🇻🇦",
+          "min_api": 21
+        },
+        {
+          "value": "🇻🇨",
+          "min_api": 21
+        },
+        {
+          "value": "🇻🇪",
+          "min_api": 21
+        },
+        {
+          "value": "🇻🇬",
+          "min_api": 21
+        },
+        {
+          "value": "🇻🇮",
+          "min_api": 21
+        },
+        {
+          "value": "🇻🇳",
+          "min_api": 21
+        },
+        {
+          "value": "🇻🇺",
+          "min_api": 21
+        },
+        {
+          "value": "🇼🇫",
+          "min_api": 21
+        },
+        {
+          "value": "🇼🇸",
+          "min_api": 21
+        },
+        {
+          "value": "🇽🇰",
+          "min_api": 21
+        },
+        {
+          "value": "🇾🇪",
+          "min_api": 21
+        },
+        {
+          "value": "🇾🇹",
+          "min_api": 21
+        },
+        {
+          "value": "🇿🇦",
+          "min_api": 21
+        },
+        {
+          "value": "🇿🇲",
+          "min_api": 21
+        },
+        {
+          "value": "🇿🇼",
+          "min_api": 21
+        },
+        {
+          "value": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+          "min_api": 26
+        },
+        {
+          "value": "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
+          "min_api": 26
+        },
+        {
+          "value": "🏴󠁧󠁢󠁷󠁬󠁳󠁿",
+          "min_api": 26
+        }
+      ]
+    }
+  ]
+}

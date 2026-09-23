@@ -1,0 +1,152 @@
+{
+  "review_version": 1,
+  "review_id": "shipping-profiles-2026-07-15",
+  "reviewed_at": "2026-07-15",
+  "authority": "release",
+  "expected_counts": {
+    "targets": 33,
+    "profiles": 74,
+    "scripts": 9,
+    "selectable": 2
+  },
+  "blocked_reason_by_method": {
+    "direct": "DIRECT_PROFILE_NOT_RELEASE_APPROVED",
+    "roman_phonetic": "ROMAN_ALIAS_NOT_RELEASE_APPROVED",
+    "script_conversion": "SCRIPT_CONVERTER_NOT_RELEASE_APPROVED"
+  },
+  "target_overrides": {
+    "eng": {
+      "language_tag": "en-US"
+    },
+    "npi": {
+      "native_label": "नेपाली",
+      "language_tag": "ne-NP"
+    }
+  },
+  "profile_overrides": {
+    "eng-latn-direct": {
+      "profile_id": "eng-Latn-US",
+      "layout_id": "latn-qwerty-us-v1",
+      "pack_binding": "eng-Latn-US",
+      "selectable": true,
+      "default_enabled": true,
+      "evidence_ids": [
+        "eng-direct-release-2026-07-15"
+      ]
+    },
+    "npi-deva-direct": {
+      "profile_id": "npi-Deva-NP",
+      "layout_id": "deva-nepal-basic-v1",
+      "pack_binding": "npi-Deva-NP",
+      "selectable": true,
+      "default_enabled": true,
+      "evidence_ids": [
+        "npi-direct-release-2026-07-15"
+      ]
+    }
+  },
+  "evidence": [
+    {
+      "evidence_id": "eng-direct-release-2026-07-15",
+      "profile_id": "eng-Latn-US",
+      "status": "passed",
+      "gates": [
+        "layout_implemented",
+        "redistribution_review",
+        "release_pack",
+        "license_notice_ui",
+        "runtime_smoke"
+      ],
+      "layout_binding": {
+        "layout_id": "latn-qwerty-us-v1",
+        "revision": 1,
+        "source_sha256": "fc0ae5dfa73e3d034d1e48303c3d1b26fc493ac45e5d327a0f4f7b2cd1d02be3"
+      },
+      "pack_artifact": {
+        "pack_id": "eng-Latn-US",
+        "file_name": "eng-Latn-US.nkp",
+        "artifact_sha256": "f4b6be4c109846522785628204fd6da98287fb81cb461554369f18993066f68d",
+        "language": "eng",
+        "output_script": "Latn",
+        "artifact_license": "CC-BY-SA-4.0",
+        "release_mode": "release",
+        "candidate_count": 109140,
+        "surface_key_count": 107220,
+        "alias_key_count": 0,
+        "validation": {
+          "query": "hell",
+          "expected_surface": "hello",
+          "benchmark_queries": [
+            "h", "he", "hel", "hell", "HEL", "becau", "governm",
+            "informa", "keybo", "langu"
+          ]
+        }
+      },
+      "artifacts": [
+        {
+          "path": "reports/android-release-packs-v0.md",
+          "sha256": "feb96daa5278df91199a0af5877019fdb2ab734cf2d46b3f3910585c333ca47f"
+        },
+        {
+          "path": "reports/android-ime-composing-v0.md",
+          "sha256": "e712d7cbea735510e46e281f8d7771127b1ff3b1f8a933e48999143205c998bd"
+        },
+        {
+          "path": "reports/android-pack-notices-v0.md",
+          "sha256": "3b8052ffc11d6a64c5345784af8601d2165fd3f66767108cce3200d13312a2d0"
+        }
+      ]
+    },
+    {
+      "evidence_id": "npi-direct-release-2026-07-15",
+      "profile_id": "npi-Deva-NP",
+      "status": "passed",
+      "gates": [
+        "layout_implemented",
+        "redistribution_review",
+        "release_pack",
+        "license_notice_ui",
+        "runtime_smoke"
+      ],
+      "layout_binding": {
+        "layout_id": "deva-nepal-basic-v1",
+        "revision": 1,
+        "source_sha256": "bca603b0a101f8c4be47fd6625c4e0bd0c7e7f1370f88c0e4028450b5ccbcade"
+      },
+      "pack_artifact": {
+        "pack_id": "npi-Deva-NP",
+        "file_name": "npi-Deva-NP.nkp",
+        "artifact_sha256": "a0cd1cb8f8cfafa9aea8b04a246fe914bd208dafcd1f849d1e9989428305d933",
+        "language": "npi",
+        "output_script": "Deva",
+        "artifact_license": "CC-BY-SA-4.0",
+        "release_mode": "release",
+        "candidate_count": 80969,
+        "surface_key_count": 80969,
+        "alias_key_count": 0,
+        "validation": {
+          "query": "भाष",
+          "expected_surface": "भाषा",
+          "benchmark_queries": [
+            "न", "ने", "नेपा", "नमस्", "भ", "भा", "भाष", "धन्य",
+            "राम्", "शिक्", "स्वास्"
+          ]
+        }
+      },
+      "artifacts": [
+        {
+          "path": "reports/android-release-packs-v0.md",
+          "sha256": "feb96daa5278df91199a0af5877019fdb2ab734cf2d46b3f3910585c333ca47f"
+        },
+        {
+          "path": "reports/android-ime-composing-v0.md",
+          "sha256": "e712d7cbea735510e46e281f8d7771127b1ff3b1f8a933e48999143205c998bd"
+        },
+        {
+          "path": "reports/android-pack-notices-v0.md",
+          "sha256": "3b8052ffc11d6a64c5345784af8601d2165fd3f66767108cce3200d13312a2d0"
+        }
+      ]
+    }
+  ]
+}

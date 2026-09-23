@@ -1,0 +1,117 @@
+{
+  "adapter": {
+    "input_argument": "apk_tsv",
+    "module": "tools.build_sunuwar_internal_source",
+    "name": "build_sunuwar_internal_source",
+    "path": "tools/build_sunuwar_internal_source.py",
+    "sha256": "213f8faaa76683d4e16218ad31462b6d7286c4bef720415ad69030bcd2f1e70e",
+    "version": 1
+  },
+  "evidence": {
+    "remaining_production_gates": [
+      "accessibility_review",
+      "glyph_rendering",
+      "native_speaker_review",
+      "physical_device_runtime",
+      "quality_evaluation"
+    ],
+    "report_id": "sunuwar-internal-pack-v0",
+    "report_version": 1
+  },
+  "layout": {
+    "base_path": "layouts/internal/src/deva-nepal-basic-v1.json",
+    "base_sha256": "5cefdc0e916eaa9ee64acafddcadad4c9d32c8adbaff69cb2d8f181655280e4f",
+    "display_name": "Devanagari Extended (Nepal phone)",
+    "extension_layers": [
+      "base",
+      "shift"
+    ],
+    "extension_row": [
+      {
+        "content_description": "Devanagari vowel sign short E",
+        "kind": "text",
+        "label": "◌ॆ",
+        "text": "ॆ"
+      },
+      {
+        "content_description": "Devanagari sign nukta",
+        "kind": "text",
+        "label": "◌़",
+        "text": "़"
+      },
+      {
+        "content_description": "Devanagari glottal stop",
+        "kind": "text",
+        "label": "ॽ",
+        "text": "ॽ"
+      },
+      {
+        "content_description": "Orthographic word mark",
+        "kind": "orthographic_word",
+        "label": "‘",
+        "text": "‘"
+      },
+      {
+        "content_description": "Devanagari zero width joiner",
+        "kind": "deva_conjunct_joiner",
+        "label": "ZWJ",
+        "text": "‍"
+      },
+      {
+        "content_description": "Devanagari zero width non-joiner",
+        "kind": "deva_conjunct_joiner",
+        "label": "ZWNJ",
+        "text": "‌"
+      }
+    ],
+    "layout_id": "deva-nepal-extended-v1",
+    "license_notice_path": "layouts/internal/notices/xkb-data-2.41-2ubuntu1.1-deva-extended.copyright",
+    "operation": "insert_row_before_actions",
+    "provenance": [
+      {
+        "kind": "adapted",
+        "note": "The reviewed internal Nepali basic phone rows, actions, symbols, numeric fallback, and profile-bound labels are preserved exactly.",
+        "revision": "1",
+        "sha256": "5cefdc0e916eaa9ee64acafddcadad4c9d32c8adbaff69cb2d8f181655280e4f",
+        "source": "layouts/internal/src/deva-nepal-basic-v1.json"
+      },
+      {
+        "kind": "project_authored",
+        "note": "Adds the six explicit Devanagari cohort inputs documented by the pinned dictionary inventory, with closed input policies for the orthographic mark and conjunct joiners.",
+        "revision": "v1",
+        "sha256": "d87ceb087ae122238b87a23c33daf677edd10c96a9743dd10b617e3521f799e5",
+        "source": "reports/dictionary-resource-inventory-v1.md"
+      }
+    ],
+    "revision": 1,
+    "source_sha256": "ce8f8420c2d685e76a8ac44e8ba9bb44f73d7f17bcfa78e9617863e993734619"
+  },
+  "pack": {
+    "artifact_license": "LicenseRef-Internal",
+    "file_name": "suz-Deva-NP.nkp",
+    "language": "suz",
+    "output_script": "Deva",
+    "pack_id": "suz-Deva-NP"
+  },
+  "paths": {
+    "evidence_output": "reports/sunuwar-internal-pack-v0.json",
+    "layout_source": "layouts/internal/src/deva-nepal-extended-v1.json",
+    "queries": "catalog/sunuwar-internal-prefixes-v0.json",
+    "resource_catalog": "catalog/resources.json",
+    "review": "catalog/internal-profile-review.json"
+  },
+  "profile": {
+    "default_enabled": false,
+    "input_method_id": "suz-deva-direct",
+    "target_id": "suz"
+  },
+  "source": {
+    "data_version": "1.0.0",
+    "expected_data_rows": 14426,
+    "file_name": "suz_nep_lexicon.tsv",
+    "max_suggestions": 8,
+    "resource_id": "suz-apk",
+    "sha256": "2297312b4ac168c6384ba056e4776af81b4d8e50638c673f4740e9561703f104"
+  },
+  "spec_version": 1
+}

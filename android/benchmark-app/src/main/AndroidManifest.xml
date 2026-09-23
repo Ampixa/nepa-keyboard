@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <application
+        android:allowBackup="false"
+        android:label="Nepa Pack Benchmark"
+        android:supportsRtl="true"
+        android:theme="@android:style/Theme.Material.Light.NoActionBar" />
+
+    <instrumentation
+        android:name=".PrefixBenchmarkInstrumentation"
+        android:functionalTest="true"
+        android:handleProfiling="false"
+        android:label="Nepa prefix benchmark"
+        android:targetPackage="com.ampixa.nepakeyboard.benchmark" />
+
+    <instrumentation
+        android:name=".ReleasePrefixBenchmarkInstrumentation"
+        android:functionalTest="true"
+        android:handleProfiling="false"
+        android:label="Nepa release prefix benchmark"
+        android:targetPackage="com.ampixa.nepakeyboard.benchmark" />
+
+    <instrumentation
+        android:name=".InternalCatalogPrefixBenchmarkInstrumentation"
+        android:functionalTest="true"
+        android:handleProfiling="false"
+        android:label="Nepa internal catalog prefix benchmark"
+        android:targetPackage="com.ampixa.nepakeyboard.benchmark" />
+
+    <instrumentation
+        android:name=".ConversionCatalogBenchmarkInstrumentation"
+        android:functionalTest="true"
+        android:handleProfiling="false"
+        android:label="Nepa conversion catalog benchmark"
+        android:targetPackage="com.ampixa.nepakeyboard.benchmark" />
+
+    <instrumentation
+        android:name=".RomanCandidatePrefixBenchmarkInstrumentation"
+        android:functionalTest="true"
+        android:handleProfiling="false"
+        android:label="Nepa Roman candidate prefix benchmark"
+        android:targetPackage="com.ampixa.nepakeyboard.benchmark" />
+
+    <instrumentation
+        android:name=".NkpBundleCorruptionInstrumentation"
+        android:functionalTest="true"
+        android:handleProfiling="false"
+        android:label="Nepa v0 bundle corruption harness"
+        android:targetPackage="com.ampixa.nepakeyboard.benchmark" />
+</manifest>

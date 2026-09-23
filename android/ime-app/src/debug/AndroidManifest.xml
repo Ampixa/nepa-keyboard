@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <application>
+        <activity
+            android:name=".ImePreviewActivity"
+            android:exported="true"
+            android:label="Nepa Keyboard preview" />
+    </application>
+
+    <instrumentation
+        android:name=".ImeSmokeInstrumentation"
+        android:label="Nepa Keyboard IME smoke tests"
+        android:targetPackage="com.ampixa.nepakeyboard.ime" />
+
+    <instrumentation
+        android:name=".DecoderContractInstrumentation"
+        android:label="Nepa Keyboard decoder contract tests"
+        android:targetPackage="com.ampixa.nepakeyboard.ime" />
+
+    <instrumentation
+        android:name=".NcmConversionInstrumentation"
+        android:label="Nepa Keyboard NCM conversion tests"
+        android:targetPackage="com.ampixa.nepakeyboard.ime" />
+
+    <instrumentation
+        android:name=".SpatialDecoderBenchmarkInstrumentation"
+        android:functionalTest="true"
+        android:handleProfiling="false"
+        android:label="Nepa Keyboard spatial decoder benchmark"
+        android:targetPackage="com.ampixa.nepakeyboard.ime" />
+</manifest>
