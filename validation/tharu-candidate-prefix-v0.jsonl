@@ -1,0 +1,6 @@
+{"case_id":"thq-basic","profile_id":"thq-Deva-NP","pack_id":"thq-Deva-NP","index":"surface","query":"अइठ","expected_surface":"अइठल","max_rank":1,"review_status":"pending_speaker_review"}
+{"case_id":"thq-conjunct-zwj","profile_id":"thq-Deva-NP","pack_id":"thq-Deva-NP","index":"surface","query":"अनचक्\u200d","expected_surface":"अनचक्\u200dते","max_rank":1,"review_status":"pending_speaker_review"}
+{"case_id":"thq-conjunct-zwnj","profile_id":"thq-Deva-NP","pack_id":"thq-Deva-NP","index":"surface","query":"अनिवार्\u200c","expected_surface":"अनिवार्\u200cय","max_rank":1,"review_status":"pending_speaker_review"}
+{"case_id":"thq-hyphen","profile_id":"thq-Deva-NP","pack_id":"thq-Deva-NP","index":"surface","query":"अकल-","expected_surface":"अकल-झुकल","max_rank":1,"review_status":"pending_speaker_review"}
+{"case_id":"thq-phrase","profile_id":"thq-Deva-NP","pack_id":"thq-Deva-NP","index":"surface","query":"अधिया ","expected_surface":"अधिया भाग","max_rank":1,"review_status":"pending_speaker_review"}
+{"case_id":"thq-slash","profile_id":"thq-Deva-NP","pack_id":"thq-Deva-NP","index":"surface","query":"अन्ते/","expected_surface":"अन्ते/खतम","max_rank":1,"review_status":"pending_speaker_review"}
