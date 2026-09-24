@@ -11,6 +11,9 @@ from unittest import mock
 from tools import build_sherpa_candidate_source as adapter
 
 
+ROOT = Path(__file__).resolve().parents[1]
+
+
 class SherpaCandidateSourceTest(unittest.TestCase):
     def test_token_boundaries_and_conjunct_joiners(self) -> None:
         tokens = list(adapter._tokens("क्‍योक, नामा! abc १२ अङ"))
@@ -32,6 +35,32 @@ class SherpaCandidateSourceTest(unittest.TestCase):
         }
         with self.assertRaisesRegex(adapter.AdapterError, "escapes pinned source root"):
             adapter._relative_chapter_path(row)
+
+    def test_research_layout_covers_every_accepted_scalar(self) -> None:
+        inventory = json.loads((ROOT / "reports/sherpa-scalar-inventory-v0.json").read_text())
+        required = {
+            chr(int(row["codepoint"][2:], 16)) for row in inventory["scalars"]
+        }
+        basic = json.loads((ROOT / "layouts/internal/src/deva-nepal-basic-v1.json").read_text())
+        candidate = json.loads((ROOT / "layouts/research/deva-nepal-sherpa-v1.json").read_text())
+
+        def emitted(layout: dict[str, object]) -> set[str]:
+            result: set[str] = set()
+            for layer in layout["layers"].values():
+                for row in layer["rows"]:
+                    for key in row:
+                        result.update(key if isinstance(key, str) else key.get("text", ""))
+            return result
+
+        self.assertEqual(required - emitted(basic), set("इईए\u200c\u200d"))
+        self.assertEqual(required - emitted(candidate), set())
+        for layer in ("base", "shift"):
+            row = candidate["layers"][layer]["rows"][3]
+            self.assertEqual(row[:3], ["इ", "ई", "ए"])
+            self.assertEqual(
+                [(key["kind"], key["text"]) for key in row[3:]],
+                [("deva_conjunct_joiner", "\u200d"), ("deva_conjunct_joiner", "\u200c")],
+            )
 
     def test_pinned_snapshot_build_and_chapter_tamper(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
