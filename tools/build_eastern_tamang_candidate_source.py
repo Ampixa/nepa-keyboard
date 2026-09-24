@@ -193,14 +193,14 @@ def build_candidate_source(args: argparse.Namespace) -> dict[str, object]:
         "allowed_format_characters": [],
         "artifact_license": "LicenseRef-Internal",
         "data_version": args.data_version,
-        "display_name": "Eastern Tamang",
+        "display_name": "Tamang App Candidate",
         "language": "taj",
         "max_suggestions": args.max_suggestions,
         "output_script": "Deva",
         "pack_id": PACK_ID,
         "region": "NP",
         "surface_lookup_normalization": "NFC",
-        "variety": "Eastern Tamang",
+        "variety": "Unconfirmed Tamang app variety",
     }
     adapter_sha256 = hashlib.sha256(Path(__file__).read_bytes()).hexdigest()
     report: dict[str, object] = {

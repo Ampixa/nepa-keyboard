@@ -13,7 +13,7 @@ adapter="$work/build_eastern_tamang_candidate_source.py"
 queries="$work/eastern-tamang-candidate-prefix-v0.jsonl"
 python="$repo/.venv/bin/python"
 expected_raw=47d5c62b43b627d4ca29dc303907412dc2868623e3a3a258c13415c0456b96dd
-expected_adapter=a62594fabcd8803e4cd2b3dfed26dd4a9e10c5e55645068210a5087d5c62461d
+expected_adapter=2ceab1441c87105f8d56e9d9a5c32ee66870b72a738e603157932c65db77ff83
 expected_queries=7178ce48fe5e43e0dadffa2c699ab0d4079a52e336c42d4fb8b43162b76b92d7
 
 if [[ "$(uname -s)" != Linux || "$(hostname -s)" != cdjk ]]; then
