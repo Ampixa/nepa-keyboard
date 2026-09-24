@@ -35,6 +35,9 @@ class RelockValidationRunnerTest(unittest.TestCase):
             self.assertIn("test_bantawa_internal_source.py", names)
             self.assertIn("test_western_magar_internal_source.py", names)
             self.assertIn("test_relock_validation_runner.py", names)
+            self.assertIn("test_key_alternates.py", names)
+            self.assertIn("test_transliteration_profiles.py", names)
+            self.assertIn("test_finalize_limbu_internal_milestone.py", names)
             self.assertEqual(len(names), len(block.splitlines()))
 
         inventory_loop = (
@@ -86,6 +89,40 @@ class RelockValidationRunnerTest(unittest.TestCase):
             '  "$evidence/input-source-sha256.after.txt"',
             self.runner,
         )
+
+    def test_generated_android_assets_are_transaction_outputs(self) -> None:
+        output_paths = (
+            "android/ime-app/src/main/assets/nepa-layouts/key-alternates-v1.json",
+            "android/ime-app/src/main/assets/nepa-translit/profiles-v1.json",
+        )
+        tracked_blocks = re.findall(
+            r"^\s*tracked_paths=\(\n(.*?)^\s*\)$",
+            self.runner,
+            re.MULTILINE | re.DOTALL,
+        )
+        self.assertEqual(len(tracked_blocks), 2)
+        for block in tracked_blocks:
+            for path in output_paths:
+                self.assertIn(path, block)
+        for generator in (
+            "tools/build_key_alternates.py",
+            "tools/build_transliteration_profiles.py",
+        ):
+            self.assertIn(generator, self.runner)
+        for reviewed_input in (
+            "catalog/key-alternates-v0.json",
+            "catalog/transliteration-profiles-v0.json",
+            "append_directory_tree_inputs catalog/transliteration",
+        ):
+            self.assertIn(reviewed_input, self.runner)
+        self.assertIn('if [[ "$relative_path" == "$tracked" ]]; then', self.runner)
+        self.assertIn("continue 2", self.runner)
+        self.assertIn('"$evidence/a/key-alternates-v1.json"', self.runner)
+        self.assertIn('"$evidence/b/key-alternates-v1.json"', self.runner)
+        self.assertIn('"$evidence/a/transliteration-profiles-v1.json"', self.runner)
+        self.assertIn('"$evidence/b/transliteration-profiles-v1.json"', self.runner)
+        self.assertIn('--check >"$evidence/key-alternates-check.log"', self.runner)
+        self.assertIn('--check >"$evidence/transliteration-profiles-check.log"', self.runner)
 
     def test_converter_schema_and_two_run_artifact_are_exactly_pinned(self) -> None:
         self.assertIn("assert_conversion_schema_contract", self.runner)

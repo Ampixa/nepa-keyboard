@@ -38,6 +38,8 @@ tracked_paths=(
   catalog/internal-profiles.lock.json
   layouts/internal/layouts-v1.lock.json
   android/ime-app/build.gradle.kts
+  android/ime-app/src/main/assets/nepa-layouts/key-alternates-v1.json
+  android/ime-app/src/main/assets/nepa-translit/profiles-v1.json
 )
 if [[ "$scope" == all ]]; then
   tracked_paths=(
@@ -46,6 +48,8 @@ if [[ "$scope" == all ]]; then
     layouts/layouts-v1.lock.json
     layouts/internal/layouts-v1.lock.json
     android/ime-app/build.gradle.kts
+    android/ime-app/src/main/assets/nepa-layouts/key-alternates-v1.json
+    android/ime-app/src/main/assets/nepa-translit/profiles-v1.json
   )
 fi
 
@@ -85,6 +89,9 @@ test_files=(
   test_internal_android_scope.py
   test_android_conversion_substrate.py
   test_relock_validation_runner.py
+  test_key_alternates.py
+  test_transliteration_profiles.py
+  test_finalize_limbu_internal_milestone.py
 )
 if [[ "$scope" == all ]]; then
   test_files=(
@@ -124,6 +131,9 @@ if [[ "$scope" == all ]]; then
     test_internal_android_scope.py
     test_android_conversion_substrate.py
     test_relock_validation_runner.py
+    test_key_alternates.py
+    test_transliteration_profiles.py
+    test_finalize_limbu_internal_milestone.py
   )
 fi
 
@@ -295,6 +305,10 @@ static_source_inputs=(
   schemas/layout-native-review-v1.schema.json
   tools/build_shipping_profile_catalog.py
   tools/build_keyboard_layouts.py
+  tools/build_key_alternates.py
+  tools/build_transliteration_profiles.py
+  catalog/key-alternates-v0.json
+  catalog/transliteration-profiles-v0.json
   tools/build_khaling_internal_source.py
   tools/build_dumi_internal_source.py
   tools/sil_apk_jsonl_internal_source.py
@@ -395,13 +409,21 @@ append_directory_inputs() {
 append_directory_tree_inputs() {
   local relative_directory="$1"
   local absolute_path
+  local relative_path
+  local tracked
   [[ -d "$repo/$relative_directory" && ! -L "$repo/$relative_directory" ]]
   if find "$repo/$relative_directory" -type l -print -quit | grep -q .; then
     echo "source directory tree contains a symbolic link: $relative_directory" >&2
     exit 1
   fi
   while IFS= read -r -d '' absolute_path; do
-    source_inputs+=("${absolute_path#"$repo/"}")
+    relative_path="${absolute_path#"$repo/"}"
+    for tracked in "${tracked_paths[@]}"; do
+      if [[ "$relative_path" == "$tracked" ]]; then
+        continue 2
+      fi
+    done
+    source_inputs+=("$relative_path")
   done < <(
     LC_ALL=C find "$repo/$relative_directory" -type f -size +0c -print0 \
       | LC_ALL=C sort -z
@@ -431,6 +453,7 @@ build_source_inputs() {
   append_directory_inputs layouts/research
   append_directory_inputs layouts/reviews
   append_directory_tree_inputs android/ime-app/src
+  append_directory_tree_inputs catalog/transliteration
   append_directory_tree_inputs android/benchmark-app/src/main
   append_directory_tree_inputs android/pack-runtime/src/main
   append_directory_tree_inputs android/conversion-runtime/src/main
@@ -1063,6 +1086,41 @@ run_python tools/build_keyboard_layouts.py \
   --output layouts/internal/layouts-v1.lock.json \
   --check >"$evidence/internal-layout-check.log" 2>&1
 
+for run in a b; do
+  run_python tools/build_key_alternates.py \
+    --source catalog/key-alternates-v0.json \
+    --layout-lock layouts/internal/layouts-v1.lock.json \
+    --output "$evidence/$run/key-alternates-v1.json" \
+    >"$evidence/$run/key-alternates-build.log" 2>&1
+  run_python tools/build_transliteration_profiles.py \
+    --source catalog/transliteration-profiles-v0.json \
+    --profile-lock catalog/internal-profiles.lock.json \
+    --asset-directory android/ime-app/src/main/assets/nepa-translit \
+    --map-source-directory catalog/transliteration \
+    --output "$evidence/$run/transliteration-profiles-v1.json" \
+    >"$evidence/$run/transliteration-profiles-build.log" 2>&1
+done
+cmp "$evidence/a/key-alternates-v1.json" \
+  "$evidence/b/key-alternates-v1.json"
+cmp "$evidence/a/transliteration-profiles-v1.json" \
+  "$evidence/b/transliteration-profiles-v1.json"
+install -m 0644 "$evidence/a/key-alternates-v1.json" \
+  android/ime-app/src/main/assets/nepa-layouts/key-alternates-v1.json
+install -m 0644 "$evidence/a/transliteration-profiles-v1.json" \
+  android/ime-app/src/main/assets/nepa-translit/profiles-v1.json
+run_python tools/build_key_alternates.py \
+  --source catalog/key-alternates-v0.json \
+  --layout-lock layouts/internal/layouts-v1.lock.json \
+  --output android/ime-app/src/main/assets/nepa-layouts/key-alternates-v1.json \
+  --check >"$evidence/key-alternates-check.log" 2>&1
+run_python tools/build_transliteration_profiles.py \
+  --source catalog/transliteration-profiles-v0.json \
+  --profile-lock catalog/internal-profiles.lock.json \
+  --asset-directory android/ime-app/src/main/assets/nepa-translit \
+  --map-source-directory catalog/transliteration \
+  --output android/ime-app/src/main/assets/nepa-translit/profiles-v1.json \
+  --check >"$evidence/transliteration-profiles-check.log" 2>&1
+
 run_python tools/update_android_lock_pins.py \
   --repository-root "$repo" \
   --scope "$scope" \
@@ -1138,6 +1196,10 @@ cmp "$evidence/input-source-sha256.txt" \
 
 cmp "$evidence/a/internal-profiles.lock.json" "$internal_profile_lock"
 cmp "$evidence/a/internal-layouts-v1.lock.json" "$internal_layout_lock"
+cmp "$evidence/a/key-alternates-v1.json" \
+  android/ime-app/src/main/assets/nepa-layouts/key-alternates-v1.json
+cmp "$evidence/a/transliteration-profiles-v1.json" \
+  android/ime-app/src/main/assets/nepa-translit/profiles-v1.json
 if [[ "$scope" == all ]]; then
   cmp "$evidence/a/shipping-profiles.lock.json" "$shipping_profile_lock"
   cmp "$evidence/a/layouts-v1.lock.json" "$release_layout_lock"

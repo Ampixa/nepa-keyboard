@@ -37,28 +37,23 @@ class FinalizeLimbuInternalMilestoneTest(unittest.TestCase):
             ROOT / "layouts" / "internal",
             self.root / "layouts" / "internal",
         )
-        # This test preserves the immutable three-profile Limbu milestone. The
-        # cumulative current lane adds later languages and layouts through
-        # separate versioned finalizers.
-        for later_layout in (
-            "deva-nepal-dhimal-v1.json",
-            "deva-nepal-dumi-v1.json",
-            "deva-nepal-extended-v1.json",
-            "deva-nepal-khaling-v1.json",
-            "deva-nepal-lohorung-v1.json",
-            "deva-nepal-western-tamang-v1.json",
-            "deva-nepal-yakkha-v1.json",
-        ):
-            later_path = self.root / "layouts/internal/src" / later_layout
-            later_source = json.loads(later_path.read_text(encoding="utf-8"))
-            notice_name = Path(later_source["license"]["notice_path"]).name
-            later_path.unlink()
-            (self.root / "layouts/internal/notices" / notice_name).unlink()
-        for later_unlicensed_layout in (
-            "deva-nepal-bhasa-v1.json",
-            "newa-nepal-prachalit-v1.json",
-        ):
-            (self.root / "layouts/internal/src" / later_unlicensed_layout).unlink()
+        # Keep the three layouts bound by this historical milestone fixture.
+        foundation_layouts = {
+            "latn-qwerty-us-v1.json",
+            "deva-nepal-basic-v1.json",
+            "limb-nepal-phonetic-v1.json",
+        }
+        for layout_path in (self.root / "layouts/internal/src").glob("*.json"):
+            if layout_path.name not in foundation_layouts:
+                layout_path.unlink()
+        foundation_notices = set()
+        for layout_path in (self.root / "layouts/internal/src").glob("*.json"):
+            layout = json.loads(layout_path.read_text(encoding="utf-8"))
+            if "license" in layout:
+                foundation_notices.add(Path(layout["license"]["notice_path"]).name)
+        for notice_path in (self.root / "layouts/internal/notices").iterdir():
+            if notice_path.name not in foundation_notices:
+                notice_path.unlink()
         (self.root / "src" / "nepa_keyboard").mkdir(parents=True)
         shutil.copy2(
             ROOT / "src" / "nepa_keyboard" / "compiler.py",

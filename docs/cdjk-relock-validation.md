@@ -8,12 +8,14 @@ below because both release and internal locks pin those inputs. The local Mac
 is used only to edit and synchronize source. Python validation and all
 generated-lock work run on `cdjk`.
 
-The default internal transaction covers exactly these three source-controlled
+The default internal transaction covers these five source-controlled
 outputs together:
 
 - `catalog/internal-profiles.lock.json`;
 - `layouts/internal/layouts-v1.lock.json`; and
-- the four internal lock-hash pins in `android/ime-app/build.gradle.kts`.
+- the four internal lock-hash pins in `android/ime-app/build.gradle.kts`;
+- `android/ime-app/src/main/assets/nepa-layouts/key-alternates-v1.json`; and
+- `android/ime-app/src/main/assets/nepa-translit/profiles-v1.json`.
 
 It does not read, rebuild, check, install, compare, roll back, or repin the
 public/export profile or layout locks. Internal product coverage is compiled
@@ -51,7 +53,8 @@ high-RSS processes, and owns the same host lock as Android validation.
 
 It then:
 
-1. saves exact rollback copies of the two internal locks and the Gradle file;
+1. saves exact rollback copies of the two internal locks, the Gradle file, and
+   the two Android assets;
 2. requires identical conversion-artifact contracts in the review and lock
    schemas, validates the exact `new-Deva-Newa-NP` review binding, compiles its
    `.ncm` twice, compares the bytes, and checks the pinned SHA-256, 165-rule
@@ -70,9 +73,11 @@ It then:
    compares the bytes, and requires exactly one Newa layout plus the exact
    `new-Newa-NP` profile binding; the public layout lock remains Newa-free;
 7. installs the internal layout lock and verifies it with `--check`;
-8. derives only the four Android internal pins from the two installed lock
+8. compiles each Android asset twice from its reviewed source and installed
+   lock, compares both runs, installs them, and verifies them with `--check`;
+9. derives only the four Android internal pins from the two installed lock
    bytes;
-9. runs the pin-updater unit suite, conversion compiler/source/vector tests,
+10. runs the pin-updater unit suite, conversion compiler/source/vector tests,
    Android conversion-substrate checks, the focused Android internal-scope
    contract tests, the Khaling/Dumi measurement-runner sequencing and identity
    contracts, the neutral Bantawa source-probe contract, the dual-resource
@@ -80,10 +85,10 @@ It then:
    contract, and the Bantawa-gated neutral Western Magar TSV source-probe
    contract, then independently re-enumerates and rehashes every immutable
    source input; and
-10. commits the transaction only after every check passes.
+11. commits the transaction only after every check passes.
 
-Any failure after installation restores both original internal locks and the
-original Gradle file. Public/export locks are outside the transaction and stay
+Any failure after installation restores both original internal locks, the
+original Gradle file, and both original Android assets. Public/export locks stay
 byte-for-byte untouched. The evidence directory remains immutable diagnostic
 input for the next attempt. A successful run ends with:
 
@@ -109,8 +114,8 @@ generated after the
 focused tests from a fresh directory enumeration and must compare byte-for-byte
 with the initial inventory before the transaction can commit. Immutable inputs
 are required to be disjoint from transaction outputs; the mutable Gradle pin
-file is instead bound by original/installed hashes and pin-update/check
-evidence. The cumulative locks do not embed the isolated
+file and generated assets are instead bound by original/installed hashes and
+their generator/check evidence. The cumulative locks do not embed the isolated
 research review; the review is an independent fail-closed transaction guard.
 The input inventory also includes every direct child of `layouts/research`;
 those files are validated separately and never added to a cumulative source
@@ -139,14 +144,14 @@ bash tools/run_cdjk_relock_validation.sh --scope all \
   /home/cdjk/data/nepa-keyboard/relock/all-20260716-v1
 ```
 
-This mode performs the historical five-file transaction: both profile locks,
-both layout locks, and all nine Gradle pins. It also runs the broader public and
-internal compiler/test set. Use it for shared compiler/schema changes; do not
+This mode updates both profile locks, both layout locks, all nine Gradle pins,
+and both Android assets. It also runs the broader public and internal
+compiler/test set. Use it for shared compiler/schema changes; do not
 use it for an internal-only review or layout-source change.
 
 ## Return generated files
 
-After a successful default run, copy the three internal outputs above from
+After a successful default run, copy the five internal outputs above from
 `cdjk` back to this workspace byte-for-byte. Confirm that their hashes match
 `installed-sha256.txt` and that the pin updater succeeds with `--scope internal
 --check` on `cdjk` after the round trip. Do not hand-enter or guess any digest.
