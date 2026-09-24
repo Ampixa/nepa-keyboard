@@ -61,6 +61,12 @@ public final class InternalImeSmokeInstrumentation extends Instrumentation {
     private static final String KHALING_LAYOUT_ID = "deva-nepal-khaling-v1";
     private static final String DUMI_DIRECT_ID = "dus-Deva-NP";
     private static final String DUMI_LAYOUT_ID = "deva-nepal-dumi-v1";
+    private static final String BANTAWA_DIRECT_ID = "bap-Deva-NP";
+    private static final String BANTAWA_LAYOUT_ID = "deva-nepal-bantawa-v1";
+    private static final String WESTERN_MAGAR_DIRECT_ID = "mrd-Deva-NP";
+    private static final String WESTERN_MAGAR_LAYOUT_ID = "deva-nepal-western-magar-v1";
+    private static final String MID_EASTERN_THARU_DIRECT_ID = "thq-Deva-NP";
+    private static final String MID_EASTERN_THARU_LAYOUT_ID = "deva-nepal-mid-eastern-tharu-v1";
     private static final String NEPAL_BHASA_DEVA_DIRECT_ID = "new-Deva-NP";
     private static final String NEPAL_BHASA_ROMAN_ID = "new-Latn-Deva-NP";
     private static final String LATIN_QWERTY_LAYOUT_ID = "latn-qwerty-us-v1";
@@ -142,6 +148,9 @@ public final class InternalImeSmokeInstrumentation extends Instrumentation {
             KeyboardProfile yakkha = available(YAKKHA_DIRECT_ID);
             KeyboardProfile khaling = available(KHALING_DIRECT_ID);
             KeyboardProfile dumi = available(DUMI_DIRECT_ID);
+            KeyboardProfile bantawa = available(BANTAWA_DIRECT_ID);
+            KeyboardProfile westernMagar = available(WESTERN_MAGAR_DIRECT_ID);
+            KeyboardProfile midEasternTharu = available(MID_EASTERN_THARU_DIRECT_ID);
             KeyboardProfile nepalBhasaDeva = available(NEPAL_BHASA_DEVA_DIRECT_ID);
             KeyboardProfile nepalBhasaRoman = available(NEPAL_BHASA_ROMAN_ID);
             KeyboardProfile newa = available(NEWA_DIRECT_ID);
@@ -175,6 +184,15 @@ public final class InternalImeSmokeInstrumentation extends Instrumentation {
             verifyDumiProfileAndLayout(nepali, dumi);
             verifyDumiKeyDispatch(context, dumi);
             verifyDumiGeneratedInputPolicies(dumi);
+            verifyNewDirectProfileAndLayout(bantawa, BANTAWA_DIRECT_ID,
+                    "bap-deva-direct", BANTAWA_LAYOUT_ID, 4);
+            verifyNewDirectProfileAndLayout(westernMagar, WESTERN_MAGAR_DIRECT_ID,
+                    "mrd-deva-direct", WESTERN_MAGAR_LAYOUT_ID, 5);
+            verifyNewDirectProfileAndLayout(midEasternTharu, MID_EASTERN_THARU_DIRECT_ID,
+                    "thq-deva-direct", MID_EASTERN_THARU_LAYOUT_ID, 5);
+            verifyBantawaLayoutAndDispatch(context, nepali, bantawa);
+            verifyWesternMagarLayoutAndDispatch(context, nepali, westernMagar);
+            verifyMidEasternTharuLayoutAndDispatch(context, nepali, midEasternTharu);
             verifyRomanizedNewaProfileAndLayout(nepalBhasaDeva, nepalBhasaRoman);
             verifyNewaProfileAndLayout(newa);
             verifyNewaKeyDispatch(context, newa);
@@ -369,6 +387,18 @@ public final class InternalImeSmokeInstrumentation extends Instrumentation {
                     "क:फु",
                     dumiVector.expectedSurface
             );
+            PackVector bantawaVector = findVector(vectors, BANTAWA_DIRECT_ID);
+            assertEquals("Bantawa reviewed validation query", "अ", bantawaVector.query);
+            assertEquals("Bantawa reviewed validation surface", "अ", bantawaVector.expectedSurface);
+            PackVector westernMagarVector = findVector(vectors, WESTERN_MAGAR_DIRECT_ID);
+            assertEquals("Western Magar reviewed pack query", "-ऐ", westernMagarVector.query);
+            assertEquals("Western Magar reviewed pack surface", "-ऐ",
+                    westernMagarVector.expectedSurface);
+            PackVector midEasternTharuVector = findVector(vectors, MID_EASTERN_THARU_DIRECT_ID);
+            assertEquals("Mid-Eastern Tharu reviewed validation query", "अइठ",
+                    midEasternTharuVector.query);
+            assertEquals("Mid-Eastern Tharu reviewed validation surface", "अइठल",
+                    midEasternTharuVector.expectedSurface);
             PackVector nepalBhasaRomanVector = findVector(vectors, NEPAL_BHASA_ROMAN_ID);
             assertEquals(
                     "Romanized Newa measured validation query",
@@ -437,6 +467,9 @@ public final class InternalImeSmokeInstrumentation extends Instrumentation {
             verifyYakkhaPackInput(yakkha, yakkhaVector, engine);
             verifyKhalingPackInput(khaling, khalingVector, engine);
             verifyDumiPackInput(dumi, dumiVector, engine);
+            verifyBantawaPackInput(bantawa, bantawaVector, engine);
+            verifyWesternMagarPackInput(westernMagar, engine);
+            verifyMidEasternTharuPackInput(midEasternTharu, midEasternTharuVector, engine);
             verifyRomanizedNewaPackInput(
                     nepalBhasaRoman,
                     nepalBhasaRomanVector,
@@ -541,6 +574,12 @@ public final class InternalImeSmokeInstrumentation extends Instrumentation {
             result.putBoolean("dus_nepali_layout_isolation_verified", true);
             result.putBoolean("dus_picker_row_selection_verified", true);
             result.putBoolean("dus_pack_input_verified", true);
+            result.putBoolean("bap_profile_layout_dispatch_verified", true);
+            result.putBoolean("bap_pack_input_verified", true);
+            result.putBoolean("mrd_profile_layout_dispatch_verified", true);
+            result.putBoolean("mrd_typable_pack_input_verified", true);
+            result.putBoolean("thq_profile_layout_dispatch_verified", true);
+            result.putBoolean("thq_pack_input_verified", true);
             result.putBoolean("nepal_bhasa_roman_profile_binding_verified", true);
             result.putBoolean("nepal_bhasa_roman_pack_input_verified", true);
             result.putBoolean("newa_profile_binding_verified", true);
@@ -2219,6 +2258,224 @@ public final class InternalImeSmokeInstrumentation extends Instrumentation {
                 );
             }
         });
+    }
+
+    private static void verifyNewDirectProfileAndLayout(
+            KeyboardProfile profile,
+            String profileId,
+            String methodId,
+            String layoutId,
+            int letterRows
+    ) {
+        assertEquals(profileId + " profile ID", profileId, profile.id());
+        assertEquals(profileId + " input method", methodId, profile.inputMethodId());
+        assertEquals(profileId + " input script", "Deva", profile.sourceScript());
+        assertEquals(profileId + " output script", "Deva", profile.outputScript());
+        assertEquals(profileId + " layout binding", layoutId, profile.layoutId());
+        assertEquals(profileId + " pack binding", profileId, profile.packBinding());
+        assertTrue(profileId + " generated layout", KeyboardLayouts.hasLayoutForTesting(layoutId));
+        assertEquals(profileId + " generated layout script", "Deva",
+                KeyboardLayouts.inputScriptForTesting(layoutId));
+        assertEquals(profileId + " base rows", letterRows,
+                KeyboardLayouts.forProfile(profile, false, false, false).rows().size());
+        assertEquals(profileId + " shift rows", letterRows,
+                KeyboardLayouts.forProfile(profile, true, false, false).rows().size());
+        assertEquals(profileId + " symbol rows", 4,
+                KeyboardLayouts.forProfile(profile, false, true, false).rows().size());
+    }
+
+    private void verifyBantawaLayoutAndDispatch(
+            Context context,
+            KeyboardProfile nepali,
+            KeyboardProfile bantawa
+    ) {
+        KeyboardLayouts.Layout base = KeyboardLayouts.forProfile(bantawa, false, false, false);
+        KeyboardLayouts.Layout shift = KeyboardLayouts.forProfile(bantawa, true, false, false);
+        KeyboardLayouts.Layout nepaliShift = KeyboardLayouts.forProfile(nepali, true, false, false);
+        assertGeneratedTextKey(shift, "shift.r0.k1", "ए", "ए", "ए",
+                KeySpec.InputPolicy.DEFAULT);
+        assertGeneratedTextKey(shift, "shift.r2.k0", "इ", "इ", "इ",
+                KeySpec.InputPolicy.DEFAULT);
+        assertEquals("Bantawa retained base vowel sign", "ौ",
+                requiredKey(base, "base.r0.k1").text());
+        assertEquals("Nepali independent vowel stays isolated", "औ",
+                requiredKey(nepaliShift, "shift.r0.k1").text());
+        assertEquals("Nepali independent i stays isolated", "ऋ",
+                requiredKey(nepaliShift, "shift.r2.k0").text());
+        RecordingInputListener listener = new RecordingInputListener(null);
+        runOnMainSync(() -> {
+            NepaInputView view = new NepaInputView(context, listener);
+            view.setProfile(bantawa);
+            view.setShifted(true);
+            assertDispatchedKey(view, listener, "shift.r0.k1", "ए",
+                    KeySpec.InputPolicy.DEFAULT);
+            assertDispatchedKey(view, listener, "shift.r2.k0", "इ",
+                    KeySpec.InputPolicy.DEFAULT);
+        });
+    }
+
+    private void verifyWesternMagarLayoutAndDispatch(
+            Context context,
+            KeyboardProfile nepali,
+            KeyboardProfile westernMagar
+    ) {
+        KeyboardLayouts.Layout base = KeyboardLayouts.forProfile(westernMagar, false, false, false);
+        KeyboardLayouts.Layout shift = KeyboardLayouts.forProfile(westernMagar, true, false, false);
+        for (KeyboardLayouts.Layout layout : new KeyboardLayouts.Layout[]{base, shift}) {
+            String layer = layout == base ? "base" : "shift";
+            assertGeneratedTextKey(layout, layer + ".r3.k2", "ऐ", "ऐ", "ऐ",
+                    KeySpec.InputPolicy.DEFAULT);
+            assertGeneratedTextKey(layout, layer + ".r3.k3", "\u200d", "ZWJ",
+                    "Western Magar conjunct zero width joiner",
+                    KeySpec.InputPolicy.DEVA_CONJUNCT_JOINER);
+            assertGeneratedTextKey(layout, layer + ".r3.k4", "\u200c", "ZWNJ",
+                    "Western Magar conjunct or terminal zero width non-joiner",
+                    KeySpec.InputPolicy.DEVA_TERMINAL_ZWNJ);
+        }
+        verifyNewDirectPunctuation(westernMagar, nepali);
+        verifyNewDirectInputPolicies(westernMagar, "base.r3.k3", "base.r3.k4");
+        RecordingInputListener listener = new RecordingInputListener(null);
+        runOnMainSync(() -> {
+            NepaInputView view = new NepaInputView(context, listener);
+            view.setProfile(westernMagar);
+            assertDispatchedKey(view, listener, "base.r3.k2", "ऐ",
+                    KeySpec.InputPolicy.DEFAULT);
+            assertDispatchedKey(view, listener, "base.r3.k3", "\u200d",
+                    KeySpec.InputPolicy.DEVA_CONJUNCT_JOINER);
+            assertDispatchedKey(view, listener, "base.r3.k4", "\u200c",
+                    KeySpec.InputPolicy.DEVA_TERMINAL_ZWNJ);
+            verifyNewDirectPunctuationDispatch(view, listener);
+        });
+    }
+
+    private void verifyMidEasternTharuLayoutAndDispatch(
+            Context context,
+            KeyboardProfile nepali,
+            KeyboardProfile tharu
+    ) {
+        KeyboardLayouts.Layout base = KeyboardLayouts.forProfile(tharu, false, false, false);
+        KeyboardLayouts.Layout shift = KeyboardLayouts.forProfile(tharu, true, false, false);
+        for (KeyboardLayouts.Layout layout : new KeyboardLayouts.Layout[]{base, shift}) {
+            String layer = layout == base ? "base" : "shift";
+            assertGeneratedTextKey(layout, layer + ".r3.k4", "़", "◌़",
+                    "Devanagari sign nukta", KeySpec.InputPolicy.DEFAULT);
+            assertGeneratedTextKey(layout, layer + ".r3.k5", "\u200d", "ZWJ",
+                    "Tharu conjunct zero width joiner",
+                    KeySpec.InputPolicy.DEVA_CONJUNCT_JOINER);
+            assertGeneratedTextKey(layout, layer + ".r3.k6", "\u200c", "ZWNJ",
+                    "Tharu conjunct zero width non-joiner",
+                    KeySpec.InputPolicy.DEVA_CONJUNCT_JOINER);
+        }
+        verifyNewDirectPunctuation(tharu, nepali);
+        verifyNewDirectInputPolicies(tharu, "base.r3.k5", "base.r3.k6");
+        RecordingInputListener listener = new RecordingInputListener(null);
+        runOnMainSync(() -> {
+            NepaInputView view = new NepaInputView(context, listener);
+            view.setProfile(tharu);
+            assertDispatchedKey(view, listener, "base.r3.k0", "इ",
+                    KeySpec.InputPolicy.DEFAULT);
+            assertDispatchedKey(view, listener, "base.r3.k4", "़",
+                    KeySpec.InputPolicy.DEFAULT);
+            assertDispatchedKey(view, listener, "base.r3.k5", "\u200d",
+                    KeySpec.InputPolicy.DEVA_CONJUNCT_JOINER);
+            assertDispatchedKey(view, listener, "base.r3.k6", "\u200c",
+                    KeySpec.InputPolicy.DEVA_CONJUNCT_JOINER);
+            verifyNewDirectPunctuationDispatch(view, listener);
+        });
+    }
+
+    private static void verifyNewDirectPunctuation(
+            KeyboardProfile profile,
+            KeyboardProfile nepali
+    ) {
+        KeyboardLayouts.Layout symbols = KeyboardLayouts.forProfile(profile, false, true, false);
+        KeyboardLayouts.Layout nepaliSymbols = KeyboardLayouts.forProfile(nepali, false, true, false);
+        for (String keyId : new String[]{"symbols.r1.k5", "symbols.r2.k7"}) {
+            assertEquals(profile.id() + " intra-word " + keyId,
+                    KeySpec.InputPolicy.INTRA_WORD_PUNCTUATION,
+                    requiredKey(symbols, keyId).inputPolicy());
+            assertEquals("Nepali punctuation isolation " + keyId,
+                    KeySpec.InputPolicy.DEFAULT,
+                    requiredKey(nepaliSymbols, keyId).inputPolicy());
+        }
+    }
+
+    private static void verifyNewDirectInputPolicies(
+            KeyboardProfile profile,
+            String zwjKeyId,
+            String zwnjKeyId
+    ) {
+        KeyboardLayouts.Layout base = KeyboardLayouts.forProfile(profile, false, false, false);
+        KeyboardLayouts.Layout symbols = KeyboardLayouts.forProfile(profile, false, true, false);
+        NoOpSuggestionEngine engine = new NoOpSuggestionEngine();
+        try {
+            String[] joinerIds = {zwjKeyId, zwnjKeyId};
+            String[] joiners = {"\u200d", "\u200c"};
+            for (int index = 0; index < joinerIds.length; index++) {
+                RecordingTextSink sink = new RecordingTextSink();
+                ComposingSession session = new ComposingSession(engine);
+                session.start(profile, true, false, sink);
+                appendKey(session, requiredKey(base, "base.r1.k7"), sink);
+                appendKey(session, requiredKey(base, "base.r2.k9"), sink);
+                int beforeJoiner = sink.editorCalls.size();
+                appendKey(session, requiredKey(base, joinerIds[index]), sink);
+                assertEquals(profile.id() + " joiner remains buffered", beforeJoiner,
+                        sink.editorCalls.size());
+                appendKey(session, requiredKey(base, "base.r0.k5"), sink);
+                assertEquals(profile.id() + " joined editor text", "क्" + joiners[index] + "य",
+                        sink.text());
+                assertNoEditorCallEndsInJoiner(profile.id() + " joined editor update", sink);
+            }
+            String[] punctuationIds = {"symbols.r1.k5", "symbols.r2.k7"};
+            String[] punctuation = {"-", "/"};
+            for (int index = 0; index < punctuationIds.length; index++) {
+                RecordingTextSink sink = new RecordingTextSink();
+                ComposingSession session = new ComposingSession(engine);
+                session.start(profile, true, false, sink);
+                appendKey(session, requiredKey(base, "base.r1.k7"), sink);
+                appendKey(session, requiredKey(symbols, punctuationIds[index]), sink);
+                appendKey(session, requiredKey(base, "base.r0.k5"), sink);
+                assertEquals(profile.id() + " intra-word punctuation composes",
+                        "क" + punctuation[index] + "य", session.composingText());
+
+                RecordingTextSink leadingSink = new RecordingTextSink();
+                ComposingSession leading = new ComposingSession(engine);
+                leading.start(profile, true, false, leadingSink);
+                appendKey(leading, requiredKey(symbols, punctuationIds[index]), leadingSink);
+                assertEquals(profile.id() + " leading punctuation stays outside composition",
+                        "", leading.composingText());
+                assertEquals(profile.id() + " leading punctuation remains typeable",
+                        punctuation[index], leadingSink.text());
+            }
+        } finally {
+            engine.close();
+        }
+    }
+
+    private static void verifyNewDirectPunctuationDispatch(
+            NepaInputView view,
+            RecordingInputListener listener
+    ) {
+        view.showSymbols();
+        assertDispatchedKey(view, listener, "symbols.r1.k5", "-",
+                KeySpec.InputPolicy.INTRA_WORD_PUNCTUATION);
+        assertDispatchedKey(view, listener, "symbols.r2.k7", "/",
+                KeySpec.InputPolicy.INTRA_WORD_PUNCTUATION);
+    }
+
+    private static void assertDispatchedKey(
+            NepaInputView view,
+            RecordingInputListener listener,
+            String keyId,
+            String text,
+            KeySpec.InputPolicy policy
+    ) {
+        listener.keySpec = null;
+        assertTrue("dispatch stable key " + keyId, view.performKeyIdForTesting(keyId));
+        assertTrue("stable key dispatch callback " + keyId, listener.keySpec != null);
+        assertEquals("stable key ID " + keyId, keyId, listener.keySpec.keyId());
+        assertEquals("stable key text " + keyId, text, listener.keySpec.text());
+        assertEquals("stable key policy " + keyId, policy, listener.keySpec.inputPolicy());
     }
 
     private static void assertDispatchedTextKey(
@@ -4184,6 +4441,49 @@ public final class InternalImeSmokeInstrumentation extends Instrumentation {
         glottal.start(dumi, true, false, glottalSink);
         appendKey(glottal, requiredKey(base, "base.r3.k7"), glottalSink);
         assertSessionQuery("Dumi glottal stop", glottal, "ॽ", "ॽवाक्ना");
+    }
+
+    private static void verifyBantawaPackInput(
+            KeyboardProfile bantawa,
+            PackVector vector,
+            SuggestionEngine engine
+    ) {
+        KeyboardLayouts.Layout shift = KeyboardLayouts.forProfile(bantawa, true, false, false);
+        RecordingTextSink sink = new RecordingTextSink();
+        ComposingSession session = new ComposingSession(engine);
+        session.start(bantawa, true, false, sink);
+        appendKey(session, requiredKey(shift, "shift.r1.k5"), sink);
+        assertSessionQuery("Bantawa validation", session, vector.query, vector.expectedSurface);
+    }
+
+    private static void verifyWesternMagarPackInput(
+            KeyboardProfile westernMagar,
+            SuggestionEngine engine
+    ) {
+        KeyboardLayouts.Layout shift = KeyboardLayouts.forProfile(westernMagar, true, false, false);
+        RecordingTextSink sink = new RecordingTextSink();
+        ComposingSession session = new ComposingSession(engine);
+        session.start(westernMagar, true, false, sink);
+        appendKey(session, requiredKey(shift, "shift.r1.k5"), sink);
+        appendKey(session, requiredKey(shift, "shift.r1.k4"), sink);
+        assertSessionQuery("Western Magar typeable prefix", session, "अघ", "अघाडी");
+    }
+
+    private static void verifyMidEasternTharuPackInput(
+            KeyboardProfile tharu,
+            PackVector vector,
+            SuggestionEngine engine
+    ) {
+        KeyboardLayouts.Layout base = KeyboardLayouts.forProfile(tharu, false, false, false);
+        KeyboardLayouts.Layout shift = KeyboardLayouts.forProfile(tharu, true, false, false);
+        RecordingTextSink sink = new RecordingTextSink();
+        ComposingSession session = new ComposingSession(engine);
+        session.start(tharu, true, false, sink);
+        appendKey(session, requiredKey(shift, "shift.r1.k5"), sink);
+        appendKey(session, requiredKey(base, "base.r3.k0"), sink);
+        appendKey(session, requiredKey(shift, "shift.r0.k0"), sink);
+        assertSessionQuery("Mid-Eastern Tharu validation", session, vector.query,
+                vector.expectedSurface);
     }
 
     private static void assertSessionQuery(

@@ -1384,6 +1384,12 @@ grep -F 'dus_key_dispatch_verified=true' "$evidence/internal-ime-smoke.txt"
 grep -F 'dus_nepali_layout_isolation_verified=true' "$evidence/internal-ime-smoke.txt"
 grep -F 'dus_picker_row_selection_verified=true' "$evidence/internal-ime-smoke.txt"
 grep -F 'dus_pack_input_verified=true' "$evidence/internal-ime-smoke.txt"
+grep -F 'bap_profile_layout_dispatch_verified=true' "$evidence/internal-ime-smoke.txt"
+grep -F 'bap_pack_input_verified=true' "$evidence/internal-ime-smoke.txt"
+grep -F 'mrd_profile_layout_dispatch_verified=true' "$evidence/internal-ime-smoke.txt"
+grep -F 'mrd_typable_pack_input_verified=true' "$evidence/internal-ime-smoke.txt"
+grep -F 'thq_profile_layout_dispatch_verified=true' "$evidence/internal-ime-smoke.txt"
+grep -F 'thq_pack_input_verified=true' "$evidence/internal-ime-smoke.txt"
 grep -F 'nepal_bhasa_roman_profile_binding_verified=true' \
   "$evidence/internal-ime-smoke.txt"
 grep -F 'nepal_bhasa_roman_pack_input_verified=true' \
