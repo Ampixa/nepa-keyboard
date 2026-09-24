@@ -53,6 +53,7 @@ test_files=(
   test_bantawa_jsonl_contract.py
   test_bantawa_internal_source.py
   test_bantawa_source_probe_runner.py
+  test_central_gurung_candidate_source.py
   test_dumi_measurement_runner.py
   test_dumi_internal_source.py
   test_khaling_internal_source.py
@@ -70,6 +71,8 @@ test_files=(
   test_keyboard_layouts.py
   test_keyboard_layout_candidate.py
   test_layout_native_review.py
+  test_mid_eastern_tharu_internal_source.py
+  test_eastern_tamang_candidate_source.py
   test_western_magar_source_probe_runner.py
   test_western_magar_tsv_contract.py
   test_western_magar_internal_source.py
@@ -87,6 +90,7 @@ if [[ "$scope" == all ]]; then
     test_bantawa_jsonl_contract.py
     test_bantawa_internal_source.py
     test_bantawa_source_probe_runner.py
+    test_central_gurung_candidate_source.py
     test_dumi_measurement_runner.py
     test_dumi_internal_source.py
     test_khaling_internal_source.py
@@ -102,6 +106,8 @@ if [[ "$scope" == all ]]; then
     test_nepal_bhasa_conversion_vectors.py
     test_keyboard_layout_candidate.py
     test_layout_native_review.py
+    test_mid_eastern_tharu_internal_source.py
+    test_eastern_tamang_candidate_source.py
     test_western_magar_source_probe_runner.py
     test_western_magar_tsv_contract.py
     test_western_magar_internal_source.py
@@ -290,6 +296,9 @@ static_source_inputs=(
   tools/update_android_lock_pins.py
   tools/audit_bantawa_jsonl_contract.py
   tools/build_bantawa_internal_source.py
+  tools/build_central_gurung_candidate_source.py
+  tools/build_mid_eastern_tharu_internal_source.py
+  tools/build_eastern_tamang_candidate_source.py
   tools/build_western_magar_internal_source.py
   tools/audit_nepal_bhasa_tsv_contract.py
   tools/build_nepal_bhasa_internal_source.py
