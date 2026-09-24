@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Pin Android Gradle tasks to canonical catalog/layout locks by product scope."""
+"""Pin Android Gradle tasks to canonical locks and generated assets by scope."""
 
 from __future__ import annotations
 
@@ -22,9 +22,17 @@ LOCK_PATHS = {
     "release_layout": Path("layouts/layouts-v1.lock.json"),
     "internal_layout": Path("layouts/internal/layouts-v1.lock.json"),
 }
-LOCK_SCOPES = {
-    "all": frozenset(LOCK_PATHS),
-    "internal": frozenset({"internal_profile", "internal_layout"}),
+ASSET_PATHS = {
+    "transliteration_catalog": Path(
+        "android/ime-app/src/main/assets/nepa-translit/profiles-v1.json"
+    ),
+}
+PIN_PATHS = {**LOCK_PATHS, **ASSET_PATHS}
+PIN_SCOPES = {
+    "all": frozenset(PIN_PATHS),
+    "internal": frozenset({
+        "internal_profile", "internal_layout", "transliteration_catalog"
+    }),
 }
 
 
@@ -32,12 +40,32 @@ LOCK_SCOPES = {
 class PinSite:
     task_name: str
     property_name: str
-    lock_name: str
+    input_name: str
 
 
 PIN_SITES = (
     PinSite("generateShippingProfileCatalog", "expectedLockSha256", "release_profile"),
     PinSite("generateInternalProfileCatalog", "expectedLockSha256", "internal_profile"),
+    PinSite(
+        "generateTransliterationProfiles",
+        "expectedCatalogSha256",
+        "transliteration_catalog",
+    ),
+    PinSite(
+        "generateTransliterationProfiles",
+        "expectedProfileLockSha256",
+        "internal_profile",
+    ),
+    PinSite(
+        "generateEmptyTransliterationProfiles",
+        "expectedCatalogSha256",
+        "transliteration_catalog",
+    ),
+    PinSite(
+        "generateEmptyTransliterationProfiles",
+        "expectedProfileLockSha256",
+        "internal_profile",
+    ),
     PinSite("generateLayoutRegistry", "expectedLayoutLockSha256", "release_layout"),
     PinSite("generateLayoutRegistry", "expectedProfileLockSha256", "release_profile"),
     PinSite(
@@ -59,11 +87,14 @@ PIN_PROPERTY_NAMES = {
     "expectedLockSha256",
     "expectedLayoutLockSha256",
     "expectedProfileLockSha256",
+    "expectedCatalogSha256",
 }
 
 TASK_TYPES = {
     "generateShippingProfileCatalog": "GenerateShippingProfileCatalog",
     "generateInternalProfileCatalog": "GenerateShippingProfileCatalog",
+    "generateTransliterationProfiles": "GenerateTransliterationProfiles",
+    "generateEmptyTransliterationProfiles": "GenerateTransliterationProfiles",
     "generateLayoutRegistry": "GenerateLayoutRegistry",
     "generateInternalLayoutRegistry": "GenerateLayoutRegistry",
     "stageReleaseExternalPacks": "StageExternalReleasePacks",
@@ -82,16 +113,16 @@ def _read_regular_file(path: Path, label: str) -> bytes:
     return path.read_bytes()
 
 
-def _lock_hashes(
+def _pin_hashes(
     repository_root: Path,
-    lock_names: frozenset[str],
+    input_names: frozenset[str],
 ) -> dict[str, str]:
     return {
         name: hashlib.sha256(
-            _read_regular_file(repository_root / relative_path, f"{name} lock")
+            _read_regular_file(repository_root / relative_path, f"{name} pin input")
         ).hexdigest()
-        for name, relative_path in LOCK_PATHS.items()
-        if name in lock_names
+        for name, relative_path in PIN_PATHS.items()
+        if name in input_names
     }
 
 
@@ -248,7 +279,7 @@ def _updated_gradle(
                 f"duplicate Gradle pin contract for {site.task_name}.{site.property_name}"
             )
         pin_call_starts.add(start)
-        replacements.append((start, end, hashes[site.lock_name]))
+        replacements.append((start, end, hashes[site.input_name]))
 
     property_alternation = "|".join(sorted(map(re.escape, PIN_PROPERTY_NAMES)))
     if enforce_global_contract:
@@ -257,7 +288,7 @@ def _updated_gradle(
         )
         if len(global_calls) != len(PIN_SITES):
             raise LockPinError(
-                "Gradle file must contain exactly nine recognized lock-pin set calls"
+                f"Gradle file must contain exactly {len(PIN_SITES)} recognized pin set calls"
             )
     else:
         for task_name, (block_start, block_end) in task_blocks.items():
@@ -270,7 +301,7 @@ def _updated_gradle(
             if actual_count != expected_count:
                 raise LockPinError(
                     f"Gradle task {task_name} must contain exactly "
-                    f"{expected_count} recognized internal lock-pin calls"
+                    f"{expected_count} recognized internal pin calls"
                 )
 
     updated = text
@@ -305,12 +336,12 @@ def update_android_lock_pins(
     check: bool = False,
     scope: str = "internal",
 ) -> dict[str, object]:
-    if scope not in LOCK_SCOPES:
+    if scope not in PIN_SCOPES:
         raise LockPinError(f"unsupported lock-pin scope: {scope}")
     repository_root = repository_root.resolve()
-    lock_names = LOCK_SCOPES[scope]
-    hashes = _lock_hashes(repository_root, lock_names)
-    pin_sites = tuple(site for site in PIN_SITES if site.lock_name in lock_names)
+    input_names = PIN_SCOPES[scope]
+    hashes = _pin_hashes(repository_root, input_names)
+    pin_sites = tuple(site for site in PIN_SITES if site.input_name in input_names)
     gradle_path = repository_root / GRADLE_PATH
     encoded = _read_regular_file(gradle_path, "Android Gradle file")
     if encoded.startswith(b"\xef\xbb\xbf"):
@@ -348,9 +379,9 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--check", action="store_true")
     parser.add_argument(
         "--scope",
-        choices=tuple(LOCK_SCOPES),
+        choices=tuple(PIN_SCOPES),
         default="internal",
-        help="pin only the independent internal lane (default) or all locks",
+        help="pin the internal lane (default) or all locks and assets",
     )
     return parser
 

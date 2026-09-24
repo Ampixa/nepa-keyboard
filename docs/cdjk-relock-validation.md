@@ -13,7 +13,8 @@ outputs together:
 
 - `catalog/internal-profiles.lock.json`;
 - `layouts/internal/layouts-v1.lock.json`; and
-- the four internal lock-hash pins in `android/ime-app/build.gradle.kts`;
+- the eight internal lock and transliteration-asset hash pins in
+  `android/ime-app/build.gradle.kts`;
 - `android/ime-app/src/main/assets/nepa-layouts/key-alternates-v1.json`; and
 - `android/ime-app/src/main/assets/nepa-translit/profiles-v1.json`.
 
@@ -75,8 +76,8 @@ It then:
 7. installs the internal layout lock and verifies it with `--check`;
 8. compiles each Android asset twice from its reviewed source and installed
    lock, compares both runs, installs them, and verifies them with `--check`;
-9. derives only the four Android internal pins from the two installed lock
-   bytes;
+9. derives the eight Android internal pins from the two installed locks and
+   regenerated transliteration asset;
 10. runs the pin-updater unit suite, conversion compiler/source/vector tests,
    Android conversion-substrate checks, the focused Android internal-scope
    contract tests, the Khaling/Dumi measurement-runner sequencing and identity
@@ -144,7 +145,7 @@ bash tools/run_cdjk_relock_validation.sh --scope all \
   /home/cdjk/data/nepa-keyboard/relock/all-20260716-v1
 ```
 
-This mode updates both profile locks, both layout locks, all nine Gradle pins,
+This mode updates both profile locks, both layout locks, all 13 Gradle pins,
 and both Android assets. It also runs the broader public and internal
 compiler/test set. Use it for shared compiler/schema changes; do not
 use it for an internal-only review or layout-source change.

@@ -1129,10 +1129,11 @@ run_python tools/update_android_lock_pins.py \
   --repository-root "$repo" \
   --scope "$scope" \
   --check >"$evidence/android-pin-check.json"
-pin_keys_json='["internal_layout","internal_profile"]'
+pin_keys_json='["internal_layout","internal_profile","transliteration_catalog"]'
 if [[ "$scope" == all ]]; then
   pin_keys_json='[
-    "internal_layout", "internal_profile", "release_layout", "release_profile"
+    "internal_layout", "internal_profile", "release_layout", "release_profile",
+    "transliteration_catalog"
   ]'
 fi
 jq -e --arg scope "$scope" --argjson expected_keys "$pin_keys_json" '

@@ -10,8 +10,10 @@ import unittest
 from pathlib import Path
 
 from tools.update_android_lock_pins import (
+    ASSET_PATHS,
     GRADLE_PATH,
     LOCK_PATHS,
+    PIN_PATHS,
     PIN_SITES,
     TASK_TYPES,
     LockPinError,
@@ -47,9 +49,9 @@ class UpdateAndroidLockPinsTest(unittest.TestCase):
         self.root = Path(self.temp.name)
         self.payloads = {
             name: f"fixture-{index}-{name}\n".encode("utf-8")
-            for index, name in enumerate(LOCK_PATHS, start=1)
+            for index, name in enumerate(PIN_PATHS, start=1)
         }
-        for name, relative_path in LOCK_PATHS.items():
+        for name, relative_path in PIN_PATHS.items():
             path = self.root / relative_path
             path.parent.mkdir(parents=True, exist_ok=True)
             path.write_bytes(self.payloads[name])
@@ -78,7 +80,7 @@ class UpdateAndroidLockPinsTest(unittest.TestCase):
             for name, payload in self.payloads.items()
         }
 
-    def test_updates_exactly_nine_sites_atomically_and_preserves_mode(self) -> None:
+    def test_updates_exactly_thirteen_sites_atomically_and_preserves_mode(self) -> None:
         os.chmod(self.gradle_path, 0o640)
         original_inode = self.gradle_path.stat().st_ino
 
@@ -90,9 +92,10 @@ class UpdateAndroidLockPinsTest(unittest.TestCase):
         updated = self.gradle_path.read_text(encoding="utf-8")
         expected_counts = {
             "release_profile": 4,
-            "internal_profile": 3,
+            "internal_profile": 5,
             "release_layout": 1,
             "internal_layout": 1,
+            "transliteration_catalog": 2,
         }
         for name, count in expected_counts.items():
             self.assertEqual(updated.count(self.expected_hashes()[name]), count)
@@ -175,11 +178,13 @@ class UpdateAndroidLockPinsTest(unittest.TestCase):
             {
                 "internal_profile": expected["internal_profile"],
                 "internal_layout": expected["internal_layout"],
+                "transliteration_catalog": expected["transliteration_catalog"],
             },
         )
         updated = self.gradle_path.read_text(encoding="utf-8")
-        self.assertEqual(updated.count(expected["internal_profile"]), 3)
+        self.assertEqual(updated.count(expected["internal_profile"]), 5)
         self.assertEqual(updated.count(expected["internal_layout"]), 1)
+        self.assertEqual(updated.count(expected["transliteration_catalog"]), 2)
 
         stdout = io.StringIO()
         with contextlib.redirect_stdout(stdout):
@@ -262,7 +267,7 @@ class UpdateAndroidLockPinsTest(unittest.TestCase):
             ),
             (
                 "extra",
-                "exactly nine",
+                "exactly 13",
                 self.fixture_gradle()
                 + (
                     "\nval unrelated = tasks.register<StageExternalReleasePacks>(\n"
@@ -288,17 +293,26 @@ class UpdateAndroidLockPinsTest(unittest.TestCase):
         with self.assertRaisesRegex(LockPinError, "symbolic"):
             update_android_lock_pins(self.root, scope="all")
 
+    def test_rejects_symbolic_generated_asset(self) -> None:
+        asset_path = self.root / ASSET_PATHS["transliteration_catalog"]
+        asset_path.unlink()
+        asset_path.symlink_to(self.root / LOCK_PATHS["internal_profile"])
+        with self.assertRaisesRegex(LockPinError, "symbolic"):
+            update_android_lock_pins(self.root)
+
     def test_repository_gradle_matches_the_closed_internal_contract(self) -> None:
         result = update_android_lock_pins(ROOT, check=True, scope="internal")
         internal_sites = [
             site
             for site in PIN_SITES
-            if site.lock_name in {"internal_profile", "internal_layout"}
+            if site.input_name in {
+                "internal_profile", "internal_layout", "transliteration_catalog"
+            }
         ]
-        self.assertEqual(len(internal_sites), 4)
+        self.assertEqual(len(internal_sites), 8)
         self.assertEqual(
             set(result["hashes"]),
-            {"internal_profile", "internal_layout"},
+            {"internal_profile", "internal_layout", "transliteration_catalog"},
         )
         self.assertIn(result["status"], {"current", "stale"})
 
