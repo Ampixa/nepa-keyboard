@@ -935,6 +935,14 @@ assert_new_internal_profile \
   1219 '-ऐ' '-ऐ' mrd-direct-internal-2026-09-24 \
   reports/western-magar-internal-pack-v0.json \
   f760878e3f0ee96790cf04ac25e49e69c9e77f07a23bd530570ce4d8e0809f1a
+assert_new_internal_profile \
+  "$evidence/a/internal-profiles.lock.json" \
+  thq-Deva-NP deva-nepal-mid-eastern-tharu-v1 \
+  db316037bebc211c8b76bd9219f0dcf43ad8ad7639c291cb6e608fad24d210b4 \
+  d3c284fadeedc5e863e8364b5db496174fcf57f5acfeed38f16e2f679e1dfb18 \
+  2980 'अइठ' 'अइठल' thq-direct-internal-2026-09-24 \
+  reports/mid-eastern-tharu-internal-pack-v0.json \
+  8eaaa307984cfbbb57ef316533bda9581928b753d0069de1a99274b9718f96a5
 if [[ "$scope" == all ]]; then
   assert_newa_release_profile \
     "$evidence/a/shipping-profiles.lock.json" \

@@ -822,6 +822,49 @@
     {
       "artifacts": [
         {
+          "path": "reports/mid-eastern-tharu-internal-pack-v0.json",
+          "sha256": "8eaaa307984cfbbb57ef316533bda9581928b753d0069de1a99274b9718f96a5"
+        }
+      ],
+      "evidence_id": "thq-direct-internal-2026-09-24",
+      "gates": [
+        "deterministic_build",
+        "internal_pack",
+        "layout_implemented"
+      ],
+      "layout_binding": {
+        "layout_id": "deva-nepal-mid-eastern-tharu-v1",
+        "revision": 1,
+        "source_sha256": "db316037bebc211c8b76bd9219f0dcf43ad8ad7639c291cb6e608fad24d210b4"
+      },
+      "pack_artifact": {
+        "alias_key_count": 0,
+        "artifact_license": "LicenseRef-Internal",
+        "artifact_sha256": "d3c284fadeedc5e863e8364b5db496174fcf57f5acfeed38f16e2f679e1dfb18",
+        "candidate_count": 2980,
+        "file_name": "thq-Deva-NP.nkp",
+        "language": "thq",
+        "output_script": "Deva",
+        "pack_id": "thq-Deva-NP",
+        "release_mode": "internal",
+        "surface_key_count": 2980,
+        "validation": {
+          "benchmark_queries": [
+            "अनचक्‍",
+            "अनिवार्‌",
+            "अकल-",
+            "अन्ते/"
+          ],
+          "expected_surface": "अइठल",
+          "query": "अइठ"
+        }
+      },
+      "profile_id": "thq-Deva-NP",
+      "status": "passed"
+    },
+    {
+      "artifacts": [
+        {
           "path": "reports/yakkha-internal-pack-v0.json",
           "sha256": "fc097ff89a5e03ee50dfd8fa39e54432892a8f5662ff508397d9c0d810326c42"
         }
@@ -873,7 +916,7 @@
   "expected_counts": {
     "profiles": 74,
     "scripts": 9,
-    "selectable": 16,
+    "selectable": 17,
     "targets": 33
   },
   "profile_overrides": {
@@ -1025,6 +1068,16 @@
       "layout_id": "deva-nepal-western-tamang-v1",
       "pack_binding": "tdg-Deva-NP",
       "profile_id": "tdg-Deva-NP",
+      "selectable": true
+    },
+    "thq-deva-direct": {
+      "default_enabled": false,
+      "evidence_ids": [
+        "thq-direct-internal-2026-09-24"
+      ],
+      "layout_id": "deva-nepal-mid-eastern-tharu-v1",
+      "pack_binding": "thq-Deva-NP",
+      "profile_id": "thq-Deva-NP",
       "selectable": true
     },
     "ybh-deva-direct": {

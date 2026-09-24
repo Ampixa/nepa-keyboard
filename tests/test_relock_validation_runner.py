@@ -55,6 +55,7 @@ class RelockValidationRunnerTest(unittest.TestCase):
             "catalog/internal-profile-review.json",
             "catalog/internal-pack-milestones/bap-Deva-NP-v0.json",
             "catalog/internal-pack-milestones/mrd-Deva-NP-v0.json",
+            "catalog/internal-pack-milestones/thq-Deva-NP-v0.json",
             "tools/build_bantawa_internal_source.py",
             "tools/build_western_magar_internal_source.py",
             "schemas/shipping-profile-review.schema.json",
