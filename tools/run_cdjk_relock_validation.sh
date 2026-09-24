@@ -74,6 +74,7 @@ test_files=(
   test_mid_eastern_tharu_internal_source.py
   test_eastern_tamang_candidate_source.py
   test_eastern_magar_candidate_source.py
+  test_lepcha_candidate_source.py
   test_rai_induced_candidate_source.py
   test_western_magar_source_probe_runner.py
   test_western_magar_tsv_contract.py
@@ -111,6 +112,7 @@ if [[ "$scope" == all ]]; then
     test_mid_eastern_tharu_internal_source.py
     test_eastern_tamang_candidate_source.py
     test_eastern_magar_candidate_source.py
+    test_lepcha_candidate_source.py
     test_rai_induced_candidate_source.py
     test_western_magar_source_probe_runner.py
     test_western_magar_tsv_contract.py
@@ -304,7 +306,10 @@ static_source_inputs=(
   tools/build_mid_eastern_tharu_internal_source.py
   tools/build_eastern_tamang_candidate_source.py
   tools/build_eastern_magar_candidate_source.py
+  tools/build_lepcha_candidate_source.py
   tools/build_rai_induced_candidate_source.py
+  tools/run_cdjk_lepcha_candidate_pack.sh
+  validation/lepcha-candidate-prefix-v0.jsonl
   tools/build_western_magar_internal_source.py
   tools/audit_nepal_bhasa_tsv_contract.py
   tools/build_nepal_bhasa_internal_source.py

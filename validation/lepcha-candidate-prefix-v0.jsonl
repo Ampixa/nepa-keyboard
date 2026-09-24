@@ -1,0 +1,6 @@
+{"case_id":"lep-ka-ja","profile_id":"lep-Lepc-NP","pack_id":"lep-Lepc-NP","index":"surface","query":"ᰀᰈ","expected_surface":"ᰀᰈᰫ","max_rank":1,"review_status":"pending_speaker_review"}
+{"case_id":"lep-kla","profile_id":"lep-Lepc-NP","pack_id":"lep-Lepc-NP","index":"surface","query":"ᰁᰩ","expected_surface":"ᰁᰩᰵ","max_rank":1,"review_status":"pending_speaker_review"}
+{"case_id":"lep-kha","profile_id":"lep-Lepc-NP","pack_id":"lep-Lepc-NP","index":"surface","query":"ᰂᰤ","expected_surface":"ᰂᰤᰶ","max_rank":1,"review_status":"pending_speaker_review"}
+{"case_id":"lep-ga","profile_id":"lep-Lepc-NP","pack_id":"lep-Lepc-NP","index":"surface","query":"ᰃ᰷","expected_surface":"ᰃ᰷ᰥᰮᰶ","max_rank":1,"review_status":"pending_speaker_review"}
+{"case_id":"lep-nga","profile_id":"lep-Lepc-NP","pack_id":"lep-Lepc-NP","index":"surface","query":"ᰅᰭ","expected_surface":"ᰅᰭᰶ","max_rank":1,"review_status":"pending_speaker_review"}
+{"case_id":"lep-nya","profile_id":"lep-Lepc-NP","pack_id":"lep-Lepc-NP","index":"surface","query":"ᰉᰬ","expected_surface":"ᰉᰬᰳ","max_rank":1,"review_status":"pending_speaker_review"}
