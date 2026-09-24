@@ -88,4 +88,7 @@ contains POSIX path and newline assumptions and does not pass completely on
 Windows. The isolated Ubuntu preview passed all 528 Python tests with three
 skipped. WSL is not yet ready on Windows because its kernel component is
 missing. A `wsl --update` attempt exited with “Catastrophic failure”; no host
-reboot was performed.
+reboot was performed. The optional Windows WSL and Virtual Machine Platform
+features were enabled. [Microsoft's manual WSL installation steps](https://learn.microsoft.com/en-us/windows/wsl/install-manual)
+call for a restart after enabling Virtual Machine Platform, so finish WSL
+setup during a planned Windows restart.
