@@ -4448,12 +4448,22 @@ public final class InternalImeSmokeInstrumentation extends Instrumentation {
             PackVector vector,
             SuggestionEngine engine
     ) {
+        KeyboardLayouts.Layout base = KeyboardLayouts.forProfile(bantawa, false, false, false);
         KeyboardLayouts.Layout shift = KeyboardLayouts.forProfile(bantawa, true, false, false);
         RecordingTextSink sink = new RecordingTextSink();
         ComposingSession session = new ComposingSession(engine);
         session.start(bantawa, true, false, sink);
         appendKey(session, requiredKey(shift, "shift.r1.k5"), sink);
         assertSessionQuery("Bantawa validation", session, vector.query, vector.expectedSurface);
+
+        RecordingTextSink prefixSink = new RecordingTextSink();
+        ComposingSession prefix = new ComposingSession(engine);
+        prefix.start(bantawa, true, false, prefixSink);
+        appendKey(prefix, requiredKey(shift, "shift.r1.k5"), prefixSink);
+        appendKey(prefix, requiredKey(shift, "shift.r1.k2"), prefixSink);
+        appendKey(prefix, requiredKey(base, "base.r0.k7"), prefixSink);
+        appendKey(prefix, requiredKey(base, "base.r2.k3"), prefixSink);
+        assertSessionQuery("Bantawa typeable prefix", prefix, "अधिव", "अधिवङ्");
     }
 
     private static void verifyWesternMagarPackInput(
