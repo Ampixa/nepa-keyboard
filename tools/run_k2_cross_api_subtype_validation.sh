@@ -273,6 +273,7 @@ if (( service_process_status != 0 )) \
       service_bound_picker_subtype_verified=true \
       service_bound_phonetic_emoji_editing_verified=true \
       private_emoji_recents_suppressed_verified=true \
+      no_personalized_learning_emoji_recents_suppressed_verified=true \
       service_bound_globe_subtype_verified=true \
       platform_subtype_confirmation_verified=true \
       service_bound_held_delete_private_no_context_read_verified=true \

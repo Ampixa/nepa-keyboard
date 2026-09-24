@@ -90,6 +90,7 @@ public final class NepaInputView extends FrameLayout {
     private KeyboardTheme activeTheme;
     private int toolbarIconTintColor;
     private boolean transliterationAvailable;
+    private boolean emojiHistoryAllowed = true;
     private final int surfaceColor;
     private final int textColor;
     private final int secondaryTextColor;
@@ -435,6 +436,13 @@ public final class NepaInputView extends FrameLayout {
         renderKeyboard();
     }
 
+    /** Keeps recent emoji out of editors that disallow personalized learning. */
+    public void setEmojiHistoryAllowed(boolean allowed) {
+        emojiHistoryAllowed = allowed;
+        emojiPanel.updateRecents(allowed && keyboardPreferences != null
+                ? keyboardPreferences.recentEmoji() : Collections.emptyList());
+    }
+
     public void setNumeric(boolean numeric) {
         setEditorMode(numeric ? EditorMode.NUMBER : EditorMode.TEXT);
     }
@@ -542,7 +550,7 @@ public final class NepaInputView extends FrameLayout {
 
     /** Records the selection so the recents page reflects it immediately. */
     public void recordEmojiUse(String emoji) {
-        if (keyboardPreferences == null) {
+        if (!emojiHistoryAllowed || keyboardPreferences == null) {
             return;
         }
         keyboardPreferences.recordRecentEmoji(emoji);
@@ -1217,7 +1225,7 @@ public final class NepaInputView extends FrameLayout {
         keyPreviewOverlay.hide();
         emojiPanel.bind(
                 emojiCatalog,
-                keyboardPreferences == null
+                !emojiHistoryAllowed || keyboardPreferences == null
                         ? Collections.emptyList()
                         : keyboardPreferences.recentEmoji()
         );

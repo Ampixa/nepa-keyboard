@@ -169,6 +169,7 @@ public final class InternalSubtypeCompatibilityInstrumentation extends Instrumen
                             Settings.Secure.DEFAULT_INPUT_METHOD
                     )
             );
+            verifyNoPersonalizedLearning(host, trace);
             HeldDeleteLifecycleEvidence lifecycleEvidence = verifyHeldDeleteLifecycle(
                     host,
                     trace
@@ -233,6 +234,7 @@ public final class InternalSubtypeCompatibilityInstrumentation extends Instrumen
                     true
             );
             result.putBoolean("private_emoji_recents_suppressed_verified", true);
+            result.putBoolean("no_personalized_learning_emoji_recents_suppressed_verified", true);
             result.putBoolean(
                     "service_bound_held_delete_hide_cancel_verified",
                     true
@@ -331,6 +333,61 @@ public final class InternalSubtypeCompatibilityInstrumentation extends Instrumen
         });
         restartEditor(host, trace, "", false, false);
         awaitActiveEditorConnection(host, trace, LanguageRegistry.NEPALI_DIRECT_ID);
+    }
+
+    private void verifyNoPersonalizedLearning(
+            InternalSubtypeTestActivity host,
+            TransitionTrace trace
+    ) {
+        KeyboardPreferences preferences = new KeyboardPreferences(host);
+        runOnMainSync(() -> preferences.recordRecentEmoji("🙂"));
+        List<String> recentsBefore = preferences.recentEmoji();
+        String emoji = firstUnseenEmoji(host, recentsBefore);
+        long previousActivation = trace.activationGeneration();
+        runOnMainSync(() -> {
+            host.setEditorTextForTesting("");
+            host.restartWithoutPersonalizedLearningForTesting();
+        });
+        awaitInputMode(trace, previousActivation, false);
+        awaitActiveEditorConnection(host, trace, LanguageRegistry.ENGLISH_ID);
+        runOnMainSync(() -> {
+            NepaInputMethodService service = trace.service();
+            NepaInputView view = trace.view();
+            assertTrue("no-learning service and view are bound", service != null && view != null);
+            assertTrue("no-learning editor keeps normal text mode", !service.privateFieldForTesting());
+            assertTrue("no-learning editor disables emoji history",
+                    !service.emojiHistoryAllowedForTesting());
+            if (!view.emojiPanelVisible()) {
+                view.toggleEmojiPanel();
+            }
+            EmojiPanel panel = view.emojiPanelForTesting();
+            assertTrue("no-learning emoji panel opens", view.emojiPanelVisible());
+            assertTrue("no-learning recents page is selectable",
+                    panel.selectPageForTesting(EmojiPanel.RECENTS_CATEGORY_ID));
+            assertEquals("no-learning recents are hidden", 0,
+                    panel.visibleEmojiCountForTesting());
+            view.recordEmojiUse(emoji);
+            service.onEmojiSelected(emoji);
+        });
+        awaitEditorText(host, emoji, "emoji reaches the no-learning editor");
+        runOnMainSync(() -> assertEquals(
+                "no-learning emoji use is not retained",
+                recentsBefore,
+                preferences.recentEmoji()
+        ));
+
+        restartEditor(host, trace, "", false, false);
+        runOnMainSync(() -> {
+            assertTrue("normal editor restores emoji history",
+                    trace.service().emojiHistoryAllowedForTesting());
+            trace.service().onEmojiSelected(emoji);
+        });
+        awaitEditorText(host, emoji, "emoji reaches the restored normal editor");
+        runOnMainSync(() -> assertEquals(
+                "normal emoji use is remembered",
+                emoji,
+                preferences.recentEmoji().get(0)
+        ));
     }
 
     private void awaitEditorText(

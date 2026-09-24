@@ -1008,6 +1008,8 @@ grep -F 'service_bound_held_delete_private_no_context_read_verified=true' \
   "$evidence/subtype-compatibility.txt"
 grep -F 'private_emoji_recents_suppressed_verified=true' \
   "$evidence/subtype-compatibility.txt"
+grep -F 'no_personalized_learning_emoji_recents_suppressed_verified=true' \
+  "$evidence/subtype-compatibility.txt"
 grep -F 'service_bound_held_delete_hide_cancel_verified=true' \
   "$evidence/subtype-compatibility.txt"
 grep -F 'service_bound_held_delete_finish_cancel_verified=true' \
@@ -1046,6 +1048,7 @@ for result in \
   platform_subtype_confirmation_verified=true \
   service_bound_held_delete_password_restart_cancel_verified=true \
   service_bound_held_delete_private_no_context_read_verified=true \
+  no_personalized_learning_emoji_recents_suppressed_verified=true \
   service_bound_held_delete_hide_cancel_verified=true \
   service_bound_held_delete_finish_cancel_verified=true \
   focus_driven_ime_readiness_verified=true \

@@ -100,14 +100,23 @@ public final class InternalSubtypeTestActivity extends Activity {
     }
 
     void restartAsNormalForTesting() {
+        editor.setNoPersonalizedLearningForTesting(false);
         restartWithInputTypeForTesting(
                 InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_FLAG_CAP_SENTENCES
         );
     }
 
     void restartAsPasswordForTesting() {
+        editor.setNoPersonalizedLearningForTesting(false);
         restartWithInputTypeForTesting(
                 InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD
+        );
+    }
+
+    void restartWithoutPersonalizedLearningForTesting() {
+        editor.setNoPersonalizedLearningForTesting(true);
+        restartWithInputTypeForTesting(
+                InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_FLAG_CAP_SENTENCES
         );
     }
 
@@ -156,6 +165,7 @@ public final class InternalSubtypeTestActivity extends Activity {
     private static final class TrackingEditText extends EditText {
         private final AtomicInteger normalContextReads = new AtomicInteger();
         private final AtomicInteger privateContextReads = new AtomicInteger();
+        private boolean noPersonalizedLearning;
 
         TrackingEditText(Context context) {
             super(context);
@@ -166,6 +176,9 @@ public final class InternalSubtypeTestActivity extends Activity {
             InputConnection target = super.onCreateInputConnection(outAttrs);
             if (target == null) {
                 return null;
+            }
+            if (noPersonalizedLearning) {
+                outAttrs.imeOptions |= EditorInfo.IME_FLAG_NO_PERSONALIZED_LEARNING;
             }
             final boolean privateConnection = isPrivateInputType(outAttrs.inputType);
             return new InputConnectionWrapper(target, false) {
@@ -192,6 +205,10 @@ public final class InternalSubtypeTestActivity extends Activity {
         void resetContextReadCounts() {
             normalContextReads.set(0);
             privateContextReads.set(0);
+        }
+
+        void setNoPersonalizedLearningForTesting(boolean disabled) {
+            noPersonalizedLearning = disabled;
         }
 
         private static boolean isPrivateInputType(int inputType) {

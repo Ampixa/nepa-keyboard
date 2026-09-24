@@ -60,6 +60,7 @@ public final class NepaInputMethodService extends InputMethodService
     private NepaInputView inputView;
     private SuggestionSnapshot currentSuggestions;
     private boolean privateField;
+    private boolean emojiHistoryAllowed;
     private int editorSelectionStart = -1;
     private int editorSelectionEnd = -1;
     private boolean inputViewActive;
@@ -129,6 +130,8 @@ public final class NepaInputMethodService extends InputMethodService
         inputViewActive = true;
         editorMode = EditorMode.from(attribute);
         privateField = editorMode.privateField();
+        emojiHistoryAllowed = !privateField
+                && (attribute.imeOptions & EditorInfo.IME_FLAG_NO_PERSONALIZED_LEARNING) == 0;
         updateEditorSelection(attribute.initialSelStart, attribute.initialSelEnd);
         KeyboardProfile profile = reconcileCurrentPlatformProfile();
         InputConnection connection = getCurrentInputConnection();
@@ -144,6 +147,7 @@ public final class NepaInputMethodService extends InputMethodService
         }
         if (inputView != null) {
             inputView.hidePicker();
+            inputView.setEmojiHistoryAllowed(emojiHistoryAllowed);
             inputView.setProfile(profile);
             inputView.setEditorMode(editorMode);
             inputView.setTransliterationAvailable(
@@ -190,12 +194,14 @@ public final class NepaInputMethodService extends InputMethodService
         if (inputView != null) {
             inputView.clearSuggestions();
             inputView.hidePicker();
+            inputView.setEmojiHistoryAllowed(false);
         }
         // Unbind rather than only clearing: no key may reach a stale engine before the
         // next onStartInput rebinds one for the incoming editor.
         transliterationSession.start(null, false);
         currentSuggestions = null;
         privateField = false;
+        emojiHistoryAllowed = false;
         editorMode = EditorMode.OTHER;
         editorSelectionStart = -1;
         editorSelectionEnd = -1;
@@ -213,7 +219,9 @@ public final class NepaInputMethodService extends InputMethodService
         if (inputView != null) {
             inputView.clearSuggestions();
             inputView.hidePicker();
+            inputView.setEmojiHistoryAllowed(false);
         }
+        emojiHistoryAllowed = false;
         inputViewActive = false;
         super.onFinishInputView(finishingInput);
     }
@@ -396,7 +404,7 @@ public final class NepaInputMethodService extends InputMethodService
         transliterationSession.finish(sink);
         composingSession.commitRaw(sink);
         boolean committed = sink.commitText(emoji);
-        if (committed && !privateField) {
+        if (committed && emojiHistoryAllowed) {
             inputView.recordEmojiUse(emoji);
         }
         refreshSuggestions();
@@ -707,6 +715,10 @@ public final class NepaInputMethodService extends InputMethodService
 
     boolean privateFieldForTesting() {
         return privateField;
+    }
+
+    boolean emojiHistoryAllowedForTesting() {
+        return emojiHistoryAllowed;
     }
 
     boolean inputViewActiveForTesting() {
