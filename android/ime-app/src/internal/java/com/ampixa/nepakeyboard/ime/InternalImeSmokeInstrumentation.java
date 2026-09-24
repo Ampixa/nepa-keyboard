@@ -67,6 +67,8 @@ public final class InternalImeSmokeInstrumentation extends Instrumentation {
     private static final String WESTERN_MAGAR_LAYOUT_ID = "deva-nepal-western-magar-v1";
     private static final String MID_EASTERN_THARU_DIRECT_ID = "thq-Deva-NP";
     private static final String MID_EASTERN_THARU_LAYOUT_ID = "deva-nepal-mid-eastern-tharu-v1";
+    private static final String CENTRAL_GURUNG_DIRECT_ID = "gvr-Deva-NP";
+    private static final String CENTRAL_GURUNG_LAYOUT_ID = "deva-nepal-central-gurung-v1";
     private static final String NEPAL_BHASA_DEVA_DIRECT_ID = "new-Deva-NP";
     private static final String NEPAL_BHASA_ROMAN_ID = "new-Latn-Deva-NP";
     private static final String LATIN_QWERTY_LAYOUT_ID = "latn-qwerty-us-v1";
@@ -151,6 +153,7 @@ public final class InternalImeSmokeInstrumentation extends Instrumentation {
             KeyboardProfile bantawa = available(BANTAWA_DIRECT_ID);
             KeyboardProfile westernMagar = available(WESTERN_MAGAR_DIRECT_ID);
             KeyboardProfile midEasternTharu = available(MID_EASTERN_THARU_DIRECT_ID);
+            KeyboardProfile centralGurung = available(CENTRAL_GURUNG_DIRECT_ID);
             KeyboardProfile nepalBhasaDeva = available(NEPAL_BHASA_DEVA_DIRECT_ID);
             KeyboardProfile nepalBhasaRoman = available(NEPAL_BHASA_ROMAN_ID);
             KeyboardProfile newa = available(NEWA_DIRECT_ID);
@@ -190,9 +193,12 @@ public final class InternalImeSmokeInstrumentation extends Instrumentation {
                     "mrd-deva-direct", WESTERN_MAGAR_LAYOUT_ID, 5);
             verifyNewDirectProfileAndLayout(midEasternTharu, MID_EASTERN_THARU_DIRECT_ID,
                     "thq-deva-direct", MID_EASTERN_THARU_LAYOUT_ID, 5);
+            verifyNewDirectProfileAndLayout(centralGurung, CENTRAL_GURUNG_DIRECT_ID,
+                    "gvr-deva-direct", CENTRAL_GURUNG_LAYOUT_ID, 5);
             verifyBantawaLayoutAndDispatch(context, nepali, bantawa);
             verifyWesternMagarLayoutAndDispatch(context, nepali, westernMagar);
             verifyMidEasternTharuLayoutAndDispatch(context, nepali, midEasternTharu);
+            verifyCentralGurungLayoutAndDispatch(context, nepali, centralGurung);
             verifyRomanizedNewaProfileAndLayout(nepalBhasaDeva, nepalBhasaRoman);
             verifyNewaProfileAndLayout(newa);
             verifyNewaKeyDispatch(context, newa);
@@ -399,6 +405,11 @@ public final class InternalImeSmokeInstrumentation extends Instrumentation {
                     midEasternTharuVector.query);
             assertEquals("Mid-Eastern Tharu reviewed validation surface", "अइठल",
                     midEasternTharuVector.expectedSurface);
+            PackVector centralGurungVector = findVector(vectors, CENTRAL_GURUNG_DIRECT_ID);
+            assertEquals("Central Gurung reviewed validation query", "ऱ",
+                    centralGurungVector.query);
+            assertEquals("Central Gurung reviewed validation surface", "ऱा",
+                    centralGurungVector.expectedSurface);
             PackVector nepalBhasaRomanVector = findVector(vectors, NEPAL_BHASA_ROMAN_ID);
             assertEquals(
                     "Romanized Newa measured validation query",
@@ -470,6 +481,7 @@ public final class InternalImeSmokeInstrumentation extends Instrumentation {
             verifyBantawaPackInput(bantawa, bantawaVector, engine);
             verifyWesternMagarPackInput(westernMagar, engine);
             verifyMidEasternTharuPackInput(midEasternTharu, midEasternTharuVector, engine);
+            verifyCentralGurungPackInput(centralGurung, centralGurungVector, engine);
             verifyRomanizedNewaPackInput(
                     nepalBhasaRoman,
                     nepalBhasaRomanVector,
@@ -580,6 +592,8 @@ public final class InternalImeSmokeInstrumentation extends Instrumentation {
             result.putBoolean("mrd_typable_pack_input_verified", true);
             result.putBoolean("thq_profile_layout_dispatch_verified", true);
             result.putBoolean("thq_pack_input_verified", true);
+            result.putBoolean("gvr_profile_layout_dispatch_verified", true);
+            result.putBoolean("gvr_pack_input_verified", true);
             result.putBoolean("nepal_bhasa_roman_profile_binding_verified", true);
             result.putBoolean("nepal_bhasa_roman_pack_input_verified", true);
             result.putBoolean("newa_profile_binding_verified", true);
@@ -2381,6 +2395,39 @@ public final class InternalImeSmokeInstrumentation extends Instrumentation {
             assertDispatchedKey(view, listener, "base.r3.k6", "\u200c",
                     KeySpec.InputPolicy.DEVA_CONJUNCT_JOINER);
             verifyNewDirectPunctuationDispatch(view, listener);
+        });
+    }
+
+    private void verifyCentralGurungLayoutAndDispatch(
+            Context context,
+            KeyboardProfile nepali,
+            KeyboardProfile gurung
+    ) {
+        KeyboardLayouts.Layout base = KeyboardLayouts.forProfile(gurung, false, false, false);
+        KeyboardLayouts.Layout shift = KeyboardLayouts.forProfile(gurung, true, false, false);
+        for (KeyboardLayouts.Layout layout : new KeyboardLayouts.Layout[]{base, shift}) {
+            String layer = layout == base ? "base" : "shift";
+            assertGeneratedTextKey(layout, layer + ".r3.k3", "ऱ", "ऱ", "ऱ",
+                    KeySpec.InputPolicy.DEFAULT);
+            assertGeneratedTextKey(layout, layer + ".r3.k4", "ः", "◌ः",
+                    "Devanagari sign visarga", KeySpec.InputPolicy.DEFAULT);
+            assertGeneratedTextKey(layout, layer + ".r3.k5", "़", "◌़",
+                    "Devanagari sign nukta", KeySpec.InputPolicy.DEFAULT);
+        }
+        assertTrue("Nepali layout excludes Central Gurung independent rra",
+                !KeyboardLayouts.forProfile(nepali, false, false, false).containsText("ऱ")
+                        && !KeyboardLayouts.forProfile(nepali, true, false, false)
+                        .containsText("ऱ"));
+        RecordingInputListener listener = new RecordingInputListener(null);
+        runOnMainSync(() -> {
+            NepaInputView view = new NepaInputView(context, listener);
+            view.setProfile(gurung);
+            assertDispatchedKey(view, listener, "base.r3.k3", "ऱ",
+                    KeySpec.InputPolicy.DEFAULT);
+            assertDispatchedKey(view, listener, "base.r3.k4", "ः",
+                    KeySpec.InputPolicy.DEFAULT);
+            assertDispatchedKey(view, listener, "base.r3.k5", "़",
+                    KeySpec.InputPolicy.DEFAULT);
         });
     }
 
@@ -4494,6 +4541,29 @@ public final class InternalImeSmokeInstrumentation extends Instrumentation {
         appendKey(session, requiredKey(shift, "shift.r0.k0"), sink);
         assertSessionQuery("Mid-Eastern Tharu validation", session, vector.query,
                 vector.expectedSurface);
+    }
+
+    private static void verifyCentralGurungPackInput(
+            KeyboardProfile gurung,
+            PackVector vector,
+            SuggestionEngine engine
+    ) {
+        KeyboardLayouts.Layout base = KeyboardLayouts.forProfile(gurung, false, false, false);
+        RecordingTextSink validationSink = new RecordingTextSink();
+        ComposingSession validation = new ComposingSession(engine);
+        validation.start(gurung, true, false, validationSink);
+        appendKey(validation, requiredKey(base, "base.r3.k3"), validationSink);
+        assertSessionQuery("Central Gurung validation", validation, vector.query,
+                vector.expectedSurface);
+
+        RecordingTextSink prefixSink = new RecordingTextSink();
+        ComposingSession prefix = new ComposingSession(engine);
+        prefix.start(gurung, true, false, prefixSink);
+        appendKey(prefix, requiredKey(base, "base.r2.k5"), prefixSink);
+        appendKey(prefix, requiredKey(base, "base.r1.k7"), prefixSink);
+        appendKey(prefix, requiredKey(base, "base.r2.k9"), prefixSink);
+        appendKey(prefix, requiredKey(base, "base.r0.k5"), prefixSink);
+        assertSessionQuery("Central Gurung typeable prefix", prefix, "नक्य", "नक्यु");
     }
 
     private static void assertSessionQuery(

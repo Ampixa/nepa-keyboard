@@ -212,6 +212,50 @@
     {
       "artifacts": [
         {
+          "path": "reports/central-gurung-internal-pack-v0.json",
+          "sha256": "08bb6546501fa40dfeba5f8abf5d380de59f65879051d9f164e8ce3f0cca5eb6"
+        }
+      ],
+      "evidence_id": "gvr-direct-internal-2026-09-24",
+      "gates": [
+        "deterministic_build",
+        "internal_pack",
+        "layout_implemented"
+      ],
+      "layout_binding": {
+        "layout_id": "deva-nepal-central-gurung-v1",
+        "revision": 1,
+        "source_sha256": "fbf366fc4a1dd560d5dbdc8128a40169a4e596c2ab0f047975e466f3ec72f5b4"
+      },
+      "pack_artifact": {
+        "alias_key_count": 0,
+        "artifact_license": "LicenseRef-Internal",
+        "artifact_sha256": "f4d128e1b77aa6e9012448addf7f45bd140301f98767f1dd934e3d21e86fafda",
+        "candidate_count": 286,
+        "file_name": "gvr-Deva-NP.nkp",
+        "language": "gvr",
+        "output_script": "Deva",
+        "pack_id": "gvr-Deva-NP",
+        "release_mode": "internal",
+        "surface_key_count": 286,
+        "validation": {
+          "benchmark_queries": [
+            "नक्य",
+            "ताङ्ग",
+            "चीत",
+            "पुग्र",
+            "पिंक्य"
+          ],
+          "expected_surface": "ऱा",
+          "query": "ऱ"
+        }
+      },
+      "profile_id": "gvr-Deva-NP",
+      "status": "passed"
+    },
+    {
+      "artifacts": [
+        {
           "path": "reports/khaling-internal-pack-v0.json",
           "sha256": "77a44610304611309ad8d0fd473b8e3d1f4115bf1a778700cdbb47118ba89c54"
         }
@@ -916,7 +960,7 @@
   "expected_counts": {
     "profiles": 74,
     "scripts": 9,
-    "selectable": 17,
+    "selectable": 18,
     "targets": 33
   },
   "profile_overrides": {
@@ -958,6 +1002,16 @@
       "layout_id": "latn-qwerty-us-v1",
       "pack_binding": "eng-Latn-US",
       "profile_id": "eng-Latn-US",
+      "selectable": true
+    },
+    "gvr-deva-direct": {
+      "default_enabled": false,
+      "evidence_ids": [
+        "gvr-direct-internal-2026-09-24"
+      ],
+      "layout_id": "deva-nepal-central-gurung-v1",
+      "pack_binding": "gvr-Deva-NP",
+      "profile_id": "gvr-Deva-NP",
       "selectable": true
     },
     "klr-deva-direct": {

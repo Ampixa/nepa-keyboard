@@ -1156,12 +1156,13 @@ class KeyboardLayoutsTest(unittest.TestCase):
             source_path_prefix="layouts/internal/src",
             profile_lock_path="catalog/internal-profiles.lock.json",
         )
-        self.assertEqual(compiled["layout_count"], 15)
+        self.assertEqual(compiled["layout_count"], 16)
         self.assertEqual(
             {row["layout_id"] for row in compiled["layouts"]},
             {
                 "deva-nepal-basic-v1",
                 "deva-nepal-bantawa-v1",
+                "deva-nepal-central-gurung-v1",
                 "deva-nepal-bhasa-v1",
                 "deva-nepal-dhimal-v1",
                 "deva-nepal-dumi-v1",

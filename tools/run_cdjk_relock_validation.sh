@@ -58,6 +58,7 @@ test_files=(
   test_bantawa_internal_source.py
   test_bantawa_source_probe_runner.py
   test_central_gurung_candidate_source.py
+  test_central_gurung_internal_source.py
   test_dumi_measurement_runner.py
   test_dumi_internal_source.py
   test_khaling_internal_source.py
@@ -106,6 +107,7 @@ if [[ "$scope" == all ]]; then
     test_bantawa_internal_source.py
     test_bantawa_source_probe_runner.py
     test_central_gurung_candidate_source.py
+    test_central_gurung_internal_source.py
     test_dumi_measurement_runner.py
     test_dumi_internal_source.py
     test_khaling_internal_source.py
@@ -343,6 +345,7 @@ static_source_inputs=(
   tools/audit_bantawa_jsonl_contract.py
   tools/build_bantawa_internal_source.py
   tools/build_central_gurung_candidate_source.py
+  tools/build_central_gurung_internal_source.py
   tools/build_mid_eastern_tharu_internal_source.py
   tools/build_eastern_tamang_candidate_source.py
   tools/build_eastern_magar_candidate_source.py
@@ -398,6 +401,10 @@ static_source_inputs=(
   catalog/western-magar-internal-prefixes-v0.json
   catalog/internal-pack-milestones/mrd-Deva-NP-v0.json
   catalog/internal-pack-milestones/thq-Deva-NP-v0.json
+  catalog/central-gurung-internal-prefixes-v0.json
+  catalog/internal-pack-milestones/gvr-Deva-NP-v0.json
+  reports/evidence/central-gurung-candidate-v0/gvr_nep_lexicon.tsv
+  reports/central-gurung-candidate-policy-v0.md
   catalog/tharu-internal-prefixes-v0.json
   reports/evidence/mid-eastern-tharu-layout-scalar-check-v0.json
   reports/bantawa-layout-candidate-v0.md
@@ -989,6 +996,14 @@ assert_new_internal_profile \
   2980 'अइठ' 'अइठल' thq-direct-internal-2026-09-24 \
   reports/mid-eastern-tharu-internal-pack-v0.json \
   8eaaa307984cfbbb57ef316533bda9581928b753d0069de1a99274b9718f96a5
+assert_new_internal_profile \
+  "$evidence/a/internal-profiles.lock.json" \
+  gvr-Deva-NP deva-nepal-central-gurung-v1 \
+  fbf366fc4a1dd560d5dbdc8128a40169a4e596c2ab0f047975e466f3ec72f5b4 \
+  f4d128e1b77aa6e9012448addf7f45bd140301f98767f1dd934e3d21e86fafda \
+  286 'ऱ' 'ऱा' gvr-direct-internal-2026-09-24 \
+  reports/central-gurung-internal-pack-v0.json \
+  08bb6546501fa40dfeba5f8abf5d380de59f65879051d9f164e8ce3f0cca5eb6
 if [[ "$scope" == all ]]; then
   assert_newa_release_profile \
     "$evidence/a/shipping-profiles.lock.json" \

@@ -34,6 +34,7 @@ class RelockValidationRunnerTest(unittest.TestCase):
             self.assertIn("test_android_conversion_substrate.py", names)
             self.assertIn("test_bantawa_internal_source.py", names)
             self.assertIn("test_western_magar_internal_source.py", names)
+            self.assertIn("test_central_gurung_internal_source.py", names)
             self.assertIn("test_relock_validation_runner.py", names)
             self.assertIn("test_key_alternates.py", names)
             self.assertIn("test_transliteration_profiles.py", names)
@@ -62,6 +63,10 @@ class RelockValidationRunnerTest(unittest.TestCase):
             "catalog/internal-pack-milestones/bap-Deva-NP-v0.json",
             "catalog/internal-pack-milestones/mrd-Deva-NP-v0.json",
             "catalog/internal-pack-milestones/thq-Deva-NP-v0.json",
+            "catalog/internal-pack-milestones/gvr-Deva-NP-v0.json",
+            "catalog/central-gurung-internal-prefixes-v0.json",
+            "tools/build_central_gurung_internal_source.py",
+            "reports/evidence/central-gurung-candidate-v0/gvr_nep_lexicon.tsv",
             "tools/build_bantawa_internal_source.py",
             "tools/build_western_magar_internal_source.py",
             "schemas/shipping-profile-review.schema.json",

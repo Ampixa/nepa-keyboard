@@ -1390,6 +1390,8 @@ grep -F 'mrd_profile_layout_dispatch_verified=true' "$evidence/internal-ime-smok
 grep -F 'mrd_typable_pack_input_verified=true' "$evidence/internal-ime-smoke.txt"
 grep -F 'thq_profile_layout_dispatch_verified=true' "$evidence/internal-ime-smoke.txt"
 grep -F 'thq_pack_input_verified=true' "$evidence/internal-ime-smoke.txt"
+grep -F 'gvr_profile_layout_dispatch_verified=true' "$evidence/internal-ime-smoke.txt"
+grep -F 'gvr_pack_input_verified=true' "$evidence/internal-ime-smoke.txt"
 grep -F 'nepal_bhasa_roman_profile_binding_verified=true' \
   "$evidence/internal-ime-smoke.txt"
 grep -F 'nepal_bhasa_roman_pack_input_verified=true' \
