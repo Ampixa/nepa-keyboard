@@ -1,0 +1,6 @@
+{"case_id":"taj-first-gloss-a","profile_id":"taj-Deva-NP","pack_id":"taj-Deva-NP","index":"surface","query":"मेप्सो","expected_surface":"मेप्सोल्","max_rank":1,"review_status":"pending_speaker_review"}
+{"case_id":"taj-first-gloss-b","profile_id":"taj-Deva-NP","pack_id":"taj-Deva-NP","index":"surface","query":"गोसो","expected_surface":"गोसोल्","max_rank":1,"review_status":"pending_speaker_review"}
+{"case_id":"taj-independent-ai","profile_id":"taj-Deva-NP","pack_id":"taj-Deva-NP","index":"surface","query":"ऐर","expected_surface":"ऐर्बा","max_rank":1,"review_status":"pending_speaker_review"}
+{"case_id":"taj-visarga-a","profile_id":"taj-Deva-NP","pack_id":"taj-Deva-NP","index":"surface","query":"खेः","expected_surface":"खेःबा","max_rank":1,"review_status":"pending_speaker_review"}
+{"case_id":"taj-visarga-b","profile_id":"taj-Deva-NP","pack_id":"taj-Deva-NP","index":"surface","query":"रुइः","expected_surface":"रुइःबा","max_rank":1,"review_status":"pending_speaker_review"}
+{"case_id":"taj-vowel-sign","profile_id":"taj-Deva-NP","pack_id":"taj-Deva-NP","index":"surface","query":"डोमसि","expected_surface":"डोमसिङ्","max_rank":1,"review_status":"pending_speaker_review"}
