@@ -315,6 +315,7 @@ static_source_inputs=(
   tools/run_cdjk_sherpa_candidate_pack.sh
   validation/lepcha-candidate-prefix-v0.jsonl
   validation/sherpa-candidate-prefix-v0.jsonl
+  reports/sherpa-scalar-inventory-v0.json
   tools/build_western_magar_internal_source.py
   tools/audit_nepal_bhasa_tsv_contract.py
   tools/build_nepal_bhasa_internal_source.py
