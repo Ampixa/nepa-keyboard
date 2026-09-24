@@ -356,7 +356,7 @@ class SilApkLayoutGapAuditTest(unittest.TestCase):
         lock, encoded, verification = auditor._verify_layout_lock(
             ROOT / "layouts" / "internal" / "layouts-v1.lock.json"
         )
-        self.assertEqual(lock["layout_count"], 12)
+        self.assertEqual(lock["layout_count"], 15)
         self.assertEqual(
             verification["compiler"]["sha256"],
             auditor.EXPECTED_LAYOUT_COMPILER_SHA256,
