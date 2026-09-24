@@ -1,0 +1,6 @@
+{"case_id":"kle-because","profile_id":"kle-Deva-NP","pack_id":"kle-Deva-NP","index":"surface","query":"ऊदोईप","expected_surface":"ऊदोईपीक्यालो","max_rank":1,"review_status":"pending_speaker_review"}
+{"case_id":"kle-name","profile_id":"kle-Deva-NP","pack_id":"kle-Deva-NP","index":"surface","query":"नीङ्प","expected_surface":"नीङ्पी","max_rank":1,"review_status":"pending_speaker_review"}
+{"case_id":"kle-forgive","profile_id":"kle-Deva-NP","pack_id":"kle-Deva-NP","index":"surface","query":"छेम","expected_surface":"छेमा","max_rank":1,"review_status":"pending_speaker_review"}
+{"case_id":"kle-outside","profile_id":"kle-Deva-NP","pack_id":"kle-Deva-NP","index":"surface","query":"पाख","expected_surface":"पाखा","max_rank":1,"review_status":"pending_speaker_review"}
+{"case_id":"kle-welcome","profile_id":"kle-Deva-NP","pack_id":"kle-Deva-NP","index":"surface","query":"लाम्‍त","expected_surface":"लाम्‍तूम्‍मा","max_rank":1,"review_status":"pending_speaker_review"}
+{"case_id":"kle-thanks","profile_id":"kle-Deva-NP","pack_id":"kle-Deva-NP","index":"surface","query":"ओल","expected_surface":"ओलोनूव","max_rank":1,"review_status":"pending_speaker_review"}

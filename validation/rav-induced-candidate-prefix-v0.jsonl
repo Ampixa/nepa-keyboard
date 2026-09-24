@@ -1,0 +1,6 @@
+{"case_id":"rav-name","profile_id":"rav-Deva-NP","pack_id":"rav-Deva-NP","index":"surface","query":"नूङ्‍प","expected_surface":"नूङ्‍पी","max_rank":1,"review_status":"pending_speaker_review"}
+{"case_id":"rav-because","profile_id":"rav-Deva-NP","pack_id":"rav-Deva-NP","index":"surface","query":"यँमाध","expected_surface":"यँमाधँ","max_rank":1,"review_status":"pending_speaker_review"}
+{"case_id":"rav-twelve","profile_id":"rav-Deva-NP","pack_id":"rav-Deva-NP","index":"surface","query":"ईत्‍ही","expected_surface":"ईत्‍हीस्","max_rank":1,"review_status":"pending_speaker_review"}
+{"case_id":"rav-tax","profile_id":"rav-Deva-NP","pack_id":"rav-Deva-NP","index":"surface","query":"तीर","expected_surface":"तीराऊ","max_rank":1,"review_status":"pending_speaker_review"}
+{"case_id":"rav-only","profile_id":"rav-Deva-NP","pack_id":"rav-Deva-NP","index":"surface","query":"मात्","expected_surface":"मात्‍ताई","max_rank":1,"review_status":"pending_speaker_review"}
+{"case_id":"rav-fire","profile_id":"rav-Deva-NP","pack_id":"rav-Deva-NP","index":"surface","query":"मीप","expected_surface":"मीपी","max_rank":1,"review_status":"pending_speaker_review"}

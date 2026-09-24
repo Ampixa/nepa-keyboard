@@ -1,0 +1,6 @@
+{"case_id":"aph-because","profile_id":"aph-Deva-NP","pack_id":"aph-Deva-NP","index":"surface","query":"पोङ्‌भ","expected_surface":"पोङ्‌भोने","max_rank":1,"review_status":"pending_speaker_review"}
+{"case_id":"aph-five","profile_id":"aph-Deva-NP","pack_id":"aph-Deva-NP","index":"surface","query":"लेम्‍बो","expected_surface":"लेम्‍बोक्","max_rank":1,"review_status":"pending_speaker_review"}
+{"case_id":"aph-ready","profile_id":"aph-Deva-NP","pack_id":"aph-Deva-NP","index":"surface","query":"टेय","expected_surface":"टेयार","max_rank":1,"review_status":"pending_speaker_review"}
+{"case_id":"aph-healed","profile_id":"aph-Deva-NP","pack_id":"aph-Deva-NP","index":"surface","query":"नुमा","expected_surface":"नुमानिङ्","max_rank":1,"review_status":"pending_speaker_review"}
+{"case_id":"aph-ten","profile_id":"aph-Deva-NP","pack_id":"aph-Deva-NP","index":"surface","query":"ठिम","expected_surface":"ठिमेक्","max_rank":1,"review_status":"pending_speaker_review"}
+{"case_id":"aph-no","profile_id":"aph-Deva-NP","pack_id":"aph-Deva-NP","index":"surface","query":"माखाक","expected_surface":"माखाक्","max_rank":1,"review_status":"pending_speaker_review"}
