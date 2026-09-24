@@ -506,9 +506,15 @@ build_source_inputs() {
 validate_source_inputs() {
   local source
   local tracked
+  local resolved_source
   for source in "${source_inputs[@]}"; do
     if [[ ! -f "$repo/$source" || ! -s "$repo/$source" || -L "$repo/$source" ]]; then
       echo "immutable source input is not a nonempty regular file: $source" >&2
+      return 1
+    fi
+    resolved_source="$(realpath -e -- "$repo/$source")" || return 1
+    if [[ "$source" == /* || "$resolved_source" != "$repo/"* ]]; then
+      echo "immutable source input escapes the checkout: $source" >&2
       return 1
     fi
     for tracked in "${tracked_paths[@]}"; do
