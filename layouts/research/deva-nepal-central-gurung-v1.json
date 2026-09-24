@@ -1,0 +1,367 @@
+{
+  "layout_format_version": 1,
+  "layout_id": "deva-nepal-central-gurung-v1",
+  "revision": 1,
+  "display_name": "Devanagari Central Gurung candidate (phone)",
+  "input_script": "Deva",
+  "direction": "ltr",
+  "normalization": "NFC",
+  "unicode_data_version": "16.0.0",
+  "device_forms": [
+    "phone"
+  ],
+  "authors": [
+    "Ampixa",
+    "xkeyboard-config contributors"
+  ],
+  "license": {
+    "id": "LicenseRef-xkeyboard-config-aggregate",
+    "copyright": "Multiple copyright holders; see the exact xkeyboard-config package notice",
+    "notice_path": "layouts/internal/notices/xkb-data-2.41-2ubuntu1.1.copyright",
+    "notice_sha256": "739ff5404b852466ed201799e49bb5dc0f4eafe0876bf9aa74499f306b7b1786",
+    "license_url": "https://gitlab.freedesktop.org/xkeyboard-config/xkeyboard-config/-/blob/xkeyboard-config-2.41/COPYING",
+    "redistribution": "allowed"
+  },
+  "provenance": [
+    {
+      "kind": "adapted",
+      "source": "layouts/internal/src/deva-nepal-basic-v1.json",
+      "revision": "1",
+      "sha256": "5cefdc0e916eaa9ee64acafddcadad4c9d32c8adbaff69cb2d8f181655280e4f",
+      "note": "Preserves the reviewed Nepali basic phone rows, actions, symbols, numeric fallback, and profile-bound labels."
+    },
+    {
+      "kind": "project_authored",
+      "source": "reports/central-gurung-candidate-policy-v0.md",
+      "revision": "v0",
+      "sha256": "488f4abc87a949de92cc6194c399f91192527d8defdfe015746c69ddc13b6aeb",
+      "note": "Adds the six missing accepted-headword scalars for an isolated research candidate."
+    }
+  ],
+  "field_layer_map": {
+    "text": "base",
+    "number": "numeric",
+    "phone": "numeric",
+    "datetime": "numeric"
+  },
+  "layers": {
+    "base": {
+      "rows": [
+        [
+          "ट",
+          "ौ",
+          "े",
+          "र",
+          "त",
+          "य",
+          "ु",
+          "ि",
+          "ो",
+          "प"
+        ],
+        [
+          "ा",
+          "स",
+          "द",
+          "उ",
+          "ग",
+          "ह",
+          "ज",
+          "क",
+          "ल"
+        ],
+        [
+          "ष",
+          "ड",
+          "च",
+          "व",
+          "ब",
+          "न",
+          "म",
+          ",",
+          "।",
+          "्"
+        ],
+        [
+          "इ",
+          "ई",
+          "ए",
+          "ऱ",
+          {
+            "kind": "text",
+            "label": "◌ः",
+            "text": "ः",
+            "content_description": "Devanagari sign visarga"
+          },
+          {
+            "kind": "text",
+            "label": "◌़",
+            "text": "़",
+            "content_description": "Devanagari sign nukta"
+          }
+        ],
+        [
+          {
+            "action": "shift",
+            "label": "⇧",
+            "content_description": "Shift",
+            "width_units": 115
+          },
+          {
+            "action": "symbols",
+            "label": "?123",
+            "content_description": "Symbols",
+            "width_units": 135
+          },
+          {
+            "action": "language",
+            "label": "🌐",
+            "content_description": "Switch language",
+            "width_units": 110,
+            "hold_action": "open_language_picker"
+          },
+          {
+            "action": "space",
+            "label": "${profile.native_name}",
+            "content_description": "Space · ${profile.display_name}",
+            "width_units": 400,
+            "hold_action": "open_language_picker"
+          },
+          {
+            "action": "delete",
+            "label": "⌫",
+            "content_description": "Delete",
+            "width_units": 125
+          },
+          {
+            "action": "enter",
+            "label": "↵",
+            "content_description": "Enter",
+            "width_units": 125
+          }
+        ]
+      ]
+    },
+    "shift": {
+      "rows": [
+        [
+          "ठ",
+          "औ",
+          "ै",
+          "ृ",
+          "थ",
+          "ञ",
+          "ू",
+          "ी",
+          "ओ",
+          "फ"
+        ],
+        [
+          "आ",
+          "श",
+          "ध",
+          "ऊ",
+          "घ",
+          "अ",
+          "झ",
+          "ख",
+          "॥"
+        ],
+        [
+          "ऋ",
+          "ढ",
+          "छ",
+          "ँ",
+          "भ",
+          "ण",
+          "ं",
+          "ङ",
+          ".",
+          "?"
+        ],
+        [
+          "इ",
+          "ई",
+          "ए",
+          "ऱ",
+          {
+            "kind": "text",
+            "label": "◌ः",
+            "text": "ः",
+            "content_description": "Devanagari sign visarga"
+          },
+          {
+            "kind": "text",
+            "label": "◌़",
+            "text": "़",
+            "content_description": "Devanagari sign nukta"
+          }
+        ],
+        [
+          {
+            "action": "shift",
+            "label": "⇧",
+            "content_description": "Shift",
+            "width_units": 115
+          },
+          {
+            "action": "symbols",
+            "label": "?123",
+            "content_description": "Symbols",
+            "width_units": 135
+          },
+          {
+            "action": "language",
+            "label": "🌐",
+            "content_description": "Switch language",
+            "width_units": 110,
+            "hold_action": "open_language_picker"
+          },
+          {
+            "action": "space",
+            "label": "${profile.native_name}",
+            "content_description": "Space · ${profile.display_name}",
+            "width_units": 400,
+            "hold_action": "open_language_picker"
+          },
+          {
+            "action": "delete",
+            "label": "⌫",
+            "content_description": "Delete",
+            "width_units": 125
+          },
+          {
+            "action": "enter",
+            "label": "↵",
+            "content_description": "Enter",
+            "width_units": 125
+          }
+        ]
+      ]
+    },
+    "symbols": {
+      "rows": [
+        [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "0"
+        ],
+        [
+          "@",
+          "#",
+          "₹",
+          "_",
+          "&",
+          "-",
+          "+",
+          "(",
+          ")"
+        ],
+        [
+          "*",
+          "\"",
+          "'",
+          ":",
+          ";",
+          "!",
+          "?",
+          "/",
+          "."
+        ],
+        [
+          {
+            "action": "letters",
+            "label": "ABC",
+            "content_description": "Letters",
+            "width_units": 135
+          },
+          {
+            "action": "symbols",
+            "label": "?123",
+            "content_description": "Symbols",
+            "width_units": 135
+          },
+          {
+            "action": "language",
+            "label": "🌐",
+            "content_description": "Switch language",
+            "width_units": 110,
+            "hold_action": "open_language_picker"
+          },
+          {
+            "action": "space",
+            "label": "${profile.native_name}",
+            "content_description": "Space · ${profile.display_name}",
+            "width_units": 400,
+            "hold_action": "open_language_picker"
+          },
+          {
+            "action": "delete",
+            "label": "⌫",
+            "content_description": "Delete",
+            "width_units": 125
+          },
+          {
+            "action": "enter",
+            "label": "↵",
+            "content_description": "Enter",
+            "width_units": 125
+          }
+        ]
+      ]
+    },
+    "numeric": {
+      "rows": [
+        [
+          "1",
+          "2",
+          "3"
+        ],
+        [
+          "4",
+          "5",
+          "6"
+        ],
+        [
+          "7",
+          "8",
+          "9"
+        ],
+        [
+          ".",
+          "0",
+          "-"
+        ],
+        [
+          {
+            "action": "space",
+            "label": "${profile.native_name}",
+            "content_description": "Space · ${profile.display_name}",
+            "width_units": 220,
+            "hold_action": "open_language_picker"
+          },
+          {
+            "action": "delete",
+            "label": "⌫",
+            "content_description": "Delete",
+            "width_units": 125
+          },
+          {
+            "action": "enter",
+            "label": "↵",
+            "content_description": "Enter",
+            "width_units": 125
+          }
+        ]
+      ]
+    }
+  },
+  "transforms": []
+}

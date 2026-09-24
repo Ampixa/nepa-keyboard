@@ -1,0 +1,6 @@
+{"case_id":"gvr-animal","profile_id":"gvr-Deva-NP","pack_id":"gvr-Deva-NP","index":"surface","query":"नक्य","expected_surface":"नक्यु","max_rank":1,"review_status":"pending_speaker_review"}
+{"case_id":"gvr-cluster","profile_id":"gvr-Deva-NP","pack_id":"gvr-Deva-NP","index":"surface","query":"ताङ्ग","expected_surface":"ताङ्गा","max_rank":1,"review_status":"pending_speaker_review"}
+{"case_id":"gvr-letter-rra","profile_id":"gvr-Deva-NP","pack_id":"gvr-Deva-NP","index":"surface","query":"ऱ","expected_surface":"ऱा","max_rank":1,"review_status":"pending_speaker_review"}
+{"case_id":"gvr-long-vowel","profile_id":"gvr-Deva-NP","pack_id":"gvr-Deva-NP","index":"surface","query":"चीत","expected_surface":"चीत्तो","max_rank":1,"review_status":"pending_speaker_review"}
+{"case_id":"gvr-prefix-snake","profile_id":"gvr-Deva-NP","pack_id":"gvr-Deva-NP","index":"surface","query":"पुग्र","expected_surface":"पुग्री","max_rank":1,"review_status":"pending_speaker_review"}
+{"case_id":"gvr-color","profile_id":"gvr-Deva-NP","pack_id":"gvr-Deva-NP","index":"surface","query":"पिंक्य","expected_surface":"पिंक्या","max_rank":1,"review_status":"pending_speaker_review"}
