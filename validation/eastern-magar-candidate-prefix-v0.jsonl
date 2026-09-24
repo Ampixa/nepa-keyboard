@@ -1,0 +1,6 @@
+{"case_id":"mgp-many","profile_id":"mgp-Deva-NP","pack_id":"mgp-Deva-NP","index":"surface","query":"वास्ट","expected_surface":"वास्टै","max_rank":1,"review_status":"pending_speaker_review"}
+{"case_id":"mgp-only","profile_id":"mgp-Deva-NP","pack_id":"mgp-Deva-NP","index":"surface","query":"मट","expected_surface":"मट्टै","max_rank":1,"review_status":"pending_speaker_review"}
+{"case_id":"mgp-five","profile_id":"mgp-Deva-NP","pack_id":"mgp-Deva-NP","index":"surface","query":"बाङ","expected_surface":"बाङा","max_rank":1,"review_status":"pending_speaker_review"}
+{"case_id":"mgp-home","profile_id":"mgp-Deva-NP","pack_id":"mgp-Deva-NP","index":"surface","query":"इमा","expected_surface":"इमाङ","max_rank":1,"review_status":"pending_speaker_review"}
+{"case_id":"mgp-how","profile_id":"mgp-Deva-NP","pack_id":"mgp-Deva-NP","index":"surface","query":"कुटज","expected_surface":"कुटजाट्न","max_rank":1,"review_status":"pending_speaker_review"}
+{"case_id":"mgp-drink","profile_id":"mgp-Deva-NP","pack_id":"mgp-Deva-NP","index":"surface","query":"गाक","expected_surface":"गाकी","max_rank":1,"review_status":"pending_speaker_review"}
