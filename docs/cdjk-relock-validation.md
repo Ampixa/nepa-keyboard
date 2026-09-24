@@ -35,6 +35,10 @@ Before running, verify that `tools/update_android_lock_pins.py` and
 `tools/run_cdjk_relock_validation.sh` on `cdjk` match the local source bytes.
 The pin updater also defaults to the internal scope; use `--scope all` only for
 the explicit combined maintenance transaction below.
+The checkout must have an executable `.venv/bin/python` with Python 3.14 and
+Unicode 16.0.0. The runner uses that interpreter directly and records its
+SHA-256 before and after the transaction, leaving the source tree free of a
+new `uv.lock`.
 
 ## Run the internal transaction
 
@@ -132,7 +136,8 @@ byte-for-byte with the standalone candidate report. Both read-only guards run
 before any transaction-managed file is installed.
 `final-evidence-sha256.txt` then content-binds those source hashes, both compiled
 NCM copies, the conversion schema projections, candidates, review packet,
-checks, test logs, original files, installed hashes, pin results, and host
+checks, test logs, the Python runtime hash, original files, installed hashes,
+pin results, and host
 preflight.
 
 ## Combined shared-compiler/schema maintenance

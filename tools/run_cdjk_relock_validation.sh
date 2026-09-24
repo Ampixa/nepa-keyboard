@@ -26,7 +26,7 @@ if [[ "$evidence" != /* ]]; then
 fi
 
 repo="$(cd -P "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
-uv="$HOME/.local/bin/uv"
+python_bin="$repo/.venv/bin/python"
 shipping_profile_lock="$repo/catalog/shipping-profiles.lock.json"
 internal_profile_lock="$repo/catalog/internal-profiles.lock.json"
 release_layout_lock="$repo/layouts/layouts-v1.lock.json"
@@ -290,13 +290,28 @@ if [[ ! "$home_available_kib" =~ ^[0-9]+$ \
 fi
 
 for required in awk chmod cmp cp df find flock free grep hostname install jq mkdir \
-  mv pgrep ps realpath rm sed sha256sum sort timeout uname uptime xargs "$uv"; do
+  mv pgrep ps realpath rm sed sha256sum sort timeout uname uptime xargs \
+  "$python_bin"; do
   if [[ "$required" == /* ]]; then
     [[ -x "$required" ]]
   else
     command -v "$required" >/dev/null
   fi
 done
+if ! "$python_bin" -c '
+import sys
+import unicodedata
+if sys.version_info[:2] != (3, 14):
+    raise SystemExit("Python 3.14 is required")
+if unicodedata.unidata_version != "16.0.0":
+    raise SystemExit("Unicode 16.0.0 is required")
+print("python=" + sys.version.split()[0])
+print("unicode=" + unicodedata.unidata_version)
+' >"$evidence/python-runtime.txt"; then
+  echo "cdjk relock requires Python 3.14 with Unicode 16.0.0" >&2
+  exit 1
+fi
+sha256sum "$python_bin" >"$evidence/python-runtime-sha256.txt"
 for relative in "${tracked_paths[@]}"; do
   [[ -f "$repo/$relative" && -s "$repo/$relative" && ! -L "$repo/$relative" ]]
 done
@@ -544,7 +559,7 @@ sha256sum "${source_inputs[@]}" >"$evidence/input-source-sha256.txt"
 printf 'scope=%s\n' "$scope" >"$evidence/relock-scope.txt"
 
 run_python() {
-  PYTHONPATH=src:. timeout 600 "$uv" run --python 3.14 python "$@"
+  PYTHONPATH=src:. timeout 600 "$python_bin" "$@"
 }
 
 assert_conversion_schema_contract() {
@@ -1202,6 +1217,9 @@ validate_source_inputs
 sha256sum "${source_inputs[@]}" >"$evidence/input-source-sha256.after.txt"
 cmp "$evidence/input-source-sha256.txt" \
   "$evidence/input-source-sha256.after.txt"
+sha256sum "$python_bin" >"$evidence/python-runtime-sha256.after.txt"
+cmp "$evidence/python-runtime-sha256.txt" \
+  "$evidence/python-runtime-sha256.after.txt"
 
 cmp "$evidence/a/internal-profiles.lock.json" "$internal_profile_lock"
 cmp "$evidence/a/internal-layouts-v1.lock.json" "$internal_layout_lock"

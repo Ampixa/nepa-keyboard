@@ -93,6 +93,16 @@ class RelockValidationRunnerTest(unittest.TestCase):
             self.runner,
         )
 
+    def test_python_runtime_is_pinned_without_mutating_the_source_tree(self) -> None:
+        self.assertIn('python_bin="$repo/.venv/bin/python"', self.runner)
+        self.assertIn("if sys.version_info[:2] != (3, 14):", self.runner)
+        self.assertIn('if unicodedata.unidata_version != "16.0.0":', self.runner)
+        self.assertIn('PYTHONPATH=src:. timeout 600 "$python_bin" "$@"', self.runner)
+        self.assertIn('sha256sum "$python_bin" >"$evidence/python-runtime-sha256.txt"',
+                      self.runner)
+        self.assertIn('"$evidence/python-runtime-sha256.after.txt"', self.runner)
+        self.assertNotIn("uv run", self.runner)
+
     def test_generated_android_assets_are_transaction_outputs(self) -> None:
         output_paths = (
             "android/ime-app/src/main/assets/nepa-layouts/key-alternates-v1.json",
