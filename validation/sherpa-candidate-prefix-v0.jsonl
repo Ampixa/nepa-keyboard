@@ -1,0 +1,6 @@
+{"case_id":"xsr-kya","profile_id":"xsr-Deva-NP","pack_id":"xsr-Deva-NP","index":"surface","query":"क्‍य","expected_surface":"क्‍यका","max_rank":1,"review_status":"pending_speaker_review"}
+{"case_id":"xsr-konchya","profile_id":"xsr-Deva-NP","pack_id":"xsr-Deva-NP","index":"surface","query":"कोन्‍छ्‍य","expected_surface":"कोन्‍छ्‍योक","max_rank":1,"review_status":"pending_speaker_review"}
+{"case_id":"xsr-shab","profile_id":"xsr-Deva-NP","pack_id":"xsr-Deva-NP","index":"surface","query":"शब्‍","expected_surface":"शब्‍ज्‍यी","max_rank":1,"review_status":"pending_speaker_review"}
+{"case_id":"xsr-tang","profile_id":"xsr-Deva-NP","pack_id":"xsr-Deva-NP","index":"surface","query":"ताङ","expected_surface":"ताङ","max_rank":1,"review_status":"pending_speaker_review"}
+{"case_id":"xsr-yin","profile_id":"xsr-Deva-NP","pack_id":"xsr-Deva-NP","index":"surface","query":"यिन","expected_surface":"यिन","max_rank":1,"review_status":"pending_speaker_review"}
+{"case_id":"xsr-chya","profile_id":"xsr-Deva-NP","pack_id":"xsr-Deva-NP","index":"surface","query":"छ्‍य","expected_surface":"छ्‍यकुप","max_rank":1,"review_status":"pending_speaker_review"}
