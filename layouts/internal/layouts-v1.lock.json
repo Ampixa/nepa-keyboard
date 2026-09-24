@@ -5,9 +5,1302 @@
   },
   "generator": "build_keyboard_layouts",
   "generator_version": 1,
-  "layout_count": 12,
+  "layout_count": 16,
   "layout_lock_version": 1,
   "layouts": [
+    {
+      "authors": [
+        "Ampixa",
+        "xkeyboard-config contributors"
+      ],
+      "device_forms": [
+        "phone"
+      ],
+      "direction": "ltr",
+      "display_name": "Devanagari Bantawa (Nepal phone)",
+      "field_layer_map": {
+        "datetime": "numeric",
+        "number": "numeric",
+        "phone": "numeric",
+        "text": "base"
+      },
+      "input_script": "Deva",
+      "layers": {
+        "base": {
+          "rows": [
+            [
+              {
+                "action": null,
+                "content_description": "ट",
+                "hold_action": null,
+                "key_id": "base.r0.k0",
+                "kind": "text",
+                "label": "ट",
+                "text": "ट",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ौ",
+                "hold_action": null,
+                "key_id": "base.r0.k1",
+                "kind": "text",
+                "label": "ौ",
+                "text": "ौ",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "े",
+                "hold_action": null,
+                "key_id": "base.r0.k2",
+                "kind": "text",
+                "label": "े",
+                "text": "े",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "र",
+                "hold_action": null,
+                "key_id": "base.r0.k3",
+                "kind": "text",
+                "label": "र",
+                "text": "र",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "त",
+                "hold_action": null,
+                "key_id": "base.r0.k4",
+                "kind": "text",
+                "label": "त",
+                "text": "त",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "य",
+                "hold_action": null,
+                "key_id": "base.r0.k5",
+                "kind": "text",
+                "label": "य",
+                "text": "य",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ु",
+                "hold_action": null,
+                "key_id": "base.r0.k6",
+                "kind": "text",
+                "label": "ु",
+                "text": "ु",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ि",
+                "hold_action": null,
+                "key_id": "base.r0.k7",
+                "kind": "text",
+                "label": "ि",
+                "text": "ि",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ो",
+                "hold_action": null,
+                "key_id": "base.r0.k8",
+                "kind": "text",
+                "label": "ो",
+                "text": "ो",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "प",
+                "hold_action": null,
+                "key_id": "base.r0.k9",
+                "kind": "text",
+                "label": "प",
+                "text": "प",
+                "width_units": 100
+              }
+            ],
+            [
+              {
+                "action": null,
+                "content_description": "ा",
+                "hold_action": null,
+                "key_id": "base.r1.k0",
+                "kind": "text",
+                "label": "ा",
+                "text": "ा",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "स",
+                "hold_action": null,
+                "key_id": "base.r1.k1",
+                "kind": "text",
+                "label": "स",
+                "text": "स",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "द",
+                "hold_action": null,
+                "key_id": "base.r1.k2",
+                "kind": "text",
+                "label": "द",
+                "text": "द",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "उ",
+                "hold_action": null,
+                "key_id": "base.r1.k3",
+                "kind": "text",
+                "label": "उ",
+                "text": "उ",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ग",
+                "hold_action": null,
+                "key_id": "base.r1.k4",
+                "kind": "text",
+                "label": "ग",
+                "text": "ग",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ह",
+                "hold_action": null,
+                "key_id": "base.r1.k5",
+                "kind": "text",
+                "label": "ह",
+                "text": "ह",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ज",
+                "hold_action": null,
+                "key_id": "base.r1.k6",
+                "kind": "text",
+                "label": "ज",
+                "text": "ज",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "क",
+                "hold_action": null,
+                "key_id": "base.r1.k7",
+                "kind": "text",
+                "label": "क",
+                "text": "क",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ल",
+                "hold_action": null,
+                "key_id": "base.r1.k8",
+                "kind": "text",
+                "label": "ल",
+                "text": "ल",
+                "width_units": 100
+              }
+            ],
+            [
+              {
+                "action": null,
+                "content_description": "ष",
+                "hold_action": null,
+                "key_id": "base.r2.k0",
+                "kind": "text",
+                "label": "ष",
+                "text": "ष",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ड",
+                "hold_action": null,
+                "key_id": "base.r2.k1",
+                "kind": "text",
+                "label": "ड",
+                "text": "ड",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "च",
+                "hold_action": null,
+                "key_id": "base.r2.k2",
+                "kind": "text",
+                "label": "च",
+                "text": "च",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "व",
+                "hold_action": null,
+                "key_id": "base.r2.k3",
+                "kind": "text",
+                "label": "व",
+                "text": "व",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ब",
+                "hold_action": null,
+                "key_id": "base.r2.k4",
+                "kind": "text",
+                "label": "ब",
+                "text": "ब",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "न",
+                "hold_action": null,
+                "key_id": "base.r2.k5",
+                "kind": "text",
+                "label": "न",
+                "text": "न",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "म",
+                "hold_action": null,
+                "key_id": "base.r2.k6",
+                "kind": "text",
+                "label": "म",
+                "text": "म",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": ",",
+                "hold_action": null,
+                "key_id": "base.r2.k7",
+                "kind": "text",
+                "label": ",",
+                "text": ",",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "।",
+                "hold_action": null,
+                "key_id": "base.r2.k8",
+                "kind": "text",
+                "label": "।",
+                "text": "।",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "्",
+                "hold_action": null,
+                "key_id": "base.r2.k9",
+                "kind": "text",
+                "label": "्",
+                "text": "्",
+                "width_units": 100
+              }
+            ],
+            [
+              {
+                "action": "shift",
+                "content_description": "Shift",
+                "hold_action": null,
+                "key_id": "base.r3.k0",
+                "kind": "action",
+                "label": "⇧",
+                "text": null,
+                "width_units": 115
+              },
+              {
+                "action": "symbols",
+                "content_description": "Symbols",
+                "hold_action": null,
+                "key_id": "base.r3.k1",
+                "kind": "action",
+                "label": "?123",
+                "text": null,
+                "width_units": 135
+              },
+              {
+                "action": "language",
+                "content_description": "Switch language",
+                "hold_action": "open_language_picker",
+                "key_id": "base.r3.k2",
+                "kind": "action",
+                "label": "🌐",
+                "text": null,
+                "width_units": 110
+              },
+              {
+                "action": "space",
+                "content_description": "Space · ${profile.display_name}",
+                "hold_action": "open_language_picker",
+                "key_id": "base.r3.k3",
+                "kind": "action",
+                "label": "${profile.native_name}",
+                "text": null,
+                "width_units": 400
+              },
+              {
+                "action": "delete",
+                "content_description": "Delete",
+                "hold_action": null,
+                "key_id": "base.r3.k4",
+                "kind": "action",
+                "label": "⌫",
+                "text": null,
+                "width_units": 125
+              },
+              {
+                "action": "enter",
+                "content_description": "Enter",
+                "hold_action": null,
+                "key_id": "base.r3.k5",
+                "kind": "action",
+                "label": "↵",
+                "text": null,
+                "width_units": 125
+              }
+            ]
+          ]
+        },
+        "numeric": {
+          "rows": [
+            [
+              {
+                "action": null,
+                "content_description": "1",
+                "hold_action": null,
+                "key_id": "numeric.r0.k0",
+                "kind": "text",
+                "label": "1",
+                "text": "1",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "2",
+                "hold_action": null,
+                "key_id": "numeric.r0.k1",
+                "kind": "text",
+                "label": "2",
+                "text": "2",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "3",
+                "hold_action": null,
+                "key_id": "numeric.r0.k2",
+                "kind": "text",
+                "label": "3",
+                "text": "3",
+                "width_units": 100
+              }
+            ],
+            [
+              {
+                "action": null,
+                "content_description": "4",
+                "hold_action": null,
+                "key_id": "numeric.r1.k0",
+                "kind": "text",
+                "label": "4",
+                "text": "4",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "5",
+                "hold_action": null,
+                "key_id": "numeric.r1.k1",
+                "kind": "text",
+                "label": "5",
+                "text": "5",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "6",
+                "hold_action": null,
+                "key_id": "numeric.r1.k2",
+                "kind": "text",
+                "label": "6",
+                "text": "6",
+                "width_units": 100
+              }
+            ],
+            [
+              {
+                "action": null,
+                "content_description": "7",
+                "hold_action": null,
+                "key_id": "numeric.r2.k0",
+                "kind": "text",
+                "label": "7",
+                "text": "7",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "8",
+                "hold_action": null,
+                "key_id": "numeric.r2.k1",
+                "kind": "text",
+                "label": "8",
+                "text": "8",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "9",
+                "hold_action": null,
+                "key_id": "numeric.r2.k2",
+                "kind": "text",
+                "label": "9",
+                "text": "9",
+                "width_units": 100
+              }
+            ],
+            [
+              {
+                "action": null,
+                "content_description": ".",
+                "hold_action": null,
+                "key_id": "numeric.r3.k0",
+                "kind": "text",
+                "label": ".",
+                "text": ".",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "0",
+                "hold_action": null,
+                "key_id": "numeric.r3.k1",
+                "kind": "text",
+                "label": "0",
+                "text": "0",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "-",
+                "hold_action": null,
+                "key_id": "numeric.r3.k2",
+                "kind": "text",
+                "label": "-",
+                "text": "-",
+                "width_units": 100
+              }
+            ],
+            [
+              {
+                "action": "space",
+                "content_description": "Space · ${profile.display_name}",
+                "hold_action": "open_language_picker",
+                "key_id": "numeric.r4.k0",
+                "kind": "action",
+                "label": "${profile.native_name}",
+                "text": null,
+                "width_units": 220
+              },
+              {
+                "action": "delete",
+                "content_description": "Delete",
+                "hold_action": null,
+                "key_id": "numeric.r4.k1",
+                "kind": "action",
+                "label": "⌫",
+                "text": null,
+                "width_units": 125
+              },
+              {
+                "action": "enter",
+                "content_description": "Enter",
+                "hold_action": null,
+                "key_id": "numeric.r4.k2",
+                "kind": "action",
+                "label": "↵",
+                "text": null,
+                "width_units": 125
+              }
+            ]
+          ]
+        },
+        "shift": {
+          "rows": [
+            [
+              {
+                "action": null,
+                "content_description": "ठ",
+                "hold_action": null,
+                "key_id": "shift.r0.k0",
+                "kind": "text",
+                "label": "ठ",
+                "text": "ठ",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ए",
+                "hold_action": null,
+                "key_id": "shift.r0.k1",
+                "kind": "text",
+                "label": "ए",
+                "text": "ए",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ै",
+                "hold_action": null,
+                "key_id": "shift.r0.k2",
+                "kind": "text",
+                "label": "ै",
+                "text": "ै",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ृ",
+                "hold_action": null,
+                "key_id": "shift.r0.k3",
+                "kind": "text",
+                "label": "ृ",
+                "text": "ृ",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "थ",
+                "hold_action": null,
+                "key_id": "shift.r0.k4",
+                "kind": "text",
+                "label": "थ",
+                "text": "थ",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ञ",
+                "hold_action": null,
+                "key_id": "shift.r0.k5",
+                "kind": "text",
+                "label": "ञ",
+                "text": "ञ",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ू",
+                "hold_action": null,
+                "key_id": "shift.r0.k6",
+                "kind": "text",
+                "label": "ू",
+                "text": "ू",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ी",
+                "hold_action": null,
+                "key_id": "shift.r0.k7",
+                "kind": "text",
+                "label": "ी",
+                "text": "ी",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ओ",
+                "hold_action": null,
+                "key_id": "shift.r0.k8",
+                "kind": "text",
+                "label": "ओ",
+                "text": "ओ",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "फ",
+                "hold_action": null,
+                "key_id": "shift.r0.k9",
+                "kind": "text",
+                "label": "फ",
+                "text": "फ",
+                "width_units": 100
+              }
+            ],
+            [
+              {
+                "action": null,
+                "content_description": "आ",
+                "hold_action": null,
+                "key_id": "shift.r1.k0",
+                "kind": "text",
+                "label": "आ",
+                "text": "आ",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "श",
+                "hold_action": null,
+                "key_id": "shift.r1.k1",
+                "kind": "text",
+                "label": "श",
+                "text": "श",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ध",
+                "hold_action": null,
+                "key_id": "shift.r1.k2",
+                "kind": "text",
+                "label": "ध",
+                "text": "ध",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ऊ",
+                "hold_action": null,
+                "key_id": "shift.r1.k3",
+                "kind": "text",
+                "label": "ऊ",
+                "text": "ऊ",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "घ",
+                "hold_action": null,
+                "key_id": "shift.r1.k4",
+                "kind": "text",
+                "label": "घ",
+                "text": "घ",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "अ",
+                "hold_action": null,
+                "key_id": "shift.r1.k5",
+                "kind": "text",
+                "label": "अ",
+                "text": "अ",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "झ",
+                "hold_action": null,
+                "key_id": "shift.r1.k6",
+                "kind": "text",
+                "label": "झ",
+                "text": "झ",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ख",
+                "hold_action": null,
+                "key_id": "shift.r1.k7",
+                "kind": "text",
+                "label": "ख",
+                "text": "ख",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "॥",
+                "hold_action": null,
+                "key_id": "shift.r1.k8",
+                "kind": "text",
+                "label": "॥",
+                "text": "॥",
+                "width_units": 100
+              }
+            ],
+            [
+              {
+                "action": null,
+                "content_description": "इ",
+                "hold_action": null,
+                "key_id": "shift.r2.k0",
+                "kind": "text",
+                "label": "इ",
+                "text": "इ",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ढ",
+                "hold_action": null,
+                "key_id": "shift.r2.k1",
+                "kind": "text",
+                "label": "ढ",
+                "text": "ढ",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "छ",
+                "hold_action": null,
+                "key_id": "shift.r2.k2",
+                "kind": "text",
+                "label": "छ",
+                "text": "छ",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ँ",
+                "hold_action": null,
+                "key_id": "shift.r2.k3",
+                "kind": "text",
+                "label": "ँ",
+                "text": "ँ",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "भ",
+                "hold_action": null,
+                "key_id": "shift.r2.k4",
+                "kind": "text",
+                "label": "भ",
+                "text": "भ",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ण",
+                "hold_action": null,
+                "key_id": "shift.r2.k5",
+                "kind": "text",
+                "label": "ण",
+                "text": "ण",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ं",
+                "hold_action": null,
+                "key_id": "shift.r2.k6",
+                "kind": "text",
+                "label": "ं",
+                "text": "ं",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ङ",
+                "hold_action": null,
+                "key_id": "shift.r2.k7",
+                "kind": "text",
+                "label": "ङ",
+                "text": "ङ",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": ".",
+                "hold_action": null,
+                "key_id": "shift.r2.k8",
+                "kind": "text",
+                "label": ".",
+                "text": ".",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "?",
+                "hold_action": null,
+                "key_id": "shift.r2.k9",
+                "kind": "text",
+                "label": "?",
+                "text": "?",
+                "width_units": 100
+              }
+            ],
+            [
+              {
+                "action": "shift",
+                "content_description": "Shift",
+                "hold_action": null,
+                "key_id": "shift.r3.k0",
+                "kind": "action",
+                "label": "⇧",
+                "text": null,
+                "width_units": 115
+              },
+              {
+                "action": "symbols",
+                "content_description": "Symbols",
+                "hold_action": null,
+                "key_id": "shift.r3.k1",
+                "kind": "action",
+                "label": "?123",
+                "text": null,
+                "width_units": 135
+              },
+              {
+                "action": "language",
+                "content_description": "Switch language",
+                "hold_action": "open_language_picker",
+                "key_id": "shift.r3.k2",
+                "kind": "action",
+                "label": "🌐",
+                "text": null,
+                "width_units": 110
+              },
+              {
+                "action": "space",
+                "content_description": "Space · ${profile.display_name}",
+                "hold_action": "open_language_picker",
+                "key_id": "shift.r3.k3",
+                "kind": "action",
+                "label": "${profile.native_name}",
+                "text": null,
+                "width_units": 400
+              },
+              {
+                "action": "delete",
+                "content_description": "Delete",
+                "hold_action": null,
+                "key_id": "shift.r3.k4",
+                "kind": "action",
+                "label": "⌫",
+                "text": null,
+                "width_units": 125
+              },
+              {
+                "action": "enter",
+                "content_description": "Enter",
+                "hold_action": null,
+                "key_id": "shift.r3.k5",
+                "kind": "action",
+                "label": "↵",
+                "text": null,
+                "width_units": 125
+              }
+            ]
+          ]
+        },
+        "symbols": {
+          "rows": [
+            [
+              {
+                "action": null,
+                "content_description": "1",
+                "hold_action": null,
+                "key_id": "symbols.r0.k0",
+                "kind": "text",
+                "label": "1",
+                "text": "1",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "2",
+                "hold_action": null,
+                "key_id": "symbols.r0.k1",
+                "kind": "text",
+                "label": "2",
+                "text": "2",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "3",
+                "hold_action": null,
+                "key_id": "symbols.r0.k2",
+                "kind": "text",
+                "label": "3",
+                "text": "3",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "4",
+                "hold_action": null,
+                "key_id": "symbols.r0.k3",
+                "kind": "text",
+                "label": "4",
+                "text": "4",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "5",
+                "hold_action": null,
+                "key_id": "symbols.r0.k4",
+                "kind": "text",
+                "label": "5",
+                "text": "5",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "6",
+                "hold_action": null,
+                "key_id": "symbols.r0.k5",
+                "kind": "text",
+                "label": "6",
+                "text": "6",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "7",
+                "hold_action": null,
+                "key_id": "symbols.r0.k6",
+                "kind": "text",
+                "label": "7",
+                "text": "7",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "8",
+                "hold_action": null,
+                "key_id": "symbols.r0.k7",
+                "kind": "text",
+                "label": "8",
+                "text": "8",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "9",
+                "hold_action": null,
+                "key_id": "symbols.r0.k8",
+                "kind": "text",
+                "label": "9",
+                "text": "9",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "0",
+                "hold_action": null,
+                "key_id": "symbols.r0.k9",
+                "kind": "text",
+                "label": "0",
+                "text": "0",
+                "width_units": 100
+              }
+            ],
+            [
+              {
+                "action": null,
+                "content_description": "@",
+                "hold_action": null,
+                "key_id": "symbols.r1.k0",
+                "kind": "text",
+                "label": "@",
+                "text": "@",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "#",
+                "hold_action": null,
+                "key_id": "symbols.r1.k1",
+                "kind": "text",
+                "label": "#",
+                "text": "#",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "₹",
+                "hold_action": null,
+                "key_id": "symbols.r1.k2",
+                "kind": "text",
+                "label": "₹",
+                "text": "₹",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "_",
+                "hold_action": null,
+                "key_id": "symbols.r1.k3",
+                "kind": "text",
+                "label": "_",
+                "text": "_",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "&",
+                "hold_action": null,
+                "key_id": "symbols.r1.k4",
+                "kind": "text",
+                "label": "&",
+                "text": "&",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "-",
+                "hold_action": null,
+                "key_id": "symbols.r1.k5",
+                "kind": "text",
+                "label": "-",
+                "text": "-",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "+",
+                "hold_action": null,
+                "key_id": "symbols.r1.k6",
+                "kind": "text",
+                "label": "+",
+                "text": "+",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "(",
+                "hold_action": null,
+                "key_id": "symbols.r1.k7",
+                "kind": "text",
+                "label": "(",
+                "text": "(",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": ")",
+                "hold_action": null,
+                "key_id": "symbols.r1.k8",
+                "kind": "text",
+                "label": ")",
+                "text": ")",
+                "width_units": 100
+              }
+            ],
+            [
+              {
+                "action": null,
+                "content_description": "*",
+                "hold_action": null,
+                "key_id": "symbols.r2.k0",
+                "kind": "text",
+                "label": "*",
+                "text": "*",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "\"",
+                "hold_action": null,
+                "key_id": "symbols.r2.k1",
+                "kind": "text",
+                "label": "\"",
+                "text": "\"",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "'",
+                "hold_action": null,
+                "key_id": "symbols.r2.k2",
+                "kind": "text",
+                "label": "'",
+                "text": "'",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": ":",
+                "hold_action": null,
+                "key_id": "symbols.r2.k3",
+                "kind": "text",
+                "label": ":",
+                "text": ":",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": ";",
+                "hold_action": null,
+                "key_id": "symbols.r2.k4",
+                "kind": "text",
+                "label": ";",
+                "text": ";",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "!",
+                "hold_action": null,
+                "key_id": "symbols.r2.k5",
+                "kind": "text",
+                "label": "!",
+                "text": "!",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "?",
+                "hold_action": null,
+                "key_id": "symbols.r2.k6",
+                "kind": "text",
+                "label": "?",
+                "text": "?",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "/",
+                "hold_action": null,
+                "key_id": "symbols.r2.k7",
+                "kind": "text",
+                "label": "/",
+                "text": "/",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": ".",
+                "hold_action": null,
+                "key_id": "symbols.r2.k8",
+                "kind": "text",
+                "label": ".",
+                "text": ".",
+                "width_units": 100
+              }
+            ],
+            [
+              {
+                "action": "letters",
+                "content_description": "Letters",
+                "hold_action": null,
+                "key_id": "symbols.r3.k0",
+                "kind": "action",
+                "label": "ABC",
+                "text": null,
+                "width_units": 135
+              },
+              {
+                "action": "symbols",
+                "content_description": "Symbols",
+                "hold_action": null,
+                "key_id": "symbols.r3.k1",
+                "kind": "action",
+                "label": "?123",
+                "text": null,
+                "width_units": 135
+              },
+              {
+                "action": "language",
+                "content_description": "Switch language",
+                "hold_action": "open_language_picker",
+                "key_id": "symbols.r3.k2",
+                "kind": "action",
+                "label": "🌐",
+                "text": null,
+                "width_units": 110
+              },
+              {
+                "action": "space",
+                "content_description": "Space · ${profile.display_name}",
+                "hold_action": "open_language_picker",
+                "key_id": "symbols.r3.k3",
+                "kind": "action",
+                "label": "${profile.native_name}",
+                "text": null,
+                "width_units": 400
+              },
+              {
+                "action": "delete",
+                "content_description": "Delete",
+                "hold_action": null,
+                "key_id": "symbols.r3.k4",
+                "kind": "action",
+                "label": "⌫",
+                "text": null,
+                "width_units": 125
+              },
+              {
+                "action": "enter",
+                "content_description": "Enter",
+                "hold_action": null,
+                "key_id": "symbols.r3.k5",
+                "kind": "action",
+                "label": "↵",
+                "text": null,
+                "width_units": 125
+              }
+            ]
+          ]
+        }
+      },
+      "layout_id": "deva-nepal-bantawa-v1",
+      "license": {
+        "copyright": "Multiple copyright holders; see the Bantawa layout provenance notice",
+        "id": "LicenseRef-xkeyboard-config-aggregate",
+        "license_url": "https://gitlab.freedesktop.org/xkeyboard-config/xkeyboard-config/-/blob/xkeyboard-config-2.41/COPYING",
+        "notice_path": "layouts/internal/notices/xkb-data-2.41-2ubuntu1.1-deva-bantawa.copyright",
+        "notice_sha256": "aa27ea669c649786361b544d869df1ee0d8208c698d2aa4686306e18fc4f08e5",
+        "redistribution": "allowed"
+      },
+      "normalization": "NFC",
+      "provenance": [
+        {
+          "kind": "adapted",
+          "note": "Preserves the reviewed phone geometry, action row, symbols, numeric layer, and every key except two compact Shift substitutions.",
+          "revision": "1",
+          "sha256": "5cefdc0e916eaa9ee64acafddcadad4c9d32c8adbaff69cb2d8f181655280e4f",
+          "source": "layouts/internal/src/deva-nepal-basic-v1.json"
+        },
+        {
+          "kind": "project_authored",
+          "note": "Replaces unused independent औ and ऋ positions with required independent ए and इ without adding keyboard height.",
+          "revision": "v0",
+          "sha256": "f0893c2549c5d4908dfdb60a84ed732ce473a5f08c5f2939804bd591acf6dbe2",
+          "source": "reports/bantawa-layout-candidate-v0.md"
+        }
+      ],
+      "revision": 1,
+      "source": {
+        "path": "layouts/internal/src/deva-nepal-bantawa-v1.json",
+        "sha256": "c469ed3c08c999a397025371dbf259a0f252f7e81cb032710c11ea0bf9b8289b"
+      },
+      "transforms": [],
+      "unicode_data_version": "16.0.0"
+    },
     {
       "authors": [
         "Ampixa",
@@ -2850,6 +4143,1423 @@
       "source": {
         "path": "layouts/internal/src/deva-nepal-bhasa-v1.json",
         "sha256": "f9088679a904a8129e02b8202740564537e616d24b85637c1489038c35d93ac8"
+      },
+      "transforms": [],
+      "unicode_data_version": "16.0.0"
+    },
+    {
+      "authors": [
+        "Ampixa",
+        "xkeyboard-config contributors"
+      ],
+      "device_forms": [
+        "phone"
+      ],
+      "direction": "ltr",
+      "display_name": "Devanagari Central Gurung (Nepal phone)",
+      "field_layer_map": {
+        "datetime": "numeric",
+        "number": "numeric",
+        "phone": "numeric",
+        "text": "base"
+      },
+      "input_script": "Deva",
+      "layers": {
+        "base": {
+          "rows": [
+            [
+              {
+                "action": null,
+                "content_description": "ट",
+                "hold_action": null,
+                "key_id": "base.r0.k0",
+                "kind": "text",
+                "label": "ट",
+                "text": "ट",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ौ",
+                "hold_action": null,
+                "key_id": "base.r0.k1",
+                "kind": "text",
+                "label": "ौ",
+                "text": "ौ",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "े",
+                "hold_action": null,
+                "key_id": "base.r0.k2",
+                "kind": "text",
+                "label": "े",
+                "text": "े",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "र",
+                "hold_action": null,
+                "key_id": "base.r0.k3",
+                "kind": "text",
+                "label": "र",
+                "text": "र",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "त",
+                "hold_action": null,
+                "key_id": "base.r0.k4",
+                "kind": "text",
+                "label": "त",
+                "text": "त",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "य",
+                "hold_action": null,
+                "key_id": "base.r0.k5",
+                "kind": "text",
+                "label": "य",
+                "text": "य",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ु",
+                "hold_action": null,
+                "key_id": "base.r0.k6",
+                "kind": "text",
+                "label": "ु",
+                "text": "ु",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ि",
+                "hold_action": null,
+                "key_id": "base.r0.k7",
+                "kind": "text",
+                "label": "ि",
+                "text": "ि",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ो",
+                "hold_action": null,
+                "key_id": "base.r0.k8",
+                "kind": "text",
+                "label": "ो",
+                "text": "ो",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "प",
+                "hold_action": null,
+                "key_id": "base.r0.k9",
+                "kind": "text",
+                "label": "प",
+                "text": "प",
+                "width_units": 100
+              }
+            ],
+            [
+              {
+                "action": null,
+                "content_description": "ा",
+                "hold_action": null,
+                "key_id": "base.r1.k0",
+                "kind": "text",
+                "label": "ा",
+                "text": "ा",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "स",
+                "hold_action": null,
+                "key_id": "base.r1.k1",
+                "kind": "text",
+                "label": "स",
+                "text": "स",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "द",
+                "hold_action": null,
+                "key_id": "base.r1.k2",
+                "kind": "text",
+                "label": "द",
+                "text": "द",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "उ",
+                "hold_action": null,
+                "key_id": "base.r1.k3",
+                "kind": "text",
+                "label": "उ",
+                "text": "उ",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ग",
+                "hold_action": null,
+                "key_id": "base.r1.k4",
+                "kind": "text",
+                "label": "ग",
+                "text": "ग",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ह",
+                "hold_action": null,
+                "key_id": "base.r1.k5",
+                "kind": "text",
+                "label": "ह",
+                "text": "ह",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ज",
+                "hold_action": null,
+                "key_id": "base.r1.k6",
+                "kind": "text",
+                "label": "ज",
+                "text": "ज",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "क",
+                "hold_action": null,
+                "key_id": "base.r1.k7",
+                "kind": "text",
+                "label": "क",
+                "text": "क",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ल",
+                "hold_action": null,
+                "key_id": "base.r1.k8",
+                "kind": "text",
+                "label": "ल",
+                "text": "ल",
+                "width_units": 100
+              }
+            ],
+            [
+              {
+                "action": null,
+                "content_description": "ष",
+                "hold_action": null,
+                "key_id": "base.r2.k0",
+                "kind": "text",
+                "label": "ष",
+                "text": "ष",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ड",
+                "hold_action": null,
+                "key_id": "base.r2.k1",
+                "kind": "text",
+                "label": "ड",
+                "text": "ड",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "च",
+                "hold_action": null,
+                "key_id": "base.r2.k2",
+                "kind": "text",
+                "label": "च",
+                "text": "च",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "व",
+                "hold_action": null,
+                "key_id": "base.r2.k3",
+                "kind": "text",
+                "label": "व",
+                "text": "व",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ब",
+                "hold_action": null,
+                "key_id": "base.r2.k4",
+                "kind": "text",
+                "label": "ब",
+                "text": "ब",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "न",
+                "hold_action": null,
+                "key_id": "base.r2.k5",
+                "kind": "text",
+                "label": "न",
+                "text": "न",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "म",
+                "hold_action": null,
+                "key_id": "base.r2.k6",
+                "kind": "text",
+                "label": "म",
+                "text": "म",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": ",",
+                "hold_action": null,
+                "key_id": "base.r2.k7",
+                "kind": "text",
+                "label": ",",
+                "text": ",",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "।",
+                "hold_action": null,
+                "key_id": "base.r2.k8",
+                "kind": "text",
+                "label": "।",
+                "text": "।",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "्",
+                "hold_action": null,
+                "key_id": "base.r2.k9",
+                "kind": "text",
+                "label": "्",
+                "text": "्",
+                "width_units": 100
+              }
+            ],
+            [
+              {
+                "action": null,
+                "content_description": "इ",
+                "hold_action": null,
+                "key_id": "base.r3.k0",
+                "kind": "text",
+                "label": "इ",
+                "text": "इ",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ई",
+                "hold_action": null,
+                "key_id": "base.r3.k1",
+                "kind": "text",
+                "label": "ई",
+                "text": "ई",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ए",
+                "hold_action": null,
+                "key_id": "base.r3.k2",
+                "kind": "text",
+                "label": "ए",
+                "text": "ए",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ऱ",
+                "hold_action": null,
+                "key_id": "base.r3.k3",
+                "kind": "text",
+                "label": "ऱ",
+                "text": "ऱ",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "Devanagari sign visarga",
+                "hold_action": null,
+                "key_id": "base.r3.k4",
+                "kind": "text",
+                "label": "◌ः",
+                "text": "ः",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "Devanagari sign nukta",
+                "hold_action": null,
+                "key_id": "base.r3.k5",
+                "kind": "text",
+                "label": "◌़",
+                "text": "़",
+                "width_units": 100
+              }
+            ],
+            [
+              {
+                "action": "shift",
+                "content_description": "Shift",
+                "hold_action": null,
+                "key_id": "base.r4.k0",
+                "kind": "action",
+                "label": "⇧",
+                "text": null,
+                "width_units": 115
+              },
+              {
+                "action": "symbols",
+                "content_description": "Symbols",
+                "hold_action": null,
+                "key_id": "base.r4.k1",
+                "kind": "action",
+                "label": "?123",
+                "text": null,
+                "width_units": 135
+              },
+              {
+                "action": "language",
+                "content_description": "Switch language",
+                "hold_action": "open_language_picker",
+                "key_id": "base.r4.k2",
+                "kind": "action",
+                "label": "🌐",
+                "text": null,
+                "width_units": 110
+              },
+              {
+                "action": "space",
+                "content_description": "Space · ${profile.display_name}",
+                "hold_action": "open_language_picker",
+                "key_id": "base.r4.k3",
+                "kind": "action",
+                "label": "${profile.native_name}",
+                "text": null,
+                "width_units": 400
+              },
+              {
+                "action": "delete",
+                "content_description": "Delete",
+                "hold_action": null,
+                "key_id": "base.r4.k4",
+                "kind": "action",
+                "label": "⌫",
+                "text": null,
+                "width_units": 125
+              },
+              {
+                "action": "enter",
+                "content_description": "Enter",
+                "hold_action": null,
+                "key_id": "base.r4.k5",
+                "kind": "action",
+                "label": "↵",
+                "text": null,
+                "width_units": 125
+              }
+            ]
+          ]
+        },
+        "numeric": {
+          "rows": [
+            [
+              {
+                "action": null,
+                "content_description": "1",
+                "hold_action": null,
+                "key_id": "numeric.r0.k0",
+                "kind": "text",
+                "label": "1",
+                "text": "1",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "2",
+                "hold_action": null,
+                "key_id": "numeric.r0.k1",
+                "kind": "text",
+                "label": "2",
+                "text": "2",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "3",
+                "hold_action": null,
+                "key_id": "numeric.r0.k2",
+                "kind": "text",
+                "label": "3",
+                "text": "3",
+                "width_units": 100
+              }
+            ],
+            [
+              {
+                "action": null,
+                "content_description": "4",
+                "hold_action": null,
+                "key_id": "numeric.r1.k0",
+                "kind": "text",
+                "label": "4",
+                "text": "4",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "5",
+                "hold_action": null,
+                "key_id": "numeric.r1.k1",
+                "kind": "text",
+                "label": "5",
+                "text": "5",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "6",
+                "hold_action": null,
+                "key_id": "numeric.r1.k2",
+                "kind": "text",
+                "label": "6",
+                "text": "6",
+                "width_units": 100
+              }
+            ],
+            [
+              {
+                "action": null,
+                "content_description": "7",
+                "hold_action": null,
+                "key_id": "numeric.r2.k0",
+                "kind": "text",
+                "label": "7",
+                "text": "7",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "8",
+                "hold_action": null,
+                "key_id": "numeric.r2.k1",
+                "kind": "text",
+                "label": "8",
+                "text": "8",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "9",
+                "hold_action": null,
+                "key_id": "numeric.r2.k2",
+                "kind": "text",
+                "label": "9",
+                "text": "9",
+                "width_units": 100
+              }
+            ],
+            [
+              {
+                "action": null,
+                "content_description": ".",
+                "hold_action": null,
+                "key_id": "numeric.r3.k0",
+                "kind": "text",
+                "label": ".",
+                "text": ".",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "0",
+                "hold_action": null,
+                "key_id": "numeric.r3.k1",
+                "kind": "text",
+                "label": "0",
+                "text": "0",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "-",
+                "hold_action": null,
+                "key_id": "numeric.r3.k2",
+                "kind": "text",
+                "label": "-",
+                "text": "-",
+                "width_units": 100
+              }
+            ],
+            [
+              {
+                "action": "space",
+                "content_description": "Space · ${profile.display_name}",
+                "hold_action": "open_language_picker",
+                "key_id": "numeric.r4.k0",
+                "kind": "action",
+                "label": "${profile.native_name}",
+                "text": null,
+                "width_units": 220
+              },
+              {
+                "action": "delete",
+                "content_description": "Delete",
+                "hold_action": null,
+                "key_id": "numeric.r4.k1",
+                "kind": "action",
+                "label": "⌫",
+                "text": null,
+                "width_units": 125
+              },
+              {
+                "action": "enter",
+                "content_description": "Enter",
+                "hold_action": null,
+                "key_id": "numeric.r4.k2",
+                "kind": "action",
+                "label": "↵",
+                "text": null,
+                "width_units": 125
+              }
+            ]
+          ]
+        },
+        "shift": {
+          "rows": [
+            [
+              {
+                "action": null,
+                "content_description": "ठ",
+                "hold_action": null,
+                "key_id": "shift.r0.k0",
+                "kind": "text",
+                "label": "ठ",
+                "text": "ठ",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "औ",
+                "hold_action": null,
+                "key_id": "shift.r0.k1",
+                "kind": "text",
+                "label": "औ",
+                "text": "औ",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ै",
+                "hold_action": null,
+                "key_id": "shift.r0.k2",
+                "kind": "text",
+                "label": "ै",
+                "text": "ै",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ृ",
+                "hold_action": null,
+                "key_id": "shift.r0.k3",
+                "kind": "text",
+                "label": "ृ",
+                "text": "ृ",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "थ",
+                "hold_action": null,
+                "key_id": "shift.r0.k4",
+                "kind": "text",
+                "label": "थ",
+                "text": "थ",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ञ",
+                "hold_action": null,
+                "key_id": "shift.r0.k5",
+                "kind": "text",
+                "label": "ञ",
+                "text": "ञ",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ू",
+                "hold_action": null,
+                "key_id": "shift.r0.k6",
+                "kind": "text",
+                "label": "ू",
+                "text": "ू",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ी",
+                "hold_action": null,
+                "key_id": "shift.r0.k7",
+                "kind": "text",
+                "label": "ी",
+                "text": "ी",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ओ",
+                "hold_action": null,
+                "key_id": "shift.r0.k8",
+                "kind": "text",
+                "label": "ओ",
+                "text": "ओ",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "फ",
+                "hold_action": null,
+                "key_id": "shift.r0.k9",
+                "kind": "text",
+                "label": "फ",
+                "text": "फ",
+                "width_units": 100
+              }
+            ],
+            [
+              {
+                "action": null,
+                "content_description": "आ",
+                "hold_action": null,
+                "key_id": "shift.r1.k0",
+                "kind": "text",
+                "label": "आ",
+                "text": "आ",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "श",
+                "hold_action": null,
+                "key_id": "shift.r1.k1",
+                "kind": "text",
+                "label": "श",
+                "text": "श",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ध",
+                "hold_action": null,
+                "key_id": "shift.r1.k2",
+                "kind": "text",
+                "label": "ध",
+                "text": "ध",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ऊ",
+                "hold_action": null,
+                "key_id": "shift.r1.k3",
+                "kind": "text",
+                "label": "ऊ",
+                "text": "ऊ",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "घ",
+                "hold_action": null,
+                "key_id": "shift.r1.k4",
+                "kind": "text",
+                "label": "घ",
+                "text": "घ",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "अ",
+                "hold_action": null,
+                "key_id": "shift.r1.k5",
+                "kind": "text",
+                "label": "अ",
+                "text": "अ",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "झ",
+                "hold_action": null,
+                "key_id": "shift.r1.k6",
+                "kind": "text",
+                "label": "झ",
+                "text": "झ",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ख",
+                "hold_action": null,
+                "key_id": "shift.r1.k7",
+                "kind": "text",
+                "label": "ख",
+                "text": "ख",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "॥",
+                "hold_action": null,
+                "key_id": "shift.r1.k8",
+                "kind": "text",
+                "label": "॥",
+                "text": "॥",
+                "width_units": 100
+              }
+            ],
+            [
+              {
+                "action": null,
+                "content_description": "ऋ",
+                "hold_action": null,
+                "key_id": "shift.r2.k0",
+                "kind": "text",
+                "label": "ऋ",
+                "text": "ऋ",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ढ",
+                "hold_action": null,
+                "key_id": "shift.r2.k1",
+                "kind": "text",
+                "label": "ढ",
+                "text": "ढ",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "छ",
+                "hold_action": null,
+                "key_id": "shift.r2.k2",
+                "kind": "text",
+                "label": "छ",
+                "text": "छ",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ँ",
+                "hold_action": null,
+                "key_id": "shift.r2.k3",
+                "kind": "text",
+                "label": "ँ",
+                "text": "ँ",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "भ",
+                "hold_action": null,
+                "key_id": "shift.r2.k4",
+                "kind": "text",
+                "label": "भ",
+                "text": "भ",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ण",
+                "hold_action": null,
+                "key_id": "shift.r2.k5",
+                "kind": "text",
+                "label": "ण",
+                "text": "ण",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ं",
+                "hold_action": null,
+                "key_id": "shift.r2.k6",
+                "kind": "text",
+                "label": "ं",
+                "text": "ं",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ङ",
+                "hold_action": null,
+                "key_id": "shift.r2.k7",
+                "kind": "text",
+                "label": "ङ",
+                "text": "ङ",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": ".",
+                "hold_action": null,
+                "key_id": "shift.r2.k8",
+                "kind": "text",
+                "label": ".",
+                "text": ".",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "?",
+                "hold_action": null,
+                "key_id": "shift.r2.k9",
+                "kind": "text",
+                "label": "?",
+                "text": "?",
+                "width_units": 100
+              }
+            ],
+            [
+              {
+                "action": null,
+                "content_description": "इ",
+                "hold_action": null,
+                "key_id": "shift.r3.k0",
+                "kind": "text",
+                "label": "इ",
+                "text": "इ",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ई",
+                "hold_action": null,
+                "key_id": "shift.r3.k1",
+                "kind": "text",
+                "label": "ई",
+                "text": "ई",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ए",
+                "hold_action": null,
+                "key_id": "shift.r3.k2",
+                "kind": "text",
+                "label": "ए",
+                "text": "ए",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ऱ",
+                "hold_action": null,
+                "key_id": "shift.r3.k3",
+                "kind": "text",
+                "label": "ऱ",
+                "text": "ऱ",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "Devanagari sign visarga",
+                "hold_action": null,
+                "key_id": "shift.r3.k4",
+                "kind": "text",
+                "label": "◌ः",
+                "text": "ः",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "Devanagari sign nukta",
+                "hold_action": null,
+                "key_id": "shift.r3.k5",
+                "kind": "text",
+                "label": "◌़",
+                "text": "़",
+                "width_units": 100
+              }
+            ],
+            [
+              {
+                "action": "shift",
+                "content_description": "Shift",
+                "hold_action": null,
+                "key_id": "shift.r4.k0",
+                "kind": "action",
+                "label": "⇧",
+                "text": null,
+                "width_units": 115
+              },
+              {
+                "action": "symbols",
+                "content_description": "Symbols",
+                "hold_action": null,
+                "key_id": "shift.r4.k1",
+                "kind": "action",
+                "label": "?123",
+                "text": null,
+                "width_units": 135
+              },
+              {
+                "action": "language",
+                "content_description": "Switch language",
+                "hold_action": "open_language_picker",
+                "key_id": "shift.r4.k2",
+                "kind": "action",
+                "label": "🌐",
+                "text": null,
+                "width_units": 110
+              },
+              {
+                "action": "space",
+                "content_description": "Space · ${profile.display_name}",
+                "hold_action": "open_language_picker",
+                "key_id": "shift.r4.k3",
+                "kind": "action",
+                "label": "${profile.native_name}",
+                "text": null,
+                "width_units": 400
+              },
+              {
+                "action": "delete",
+                "content_description": "Delete",
+                "hold_action": null,
+                "key_id": "shift.r4.k4",
+                "kind": "action",
+                "label": "⌫",
+                "text": null,
+                "width_units": 125
+              },
+              {
+                "action": "enter",
+                "content_description": "Enter",
+                "hold_action": null,
+                "key_id": "shift.r4.k5",
+                "kind": "action",
+                "label": "↵",
+                "text": null,
+                "width_units": 125
+              }
+            ]
+          ]
+        },
+        "symbols": {
+          "rows": [
+            [
+              {
+                "action": null,
+                "content_description": "1",
+                "hold_action": null,
+                "key_id": "symbols.r0.k0",
+                "kind": "text",
+                "label": "1",
+                "text": "1",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "2",
+                "hold_action": null,
+                "key_id": "symbols.r0.k1",
+                "kind": "text",
+                "label": "2",
+                "text": "2",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "3",
+                "hold_action": null,
+                "key_id": "symbols.r0.k2",
+                "kind": "text",
+                "label": "3",
+                "text": "3",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "4",
+                "hold_action": null,
+                "key_id": "symbols.r0.k3",
+                "kind": "text",
+                "label": "4",
+                "text": "4",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "5",
+                "hold_action": null,
+                "key_id": "symbols.r0.k4",
+                "kind": "text",
+                "label": "5",
+                "text": "5",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "6",
+                "hold_action": null,
+                "key_id": "symbols.r0.k5",
+                "kind": "text",
+                "label": "6",
+                "text": "6",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "7",
+                "hold_action": null,
+                "key_id": "symbols.r0.k6",
+                "kind": "text",
+                "label": "7",
+                "text": "7",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "8",
+                "hold_action": null,
+                "key_id": "symbols.r0.k7",
+                "kind": "text",
+                "label": "8",
+                "text": "8",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "9",
+                "hold_action": null,
+                "key_id": "symbols.r0.k8",
+                "kind": "text",
+                "label": "9",
+                "text": "9",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "0",
+                "hold_action": null,
+                "key_id": "symbols.r0.k9",
+                "kind": "text",
+                "label": "0",
+                "text": "0",
+                "width_units": 100
+              }
+            ],
+            [
+              {
+                "action": null,
+                "content_description": "@",
+                "hold_action": null,
+                "key_id": "symbols.r1.k0",
+                "kind": "text",
+                "label": "@",
+                "text": "@",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "#",
+                "hold_action": null,
+                "key_id": "symbols.r1.k1",
+                "kind": "text",
+                "label": "#",
+                "text": "#",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "₹",
+                "hold_action": null,
+                "key_id": "symbols.r1.k2",
+                "kind": "text",
+                "label": "₹",
+                "text": "₹",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "_",
+                "hold_action": null,
+                "key_id": "symbols.r1.k3",
+                "kind": "text",
+                "label": "_",
+                "text": "_",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "&",
+                "hold_action": null,
+                "key_id": "symbols.r1.k4",
+                "kind": "text",
+                "label": "&",
+                "text": "&",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "-",
+                "hold_action": null,
+                "key_id": "symbols.r1.k5",
+                "kind": "text",
+                "label": "-",
+                "text": "-",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "+",
+                "hold_action": null,
+                "key_id": "symbols.r1.k6",
+                "kind": "text",
+                "label": "+",
+                "text": "+",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "(",
+                "hold_action": null,
+                "key_id": "symbols.r1.k7",
+                "kind": "text",
+                "label": "(",
+                "text": "(",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": ")",
+                "hold_action": null,
+                "key_id": "symbols.r1.k8",
+                "kind": "text",
+                "label": ")",
+                "text": ")",
+                "width_units": 100
+              }
+            ],
+            [
+              {
+                "action": null,
+                "content_description": "*",
+                "hold_action": null,
+                "key_id": "symbols.r2.k0",
+                "kind": "text",
+                "label": "*",
+                "text": "*",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "\"",
+                "hold_action": null,
+                "key_id": "symbols.r2.k1",
+                "kind": "text",
+                "label": "\"",
+                "text": "\"",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "'",
+                "hold_action": null,
+                "key_id": "symbols.r2.k2",
+                "kind": "text",
+                "label": "'",
+                "text": "'",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": ":",
+                "hold_action": null,
+                "key_id": "symbols.r2.k3",
+                "kind": "text",
+                "label": ":",
+                "text": ":",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": ";",
+                "hold_action": null,
+                "key_id": "symbols.r2.k4",
+                "kind": "text",
+                "label": ";",
+                "text": ";",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "!",
+                "hold_action": null,
+                "key_id": "symbols.r2.k5",
+                "kind": "text",
+                "label": "!",
+                "text": "!",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "?",
+                "hold_action": null,
+                "key_id": "symbols.r2.k6",
+                "kind": "text",
+                "label": "?",
+                "text": "?",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "/",
+                "hold_action": null,
+                "key_id": "symbols.r2.k7",
+                "kind": "text",
+                "label": "/",
+                "text": "/",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": ".",
+                "hold_action": null,
+                "key_id": "symbols.r2.k8",
+                "kind": "text",
+                "label": ".",
+                "text": ".",
+                "width_units": 100
+              }
+            ],
+            [
+              {
+                "action": "letters",
+                "content_description": "Letters",
+                "hold_action": null,
+                "key_id": "symbols.r3.k0",
+                "kind": "action",
+                "label": "ABC",
+                "text": null,
+                "width_units": 135
+              },
+              {
+                "action": "symbols",
+                "content_description": "Symbols",
+                "hold_action": null,
+                "key_id": "symbols.r3.k1",
+                "kind": "action",
+                "label": "?123",
+                "text": null,
+                "width_units": 135
+              },
+              {
+                "action": "language",
+                "content_description": "Switch language",
+                "hold_action": "open_language_picker",
+                "key_id": "symbols.r3.k2",
+                "kind": "action",
+                "label": "🌐",
+                "text": null,
+                "width_units": 110
+              },
+              {
+                "action": "space",
+                "content_description": "Space · ${profile.display_name}",
+                "hold_action": "open_language_picker",
+                "key_id": "symbols.r3.k3",
+                "kind": "action",
+                "label": "${profile.native_name}",
+                "text": null,
+                "width_units": 400
+              },
+              {
+                "action": "delete",
+                "content_description": "Delete",
+                "hold_action": null,
+                "key_id": "symbols.r3.k4",
+                "kind": "action",
+                "label": "⌫",
+                "text": null,
+                "width_units": 125
+              },
+              {
+                "action": "enter",
+                "content_description": "Enter",
+                "hold_action": null,
+                "key_id": "symbols.r3.k5",
+                "kind": "action",
+                "label": "↵",
+                "text": null,
+                "width_units": 125
+              }
+            ]
+          ]
+        }
+      },
+      "layout_id": "deva-nepal-central-gurung-v1",
+      "license": {
+        "copyright": "Multiple copyright holders; see the exact xkeyboard-config package notice",
+        "id": "LicenseRef-xkeyboard-config-aggregate",
+        "license_url": "https://gitlab.freedesktop.org/xkeyboard-config/xkeyboard-config/-/blob/xkeyboard-config-2.41/COPYING",
+        "notice_path": "layouts/internal/notices/xkb-data-2.41-2ubuntu1.1-deva-central-gurung.copyright",
+        "notice_sha256": "739ff5404b852466ed201799e49bb5dc0f4eafe0876bf9aa74499f306b7b1786",
+        "redistribution": "allowed"
+      },
+      "normalization": "NFC",
+      "provenance": [
+        {
+          "kind": "adapted",
+          "note": "Preserves the reviewed Nepali basic phone rows, actions, symbols, numeric fallback, and profile-bound labels.",
+          "revision": "1",
+          "sha256": "5cefdc0e916eaa9ee64acafddcadad4c9d32c8adbaff69cb2d8f181655280e4f",
+          "source": "layouts/internal/src/deva-nepal-basic-v1.json"
+        },
+        {
+          "kind": "project_authored",
+          "note": "Adds the six missing accepted-headword scalars for an opt-in internal engineering profile.",
+          "revision": "v0",
+          "sha256": "488f4abc87a949de92cc6194c399f91192527d8defdfe015746c69ddc13b6aeb",
+          "source": "reports/central-gurung-candidate-policy-v0.md"
+        }
+      ],
+      "revision": 1,
+      "source": {
+        "path": "layouts/internal/src/deva-nepal-central-gurung-v1.json",
+        "sha256": "fbf366fc4a1dd560d5dbdc8128a40169a4e596c2ab0f047975e466f3ec72f5b4"
       },
       "transforms": [],
       "unicode_data_version": "16.0.0"
@@ -10088,6 +12798,2942 @@
         "phone"
       ],
       "direction": "ltr",
+      "display_name": "Devanagari Mid-Eastern Tharu (Nepal phone)",
+      "field_layer_map": {
+        "datetime": "numeric",
+        "number": "numeric",
+        "phone": "numeric",
+        "text": "base"
+      },
+      "input_script": "Deva",
+      "layers": {
+        "base": {
+          "rows": [
+            [
+              {
+                "action": null,
+                "content_description": "ट",
+                "hold_action": null,
+                "key_id": "base.r0.k0",
+                "kind": "text",
+                "label": "ट",
+                "text": "ट",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ौ",
+                "hold_action": null,
+                "key_id": "base.r0.k1",
+                "kind": "text",
+                "label": "ौ",
+                "text": "ौ",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "े",
+                "hold_action": null,
+                "key_id": "base.r0.k2",
+                "kind": "text",
+                "label": "े",
+                "text": "े",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "र",
+                "hold_action": null,
+                "key_id": "base.r0.k3",
+                "kind": "text",
+                "label": "र",
+                "text": "र",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "त",
+                "hold_action": null,
+                "key_id": "base.r0.k4",
+                "kind": "text",
+                "label": "त",
+                "text": "त",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "य",
+                "hold_action": null,
+                "key_id": "base.r0.k5",
+                "kind": "text",
+                "label": "य",
+                "text": "य",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ु",
+                "hold_action": null,
+                "key_id": "base.r0.k6",
+                "kind": "text",
+                "label": "ु",
+                "text": "ु",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ि",
+                "hold_action": null,
+                "key_id": "base.r0.k7",
+                "kind": "text",
+                "label": "ि",
+                "text": "ि",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ो",
+                "hold_action": null,
+                "key_id": "base.r0.k8",
+                "kind": "text",
+                "label": "ो",
+                "text": "ो",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "प",
+                "hold_action": null,
+                "key_id": "base.r0.k9",
+                "kind": "text",
+                "label": "प",
+                "text": "प",
+                "width_units": 100
+              }
+            ],
+            [
+              {
+                "action": null,
+                "content_description": "ा",
+                "hold_action": null,
+                "key_id": "base.r1.k0",
+                "kind": "text",
+                "label": "ा",
+                "text": "ा",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "स",
+                "hold_action": null,
+                "key_id": "base.r1.k1",
+                "kind": "text",
+                "label": "स",
+                "text": "स",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "द",
+                "hold_action": null,
+                "key_id": "base.r1.k2",
+                "kind": "text",
+                "label": "द",
+                "text": "द",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "उ",
+                "hold_action": null,
+                "key_id": "base.r1.k3",
+                "kind": "text",
+                "label": "उ",
+                "text": "उ",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ग",
+                "hold_action": null,
+                "key_id": "base.r1.k4",
+                "kind": "text",
+                "label": "ग",
+                "text": "ग",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ह",
+                "hold_action": null,
+                "key_id": "base.r1.k5",
+                "kind": "text",
+                "label": "ह",
+                "text": "ह",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ज",
+                "hold_action": null,
+                "key_id": "base.r1.k6",
+                "kind": "text",
+                "label": "ज",
+                "text": "ज",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "क",
+                "hold_action": null,
+                "key_id": "base.r1.k7",
+                "kind": "text",
+                "label": "क",
+                "text": "क",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ल",
+                "hold_action": null,
+                "key_id": "base.r1.k8",
+                "kind": "text",
+                "label": "ल",
+                "text": "ल",
+                "width_units": 100
+              }
+            ],
+            [
+              {
+                "action": null,
+                "content_description": "ष",
+                "hold_action": null,
+                "key_id": "base.r2.k0",
+                "kind": "text",
+                "label": "ष",
+                "text": "ष",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ड",
+                "hold_action": null,
+                "key_id": "base.r2.k1",
+                "kind": "text",
+                "label": "ड",
+                "text": "ड",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "च",
+                "hold_action": null,
+                "key_id": "base.r2.k2",
+                "kind": "text",
+                "label": "च",
+                "text": "च",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "व",
+                "hold_action": null,
+                "key_id": "base.r2.k3",
+                "kind": "text",
+                "label": "व",
+                "text": "व",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ब",
+                "hold_action": null,
+                "key_id": "base.r2.k4",
+                "kind": "text",
+                "label": "ब",
+                "text": "ब",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "न",
+                "hold_action": null,
+                "key_id": "base.r2.k5",
+                "kind": "text",
+                "label": "न",
+                "text": "न",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "म",
+                "hold_action": null,
+                "key_id": "base.r2.k6",
+                "kind": "text",
+                "label": "म",
+                "text": "म",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": ",",
+                "hold_action": null,
+                "key_id": "base.r2.k7",
+                "kind": "text",
+                "label": ",",
+                "text": ",",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "।",
+                "hold_action": null,
+                "key_id": "base.r2.k8",
+                "kind": "text",
+                "label": "।",
+                "text": "।",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "्",
+                "hold_action": null,
+                "key_id": "base.r2.k9",
+                "kind": "text",
+                "label": "्",
+                "text": "्",
+                "width_units": 100
+              }
+            ],
+            [
+              {
+                "action": null,
+                "content_description": "इ",
+                "hold_action": null,
+                "key_id": "base.r3.k0",
+                "kind": "text",
+                "label": "इ",
+                "text": "इ",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ई",
+                "hold_action": null,
+                "key_id": "base.r3.k1",
+                "kind": "text",
+                "label": "ई",
+                "text": "ई",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ए",
+                "hold_action": null,
+                "key_id": "base.r3.k2",
+                "kind": "text",
+                "label": "ए",
+                "text": "ए",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ऐ",
+                "hold_action": null,
+                "key_id": "base.r3.k3",
+                "kind": "text",
+                "label": "ऐ",
+                "text": "ऐ",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "Devanagari sign nukta",
+                "hold_action": null,
+                "key_id": "base.r3.k4",
+                "kind": "text",
+                "label": "◌़",
+                "text": "़",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "Tharu conjunct zero width joiner",
+                "hold_action": null,
+                "key_id": "base.r3.k5",
+                "kind": "deva_conjunct_joiner",
+                "label": "ZWJ",
+                "text": "‍",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "Tharu conjunct zero width non-joiner",
+                "hold_action": null,
+                "key_id": "base.r3.k6",
+                "kind": "deva_conjunct_joiner",
+                "label": "ZWNJ",
+                "text": "‌",
+                "width_units": 100
+              }
+            ],
+            [
+              {
+                "action": "shift",
+                "content_description": "Shift",
+                "hold_action": null,
+                "key_id": "base.r4.k0",
+                "kind": "action",
+                "label": "⇧",
+                "text": null,
+                "width_units": 115
+              },
+              {
+                "action": "symbols",
+                "content_description": "Symbols",
+                "hold_action": null,
+                "key_id": "base.r4.k1",
+                "kind": "action",
+                "label": "?123",
+                "text": null,
+                "width_units": 135
+              },
+              {
+                "action": "language",
+                "content_description": "Switch language",
+                "hold_action": "open_language_picker",
+                "key_id": "base.r4.k2",
+                "kind": "action",
+                "label": "🌐",
+                "text": null,
+                "width_units": 110
+              },
+              {
+                "action": "space",
+                "content_description": "Space · ${profile.display_name}",
+                "hold_action": "open_language_picker",
+                "key_id": "base.r4.k3",
+                "kind": "action",
+                "label": "${profile.native_name}",
+                "text": null,
+                "width_units": 400
+              },
+              {
+                "action": "delete",
+                "content_description": "Delete",
+                "hold_action": null,
+                "key_id": "base.r4.k4",
+                "kind": "action",
+                "label": "⌫",
+                "text": null,
+                "width_units": 125
+              },
+              {
+                "action": "enter",
+                "content_description": "Enter",
+                "hold_action": null,
+                "key_id": "base.r4.k5",
+                "kind": "action",
+                "label": "↵",
+                "text": null,
+                "width_units": 125
+              }
+            ]
+          ]
+        },
+        "numeric": {
+          "rows": [
+            [
+              {
+                "action": null,
+                "content_description": "1",
+                "hold_action": null,
+                "key_id": "numeric.r0.k0",
+                "kind": "text",
+                "label": "1",
+                "text": "1",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "2",
+                "hold_action": null,
+                "key_id": "numeric.r0.k1",
+                "kind": "text",
+                "label": "2",
+                "text": "2",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "3",
+                "hold_action": null,
+                "key_id": "numeric.r0.k2",
+                "kind": "text",
+                "label": "3",
+                "text": "3",
+                "width_units": 100
+              }
+            ],
+            [
+              {
+                "action": null,
+                "content_description": "4",
+                "hold_action": null,
+                "key_id": "numeric.r1.k0",
+                "kind": "text",
+                "label": "4",
+                "text": "4",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "5",
+                "hold_action": null,
+                "key_id": "numeric.r1.k1",
+                "kind": "text",
+                "label": "5",
+                "text": "5",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "6",
+                "hold_action": null,
+                "key_id": "numeric.r1.k2",
+                "kind": "text",
+                "label": "6",
+                "text": "6",
+                "width_units": 100
+              }
+            ],
+            [
+              {
+                "action": null,
+                "content_description": "7",
+                "hold_action": null,
+                "key_id": "numeric.r2.k0",
+                "kind": "text",
+                "label": "7",
+                "text": "7",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "8",
+                "hold_action": null,
+                "key_id": "numeric.r2.k1",
+                "kind": "text",
+                "label": "8",
+                "text": "8",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "9",
+                "hold_action": null,
+                "key_id": "numeric.r2.k2",
+                "kind": "text",
+                "label": "9",
+                "text": "9",
+                "width_units": 100
+              }
+            ],
+            [
+              {
+                "action": null,
+                "content_description": ".",
+                "hold_action": null,
+                "key_id": "numeric.r3.k0",
+                "kind": "text",
+                "label": ".",
+                "text": ".",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "0",
+                "hold_action": null,
+                "key_id": "numeric.r3.k1",
+                "kind": "text",
+                "label": "0",
+                "text": "0",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "-",
+                "hold_action": null,
+                "key_id": "numeric.r3.k2",
+                "kind": "text",
+                "label": "-",
+                "text": "-",
+                "width_units": 100
+              }
+            ],
+            [
+              {
+                "action": "space",
+                "content_description": "Space · ${profile.display_name}",
+                "hold_action": "open_language_picker",
+                "key_id": "numeric.r4.k0",
+                "kind": "action",
+                "label": "${profile.native_name}",
+                "text": null,
+                "width_units": 220
+              },
+              {
+                "action": "delete",
+                "content_description": "Delete",
+                "hold_action": null,
+                "key_id": "numeric.r4.k1",
+                "kind": "action",
+                "label": "⌫",
+                "text": null,
+                "width_units": 125
+              },
+              {
+                "action": "enter",
+                "content_description": "Enter",
+                "hold_action": null,
+                "key_id": "numeric.r4.k2",
+                "kind": "action",
+                "label": "↵",
+                "text": null,
+                "width_units": 125
+              }
+            ]
+          ]
+        },
+        "shift": {
+          "rows": [
+            [
+              {
+                "action": null,
+                "content_description": "ठ",
+                "hold_action": null,
+                "key_id": "shift.r0.k0",
+                "kind": "text",
+                "label": "ठ",
+                "text": "ठ",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "औ",
+                "hold_action": null,
+                "key_id": "shift.r0.k1",
+                "kind": "text",
+                "label": "औ",
+                "text": "औ",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ै",
+                "hold_action": null,
+                "key_id": "shift.r0.k2",
+                "kind": "text",
+                "label": "ै",
+                "text": "ै",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ृ",
+                "hold_action": null,
+                "key_id": "shift.r0.k3",
+                "kind": "text",
+                "label": "ृ",
+                "text": "ृ",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "थ",
+                "hold_action": null,
+                "key_id": "shift.r0.k4",
+                "kind": "text",
+                "label": "थ",
+                "text": "थ",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ञ",
+                "hold_action": null,
+                "key_id": "shift.r0.k5",
+                "kind": "text",
+                "label": "ञ",
+                "text": "ञ",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ू",
+                "hold_action": null,
+                "key_id": "shift.r0.k6",
+                "kind": "text",
+                "label": "ू",
+                "text": "ू",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ी",
+                "hold_action": null,
+                "key_id": "shift.r0.k7",
+                "kind": "text",
+                "label": "ी",
+                "text": "ी",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ओ",
+                "hold_action": null,
+                "key_id": "shift.r0.k8",
+                "kind": "text",
+                "label": "ओ",
+                "text": "ओ",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "फ",
+                "hold_action": null,
+                "key_id": "shift.r0.k9",
+                "kind": "text",
+                "label": "फ",
+                "text": "फ",
+                "width_units": 100
+              }
+            ],
+            [
+              {
+                "action": null,
+                "content_description": "आ",
+                "hold_action": null,
+                "key_id": "shift.r1.k0",
+                "kind": "text",
+                "label": "आ",
+                "text": "आ",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "श",
+                "hold_action": null,
+                "key_id": "shift.r1.k1",
+                "kind": "text",
+                "label": "श",
+                "text": "श",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ध",
+                "hold_action": null,
+                "key_id": "shift.r1.k2",
+                "kind": "text",
+                "label": "ध",
+                "text": "ध",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ऊ",
+                "hold_action": null,
+                "key_id": "shift.r1.k3",
+                "kind": "text",
+                "label": "ऊ",
+                "text": "ऊ",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "घ",
+                "hold_action": null,
+                "key_id": "shift.r1.k4",
+                "kind": "text",
+                "label": "घ",
+                "text": "घ",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "अ",
+                "hold_action": null,
+                "key_id": "shift.r1.k5",
+                "kind": "text",
+                "label": "अ",
+                "text": "अ",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "झ",
+                "hold_action": null,
+                "key_id": "shift.r1.k6",
+                "kind": "text",
+                "label": "झ",
+                "text": "झ",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ख",
+                "hold_action": null,
+                "key_id": "shift.r1.k7",
+                "kind": "text",
+                "label": "ख",
+                "text": "ख",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "॥",
+                "hold_action": null,
+                "key_id": "shift.r1.k8",
+                "kind": "text",
+                "label": "॥",
+                "text": "॥",
+                "width_units": 100
+              }
+            ],
+            [
+              {
+                "action": null,
+                "content_description": "ऋ",
+                "hold_action": null,
+                "key_id": "shift.r2.k0",
+                "kind": "text",
+                "label": "ऋ",
+                "text": "ऋ",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ढ",
+                "hold_action": null,
+                "key_id": "shift.r2.k1",
+                "kind": "text",
+                "label": "ढ",
+                "text": "ढ",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "छ",
+                "hold_action": null,
+                "key_id": "shift.r2.k2",
+                "kind": "text",
+                "label": "छ",
+                "text": "छ",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ँ",
+                "hold_action": null,
+                "key_id": "shift.r2.k3",
+                "kind": "text",
+                "label": "ँ",
+                "text": "ँ",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "भ",
+                "hold_action": null,
+                "key_id": "shift.r2.k4",
+                "kind": "text",
+                "label": "भ",
+                "text": "भ",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ण",
+                "hold_action": null,
+                "key_id": "shift.r2.k5",
+                "kind": "text",
+                "label": "ण",
+                "text": "ण",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ं",
+                "hold_action": null,
+                "key_id": "shift.r2.k6",
+                "kind": "text",
+                "label": "ं",
+                "text": "ं",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ङ",
+                "hold_action": null,
+                "key_id": "shift.r2.k7",
+                "kind": "text",
+                "label": "ङ",
+                "text": "ङ",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": ".",
+                "hold_action": null,
+                "key_id": "shift.r2.k8",
+                "kind": "text",
+                "label": ".",
+                "text": ".",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "?",
+                "hold_action": null,
+                "key_id": "shift.r2.k9",
+                "kind": "text",
+                "label": "?",
+                "text": "?",
+                "width_units": 100
+              }
+            ],
+            [
+              {
+                "action": null,
+                "content_description": "इ",
+                "hold_action": null,
+                "key_id": "shift.r3.k0",
+                "kind": "text",
+                "label": "इ",
+                "text": "इ",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ई",
+                "hold_action": null,
+                "key_id": "shift.r3.k1",
+                "kind": "text",
+                "label": "ई",
+                "text": "ई",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ए",
+                "hold_action": null,
+                "key_id": "shift.r3.k2",
+                "kind": "text",
+                "label": "ए",
+                "text": "ए",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ऐ",
+                "hold_action": null,
+                "key_id": "shift.r3.k3",
+                "kind": "text",
+                "label": "ऐ",
+                "text": "ऐ",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "Devanagari sign nukta",
+                "hold_action": null,
+                "key_id": "shift.r3.k4",
+                "kind": "text",
+                "label": "◌़",
+                "text": "़",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "Tharu conjunct zero width joiner",
+                "hold_action": null,
+                "key_id": "shift.r3.k5",
+                "kind": "deva_conjunct_joiner",
+                "label": "ZWJ",
+                "text": "‍",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "Tharu conjunct zero width non-joiner",
+                "hold_action": null,
+                "key_id": "shift.r3.k6",
+                "kind": "deva_conjunct_joiner",
+                "label": "ZWNJ",
+                "text": "‌",
+                "width_units": 100
+              }
+            ],
+            [
+              {
+                "action": "shift",
+                "content_description": "Shift",
+                "hold_action": null,
+                "key_id": "shift.r4.k0",
+                "kind": "action",
+                "label": "⇧",
+                "text": null,
+                "width_units": 115
+              },
+              {
+                "action": "symbols",
+                "content_description": "Symbols",
+                "hold_action": null,
+                "key_id": "shift.r4.k1",
+                "kind": "action",
+                "label": "?123",
+                "text": null,
+                "width_units": 135
+              },
+              {
+                "action": "language",
+                "content_description": "Switch language",
+                "hold_action": "open_language_picker",
+                "key_id": "shift.r4.k2",
+                "kind": "action",
+                "label": "🌐",
+                "text": null,
+                "width_units": 110
+              },
+              {
+                "action": "space",
+                "content_description": "Space · ${profile.display_name}",
+                "hold_action": "open_language_picker",
+                "key_id": "shift.r4.k3",
+                "kind": "action",
+                "label": "${profile.native_name}",
+                "text": null,
+                "width_units": 400
+              },
+              {
+                "action": "delete",
+                "content_description": "Delete",
+                "hold_action": null,
+                "key_id": "shift.r4.k4",
+                "kind": "action",
+                "label": "⌫",
+                "text": null,
+                "width_units": 125
+              },
+              {
+                "action": "enter",
+                "content_description": "Enter",
+                "hold_action": null,
+                "key_id": "shift.r4.k5",
+                "kind": "action",
+                "label": "↵",
+                "text": null,
+                "width_units": 125
+              }
+            ]
+          ]
+        },
+        "symbols": {
+          "rows": [
+            [
+              {
+                "action": null,
+                "content_description": "1",
+                "hold_action": null,
+                "key_id": "symbols.r0.k0",
+                "kind": "text",
+                "label": "1",
+                "text": "1",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "2",
+                "hold_action": null,
+                "key_id": "symbols.r0.k1",
+                "kind": "text",
+                "label": "2",
+                "text": "2",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "3",
+                "hold_action": null,
+                "key_id": "symbols.r0.k2",
+                "kind": "text",
+                "label": "3",
+                "text": "3",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "4",
+                "hold_action": null,
+                "key_id": "symbols.r0.k3",
+                "kind": "text",
+                "label": "4",
+                "text": "4",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "5",
+                "hold_action": null,
+                "key_id": "symbols.r0.k4",
+                "kind": "text",
+                "label": "5",
+                "text": "5",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "6",
+                "hold_action": null,
+                "key_id": "symbols.r0.k5",
+                "kind": "text",
+                "label": "6",
+                "text": "6",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "7",
+                "hold_action": null,
+                "key_id": "symbols.r0.k6",
+                "kind": "text",
+                "label": "7",
+                "text": "7",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "8",
+                "hold_action": null,
+                "key_id": "symbols.r0.k7",
+                "kind": "text",
+                "label": "8",
+                "text": "8",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "9",
+                "hold_action": null,
+                "key_id": "symbols.r0.k8",
+                "kind": "text",
+                "label": "9",
+                "text": "9",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "0",
+                "hold_action": null,
+                "key_id": "symbols.r0.k9",
+                "kind": "text",
+                "label": "0",
+                "text": "0",
+                "width_units": 100
+              }
+            ],
+            [
+              {
+                "action": null,
+                "content_description": "@",
+                "hold_action": null,
+                "key_id": "symbols.r1.k0",
+                "kind": "text",
+                "label": "@",
+                "text": "@",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "#",
+                "hold_action": null,
+                "key_id": "symbols.r1.k1",
+                "kind": "text",
+                "label": "#",
+                "text": "#",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "₹",
+                "hold_action": null,
+                "key_id": "symbols.r1.k2",
+                "kind": "text",
+                "label": "₹",
+                "text": "₹",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "_",
+                "hold_action": null,
+                "key_id": "symbols.r1.k3",
+                "kind": "text",
+                "label": "_",
+                "text": "_",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "&",
+                "hold_action": null,
+                "key_id": "symbols.r1.k4",
+                "kind": "text",
+                "label": "&",
+                "text": "&",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "Hyphen within Mid-Eastern Tharu word",
+                "hold_action": null,
+                "key_id": "symbols.r1.k5",
+                "kind": "intra_word_punctuation",
+                "label": "-",
+                "text": "-",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "+",
+                "hold_action": null,
+                "key_id": "symbols.r1.k6",
+                "kind": "text",
+                "label": "+",
+                "text": "+",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "(",
+                "hold_action": null,
+                "key_id": "symbols.r1.k7",
+                "kind": "text",
+                "label": "(",
+                "text": "(",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": ")",
+                "hold_action": null,
+                "key_id": "symbols.r1.k8",
+                "kind": "text",
+                "label": ")",
+                "text": ")",
+                "width_units": 100
+              }
+            ],
+            [
+              {
+                "action": null,
+                "content_description": "*",
+                "hold_action": null,
+                "key_id": "symbols.r2.k0",
+                "kind": "text",
+                "label": "*",
+                "text": "*",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "\"",
+                "hold_action": null,
+                "key_id": "symbols.r2.k1",
+                "kind": "text",
+                "label": "\"",
+                "text": "\"",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "'",
+                "hold_action": null,
+                "key_id": "symbols.r2.k2",
+                "kind": "text",
+                "label": "'",
+                "text": "'",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": ":",
+                "hold_action": null,
+                "key_id": "symbols.r2.k3",
+                "kind": "text",
+                "label": ":",
+                "text": ":",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": ";",
+                "hold_action": null,
+                "key_id": "symbols.r2.k4",
+                "kind": "text",
+                "label": ";",
+                "text": ";",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "!",
+                "hold_action": null,
+                "key_id": "symbols.r2.k5",
+                "kind": "text",
+                "label": "!",
+                "text": "!",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "?",
+                "hold_action": null,
+                "key_id": "symbols.r2.k6",
+                "kind": "text",
+                "label": "?",
+                "text": "?",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "Slash within Mid-Eastern Tharu word",
+                "hold_action": null,
+                "key_id": "symbols.r2.k7",
+                "kind": "intra_word_punctuation",
+                "label": "/",
+                "text": "/",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": ".",
+                "hold_action": null,
+                "key_id": "symbols.r2.k8",
+                "kind": "text",
+                "label": ".",
+                "text": ".",
+                "width_units": 100
+              }
+            ],
+            [
+              {
+                "action": null,
+                "content_description": "०",
+                "hold_action": null,
+                "key_id": "symbols.r3.k0",
+                "kind": "text",
+                "label": "०",
+                "text": "०",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "१",
+                "hold_action": null,
+                "key_id": "symbols.r3.k1",
+                "kind": "text",
+                "label": "१",
+                "text": "१",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "२",
+                "hold_action": null,
+                "key_id": "symbols.r3.k2",
+                "kind": "text",
+                "label": "२",
+                "text": "२",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "३",
+                "hold_action": null,
+                "key_id": "symbols.r3.k3",
+                "kind": "text",
+                "label": "३",
+                "text": "३",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "४",
+                "hold_action": null,
+                "key_id": "symbols.r3.k4",
+                "kind": "text",
+                "label": "४",
+                "text": "४",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "५",
+                "hold_action": null,
+                "key_id": "symbols.r3.k5",
+                "kind": "text",
+                "label": "५",
+                "text": "५",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "६",
+                "hold_action": null,
+                "key_id": "symbols.r3.k6",
+                "kind": "text",
+                "label": "६",
+                "text": "६",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "७",
+                "hold_action": null,
+                "key_id": "symbols.r3.k7",
+                "kind": "text",
+                "label": "७",
+                "text": "७",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "८",
+                "hold_action": null,
+                "key_id": "symbols.r3.k8",
+                "kind": "text",
+                "label": "८",
+                "text": "८",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "९",
+                "hold_action": null,
+                "key_id": "symbols.r3.k9",
+                "kind": "text",
+                "label": "९",
+                "text": "९",
+                "width_units": 100
+              }
+            ],
+            [
+              {
+                "action": "letters",
+                "content_description": "Letters",
+                "hold_action": null,
+                "key_id": "symbols.r4.k0",
+                "kind": "action",
+                "label": "ABC",
+                "text": null,
+                "width_units": 135
+              },
+              {
+                "action": "symbols",
+                "content_description": "Symbols",
+                "hold_action": null,
+                "key_id": "symbols.r4.k1",
+                "kind": "action",
+                "label": "?123",
+                "text": null,
+                "width_units": 135
+              },
+              {
+                "action": "language",
+                "content_description": "Switch language",
+                "hold_action": "open_language_picker",
+                "key_id": "symbols.r4.k2",
+                "kind": "action",
+                "label": "🌐",
+                "text": null,
+                "width_units": 110
+              },
+              {
+                "action": "space",
+                "content_description": "Space · ${profile.display_name}",
+                "hold_action": "open_language_picker",
+                "key_id": "symbols.r4.k3",
+                "kind": "action",
+                "label": "${profile.native_name}",
+                "text": null,
+                "width_units": 400
+              },
+              {
+                "action": "delete",
+                "content_description": "Delete",
+                "hold_action": null,
+                "key_id": "symbols.r4.k4",
+                "kind": "action",
+                "label": "⌫",
+                "text": null,
+                "width_units": 125
+              },
+              {
+                "action": "enter",
+                "content_description": "Enter",
+                "hold_action": null,
+                "key_id": "symbols.r4.k5",
+                "kind": "action",
+                "label": "↵",
+                "text": null,
+                "width_units": 125
+              }
+            ]
+          ]
+        }
+      },
+      "layout_id": "deva-nepal-mid-eastern-tharu-v1",
+      "license": {
+        "copyright": "Multiple copyright holders; see the exact xkeyboard-config package notice",
+        "id": "LicenseRef-xkeyboard-config-aggregate",
+        "license_url": "https://gitlab.freedesktop.org/xkeyboard-config/xkeyboard-config/-/blob/xkeyboard-config-2.41/COPYING",
+        "notice_path": "layouts/internal/notices/xkb-data-2.41-2ubuntu1.1-deva-mid-eastern-tharu.copyright",
+        "notice_sha256": "739ff5404b852466ed201799e49bb5dc0f4eafe0876bf9aa74499f306b7b1786",
+        "redistribution": "allowed"
+      },
+      "normalization": "NFC",
+      "provenance": [
+        {
+          "kind": "adapted",
+          "note": "Preserves the reviewed Nepali basic phone rows, actions, symbols, numeric fallback, and profile-bound labels.",
+          "revision": "1",
+          "sha256": "5cefdc0e916eaa9ee64acafddcadad4c9d32c8adbaff69cb2d8f181655280e4f",
+          "source": "layouts/internal/src/deva-nepal-basic-v1.json"
+        },
+        {
+          "kind": "project_authored",
+          "note": "Adds the ten accepted-headword scalars absent from the basic layout and preserves intra-word hyphen and slash input for an opt-in internal profile.",
+          "revision": "v0",
+          "sha256": "2613b89dd5da55c0a06f550f4616b8c4d3ae56505edfa13e499ae827e751a7de",
+          "source": "reports/evidence/mid-eastern-tharu-layout-scalar-check-v0.json"
+        }
+      ],
+      "revision": 1,
+      "source": {
+        "path": "layouts/internal/src/deva-nepal-mid-eastern-tharu-v1.json",
+        "sha256": "db316037bebc211c8b76bd9219f0dcf43ad8ad7639c291cb6e608fad24d210b4"
+      },
+      "transforms": [],
+      "unicode_data_version": "16.0.0"
+    },
+    {
+      "authors": [
+        "Ampixa",
+        "xkeyboard-config contributors"
+      ],
+      "device_forms": [
+        "phone"
+      ],
+      "direction": "ltr",
+      "display_name": "Devanagari Western Magar (Nepal phone)",
+      "field_layer_map": {
+        "datetime": "numeric",
+        "number": "numeric",
+        "phone": "numeric",
+        "text": "base"
+      },
+      "input_script": "Deva",
+      "layers": {
+        "base": {
+          "rows": [
+            [
+              {
+                "action": null,
+                "content_description": "ट",
+                "hold_action": null,
+                "key_id": "base.r0.k0",
+                "kind": "text",
+                "label": "ट",
+                "text": "ट",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ौ",
+                "hold_action": null,
+                "key_id": "base.r0.k1",
+                "kind": "text",
+                "label": "ौ",
+                "text": "ौ",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "े",
+                "hold_action": null,
+                "key_id": "base.r0.k2",
+                "kind": "text",
+                "label": "े",
+                "text": "े",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "र",
+                "hold_action": null,
+                "key_id": "base.r0.k3",
+                "kind": "text",
+                "label": "र",
+                "text": "र",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "त",
+                "hold_action": null,
+                "key_id": "base.r0.k4",
+                "kind": "text",
+                "label": "त",
+                "text": "त",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "य",
+                "hold_action": null,
+                "key_id": "base.r0.k5",
+                "kind": "text",
+                "label": "य",
+                "text": "य",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ु",
+                "hold_action": null,
+                "key_id": "base.r0.k6",
+                "kind": "text",
+                "label": "ु",
+                "text": "ु",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ि",
+                "hold_action": null,
+                "key_id": "base.r0.k7",
+                "kind": "text",
+                "label": "ि",
+                "text": "ि",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ो",
+                "hold_action": null,
+                "key_id": "base.r0.k8",
+                "kind": "text",
+                "label": "ो",
+                "text": "ो",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "प",
+                "hold_action": null,
+                "key_id": "base.r0.k9",
+                "kind": "text",
+                "label": "प",
+                "text": "प",
+                "width_units": 100
+              }
+            ],
+            [
+              {
+                "action": null,
+                "content_description": "ा",
+                "hold_action": null,
+                "key_id": "base.r1.k0",
+                "kind": "text",
+                "label": "ा",
+                "text": "ा",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "स",
+                "hold_action": null,
+                "key_id": "base.r1.k1",
+                "kind": "text",
+                "label": "स",
+                "text": "स",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "द",
+                "hold_action": null,
+                "key_id": "base.r1.k2",
+                "kind": "text",
+                "label": "द",
+                "text": "द",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "उ",
+                "hold_action": null,
+                "key_id": "base.r1.k3",
+                "kind": "text",
+                "label": "उ",
+                "text": "उ",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ग",
+                "hold_action": null,
+                "key_id": "base.r1.k4",
+                "kind": "text",
+                "label": "ग",
+                "text": "ग",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ह",
+                "hold_action": null,
+                "key_id": "base.r1.k5",
+                "kind": "text",
+                "label": "ह",
+                "text": "ह",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ज",
+                "hold_action": null,
+                "key_id": "base.r1.k6",
+                "kind": "text",
+                "label": "ज",
+                "text": "ज",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "क",
+                "hold_action": null,
+                "key_id": "base.r1.k7",
+                "kind": "text",
+                "label": "क",
+                "text": "क",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ल",
+                "hold_action": null,
+                "key_id": "base.r1.k8",
+                "kind": "text",
+                "label": "ल",
+                "text": "ल",
+                "width_units": 100
+              }
+            ],
+            [
+              {
+                "action": null,
+                "content_description": "ष",
+                "hold_action": null,
+                "key_id": "base.r2.k0",
+                "kind": "text",
+                "label": "ष",
+                "text": "ष",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ड",
+                "hold_action": null,
+                "key_id": "base.r2.k1",
+                "kind": "text",
+                "label": "ड",
+                "text": "ड",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "च",
+                "hold_action": null,
+                "key_id": "base.r2.k2",
+                "kind": "text",
+                "label": "च",
+                "text": "च",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "व",
+                "hold_action": null,
+                "key_id": "base.r2.k3",
+                "kind": "text",
+                "label": "व",
+                "text": "व",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ब",
+                "hold_action": null,
+                "key_id": "base.r2.k4",
+                "kind": "text",
+                "label": "ब",
+                "text": "ब",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "न",
+                "hold_action": null,
+                "key_id": "base.r2.k5",
+                "kind": "text",
+                "label": "न",
+                "text": "न",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "म",
+                "hold_action": null,
+                "key_id": "base.r2.k6",
+                "kind": "text",
+                "label": "म",
+                "text": "म",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": ",",
+                "hold_action": null,
+                "key_id": "base.r2.k7",
+                "kind": "text",
+                "label": ",",
+                "text": ",",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "।",
+                "hold_action": null,
+                "key_id": "base.r2.k8",
+                "kind": "text",
+                "label": "।",
+                "text": "।",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "्",
+                "hold_action": null,
+                "key_id": "base.r2.k9",
+                "kind": "text",
+                "label": "्",
+                "text": "्",
+                "width_units": 100
+              }
+            ],
+            [
+              {
+                "action": null,
+                "content_description": "इ",
+                "hold_action": null,
+                "key_id": "base.r3.k0",
+                "kind": "text",
+                "label": "इ",
+                "text": "इ",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ए",
+                "hold_action": null,
+                "key_id": "base.r3.k1",
+                "kind": "text",
+                "label": "ए",
+                "text": "ए",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ऐ",
+                "hold_action": null,
+                "key_id": "base.r3.k2",
+                "kind": "text",
+                "label": "ऐ",
+                "text": "ऐ",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "Western Magar conjunct zero width joiner",
+                "hold_action": null,
+                "key_id": "base.r3.k3",
+                "kind": "deva_conjunct_joiner",
+                "label": "ZWJ",
+                "text": "‍",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "Western Magar conjunct or terminal zero width non-joiner",
+                "hold_action": null,
+                "key_id": "base.r3.k4",
+                "kind": "deva_terminal_zwnj",
+                "label": "ZWNJ",
+                "text": "‌",
+                "width_units": 100
+              }
+            ],
+            [
+              {
+                "action": "shift",
+                "content_description": "Shift",
+                "hold_action": null,
+                "key_id": "base.r4.k0",
+                "kind": "action",
+                "label": "⇧",
+                "text": null,
+                "width_units": 115
+              },
+              {
+                "action": "symbols",
+                "content_description": "Symbols",
+                "hold_action": null,
+                "key_id": "base.r4.k1",
+                "kind": "action",
+                "label": "?123",
+                "text": null,
+                "width_units": 135
+              },
+              {
+                "action": "language",
+                "content_description": "Switch language",
+                "hold_action": "open_language_picker",
+                "key_id": "base.r4.k2",
+                "kind": "action",
+                "label": "🌐",
+                "text": null,
+                "width_units": 110
+              },
+              {
+                "action": "space",
+                "content_description": "Space · ${profile.display_name}",
+                "hold_action": "open_language_picker",
+                "key_id": "base.r4.k3",
+                "kind": "action",
+                "label": "${profile.native_name}",
+                "text": null,
+                "width_units": 400
+              },
+              {
+                "action": "delete",
+                "content_description": "Delete",
+                "hold_action": null,
+                "key_id": "base.r4.k4",
+                "kind": "action",
+                "label": "⌫",
+                "text": null,
+                "width_units": 125
+              },
+              {
+                "action": "enter",
+                "content_description": "Enter",
+                "hold_action": null,
+                "key_id": "base.r4.k5",
+                "kind": "action",
+                "label": "↵",
+                "text": null,
+                "width_units": 125
+              }
+            ]
+          ]
+        },
+        "numeric": {
+          "rows": [
+            [
+              {
+                "action": null,
+                "content_description": "1",
+                "hold_action": null,
+                "key_id": "numeric.r0.k0",
+                "kind": "text",
+                "label": "1",
+                "text": "1",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "2",
+                "hold_action": null,
+                "key_id": "numeric.r0.k1",
+                "kind": "text",
+                "label": "2",
+                "text": "2",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "3",
+                "hold_action": null,
+                "key_id": "numeric.r0.k2",
+                "kind": "text",
+                "label": "3",
+                "text": "3",
+                "width_units": 100
+              }
+            ],
+            [
+              {
+                "action": null,
+                "content_description": "4",
+                "hold_action": null,
+                "key_id": "numeric.r1.k0",
+                "kind": "text",
+                "label": "4",
+                "text": "4",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "5",
+                "hold_action": null,
+                "key_id": "numeric.r1.k1",
+                "kind": "text",
+                "label": "5",
+                "text": "5",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "6",
+                "hold_action": null,
+                "key_id": "numeric.r1.k2",
+                "kind": "text",
+                "label": "6",
+                "text": "6",
+                "width_units": 100
+              }
+            ],
+            [
+              {
+                "action": null,
+                "content_description": "7",
+                "hold_action": null,
+                "key_id": "numeric.r2.k0",
+                "kind": "text",
+                "label": "7",
+                "text": "7",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "8",
+                "hold_action": null,
+                "key_id": "numeric.r2.k1",
+                "kind": "text",
+                "label": "8",
+                "text": "8",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "9",
+                "hold_action": null,
+                "key_id": "numeric.r2.k2",
+                "kind": "text",
+                "label": "9",
+                "text": "9",
+                "width_units": 100
+              }
+            ],
+            [
+              {
+                "action": null,
+                "content_description": ".",
+                "hold_action": null,
+                "key_id": "numeric.r3.k0",
+                "kind": "text",
+                "label": ".",
+                "text": ".",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "0",
+                "hold_action": null,
+                "key_id": "numeric.r3.k1",
+                "kind": "text",
+                "label": "0",
+                "text": "0",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "-",
+                "hold_action": null,
+                "key_id": "numeric.r3.k2",
+                "kind": "text",
+                "label": "-",
+                "text": "-",
+                "width_units": 100
+              }
+            ],
+            [
+              {
+                "action": "space",
+                "content_description": "Space · ${profile.display_name}",
+                "hold_action": "open_language_picker",
+                "key_id": "numeric.r4.k0",
+                "kind": "action",
+                "label": "${profile.native_name}",
+                "text": null,
+                "width_units": 220
+              },
+              {
+                "action": "delete",
+                "content_description": "Delete",
+                "hold_action": null,
+                "key_id": "numeric.r4.k1",
+                "kind": "action",
+                "label": "⌫",
+                "text": null,
+                "width_units": 125
+              },
+              {
+                "action": "enter",
+                "content_description": "Enter",
+                "hold_action": null,
+                "key_id": "numeric.r4.k2",
+                "kind": "action",
+                "label": "↵",
+                "text": null,
+                "width_units": 125
+              }
+            ]
+          ]
+        },
+        "shift": {
+          "rows": [
+            [
+              {
+                "action": null,
+                "content_description": "ठ",
+                "hold_action": null,
+                "key_id": "shift.r0.k0",
+                "kind": "text",
+                "label": "ठ",
+                "text": "ठ",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "औ",
+                "hold_action": null,
+                "key_id": "shift.r0.k1",
+                "kind": "text",
+                "label": "औ",
+                "text": "औ",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ै",
+                "hold_action": null,
+                "key_id": "shift.r0.k2",
+                "kind": "text",
+                "label": "ै",
+                "text": "ै",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ृ",
+                "hold_action": null,
+                "key_id": "shift.r0.k3",
+                "kind": "text",
+                "label": "ृ",
+                "text": "ृ",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "थ",
+                "hold_action": null,
+                "key_id": "shift.r0.k4",
+                "kind": "text",
+                "label": "थ",
+                "text": "थ",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ञ",
+                "hold_action": null,
+                "key_id": "shift.r0.k5",
+                "kind": "text",
+                "label": "ञ",
+                "text": "ञ",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ू",
+                "hold_action": null,
+                "key_id": "shift.r0.k6",
+                "kind": "text",
+                "label": "ू",
+                "text": "ू",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ी",
+                "hold_action": null,
+                "key_id": "shift.r0.k7",
+                "kind": "text",
+                "label": "ी",
+                "text": "ी",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ओ",
+                "hold_action": null,
+                "key_id": "shift.r0.k8",
+                "kind": "text",
+                "label": "ओ",
+                "text": "ओ",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "फ",
+                "hold_action": null,
+                "key_id": "shift.r0.k9",
+                "kind": "text",
+                "label": "फ",
+                "text": "फ",
+                "width_units": 100
+              }
+            ],
+            [
+              {
+                "action": null,
+                "content_description": "आ",
+                "hold_action": null,
+                "key_id": "shift.r1.k0",
+                "kind": "text",
+                "label": "आ",
+                "text": "आ",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "श",
+                "hold_action": null,
+                "key_id": "shift.r1.k1",
+                "kind": "text",
+                "label": "श",
+                "text": "श",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ध",
+                "hold_action": null,
+                "key_id": "shift.r1.k2",
+                "kind": "text",
+                "label": "ध",
+                "text": "ध",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ऊ",
+                "hold_action": null,
+                "key_id": "shift.r1.k3",
+                "kind": "text",
+                "label": "ऊ",
+                "text": "ऊ",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "घ",
+                "hold_action": null,
+                "key_id": "shift.r1.k4",
+                "kind": "text",
+                "label": "घ",
+                "text": "घ",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "अ",
+                "hold_action": null,
+                "key_id": "shift.r1.k5",
+                "kind": "text",
+                "label": "अ",
+                "text": "अ",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "झ",
+                "hold_action": null,
+                "key_id": "shift.r1.k6",
+                "kind": "text",
+                "label": "झ",
+                "text": "झ",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ख",
+                "hold_action": null,
+                "key_id": "shift.r1.k7",
+                "kind": "text",
+                "label": "ख",
+                "text": "ख",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "॥",
+                "hold_action": null,
+                "key_id": "shift.r1.k8",
+                "kind": "text",
+                "label": "॥",
+                "text": "॥",
+                "width_units": 100
+              }
+            ],
+            [
+              {
+                "action": null,
+                "content_description": "ऋ",
+                "hold_action": null,
+                "key_id": "shift.r2.k0",
+                "kind": "text",
+                "label": "ऋ",
+                "text": "ऋ",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ढ",
+                "hold_action": null,
+                "key_id": "shift.r2.k1",
+                "kind": "text",
+                "label": "ढ",
+                "text": "ढ",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "छ",
+                "hold_action": null,
+                "key_id": "shift.r2.k2",
+                "kind": "text",
+                "label": "छ",
+                "text": "छ",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ँ",
+                "hold_action": null,
+                "key_id": "shift.r2.k3",
+                "kind": "text",
+                "label": "ँ",
+                "text": "ँ",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "भ",
+                "hold_action": null,
+                "key_id": "shift.r2.k4",
+                "kind": "text",
+                "label": "भ",
+                "text": "भ",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ण",
+                "hold_action": null,
+                "key_id": "shift.r2.k5",
+                "kind": "text",
+                "label": "ण",
+                "text": "ण",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ं",
+                "hold_action": null,
+                "key_id": "shift.r2.k6",
+                "kind": "text",
+                "label": "ं",
+                "text": "ं",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ङ",
+                "hold_action": null,
+                "key_id": "shift.r2.k7",
+                "kind": "text",
+                "label": "ङ",
+                "text": "ङ",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": ".",
+                "hold_action": null,
+                "key_id": "shift.r2.k8",
+                "kind": "text",
+                "label": ".",
+                "text": ".",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "?",
+                "hold_action": null,
+                "key_id": "shift.r2.k9",
+                "kind": "text",
+                "label": "?",
+                "text": "?",
+                "width_units": 100
+              }
+            ],
+            [
+              {
+                "action": null,
+                "content_description": "इ",
+                "hold_action": null,
+                "key_id": "shift.r3.k0",
+                "kind": "text",
+                "label": "इ",
+                "text": "इ",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ए",
+                "hold_action": null,
+                "key_id": "shift.r3.k1",
+                "kind": "text",
+                "label": "ए",
+                "text": "ए",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "ऐ",
+                "hold_action": null,
+                "key_id": "shift.r3.k2",
+                "kind": "text",
+                "label": "ऐ",
+                "text": "ऐ",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "Western Magar conjunct zero width joiner",
+                "hold_action": null,
+                "key_id": "shift.r3.k3",
+                "kind": "deva_conjunct_joiner",
+                "label": "ZWJ",
+                "text": "‍",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "Western Magar conjunct or terminal zero width non-joiner",
+                "hold_action": null,
+                "key_id": "shift.r3.k4",
+                "kind": "deva_terminal_zwnj",
+                "label": "ZWNJ",
+                "text": "‌",
+                "width_units": 100
+              }
+            ],
+            [
+              {
+                "action": "shift",
+                "content_description": "Shift",
+                "hold_action": null,
+                "key_id": "shift.r4.k0",
+                "kind": "action",
+                "label": "⇧",
+                "text": null,
+                "width_units": 115
+              },
+              {
+                "action": "symbols",
+                "content_description": "Symbols",
+                "hold_action": null,
+                "key_id": "shift.r4.k1",
+                "kind": "action",
+                "label": "?123",
+                "text": null,
+                "width_units": 135
+              },
+              {
+                "action": "language",
+                "content_description": "Switch language",
+                "hold_action": "open_language_picker",
+                "key_id": "shift.r4.k2",
+                "kind": "action",
+                "label": "🌐",
+                "text": null,
+                "width_units": 110
+              },
+              {
+                "action": "space",
+                "content_description": "Space · ${profile.display_name}",
+                "hold_action": "open_language_picker",
+                "key_id": "shift.r4.k3",
+                "kind": "action",
+                "label": "${profile.native_name}",
+                "text": null,
+                "width_units": 400
+              },
+              {
+                "action": "delete",
+                "content_description": "Delete",
+                "hold_action": null,
+                "key_id": "shift.r4.k4",
+                "kind": "action",
+                "label": "⌫",
+                "text": null,
+                "width_units": 125
+              },
+              {
+                "action": "enter",
+                "content_description": "Enter",
+                "hold_action": null,
+                "key_id": "shift.r4.k5",
+                "kind": "action",
+                "label": "↵",
+                "text": null,
+                "width_units": 125
+              }
+            ]
+          ]
+        },
+        "symbols": {
+          "rows": [
+            [
+              {
+                "action": null,
+                "content_description": "1",
+                "hold_action": null,
+                "key_id": "symbols.r0.k0",
+                "kind": "text",
+                "label": "1",
+                "text": "1",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "2",
+                "hold_action": null,
+                "key_id": "symbols.r0.k1",
+                "kind": "text",
+                "label": "2",
+                "text": "2",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "3",
+                "hold_action": null,
+                "key_id": "symbols.r0.k2",
+                "kind": "text",
+                "label": "3",
+                "text": "3",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "4",
+                "hold_action": null,
+                "key_id": "symbols.r0.k3",
+                "kind": "text",
+                "label": "4",
+                "text": "4",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "5",
+                "hold_action": null,
+                "key_id": "symbols.r0.k4",
+                "kind": "text",
+                "label": "5",
+                "text": "5",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "6",
+                "hold_action": null,
+                "key_id": "symbols.r0.k5",
+                "kind": "text",
+                "label": "6",
+                "text": "6",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "7",
+                "hold_action": null,
+                "key_id": "symbols.r0.k6",
+                "kind": "text",
+                "label": "7",
+                "text": "7",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "8",
+                "hold_action": null,
+                "key_id": "symbols.r0.k7",
+                "kind": "text",
+                "label": "8",
+                "text": "8",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "9",
+                "hold_action": null,
+                "key_id": "symbols.r0.k8",
+                "kind": "text",
+                "label": "9",
+                "text": "9",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "0",
+                "hold_action": null,
+                "key_id": "symbols.r0.k9",
+                "kind": "text",
+                "label": "0",
+                "text": "0",
+                "width_units": 100
+              }
+            ],
+            [
+              {
+                "action": null,
+                "content_description": "@",
+                "hold_action": null,
+                "key_id": "symbols.r1.k0",
+                "kind": "text",
+                "label": "@",
+                "text": "@",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "#",
+                "hold_action": null,
+                "key_id": "symbols.r1.k1",
+                "kind": "text",
+                "label": "#",
+                "text": "#",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "₹",
+                "hold_action": null,
+                "key_id": "symbols.r1.k2",
+                "kind": "text",
+                "label": "₹",
+                "text": "₹",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "_",
+                "hold_action": null,
+                "key_id": "symbols.r1.k3",
+                "kind": "text",
+                "label": "_",
+                "text": "_",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "&",
+                "hold_action": null,
+                "key_id": "symbols.r1.k4",
+                "kind": "text",
+                "label": "&",
+                "text": "&",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "Hyphen within Western Magar word",
+                "hold_action": null,
+                "key_id": "symbols.r1.k5",
+                "kind": "intra_word_punctuation",
+                "label": "-",
+                "text": "-",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "+",
+                "hold_action": null,
+                "key_id": "symbols.r1.k6",
+                "kind": "text",
+                "label": "+",
+                "text": "+",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "(",
+                "hold_action": null,
+                "key_id": "symbols.r1.k7",
+                "kind": "text",
+                "label": "(",
+                "text": "(",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": ")",
+                "hold_action": null,
+                "key_id": "symbols.r1.k8",
+                "kind": "text",
+                "label": ")",
+                "text": ")",
+                "width_units": 100
+              }
+            ],
+            [
+              {
+                "action": null,
+                "content_description": "*",
+                "hold_action": null,
+                "key_id": "symbols.r2.k0",
+                "kind": "text",
+                "label": "*",
+                "text": "*",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "\"",
+                "hold_action": null,
+                "key_id": "symbols.r2.k1",
+                "kind": "text",
+                "label": "\"",
+                "text": "\"",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "'",
+                "hold_action": null,
+                "key_id": "symbols.r2.k2",
+                "kind": "text",
+                "label": "'",
+                "text": "'",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": ":",
+                "hold_action": null,
+                "key_id": "symbols.r2.k3",
+                "kind": "text",
+                "label": ":",
+                "text": ":",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": ";",
+                "hold_action": null,
+                "key_id": "symbols.r2.k4",
+                "kind": "text",
+                "label": ";",
+                "text": ";",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "!",
+                "hold_action": null,
+                "key_id": "symbols.r2.k5",
+                "kind": "text",
+                "label": "!",
+                "text": "!",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "?",
+                "hold_action": null,
+                "key_id": "symbols.r2.k6",
+                "kind": "text",
+                "label": "?",
+                "text": "?",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": "Slash within Western Magar word",
+                "hold_action": null,
+                "key_id": "symbols.r2.k7",
+                "kind": "intra_word_punctuation",
+                "label": "/",
+                "text": "/",
+                "width_units": 100
+              },
+              {
+                "action": null,
+                "content_description": ".",
+                "hold_action": null,
+                "key_id": "symbols.r2.k8",
+                "kind": "text",
+                "label": ".",
+                "text": ".",
+                "width_units": 100
+              }
+            ],
+            [
+              {
+                "action": "letters",
+                "content_description": "Letters",
+                "hold_action": null,
+                "key_id": "symbols.r3.k0",
+                "kind": "action",
+                "label": "ABC",
+                "text": null,
+                "width_units": 135
+              },
+              {
+                "action": "symbols",
+                "content_description": "Symbols",
+                "hold_action": null,
+                "key_id": "symbols.r3.k1",
+                "kind": "action",
+                "label": "?123",
+                "text": null,
+                "width_units": 135
+              },
+              {
+                "action": "language",
+                "content_description": "Switch language",
+                "hold_action": "open_language_picker",
+                "key_id": "symbols.r3.k2",
+                "kind": "action",
+                "label": "🌐",
+                "text": null,
+                "width_units": 110
+              },
+              {
+                "action": "space",
+                "content_description": "Space · ${profile.display_name}",
+                "hold_action": "open_language_picker",
+                "key_id": "symbols.r3.k3",
+                "kind": "action",
+                "label": "${profile.native_name}",
+                "text": null,
+                "width_units": 400
+              },
+              {
+                "action": "delete",
+                "content_description": "Delete",
+                "hold_action": null,
+                "key_id": "symbols.r3.k4",
+                "kind": "action",
+                "label": "⌫",
+                "text": null,
+                "width_units": 125
+              },
+              {
+                "action": "enter",
+                "content_description": "Enter",
+                "hold_action": null,
+                "key_id": "symbols.r3.k5",
+                "kind": "action",
+                "label": "↵",
+                "text": null,
+                "width_units": 125
+              }
+            ]
+          ]
+        }
+      },
+      "layout_id": "deva-nepal-western-magar-v1",
+      "license": {
+        "copyright": "Multiple copyright holders; see the exact xkeyboard-config package notice",
+        "id": "LicenseRef-xkeyboard-config-aggregate",
+        "license_url": "https://gitlab.freedesktop.org/xkeyboard-config/xkeyboard-config/-/blob/xkeyboard-config-2.41/COPYING",
+        "notice_path": "layouts/internal/notices/xkb-data-2.41-2ubuntu1.1-deva-western-magar.copyright",
+        "notice_sha256": "739ff5404b852466ed201799e49bb5dc0f4eafe0876bf9aa74499f306b7b1786",
+        "redistribution": "allowed"
+      },
+      "normalization": "NFC",
+      "provenance": [
+        {
+          "kind": "adapted",
+          "note": "Preserves the reviewed Nepali basic phone rows, actions, symbols, numeric fallback, and profile-bound labels.",
+          "revision": "1",
+          "sha256": "5cefdc0e916eaa9ee64acafddcadad4c9d32c8adbaff69cb2d8f181655280e4f",
+          "source": "layouts/internal/src/deva-nepal-basic-v1.json"
+        },
+        {
+          "kind": "project_authored",
+          "note": "Adds the five missing headword scalars and intra-word hyphen and slash behavior selected from the pinned Western Magar source audit.",
+          "revision": "v0",
+          "sha256": "a69663835ff485f7b20a11cf384d45250f91f11fee995728ac8256b37efb930d",
+          "source": "reports/western-magar-candidate-policy-v0.md"
+        }
+      ],
+      "revision": 1,
+      "source": {
+        "path": "layouts/internal/src/deva-nepal-western-magar-v1.json",
+        "sha256": "f1f9699d071287b7d747e3c7744a3c1efb9f1f8ca242f8421c02e70392bd8cb1"
+      },
+      "transforms": [],
+      "unicode_data_version": "16.0.0"
+    },
+    {
+      "authors": [
+        "Ampixa",
+        "xkeyboard-config contributors"
+      ],
+      "device_forms": [
+        "phone"
+      ],
+      "direction": "ltr",
       "display_name": "Devanagari Western Tamang (Nepal phone)",
       "field_layer_map": {
         "datetime": "numeric",
@@ -16963,6 +22609,13 @@
   ],
   "profile_bindings": [
     {
+      "layout_id": "deva-nepal-bantawa-v1",
+      "profile_id": "bap-Deva-NP",
+      "revision": 1,
+      "source_script": "Deva",
+      "source_sha256": "c469ed3c08c999a397025371dbf259a0f252f7e81cb032710c11ea0bf9b8289b"
+    },
+    {
       "layout_id": "deva-nepal-dhimal-v1",
       "profile_id": "dhi-Deva-NP",
       "revision": 1,
@@ -16984,6 +22637,13 @@
       "source_sha256": "fd75fa37636e4a248f9ed143609e1a911f2ea8327bf4928656ec3ca8b5597a76"
     },
     {
+      "layout_id": "deva-nepal-central-gurung-v1",
+      "profile_id": "gvr-Deva-NP",
+      "revision": 1,
+      "source_script": "Deva",
+      "source_sha256": "fbf366fc4a1dd560d5dbdc8128a40169a4e596c2ab0f047975e466f3ec72f5b4"
+    },
+    {
       "layout_id": "deva-nepal-khaling-v1",
       "profile_id": "klr-Deva-NP",
       "revision": 1,
@@ -17003,6 +22663,13 @@
       "revision": 1,
       "source_script": "Limb",
       "source_sha256": "aee3a4193111469125c58b527db6dbae6677c1046d9c2eccd4cf855984928ac1"
+    },
+    {
+      "layout_id": "deva-nepal-western-magar-v1",
+      "profile_id": "mrd-Deva-NP",
+      "revision": 1,
+      "source_script": "Deva",
+      "source_sha256": "f1f9699d071287b7d747e3c7744a3c1efb9f1f8ca242f8421c02e70392bd8cb1"
     },
     {
       "layout_id": "deva-nepal-bhasa-v1",
@@ -17054,6 +22721,13 @@
       "source_sha256": "fe8a19fda41baf9df799e401f6134bd5308e5258814ff87fc4d6ae81760a0fd8"
     },
     {
+      "layout_id": "deva-nepal-mid-eastern-tharu-v1",
+      "profile_id": "thq-Deva-NP",
+      "revision": 1,
+      "source_script": "Deva",
+      "source_sha256": "db316037bebc211c8b76bd9219f0dcf43ad8ad7639c291cb6e608fad24d210b4"
+    },
+    {
       "layout_id": "deva-nepal-yakkha-v1",
       "profile_id": "ybh-Deva-NP",
       "revision": 1,
@@ -17063,7 +22737,7 @@
   ],
   "profile_lock": {
     "path": "catalog/internal-profiles.lock.json",
-    "sha256": "b93312a0a3049b6c041dff3d6efb3deee34a85c2f8591e59cb1f2032adb5fb15"
+    "sha256": "d3f2a85fea6018f74b81d7374db537faeb9fd7b94f917003291e1db0d1c73a01"
   },
   "schemas": {
     "lock": {

@@ -188,13 +188,13 @@ public final class InternalImeSmokeInstrumentation extends Instrumentation {
             verifyDumiKeyDispatch(context, dumi);
             verifyDumiGeneratedInputPolicies(dumi);
             verifyNewDirectProfileAndLayout(bantawa, BANTAWA_DIRECT_ID,
-                    "bap-deva-direct", BANTAWA_LAYOUT_ID, 4);
+                    "bap-deva-direct", BANTAWA_LAYOUT_ID, 4, 4);
             verifyNewDirectProfileAndLayout(westernMagar, WESTERN_MAGAR_DIRECT_ID,
-                    "mrd-deva-direct", WESTERN_MAGAR_LAYOUT_ID, 5);
+                    "mrd-deva-direct", WESTERN_MAGAR_LAYOUT_ID, 5, 4);
             verifyNewDirectProfileAndLayout(midEasternTharu, MID_EASTERN_THARU_DIRECT_ID,
-                    "thq-deva-direct", MID_EASTERN_THARU_LAYOUT_ID, 5);
+                    "thq-deva-direct", MID_EASTERN_THARU_LAYOUT_ID, 5, 5);
             verifyNewDirectProfileAndLayout(centralGurung, CENTRAL_GURUNG_DIRECT_ID,
-                    "gvr-deva-direct", CENTRAL_GURUNG_LAYOUT_ID, 5);
+                    "gvr-deva-direct", CENTRAL_GURUNG_LAYOUT_ID, 5, 4);
             verifyBantawaLayoutAndDispatch(context, nepali, bantawa);
             verifyWesternMagarLayoutAndDispatch(context, nepali, westernMagar);
             verifyMidEasternTharuLayoutAndDispatch(context, nepali, midEasternTharu);
@@ -2279,7 +2279,8 @@ public final class InternalImeSmokeInstrumentation extends Instrumentation {
             String profileId,
             String methodId,
             String layoutId,
-            int letterRows
+            int letterRows,
+            int symbolRows
     ) {
         assertEquals(profileId + " profile ID", profileId, profile.id());
         assertEquals(profileId + " input method", methodId, profile.inputMethodId());
@@ -2294,7 +2295,7 @@ public final class InternalImeSmokeInstrumentation extends Instrumentation {
                 KeyboardLayouts.forProfile(profile, false, false, false).rows().size());
         assertEquals(profileId + " shift rows", letterRows,
                 KeyboardLayouts.forProfile(profile, true, false, false).rows().size());
-        assertEquals(profileId + " symbol rows", 4,
+        assertEquals(profileId + " symbol rows", symbolRows,
                 KeyboardLayouts.forProfile(profile, false, true, false).rows().size());
     }
 

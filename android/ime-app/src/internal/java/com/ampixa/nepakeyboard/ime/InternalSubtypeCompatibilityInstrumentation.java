@@ -273,6 +273,7 @@ public final class InternalSubtypeCompatibilityInstrumentation extends Instrumen
             InternalSubtypeTestActivity host,
             TransitionTrace trace
     ) {
+        restartEditor(host, trace, "", false, false);
         KeySpec k = KeySpec.generatedText(
                 "test.k", "k", "k", "k", KeySpec.InputPolicy.DEFAULT, 1, null
         );
@@ -283,7 +284,6 @@ public final class InternalSubtypeCompatibilityInstrumentation extends Instrumen
             NepaInputMethodService service = trace.service();
             NepaInputView view = trace.view();
             assertTrue("Nepali service and view are bound", service != null && view != null);
-            host.setEditorTextForTesting("");
             if (!view.isTransliterating()) {
                 view.toggleTransliteration();
             }

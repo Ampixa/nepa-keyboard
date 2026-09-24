@@ -1,0 +1,18 @@
+# Hash-pinned source files must keep the same line endings on Windows.
+* text=auto eol=lf
+
+*.aab -text
+*.apk -text
+*.gz -text
+*.jpeg -text
+*.jpg -text
+*.ncm -text
+*.nkp -text
+*.pdf -text
+*.png -text
+*.ttf -text
+*.webp -text
+*.zip -text
+
+# Preserve exact Windows evidence bytes for its SHA-256 manifests.
+reports/evidence/production-readiness-20260924/*windows*/** -text -diff

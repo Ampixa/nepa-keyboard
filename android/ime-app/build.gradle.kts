@@ -3355,7 +3355,7 @@ val generateInternalProfileCatalog = tasks.register<GenerateShippingProfileCatal
 ) {
     lockFile.set(internalProfileLockFile)
     expectedLockSha256.set(
-        "b93312a0a3049b6c041dff3d6efb3deee34a85c2f8591e59cb1f2032adb5fb15"
+        "d3f2a85fea6018f74b81d7374db537faeb9fd7b94f917003291e1db0d1c73a01"
     )
     expectedAuthority.set("internal")
     compilerFile.set(rootProject.file("../tools/build_shipping_profile_catalog.py"))
@@ -3371,10 +3371,10 @@ val generateTransliterationProfiles = tasks.register<GenerateTransliterationProf
 ) {
     catalogFile.set(file("src/main/assets/nepa-translit/profiles-v1.json"))
     expectedCatalogSha256.set(
-        "9d51da8f6274cee6514810c35daa46ef9d681ac0782c2a0eb88c237b1c675755"
+        "a407b687f67bd03d5bbc885395096f89d16ad6a68f1308aca28fdc24aaa2d462"
     )
     expectedProfileLockSha256.set(
-        "b93312a0a3049b6c041dff3d6efb3deee34a85c2f8591e59cb1f2032adb5fb15"
+        "d3f2a85fea6018f74b81d7374db537faeb9fd7b94f917003291e1db0d1c73a01"
     )
     includeProfiles.set(true)
     outputDirectory.set(layout.buildDirectory.dir("generated/transliterationProfiles/java"))
@@ -3385,10 +3385,10 @@ val generateEmptyTransliterationProfiles = tasks.register<GenerateTransliteratio
 ) {
     catalogFile.set(file("src/main/assets/nepa-translit/profiles-v1.json"))
     expectedCatalogSha256.set(
-        "9d51da8f6274cee6514810c35daa46ef9d681ac0782c2a0eb88c237b1c675755"
+        "a407b687f67bd03d5bbc885395096f89d16ad6a68f1308aca28fdc24aaa2d462"
     )
     expectedProfileLockSha256.set(
-        "b93312a0a3049b6c041dff3d6efb3deee34a85c2f8591e59cb1f2032adb5fb15"
+        "d3f2a85fea6018f74b81d7374db537faeb9fd7b94f917003291e1db0d1c73a01"
     )
     includeProfiles.set(false)
     outputDirectory.set(layout.buildDirectory.dir("generated/emptyTransliterationProfiles/java"))
@@ -3424,10 +3424,10 @@ val generateInternalLayoutRegistry = tasks.register<GenerateLayoutRegistry>(
     layoutLockFile.set(rootProject.file("../layouts/internal/layouts-v1.lock.json"))
     profileLockFile.set(internalProfileLockFile)
     expectedLayoutLockSha256.set(
-        "500857bac9ba6ebdba85f1d29b66b37d96c4f39a80570179e16a2b4a4dbcd56d"
+        "1bc236e1b71dfc8b29bdcef4a7f8aa8c627fd5a5f6a899f062955338b509d85f"
     )
     expectedProfileLockSha256.set(
-        "b93312a0a3049b6c041dff3d6efb3deee34a85c2f8591e59cb1f2032adb5fb15"
+        "d3f2a85fea6018f74b81d7374db537faeb9fd7b94f917003291e1db0d1c73a01"
     )
     expectedAuthority.set("internal")
     expectedSourceDirectoryPath.set("layouts/internal/src")
@@ -3531,7 +3531,7 @@ val stageInternalExternalPacks = tasks.register<StageExternalInternalPacks>(
     sourceDirectoryPath.set(internalPackDirectory.orElse(""))
     bindingRows.set(emptyList())
     expectedProfileLockSha256.set(
-        "b93312a0a3049b6c041dff3d6efb3deee34a85c2f8591e59cb1f2032adb5fb15"
+        "d3f2a85fea6018f74b81d7374db537faeb9fd7b94f917003291e1db0d1c73a01"
     )
     profileLockFile.set(internalProfileLockFile)
     outputDirectory.set(layout.buildDirectory.dir("generated/nepaInternalPacks/internal/assets"))

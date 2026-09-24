@@ -2,7 +2,7 @@
   "catalog": {
     "date": "2026-07-15",
     "path": "catalog/resources.json",
-    "sha256": "4a31496d2e0a3c5cb06a5c5bf9cc6a337566850cf4f1d2174d8f480c19b39ab7",
+    "sha256": "de7c3b1c7ad5edd95f536118ef1910be6bbb20d5e5be4d99e43d34445aa717b4",
     "version": 1
   },
   "compiler": {
@@ -12,7 +12,7 @@
   "counts": {
     "profiles": 74,
     "scripts": 9,
-    "selectable": 14,
+    "selectable": 18,
     "targets": 33
   },
   "generator": "build_shipping_profile_catalog",
@@ -1464,29 +1464,57 @@
       "variety": "Central Kiranti"
     },
     {
-      "blocked_detail": "No deterministic internal dictionary pack and layout binding are available yet.",
-      "blocked_reason": "DIRECT_PROFILE_NOT_INTERNAL_READY",
+      "blocked_detail": null,
+      "blocked_reason": null,
       "catalog_readiness": "research",
       "conversion_artifact": null,
       "conversion_binding": null,
       "default_enabled": false,
       "display_label": "Bantawa",
       "engine_kind": "layout",
-      "evidence_artifacts": [],
-      "evidence_ids": [],
+      "evidence_artifacts": [
+        {
+          "path": "reports/bantawa-internal-pack-v0.json",
+          "sha256": "28fe56a37567390a86e14f2845ac79784ba072c69d85460a026cc7d93b6dd270"
+        }
+      ],
+      "evidence_ids": [
+        "bap-direct-internal-2026-09-24"
+      ],
       "group": "Rai/Kiranti",
       "input_label": "Devanagari direct",
       "input_method_id": "bap-deva-direct",
       "language_tag": "bap-NP",
-      "layout_id": "pending-bap-deva-direct",
-      "layout_revision": null,
-      "layout_source_sha256": null,
+      "layout_id": "deva-nepal-bantawa-v1",
+      "layout_revision": 1,
+      "layout_source_sha256": "c469ed3c08c999a397025371dbf259a0f252f7e81cb032710c11ea0bf9b8289b",
       "lookup_kind": "surface_prefix",
       "method_type": "direct",
       "native_label": "Bantawa",
       "output_script": "Deva",
-      "pack_artifact": null,
-      "pack_binding": null,
+      "pack_artifact": {
+        "alias_key_count": 0,
+        "artifact_license": "LicenseRef-Internal",
+        "artifact_sha256": "bccf336f1abd1fe1154d3fda6afd6d5b6187468a899adb613b248b44ca58f8c4",
+        "candidate_count": 1714,
+        "file_name": "bap-Deva-NP.nkp",
+        "language": "bap",
+        "output_script": "Deva",
+        "pack_id": "bap-Deva-NP",
+        "release_mode": "internal",
+        "surface_key_count": 1714,
+        "validation": {
+          "benchmark_queries": [
+            "अधिव",
+            "क",
+            "खुइँ",
+            "र"
+          ],
+          "expected_surface": "अ",
+          "query": "अ"
+        }
+      },
+      "pack_binding": "bap-Deva-NP",
       "profile_id": "bap-Deva-NP",
       "scope": "language",
       "search_aliases": [
@@ -1500,7 +1528,7 @@
         "Central Kiranti",
         "bap-deva-direct"
       ],
-      "selectable": false,
+      "selectable": true,
       "sort_key": "bantawa|deva|direct|bap-Deva-NP",
       "source_script": "Deva",
       "target_id": "bap",
@@ -2271,29 +2299,58 @@
       "variety": "Western Kiranti"
     },
     {
-      "blocked_detail": "No deterministic internal dictionary pack and layout binding are available yet.",
-      "blocked_reason": "DIRECT_PROFILE_NOT_INTERNAL_READY",
+      "blocked_detail": null,
+      "blocked_reason": null,
       "catalog_readiness": "extractable",
       "conversion_artifact": null,
       "conversion_binding": null,
       "default_enabled": false,
       "display_label": "Central Gurung",
       "engine_kind": "layout",
-      "evidence_artifacts": [],
-      "evidence_ids": [],
+      "evidence_artifacts": [
+        {
+          "path": "reports/central-gurung-internal-pack-v0.json",
+          "sha256": "08bb6546501fa40dfeba5f8abf5d380de59f65879051d9f164e8ce3f0cca5eb6"
+        }
+      ],
+      "evidence_ids": [
+        "gvr-direct-internal-2026-09-24"
+      ],
       "group": "Gurung",
       "input_label": "Devanagari direct",
       "input_method_id": "gvr-deva-direct",
       "language_tag": "gvr-NP",
-      "layout_id": "pending-gvr-deva-direct",
-      "layout_revision": null,
-      "layout_source_sha256": null,
+      "layout_id": "deva-nepal-central-gurung-v1",
+      "layout_revision": 1,
+      "layout_source_sha256": "fbf366fc4a1dd560d5dbdc8128a40169a4e596c2ab0f047975e466f3ec72f5b4",
       "lookup_kind": "surface_prefix",
       "method_type": "direct",
       "native_label": "Central Gurung",
       "output_script": "Deva",
-      "pack_artifact": null,
-      "pack_binding": null,
+      "pack_artifact": {
+        "alias_key_count": 0,
+        "artifact_license": "LicenseRef-Internal",
+        "artifact_sha256": "f4d128e1b77aa6e9012448addf7f45bd140301f98767f1dd934e3d21e86fafda",
+        "candidate_count": 286,
+        "file_name": "gvr-Deva-NP.nkp",
+        "language": "gvr",
+        "output_script": "Deva",
+        "pack_id": "gvr-Deva-NP",
+        "release_mode": "internal",
+        "surface_key_count": 286,
+        "validation": {
+          "benchmark_queries": [
+            "नक्य",
+            "ताङ्ग",
+            "चीत",
+            "पुग्र",
+            "पिंक्य"
+          ],
+          "expected_surface": "ऱा",
+          "query": "ऱ"
+        }
+      },
+      "pack_binding": "gvr-Deva-NP",
       "profile_id": "gvr-Deva-NP",
       "scope": "variety",
       "search_aliases": [
@@ -2306,7 +2363,7 @@
         "Gurung",
         "gvr-deva-direct"
       ],
-      "selectable": false,
+      "selectable": true,
       "sort_key": "central gurung|deva|direct|gvr-Deva-NP",
       "source_script": "Deva",
       "target_id": "gvr",
@@ -2650,29 +2707,58 @@
       "variety": "Eastern Magar"
     },
     {
-      "blocked_detail": "No deterministic internal dictionary pack and layout binding are available yet.",
-      "blocked_reason": "DIRECT_PROFILE_NOT_INTERNAL_READY",
+      "blocked_detail": null,
+      "blocked_reason": null,
       "catalog_readiness": "beta",
       "conversion_artifact": null,
       "conversion_binding": null,
       "default_enabled": false,
       "display_label": "Western Magar",
       "engine_kind": "layout",
-      "evidence_artifacts": [],
-      "evidence_ids": [],
+      "evidence_artifacts": [
+        {
+          "path": "reports/western-magar-internal-pack-v0.json",
+          "sha256": "f760878e3f0ee96790cf04ac25e49e69c9e77f07a23bd530570ce4d8e0809f1a"
+        }
+      ],
+      "evidence_ids": [
+        "mrd-direct-internal-2026-09-24"
+      ],
       "group": "Magar",
       "input_label": "Devanagari direct",
       "input_method_id": "mrd-deva-direct",
       "language_tag": "mrd-NP",
-      "layout_id": "pending-mrd-deva-direct",
-      "layout_revision": null,
-      "layout_source_sha256": null,
+      "layout_id": "deva-nepal-western-magar-v1",
+      "layout_revision": 1,
+      "layout_source_sha256": "f1f9699d071287b7d747e3c7744a3c1efb9f1f8ca242f8421c02e70392bd8cb1",
       "lookup_kind": "surface_prefix",
       "method_type": "direct",
       "native_label": "Western Magar",
       "output_script": "Deva",
-      "pack_artifact": null,
-      "pack_binding": null,
+      "pack_artifact": {
+        "alias_key_count": 0,
+        "artifact_license": "LicenseRef-Internal",
+        "artifact_sha256": "6d5061f9359a1d641af66c31471501a8de3652aab98c2999f94026d80be98aeb",
+        "candidate_count": 1219,
+        "file_name": "mrd-Deva-NP.nkp",
+        "language": "mrd",
+        "output_script": "Deva",
+        "pack_id": "mrd-Deva-NP",
+        "release_mode": "internal",
+        "surface_key_count": 1219,
+        "validation": {
+          "benchmark_queries": [
+            "-आ",
+            "-प्‍",
+            "अघ",
+            "ख्‍याङ्‍ह्‌",
+            "र"
+          ],
+          "expected_surface": "-ऐ",
+          "query": "-ऐ"
+        }
+      },
+      "pack_binding": "mrd-Deva-NP",
       "profile_id": "mrd-Deva-NP",
       "scope": "variety",
       "search_aliases": [
@@ -2685,7 +2771,7 @@
         "Magar",
         "mrd-deva-direct"
       ],
-      "selectable": false,
+      "selectable": true,
       "sort_key": "western magar|deva|direct|mrd-Deva-NP",
       "source_script": "Deva",
       "target_id": "mrd",
@@ -3156,29 +3242,57 @@
       "variety": null
     },
     {
-      "blocked_detail": "No deterministic internal dictionary pack and layout binding are available yet.",
-      "blocked_reason": "DIRECT_PROFILE_NOT_INTERNAL_READY",
+      "blocked_detail": null,
+      "blocked_reason": null,
       "catalog_readiness": "extractable",
       "conversion_artifact": null,
       "conversion_binding": null,
       "default_enabled": false,
       "display_label": "Mid-Eastern Tharu",
       "engine_kind": "layout",
-      "evidence_artifacts": [],
-      "evidence_ids": [],
+      "evidence_artifacts": [
+        {
+          "path": "reports/mid-eastern-tharu-internal-pack-v0.json",
+          "sha256": "8eaaa307984cfbbb57ef316533bda9581928b753d0069de1a99274b9718f96a5"
+        }
+      ],
+      "evidence_ids": [
+        "thq-direct-internal-2026-09-24"
+      ],
       "group": "Tharu",
       "input_label": "Devanagari direct",
       "input_method_id": "thq-deva-direct",
       "language_tag": "thq-NP",
-      "layout_id": "pending-thq-deva-direct",
-      "layout_revision": null,
-      "layout_source_sha256": null,
+      "layout_id": "deva-nepal-mid-eastern-tharu-v1",
+      "layout_revision": 1,
+      "layout_source_sha256": "db316037bebc211c8b76bd9219f0dcf43ad8ad7639c291cb6e608fad24d210b4",
       "lookup_kind": "surface_prefix",
       "method_type": "direct",
       "native_label": "Mid-Eastern Tharu",
       "output_script": "Deva",
-      "pack_artifact": null,
-      "pack_binding": null,
+      "pack_artifact": {
+        "alias_key_count": 0,
+        "artifact_license": "LicenseRef-Internal",
+        "artifact_sha256": "d3c284fadeedc5e863e8364b5db496174fcf57f5acfeed38f16e2f679e1dfb18",
+        "candidate_count": 2980,
+        "file_name": "thq-Deva-NP.nkp",
+        "language": "thq",
+        "output_script": "Deva",
+        "pack_id": "thq-Deva-NP",
+        "release_mode": "internal",
+        "surface_key_count": 2980,
+        "validation": {
+          "benchmark_queries": [
+            "अनचक्‍",
+            "अनिवार्‌",
+            "अकल-",
+            "अन्ते/"
+          ],
+          "expected_surface": "अइठल",
+          "query": "अइठ"
+        }
+      },
+      "pack_binding": "thq-Deva-NP",
       "profile_id": "thq-Deva-NP",
       "scope": "variety",
       "search_aliases": [
@@ -3191,7 +3305,7 @@
         "Tharu",
         "thq-deva-direct"
       ],
-      "selectable": false,
+      "selectable": true,
       "sort_key": "mid-eastern tharu|deva|direct|thq-Deva-NP",
       "source_script": "Deva",
       "target_id": "thq",
@@ -3748,10 +3862,10 @@
   ],
   "review": {
     "authority": "internal",
-    "date": "2026-07-22",
-    "id": "internal-profiles-2026-07-22",
+    "date": "2026-09-24",
+    "id": "internal-profiles-2026-09-24",
     "path": "catalog/internal-profile-review.json",
-    "sha256": "487d911eef31f4bedcce689df562ac1c28ddb9526775381f5070153aeb07cad6",
+    "sha256": "d021eea37ad693ee9dccb56bf80d1d233e96b598ddc9f979c2f19c06cbc6b998",
     "version": 1
   },
   "schemas": {

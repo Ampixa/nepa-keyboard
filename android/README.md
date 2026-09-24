@@ -18,11 +18,13 @@ lock selects those two plus Limbu direct, Dhimal Devanagari direct, Sunuwar
 Devanagari direct, Western Tamang Devanagari direct, and Lohorung Devanagari
 direct, plus Yakkha, Nepal Bhasa Devanagari direct, Romanized Nepal Bhasa to
 Devanagari, Nepal Bhasa Prachalit/Newa direct, and Nepal Bhasa Devanagari-to-
-Prachalit conversion, plus Dumi Devanagari direct; the other 60 identities
+Prachalit conversion, Dumi Devanagari direct, Bantawa Devanagari direct,
+Western Magar Devanagari direct, Mid-Eastern Tharu Devanagari direct, and
+Central Gurung Devanagari direct; the other 56 identities
 remain visible but disabled with
 explicit readiness reasons. Catalog presence never grants a runtime-artifact
-binding. The internal boundary contains 13 NKP profile bindings backed by 12
-unique packs and one NCM binding, for 14 selectable profiles in total. The app
+binding. The internal boundary contains 17 NKP profile bindings backed by 16
+unique packs and one NCM binding, for 18 selectable profiles in total. The app
 has no internet permission. Each
 build derives one exact artifact binding per selectable profile from its
 complete SHA-pinned lock, and the public build cannot stage internal-only
@@ -158,11 +160,14 @@ Only the separate public/export authority interprets provenance as approval;
 internal staging does not. Supplying a pack directory does not replace the
 shared integrity checks.
 
-## Build on cdjk
+## Build on a remote Android host
 
 Android builds and emulation are remote-only. The shipping IME now targets API
 36 and uses Android Gradle Plugin 8.12.2, which requires JDK 17, Gradle 8.13,
-and an SDK containing `platforms;android-36`. The prior cached Gradle 8.11.1
+and an SDK containing `platforms;android-36`. The current Windows host setup,
+build command, AVD names, and device runners are in
+[`../docs/windows-android-validation.md`](../docs/windows-android-validation.md).
+The prior cached Gradle 8.11.1
 command is historical and must not be used for a release candidate. Use the
 pinned Gradle 8.13 installation on `cdjk`, then set `GRADLE` to that
 exact executable and use `$HOME/Android/Sdk` until API 36 is also installed in
