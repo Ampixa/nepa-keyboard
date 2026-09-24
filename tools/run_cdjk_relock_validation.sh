@@ -91,6 +91,9 @@ test_files=(
   test_relock_validation_runner.py
   test_key_alternates.py
   test_transliteration_profiles.py
+  test_transliteration_map.py
+  test_transliteration_contrasts.py
+  test_emoji_catalog.py
   test_finalize_limbu_internal_milestone.py
 )
 if [[ "$scope" == all ]]; then
@@ -133,6 +136,9 @@ if [[ "$scope" == all ]]; then
     test_relock_validation_runner.py
     test_key_alternates.py
     test_transliteration_profiles.py
+    test_transliteration_map.py
+    test_transliteration_contrasts.py
+    test_emoji_catalog.py
     test_finalize_limbu_internal_milestone.py
   )
 fi
@@ -306,7 +312,9 @@ static_source_inputs=(
   tools/build_shipping_profile_catalog.py
   tools/build_keyboard_layouts.py
   tools/build_key_alternates.py
+  tools/build_transliteration_map.py
   tools/build_transliteration_profiles.py
+  tools/build_emoji_catalog.py
   catalog/key-alternates-v0.json
   catalog/transliteration-profiles-v0.json
   tools/build_khaling_internal_source.py

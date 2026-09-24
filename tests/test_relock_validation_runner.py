@@ -37,6 +37,9 @@ class RelockValidationRunnerTest(unittest.TestCase):
             self.assertIn("test_relock_validation_runner.py", names)
             self.assertIn("test_key_alternates.py", names)
             self.assertIn("test_transliteration_profiles.py", names)
+            self.assertIn("test_transliteration_map.py", names)
+            self.assertIn("test_transliteration_contrasts.py", names)
+            self.assertIn("test_emoji_catalog.py", names)
             self.assertIn("test_finalize_limbu_internal_milestone.py", names)
             self.assertEqual(len(names), len(block.splitlines()))
 
@@ -106,7 +109,9 @@ class RelockValidationRunnerTest(unittest.TestCase):
                 self.assertIn(path, block)
         for generator in (
             "tools/build_key_alternates.py",
+            "tools/build_transliteration_map.py",
             "tools/build_transliteration_profiles.py",
+            "tools/build_emoji_catalog.py",
         ):
             self.assertIn(generator, self.runner)
         for reviewed_input in (

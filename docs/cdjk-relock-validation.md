@@ -79,7 +79,8 @@ It then:
 9. derives the eight Android internal pins from the two installed locks and
    regenerated transliteration asset;
 10. runs the pin-updater unit suite, conversion compiler/source/vector tests,
-   Android conversion-substrate checks, the focused Android internal-scope
+   every bundled transliteration-map and emoji-catalog test, Android
+   conversion-substrate checks, the focused Android internal-scope
    contract tests, the Khaling/Dumi measurement-runner sequencing and identity
    contracts, the neutral Bantawa source-probe contract, the dual-resource
    neutral Nepal Bhasa TSV audit contract, the isolated Newa research-layout
