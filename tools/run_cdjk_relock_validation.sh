@@ -77,6 +77,7 @@ test_files=(
   test_lepcha_candidate_source.py
   test_sherpa_candidate_source.py
   test_rai_induced_candidate_source.py
+  test_finalize_internal_pack_milestone.py
   test_western_magar_source_probe_runner.py
   test_western_magar_tsv_contract.py
   test_western_magar_internal_source.py
@@ -359,6 +360,9 @@ static_source_inputs=(
   catalog/internal-pack-milestones/bap-Deva-NP-v0.json
   catalog/western-magar-internal-prefixes-v0.json
   catalog/internal-pack-milestones/mrd-Deva-NP-v0.json
+  catalog/internal-pack-milestones/thq-Deva-NP-v0.json
+  catalog/tharu-internal-prefixes-v0.json
+  reports/evidence/mid-eastern-tharu-layout-scalar-check-v0.json
   reports/bantawa-layout-candidate-v0.md
   reports/western-magar-candidate-policy-v0.md
   catalog/nepal-bhasa-internal-prefixes-v0.json

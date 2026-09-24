@@ -89,6 +89,35 @@ class FinalizeInternalPackMilestoneTest(unittest.TestCase):
             },
         )
 
+    def test_canonical_mid_eastern_tharu_spec_and_layout_contract(self) -> None:
+        spec_path = (
+            finalizer.REPOSITORY_ROOT
+            / "catalog/internal-pack-milestones/thq-Deva-NP-v0.json"
+        )
+        spec, encoded = finalizer._validate_spec(spec_path)
+
+        self.assertEqual(encoded, finalizer._canonical_bytes(spec))
+        self.assertEqual(spec["pack"]["pack_id"], "thq-Deva-NP")
+        self.assertEqual(
+            [operation["kind"] for operation in spec["layout"]["operations"]],
+            [
+                "insert_row_before_actions",
+                "insert_row_before_actions",
+                "insert_row_before_actions",
+                "replace_key",
+                "replace_key",
+            ],
+        )
+        self.assertEqual(
+            finalizer._verify_layout(spec),
+            {
+                "layout_id": "deva-nepal-mid-eastern-tharu-v1",
+                "revision": 1,
+                "source_path": "layouts/internal/src/deva-nepal-mid-eastern-tharu-v1.json",
+                "source_sha256": "db316037bebc211c8b76bd9219f0dcf43ad8ad7639c291cb6e608fad24d210b4",
+            },
+        )
+
     def test_canonical_lohorung_spec_and_layout_contract(self) -> None:
         spec_path = (
             finalizer.REPOSITORY_ROOT

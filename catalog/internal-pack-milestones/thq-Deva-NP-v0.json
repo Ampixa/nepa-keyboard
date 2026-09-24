@@ -1,0 +1,185 @@
+{
+  "adapter": {
+    "input_argument": "apk_tsv",
+    "module": "tools.build_mid_eastern_tharu_internal_source",
+    "name": "build_mid_eastern_tharu_internal_source",
+    "path": "tools/build_mid_eastern_tharu_internal_source.py",
+    "sha256": "b536479971eb99a00254dd4eb2ccdd9e5cd141f0837963764c41b4b7da627180",
+    "version": 1
+  },
+  "evidence": {
+    "remaining_production_gates": [
+      "accessibility_review",
+      "frequency_ranking",
+      "glyph_rendering",
+      "joiner_rejection_review",
+      "native_speaker_review",
+      "phrase_suggestion_review",
+      "physical_device_runtime",
+      "punctuation_typing_review",
+      "quality_evaluation",
+      "touch_geometry_review",
+      "variety_fit_review"
+    ],
+    "report_id": "mid-eastern-tharu-internal-pack-v0",
+    "report_version": 1
+  },
+  "layout": {
+    "base_path": "layouts/internal/src/deva-nepal-basic-v1.json",
+    "base_sha256": "5cefdc0e916eaa9ee64acafddcadad4c9d32c8adbaff69cb2d8f181655280e4f",
+    "display_name": "Devanagari Mid-Eastern Tharu (Nepal phone)",
+    "layout_id": "deva-nepal-mid-eastern-tharu-v1",
+    "license": {
+      "copyright": "Multiple copyright holders; see the exact xkeyboard-config package notice",
+      "id": "LicenseRef-xkeyboard-config-aggregate",
+      "license_url": "https://gitlab.freedesktop.org/xkeyboard-config/xkeyboard-config/-/blob/xkeyboard-config-2.41/COPYING",
+      "notice_path": "layouts/internal/notices/xkb-data-2.41-2ubuntu1.1-deva-mid-eastern-tharu.copyright",
+      "notice_sha256": "739ff5404b852466ed201799e49bb5dc0f4eafe0876bf9aa74499f306b7b1786",
+      "redistribution": "allowed"
+    },
+    "operations": [
+      {
+        "kind": "insert_row_before_actions",
+        "layer_id": "base",
+        "row": [
+          "इ",
+          "ई",
+          "ए",
+          "ऐ",
+          {
+            "content_description": "Devanagari sign nukta",
+            "kind": "text",
+            "label": "◌़",
+            "text": "़"
+          },
+          {
+            "content_description": "Tharu conjunct zero width joiner",
+            "kind": "deva_conjunct_joiner",
+            "label": "ZWJ",
+            "text": "‍"
+          },
+          {
+            "content_description": "Tharu conjunct zero width non-joiner",
+            "kind": "deva_conjunct_joiner",
+            "label": "ZWNJ",
+            "text": "‌"
+          }
+        ]
+      },
+      {
+        "kind": "insert_row_before_actions",
+        "layer_id": "shift",
+        "row": [
+          "इ",
+          "ई",
+          "ए",
+          "ऐ",
+          {
+            "content_description": "Devanagari sign nukta",
+            "kind": "text",
+            "label": "◌़",
+            "text": "़"
+          },
+          {
+            "content_description": "Tharu conjunct zero width joiner",
+            "kind": "deva_conjunct_joiner",
+            "label": "ZWJ",
+            "text": "‍"
+          },
+          {
+            "content_description": "Tharu conjunct zero width non-joiner",
+            "kind": "deva_conjunct_joiner",
+            "label": "ZWNJ",
+            "text": "‌"
+          }
+        ]
+      },
+      {
+        "kind": "insert_row_before_actions",
+        "layer_id": "symbols",
+        "row": [
+          "०",
+          "१",
+          "२",
+          "३",
+          "४",
+          "५",
+          "६",
+          "७",
+          "८",
+          "९"
+        ]
+      },
+      {
+        "key": {
+          "content_description": "Hyphen within Mid-Eastern Tharu word",
+          "kind": "intra_word_punctuation",
+          "label": "-",
+          "text": "-"
+        },
+        "key_index": 5,
+        "kind": "replace_key",
+        "layer_id": "symbols",
+        "row_index": 1
+      },
+      {
+        "key": {
+          "content_description": "Slash within Mid-Eastern Tharu word",
+          "kind": "intra_word_punctuation",
+          "label": "/",
+          "text": "/"
+        },
+        "key_index": 7,
+        "kind": "replace_key",
+        "layer_id": "symbols",
+        "row_index": 2
+      }
+    ],
+    "provenance": [
+      {
+        "kind": "adapted",
+        "note": "Preserves the reviewed Nepali basic phone rows, actions, symbols, numeric fallback, and profile-bound labels.",
+        "revision": "1",
+        "sha256": "5cefdc0e916eaa9ee64acafddcadad4c9d32c8adbaff69cb2d8f181655280e4f",
+        "source": "layouts/internal/src/deva-nepal-basic-v1.json"
+      },
+      {
+        "kind": "project_authored",
+        "note": "Adds the ten accepted-headword scalars absent from the basic layout and preserves intra-word hyphen and slash input for an opt-in internal profile.",
+        "revision": "v0",
+        "sha256": "2613b89dd5da55c0a06f550f4616b8c4d3ae56505edfa13e499ae827e751a7de",
+        "source": "reports/evidence/mid-eastern-tharu-layout-scalar-check-v0.json"
+      }
+    ],
+    "revision": 1,
+    "source_sha256": "db316037bebc211c8b76bd9219f0dcf43ad8ad7639c291cb6e608fad24d210b4"
+  },
+  "pack": {
+    "artifact_license": "LicenseRef-Internal",
+    "file_name": "thq-Deva-NP.nkp",
+    "language": "thq",
+    "output_script": "Deva",
+    "pack_id": "thq-Deva-NP"
+  },
+  "paths": {
+    "evidence_output": "reports/mid-eastern-tharu-internal-pack-v0.json",
+    "layout_source": "layouts/internal/src/deva-nepal-mid-eastern-tharu-v1.json",
+    "queries": "catalog/tharu-internal-prefixes-v0.json",
+    "resource_catalog": "catalog/resources.json",
+    "review": "catalog/internal-profile-review.json"
+  },
+  "profile": {
+    "default_enabled": false,
+    "input_method_id": "thq-deva-direct",
+    "target_id": "thq"
+  },
+  "source": {
+    "data_version": "1.0.0",
+    "expected_data_rows": 3044,
+    "file_name": "thq_nep_lexicon.tsv",
+    "max_suggestions": 8,
+    "resource_id": "thq-apk",
+    "sha256": "575ecfa0b2cbcafe3c4b8783e302f0af5c5a3c7a321b75a61b8bd1fe802d39c5"
+  },
+  "spec_version": 3
+}
