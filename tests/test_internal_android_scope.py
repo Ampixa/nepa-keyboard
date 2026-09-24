@@ -263,14 +263,23 @@ class InternalAndroidScopeTest(unittest.TestCase):
         self.assertIn('.InternalCatalogPrefixBenchmarkInstrumentation"', manifest)
 
         benchmark_gradle = source("android/benchmark-app/build.gradle.kts")
-        self.assertIn(
-            '.dir("generated/assets/stageInternalExternalPacks")',
-            benchmark_gradle,
-        )
-        self.assertIn(
-            '.dir("generated/assets/stageDebugExternalPacks")',
-            benchmark_gradle,
-        )
+        ime_gradle = source("android/ime-app/build.gradle.kts")
+        for asset_path, task_name in (
+            ("nepaInternalPacks/internal/assets", "stageInternalExternalPacks"),
+            (
+                "nepaInternalConversions/internal/assets",
+                "stageInternalExternalConversionMaps",
+            ),
+            ("nepaReleasePacks/debug/assets", "stageDebugExternalPacks"),
+            ("nepaReleaseConversions/debug/assets", "stageDebugExternalConversionMaps"),
+        ):
+            with self.subTest(asset_path=asset_path):
+                self.assertIn(f'.dir("generated/{asset_path}")', benchmark_gradle)
+                self.assertIn(
+                    f'layout.buildDirectory.dir("generated/{asset_path}")',
+                    ime_gradle,
+                )
+                self.assertIn(f'":ime-app:{task_name}"', benchmark_gradle)
 
     def test_corruption_harness_has_seventeen_integrity_negatives(self) -> None:
         corruption = source(
@@ -950,7 +959,10 @@ class InternalAndroidScopeTest(unittest.TestCase):
         self.assertIn("activeRow == rebound", view)
         self.assertIn("activeRow.isActivated()", view)
         self.assertIn("!rebound.isActivated()", view)
-        self.assertIn("setProfileSelected(active)", view)
+        picker_binding = view.split("private void bindPickerProfileRow(", 1)[1].split(
+            "private String pickerProfileDescription(", 1
+        )[0]
+        self.assertIn("setProfileSelected(active)", picker_binding)
         self.assertIn("row instanceof PickerProfileRow", view)
         self.assertIn("info.setSelected(profileSelected)", view)
         self.assertIn("accessibilitySelectedForTesting()", view)
@@ -970,7 +982,7 @@ class InternalAndroidScopeTest(unittest.TestCase):
         self.assertIn("dispatchPopulateAccessibilityEvent", view)
         self.assertIn("candidateAccessibilityContractForTesting", view)
         self.assertIn("candidate.setContentDescription(null)", view)
-        self.assertNotIn("view.setSelected(active)", view)
+        self.assertNotIn("view.setSelected(active)", picker_binding)
         self.assertIn("TextUtils.isEmpty(holder.marker.getText())", view)
         self.assertIn("!reboundDescription.toString().contains(selectedState)", view)
         self.assertNotIn("new ScrollView(getContext())", view)
