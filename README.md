@@ -1,5 +1,23 @@
 # Nepa Keyboard
 
+<p>
+  <img src="publishing/google-play/assets/rendered/phone-screenshots/02-nepali-keyboard.png" width="24%" alt="Nepali keyboard">
+  <img src="publishing/google-play/assets/rendered/phone-screenshots/04-newa-keyboard.png" width="24%" alt="Nepal Bhasa keyboard in Newa script">
+  <img src="publishing/google-play/assets/rendered/phone-screenshots/03-language-profiles.png" width="24%" alt="Limbu keyboard and language switching">
+  <img src="publishing/google-play/assets/rendered/phone-screenshots/01-setup-and-privacy.png" width="24%" alt="Setup and privacy screen">
+</p>
+
+Nepali, Nepal Bhasa in Newa script, Limbu in Sirijanga script, and the setup
+screen. Everything runs on the device with no network access.
+
+> **About this repository.** This is the public source of Nepa Keyboard: the
+> Android keyboard, desktop layouts, layout and profile catalogs, schemas,
+> tools and tests. The validation reports and evidence that this README refers
+> to under `reports/` are kept in Ampixa's private working repository, because
+> they contain dictionary data from third-party sources that is not ours to
+> redistribute. Language packs are built from those sources and are not
+> checked in here.
+
 Nepa Keyboard is an offline-first keyboard project for the languages and scripts
 used in Nepal. The project treats these as separate concerns:
 
@@ -16,6 +34,12 @@ This separation is essential. “Rai” is an umbrella identity rather than one
 interchangeable dictionary, and Tamang, Magar, and Tharu resources also need
 variety-aware packs. A script layout can be made before a predictive dictionary
 is ready, but the two readiness claims must not be confused.
+
+## Layout previews for community review
+
+![Nepal Bhasa Devanagari layout](docs/community/nepal-bhasa-deva-layout-preview-v1.png)
+
+![Prachalit Nepal Lipi (Newa script) layout](docs/community/newa-prachalit-internal-preview-v1.png)
 
 ## Community review: Nepal Bhasa
 
@@ -49,31 +73,31 @@ Devanagari-to-Newa conversion is the twelfth selectable, non-default internal
 beta. It reuses the reviewed Nepal Bhasa Devanagari layout and offers a
 mechanically generated Unicode Newa candidate plus the literal Devanagari
 input. It is not an attested Newa dictionary. Its
-[source report](reports/nepal-bhasa-deva-newa-internal-map-v0.json) and
+source report and
 [canonical validation vectors](catalog/nepal-bhasa-deva-newa-internal-vectors-v0.json)
 pin the measured coverage and no-match behavior. The
 [community conversion worksheet](docs/community/nepal-bhasa-deva-newa-conversion-review-v1.md)
 separates the remaining orthographic questions from runtime acceptance. The
-[12-profile milestone](reports/nepal-bhasa-deva-newa-internal-android-milestone-v0.md)
+12-profile milestone
 records the generated lock, clean build, and canonical API 34 proof.
 
 Dumi Devanagari direct is the 14th selectable, non-default internal beta. Its
 2,132-surface deterministic pack is bound to a Dumi-specific layout with
 attested colon composition, visarga, nukta, conjunct joiners, and the
 Devanagari glottal-stop letter. The
-[14-profile milestone](reports/dumi-internal-android-milestone-v0.md) records
+14-profile milestone records
 the all-scope relock, clean build, API 34 behavior, and measured prefix lookup.
 
 ## Current work
 
-The primary product lane is internal and targets every dictionary-backed
-language. License and redistribution status are retained as provenance but do
-not block or rank internal packs, layouts, builds, benchmarks, emulators, or
-APKs. The existing public/export lane remains separate and fail-closed.
+Engineering profiles target every dictionary-backed language. Source licence
+and redistribution status are recorded for every resource in the catalog. A
+pack is only released publicly when its sources allow it; that public/export
+lane is separate and fail-closed.
 
 - [`catalog/resources.json`](catalog/resources.json) is the audited registry of
   local dictionaries, corpora, and script resources.
-- [`reports/dictionary-resource-inventory-v1.md`](reports/dictionary-resource-inventory-v1.md)
+- `reports/dictionary-resource-inventory-v1.md`
   records the 22 dictionary-backed targets and the exact SHA-pinned identity of
   all 30 dictionary/lexicon resources.
 - [`schemas/resource-catalog.schema.json`](schemas/resource-catalog.schema.json)
@@ -132,69 +156,69 @@ APKs. The existing public/export lane remains separate and fail-closed.
 - [`docs/product-architecture.md`](docs/product-architecture.md) defines the
   Gboard-informed IME behavior, language-profile model, picker, and production
   gates for all cataloged languages.
-- [`reports/keyboard-reference-research-v0.md`](reports/keyboard-reference-research-v0.md)
+- `reports/keyboard-reference-research-v0.md`
   audits mature Android keyboard implementations and primary research, then
   records the concrete adopt/adapt/avoid decisions for the next runtime.
-- [`reports/language-picker-production-gap-v0.md`](reports/language-picker-production-gap-v0.md)
+- `reports/language-picker-production-gap-v0.md`
   audits the generated language manager and in-keyboard picker against the
   daily-IME goal, then defines the subtype, readiness, accessibility,
   lifecycle, and decoder work still required for production use.
-- [`reports/limbu-pack-readiness-v0.md`](reports/limbu-pack-readiness-v0.md)
+- `reports/limbu-pack-readiness-v0.md`
   records the pinned dictionary and layout references, Nepal-specific
   orthography questions, and the evidence needed for a first selectable Limbu
   profile.
-- [`reports/dhimal-pack-readiness-v0.md`](reports/dhimal-pack-readiness-v0.md)
+- `reports/dhimal-pack-readiness-v0.md`
   records the pinned Devanagari source, real deterministic adapter run, rejected
   joiner audit, and complete accepted-scalar layout inventory.
-- [`reports/western-tamang-pack-readiness-v0.md`](reports/western-tamang-pack-readiness-v0.md)
+- `reports/western-tamang-pack-readiness-v0.md`
   records the pinned APK lexicon, deterministic headword-only adapter, rejected
   joiner audit, and exact seven-scalar layout gap.
-- [`reports/lohorung-pack-readiness-v0.md`](reports/lohorung-pack-readiness-v0.md)
+- `reports/lohorung-pack-readiness-v0.md`
   records the pinned SIL-APK JSONL, reusable strict adapter, terminal-ZWNJ
   contract, deterministic pack, and exact ten-scalar layout gap.
-- [`reports/yakkha-pack-readiness-v0.md`](reports/yakkha-pack-readiness-v0.md)
+- `reports/yakkha-pack-readiness-v0.md`
   records the pinned SIL-APK JSONL, independently audited terminal-ZWNJ
   requirement, deterministic pack, exact scalar gap, and closed intra-word
   punctuation contract.
-- [`reports/profile-expansion-v1.md`](reports/profile-expansion-v1.md) records
+- `reports/profile-expansion-v1.md` records
   the data-driven third-profile architecture, exact pack binding, generic
   Android subtype/smoke/benchmark path, and the still-closed Dhimal/Limbu
   release decisions.
-- [`reports/sunuwar-internal-android-milestone-v0.md`](reports/sunuwar-internal-android-milestone-v0.md)
+- `reports/sunuwar-internal-android-milestone-v0.md`
   records the deterministic fourth profile, reusable internal-pack finalizer,
   extended Devanagari input policies, four-pack APK boundary, and API 34
   benchmark evidence.
-- [`reports/dhimal-internal-android-milestone-v0.md`](reports/dhimal-internal-android-milestone-v0.md)
+- `reports/dhimal-internal-android-milestone-v0.md`
   records the deterministic fifth profile, inventory-complete Dhimal layout,
   five-pack picker/runtime proof, and API 34 benchmark evidence.
-- [`reports/western-tamang-internal-android-milestone-v0.md`](reports/western-tamang-internal-android-milestone-v0.md)
+- `reports/western-tamang-internal-android-milestone-v0.md`
   records the deterministic sixth profile, inventory-complete Western Tamang
   layout, generated all-profile runtime conformance, and six-pack API 34 proof.
-- [`reports/lohorung-internal-android-milestone-v0.md`](reports/lohorung-internal-android-milestone-v0.md)
+- `reports/lohorung-internal-android-milestone-v0.md`
   records the deterministic seventh profile, inventory-complete Lohorung
   layout, terminal-ZWNJ composing semantics, generated conformance, and
   seven-pack API 34 proof.
-- [`reports/yakkha-internal-android-milestone-v0.md`](reports/yakkha-internal-android-milestone-v0.md)
+- `reports/yakkha-internal-android-milestone-v0.md`
   records the historical eight-profile API 34 software-emulator chain, decoder
   and retained-service subtype contracts, and eight-pack prefix benchmark.
-- [`reports/nepal-bhasa-internal-android-milestone-v0.md`](reports/nepal-bhasa-internal-android-milestone-v0.md)
+- `reports/nepal-bhasa-internal-android-milestone-v0.md`
   records the historical nine-profile API 34 chain, the selectable
   Nepal Bhasa Devanagari pack/layout, and the nine-pack prefix benchmark.
-- [`reports/nepal-bhasa-newa-internal-android-milestone-v0.md`](reports/nepal-bhasa-newa-internal-android-milestone-v0.md)
+- `reports/nepal-bhasa-newa-internal-android-milestone-v0.md`
   records the historical ten-profile API 34 chain, the attested
   Prachalit/Newa pack, the repertoire-complete internal layout, and the
   ten-pack prefix benchmark.
-- [`reports/nepal-bhasa-roman-internal-android-milestone-v0.md`](reports/nepal-bhasa-roman-internal-android-milestone-v0.md)
+- `reports/nepal-bhasa-roman-internal-android-milestone-v0.md`
   records the historical 11-profile API 34 chain, the measured Roman
   alias policy, the shared direct/Roman pack identity, and the 11-binding
   prefix benchmark.
-- [`reports/nepal-bhasa-deva-newa-internal-android-milestone-v0.md`](reports/nepal-bhasa-deva-newa-internal-android-milestone-v0.md)
+- `reports/nepal-bhasa-deva-newa-internal-android-milestone-v0.md`
   records the historical 12-profile API 34 chain, strict conversion
   runtime, 15-vector replay, and conversion benchmark.
-- [`reports/khaling-internal-android-milestone-v0.md`](reports/khaling-internal-android-milestone-v0.md)
+- `reports/khaling-internal-android-milestone-v0.md`
   records the historical 13-profile API 34 chain and the deterministic
   Khaling pack/layout promotion.
-- [`reports/dumi-internal-android-milestone-v0.md`](reports/dumi-internal-android-milestone-v0.md)
+- `reports/dumi-internal-android-milestone-v0.md`
   records the current canonical 14-profile API 34 chain, Dumi-specific layout,
   deterministic 2,132-surface pack, and 13-binding prefix benchmark.
 - [`android/README.md`](android/README.md) documents pack format v0, Android
@@ -207,7 +231,7 @@ APKs. The existing public/export lane remains separate and fail-closed.
   Windows, macOS, and Linux Keyman package for those same three input sources.
   Linux live IBus acceptance passes 12/12 vectors; the exact remaining Windows
   and macOS acceptance boundary is recorded in
-  [`reports/desktop-cross-platform-readiness-v0.md`](reports/desktop-cross-platform-readiness-v0.md).
+  `reports/desktop-cross-platform-readiness-v0.md`.
 - [`desktop/phonetic/README.md`](desktop/phonetic/README.md) documents the new
   Google-style composing desktop input methods. They show converted and literal
   candidates beside the caret for Nepali, Nepal Bhasa/Newa, and Limbu, with a
@@ -228,11 +252,11 @@ nepa-pack inspect --pack dist/npi-Deva-NP.nkp --index aliases --prefix nepal
 Compilation and tests run on `cdjk`, not on the local Mac.
 
 The first remotely built artifact is documented in
-[`reports/npi-Deva-NP-pilot.md`](reports/npi-Deva-NP-pilot.md): 25,000 Nepali
+`reports/npi-Deva-NP-pilot.md`: 25,000 Nepali
 forms, 44,899 Roman keys, deterministic output, and a 5.45 MiB internal pack.
 
 The Android reader and API 34 prefix baseline are documented in
-[`reports/android-v0-prefix-benchmark.md`](reports/android-v0-prefix-benchmark.md).
+`reports/android-v0-prefix-benchmark.md`.
 That historical single-pack harness proved the isolated public/export reader
 rejected an internal artifact and that an explicit internal authority could
 still verify and benchmark it. The current internal catalog uses its dedicated
@@ -240,16 +264,16 @@ product reader and catalog benchmark entry points.
 
 The first product-shaped English/Nepali IME, language picker, release isolation,
 and remote runtime checks are documented in
-[`reports/android-ime-v0.md`](reports/android-ime-v0.md).
+`reports/android-ime-v0.md`.
 
 Incremental composing, exact candidate replacement, the asynchronous
 release-only pack adapter, and its API 34 evidence are documented in
-[`reports/android-ime-composing-v0.md`](reports/android-ime-composing-v0.md).
+`reports/android-ime-composing-v0.md`.
 
 The reviewed English/Nepali release bindings, fail-closed Gradle staging,
 staged IME smoke test, APK audit, and per-pack API 34 lookup benchmark are
 documented in
-[`reports/android-release-packs-v0.md`](reports/android-release-packs-v0.md).
+`reports/android-release-packs-v0.md`.
 
 The current shipping review additionally content-binds those historical
 evidence reports and exact pack artifact/index metadata. Android derives pack
@@ -258,7 +282,7 @@ profile lock; there is no separate language-specific release-pack list.
 
 The generated 74-profile Android registry, searchable virtualized language
 manager, bounded in-keyboard picker, and remote gate evidence are documented in
-[`reports/android-shipping-profile-catalog-v0.md`](reports/android-shipping-profile-catalog-v0.md).
+`reports/android-shipping-profile-catalog-v0.md`.
 
 The cumulative internal boundary now selects English, Nepali, Limbu, Dhimal,
 Sunuwar, Western Tamang, Lohorung, Yakkha, Nepal Bhasa Devanagari, and Nepal
@@ -269,7 +293,7 @@ profiles, including conversion routing,
 decoder, retained-service subtype/lifecycle, spatial, prefix, conversion, and
 corruption gates. The evidence and its physical-device, API 26/27,
 accessibility, native-review, and quality limitations are explicit in
-[`reports/dumi-internal-android-milestone-v0.md`](reports/dumi-internal-android-milestone-v0.md).
+`reports/dumi-internal-android-milestone-v0.md`.
 
 The layout-v1 compiler covers the English and direct Nepali phone layouts from
 reviewed JSON, binds them to the exact profile lock, and matches an independent
